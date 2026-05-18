@@ -85,6 +85,43 @@ Claude clasifica la nota según el tema (pauta, CRM, contenido, reportes, etc.) 
 
 ---
 
+## Backup y restauración
+
+**Opción activa:** Git + GitHub privado (Opción A)
+**Repositorio:** `github.com/JavierForeroAI/innovart-vault` (privado)
+**Frecuencia:** Auto-commit + push automático todos los días a las 22:00 hs
+
+### Verificar que el último backup funcionó
+
+```bash
+cat ~/Documents/Obsidian-Innovart/Diario/.logs/backup.log | tail -5
+```
+
+Debe decir `Backup OK — commit + push completado.` con la fecha de ayer o de hoy.
+
+### Restaurar en otro Mac desde cero
+
+1. Instalar Git: ya viene en macOS (`git --version` para verificar)
+2. Instalar Homebrew: `curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash` (NO ejecutes si ya está instalado)
+3. Autenticarse en GitHub: `brew install gh && gh auth login`
+4. Clonar el vault: `gh repo clone JavierForeroAI/innovart-vault ~/Documents/Obsidian-Innovart`
+5. Abrir Obsidian → Open vault → seleccionar `~/Documents/Obsidian-Innovart`
+6. Instalar Claude Code: `brew install claude` (o desde claude.ai/code)
+7. Reinstalar hooks: `cd ~/Documents/Obsidian-Innovart && bash 90-Memoria-Claude/setup-hooks.sh` (si existe)
+
+### Si el backup automático falla
+
+- Verificar que el Mac estaba encendido a las 22:00 (launchd no recupera runs perdidos)
+- Correr backup manual: `bash ~/.claude/hooks/innovart-vault-backup.sh`
+- Si hay error de push: verificar conexión a internet y que el token de GitHub sigue vigente (`gh auth status`)
+- Para renovar el token: github.com → Settings → Developer settings → Personal access tokens
+
+### Contacto si falla
+
+Javier Forero — responsable técnico del vault y los hooks
+
+---
+
 ## Documentos clave
 
 - Dossier del cliente (investigación completa): [[10-Clientes/Innovart/_dossier-2026-05-18]]
