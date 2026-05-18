@@ -1,0 +1,32 @@
+{
+  "daily": {
+    "enabled": true,
+    "format": "YYYY-MM-DD",
+    "folder": "Diario",
+    "template": "_templates/Daily.md"
+  },
+  "weekly": {
+    "enabled": true,
+    "format": "YYYY-[W]WW",
+    "folder": "Diario/Semanales",
+    "template": ""
+  },
+  "monthly": {
+    "enabled": false,
+    "format": "YYYY-MM",
+    "folder": "",
+    "template": ""
+  },
+  "quarterly": {
+    "enabled": false,
+    "format": "YYYY-[Q]Q",
+    "folder": "",
+    "template": ""
+  },
+  "yearly": {
+    "enabled": false,
+    "format": "YYYY",
+    "folder": "",
+    "template": ""
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "globalFilter": "#task",
+  "removeGlobalFilter": false,
+  "setDoneDate": true,
+  "autoSuggestInEditor": true,
+  "autoSuggestMinMatch": 0,
+  "autoSuggestMaxItems": 6,
+  "provideAccessToCurrentNote": false,
+  "useFilenameAsScheduledDate": false,
+  "filenameAsDateFolders": [],
+  "recurrenceOnNextLine": false,
+  "lastEditedFallback": false,
+  "statusTypes": [],
+  "coreStatusRegistered": false,
+  "maxTasksListLength": 750,
+  "taskFormat": "tasksPluginEmoji"
+}

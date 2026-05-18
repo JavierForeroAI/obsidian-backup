@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Innovart — Saludo WhatsApp inicial",
+    "text": "Hola {nombre} 👋 Soy {asesor} de Innovart Medical. Vi que te interesó el implante capilar — ¿tenés alguna pregunta con la que te pueda ayudar?",
+    "keyword": "!inv-hola"
+  },
+  {
+    "name": "Innovart — Precio FUE Bogotá",
+    "text": "El procedimiento FUE en Innovart arranca desde $6.000.000 COP e incluye: valoración gratuita, cirugía completa, 24 controles post-op y garantía vitalicia. ¿Querés que te agendemos una valoración sin costo?",
+    "keyword": "!inv-precio"
+  },
+  {
+    "name": "Innovart — Garantía Vitalicia",
+    "text": "En Innovart ofrecemos garantía vitalicia en todos nuestros trasplantes capilares. Si el injerto no prende, lo repetimos sin costo. Incluye 24 controles post-operatorios. Es algo que ningún competidor ofrece en Colombia.",
+    "keyword": "!inv-garantia"
+  },
+  {
+    "name": "Innovart — Objección precio alto",
+    "text": "Entiendo que el presupuesto es importante. Te cuento que Innovart es la clínica más competitiva en precio en Colombia — estamos entre $6M y $8M COP vs otras clínicas que cobran $14M o más por el mismo procedimiento. Y sin sacrificar calidad: mismo médico, misma técnica, más controles incluidos.",
+    "keyword": "!inv-precio-obj"
+  },
+  {
+    "name": "Innovart — Agendar valoración",
+    "text": "Te invito a una valoración gratuita sin compromiso con el Dr. Fabián Carreño. En 30 minutos evaluamos tu caso y te decimos exactamente cuántos injertos necesitás y cuál es el costo real. ¿Qué día te queda mejor esta semana?",
+    "keyword": "!inv-agendar"
+  },
+  {
+    "name": "Innovart — Sede Bogotá",
+    "text": "Nuestra sede en Bogotá está en Cl. 116 No. 9-72, Consultorio 405 (norte de Bogotá, cerca al Parque 116). Atendemos de lunes a sábado. ¿Necesitás indicaciones de cómo llegar?",
+    "keyword": "!inv-sede-bog"
+  },
+  {
+    "name": "Innovart — FUE vs DHI explicación",
+    "text": "Las dos técnicas son excelentes para el trasplante capilar:\n• FUE: extracción folículo a folículo, sin cortes, mínima cicatriz. Ideal para áreas grandes.\n• DHI: implantación directa con pluma Choi, más denso y preciso. Ideal para áreas con algo de cabello existente.\nEl médico te recomienda cuál es mejor para tu caso en la valoración.",
+    "keyword": "!inv-fue-dhi"
+  },
+  {
+    "name": "Innovart — Tiempo de recuperación",
+    "text": "La recuperación es más rápida de lo que imaginás:\n• Día 0: vas a casa el mismo día\n• Días 1-7: pequeñas costras en zona donante/receptora (normal)\n• Día 14: puede caer el cabello trasplantado (shock loss) — es normal y esperado\n• Mes 3-4: empieza el crecimiento real\n• Mes 6-12: resultado final visible\nEl 90% de los pacientes vuelve al trabajo en 5-7 días.",
+    "keyword": "!inv-recuperacion"
+  },
+  {
+    "name": "Innovart — Lead caliente (seguimiento 24h)",
+    "text": "Hola {nombre}, ¿cómo estás? Quería saber si pudiste revisar la información que te enviamos ayer sobre el trasplante capilar. ¿Hay algo en lo que te pueda ampliar?",
+    "keyword": "!inv-follow24"
+  },
+  {
+    "name": "Innovart — Recordatorio valoración",
+    "text": "Hola {nombre} 👋 Solo un recordatorio de que mañana {dia} a las {hora} tenés tu valoración gratuita con el Dr. Carreño en nuestra sede de {ciudad}. Si necesitás reagendar, avisame con tiempo. ¡Te esperamos!",
+    "keyword": "!inv-recordatorio"
+  },
+  {
+    "name": "Innovart — Resultados 6 meses",
+    "text": "Los resultados de nuestros pacientes son visibles desde el mes 3, pero el resultado real se ve entre el mes 6 y 12. Tenemos pacientes con transformaciones increíbles que autorizaron compartir su evolución. ¿Querés que te mande algunos casos reales?",
+    "keyword": "!inv-resultados"
+  },
+  {
+    "name": "Innovart — Encabezado brief creativo",
+    "text": "**Brief Creativo Innovart Medical**\nFecha: {fecha}\nResponsable: {nombre}\nCampaña: \nObjetivo: \nAudiencia: \nÁngulo principal: \nFormato: \nCTA: \nNota de compliance: Los resultados varían según cada paciente.",
+    "keyword": "!inv-brief"
+  }
+]
