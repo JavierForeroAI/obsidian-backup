@@ -1,0 +1,7 @@
+.obsidian/workspace*
+.obsidian/cache
+.obsidian/graph-analysis-cache.json
+.trash/
+Diario/.logs/
+*.tmp
+.DS_Store

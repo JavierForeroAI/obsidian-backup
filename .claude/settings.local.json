@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__gohighlevel__ghl_get_pipelines",
+      "mcp__gohighlevel__ghl_get_opportunities",
+      "WebSearch",
+      "mcp__gohighlevel__ghl_get_calendars",
+      "mcp__gohighlevel__ghl_get_contacts",
+      "Bash(jq --version)"
+    ]
+  }
+}
