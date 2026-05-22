@@ -1,0 +1,619 @@
+- generic [ref=e12]:
+  - generic [ref=e15]:
+    - link "Biblioteca de anuncios de Meta" [ref=e18] [cursor=pointer]:
+      - /url: /ads/library/?source=fb-logo
+      - generic [ref=e20]: Biblioteca de anuncios de Meta
+    - generic [ref=e22]: Biblioteca de anuncios
+    - menuitem "Informe de la Biblioteca de anuncios" [ref=e24] [cursor=pointer]:
+      - generic [ref=e25]: Informe de la Biblioteca de anuncios
+    - menuitem "API de la Biblioteca de anuncios" [ref=e27] [cursor=pointer]:
+      - generic [ref=e28]: API de la Biblioteca de anuncios
+    - menuitem "Contenido de marca" [ref=e30] [cursor=pointer]:
+      - generic [ref=e31]: Contenido de marca
+    - menuitem "Open navigation panel" [ref=e33] [cursor=pointer]
+  - generic [ref=e40]:
+    - combobox "Colombia" [ref=e44] [cursor=pointer]:
+      - generic [ref=e51]: Colombia
+    - combobox "Todos los anuncios" [ref=e57] [cursor=pointer]:
+      - generic [ref=e67]: Todos los anuncios
+    - generic [ref=e77]:
+      - generic [ref=e83]: Buscar por palabra clave o anunciante
+      - generic [ref=e89]:
+        - searchbox "Buscar por palabra clave o anunciante" [ref=e95]: hero institute capilar
+        - button "Borrar" [ref=e97] [cursor=pointer]
+  - dialog [ref=e99]:
+    - generic [ref=e100]:
+      - link [ref=e101] [cursor=pointer]:
+        - /url: /
+        - heading [level=4] [ref=e102]: Iniciar sesión
+      - menuitem [ref=e103] [cursor=pointer]
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - heading [level=4] [ref=e108]: Biblioteca de anuncios
+        - menuitem [ref=e110] [cursor=pointer]:
+          - heading [level=4] [ref=e112]: Informe de la Biblioteca de anuncios
+        - menuitem [ref=e114] [cursor=pointer]:
+          - heading [level=4] [ref=e116]: API de la Biblioteca de anuncios
+        - menuitem [ref=e118] [cursor=pointer]:
+          - heading [level=4] [ref=e120]: Contenido de marca
+      - separator [ref=e121]
+      - generic [ref=e122]:
+        - menuitem [ref=e124] [cursor=pointer]:
+          - heading [level=4] [ref=e126]: Estado del sistema
+        - menuitem [ref=e128] [cursor=pointer]:
+          - heading [level=4] [ref=e130]: Suscribirse a novedades por correo electrónico
+        - menuitem [ref=e132] [cursor=pointer]:
+          - heading [level=4] [ref=e134]: Preguntas frecuentes
+        - menuitem [ref=e136] [cursor=pointer]:
+          - heading [level=4] [ref=e138]: Información sobre los anuncios y el uso de datos
+        - menuitem [ref=e140] [cursor=pointer]:
+          - heading [level=4] [ref=e142]: Privacidad
+        - menuitem [ref=e144] [cursor=pointer]:
+          - heading [level=4] [ref=e146]: Condiciones
+        - menuitem [ref=e148] [cursor=pointer]:
+          - heading [level=4] [ref=e150]: Cookies
+  - generic [ref=e151]:
+    - generic [ref=e185]:
+      - generic [ref=e191]:
+        - heading "~5 resultados" [level=3] [ref=e193]
+        - generic [ref=e195]:
+          - text: Estos resultados incluyen anuncios que coinciden con tu
+          - strong [ref=e196]: búsqueda de palabra clave.
+      - generic [ref=e197]:
+        - generic [ref=e206]:
+          - generic [ref=e207]:
+            - button "Filtros" [ref=e208] [cursor=pointer]:
+              - generic [ref=e213]: Filtros
+            - generic [ref=e215]:
+              - generic [ref=e221]: Ordenar
+              - combobox "Ordenar" [ref=e226] [cursor=pointer]:
+                - generic [ref=e233]: Ordenar por
+          - generic [ref=e238]:
+            - generic [ref=e239]:
+              - strong [ref=e240]: Estado activo
+              - text: ": Anuncios activos"
+            - button "Suprimir" [ref=e241] [cursor=pointer]:
+              - generic [ref=e244]: Suprimir
+        - generic [ref=e248]:
+          - generic [ref=e250]:
+            - generic [ref=e252]:
+              - generic [ref=e253]:
+                - generic [ref=e260]: Activo
+                - generic [ref=e263]: "Identificador de la biblioteca: 974453695307480"
+                - generic [ref=e265]: En circulación desde el 14 may. 2026
+                - generic [ref=e267]: Plataformas
+                - generic [ref=e286]: Este anuncio tiene varias versiones
+              - button "Abrir menú desplegable" [ref=e293] [cursor=pointer]:
+                - generic [ref=e296]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e299] [cursor=pointer]:
+              - generic [ref=e303]: Ver detalles del anuncio
+            - separator [ref=e304]
+            - generic [ref=e309]:
+              - generic [ref=e312]:
+                - img "HERO Hair Transplant Institute" [ref=e313]
+                - generic [ref=e315]:
+                  - link "HERO Hair Transplant Institute" [ref=e316] [cursor=pointer]:
+                    - /url: https://www.facebook.com/HEROInstitute/
+                  - generic [ref=e320]:
+                    - strong [ref=e322]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e324]:
+                - button "Resultados reales. Pacientes reales. Experiencia médica. En HERO Institute, la restauración capilar se trata como un procedimiento médico, guiado por especialistas y acompañado con seguimiento. Conoce historias reales de pacientes que decidieron recuperar su confianza con HERO." [ref=e327]:
+                  - generic [ref=e330]:
+                    - text: Resultados reales. Pacientes reales. Experiencia médica.
+                    - text: En HERO Institute, la restauración capilar se trata como un procedimiento médico, guiado por especialistas y acompañado con seguimiento.
+                    - text: Conoce historias reales de pacientes que decidieron recuperar su confianza con HERO.
+                - group "Video player" [ref=e340]:
+                  - button "Reproducir vídeo" [ref=e342] [cursor=pointer]
+                  - generic [ref=e344]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:21
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - link "WWW.HEROINSTITUTE.CO Historias reales HERO Restauración capilar con especialistas. Learn More" [ref=e346] [cursor=pointer]:
+                  - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.heroinstitute.co%2Fes-co%2Fresultados-trasplante-capilar&h=AUCVVp1A2L-Coa-nW2gdORqZ-s83STYZF_OmwJovbz36DIPUvgMveQxGLTK4hxvnFAgFyi8i8iJGOz4ILQytimfpZ8Ph1hDbPe9Tp8NBww51yXqJckcVgkK6yQ1VyE2sZuRxL9uSJZWXOQmVtkV7p2uzkos
+                  - generic [ref=e347]:
+                    - generic [ref=e348]:
+                      - button "WWW.HEROINSTITUTE.CO" [ref=e350]:
+                        - generic [ref=e351]: WWW.HEROINSTITUTE.CO
+                      - button "Historias reales HERO" [ref=e353]:
+                        - generic [ref=e354]: Historias reales HERO
+                      - button "Restauración capilar con especialistas." [ref=e356]:
+                        - generic [ref=e357]: Restauración capilar con especialistas.
+                      - generic:
+                        - button
+                    - button "Learn More" [ref=e359]:
+                      - generic [ref=e363]: Learn More
+          - generic [ref=e365]:
+            - generic [ref=e367]:
+              - generic [ref=e368]:
+                - generic [ref=e375]: Activo
+                - generic [ref=e378]: "Identificador de la biblioteca: 1757394102096765"
+                - generic [ref=e380]: En circulación desde el 14 may. 2026
+                - generic [ref=e382]: Plataformas
+              - button "Abrir menú desplegable" [ref=e401] [cursor=pointer]:
+                - generic [ref=e404]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e407] [cursor=pointer]:
+              - generic [ref=e411]: Ver detalles del anuncio
+            - separator [ref=e412]
+            - generic [ref=e417]:
+              - generic [ref=e420]:
+                - img "HERO Hair Transplant Institute" [ref=e421]
+                - generic [ref=e423]:
+                  - link "HERO Hair Transplant Institute" [ref=e424] [cursor=pointer]:
+                    - /url: https://www.facebook.com/HEROInstitute/
+                  - generic [ref=e428]:
+                    - strong [ref=e430]: Publicidad
+                    - generic:
+                      - strong
+              - button "Un trasplante capilar no se evalúa en días. Se evalúa con el tiempo, la evolución y la naturalidad del resultado. En HERO Institute Bogotá, el proceso inicia con una valoración médica con especialista para analizar tu caso y definir un plan realista." [ref=e435]:
+                - generic [ref=e438]:
+                  - text: Un trasplante capilar no se evalúa en días.
+                  - text: Se evalúa con el tiempo, la evolución y la naturalidad del resultado.
+                  - text: En HERO Institute Bogotá, el proceso inicia con una valoración médica con especialista para analizar tu caso y definir un plan realista.
+              - generic [ref=e440]:
+                - generic:
+                  - button [disabled]:
+                    - img
+                - generic [ref=e443]:
+                  - generic [ref=e447]:
+                    - group "Video player" [ref=e457]:
+                      - button "Reproducir vídeo" [ref=e459] [cursor=pointer]
+                      - generic [ref=e461]:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - button "Reproducir"
+                          - generic: 0:00 / 0:09
+                        - generic:
+                          - generic:
+                            - slider "Change Position"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - button "Configuración"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - button "Ir a pantalla completa"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - slider "Ajustar volumen"
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - button "Reactivar":
+                                    - img
+                    - link "FB.ME Learn More" [ref=e463] [cursor=pointer]:
+                      - /url: https://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUCVVp1A2L-Coa-nW2gdORqZ-s83STYZF_OmwJovbz36DIPUvgMveQxGLTK4hxvnFAgFyi8i8iJGOz4ILQytimfpZ8Ph1hDbPe9Tp8NBww51yXqJckcVgkK6yQ1VyE2sZuRxL9uSJZWXOQmVtkV7p2uzkos
+                      - generic [ref=e464]:
+                        - generic [ref=e465]:
+                          - button "FB.ME" [ref=e467]:
+                            - generic [ref=e468]: FB.ME
+                          - generic:
+                            - button
+                          - generic:
+                            - button
+                          - generic:
+                            - button
+                        - button "Learn More" [disabled] [ref=e470]:
+                          - generic [ref=e474]: Learn More
+                  - generic [ref=e478]:
+                    - group "Video player" [ref=e488]:
+                      - button "Reproducir vídeo" [ref=e490] [cursor=pointer]
+                      - generic [ref=e492]:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - button "Reproducir"
+                          - generic: 0:00 / 0:16
+                        - generic:
+                          - generic:
+                            - slider "Change Position"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - button "Configuración"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - button "Ir a pantalla completa"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - slider "Ajustar volumen"
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - button "Reactivar":
+                                    - img
+                    - link "FB.ME Learn More" [ref=e494] [cursor=pointer]:
+                      - /url: https://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUCVVp1A2L-Coa-nW2gdORqZ-s83STYZF_OmwJovbz36DIPUvgMveQxGLTK4hxvnFAgFyi8i8iJGOz4ILQytimfpZ8Ph1hDbPe9Tp8NBww51yXqJckcVgkK6yQ1VyE2sZuRxL9uSJZWXOQmVtkV7p2uzkos
+                      - generic [ref=e495]:
+                        - generic [ref=e496]:
+                          - button "FB.ME" [ref=e498]:
+                            - generic [ref=e499]: FB.ME
+                          - generic:
+                            - button
+                          - generic:
+                            - button
+                          - generic:
+                            - button
+                        - button "Learn More" [disabled] [ref=e501]:
+                          - generic [ref=e505]: Learn More
+                  - generic [ref=e509]:
+                    - group [ref=e519]:
+                      - button [ref=e521] [cursor=pointer]
+                      - generic [ref=e523]:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - button
+                          - generic: 0:00 / 0:16
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - button
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - button
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - slider
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - button:
+                                    - img
+                    - link [ref=e525] [cursor=pointer]:
+                      - /url: https://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUCVVp1A2L-Coa-nW2gdORqZ-s83STYZF_OmwJovbz36DIPUvgMveQxGLTK4hxvnFAgFyi8i8iJGOz4ILQytimfpZ8Ph1hDbPe9Tp8NBww51yXqJckcVgkK6yQ1VyE2sZuRxL9uSJZWXOQmVtkV7p2uzkos
+                      - generic [ref=e526]:
+                        - button [ref=e529]:
+                          - generic [ref=e530]: FB.ME
+                        - button [disabled] [ref=e532]:
+                          - generic [ref=e536]: Learn More
+                - button "Elementos siguientes" [ref=e538] [cursor=pointer]:
+                  - img [ref=e539]
+          - generic [ref=e542]:
+            - generic [ref=e544]:
+              - generic [ref=e545]:
+                - generic [ref=e552]: Activo
+                - generic [ref=e555]: "Identificador de la biblioteca: 984925574228995"
+                - generic [ref=e557]: En circulación desde el 14 may. 2026
+                - generic [ref=e559]: Plataformas
+              - button "Abrir menú desplegable" [ref=e578] [cursor=pointer]:
+                - generic [ref=e581]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e584] [cursor=pointer]:
+              - generic [ref=e588]: Ver detalles del anuncio
+            - separator [ref=e589]
+            - generic [ref=e594]:
+              - generic [ref=e596]:
+                - img "HERO Hair Transplant Institute" [ref=e597]
+                - generic [ref=e599]:
+                  - link "HERO Hair Transplant Institute" [ref=e600] [cursor=pointer]:
+                    - /url: https://www.facebook.com/HEROInstitute/
+                  - generic [ref=e604]:
+                    - strong [ref=e606]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e607]:
+                - button "Un trasplante capilar no se evalúa en días. Se evalúa con el tiempo, la evolución y la naturalidad del resultado. En HERO Institute Bogotá, el proceso inicia con una valoración médica con especialista para analizar tu caso y definir un plan realista." [ref=e610]:
+                  - generic [ref=e613]:
+                    - text: Un trasplante capilar no se evalúa en días.
+                    - text: Se evalúa con el tiempo, la evolución y la naturalidad del resultado.
+                    - text: En HERO Institute Bogotá, el proceso inicia con una valoración médica con especialista para analizar tu caso y definir un plan realista.
+                - group "Video player" [ref=e623]:
+                  - button "Reproducir vídeo" [ref=e625] [cursor=pointer]
+                  - generic [ref=e627]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:09
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - link "FB.ME Valoración médica en Bogotá Agenda tu valoración médica. Más información" [ref=e629] [cursor=pointer]:
+                  - /url: https://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUCVVp1A2L-Coa-nW2gdORqZ-s83STYZF_OmwJovbz36DIPUvgMveQxGLTK4hxvnFAgFyi8i8iJGOz4ILQytimfpZ8Ph1hDbPe9Tp8NBww51yXqJckcVgkK6yQ1VyE2sZuRxL9uSJZWXOQmVtkV7p2uzkos
+                  - generic [ref=e630]:
+                    - generic [ref=e631]:
+                      - button "FB.ME" [ref=e633]:
+                        - generic [ref=e634]: FB.ME
+                      - button "Valoración médica en Bogotá" [ref=e636]:
+                        - generic [ref=e637]: Valoración médica en Bogotá
+                      - button "Agenda tu valoración médica." [ref=e639]:
+                        - generic [ref=e640]: Agenda tu valoración médica.
+                      - generic:
+                        - button
+                    - button "Más información" [disabled] [ref=e642]:
+                      - generic [ref=e646]: Más información
+          - generic [ref=e648]:
+            - generic [ref=e650]:
+              - generic [ref=e651]:
+                - generic [ref=e653]:
+                  - generic [ref=e658]: Activo
+                  - generic [ref=e660]: Número de impresiones bajo
+                - generic [ref=e667]: "Identificador de la biblioteca: 1684025596354206"
+                - generic [ref=e669]: En circulación desde el 15 may. 2026
+                - generic [ref=e671]: Plataformas
+                - generic [ref=e699]:
+                  - text: "Impresiones:"
+                  - strong [ref=e700]: <100
+              - button "Abrir menú desplegable" [ref=e706] [cursor=pointer]:
+                - generic [ref=e709]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e712] [cursor=pointer]:
+              - generic [ref=e716]: Ver detalles del anuncio
+            - separator [ref=e717]
+            - generic [ref=e722]:
+              - generic [ref=e725]:
+                - img "HERO Hair Transplant Institute" [ref=e726]
+                - generic [ref=e728]:
+                  - link "HERO Hair Transplant Institute" [ref=e729] [cursor=pointer]:
+                    - /url: https://www.facebook.com/HEROInstitute/
+                  - generic [ref=e733]:
+                    - strong [ref=e735]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e737]:
+                - button "No se trata solo de resultados estéticos, sino de transformar tu vida. Conoce el Método HERO y descubre por qué somos líderes en trasplante capilar." [ref=e740]:
+                  - generic [ref=e742]: No se trata solo de resultados estéticos, sino de transformar tu vida. Conoce el Método HERO y descubre por qué somos líderes en trasplante capilar.
+                - generic [ref=e744]: Número de impresiones bajo
+              - generic [ref=e746]:
+                - generic:
+                  - button [disabled]:
+                    - img
+                - generic [ref=e749]:
+                  - generic [ref=e753]:
+                    - link "FB.COM ¡Hablemos! Descubre cómo el Método HERO, con 8 pilares fundamentales, transforma tu imagen y aumenta tu confianza. ¡Revisa cada paso en nuestro carousel! Get Quote" [ref=e754] [cursor=pointer]:
+                      - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Ffb.com%2Fmessenger_doc%2F&h=AUCVVp1A2L-Coa-nW2gdORqZ-s83STYZF_OmwJovbz36DIPUvgMveQxGLTK4hxvnFAgFyi8i8iJGOz4ILQytimfpZ8Ph1hDbPe9Tp8NBww51yXqJckcVgkK6yQ1VyE2sZuRxL9uSJZWXOQmVtkV7p2uzkos
+                      - generic [ref=e756]:
+                        - generic [ref=e757]:
+                          - button "FB.COM" [ref=e759]:
+                            - generic [ref=e760]: FB.COM
+                          - button "¡Hablemos!" [ref=e762]:
+                            - generic [ref=e763]: ¡Hablemos!
+                          - button "Descubre cómo el Método HERO, con 8 pilares fundamentales, transforma tu imagen y aumenta tu confianza. ¡Revisa cada paso en nuestro carousel!" [ref=e765]:
+                            - generic [ref=e766]: Descubre cómo el Método HERO, con 8 pilares fundamentales, transforma tu imagen y aumenta tu confianza. ¡Revisa cada paso en nuestro carousel!
+                          - generic:
+                            - button
+                        - button "Get Quote" [ref=e768]:
+                          - generic [ref=e772]: Get Quote
+                    - button "Descubre cómo el Método HERO, con 8 pilares fundamentales, transforma tu imagen y aumenta tu confianza. ¡Revisa cada paso en nuestro carousel!" [ref=e775]:
+                      - generic [ref=e777]: Descubre cómo el Método HERO, con 8 pilares fundamentales, transforma tu imagen y aumenta tu confianza. ¡Revisa cada paso en nuestro carousel!
+                  - generic [ref=e781]:
+                    - link "FB.COM ¡Hablemos! Descubre cómo el Método HERO, con 8 pilares fundamentales, transforma tu imagen y aumenta tu confianza. ¡Revisa cada paso en nuestro carousel! Get Quote" [ref=e782] [cursor=pointer]:
+                      - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Ffb.com%2Fmessenger_doc%2F&h=AUCVVp1A2L-Coa-nW2gdORqZ-s83STYZF_OmwJovbz36DIPUvgMveQxGLTK4hxvnFAgFyi8i8iJGOz4ILQytimfpZ8Ph1hDbPe9Tp8NBww51yXqJckcVgkK6yQ1VyE2sZuRxL9uSJZWXOQmVtkV7p2uzkos
+                      - generic [ref=e784]:
+                        - generic [ref=e785]:
+                          - button "FB.COM" [ref=e787]:
+                            - generic [ref=e788]: FB.COM
+                          - button "¡Hablemos!" [ref=e790]:
+                            - generic [ref=e791]: ¡Hablemos!
+                          - button "Descubre cómo el Método HERO, con 8 pilares fundamentales, transforma tu imagen y aumenta tu confianza. ¡Revisa cada paso en nuestro carousel!" [ref=e793]:
+                            - generic [ref=e794]: Descubre cómo el Método HERO, con 8 pilares fundamentales, transforma tu imagen y aumenta tu confianza. ¡Revisa cada paso en nuestro carousel!
+                          - generic:
+                            - button
+                        - button "Get Quote" [ref=e796]:
+                          - generic [ref=e800]: Get Quote
+                    - button "Descubre cómo el Método HERO, con 8 pilares fundamentales, transforma tu imagen y aumenta tu confianza. ¡Revisa cada paso en nuestro carousel!" [ref=e803]:
+                      - generic [ref=e805]: Descubre cómo el Método HERO, con 8 pilares fundamentales, transforma tu imagen y aumenta tu confianza. ¡Revisa cada paso en nuestro carousel!
+                  - generic [ref=e809]:
+                    - link [ref=e810] [cursor=pointer]:
+                      - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Ffb.com%2Fmessenger_doc%2F&h=AUCVVp1A2L-Coa-nW2gdORqZ-s83STYZF_OmwJovbz36DIPUvgMveQxGLTK4hxvnFAgFyi8i8iJGOz4ILQytimfpZ8Ph1hDbPe9Tp8NBww51yXqJckcVgkK6yQ1VyE2sZuRxL9uSJZWXOQmVtkV7p2uzkos
+                      - generic [ref=e812]:
+                        - generic [ref=e813]:
+                          - button [ref=e815]:
+                            - generic [ref=e816]: FB.COM
+                          - button [ref=e818]:
+                            - generic [ref=e819]: ¡Hablemos!
+                          - button [ref=e821]:
+                            - generic [ref=e822]: Descubre cómo el Método HERO, con 8 pilares fundamentales, transforma tu imagen y aumenta tu confianza. ¡Revisa cada paso en nuestro carousel!
+                        - button [ref=e824]:
+                          - generic [ref=e828]: Get Quote
+                    - button [ref=e831]:
+                      - generic [ref=e833]: Descubre cómo el Método HERO, con 8 pilares fundamentales, transforma tu imagen y aumenta tu confianza. ¡Revisa cada paso en nuestro carousel!
+                  - generic [ref=e837]:
+                    - link [ref=e838] [cursor=pointer]:
+                      - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Ffb.com%2Fmessenger_doc%2F&h=AUCVVp1A2L-Coa-nW2gdORqZ-s83STYZF_OmwJovbz36DIPUvgMveQxGLTK4hxvnFAgFyi8i8iJGOz4ILQytimfpZ8Ph1hDbPe9Tp8NBww51yXqJckcVgkK6yQ1VyE2sZuRxL9uSJZWXOQmVtkV7p2uzkos
+                      - generic [ref=e840]:
+                        - generic [ref=e841]:
+                          - button [ref=e843]:
+                            - generic [ref=e844]: FB.COM
+                          - button [ref=e846]:
+                            - generic [ref=e847]: ¡Hablemos!
+                          - button [ref=e849]:
+                            - generic [ref=e850]: Descubre cómo el Método HERO, con 8 pilares fundamentales, transforma tu imagen y aumenta tu confianza. ¡Revisa cada paso en nuestro carousel!
+                        - button [ref=e852]:
+                          - generic [ref=e856]: Get Quote
+                    - button [ref=e859]:
+                      - generic [ref=e861]: Descubre cómo el Método HERO, con 8 pilares fundamentales, transforma tu imagen y aumenta tu confianza. ¡Revisa cada paso en nuestro carousel!
+                  - generic [ref=e865]:
+                    - link [ref=e866] [cursor=pointer]:
+                      - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Ffb.com%2Fmessenger_doc%2F&h=AUCVVp1A2L-Coa-nW2gdORqZ-s83STYZF_OmwJovbz36DIPUvgMveQxGLTK4hxvnFAgFyi8i8iJGOz4ILQytimfpZ8Ph1hDbPe9Tp8NBww51yXqJckcVgkK6yQ1VyE2sZuRxL9uSJZWXOQmVtkV7p2uzkos
+                      - generic [ref=e868]:
+                        - generic [ref=e869]:
+                          - button [ref=e871]:
+                            - generic [ref=e872]: FB.COM
+                          - button [ref=e874]:
+                            - generic [ref=e875]: ¡Hablemos!
+                          - button [ref=e877]:
+                            - generic [ref=e878]: Descubre cómo el Método HERO, con 8 pilares fundamentales, transforma tu imagen y aumenta tu confianza. ¡Revisa cada paso en nuestro carousel!
+                        - button [ref=e880]:
+                          - generic [ref=e884]: Get Quote
+                    - button [ref=e887]:
+                      - generic [ref=e889]: Descubre cómo el Método HERO, con 8 pilares fundamentales, transforma tu imagen y aumenta tu confianza. ¡Revisa cada paso en nuestro carousel!
+                - button "Elementos siguientes" [ref=e891] [cursor=pointer]:
+                  - img [ref=e892]
+          - generic [ref=e895]:
+            - generic [ref=e897]:
+              - generic [ref=e898]:
+                - generic [ref=e900]:
+                  - generic [ref=e905]: Activo
+                  - generic [ref=e907]: Número de impresiones bajo
+                - generic [ref=e914]: "Identificador de la biblioteca: 26565548169812669"
+                - generic [ref=e916]: "En circulación desde el 19 may. 2026 · Tiempo de actividad total: 19 h"
+                - generic [ref=e918]: Plataformas
+                - generic [ref=e946]:
+                  - text: "Impresiones:"
+                  - strong [ref=e947]: <100
+              - button "Abrir menú desplegable" [ref=e953] [cursor=pointer]:
+                - generic [ref=e956]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e959] [cursor=pointer]:
+              - generic [ref=e963]: Ver detalles del anuncio
+            - separator [ref=e964]
+            - generic [ref=e969]:
+              - generic [ref=e971]:
+                - img "HERO Hair Transplant Institute" [ref=e972]
+                - generic [ref=e974]:
+                  - link "HERO Hair Transplant Institute" [ref=e975] [cursor=pointer]:
+                    - /url: https://www.facebook.com/HEROInstitute/
+                  - generic [ref=e979]:
+                    - strong [ref=e981]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e982]:
+                - button "Si llegaste hasta aquí, es porque estás considerando un trasplante capilar. El siguiente paso no es operarte, es hablar con un asesor que te ayude a coordinar una valoración médica paga con un cirujano especialista." [ref=e985]:
+                  - generic [ref=e988]:
+                    - text: Si llegaste hasta aquí, es porque estás considerando un trasplante capilar.
+                    - text: El siguiente paso no es operarte, es hablar con un asesor que te ayude a coordinar una valoración médica paga con un cirujano especialista.
+                - generic [ref=e990]: Número de impresiones bajo
+                - group "Video player" [ref=e1000]:
+                  - button "Reproducir vídeo" [ref=e1002] [cursor=pointer]
+                  - generic [ref=e1004]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:23
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - generic [ref=e1005]:
+                  - generic [ref=e1006]:
+                    - button "API.WHATSAPP.COM" [ref=e1008]:
+                      - generic [ref=e1009]: API.WHATSAPP.COM
+                    - button "El siguiente paso no es operarte" [ref=e1011]:
+                      - generic [ref=e1012]: El siguiente paso no es operarte
+                    - button "Bogotá y Medellín · Valoración médica" [ref=e1014]:
+                      - generic [ref=e1015]: Bogotá y Medellín · Valoración médica
+                    - generic:
+                      - button
+                  - button "Enviar mensaje de WhatsApp" [disabled] [ref=e1017]:
+                    - generic [ref=e1021]: Enviar mensaje de WhatsApp
+    - generic [ref=e153]:
+      - generic [ref=e161]: Estado del sistema
+      - generic [ref=e165]:
+        - list [ref=e166]:
+          - listitem [ref=e167]:
+            - heading "API de la Biblioteca de anuncios" [level=3] [ref=e168]:
+              - link "API de la Biblioteca de anuncios" [ref=e169] [cursor=pointer]:
+                - /url: /ads/library/api/?source=archive-landing-page
+          - listitem [ref=e170]:
+            - heading "Información sobre los anuncios y el uso de datos" [level=3] [ref=e171]:
+              - link "Información sobre los anuncios y el uso de datos" [ref=e172] [cursor=pointer]:
+                - /url: /ads/about/?entry_product=ad_library
+          - listitem [ref=e173]:
+            - heading "Privacidad" [level=3] [ref=e174]:
+              - link "Privacidad" [ref=e175] [cursor=pointer]:
+                - /url: /privacy/center/?entry_point=privacy_basics_redirect
+          - listitem [ref=e176]:
+            - heading "Condiciones" [level=3] [ref=e177]:
+              - link "Condiciones" [ref=e178] [cursor=pointer]:
+                - /url: /policies/
+          - listitem [ref=e179]:
+            - heading "Cookies" [level=3] [ref=e180]:
+              - link "Cookies" [ref=e181] [cursor=pointer]:
+                - /url: /policies/cookies/
+        - heading "Meta © 2026 | Español (España)" [level=3] [ref=e183]:
+          - text: Meta © 2026 |
+          - link "Español (España)" [ref=e184] [cursor=pointer]:
+            - /url: /language/

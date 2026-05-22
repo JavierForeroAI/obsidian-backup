@@ -1,0 +1,58 @@
+- generic "Google Maps" [ref=e2]:
+  - generic [ref=e3]:
+    - application "Mapa·Usa las teclas de flecha para desplazarte por el mapa.·Obtén información sobre un sitio pulsando la tecla numérica correspondiente." [ref=e8]
+    - search [ref=e14]:
+      - generic [ref=e15]:
+        - combobox [ref=e17]
+        - button "Búsqueda" [ref=e19] [cursor=pointer]:
+          - generic [ref=e20]: 
+        - button "Cómo llegar" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]: 
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - list [ref=e27]:
+          - listitem [ref=e28]:
+            - button "Menú" [ref=e29] [cursor=pointer]:
+              - generic [ref=e31]: 
+          - listitem [ref=e32]:
+            - button "Guardado" [ref=e33] [cursor=pointer]:
+              - generic [ref=e35]: 
+              - generic [ref=e37]: Guardado
+          - listitem [ref=e38]:
+            - button "Recientes" [disabled] [ref=e39]:
+              - generic [ref=e41]: 
+              - generic [ref=e43]: Recientes
+          - listitem [ref=e45]:
+            - button "Descargar aplicación" [ref=e46] [cursor=pointer]:
+              - generic [ref=e48]: 
+              - generic [ref=e50]: Descargar aplicación
+        - main [ref=e55]:
+          - img [ref=e59]
+          - generic [ref=e62]:
+            - generic:
+              - heading [level=1]
+          - region "Acciones para" [ref=e65]:
+            - button "Cómo llegar" [active] [ref=e67] [cursor=pointer]:
+              - generic [ref=e69]: 
+              - generic [ref=e70]: Cómo llegar
+            - button "Guardar" [ref=e72] [cursor=pointer]:
+              - generic [ref=e74]: 
+              - generic [ref=e75]: Guardar
+            - button "Cercano" [ref=e77] [cursor=pointer]:
+              - generic [ref=e79]: 
+              - generic [ref=e80]: Cercano
+            - button "Enviar al teléfono" [ref=e82] [cursor=pointer]:
+              - generic [ref=e84]: 
+              - generic [ref=e85]: Enviar al teléfono
+            - button "Compartir" [ref=e87] [cursor=pointer]:
+              - generic [ref=e89]: 
+              - generic [ref=e90]: Compartir
+          - link "Acerca de estos datos" [ref=e97] [cursor=pointer]:
+            - /url: https://support.google.com/local-listings?p=how_google_sources&authuser=0&hl=es
+            - generic [ref=e99]: Acerca de estos datos
+          - heading "Saca el máximo partido de Google Maps Iniciar sesión" [level=2] [ref=e103]:
+            - generic [ref=e104]: Saca el máximo partido de Google Maps
+            - button "Iniciar sesión" [ref=e107] [cursor=pointer]:
+              - generic [ref=e109]: Iniciar sesión
+      - button "Ocultar el panel lateral" [ref=e111] [cursor=pointer]:
+        - generic [ref=e112]: 

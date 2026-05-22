@@ -1,0 +1,187 @@
+- generic "Google Maps" [ref=e9]:
+  - generic [ref=e3]:
+    - application "Mapa·Usa las teclas de flecha para desplazarte por el mapa.·Obtén información sobre un sitio pulsando la tecla numérica correspondiente." [ref=e10]
+    - search [ref=e15]:
+      - generic [ref=e16]:
+        - combobox [ref=e18]: DHI Colombia Bogotá trasplante capilar
+        - button "Búsqueda" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: 
+        - button "Cerrar" [ref=e23] [cursor=pointer]:
+          - generic [ref=e24]: 
+    - region "Filtros disponibles para esta búsqueda" [ref=e31]:
+      - generic [ref=e34]:
+        - button "Valoración" [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]:
+            - generic [ref=e38]: 
+            - generic [ref=e39]: Valoración
+            - generic [ref=e40]: 
+        - button "Horario" [ref=e42] [cursor=pointer]:
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Horario
+            - generic [ref=e46]: 
+        - button "Todos los filtros" [ref=e48] [cursor=pointer]:
+          - generic [ref=e49]:
+            - generic [ref=e50]: 
+            - generic [ref=e51]: Todos los filtros
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - list [ref=e55]:
+          - listitem [ref=e56]:
+            - button "Menú" [ref=e57] [cursor=pointer]:
+              - generic [ref=e59]: 
+          - listitem [ref=e60]:
+            - button "Guardado" [ref=e61] [cursor=pointer]:
+              - generic [ref=e63]: 
+              - generic [ref=e65]: Guardado
+          - listitem [ref=e66]:
+            - button "Recientes" [disabled] [ref=e67]:
+              - generic [ref=e69]: 
+              - generic [ref=e71]: Recientes
+          - listitem [ref=e73]:
+            - button "Descargar aplicación" [ref=e74] [cursor=pointer]:
+              - generic [ref=e76]: 
+              - generic [ref=e78]: Descargar aplicación
+        - main [ref=e83]:
+          - generic [ref=e84]:
+            - feed "Resultados de DHI Colombia Bogotá trasplante capilar" [ref=e85]:
+              - generic [ref=e86]:
+                - generic [ref=e88]:
+                  - heading "Resultados" [level=1] [ref=e89]
+                  - button "Más información sobre los avisos legales en relación con las reseñas públicas en Google Maps" [ref=e93]:
+                    - generic [ref=e97]: 
+                - button "Compartir" [ref=e101]:
+                  - generic [ref=e102] [cursor=pointer]:
+                    - generic [ref=e103]: 
+                    - generic [ref=e104]: Compartir
+              - article "DHI Bogotá DC, Unicentro, GRADECO" [ref=e106]:
+                - link "DHI Bogotá DC, Unicentro, GRADECO" [ref=e107] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/DHI+Bogot%C3%A1+DC,+Unicentro,+GRADECO/data=!4m7!3m6!1s0x8e3f9b7c41a4d1bf:0x93b67ebba2fa6099!8m2!3d4.7043142!4d-74.0416983!16s%2Fg%2F11hfstvwxk!19sChIJv9GkQXybP44RmWD6ort-tpM?authuser=0&hl=es&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: DHI Bogotá DC, Unicentro, GRADECO
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "4,1 estrellas": 4,1
+                            - generic:
+                              - generic:
+                                - generic: Clínica especializada
+                                - generic:
+                                  - text: ·
+                                  - img "Accesible con silla de ruedas" [ref=e108] [cursor=pointer]:
+                                    - generic [ref=e109]: 
+                                - generic: "· Gradeco Business Plaza, Ac 127 #14 - 54 OF. 616"
+                              - generic:
+                                - generic:
+                                  - generic: Abierto · Cierra a las 6 p. m.
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+              - article "DHI Sede Bucaramanga" [ref=e112]:
+                - link "DHI Sede Bucaramanga" [ref=e113] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/DHI+Sede+Bucaramanga/data=!4m7!3m6!1s0x8e683f26ecc5cf25:0x675b544f913b8f3e!8m2!3d7.1001232!4d-73.1076525!16s%2Fg%2F11xmn8r_hq!19sChIJJc_F7CY_aI4RPo87kU9UW2c?authuser=0&hl=es&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: DHI Sede Bucaramanga
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "4,7 estrellas": 4,7
+                            - generic:
+                              - generic:
+                                - generic: Clínica especializada
+                                - generic: · Tv 93
+                              - generic:
+                                - generic:
+                                  - generic: Abierto · Cierra a las 7:30 p. m.
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+              - article "DHI Bogotá, Salitre Capital" [ref=e116]:
+                - link "DHI Bogotá, Salitre Capital" [ref=e117] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/DHI+Bogot%C3%A1,+Salitre+Capital/data=!4m7!3m6!1s0x8e3f9b2340e320c9:0xc41515eec2025949!8m2!3d4.6586933!4d-74.1076095!16s%2Fg%2F11kl1w8333!19sChIJySDjQCObP44RSVkCwu4VFcQ?authuser=0&hl=es&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: DHI Bogotá, Salitre Capital
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "4,3 estrellas": 4,3
+                            - generic:
+                              - generic:
+                                - generic: Clínica especializada
+                                - generic:
+                                  - text: ·
+                                  - img "Accesible con silla de ruedas" [ref=e118] [cursor=pointer]:
+                                    - generic [ref=e119]: 
+                                - generic: "· Av. El Dorado #69A – 51 Torre B, Piso 7"
+                              - generic:
+                                - generic:
+                                  - generic: Abierto · Cierra a las 7 p. m.
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+              - paragraph [ref=e122]:
+                - generic [ref=e123]: Has llegado al final de la lista.
+              - generic [ref=e126]:
+                - generic [ref=e128]: 
+                - generic [ref=e129]:
+                  - text: Estás en una vista limitada de Google Maps.
+                  - button "Más información sobre la vista limitada" [ref=e130] [cursor=pointer]: Más información
+              - heading "Saca el máximo partido de Google Maps Iniciar sesión" [level=2] [ref=e134]:
+                - generic [ref=e135]: Saca el máximo partido de Google Maps
+                - button "Iniciar sesión" [ref=e138] [cursor=pointer]:
+                  - generic [ref=e140]: Iniciar sesión
+            - checkbox "Actualizar los resultados al mover el mapa" [ref=e143] [cursor=pointer]:
+              - generic [ref=e145]: 
+              - text: Actualizar los resultados al mover el mapa
+      - generic [ref=e146]:
+        - button "Ocultar el panel lateral" [ref=e147] [cursor=pointer]:
+          - generic [ref=e148]: 
+        - generic [ref=e149]: Ocultar el panel lateral
+    - generic [ref=e153]:
+      - button "Aplicaciones de Google" [ref=e157] [cursor=pointer]:
+        - img [ref=e158]
+      - link "Iniciar sesión" [ref=e161] [cursor=pointer]:
+        - /url: https://accounts.google.com/ServiceLogin?hl=es&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2FDHI%2BColombia%2BBogot%25C3%25A1%2Btrasplante%2Bcapilar%2F%405.8794082%2C-73.607631%2C8z%2Fdata%3D!3m1!4b1%3Fved%3D1t%253A314688&service=local&ec=GAZAcQ
+    - generic:
+      - generic:
+        - button "Mostrar tu ubicación" [ref=e164] [cursor=pointer]:
+          - generic [ref=e166]: 
+        - generic [ref=e168] [cursor=pointer]:
+          - button "Ampliar" [ref=e169]
+          - button "Reducir" [ref=e172]
+      - button "Ver imágenes de Street View" [ref=e180]
+      - generic [ref=e182]:
+        - generic "Mapa interactivo" [ref=e183]
+        - generic [ref=e187] [cursor=pointer]:
+          - generic [ref=e188]: 
+          - generic [ref=e189]: Capas
+        - button "Capas" [ref=e190] [cursor=pointer]
+    - generic [ref=e192]:
+      - contentinfo [ref=e195]:
+        - text: Imágenes ©2026 , Datos del mapa ©2026
+        - button "Colombia" [ref=e196] [cursor=pointer]
+        - button "Términos" [ref=e197] [cursor=pointer]
+        - button "Privacidad" [ref=e198] [cursor=pointer]
+        - button "Enviar comentarios sobre el producto" [ref=e199] [cursor=pointer]
+      - button "50 km" [ref=e201] [cursor=pointer]: 50 km

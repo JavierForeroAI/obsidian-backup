@@ -1,0 +1,119 @@
+- generic "Google Maps" [ref=e2]:
+  - generic [ref=e3]:
+    - application "Mapa·Usa las teclas de flecha para desplazarte por el mapa.·Obtén información sobre un sitio pulsando la tecla numérica correspondiente." [ref=e8]
+    - search [ref=e14]:
+      - generic [ref=e15]:
+        - combobox [ref=e17]
+        - button "Búsqueda" [ref=e19] [cursor=pointer]:
+          - generic [ref=e20]: 
+        - button "Cómo llegar" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]: 
+    - region "Opciones de búsqueda disponibles en esta zona" [ref=e120]:
+      - generic [ref=e123]:
+        - button "Restaurantes" [ref=e125] [cursor=pointer]:
+          - generic [ref=e126]:
+            - generic [ref=e128]: 
+            - generic [ref=e129]: Restaurantes
+        - button "Hoteles" [ref=e131] [cursor=pointer]:
+          - generic [ref=e132]:
+            - generic [ref=e134]: 
+            - generic [ref=e135]: Hoteles
+        - button "Qué hacer" [ref=e137] [cursor=pointer]:
+          - generic [ref=e138]:
+            - generic [ref=e140]: 
+            - generic [ref=e141]: Qué hacer
+        - button "Transporte público" [ref=e143] [cursor=pointer]:
+          - generic [ref=e144]:
+            - generic [ref=e146]: 
+            - generic [ref=e147]: Transporte público
+        - button "Aparcamientos" [ref=e149] [cursor=pointer]:
+          - generic [ref=e150]:
+            - generic [ref=e152]: 
+            - generic [ref=e153]: Aparcamientos
+        - button "Farmacias" [ref=e155] [cursor=pointer]:
+          - generic [ref=e156]:
+            - generic [ref=e158]: 
+            - generic [ref=e159]: Farmacias
+        - button "Cajeros automáticos" [ref=e161] [cursor=pointer]:
+          - generic [ref=e162]:
+            - generic [ref=e164]: 
+            - generic [ref=e165]: Cajeros automáticos
+      - button "Página siguiente" [ref=e166] [cursor=pointer]:
+        - generic [ref=e167]: 
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - list [ref=e27]:
+          - listitem [ref=e28]:
+            - button "Menú" [ref=e29] [cursor=pointer]:
+              - generic [ref=e31]: 
+          - listitem [ref=e32]:
+            - button "Guardado" [ref=e33] [cursor=pointer]:
+              - generic [ref=e35]: 
+              - generic [ref=e37]: Guardado
+          - listitem [ref=e38]:
+            - button "Recientes" [ref=e39] [cursor=pointer]:
+              - generic [ref=e41]: 
+              - generic [ref=e43]: Recientes
+          - listitem [ref=e169]:
+            - button [ref=e170] [cursor=pointer]
+          - listitem [ref=e45]:
+            - button "Descargar aplicación" [ref=e46] [cursor=pointer]:
+              - generic [ref=e48]: 
+              - generic [ref=e50]: Descargar aplicación
+        - main [ref=e55]:
+          - img [ref=e59]
+          - generic [ref=e62]:
+            - generic:
+              - heading [level=1]
+          - region "Acciones para" [ref=e65]:
+            - button "Cómo llegar" [active] [ref=e67] [cursor=pointer]:
+              - generic [ref=e69]: 
+              - generic [ref=e70]: Cómo llegar
+            - button "Guardar" [ref=e72] [cursor=pointer]:
+              - generic [ref=e74]: 
+              - generic [ref=e75]: Guardar
+            - button "Cercano" [ref=e77] [cursor=pointer]:
+              - generic [ref=e79]: 
+              - generic [ref=e80]: Cercano
+            - button "Enviar al teléfono" [ref=e82] [cursor=pointer]:
+              - generic [ref=e84]: 
+              - generic [ref=e85]: Enviar al teléfono
+            - button "Compartir" [ref=e87] [cursor=pointer]:
+              - generic [ref=e89]: 
+              - generic [ref=e90]: Compartir
+          - link "Acerca de estos datos" [ref=e97] [cursor=pointer]:
+            - /url: https://support.google.com/local-listings?p=how_google_sources&authuser=0&hl=es
+            - generic [ref=e99]: Acerca de estos datos
+          - heading "Saca el máximo partido de Google Maps Iniciar sesión" [level=2] [ref=e103]:
+            - generic [ref=e104]: Saca el máximo partido de Google Maps
+            - button "Iniciar sesión" [ref=e107] [cursor=pointer]:
+              - generic [ref=e109]: Iniciar sesión
+      - button "Ocultar el panel lateral" [ref=e111] [cursor=pointer]:
+        - generic [ref=e112]: 
+    - generic [ref=e178]:
+      - button "Aplicaciones de Google" [ref=e182] [cursor=pointer]:
+        - img [ref=e183]
+      - link "Iniciar sesión" [ref=e186] [cursor=pointer]:
+        - /url: https://accounts.google.com/ServiceLogin?hl=es&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fmaps%2Fplace%2F%2F%407.077888%2C-73.105408%2C13z%2Fdata%3D!3m1!4b1%3Fved%3D1t%253A314688&service=local&ec=GAZAcQ
+    - generic:
+      - generic:
+        - button "Mostrar tu ubicación" [ref=e189] [cursor=pointer]:
+          - generic [ref=e191]: 
+        - generic [ref=e193] [cursor=pointer]:
+          - button "Ampliar" [ref=e194]
+          - button "Reducir" [ref=e197]
+      - button "Ver imágenes de Street View" [ref=e205]
+      - generic [ref=e207]:
+        - generic "Mapa interactivo" [ref=e208]
+        - generic [ref=e212] [cursor=pointer]:
+          - generic [ref=e213]: 
+          - generic [ref=e214]: Capas
+        - button "Capas" [ref=e215] [cursor=pointer]
+    - generic [ref=e217]:
+      - contentinfo [ref=e220]:
+        - text: Imágenes ©2026 , Datos del mapa ©2026
+        - button "Colombia" [ref=e221] [cursor=pointer]
+        - button "Términos" [ref=e222] [cursor=pointer]
+        - button "Privacidad" [ref=e223] [cursor=pointer]
+        - button "Enviar comentarios sobre el producto" [ref=e224] [cursor=pointer]
+      - button "2 km" [ref=e226] [cursor=pointer]: 2 km

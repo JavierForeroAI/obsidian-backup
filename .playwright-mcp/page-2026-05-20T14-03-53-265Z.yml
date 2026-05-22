@@ -1,0 +1,291 @@
+- generic "Google Maps" [ref=e9]:
+  - generic [ref=e3]:
+    - application "Mapa·Usa las teclas de flecha para desplazarte por el mapa.·Obtén información sobre un sitio pulsando la tecla numérica correspondiente." [ref=e10]
+    - search [ref=e15]:
+      - generic [ref=e16]:
+        - combobox [ref=e18]: Mediarte implante capilar Bogota
+        - button "Búsqueda" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: 
+        - button "Cerrar" [ref=e23] [cursor=pointer]:
+          - generic [ref=e24]: 
+    - region "Filtros disponibles para esta búsqueda" [ref=e31]:
+      - generic [ref=e34]:
+        - button "Valoración" [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]:
+            - generic [ref=e38]: 
+            - generic [ref=e39]: Valoración
+            - generic [ref=e40]: 
+        - button "Horario" [ref=e42] [cursor=pointer]:
+          - generic [ref=e43]:
+            - generic [ref=e44]: 
+            - generic [ref=e45]: Horario
+            - generic [ref=e46]: 
+        - button "Todos los filtros" [ref=e48] [cursor=pointer]:
+          - generic [ref=e49]:
+            - generic [ref=e50]: 
+            - generic [ref=e51]: Todos los filtros
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - list [ref=e55]:
+          - listitem [ref=e56]:
+            - button "Menú" [ref=e57] [cursor=pointer]:
+              - generic [ref=e59]: 
+          - listitem [ref=e60]:
+            - button "Guardado" [ref=e61] [cursor=pointer]:
+              - generic [ref=e63]: 
+              - generic [ref=e65]: Guardado
+          - listitem [ref=e66]:
+            - button "Recientes" [disabled] [ref=e67]:
+              - generic [ref=e69]: 
+              - generic [ref=e71]: Recientes
+          - listitem [ref=e73]:
+            - button "Descargar aplicación" [ref=e74] [cursor=pointer]:
+              - generic [ref=e76]: 
+              - generic [ref=e78]: Descargar aplicación
+        - main [ref=e83]:
+          - generic [ref=e84]:
+            - feed "Resultados de Mediarte implante capilar Bogota" [ref=e85]:
+              - generic [ref=e86]:
+                - generic [ref=e88]:
+                  - heading "Resultados" [level=1] [ref=e89]
+                  - button "Más información sobre los avisos legales en relación con las reseñas públicas en Google Maps" [ref=e93]:
+                    - generic [ref=e97]: 
+                - button "Compartir" [ref=e101]:
+                  - generic [ref=e102] [cursor=pointer]:
+                    - generic [ref=e103]: 
+                    - generic [ref=e104]: Compartir
+              - article "Mediarte Implante Capilar - Sede Principal" [ref=e106]:
+                - link "Mediarte Implante Capilar - Sede Principal" [ref=e107] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/Mediarte+Implante+Capilar+-+Sede+Principal/data=!4m7!3m6!1s0x8e3f9bd956b106b9:0x721153d02cec0c19!8m2!3d4.6926499!4d-74.0349383!16s%2Fg%2F11tfffl6c4!19sChIJuQaxVtmbP44RGQzsLNBTEXI?authuser=0&hl=es&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: Mediarte Implante Capilar - Sede Principal
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "4,7 estrellas 67 reseñas":
+                                    - text: 4,7
+                                    - text: (67)
+                            - generic:
+                              - generic:
+                                - generic: Clínica de trasplante capilar
+                                - generic:
+                                  - text: ·
+                                  - img "Accesible con silla de ruedas" [ref=e108] [cursor=pointer]:
+                                    - generic [ref=e109]: 
+                                - generic: "· Ak 9 #113-52 of 1802"
+                              - generic:
+                                - generic:
+                                  - generic: Abierto · Cierra a las 4:30 p. m.
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: "\"Excelente experiencia en esta clínica capilar.\""
+              - article "Mediarte Implante Capilar - Sede Bogotá Salitre Plaza" [ref=e112]:
+                - link "Mediarte Implante Capilar - Sede Bogotá Salitre Plaza" [ref=e113] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/Mediarte+Implante+Capilar+-+Sede+Bogot%C3%A1+Salitre+Plaza/data=!4m7!3m6!1s0x8e3f9bec92e77817:0x5f3bca676856bd3b!8m2!3d4.6533057!4d-74.1098539!16s%2Fg%2F11w370gf6q!19sChIJF3jnkuybP44RO71WaGfKO18?authuser=0&hl=es&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: Mediarte Implante Capilar - Sede Bogotá Salitre Plaza
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "5,0 estrellas 28 reseñas":
+                                    - text: 5,0
+                                    - text: (28)
+                            - generic:
+                              - generic:
+                                - generic: Clínica de trasplante capilar
+                                - generic: "· Cra. 68b #24-39"
+                              - generic:
+                                - generic:
+                                  - generic: Abierto · Cierra a las 5 p. m.
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: "\"Mas que la satisfacción de los resultados obtenidos;\""
+              - article "Mediarte Implante Capilar - Sede Bogotá" [ref=e116]:
+                - link "Mediarte Implante Capilar - Sede Bogotá" [ref=e117] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/Mediarte+Implante+Capilar+-+Sede+Bogot%C3%A1/data=!4m7!3m6!1s0x8e3f852be59845b9:0xa71a8652ab9e6a53!8m2!3d4.6737999!4d-74.053295!16s%2Fg%2F11vbm5tg0_!19sChIJuUWY5SuFP44RU2qeq1KGGqc?authuser=0&hl=es&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: Mediarte Implante Capilar - Sede Bogotá
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "4,5 estrellas 107 reseñas":
+                                    - text: 4,5
+                                    - text: (107)
+                            - generic:
+                              - generic:
+                                - generic: Clínica de trasplante capilar
+                                - generic:
+                                  - text: ·
+                                  - img "Accesible con silla de ruedas" [ref=e118] [cursor=pointer]:
+                                    - generic [ref=e119]: 
+                                - generic: "· Edificio Zimma, Ak 15 #88-64 Local 102"
+                              - generic:
+                                - generic:
+                                  - generic: Abierto · Cierra a las 4:30 p. m.
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: "\"El asesoramiento y el acompañamiento fue lo mejor para en todo el proceso.\""
+              - article "Mediarte Implante Capilar Bucaramanga" [ref=e122]:
+                - link "Mediarte Implante Capilar Bucaramanga" [ref=e123] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/Mediarte+Implante+Capilar+Bucaramanga/data=!4m7!3m6!1s0x8e683f9e50536445:0x5a2dcf3e7a0a58f!8m2!3d7.0350995!4d-73.0699344!16s%2Fg%2F11vdxtr_dm!19sChIJRWRTUJ4_aI4Rj6Wg5_PcogU?authuser=0&hl=es&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: Mediarte Implante Capilar Bucaramanga
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "4,8 estrellas 43 reseñas":
+                                    - text: 4,8
+                                    - text: (43)
+                            - generic:
+                              - generic:
+                                - generic: Clínica especializada
+                                - generic: "· Centro Internacional De Especialistas, Autopista Bucaramanga #Consultorio 812 Km 7"
+                              - generic:
+                                - generic:
+                                  - generic: Abierto · Cierra a las 5 p. m.
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: "\"Excelente atención y resultados increíbles\""
+              - article "Mediarte Implante Capilar - Sede Chía" [ref=e126]:
+                - link "Mediarte Implante Capilar - Sede Chía" [ref=e127] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/Mediarte+Implante+Capilar+-+Sede+Ch%C3%ADa/data=!4m7!3m6!1s0x8e40798adabd7661:0x55e73bc38e1a1a5b!8m2!3d4.8834583!4d-74.0371872!16s%2Fg%2F11w3gssn00!19sChIJYXa92op5QI4RWxoajsM751U?authuser=0&hl=es&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: Mediarte Implante Capilar - Sede Chía
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img "5,0 estrellas 36 reseñas":
+                                    - text: 5,0
+                                    - text: (36)
+                            - generic:
+                              - generic:
+                                - generic: Clínica de trasplante capilar
+                                - generic: "· Edificio Belenus, Cajicá - Chía #Consultorio 402 - Km. 2"
+                              - generic:
+                                - generic:
+                                  - generic: Abierto · Cierra a las 4:30 p. m.
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: "\"... absolutamente encantada con el procedimiento de plasma capilar.\""
+              - article "Mediarte" [ref=e130]:
+                - link "Mediarte" [ref=e131] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/place/Mediarte/data=!4m7!3m6!1s0x8e3f9aaa54356f95:0xe19a5624c4c44a83!8m2!3d4.7029687!4d-74.0326714!16s%2Fg%2F11l2r_4s5c!19sChIJlW81VKqaP44Rg0rExCRWmuE?authuser=0&hl=es&rclk=1
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: Mediarte
+                            - generic:
+                              - generic: No hay reseñas
+                            - generic:
+                              - generic:
+                                - generic: Clínica de trasplante capilar
+                                - generic: "· VES Building, Torres Unidas 2 - Business Center, Cra. 9 #113-52 Cons 1802"
+                              - generic:
+                                - generic:
+                                  - generic: Abierto · Cierra a las 5 p. m.
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+              - paragraph [ref=e134]:
+                - generic [ref=e135]: Has llegado al final de la lista.
+              - heading "Saca el máximo partido de Google Maps Iniciar sesión" [level=2] [ref=e139]:
+                - generic [ref=e140]: Saca el máximo partido de Google Maps
+                - button "Iniciar sesión" [ref=e143] [cursor=pointer]:
+                  - generic [ref=e145]: Iniciar sesión
+            - checkbox "Actualizar los resultados al mover el mapa" [ref=e148] [cursor=pointer]:
+              - generic [ref=e150]: 
+              - text: Actualizar los resultados al mover el mapa
+      - button "Ocultar el panel lateral" [ref=e152] [cursor=pointer]:
+        - generic [ref=e153]: 
+    - generic [ref=e157]:
+      - button "Aplicaciones de Google" [ref=e161] [cursor=pointer]:
+        - img [ref=e162]
+      - link "Iniciar sesión" [ref=e165] [cursor=pointer]:
+        - /url: https://accounts.google.com/ServiceLogin?hl=es&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2FMediarte%2Bimplante%2Bcapilar%2BBogota%2F%405.8442026%2C-73.5898941%2C8z%2Fdata%3D!3m1!4b1%3Fved%3D1t%253A314688&service=local&ec=GAZAcQ
+    - generic:
+      - generic:
+        - button "Mostrar tu ubicación" [ref=e168] [cursor=pointer]:
+          - generic [ref=e170]: 
+        - generic [ref=e172] [cursor=pointer]:
+          - button "Ampliar" [ref=e173]
+          - button "Reducir" [ref=e176]
+      - button "Ver imágenes de Street View" [ref=e184]
+      - generic [ref=e186]:
+        - generic "Mapa interactivo" [ref=e187]
+        - generic [ref=e191] [cursor=pointer]:
+          - generic [ref=e192]: 
+          - generic [ref=e193]: Capas
+        - button "Capas" [ref=e194] [cursor=pointer]
+    - generic [ref=e196]:
+      - contentinfo [ref=e199]:
+        - text: Imágenes ©2026 , Datos del mapa ©2026
+        - button "Colombia" [ref=e200] [cursor=pointer]
+        - button "Términos" [ref=e201] [cursor=pointer]
+        - button "Privacidad" [ref=e202] [cursor=pointer]
+        - button "Enviar comentarios sobre el producto" [ref=e203] [cursor=pointer]
+      - button "50 km" [ref=e205] [cursor=pointer]: 50 km

@@ -1,0 +1,440 @@
+- generic [ref=e12]:
+  - generic [ref=e15]:
+    - link "Biblioteca de anuncios de Meta" [ref=e18] [cursor=pointer]:
+      - /url: /ads/library/?source=fb-logo
+      - generic [ref=e20]: Biblioteca de anuncios de Meta
+    - generic [ref=e22]: Biblioteca de anuncios
+    - menuitem "Informe de la Biblioteca de anuncios" [ref=e24] [cursor=pointer]:
+      - generic [ref=e25]: Informe de la Biblioteca de anuncios
+    - menuitem "API de la Biblioteca de anuncios" [ref=e27] [cursor=pointer]:
+      - generic [ref=e28]: API de la Biblioteca de anuncios
+    - menuitem "Contenido de marca" [ref=e30] [cursor=pointer]:
+      - generic [ref=e31]: Contenido de marca
+    - menuitem "Open navigation panel" [ref=e33] [cursor=pointer]
+  - generic [ref=e40]:
+    - combobox "Colombia" [ref=e44] [cursor=pointer]:
+      - generic [ref=e51]: Colombia
+    - combobox "Todos los anuncios" [ref=e57] [cursor=pointer]:
+      - generic [ref=e67]: Todos los anuncios
+    - generic [ref=e77]:
+      - generic [ref=e83]: Buscar por palabra clave o anunciante
+      - generic [ref=e89]:
+        - searchbox "Buscar por palabra clave o anunciante" [ref=e95]: DHI Colombia trasplante
+        - button "Borrar" [ref=e97] [cursor=pointer]
+  - dialog [ref=e99]:
+    - generic [ref=e100]:
+      - link [ref=e101] [cursor=pointer]:
+        - /url: /
+        - heading [level=4] [ref=e102]: Iniciar sesión
+      - menuitem [ref=e103] [cursor=pointer]
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - heading [level=4] [ref=e108]: Biblioteca de anuncios
+        - menuitem [ref=e110] [cursor=pointer]:
+          - heading [level=4] [ref=e112]: Informe de la Biblioteca de anuncios
+        - menuitem [ref=e114] [cursor=pointer]:
+          - heading [level=4] [ref=e116]: API de la Biblioteca de anuncios
+        - menuitem [ref=e118] [cursor=pointer]:
+          - heading [level=4] [ref=e120]: Contenido de marca
+      - separator [ref=e121]
+      - generic [ref=e122]:
+        - menuitem [ref=e124] [cursor=pointer]:
+          - heading [level=4] [ref=e126]: Estado del sistema
+        - menuitem [ref=e128] [cursor=pointer]:
+          - heading [level=4] [ref=e130]: Suscribirse a novedades por correo electrónico
+        - menuitem [ref=e132] [cursor=pointer]:
+          - heading [level=4] [ref=e134]: Preguntas frecuentes
+        - menuitem [ref=e136] [cursor=pointer]:
+          - heading [level=4] [ref=e138]: Información sobre los anuncios y el uso de datos
+        - menuitem [ref=e140] [cursor=pointer]:
+          - heading [level=4] [ref=e142]: Privacidad
+        - menuitem [ref=e144] [cursor=pointer]:
+          - heading [level=4] [ref=e146]: Condiciones
+        - menuitem [ref=e148] [cursor=pointer]:
+          - heading [level=4] [ref=e150]: Cookies
+  - generic [ref=e151]:
+    - generic [ref=e152]:
+      - generic [ref=e158]:
+        - heading "~5 resultados" [level=3] [ref=e160]
+        - generic [ref=e162]:
+          - text: Estos resultados incluyen anuncios que coinciden con tu
+          - strong [ref=e163]: búsqueda de palabra clave.
+      - generic [ref=e164]:
+        - generic [ref=e173]:
+          - generic [ref=e174]:
+            - button "Filtros" [ref=e175] [cursor=pointer]:
+              - generic [ref=e180]: Filtros
+            - generic [ref=e182]:
+              - generic [ref=e188]: Ordenar
+              - combobox "Ordenar" [ref=e193] [cursor=pointer]:
+                - generic [ref=e200]: Ordenar por
+          - generic [ref=e205]:
+            - generic [ref=e206]:
+              - strong [ref=e207]: Estado activo
+              - text: ": Anuncios activos"
+            - button "Suprimir" [ref=e208] [cursor=pointer]:
+              - generic [ref=e211]: Suprimir
+        - generic [ref=e215]:
+          - generic [ref=e217]:
+            - generic [ref=e219]:
+              - generic [ref=e220]:
+                - generic [ref=e227]: Activo
+                - generic [ref=e230]: "Identificador de la biblioteca: 27226427713713919"
+                - generic [ref=e232]: En circulación desde el 6 may. 2026
+                - generic [ref=e234]: Plataformas
+              - button "Abrir menú desplegable" [ref=e263] [cursor=pointer]:
+                - generic [ref=e266]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e269] [cursor=pointer]:
+              - generic [ref=e273]: Ver detalles del anuncio
+            - separator [ref=e274]
+            - generic [ref=e279]:
+              - generic [ref=e281]:
+                - img "DHI Colombia" [ref=e282]
+                - generic [ref=e284]:
+                  - link "DHI Colombia" [ref=e285] [cursor=pointer]:
+                    - /url: https://www.facebook.com/DhiColombia/
+                  - generic [ref=e289]:
+                    - strong [ref=e291]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e292]:
+                - button "No todos los implantes son iguales. La técnica DHI permite mayor control, mejor diseño de línea frontal y resultados completamente naturales." [ref=e295]:
+                  - generic [ref=e298]:
+                    - text: No todos los implantes son iguales.
+                    - text: La técnica DHI permite mayor control, mejor diseño de línea frontal y resultados completamente naturales.
+                - group "Video player" [ref=e308]:
+                  - button "Reproducir vídeo" [ref=e310] [cursor=pointer]
+                  - generic [ref=e312]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 1:14
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - generic [ref=e313]:
+                  - generic [ref=e314]:
+                    - button "API.WHATSAPP.COM" [ref=e316]:
+                      - generic [ref=e317]: API.WHATSAPP.COM
+                    - button "agenda tu valoración" [ref=e319]:
+                      - generic [ref=e320]: agenda tu valoración
+                    - generic:
+                      - button
+                    - generic:
+                      - button
+                  - button "Enviar mensaje de WhatsApp" [disabled] [ref=e322]:
+                    - generic [ref=e326]: Enviar mensaje de WhatsApp
+          - generic [ref=e328]:
+            - generic [ref=e330]:
+              - generic [ref=e331]:
+                - generic [ref=e338]: Activo
+                - generic [ref=e341]: "Identificador de la biblioteca: 1963651077638480"
+                - generic [ref=e343]: En circulación desde el 18 may. 2026
+                - generic [ref=e345]: Plataformas
+              - button "Abrir menú desplegable" [ref=e369] [cursor=pointer]:
+                - generic [ref=e372]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e375] [cursor=pointer]:
+              - generic [ref=e379]: Ver detalles del anuncio
+            - separator [ref=e380]
+            - generic [ref=e385]:
+              - generic [ref=e387]:
+                - img "CapilTech Medellín" [ref=e388]
+                - generic [ref=e390]:
+                  - link "CapilTech Medellín" [ref=e391] [cursor=pointer]:
+                    - /url: https://www.facebook.com/61571971503120/
+                  - generic [ref=e395]:
+                    - strong [ref=e397]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e398]:
+                - 'button "Miles de hombres en Colombia ya recuperaron su cabello con trasplante capilar FUE DHI Zafiro ✅ En CapilTech lo hacemos diferente: ♾️ Garantía de por vida 👨‍⚕️ Seguimiento médico 18 meses 💉 3 mesoterapias incluidas Desde $5.000.000 — Financiación disponible con Meddipay 📍 El Poblado, Medellín 👇 Agenda tu valoración GRATUITA hoy" [ref=e401]':
+                  - generic [ref=e404]:
+                    - text: Miles de hombres en Colombia ya recuperaron su cabello con trasplante capilar FUE DHI Zafiro ✅
+                    - text: "En CapilTech lo hacemos diferente:"
+                    - text: ♾️ Garantía de por vida
+                    - text: 👨‍⚕️ Seguimiento médico 18 meses
+                    - text: 💉 3 mesoterapias incluidas
+                    - text: Desde $5.000.000 — Financiación disponible con Meddipay
+                    - text: 📍 El Poblado, Medellín
+                    - text: 👇 Agenda tu valoración GRATUITA hoy
+                - generic [ref=e407]:
+                  - generic [ref=e408]:
+                    - button "WHATSAPP" [ref=e410]:
+                      - generic [ref=e411]: WHATSAPP
+                    - button "Desde $5.000.000" [ref=e413]:
+                      - generic [ref=e414]: Desde $5.000.000
+                    - button "El Poblado, Medellín" [ref=e416]:
+                      - generic [ref=e417]: El Poblado, Medellín
+                    - generic:
+                      - button
+                  - button "Enviar mensaje de WhatsApp" [disabled] [ref=e419]:
+                    - generic [ref=e423]: Enviar mensaje de WhatsApp
+          - generic [ref=e425]:
+            - generic [ref=e427]:
+              - generic [ref=e428]:
+                - generic [ref=e435]: Activo
+                - generic [ref=e438]: "Identificador de la biblioteca: 890651647230186"
+                - generic [ref=e440]: En circulación desde el 27 ene. 2026
+                - generic [ref=e442]: Plataformas
+              - button "Abrir menú desplegable" [ref=e456] [cursor=pointer]:
+                - generic [ref=e459]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e462] [cursor=pointer]:
+              - generic [ref=e466]: Ver detalles del anuncio
+            - separator [ref=e467]
+            - generic [ref=e472]:
+              - generic [ref=e474]:
+                - img "Beauteclinicaspa" [ref=e475]
+                - generic [ref=e477]:
+                  - link "Beauteclinicaspa" [ref=e478] [cursor=pointer]:
+                    - /url: https://www.facebook.com/61575748606886/
+                  - generic [ref=e482]:
+                    - strong [ref=e484]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e485]:
+                - button [ref=e488]:
+                  - generic [ref=e491]:
+                    - text: TRANSPLANTE CAPILAR 💇🏻‍♂️- MITOS Y REALIDADES
+                    - text: 💭 “Eso se ve falso…”
+                    - text: 💭 “Duele muchísimo…”
+                    - text: 💭 “Es solo para hombres…”
+                    - text: "👉 Spoiler: la mayoría de lo que te han contado sobre el trasplante capilar es un mito. Estos son otros de los mitos más comunes que existen sobre el transplante capilar 💇🏻‍♂️:"
+                    - text: "✨ MITO: “Los resultados son inmediatos”"
+                    - text: "✅ REALIDAD: El cabello crece progresivamente y los resultados finales se ven entre 6 y 12 meses. ￼"
+                    - text: "✨ MITO: “Se ve artificial”"
+                    - text: "✅ REALIDAD: Con técnicas modernas como FUE o DHI, el resultado puede ser totalmente natural. ￼"
+                    - text: "✨ MITO: “Es muy doloroso”"
+                    - text: "✅ REALIDAD: Se realiza con anestesia local y el dolor suele ser mínimo. ￼"
+                    - text: "✨ MITO: “Es solo para hombres o personas mayores”"
+                    - text: "✅ REALIDAD: Tanto hombres como mujeres pueden ser candidatos, dependiendo del caso. ￼"
+                    - text: "✨ MITO: “El cabello es de otra persona”"
+                    - text: "✅ REALIDAD: Siempre se utiliza tu propio cabello para evitar rechazo. ￼"
+                    - text: "💡 Conclusión: el trasplante capilar no es magia… pero sí ciencia, técnica y paciencia."
+                    - text: 👇 Si quieres saber si eres candidato real, empieza por informarte bien (no por los mitos).
+                    - text: Reserva tu cita en nuestro WhatsApp
+                    - text: 📲3103698797
+                    - text: Estamos ubicados en el edificio Pranha Centro Empresarial
+                    - text: "Cra. 23c #62-72. Manizales, Colombia."
+                - group "Video player" [ref=e501]:
+                  - button "Reproducir vídeo" [ref=e503] [cursor=pointer]
+                  - generic [ref=e505]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 1:30
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - link "INSTAGRAM.COM Beauteclinicaspa Ir al perfil de Instagram" [ref=e507] [cursor=pointer]:
+                  - /url: https://l.facebook.com/l.php?u=http%3A%2F%2Finstagram.com%2Fbeauteclinicaspa&h=AUBJj7WbV5cwxfLJSUu13j5obHp0zAmhrwV3I5x-4cdyyJtm5Keogn0VU8zGeM_71tfwb5Em3TFtGTo_Is1vvt7CUCeN0YEzGXVqNiFbAOM_9BD5cHC7V6cR5JHodokxTov7shhI_laYeHOGcwhJzyyMKdo
+                  - generic [ref=e508]:
+                    - generic [ref=e509]:
+                      - button "INSTAGRAM.COM" [ref=e511]:
+                        - generic [ref=e512]: INSTAGRAM.COM
+                      - button "Beauteclinicaspa" [ref=e514]:
+                        - generic [ref=e515]: Beauteclinicaspa
+                      - generic:
+                        - button
+                      - generic:
+                        - button
+                    - button "Ir al perfil de Instagram" [ref=e517]:
+                      - generic [ref=e521]: Ir al perfil de Instagram
+          - generic [ref=e523]:
+            - generic [ref=e525]:
+              - generic [ref=e526]:
+                - generic [ref=e533]: Activo
+                - generic [ref=e536]: "Identificador de la biblioteca: 1517342033067214"
+                - generic [ref=e538]: En circulación desde el 12 may. 2026
+                - generic [ref=e540]: Plataformas
+              - button "Abrir menú desplegable" [ref=e569] [cursor=pointer]:
+                - generic [ref=e572]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e575] [cursor=pointer]:
+              - generic [ref=e579]: Ver detalles del anuncio
+            - separator [ref=e580]
+            - generic [ref=e585]:
+              - generic [ref=e587]:
+                - img "DRAVI Academy" [ref=e588]
+                - generic [ref=e590]:
+                  - link "DRAVI Academy" [ref=e591] [cursor=pointer]:
+                    - /url: https://www.facebook.com/61572587901965/
+                  - generic [ref=e595]:
+                    - strong [ref=e597]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e598]:
+                - 'button "🌐 Programa de formación continua en restauración y trasplante capilar 🎓 DRAVI Academy Exclusivo para médicos que buscan incorporar técnicas avanzadas con respaldo académico y práctica real. 🔬 Contenido del entrenamiento: ✅ Prácticas con pacientes reales ✅ Taller de simulación clínica ✅ Conferencias magistrales ✅ Técnicas FUE, DHI y Long FUE 🇧🇴 🇪🇨 🇨🇱 🇦🇷 🇨🇴 🇲🇽 Excelencia médica que trasciende fronteras.⚕️" [ref=e601]':
+                  - generic [ref=e604]:
+                    - text: 🌐 Programa de formación continua en restauración y trasplante capilar
+                    - text: 🎓 DRAVI Academy
+                    - text: Exclusivo para médicos que buscan incorporar técnicas avanzadas con respaldo académico y práctica real.
+                    - text: "🔬 Contenido del entrenamiento:"
+                    - text: ✅ Prácticas con pacientes reales
+                    - text: ✅ Taller de simulación clínica
+                    - text: ✅ Conferencias magistrales
+                    - text: ✅ Técnicas FUE, DHI y Long FUE
+                    - text: 🇧🇴 🇪🇨 🇨🇱 🇦🇷 🇨🇴 🇲🇽
+                    - text: Excelencia médica que trasciende fronteras.⚕️
+                - group "Video player" [ref=e615]:
+                  - button "Reproducir vídeo" [ref=e617] [cursor=pointer]
+                  - generic [ref=e619]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 1:01
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - generic [ref=e620]:
+                  - generic [ref=e621]:
+                    - button "API.WHATSAPP.COM" [ref=e623]:
+                      - generic [ref=e624]: API.WHATSAPP.COM
+                    - button "Más información aquí👉🏻" [ref=e626]:
+                      - generic [ref=e627]: Más información aquí👉🏻
+                    - button "Viaja a Perú" [ref=e629]:
+                      - generic [ref=e630]: Viaja a Perú
+                    - generic:
+                      - button
+                  - button "Enviar mensaje de WhatsApp" [disabled] [ref=e632]:
+                    - generic [ref=e636]: Enviar mensaje de WhatsApp
+          - generic [ref=e638]:
+            - generic [ref=e640]:
+              - generic [ref=e641]:
+                - generic [ref=e648]: Activo
+                - generic [ref=e651]: "Identificador de la biblioteca: 1362987555881838"
+                - generic [ref=e653]: En circulación desde el 19 may. 2026
+                - generic [ref=e655]: Plataformas
+              - button "Abrir menú desplegable" [ref=e679] [cursor=pointer]:
+                - generic [ref=e682]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e685] [cursor=pointer]:
+              - generic [ref=e689]: Ver detalles del anuncio
+            - separator [ref=e690]
+            - generic [ref=e695]:
+              - generic [ref=e697]:
+                - img "CapilTech Medellín" [ref=e698]
+                - generic [ref=e700]:
+                  - link "CapilTech Medellín" [ref=e701] [cursor=pointer]:
+                    - /url: https://www.facebook.com/61571971503120/
+                  - generic [ref=e705]:
+                    - strong [ref=e707]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e708]:
+                - 'button "Miles de hombres en Colombia ya recuperaron su cabello con trasplante capilar FUE DHI Zafiro ✅ En CapilTech lo hacemos diferente: ♾️ Garantía de por vida 👨‍⚕️ Seguimiento médico 18 meses 💉 3 mesoterapias incluidas Desde $5.000.000 — Financiación disponible con Meddipay 📍 El Poblado, Medellín 👇 Agenda tu valoración GRATUITA hoy" [ref=e711]':
+                  - generic [ref=e714]:
+                    - text: Miles de hombres en Colombia ya recuperaron su cabello con trasplante capilar FUE DHI Zafiro ✅
+                    - text: "En CapilTech lo hacemos diferente:"
+                    - text: ♾️ Garantía de por vida
+                    - text: 👨‍⚕️ Seguimiento médico 18 meses
+                    - text: 💉 3 mesoterapias incluidas
+                    - text: Desde $5.000.000 — Financiación disponible con Meddipay
+                    - text: 📍 El Poblado, Medellín
+                    - text: 👇 Agenda tu valoración GRATUITA hoy
+                - generic [ref=e717]:
+                  - generic [ref=e718]:
+                    - button "WHATSAPP" [ref=e720]:
+                      - generic [ref=e721]: WHATSAPP
+                    - button "Desde $5.000.000" [ref=e723]:
+                      - generic [ref=e724]: Desde $5.000.000
+                    - button "El Poblado, Medellín" [ref=e726]:
+                      - generic [ref=e727]: El Poblado, Medellín
+                    - generic:
+                      - button
+                  - button "Enviar mensaje de WhatsApp" [disabled] [ref=e729]:
+                    - generic [ref=e733]: Enviar mensaje de WhatsApp
+    - generic [ref=e735]:
+      - generic [ref=e743]: Estado del sistema
+      - generic [ref=e747]:
+        - list [ref=e748]:
+          - listitem [ref=e749]:
+            - heading "API de la Biblioteca de anuncios" [level=3] [ref=e750]:
+              - link "API de la Biblioteca de anuncios" [ref=e751] [cursor=pointer]:
+                - /url: /ads/library/api/?source=archive-landing-page
+          - listitem [ref=e752]:
+            - heading "Información sobre los anuncios y el uso de datos" [level=3] [ref=e753]:
+              - link "Información sobre los anuncios y el uso de datos" [ref=e754] [cursor=pointer]:
+                - /url: /ads/about/?entry_product=ad_library
+          - listitem [ref=e755]:
+            - heading "Privacidad" [level=3] [ref=e756]:
+              - link "Privacidad" [ref=e757] [cursor=pointer]:
+                - /url: /privacy/center/?entry_point=privacy_basics_redirect
+          - listitem [ref=e758]:
+            - heading "Condiciones" [level=3] [ref=e759]:
+              - link "Condiciones" [ref=e760] [cursor=pointer]:
+                - /url: /policies/
+          - listitem [ref=e761]:
+            - heading "Cookies" [level=3] [ref=e762]:
+              - link "Cookies" [ref=e763] [cursor=pointer]:
+                - /url: /policies/cookies/
+        - heading "Meta © 2026 | Español (España)" [level=3] [ref=e765]:
+          - text: Meta © 2026 |
+          - link "Español (España)" [ref=e766] [cursor=pointer]:
+            - /url: /language/

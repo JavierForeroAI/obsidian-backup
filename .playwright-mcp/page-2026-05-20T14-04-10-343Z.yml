@@ -1,0 +1,422 @@
+- generic "Google Maps" [ref=e9]:
+  - generic [ref=e3]:
+    - application "Mapa·Usa las teclas de flecha para desplazarte por el mapa.·Obtén información sobre un sitio pulsando la tecla numérica correspondiente." [ref=e10]
+    - search [ref=e15]:
+      - generic [ref=e16]:
+        - combobox [ref=e18]: HERO
+        - button "Búsqueda" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: 
+        - button "Cerrar" [ref=e23] [cursor=pointer]:
+          - generic [ref=e24]: 
+    - region "Opciones de búsqueda disponibles en esta zona" [ref=e31]:
+      - generic [ref=e34]:
+        - button "Restaurantes" [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]:
+            - generic [ref=e39]: 
+            - generic [ref=e40]: Restaurantes
+        - button "Hoteles" [ref=e42] [cursor=pointer]:
+          - generic [ref=e43]:
+            - generic [ref=e45]: 
+            - generic [ref=e46]: Hoteles
+        - button "Qué hacer" [ref=e48] [cursor=pointer]:
+          - generic [ref=e49]:
+            - generic [ref=e51]: 
+            - generic [ref=e52]: Qué hacer
+        - button "Transporte público" [ref=e54] [cursor=pointer]:
+          - generic [ref=e55]:
+            - generic [ref=e57]: 
+            - generic [ref=e58]: Transporte público
+        - button "Aparcamientos" [ref=e60] [cursor=pointer]:
+          - generic [ref=e61]:
+            - generic [ref=e63]: 
+            - generic [ref=e64]: Aparcamientos
+        - button "Farmacias" [ref=e66] [cursor=pointer]:
+          - generic [ref=e67]:
+            - generic [ref=e69]: 
+            - generic [ref=e70]: Farmacias
+        - button "Cajeros automáticos" [ref=e72] [cursor=pointer]:
+          - generic [ref=e73]:
+            - generic [ref=e75]: 
+            - generic [ref=e76]: Cajeros automáticos
+      - button "Página siguiente" [ref=e77] [cursor=pointer]:
+        - generic [ref=e78]: 
+    - generic [ref=e79]:
+      - generic [ref=e80]:
+        - list [ref=e82]:
+          - listitem [ref=e83]:
+            - button "Menú" [ref=e84] [cursor=pointer]:
+              - generic [ref=e86]: 
+          - listitem [ref=e87]:
+            - button "Guardado" [ref=e88] [cursor=pointer]:
+              - generic [ref=e90]: 
+              - generic [ref=e92]: Guardado
+          - listitem [ref=e93]:
+            - button "Recientes" [ref=e94] [cursor=pointer]:
+              - generic [ref=e96]: 
+              - generic [ref=e98]: Recientes
+          - listitem [ref=e100]:
+            - button "HERO" [ref=e101] [cursor=pointer]:
+              - generic [ref=e107]: HERO
+          - listitem [ref=e109]:
+            - button "Descargar aplicación" [ref=e110] [cursor=pointer]:
+              - generic [ref=e112]: 
+              - generic [ref=e114]: Descargar aplicación
+        - main "HERO" [ref=e119]:
+          - generic [ref=e120]:
+            - button "Foto de HERO" [active] [ref=e122] [cursor=pointer]:
+              - img [ref=e123]
+            - button "Ver fotos" [ref=e124] [cursor=pointer]:
+              - generic [ref=e125]: 
+              - generic [ref=e126]: Ver fotos
+          - generic [ref=e129]:
+            - heading "HERO" [level=1] [ref=e131]: HERO
+            - generic [ref=e133]:
+              - generic [ref=e135]:
+                - generic [ref=e136]:
+                  - text: 4,8
+                  - img "4,8 estrellas" [ref=e137]
+                - img "62 reseñas" [ref=e145]: (62)
+              - generic [ref=e146]:
+                - button "Clínica de trasplante capilar" [ref=e149]
+                - text: ·
+                - img "Accesible con silla de ruedas" [ref=e150]: 
+          - tablist [ref=e153]:
+            - tab "Información general de HERO" [selected] [ref=e154]:
+              - generic [ref=e156]: Vista general
+            - tab "Reseñas de HERO" [ref=e158]:
+              - generic [ref=e160]: Reseñas
+            - tab "Información sobre HERO" [ref=e162]:
+              - generic [ref=e164]: Información
+          - region "Acciones para HERO" [ref=e166]:
+            - button "Cómo llegar" [ref=e168] [cursor=pointer]:
+              - generic [ref=e170]: 
+              - generic [ref=e171]: Cómo llegar
+            - button "Guardar" [ref=e173] [cursor=pointer]:
+              - generic [ref=e175]: 
+              - generic [ref=e176]: Guardar
+            - button "Cercano" [ref=e178] [cursor=pointer]:
+              - generic [ref=e180]: 
+              - generic [ref=e181]: Cercano
+            - button "Enviar al teléfono" [ref=e183] [cursor=pointer]:
+              - generic [ref=e185]: 
+              - generic [ref=e186]: Enviar al teléfono
+            - button "Compartir" [ref=e188] [cursor=pointer]:
+              - generic [ref=e190]: 
+              - generic [ref=e191]: Compartir
+          - region "Información de HERO" [ref=e194]:
+            - generic [ref=e195]:
+              - 'button "Dirección: Flormorado Empresarial, Cl. 117 #6a-60 Oficina 509, Usaquén, Bogotá, Cundinamarca" [ref=e196] [cursor=pointer]':
+                - generic [ref=e197]:
+                  - generic [ref=e199]: 
+                  - generic [ref=e201]: "Flormorado Empresarial, Cl. 117 #6a-60 Oficina 509, Usaquén, Bogotá, Cundinamarca"
+              - button "Copiar la dirección" [ref=e204] [cursor=pointer]:
+                - generic [ref=e206]: 
+            - button "Horario Abierto · Cierra a las 6 p. m. Mostrar el horario de la semana" [ref=e208] [cursor=pointer]:
+              - img "Horario" [ref=e209]: 
+              - generic [ref=e211]:
+                - generic [ref=e213]: Abierto · Cierra a las 6 p. m.
+                - img "Mostrar el horario de la semana" [ref=e214]: 
+            - generic [ref=e215]:
+              - link "wa.link" [ref=e216] [cursor=pointer]:
+                - /url: https://wa.link/ezyeht
+                - generic [ref=e217]:
+                  - generic [ref=e219]: 
+                  - generic [ref=e221]: wa.link
+              - link "Abrir el enlace a reserva" [ref=e224] [cursor=pointer]:
+                - /url: https://wa.link/ezyeht
+                - generic [ref=e226]: 
+            - generic [ref=e227]:
+              - 'link "Sitio web: heroinstitute.co" [ref=e228] [cursor=pointer]':
+                - /url: https://www.heroinstitute.co/es-co/?utm_source=google&utm_medium=organic&utm_campaign=gbp
+                - generic [ref=e229]:
+                  - generic [ref=e231]: 
+                  - generic [ref=e233]: heroinstitute.co
+              - generic [ref=e234]:
+                - link "Abrir el sitio web" [ref=e236] [cursor=pointer]:
+                  - /url: https://www.heroinstitute.co/es-co/?utm_source=google&utm_medium=organic&utm_campaign=gbp
+                  - generic [ref=e238]: 
+                - button "Copiar la URL del sitio web" [ref=e240] [cursor=pointer]:
+                  - generic [ref=e242]: 
+            - generic [ref=e243]:
+              - 'button "Teléfono: (601) 9196727" [ref=e244] [cursor=pointer]':
+                - generic [ref=e245]:
+                  - generic [ref=e247]: 
+                  - generic [ref=e249]: (601) 9196727
+              - generic [ref=e250]:
+                - button "Copiar el número de teléfono" [ref=e252] [cursor=pointer]:
+                  - generic [ref=e254]: 
+                - link "Llamar al número de teléfono" [ref=e256] [cursor=pointer]:
+                  - /url: tel:6019196727
+                  - generic [ref=e258]: 
+          - button "Sugerir un cambio" [ref=e262] [cursor=pointer]:
+            - generic [ref=e263]:
+              - generic [ref=e264]: 
+              - generic [ref=e265]: Sugerir un cambio
+          - generic [ref=e268]:
+            - generic [ref=e269]: Del propietario
+            - button "Ver publicaciones locales" [ref=e271] [cursor=pointer]:
+              - generic [ref=e273]:
+                - generic [ref=e275]: Es el momento de actuar. Solicita tu consulta.
+                - generic [ref=e276]: 21 abr 2026
+                - generic [ref=e277]: Más información
+          - generic [ref=e282]:
+            - heading "Fotos y vídeos" [level=2] [ref=e284]
+            - region "Fotos de HERO" [ref=e285]:
+              - generic [ref=e288]:
+                - generic [ref=e289] [cursor=pointer]:
+                  - button "Todas" [ref=e290]
+                  - generic:
+                    - generic: Todas
+                - generic [ref=e291] [cursor=pointer]:
+                  - button "Interior" [ref=e292]
+                  - generic:
+                    - generic: Interior
+                - generic [ref=e293] [cursor=pointer]:
+                  - button "Vídeos" [ref=e294]
+                  - generic:
+                    - generic: Vídeos
+                - generic [ref=e295] [cursor=pointer]:
+                  - button "Del propietario" [ref=e296]
+                  - generic:
+                    - generic: Del propietario
+                - generic [ref=e297] [cursor=pointer]:
+                  - button "Street View y 360°" [ref=e298]
+                  - generic:
+                    - generic: Street View y 360°
+          - button "Añadir fotos y vídeos" [ref=e303] [cursor=pointer]:
+            - generic [ref=e304]:
+              - generic [ref=e305]: 
+              - generic [ref=e306]: Añadir fotos y vídeos
+          - generic [ref=e309]:
+            - heading "Resumen de reseñas" [level=2] [ref=e310]
+            - button "Más información sobre el resumen de reseñas" [ref=e311] [cursor=pointer]:
+              - generic [ref=e312]: 
+          - generic [ref=e314] [cursor=pointer]:
+            - table [ref=e316]:
+              - rowgroup [ref=e317]:
+                - img "5 estrellas, 58 reseñas" [ref=e318]: "5"
+                - img "4 estrellas, 1 reseña" [ref=e321]: "4"
+                - img "3 estrellas, 0 reseñas" [ref=e324]: "3"
+                - img "2 estrellas, 1 reseña" [ref=e327]: "2"
+                - img "1 estrellas, 2 reseñas" [ref=e330]: "1"
+            - generic [ref=e333]:
+              - generic [ref=e334]: 4,8
+              - img "4,8 estrellas" [ref=e335]
+              - button "62 reseñas" [ref=e341]:
+                - generic [ref=e343]: 62 reseñas
+          - button "Escribir una reseña" [ref=e347] [cursor=pointer]:
+            - generic [ref=e348]:
+              - generic [ref=e349]: 
+              - generic [ref=e350]: Escribir una reseña
+          - generic [ref=e353]:
+            - generic [ref=e355]:
+              - heading "Reseñas" [level=2] [ref=e358]
+              - button "Buscar reseñas" [ref=e361] [cursor=pointer]:
+                - generic [ref=e363]: 
+            - button "Ordenar reseñas" [ref=e365] [cursor=pointer]:
+              - generic [ref=e366]:
+                - generic [ref=e367]: 
+                - generic [ref=e368]: Ordenar
+          - radiogroup "Filtrar reseñas" [ref=e369]:
+            - radio "Todas las reseñas" [checked] [ref=e371] [cursor=pointer]:
+              - generic [ref=e372]:
+                - generic [ref=e373]: 
+                - generic [ref=e374]: Todas
+            - radio "equipo, mencionado en 16 reseñas" [ref=e376] [cursor=pointer]:
+              - generic [ref=e377]:
+                - generic [ref=e378]: equipo
+                - generic [ref=e379]: "16"
+            - radio "cirugía, mencionado en 6 reseñas" [ref=e381] [cursor=pointer]:
+              - generic [ref=e382]:
+                - generic [ref=e383]: cirugía
+                - generic [ref=e384]: "6"
+            - radio "calidad, mencionado en 5 reseñas" [ref=e386] [cursor=pointer]:
+              - generic [ref=e387]:
+                - generic [ref=e388]: calidad
+                - generic [ref=e389]: "5"
+            - radio "pendientes, mencionado en 5 reseñas" [ref=e391] [cursor=pointer]:
+              - generic [ref=e392]:
+                - generic [ref=e393]: pendientes
+                - generic [ref=e394]: "5"
+            - button "Ver 6 temas más" [ref=e396] [cursor=pointer]:
+              - generic [ref=e398]: "+6"
+          - generic "Wilmer Díaz balaguera" [ref=e399]:
+            - generic [ref=e401]:
+              - button "Foto de Wilmer Díaz balaguera" [ref=e402]
+              - generic [ref=e404]:
+                - button "Wilmer Díaz balaguera 1 reseña" [ref=e406]:
+                  - generic [ref=e407]: Wilmer Díaz balaguera
+                  - generic [ref=e408]: 1 reseña
+                - button "Acciones en la reseña de Wilmer Díaz balaguera" [ref=e409] [cursor=pointer]:
+                  - generic [ref=e411]: 
+              - generic [ref=e412]:
+                - generic [ref=e413]:
+                  - img "5 estrellas" [ref=e414]:
+                    - generic [ref=e415]: 
+                    - generic [ref=e416]: 
+                    - generic [ref=e417]: 
+                    - generic [ref=e418]: 
+                    - generic [ref=e419]: 
+                  - generic [ref=e420]: Hace un año
+                - generic [ref=e422]:
+                  - text: Me realice el transplante capilar con la doctora Maribel caballero y me fue excelente . Me asesoró en el mejor tratamiento y el diseño del trasplante. Excelente la asesoría después de la cirugía con medicamentos , cuidados ,champú…
+                  - button "Ver más" [ref=e424] [cursor=pointer]: Más
+                - generic [ref=e425]:
+                  - button "Me gusta" [ref=e426]:
+                    - generic [ref=e427] [cursor=pointer]:
+                      - generic [ref=e428]: 
+                      - generic [ref=e430]: Me gusta
+                  - button "Compartir reseña de Wilmer Díaz balaguera." [ref=e431]:
+                    - generic [ref=e432] [cursor=pointer]:
+                      - generic [ref=e433]: 
+                      - generic [ref=e434]: Compartir
+                - generic [ref=e435]:
+                  - generic [ref=e436]: Respuesta del propietario Hace un año
+                  - generic [ref=e437]:
+                    - text: ¡Muchas gracias por tu reseña, Wilmer! Nos alegra mucho saber que tu experiencia con la Dra. Maribel Caballero fue tan positiva y que todo el proceso, desde la asesoría hasta los cuidados postoperatorios, cumplió con tus expectativas. Tu…
+                    - button "Ver más" [ref=e439] [cursor=pointer]: Más
+          - generic "Jefferson Ramirez" [ref=e443]:
+            - generic [ref=e445]:
+              - button "Foto de Jefferson Ramirez" [ref=e446]
+              - generic [ref=e448]:
+                - button "Jefferson Ramirez 6 reseñas · 1 foto" [ref=e450]:
+                  - generic [ref=e451]: Jefferson Ramirez
+                  - generic [ref=e452]: 6 reseñas · 1 foto
+                - button "Acciones en la reseña de Jefferson Ramirez" [ref=e453] [cursor=pointer]:
+                  - generic [ref=e455]: 
+              - generic [ref=e456]:
+                - generic [ref=e457]:
+                  - img "5 estrellas" [ref=e458]:
+                    - generic [ref=e459]: 
+                    - generic [ref=e460]: 
+                    - generic [ref=e461]: 
+                    - generic [ref=e462]: 
+                    - generic [ref=e463]: 
+                  - generic [ref=e464]: Hace un año
+                - generic [ref=e466]:
+                  - text: Realice la busqueda en diferentes clinicas para consultar los tratamientos de cuidado capilar en Bogotá y teniendo en cuenta el nivel consultivo del equipo comercial y medico, elegí a Hero Institute y a la Doc Maribel Caballero y su equipo…
+                  - button "Ver más" [ref=e468] [cursor=pointer]: Más
+                - generic [ref=e469]:
+                  - button "1 Me gusta" [ref=e470]:
+                    - generic [ref=e471] [cursor=pointer]:
+                      - generic [ref=e472]: 
+                      - generic [ref=e474]: "1"
+                  - button "Compartir reseña de Jefferson Ramirez." [ref=e475]:
+                    - generic [ref=e476] [cursor=pointer]:
+                      - generic [ref=e477]: 
+                      - generic [ref=e478]: Compartir
+                - generic [ref=e479]:
+                  - generic [ref=e480]: Respuesta del propietario Hace un año
+                  - generic [ref=e481]:
+                    - text: ¡Hola Jefferson! Muchas gracias por tomarte el tiempo de dejar una reseña tan positiva. Estamos encantados de saber que tu experiencia con el Hero Institute y la Dra. Maribel…
+                    - button "Ver más" [ref=e483] [cursor=pointer]: Más
+          - generic "Jorge Muñoz" [ref=e487]:
+            - generic [ref=e489]:
+              - button "Foto de Jorge Muñoz" [ref=e490]
+              - generic [ref=e492]:
+                - button "Jorge Muñoz 2 reseñas" [ref=e494]:
+                  - generic [ref=e495]: Jorge Muñoz
+                  - generic [ref=e496]: 2 reseñas
+                - button "Acciones en la reseña de Jorge Muñoz" [ref=e497] [cursor=pointer]:
+                  - generic [ref=e499]: 
+              - generic [ref=e500]:
+                - generic [ref=e501]:
+                  - img "5 estrellas" [ref=e502]:
+                    - generic [ref=e503]: 
+                    - generic [ref=e504]: 
+                    - generic [ref=e505]: 
+                    - generic [ref=e506]: 
+                    - generic [ref=e507]: 
+                  - generic [ref=e508]: Hace un año
+                - generic [ref=e510]: Excelente resultado obtenido, superó mis expectativas. La atención del personal médico y de la Dra Maribel Caballero es inigualable antes del procedimiento, durante el mismo y también después. Cuando el personal médico actúa de manera profesional los resultados sobresalen. De verdad, muchas gracias
+                - generic [ref=e511]:
+                  - button "Me gusta" [ref=e512]:
+                    - generic [ref=e513] [cursor=pointer]:
+                      - generic [ref=e514]: 
+                      - generic [ref=e516]: Me gusta
+                  - button "Compartir reseña de Jorge Muñoz." [ref=e517]:
+                    - generic [ref=e518] [cursor=pointer]:
+                      - generic [ref=e519]: 
+                      - generic [ref=e520]: Compartir
+                - generic [ref=e521]:
+                  - generic [ref=e522]: Respuesta del propietario Hace un año
+                  - generic [ref=e523]: ¡Muchas gracias por tus amables palabras! Nos alegra saber que la atención de la Dra. Maribel Caballero y el equipo superaron tus expectativas. Agradecemos tu confianza y estamos aquí para lo que necesites. ¡Gracias de nuevo!
+          - button "Más reseñas (59)" [ref=e527]:
+            - generic [ref=e529] [cursor=pointer]: Más reseñas (59)
+          - heading "Otras personas también buscan" [level=2] [ref=e533]
+          - generic [ref=e537]:
+            - link "Colombia·4,2 estrellas·5 reseñas·Clínica de trasplante capilar" [ref=e538] [cursor=pointer]:
+              - generic [ref=e541]:
+                - generic [ref=e543]: Colombia
+                - img "4,2 estrellas 5 reseñas" [ref=e546]:
+                  - text: 4,2
+                  - text: (5)
+                - generic [ref=e548]: Clínica de trasplante capilar
+            - link "HairDoctors·3,5 estrellas·27 reseñas·Clínica de trasplante capilar" [ref=e549] [cursor=pointer]:
+              - generic [ref=e552]:
+                - generic [ref=e554]: HairDoctors
+                - img "3,5 estrellas 27 reseñas" [ref=e557]:
+                  - text: 3,5
+                  - text: (27)
+                - generic [ref=e559]: Clínica de trasplante capilar
+            - link "Alternativa Restauración Y Trasplante Capilar·4,9 estrellas·26 reseñas·Clínica de trasplante capilar" [ref=e560] [cursor=pointer]:
+              - generic [ref=e563]:
+                - generic [ref=e565]: Alternativa Restauración Y Trasplante Capilar
+                - img "4,9 estrellas 26 reseñas" [ref=e568]:
+                  - text: 4,9
+                  - text: (26)
+                - generic [ref=e570]: Clínica de trasplante capilar
+            - link "Colombia Hair Transplant·5,0 estrellas·2 reseñas·Clínica de trasplante capilar" [ref=e571] [cursor=pointer]:
+              - generic [ref=e574]:
+                - generic [ref=e576]: Colombia Hair Transplant
+                - img "5,0 estrellas 2 reseñas" [ref=e579]:
+                  - text: 5,0
+                  - text: (2)
+                - generic [ref=e581]: Clínica de trasplante capilar
+            - link "Capilclinic Colombia·3,1 estrellas·17 reseñas·Clínica de trasplante capilar" [ref=e582] [cursor=pointer]:
+              - generic [ref=e585]:
+                - generic [ref=e587]: Capilclinic Colombia
+                - img "3,1 estrellas 17 reseñas" [ref=e590]:
+                  - text: 3,1
+                  - text: (17)
+                - generic [ref=e592]: Clínica de trasplante capilar
+          - heading "Resultados web" [level=2] [ref=e597]
+          - region [ref=e600]
+          - link "Acerca de estos datos" [ref=e639] [cursor=pointer]:
+            - /url: https://support.google.com/local-listings?p=how_google_sources&authuser=0&hl=es
+            - generic [ref=e641]: Acerca de estos datos
+          - heading "Saca el máximo partido de Google Maps Iniciar sesión" [level=2] [ref=e645]:
+            - generic [ref=e646]: Saca el máximo partido de Google Maps
+            - button "Iniciar sesión" [ref=e649] [cursor=pointer]:
+              - generic [ref=e651]: Iniciar sesión
+      - button "Ocultar el panel lateral" [ref=e653] [cursor=pointer]:
+        - generic [ref=e654]: 
+    - generic [ref=e658]:
+      - button "Aplicaciones de Google" [ref=e662] [cursor=pointer]:
+        - img [ref=e663]
+      - link "Iniciar sesión" [ref=e666] [cursor=pointer]:
+        - /url: https://accounts.google.com/ServiceLogin?hl=es&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fmaps%2Fplace%2FHERO%2F%404.6947822%2C-74.0321363%2C17z%2Fdata%3D!3m1!4b1!4m6!3m5!1s0x8e3f9b2ea65676df%3A0x89e5f8e0eff0fd7b!8m2!3d4.6947822!4d-74.0321363!16s%252Fg%252F11hzcj3_0f%3Fved%3D1t%253A314688&service=local&ec=GAZAcQ
+    - generic [ref=e667]:
+      - generic:
+        - button "Mostrar tu ubicación" [ref=e670] [cursor=pointer]:
+          - generic [ref=e672]: 
+        - generic [ref=e674] [cursor=pointer]:
+          - button "Ampliar" [ref=e675]
+          - button "Reducir" [ref=e678]
+      - generic [ref=e684]:
+        - button "Ver imágenes de Street View" [ref=e686]
+        - button "Street View" [ref=e688] [cursor=pointer]
+      - generic [ref=e696]:
+        - generic "Mapa interactivo" [ref=e697]
+        - generic [ref=e701] [cursor=pointer]:
+          - generic [ref=e702]: 
+          - generic [ref=e703]: Capas
+        - button "Capas" [ref=e704] [cursor=pointer]
+    - generic [ref=e706]:
+      - contentinfo [ref=e709]:
+        - text: Imágenes ©2026 , Datos del mapa ©2026 Google
+        - button "Colombia" [ref=e710] [cursor=pointer]
+        - button "Términos" [ref=e711] [cursor=pointer]
+        - button "Privacidad" [ref=e712] [cursor=pointer]
+        - button "Enviar comentarios sobre el producto" [ref=e713] [cursor=pointer]
+      - button "100 m" [ref=e715] [cursor=pointer]: 100 m

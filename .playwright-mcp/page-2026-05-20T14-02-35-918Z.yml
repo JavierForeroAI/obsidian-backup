@@ -1,0 +1,729 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e9]:
+      - text:                            
+      - generic [ref=e10]:
+        - text:    
+        - generic [ref=e13]:
+          - generic [ref=e15]:
+            - paragraph [ref=e18]:
+              - strong [ref=e19]: YOUR COMPLETE GUIDE TO HAIR RESTORATION.
+              - strong
+              - link "GET FREE" [ref=e20] [cursor=pointer]:
+                - /url: https://www.heroinstitute.co/get-info-kit
+                - strong [ref=e21]: GET FREE
+              - link [ref=e22] [cursor=pointer]:
+                - /url: https://www.heroinstitute.co/get-info-kit
+                - strong [ref=e23]
+              - link "INFORMATION" [ref=e24] [cursor=pointer]:
+                - /url: https://www.heroinstitute.co/get-info-kit
+                - strong [ref=e25]: INFORMATION
+              - link [ref=e26] [cursor=pointer]:
+                - /url: https://www.heroinstitute.co/get-info-kit
+                - strong [ref=e27]
+              - link "KIT" [ref=e28] [cursor=pointer]:
+                - /url: https://www.heroinstitute.co/get-info-kit
+                - strong [ref=e29]: KIT
+            - generic [ref=e32]:
+              - link "English " [ref=e37] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e38]: English
+                - generic [ref=e39]: 
+              - generic [ref=e43]:
+                - link "facebook" [ref=e44] [cursor=pointer]:
+                  - /url: https://facebook.com/HEROInstitute/
+                  - generic [ref=e45]: 
+                - link "instagram" [ref=e46] [cursor=pointer]:
+                  - /url: https://instagram.com/heroinstitute.co
+                  - generic [ref=e47]: 
+                - link "youtube" [ref=e48] [cursor=pointer]:
+                  - /url: https://youtube.com/channel/UC_SWSrjmqBFgmk3icJSFPCg
+                  - generic [ref=e49]: 
+          - generic [ref=e51]:
+            - link "HERO | Hair Evolution by Robotics Logo" [ref=e54] [cursor=pointer]:
+              - /url: /
+              - img "HERO | Hair Evolution by Robotics Logo" [ref=e55]
+            - navigation [ref=e57]:
+              - menubar [ref=e58]:
+                - menuitem "HOME" [ref=e59]:
+                  - link "HOME" [ref=e60] [cursor=pointer]:
+                    - /url: /
+                    - generic: HOME 
+                - menuitem "SERVICES " [ref=e61]:
+                  - link "SERVICES " [ref=e62] [cursor=pointer]:
+                    - /url: "#"
+                    - generic:
+                      - text: SERVICES
+                      - generic: 
+                  - menu:
+                    - menuitem "HAIR TRANSPLANT":
+                      - link "HAIR TRANSPLANT":
+                        - /url: /hero-institute-hair-transplant
+                        - generic: HAIR TRANSPLANT 
+                    - menuitem "BEARD TRANSPLANT":
+                      - link "BEARD TRANSPLANT":
+                        - /url: /beard-transplant
+                        - generic: BEARD TRANSPLANT 
+                    - menuitem "EYEBROW TRANSPLANTS":
+                      - link "EYEBROW TRANSPLANTS":
+                        - /url: /eyebrow-transplants
+                        - generic: EYEBROW TRANSPLANTS 
+                    - menuitem "ROBOTIC TRANSPLANT":
+                      - link "ROBOTIC TRANSPLANT":
+                        - /url: /artas-robotic-follicular-unit-extraction
+                        - generic: ROBOTIC TRANSPLANT 
+                    - menuitem "FOLLICULAR UNIT EXTRACTION (FUE)":
+                      - link "FOLLICULAR UNIT EXTRACTION (FUE)":
+                        - /url: /Follicular-Unit-Extraction
+                        - generic: FOLLICULAR UNIT EXTRACTION (FUE) 
+                    - menuitem "FOLLICULAR UNIT TRANSPLANTATION":
+                      - link "FOLLICULAR UNIT TRANSPLANTATION":
+                        - /url: /follicular-unit-transplantation
+                        - generic: FOLLICULAR UNIT TRANSPLANTATION 
+                    - menuitem "LASER THERAPY":
+                      - link "LASER THERAPY":
+                        - /url: /laser-therapy
+                        - generic: LASER THERAPY 
+                    - menuitem "PLATELET-RICH PLASMA (PRP)":
+                      - link "PLATELET-RICH PLASMA (PRP)":
+                        - /url: /Platelet-Rich-Plasma-For-Hair-Restoration
+                        - generic: PLATELET-RICH PLASMA (PRP) 
+                    - menuitem "NON-SURGICAL":
+                      - link "NON-SURGICAL":
+                        - /url: /non-surgical
+                        - generic: NON-SURGICAL 
+                - menuitem "LOCATIONS " [ref=e63]:
+                  - link "LOCATIONS " [ref=e64] [cursor=pointer]:
+                    - /url: /locations
+                    - generic:
+                      - text: LOCATIONS
+                      - generic: 
+                  - menu:
+                    - menuitem "BOGOTA":
+                      - link "BOGOTA":
+                        - /url: /locations/hair-transplant-bogota-colombia
+                        - generic: BOGOTA 
+                    - menuitem "MEDELLIN":
+                      - link "MEDELLIN":
+                        - /url: /locations/hair-transplant-medellin-colombia
+                        - generic: MEDELLIN 
+                - menuitem "ABOUT " [ref=e65]:
+                  - link "ABOUT " [ref=e66] [cursor=pointer]:
+                    - /url: /about
+                    - generic:
+                      - text: ABOUT
+                      - generic: 
+                  - menu:
+                    - menuitem "INFORMATION KIT":
+                      - link "INFORMATION KIT":
+                        - /url: /get-info-kit
+                        - generic: INFORMATION KIT 
+                    - menuitem "HERO METHOD":
+                      - link "HERO METHOD":
+                        - /url: /hero-method
+                        - generic: HERO METHOD 
+                    - menuitem "PRE-OP INSTRUCTIONS":
+                      - link "PRE-OP INSTRUCTIONS":
+                        - /url: /pre-op-instructions
+                        - generic: PRE-OP INSTRUCTIONS 
+                    - menuitem "POST-OP INSTRUCTIONS":
+                      - link "POST-OP INSTRUCTIONS":
+                        - /url: /post-op-instructions
+                        - generic: POST-OP INSTRUCTIONS 
+                    - menuitem "FINANCING":
+                      - link "FINANCING":
+                        - /url: /financing-your-hair-transplant
+                        - generic: FINANCING 
+                    - menuitem "TESTIMONIALS":
+                      - link "TESTIMONIALS":
+                        - /url: /real-patients-real-results-hair-restoration
+                        - generic: TESTIMONIALS 
+                - menuitem "CONTACT " [ref=e67]:
+                  - link "CONTACT " [ref=e68] [cursor=pointer]:
+                    - /url: /contact
+                    - generic:
+                      - text: CONTACT
+                      - generic: 
+                  - menu:
+                    - menuitem "SCHEDULE A VIRTUAL APPOINTMENT":
+                      - link "SCHEDULE A VIRTUAL APPOINTMENT":
+                        - /url: /schedule-a-virtual-consultation
+                        - generic: SCHEDULE A VIRTUAL APPOINTMENT 
+                    - menuitem "SCHEDULE AN IN-PERSON APPOINTMENT":
+                      - link "SCHEDULE AN IN-PERSON APPOINTMENT":
+                        - /url: /schedule-an-in-person-consultation
+                        - generic: SCHEDULE AN IN-PERSON APPOINTMENT 
+                - menuitem "BLOG" [ref=e69]:
+                  - link "BLOG" [ref=e70] [cursor=pointer]:
+                    - /url: /blog
+                    - generic: BLOG 
+                - menuitem "PATIENT RESULTS" [ref=e71]:
+                  - link "PATIENT RESULTS" [ref=e72] [cursor=pointer]:
+                    - /url: /hair-transplant-results
+                    - generic: PATIENT RESULTS 
+            - generic [ref=e73]:
+              - link "Visita Nuestra Página en Español" [ref=e74] [cursor=pointer]:
+                - /url: http://www.heroinstitute.co/es-co
+                - text: 
+                - generic [ref=e75]: Visita Nuestra Página en Español
+              - link "WhatsApp Now!" [ref=e76] [cursor=pointer]:
+                - /url: https://linkly.link/2CVuk
+                - text: 
+                - generic [ref=e77]: WhatsApp Now!
+        - main [ref=e81]:
+          - generic [ref=e82]:
+            - generic [ref=e86]:
+              - generic [ref=e87]:
+                - generic [ref=e88]:
+                  - heading "Hair Transplant in Colombia" [level=1] [ref=e91]
+                  - generic [ref=e93]:
+                    - paragraph [ref=e94]: We are leaders in hair transplant procedures in Colombia, specializing in advanced techniques to restore eyebrows, beard and hair.
+                    - paragraph [ref=e95]
+                    - paragraph [ref=e96]: With a dedicated team of experts, we provide personalized solutions for both men and women who want to combat hair loss, including male pattern baldness, and regain their confidence.
+                - link "Schedule a Virtual Consultation" [ref=e98] [cursor=pointer]:
+                  - /url: /schedule-a-virtual-consultation
+                  - text: 
+                  - generic [ref=e99]: Schedule a Virtual Consultation
+                - link "Schedule an In-Person Consultation" [ref=e101] [cursor=pointer]:
+                  - /url: /schedule-an-in-person-consultation
+                  - text: 
+                  - generic [ref=e102]: Schedule an In-Person Consultation
+              - generic [ref=e105]:
+                - img "A man with a shaved head smiles, wearing a blue medical garment against a white background."
+                - generic:
+                  - img "Man with dark hair and brown eyes, looking directly at the camera."
+                - generic:
+                  - generic: Before
+                  - generic: After
+            - generic [ref=e110]:
+              - paragraph [ref=e113]: 20+ Years transforming lives through hair restoration!
+              - link "Let's Chat Via WhatsApp" [ref=e115] [cursor=pointer]:
+                - /url: https://linkly.link/2CVuk
+                - text: 
+                - generic [ref=e116]: Let's Chat Via WhatsApp
+            - generic [ref=e118]:
+              - generic [ref=e119]:
+                - heading "Modern Hair Transplant Techniques" [level=2] [ref=e121]:
+                  - strong [ref=e122]: Modern Hair Transplant Techniques
+                - generic [ref=e123]:
+                  - paragraph [ref=e124]: At Hero Institute, we specialize in advanced hair restoration techniques designed to deliver natural, long-lasting results.
+                  - paragraph [ref=e125]
+                  - paragraph [ref=e126]: Our procedures extract healthy follicles from the donor site, typically the back or sides of the scalp, where hair resists thinning.
+                  - paragraph [ref=e127]
+                  - paragraph [ref=e128]:
+                    - generic [ref=e130]: These units are placed as individual hair grafts to blend seamlessly into the bald area. We perform
+                    - link "FUE" [ref=e131] [cursor=pointer]:
+                      - /url: /Follicular-Unit-Extraction
+                    - generic [ref=e132]: hair transplantations and
+                    - link "FUT" [ref=e133] [cursor=pointer]:
+                      - /url: /follicular-unit-transplantation
+                    - generic [ref=e134]: based on your goals and hair characteristics.
+                - link "HAIR TRANSPLANT" [ref=e135] [cursor=pointer]:
+                  - /url: /hero-institute-hair-transplant
+                  - text: 
+                  - generic [ref=e136]: HAIR TRANSPLANT
+              - img "Un grupo de cirujanos está trabajando en un paciente en un hero institute." [ref=e139]
+            - generic [ref=e141]:
+              - img "Una cirujano de trasplante capilar está trabajando con un paciente en un quirófano." [ref=e144]
+              - generic [ref=e146]:
+                - heading "Personalized Hair Transplant Solutions" [level=2] [ref=e147]:
+                  - strong [ref=e148]: Personalized Hair Transplant Solutions
+                - paragraph [ref=e149]
+                - paragraph [ref=e150]: We recognize that no two individuals are alike. That’s why we provide customized hair transplant solutions tailored to your unique needs and goals.
+                - paragraph [ref=e151]
+                - paragraph [ref=e152]: From the precise design of your new hairline to the placement of each individual hair graft, our team prioritizes attention to detail, guaranteeing a natural and aesthetically pleasing result. Let us help you restore not just your hair but your confidence.
+                - paragraph [ref=e153]
+                - heading "Safe, Trusted Hair Transplant Surgery" [level=2] [ref=e154]:
+                  - strong [ref=e155]: Safe, Trusted Hair Transplant Surgery
+                - paragraph [ref=e156]
+                - paragraph [ref=e157]: Your safety and satisfaction are our top priorities. Our experienced hair transplant surgeons use state-of-the-art technology and follow rigorous safety protocols to ensure optimal outcomes with minimal side effects.
+                - paragraph [ref=e158]
+                - paragraph [ref=e159]:
+                  - generic [ref=e160]: With years of expertise, our surgeon removes follicles with precision for a safe, effective, and minimally invasive procedure that delivers the results you deserve.
+            - generic [ref=e163]:
+              - generic [ref=e164]:
+                - heading "Comprehensive Hair Transplant:" [level=2] [ref=e165]
+                - heading "Hair, Eyebrows, and Beard" [level=2] [ref=e166]
+              - generic [ref=e167]:
+                - paragraph [ref=e168]:
+                  - generic [ref=e169]: We provide a full range of hair restoration services designed to help you achieve natural and lasting results. Our techniques include
+                  - link "Follicular Unit Transplantation (FUT)" [ref=e170] [cursor=pointer]:
+                    - /url: /follicular-unit-transplantation
+                    - strong [ref=e171]: Follicular Unit Transplantation (FUT)
+                  - generic [ref=e172]: and the minimally invasive
+                  - link "Follicular Unit Extraction (FUE)" [ref=e173] [cursor=pointer]:
+                    - /url: /Follicular-Unit-Extraction
+                    - strong [ref=e174]: Follicular Unit Extraction (FUE)
+                  - text: ", both performed under local anesthesia to ensure your comfort and a quick recovery."
+                - paragraph [ref=e175]
+                - paragraph [ref=e176]:
+                  - generic [ref=e177]: In addition to our state-of-the-art hair transplant procedures, we incorporate innovative treatments like
+                  - link "Platelet-Rich Plasma (PRP) therapy" [ref=e178] [cursor=pointer]:
+                    - /url: /Platelet-Rich-Plasma-For-Hair-Restoration
+                    - strong [ref=e179]: Platelet-Rich Plasma (PRP) therapy
+                  - generic [ref=e180]: and stem cell technology to enhance results, stimulate growth, and improve overall hair health. Whether you’re looking to restore thinning hair, reshape your
+                  - link "eyebrows" [ref=e181] [cursor=pointer]:
+                    - /url: /eyebrow-transplants
+                    - strong [ref=e182]: eyebrows
+                  - generic [ref=e183]: ", or achieve a fuller"
+                  - link "beard" [ref=e184] [cursor=pointer]:
+                    - /url: /beard-transplant
+                    - strong [ref=e185]: beard
+                  - text: ", our personalized approach ensures exceptional outcomes tailored to your needs."
+                - paragraph [ref=e186]
+                - paragraph [ref=e187]:
+                  - generic [ref=e188]: Schedule a consultation today to learn how HERO Institute can help you regain confidence with natural-looking hair restoration solutions for your scalp, eyebrows, or beard.
+            - generic [ref=e190]:
+              - generic [ref=e191]:
+                - generic [ref=e195]:
+                  - img "Una cabeza de hombre antes de un injerto capilar"
+                  - generic:
+                    - img "Una cabeza de hombre después de un injerto capilar"
+                  - generic:
+                    - generic: Antes
+                    - generic: Después
+                - heading "Hair Transplant" [level=3] [ref=e200]:
+                  - generic [ref=e201]: Hair Transplant
+                - paragraph [ref=e203]:
+                  - generic [ref=e204]: A
+                  - link "hair transplant" [ref=e205] [cursor=pointer]:
+                    - /url: /hero-institute-hair-transplant
+                  - generic [ref=e206]: moves follicles from a stable donor site to areas with loss. Using
+                  - link "FUT" [ref=e207] [cursor=pointer]:
+                    - /url: /follicular-unit-transplantation
+                  - generic [ref=e208]: or
+                  - link "FUE" [ref=e209] [cursor=pointer]:
+                    - /url: /Follicular-Unit-Extraction
+                  - generic [ref=e210]: hair transplantations, our team prepares micro grafts and places individual hair units to match your natural direction and density, rebuilding coverage in the bald area.
+                - link "Learn More" [ref=e211] [cursor=pointer]:
+                  - /url: /hero-institute-hair-transplant
+                  - text: 
+                  - generic [ref=e212]: Learn More
+              - generic [ref=e213]:
+                - generic [ref=e217]:
+                  - img "Una cabeza de hombre antes de un injerto capilar en barba"
+                  - generic:
+                    - img "Una cabeza de hombre después de un injerto capilar en Barba"
+                  - generic:
+                    - generic: Antes
+                    - generic: Después
+                - heading "Beard Restoration" [level=3] [ref=e222]
+                - paragraph [ref=e224]:
+                  - generic [ref=e225]: A
+                  - link "beard transplant" [ref=e226] [cursor=pointer]:
+                    - /url: /beard-transplant
+                  - generic [ref=e227]: is a long-lasting solution for a fuller, denser look. The surgeon removes follicles from a stable donor site, prepares micro grafts as individual hair units, and transplants them into sparse or patchy areas. These follicles grow naturally and indefinitely, creating a thicker, natural-looking beard with permanent results.
+                - link "Learn More" [ref=e228] [cursor=pointer]:
+                  - /url: /beard-transplant
+                  - text: 
+                  - generic [ref=e229]: Learn More
+              - generic [ref=e230]:
+                - generic [ref=e234]:
+                  - img "Una cabeza de hombre antes de un injerto capilar en barba"
+                  - generic:
+                    - img "Una cabeza de hombre después de un injerto capilar en Barba"
+                  - generic:
+                    - generic: Antes
+                    - generic: Después
+                - heading "Platelet-Rich Plasma" [level=3] [ref=e239]
+                - paragraph [ref=e241]:
+                  - link "PRP therapy" [ref=e242] [cursor=pointer]:
+                    - /url: /Platelet-Rich-Plasma-For-Hair-Restoration
+                  - generic [ref=e243]: boosts hair density and follicle health. Used with
+                  - link "FUT" [ref=e244] [cursor=pointer]:
+                    - /url: /follicular-unit-transplantation
+                  - generic [ref=e245]: or
+                  - link "FUE" [ref=e246] [cursor=pointer]:
+                    - /url: /Follicular-Unit-Extraction
+                  - generic [ref=e247]: and stem cell therapy, it stimulates the scalp, supports newly placed micro grafts, and can reduce common side effects like temporary shedding or mild swelling. The outcome is stronger, thicker hair with long-lasting results.
+                - link "Learn More" [ref=e248] [cursor=pointer]:
+                  - /url: /Platelet-Rich-Plasma-For-Hair-Restoration
+                  - text: 
+                  - generic [ref=e249]: Learn More
+            - generic [ref=e252]:
+              - heading "Results That Transform Lives" [level=2] [ref=e254]:
+                - strong [ref=e255]: Results That Transform Lives
+              - generic [ref=e256]:
+                - paragraph [ref=e257]:
+                  - generic [ref=e258]: We are committed to delivering life-changing solutions for those experiencing
+                  - strong [ref=e259]: hair loss
+                  - generic [ref=e260]: . Our advanced treatments not only restore
+                  - strong [ref=e261]: hair growth
+                  - generic [ref=e262]: but also help rebuild confidence and self-esteem.
+                - paragraph [ref=e263]
+                - paragraph [ref=e264]:
+                  - generic [ref=e265]: We take pride in seeing how our personalized approach empowers patients to overcome the challenges of
+                  - strong [ref=e266]: baldness
+                  - generic [ref=e267]: or
+                  - strong [ref=e268]: thinning hair
+                  - generic [ref=e269]: ", giving them the opportunity to feel and look their best."
+            - generic [ref=e282]:
+              - heading "Identify Your Alopecia Level and Start Restoring Your Confidence Today" [level=2] [ref=e284]:
+                - strong [ref=e285]: Identify Your Alopecia Level and Start Restoring Your Confidence Today
+              - generic [ref=e286]:
+                - paragraph [ref=e287]:
+                  - generic [ref=e288]: "Take the first step today: pick a photo below to identify your"
+                  - strong [ref=e289]: alopecia level (Norwood scale)
+                  - generic [ref=e290]: and see real results from individuals who have undergone successful hair transplant procedures at the same stage.
+                - paragraph [ref=e291]
+                - paragraph [ref=e292]:
+                  - text: Explore how our advanced techniques have transformed lives and delivered natural, lasting outcomes.
+                  - link "Schedule your appointment now" [ref=e293] [cursor=pointer]:
+                    - /url: /get-started
+                    - strong [ref=e294]: Schedule your appointment now
+                  - generic [ref=e295]: to begin your journey to restoring your hair and confidence!
+              - link "Schedule Your Appointment" [ref=e296] [cursor=pointer]:
+                - /url: /schedule-an-in-person-consultation
+                - text: 
+                - generic [ref=e297]: Schedule Your Appointment
+              - generic [ref=e299] [cursor=pointer]:
+                - generic [ref=e300]:
+                  - generic [ref=e303]:
+                    - link "Norwood 7" [ref=e305]:
+                      - /url: /alopecia-levels/understanding_alopecia_norwood_7
+                    - generic [ref=e307]:
+                      - heading "Norwood 7" [level=3] [ref=e308]
+                      - link "Click to view stunning results!" [ref=e309]:
+                        - /url: /alopecia-levels/understanding_alopecia_norwood_7
+                        - generic [ref=e310]: Click to view stunning results!
+                  - generic [ref=e313]:
+                    - link "Norwood 6" [ref=e315]:
+                      - /url: /alopecia-levels/understanding_alopecia_norwood_6
+                    - generic [ref=e317]:
+                      - heading "Norwood 6" [level=3] [ref=e318]
+                      - link "Click to view stunning results!" [ref=e319]:
+                        - /url: /alopecia-levels/understanding_alopecia_norwood_6
+                        - generic [ref=e320]: Click to view stunning results!
+                  - generic [ref=e323]:
+                    - link "Norwood 5" [ref=e325]:
+                      - /url: /alopecia-levels/understanding_alopecia_norwood_5
+                    - generic [ref=e327]:
+                      - heading "Norwood 5" [level=3] [ref=e328]
+                      - link "Click to view stunning results!" [ref=e329]:
+                        - /url: /alopecia-levels/understanding_alopecia_norwood_5
+                        - generic [ref=e330]: Click to view stunning results!
+                - generic [ref=e331]:
+                  - generic [ref=e334]:
+                    - link "Norwood 4" [ref=e336]:
+                      - /url: /alopecia-levels/understanding_alopecia_norwood_4
+                    - generic [ref=e338]:
+                      - heading "Norwood 4" [level=3] [ref=e339]
+                      - link "Click to view stunning results!" [ref=e340]:
+                        - /url: /alopecia-levels/understanding_alopecia_norwood_4
+                        - generic [ref=e341]: Click to view stunning results!
+                  - generic [ref=e344]:
+                    - link "Norwood 3" [ref=e346]:
+                      - /url: /alopecia-levels/understanding_alopecia_norwood_3
+                    - generic [ref=e348]:
+                      - heading "Norwood 3" [level=3] [ref=e349]
+                      - link "Click to view stunning results!" [ref=e350]:
+                        - /url: /alopecia-levels/understanding_alopecia_norwood_3
+                        - generic [ref=e351]: Click to view stunning results!
+                  - generic [ref=e354]:
+                    - link "Norwood 2" [ref=e356]:
+                      - /url: /alopecia-levels/understanding_alopecia_norwood_2
+                    - generic [ref=e358]:
+                      - heading "Norwood 2" [level=3] [ref=e359]
+                      - link "Click to view stunning results!" [ref=e360]:
+                        - /url: /alopecia-levels/understanding_alopecia_norwood_2
+                        - generic [ref=e361]: Click to view stunning results!
+                - generic [ref=e362]:
+                  - generic [ref=e365]:
+                    - link "Norwood 1" [ref=e367]:
+                      - /url: /alopecia-levels/understanding_alopecia_norwood_1
+                    - generic [ref=e369]:
+                      - heading "Norwood 1" [level=3] [ref=e370]
+                      - link "Click to view stunning results!" [ref=e371]:
+                        - /url: /alopecia-levels/understanding_alopecia_norwood_1
+                        - generic [ref=e372]: Click to view stunning results!
+                  - generic [ref=e375]:
+                    - link "Diffuse Alopecia" [ref=e377]:
+                      - /url: /alopecia-levels/understanding_difuse_alopecia
+                    - generic [ref=e379]:
+                      - heading "Diffuse Alopecia" [level=3] [ref=e380]
+                      - link "Click to view stunning results!" [ref=e381]:
+                        - /url: /alopecia-levels/understanding_difuse_alopecia
+                        - generic [ref=e382]: Click to view stunning results!
+                  - generic [ref=e385]:
+                    - link "Vertex - Crown" [ref=e387]:
+                      - /url: /alopecia-levels/understanding_vertex_crown_alopecia
+                    - generic [ref=e389]:
+                      - heading "Vertex - Crown" [level=3] [ref=e390]
+                      - link "Click to view stunning results!" [ref=e391]:
+                        - /url: /alopecia-levels/understanding_vertex_crown_alopecia
+                        - generic [ref=e392]: Click to view stunning results!
+            - generic [ref=e395]:
+              - generic [ref=e396]:
+                - heading "Explore Our Blog" [level=2] [ref=e397]:
+                  - strong [ref=e398]: Explore Our Blog
+                - paragraph [ref=e399]: Your Trusted Resource for Hair Restoration
+              - generic [ref=e400]:
+                - paragraph [ref=e401]:
+                  - generic [ref=e402]: We don’t just provide world-class
+                  - link "hair implant treatments" [ref=e403] [cursor=pointer]:
+                    - /url: /hero-institute-hair-transplant
+                    - strong [ref=e404]: hair implant treatments
+                  - strong [ref=e405]: .
+                  - generic [ref=e406]: we’re also passionate about educating our patients and visitors. Our blog features expert insights on topics like
+                  - strong [ref=e407]: hair loss
+                  - generic [ref=e408]: ", the latest advancements in"
+                  - strong [ref=e409]: implantation techniques
+                  - generic [ref=e410]: ", and practical tips for maintaining"
+                  - strong [ref=e411]: healthy, vibrant hair
+                  - text: .
+                - paragraph [ref=e412]
+                - paragraph [ref=e413]:
+                  - generic [ref=e414]: Whether you’re considering a hair transplant or looking to enhance your hair care routine, our blog is a trusted source designed to empower you with knowledge and confidence.
+              - generic [ref=e415]:
+                - generic [ref=e416]:
+                  - generic [ref=e418]:
+                    - link "Doctor Maldonado in lab coat with medical tools; sample on wood; close-up." [ref=e419] [cursor=pointer]:
+                      - /url: /blog/hair-transplant-surgeon-consistency
+                    - generic [ref=e422]:
+                      - heading "Why Your Surgeon's Consistency is Key to Hair Transplant Success" [level=3] [ref=e424]:
+                        - link "Why Your Surgeon's Consistency is Key to Hair Transplant Success" [ref=e425] [cursor=pointer]:
+                          - /url: /blog/hair-transplant-surgeon-consistency
+                      - generic [ref=e426]: At large clinics, you may not get the same team for your procedure. Discover why a dedicated surgeon is vital for safety and achieving the results you expect.
+                  - generic [ref=e428]:
+                    - link "A close up of a man 's face looking up at the sky." [ref=e429] [cursor=pointer]:
+                      - /url: /hair-transplant-techniques-for-ethnic-hair-types
+                    - generic [ref=e432]:
+                      - heading "Hair Transplant Techniques for Ethnic Hair Types" [level=3] [ref=e434]:
+                        - link "Hair Transplant Techniques for Ethnic Hair Types" [ref=e435] [cursor=pointer]:
+                          - /url: /hair-transplant-techniques-for-ethnic-hair-types
+                      - generic [ref=e436]: Hair restoration is a journey that’s as unique as the individuals embarking on it. For people with textured or ethnic hair, the process requires a careful understanding of the biological and aesthetic nuances that set these hair types apart. This guide is designed to demystify the process, celebrate the diversity of hair restoration, and showcase how HERO Hair Institute leads the way in delivering personalized results.
+                  - generic [ref=e438]:
+                    - link "A group of HERO Institute surgeons are operating on a patient in an operating room." [ref=e439] [cursor=pointer]:
+                      - /url: /meet-the-best-hair-transplant-surgeons
+                    - generic [ref=e442]:
+                      - 'heading "Meet the Best Hair Transplant Surgeons: Why Experience Matters" [level=3] [ref=e444]':
+                        - 'link "Meet the Best Hair Transplant Surgeons: Why Experience Matters" [ref=e445] [cursor=pointer]':
+                          - /url: /meet-the-best-hair-transplant-surgeons
+                      - generic [ref=e446]: Find the best hair transplant surgeons at HERO Institute. Our experienced team delivers top-quality care and outstanding results in hair restoration.
+                - generic [ref=e448] [cursor=pointer]: More Blogs
+            - heading "Our Hair Restoration Clinics" [level=2] [ref=e453]
+            - generic [ref=e458]:
+              - generic [ref=e459]:
+                - generic [ref=e460]:
+                  - heading "HERO Institute" [level=2] [ref=e461]
+                  - heading "Hair Transplant Colombia" [level=2] [ref=e462]
+                - paragraph [ref=e464]: In Colombia, we are located in Medellín and Bogotá, where we have state-of-the-art facilities and a highly qualified team.
+                - generic [ref=e466]:
+                  - link "Hero Medellin" [ref=e468] [cursor=pointer]:
+                    - /url: /locations/hair-transplant-medellin-colombia
+                    - text: 
+                    - generic [ref=e469]: Hero Medellin
+                  - link "Hero Bogotá" [ref=e471] [cursor=pointer]:
+                    - /url: /locations/hair-transplant-bogota-colombia
+                    - text: 
+                    - generic [ref=e472]: Hero Bogotá
+              - generic [ref=e477]:
+                - generic [ref=e480]:
+                  - link "Flormorado Empresarial" [ref=e483] [cursor=pointer]:
+                    - /url: /es-co/ubicacion/trasplante-capilar-bogota-colombia
+                    - img "Flormorado Empresarial" [ref=e485]
+                  - link [ref=e490] [cursor=pointer]:
+                    - /url: PAGE_404
+                - generic [ref=e494]:
+                  - button "go to slide 1" [ref=e495] [cursor=pointer]
+                  - button "go to slide 2" [ref=e496] [cursor=pointer]
+            - separator [ref=e501]
+            - generic [ref=e503]:
+              - generic [ref=e504]:
+                - heading "Testimonials" [level=2] [ref=e506]
+                - paragraph [ref=e508]: "Discover what our patients say: read their testimonials and learn about their experiences!"
+                - link "Reviews Bogotá" [ref=e509] [cursor=pointer]:
+                  - /url: https://g.page/HERO-Hair-Institute-Bogota?gm
+                  - text: 
+                  - generic [ref=e510]: Reviews Bogotá
+                - link "Reviews Medellín" [ref=e511] [cursor=pointer]:
+                  - /url: https://g.page/HERO-Hair-Institute-Medellin?gm
+                  - text: 
+                  - generic [ref=e512]: Reviews Medellín
+              - generic [ref=e513]:
+                - iframe [ref=e516]:
+                  - generic [active] [ref=f1e1]:
+                    - generic "Reproductor de video de YouTube" [ref=f1e3]
+                    - generic [ref=f1e5]:
+                      - generic:
+                        - generic:
+                          - button "Reproducir video" [ref=f1e10] [cursor=pointer]
+                          - button "De un proveedor de salud regulado de Colombia" [ref=f1e13] [cursor=pointer]:
+                            - generic [ref=f1e16]: De un proveedor de salud regulado de Colombia
+                          - button "Ocultar controles del reproductor" [ref=f1e17] [cursor=pointer]
+                          - generic [ref=f1e19]:
+                            - generic [ref=f1e24]:
+                              - generic [ref=f1e25]:
+                                - link "Matt’s Incredible Hair Transformation | Before & After + Honest Review" [ref=f1e26] [cursor=pointer]:
+                                  - /url: https://www.youtube.com/watch?v=4jb8M_0P4TI
+                                - link "HERO Institute | Trasplante Capilar en Colombia" [ref=f1e27] [cursor=pointer]:
+                                  - /url: /channel/UC_SWSrjmqBFgmk3icJSFPCg
+                                  - generic [ref=f1e28]: HERO Institute | Trasplante Capilar en Colombia
+                              - generic [ref=f1e29]:
+                                - button [ref=f1e30] [cursor=pointer]
+                                - generic [ref=f1e32]:
+                                  - generic: HERO Institute | Trasplante Capilar en Colombia
+                                  - generic: 1.69 K suscriptores
+                            - generic [ref=f1e33]:
+                              - button "Compartir" [ref=f1e36] [cursor=pointer]:
+                                - generic [ref=f1e40]:
+                                  - img
+                              - link "Mirar en YouTube" [ref=f1e47] [cursor=pointer]:
+                                - /url: https://www.youtube.com/watch?v=4jb8M_0P4TI
+                                - generic [ref=f1e50]:
+                                  - text: Mirar en
+                                  - img [ref=f1e52]:
+                                    - generic [ref=f1e54]:
+                                      - img
+                - paragraph [ref=e518]: Real patient. Individual results may vary.
+            - generic [ref=e521]:
+              - generic [ref=e524]:
+                - link "facebook" [ref=e525] [cursor=pointer]:
+                  - /url: https://facebook.com/HEROInstitute
+                  - generic [ref=e526]: 
+                - link "instagram" [ref=e527] [cursor=pointer]:
+                  - /url: https://instagram.com/heroinstitute.co/
+                  - generic [ref=e528]: 
+                - link "youtube" [ref=e529] [cursor=pointer]:
+                  - /url: https://youtube.com/channel/UC_SWSrjmqBFgmk3icJSFPCg
+                  - generic [ref=e530]: 
+                - link "email" [ref=e531] [cursor=pointer]:
+                  - /url: mailto:informacion@heroinstitute.co
+                  - generic [ref=e532]: 
+              - heading "Join the community" [level=3] [ref=e534]
+              - heading "#GETHAIRHERO" [level=2] [ref=e536]
+              - link "Follow us on Instagram" [ref=e537] [cursor=pointer]:
+                - /url: https://www.instagram.com/heroinstitute.co/
+                - text: 
+                - generic [ref=e538]: Follow us on Instagram
+              - generic [ref=e539] [cursor=pointer]:
+                - generic [ref=e540]:
+                  - generic [ref=e541]:
+                    - 'link "No esperes al próximo año para verte como quieres. Los cambios empiezan hoy. #TransformaciónHERO #ConfianzaRestaurada #HEROtransforma #CierreDeAñoConConfianza #fyp" [ref=e546]':
+                      - /url: https://www.instagram.com/reel/DYigy70APQg/
+                    - 'link "Tu resultado de fin de año empieza ahora. Un trasplante capilar no se nota de un día para otro. Por eso, si estás pensando en hacerlo, este puede ser el momento de iniciar con una valoración médica. #ConfianzaQueVuelve #NuevoComienzo #HEROexperiencia #ResultadosReales #TrasplanteCapilarColombia #fyp" [ref=e551]':
+                      - /url: https://www.instagram.com/reel/DYgB9e-ibIw/
+                    - 'link "Hair transplants don’t have to mean long recoveries. At HERO, most patients return to their routine in just days. #HairTransplantColombia #MedicalTourism #ConfidenceRestored #HEROmethod #TransformationJourney #fyp" [ref=e556]':
+                      - /url: https://www.instagram.com/reel/DYVo-xxAD3E/
+                  - generic [ref=e557]:
+                    - link [ref=e562]:
+                      - /url: https://www.instagram.com/p/DYUosZLlcqT/
+                    - 'link "Cada proceso tiene su tiempo… y el resultado vale la pena. #RecuperaciónCapilar #MétodoHERO #ConfianzaQueVuelve #TiempoDeCambio #TransformaciónCapilar #fyp" [ref=e567]':
+                      - /url: https://www.instagram.com/reel/DYQjdJbjYOB/
+                    - 'link "Muchos pacientes llegan esperando recuperar la densidad de los 20 años con un solo procedimiento. La realidad es otra: cada diagnóstico capilar es único y requiere un plan personalizado. Un trasplante capilar puede transformar tu imagen, sí… pero siempre dentro de lo que médicamente es posible. Por eso, la consulta de valoración no es un paso opcional, es el momento clave para definir expectativas reales, diseñar tu tratamiento y lograr resultados naturales. Agenda tu valoración y empieza el proceso con información clara y objetivos alcanzables. #RestauracionCapilar #TrasplanteCapilar #Alopecia #fyp #medellín #ExpectativasReales #HairTransplant #heroinstitute" [ref=e572]':
+                      - /url: https://www.instagram.com/reel/DYN23Btjhk-/
+                - generic [ref=e573]: View more
+        - generic [ref=e579]:
+          - generic [ref=e581]:
+            - generic [ref=e582]:
+              - paragraph [ref=e584]: Let’s talk!
+              - paragraph [ref=e586]: Any questions? Let us know.
+              - link "¡Call Now!" [ref=e588] [cursor=pointer]:
+                - /url: https://linkly.link/1pNU3
+                - heading "¡Call Now!" [level=3] [ref=e590]
+                - img
+              - separator [ref=e592]
+            - generic [ref=e594]:
+              - paragraph [ref=e596]: "Email us:"
+              - paragraph [ref=e598]:
+                - link "informacion@heroinstitute.co" [ref=e599] [cursor=pointer]:
+                  - /url: https://linkly.link/2CVvR
+                  - strong [ref=e600]: informacion@heroinstitute.co
+              - paragraph [ref=e602]: "You can also find us here:"
+              - generic [ref=e605]:
+                - link "facebook" [ref=e606] [cursor=pointer]:
+                  - /url: https://facebook.com/HEROInstitute
+                  - generic [ref=e607]: 
+                - link "instagram" [ref=e608] [cursor=pointer]:
+                  - /url: https://instagram.com/heroinstitute.co/
+                  - generic [ref=e609]: 
+                - link "youtube" [ref=e610] [cursor=pointer]:
+                  - /url: https://youtube.com/channel/UC_SWSrjmqBFgmk3icJSFPCg
+                  - generic [ref=e611]: 
+                - link "email" [ref=e612] [cursor=pointer]:
+                  - /url: mailto:informacion@heroinstitute.co
+                  - generic [ref=e613]: 
+                - link "Social network" [ref=e614] [cursor=pointer]:
+                  - /url: https://linkly.link/2CVuk
+                  - img [ref=e616]
+                - link "Social network" [ref=e618] [cursor=pointer]:
+                  - /url: https://linkly.link/1pNU3
+                  - img [ref=e620]
+              - separator [ref=e623]
+          - generic [ref=e625]:
+            - generic [ref=e626]:
+              - link "google_my_business" [ref=e630] [cursor=pointer]:
+                - /url: https://www.google.com/maps/place/HERO+Hair+Institute+-+Hair+Transplant+Institute+Medellin/@6.1960842,-75.5602085,15z/data=!4m5!3m4!1s0x0:0x510350fe274fd82f!8m2!3d6.1960842!4d-75.5602085
+                - generic [ref=e631]: 
+              - generic [ref=e632]:
+                - paragraph [ref=e633]:
+                  - strong [ref=e634]: Carrera 25 A Nro 1 A Sur 45
+                - paragraph [ref=e635]:
+                  - strong [ref=e636]: Torre Médica El Tesoro, Torre 1, Consultorio 730, Medellín, Antioquia
+                - paragraph [ref=e637]
+                - paragraph [ref=e638]:
+                  - strong [ref=e639]: "WhatsApp:"
+                - paragraph [ref=e640]:
+                  - link "+57 314 7418831" [ref=e641] [cursor=pointer]:
+                    - /url: https://api.whatsapp.com/send?phone=573147418831&text=%C2%A1Hello!
+                    - strong [ref=e642]: +57 314 7418831
+                - paragraph [ref=e643]:
+                  - strong [ref=e644]: "Call:"
+                - paragraph [ref=e645]:
+                  - link "+57 6019196727" [ref=e646] [cursor=pointer]:
+                    - /url: tel:+57 601 9196727
+                    - strong [ref=e647]: +57 6019196727
+            - generic [ref=e648]:
+              - link "google_my_business" [ref=e652] [cursor=pointer]:
+                - /url: https://www.google.com/maps/place/HERO/@4.6947822,-75.2516187,9z/data=!4m6!3m5!1s0x8e3f9b2ea65676df:0x89e5f8e0eff0fd7b!8m2!3d4.6947822!4d-74.0321363!16s%2Fg%2F11hzcj3_0f?entry=ttu
+                - generic [ref=e653]: 
+              - generic [ref=e654]:
+                - paragraph [ref=e655]:
+                  - strong [ref=e656]: "Calle 117 #6a-60"
+                - paragraph [ref=e657]:
+                  - strong [ref=e658]: Flormorado Empresarial, Consultorio 509, Bogotá, Cundinamarca
+                - paragraph [ref=e659]
+                - paragraph [ref=e660]:
+                  - strong [ref=e661]: "WhatsApp:"
+                - paragraph [ref=e662]:
+                  - link "+57 314 7418831" [ref=e663] [cursor=pointer]:
+                    - /url: https://api.whatsapp.com/send?phone=573147418831&text=%C2%A1Hello!
+                    - strong [ref=e664]: +57 314 7418831
+                - paragraph [ref=e665]:
+                  - strong [ref=e666]: "Call:"
+                - paragraph [ref=e667]:
+                  - link "+57 6019196727" [ref=e668] [cursor=pointer]:
+                    - /url: tel:+57 601 9196727
+                    - strong [ref=e669]: +57 6019196727
+          - separator [ref=e671]
+          - generic [ref=e673]:
+            - link "HERO | Hair Evolution by Robotics Logo" [ref=e676] [cursor=pointer]:
+              - /url: /
+              - img "HERO | Hair Evolution by Robotics Logo" [ref=e677]
+            - paragraph [ref=e680]:
+              - link "Privacy" [ref=e681] [cursor=pointer]:
+                - /url: /privacy-policy
+              - link "& Terms" [ref=e683] [cursor=pointer]:
+                - /url: /privacy-policy
+            - paragraph [ref=e686]:
+              - link "Disclaimer of Medical Responsibilit" [ref=e687] [cursor=pointer]:
+                - /url: /disclaimer
+              - text: "y"
+            - link "Vigilado Supersalud Colombia" [ref=e690] [cursor=pointer]:
+              - /url: https://www.supersalud.gov.co/
+              - img "Vigilado Supersalud Colombia" [ref=e691]
+          - separator [ref=e693]
+          - generic [ref=e695]:
+            - generic [ref=e696]: © 2026
+            - paragraph [ref=e698]: All Rights Reserved | HERO Institute
+    - generic [ref=e699]:
+      - paragraph [ref=e701]:
+        - text: We use cookies to ensure that we give you the best experience on our website. To learn more, go to our
+        - link "Privacy Page" [ref=e702] [cursor=pointer]:
+          - /url: https://www.heroinstitute.co/privacy-policy
+        - text: .
+      - generic "Dismiss notification" [ref=e703] [cursor=pointer]: ×
+  - generic:
+    - generic:
+      - generic: 
+    - generic: "Share by:"

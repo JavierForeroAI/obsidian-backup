@@ -1,0 +1,9 @@
+[     966ms] [LOG] JQMIGRATE: Migrate is installed, version 3.5.2 @ https://static.cdn-website.com/mnlt/production/6468/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js:4
+[    1904ms] [ERROR] Error in generateFingerprint: Error: Failed to load analytics library
+    at script.onerror (https://analyticsplusdev.clientify.net/analytics_plus/pixel/Td4DF3c6bxPlBgLp:141:51) @ https://analyticsplusdev.clientify.net/analytics_plus/pixel/Td4DF3c6bxPlBgLp:153
+[    1989ms] [ERROR] Error generating visitor fingerprint: Error: Failed to load analytics library
+    at script.onerror (https://analyticsplusdev.clientify.net/analytics_plus/pixel/Td4DF3c6bxPlBgLp:141:51) @ https://analyticsplusdev.clientify.net/analytics_plus/pixel/Td4DF3c6bxPlBgLp:186
+[    1989ms] [LOG] Visitor fingerprint: undefined @ https://analyticsplusdev.clientify.net/analytics_plus/pixel/Td4DF3c6bxPlBgLp:222
+[    1989ms] [LOG] Visitor UUID: R3dwOUFLZXlTOXFvR3Z3RjIwMjY0MjA5MjMx @ https://analyticsplusdev.clientify.net/analytics_plus/pixel/Td4DF3c6bxPlBgLp:223
+[    2616ms] [LOG] Analytics pixel: SyntaxError: Unexpected token 'a', "asociacion" is not valid JSON @ https://analyticsplusdev.clientify.net/analytics_plus/pixel/Td4DF3c6bxPlBgLp:39
+[    7782ms] [LOG] uids not set yet @ https://analytics.clientify.net/tracker.js:446

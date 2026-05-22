@@ -1,0 +1,1804 @@
+- generic [ref=e12]:
+  - generic [ref=e15]:
+    - link "Biblioteca de anuncios de Meta" [ref=e18] [cursor=pointer]:
+      - /url: /ads/library/?source=fb-logo
+      - generic [ref=e20]: Biblioteca de anuncios de Meta
+    - generic [ref=e22]: Biblioteca de anuncios
+    - menuitem "Informe de la Biblioteca de anuncios" [ref=e24] [cursor=pointer]:
+      - generic [ref=e25]: Informe de la Biblioteca de anuncios
+    - menuitem "API de la Biblioteca de anuncios" [ref=e27] [cursor=pointer]:
+      - generic [ref=e28]: API de la Biblioteca de anuncios
+    - menuitem "Contenido de marca" [ref=e30] [cursor=pointer]:
+      - generic [ref=e31]: Contenido de marca
+    - menuitem "Open navigation panel" [ref=e33] [cursor=pointer]
+  - generic [ref=e40]:
+    - combobox "Colombia" [ref=e44] [cursor=pointer]:
+      - generic [ref=e51]: Colombia
+    - combobox "Todos los anuncios" [ref=e57] [cursor=pointer]:
+      - generic [ref=e67]: Todos los anuncios
+    - generic [ref=e77]:
+      - generic [ref=e83]: Buscar por palabra clave o anunciante
+      - generic [ref=e89]:
+        - searchbox "Buscar por palabra clave o anunciante" [ref=e95]: mediarte
+        - button "Borrar" [ref=e97] [cursor=pointer]
+  - dialog [ref=e99]:
+    - generic [ref=e100]:
+      - link [ref=e101] [cursor=pointer]:
+        - /url: /
+        - heading [level=4] [ref=e102]: Iniciar sesión
+      - menuitem [ref=e103] [cursor=pointer]
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - heading [level=4] [ref=e108]: Biblioteca de anuncios
+        - menuitem [ref=e110] [cursor=pointer]:
+          - heading [level=4] [ref=e112]: Informe de la Biblioteca de anuncios
+        - menuitem [ref=e114] [cursor=pointer]:
+          - heading [level=4] [ref=e116]: API de la Biblioteca de anuncios
+        - menuitem [ref=e118] [cursor=pointer]:
+          - heading [level=4] [ref=e120]: Contenido de marca
+      - separator [ref=e121]
+      - generic [ref=e122]:
+        - menuitem [ref=e124] [cursor=pointer]:
+          - heading [level=4] [ref=e126]: Estado del sistema
+        - menuitem [ref=e128] [cursor=pointer]:
+          - heading [level=4] [ref=e130]: Suscribirse a novedades por correo electrónico
+        - menuitem [ref=e132] [cursor=pointer]:
+          - heading [level=4] [ref=e134]: Preguntas frecuentes
+        - menuitem [ref=e136] [cursor=pointer]:
+          - heading [level=4] [ref=e138]: Información sobre los anuncios y el uso de datos
+        - menuitem [ref=e140] [cursor=pointer]:
+          - heading [level=4] [ref=e142]: Privacidad
+        - menuitem [ref=e144] [cursor=pointer]:
+          - heading [level=4] [ref=e146]: Condiciones
+        - menuitem [ref=e148] [cursor=pointer]:
+          - heading [level=4] [ref=e150]: Cookies
+  - generic [ref=e151]:
+    - generic [ref=e152]:
+      - generic [ref=e158]:
+        - heading "~100 resultados" [level=3] [ref=e160]
+        - generic [ref=e162]:
+          - text: Estos resultados incluyen anuncios que coinciden con tu
+          - strong [ref=e163]: búsqueda de palabra clave.
+      - generic [ref=e164]:
+        - generic [ref=e173]:
+          - generic [ref=e174]:
+            - button "Filtros" [ref=e175] [cursor=pointer]:
+              - generic [ref=e180]: Filtros
+            - generic [ref=e182]:
+              - generic [ref=e188]: Ordenar
+              - combobox "Ordenar" [ref=e193] [cursor=pointer]:
+                - generic [ref=e200]: Ordenar por
+          - generic [ref=e205]:
+            - generic [ref=e206]:
+              - strong [ref=e207]: Estado activo
+              - text: ": Anuncios activos"
+            - button "Suprimir" [ref=e208] [cursor=pointer]:
+              - generic [ref=e211]: Suprimir
+        - generic [ref=e215]:
+          - generic [ref=e217]:
+            - generic [ref=e219]:
+              - generic [ref=e220]:
+                - generic [ref=e227]: Activo
+                - generic [ref=e230]: "Identificador de la biblioteca: 1161087669531337"
+                - generic [ref=e232]: En circulación desde el 22 dic. 2025
+                - generic [ref=e234]: Plataformas
+                - generic [ref=e253]: Este anuncio tiene varias versiones
+              - button "Abrir menú desplegable" [ref=e260] [cursor=pointer]:
+                - generic [ref=e263]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e266] [cursor=pointer]:
+              - generic [ref=e270]: Ver detalles del anuncio
+            - separator [ref=e271]
+            - generic [ref=e276]:
+              - generic [ref=e279]:
+                - img "Mediarte Llanogrande" [ref=e280]
+                - generic [ref=e282]:
+                  - link "Mediarte Llanogrande" [ref=e283] [cursor=pointer]:
+                    - /url: https://www.facebook.com/100091235412422/
+                  - generic [ref=e287]:
+                    - strong [ref=e289]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e291]:
+                - button "Ey, no dejés que el tema del cabello se convierta en una preocupación. Mediarte Llanogrande" [ref=e294]:
+                  - generic [ref=e296]: Ey, no dejés que el tema del cabello se convierta en una preocupación. Mediarte Llanogrande
+                - group "Video player" [ref=e306]:
+                  - button "Reproducir vídeo" [ref=e308] [cursor=pointer]
+                  - generic [ref=e310]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:34
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - generic [ref=e311]:
+                  - generic [ref=e312]:
+                    - generic:
+                      - button
+                    - button "Valoración capilar sin costo" [ref=e314]:
+                      - generic [ref=e315]: Valoración capilar sin costo
+                    - button "Puedes recibir una valoración capilar sin costo, donde te explicamos con claridad las opciones disponibles para ti." [ref=e317]:
+                      - generic [ref=e318]: Puedes recibir una valoración capilar sin costo, donde te explicamos con claridad las opciones disponibles para ti.
+                    - generic:
+                      - button
+                  - button "Send WhatsApp Message" [disabled] [ref=e320]:
+                    - generic [ref=e324]: Send WhatsApp Message
+          - generic [ref=e326]:
+            - generic [ref=e328]:
+              - generic [ref=e329]:
+                - generic [ref=e336]: Activo
+                - generic [ref=e339]: "Identificador de la biblioteca: 1823489769053489"
+                - generic [ref=e341]: En circulación desde el 8 ene. 2026
+                - generic [ref=e343]: Plataformas
+                - generic [ref=e356]:
+                  - strong [ref=e357]: 2 anuncios
+                  - text: usan este contenido y texto
+              - button "Abrir menú desplegable" [ref=e360] [cursor=pointer]:
+                - generic [ref=e363]: Abrir menú desplegable
+            - button "Ver detalles del resumen" [ref=e366] [cursor=pointer]:
+              - generic [ref=e370]: Ver detalles del resumen
+            - separator [ref=e371]
+            - generic [ref=e376]:
+              - generic [ref=e378]:
+                - img "Mediarte Pereira" [ref=e379]
+                - generic [ref=e381]:
+                  - link "Mediarte Pereira" [ref=e382] [cursor=pointer]:
+                    - /url: https://www.facebook.com/mediartepereira/
+                  - generic [ref=e386]:
+                    - strong [ref=e388]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e389]:
+                - button "El implante capilar es la solución definitiva a la caída del cabello, como pueden ver en el video, el proceso en indoloro y los resultados garantizados. Somos la empresa número 1 en implante capilar. Solicita ya mismo tu valoración y diagnostico profesional sin costo, por parte de nuestros expertos ." [ref=e392]:
+                  - generic [ref=e394]: El implante capilar es la solución definitiva a la caída del cabello, como pueden ver en el video, el proceso en indoloro y los resultados garantizados. Somos la empresa número 1 en implante capilar. Solicita ya mismo tu valoración y diagnostico profesional sin costo, por parte de nuestros expertos .
+                - group "Video player" [ref=e404]:
+                  - button "Reproducir vídeo" [ref=e406] [cursor=pointer]
+                  - generic [ref=e408]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:48
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - generic:
+                  - link:
+                    - /url: https://l.facebook.com/l.php?u=http%3A%2F%2Finstagram.com%2Fmediartepereira&h=AUAT2Kh3hkakgo_ysaAmVhQSRc3ciaH1Pm-4J-S-PHBxLrs-Zu1lxiI4M3X9g6gcR1G-HRuJb0yl2eqIj96gWonSb4N87ZJn9urhtBbMDuR4wabgaZtyUZDCAb0cXEgEfax-Ymnv8SJ7VZ2ohkp1V_rPxXU
+          - generic [ref=e410]:
+            - generic [ref=e412]:
+              - generic [ref=e413]:
+                - generic [ref=e420]: Activo
+                - generic [ref=e423]: "Identificador de la biblioteca: 1603491581021500"
+                - generic [ref=e425]: En circulación desde el 1 dic. 2025
+                - generic [ref=e427]: Plataformas
+              - button "Abrir menú desplegable" [ref=e441] [cursor=pointer]:
+                - generic [ref=e444]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e447] [cursor=pointer]:
+              - generic [ref=e451]: Ver detalles del anuncio
+            - separator [ref=e452]
+            - generic [ref=e457]:
+              - generic [ref=e459]:
+                - img "Mediarte Pereira" [ref=e460]
+                - generic [ref=e462]:
+                  - link "Mediarte Pereira" [ref=e463] [cursor=pointer]:
+                    - /url: https://www.facebook.com/mediartepereira/
+                  - generic [ref=e467]:
+                    - strong [ref=e469]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e470]:
+                - button "Somos líderes en tratamientos para la calvicie" [ref=e473]:
+                  - generic [ref=e475]: Somos líderes en tratamientos para la calvicie
+                - group "Video player" [ref=e485]:
+                  - button "Reproducir vídeo" [ref=e487] [cursor=pointer]
+                  - generic [ref=e489]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:11
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - link "INSTAGRAM.COM Mediarte Pereira Ir al perfil de Instagram" [ref=e491] [cursor=pointer]:
+                  - /url: https://l.facebook.com/l.php?u=http%3A%2F%2Finstagram.com%2Fmediartepereira&h=AUAT2Kh3hkakgo_ysaAmVhQSRc3ciaH1Pm-4J-S-PHBxLrs-Zu1lxiI4M3X9g6gcR1G-HRuJb0yl2eqIj96gWonSb4N87ZJn9urhtBbMDuR4wabgaZtyUZDCAb0cXEgEfax-Ymnv8SJ7VZ2ohkp1V_rPxXU
+                  - generic [ref=e492]:
+                    - generic [ref=e493]:
+                      - button "INSTAGRAM.COM" [ref=e495]:
+                        - generic [ref=e496]: INSTAGRAM.COM
+                      - button "Mediarte Pereira" [ref=e498]:
+                        - generic [ref=e499]: Mediarte Pereira
+                      - generic:
+                        - button
+                      - generic:
+                        - button
+                    - button "Ir al perfil de Instagram" [ref=e501]:
+                      - generic [ref=e505]: Ir al perfil de Instagram
+          - generic [ref=e507]:
+            - generic [ref=e509]:
+              - generic [ref=e510]:
+                - generic [ref=e517]: Activo
+                - generic [ref=e520]: "Identificador de la biblioteca: 1229889402608454"
+                - generic [ref=e522]: En circulación desde el 5 feb. 2026
+                - generic [ref=e524]: Plataformas
+              - button "Abrir menú desplegable" [ref=e553] [cursor=pointer]:
+                - generic [ref=e556]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e559] [cursor=pointer]:
+              - generic [ref=e563]: Ver detalles del anuncio
+            - separator [ref=e564]
+            - generic [ref=e569]:
+              - generic [ref=e571]:
+                - img "Mediarte Llanogrande" [ref=e572]
+                - generic [ref=e574]:
+                  - link "Mediarte Llanogrande" [ref=e575] [cursor=pointer]:
+                    - /url: https://www.facebook.com/100091235412422/
+                  - generic [ref=e579]:
+                    - strong [ref=e581]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e582]:
+                - 'button "Si notas caída, afinamiento o cambios en tu cuero cabelludo, no lo dejes pasar ni te automediques❌ En Mediarte Llanogrande evaluamos tu caso y te decimos qué está pasando realmente y cómo tratarlo✅ 📍 Valoración capilar gratuita 📲 Agenda tu cita #objeto #cabello #caspa #minoxidil #calvicie" [ref=e585]':
+                  - generic [ref=e588]:
+                    - text: Si notas caída, afinamiento o cambios en tu cuero cabelludo, no lo dejes pasar ni te automediques❌
+                    - text: En Mediarte Llanogrande evaluamos tu caso y te decimos qué está pasando realmente y cómo tratarlo✅
+                    - text: 📍 Valoración capilar gratuita
+                    - text: 📲 Agenda tu cita
+                    - text: "#objeto #cabello #caspa #minoxidil #calvicie"
+                - group "Video player" [ref=e599]:
+                  - button "Reproducir vídeo" [ref=e601] [cursor=pointer]
+                  - generic [ref=e603]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:35
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - generic [ref=e604]:
+                  - generic [ref=e605]:
+                    - button "API.WHATSAPP.COM" [ref=e607]:
+                      - generic [ref=e608]: API.WHATSAPP.COM
+                    - button "Mediarte Llanogrande" [ref=e610]:
+                      - generic [ref=e611]: Mediarte Llanogrande
+                    - generic:
+                      - button
+                    - generic:
+                      - button
+                  - button "Enviar mensaje de WhatsApp" [disabled] [ref=e613]:
+                    - generic [ref=e617]: Enviar mensaje de WhatsApp
+          - generic [ref=e619]:
+            - generic [ref=e621]:
+              - generic [ref=e622]:
+                - generic [ref=e629]: Activo
+                - generic [ref=e632]: "Identificador de la biblioteca: 1403854834285384"
+                - generic [ref=e634]: En circulación desde el 2 mar. 2026
+                - generic [ref=e636]: Plataformas
+                - generic [ref=e645]: Este anuncio tiene varias versiones
+              - button "Abrir menú desplegable" [ref=e652] [cursor=pointer]:
+                - generic [ref=e655]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e658] [cursor=pointer]:
+              - generic [ref=e662]: Ver detalles del anuncio
+            - separator [ref=e663]
+            - generic [ref=e668]:
+              - generic [ref=e671]:
+                - img "Mediarte Llanogrande" [ref=e672]
+                - generic [ref=e674]:
+                  - link "Mediarte Llanogrande" [ref=e675] [cursor=pointer]:
+                    - /url: https://www.facebook.com/100091235412422/
+                  - generic [ref=e679]:
+                    - strong [ref=e681]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e683]:
+                - button "Ey, no dejés que el tema del cabello se convierta en una preocupación. Mediarte Llanogrande" [ref=e686]:
+                  - generic [ref=e688]: Ey, no dejés que el tema del cabello se convierta en una preocupación. Mediarte Llanogrande
+                - group "Video player" [ref=e698]:
+                  - button "Reproducir vídeo" [ref=e700] [cursor=pointer]
+                  - generic [ref=e702]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:34
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - link "Agenda Valoracion en Llanogrande Muchas personas no saben por dónde empezar en temas capilares. En nuestra sede de Llanogrande te brindamos una valoración sin costo donde resolvemos tus dudas y te guiamos en las alternativas disponibles. Envíanos un mensaje. Get Offer" [ref=e704] [cursor=pointer]:
+                  - /url: https://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUAT2Kh3hkakgo_ysaAmVhQSRc3ciaH1Pm-4J-S-PHBxLrs-Zu1lxiI4M3X9g6gcR1G-HRuJb0yl2eqIj96gWonSb4N87ZJn9urhtBbMDuR4wabgaZtyUZDCAb0cXEgEfax-Ymnv8SJ7VZ2ohkp1V_rPxXU
+                  - generic [ref=e705]:
+                    - generic [ref=e706]:
+                      - generic:
+                        - button
+                      - button "Agenda Valoracion en Llanogrande" [ref=e708]:
+                        - generic [ref=e709]: Agenda Valoracion en Llanogrande
+                      - button "Muchas personas no saben por dónde empezar en temas capilares. En nuestra sede de Llanogrande te brindamos una valoración sin costo donde resolvemos tus dudas y te guiamos en las alternativas disponibles. Envíanos un mensaje." [ref=e711]:
+                        - generic [ref=e712]: Muchas personas no saben por dónde empezar en temas capilares. En nuestra sede de Llanogrande te brindamos una valoración sin costo donde resolvemos tus dudas y te guiamos en las alternativas disponibles. Envíanos un mensaje.
+                      - generic:
+                        - button
+                    - button "Get Offer" [disabled] [ref=e714]:
+                      - generic [ref=e718]: Get Offer
+          - generic [ref=e720]:
+            - generic [ref=e722]:
+              - generic [ref=e723]:
+                - generic [ref=e730]: Activo
+                - generic [ref=e733]: "Identificador de la biblioteca: 27125984860375764"
+                - generic [ref=e735]: En circulación desde el 14 may. 2026
+                - generic [ref=e737]: Plataformas
+              - button "Abrir menú desplegable" [ref=e746] [cursor=pointer]:
+                - generic [ref=e749]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e752] [cursor=pointer]:
+              - generic [ref=e756]: Ver detalles del anuncio
+            - separator [ref=e757]
+            - generic [ref=e762]:
+              - generic [ref=e764]:
+                - img "Mediarte Medical Center" [ref=e765]
+                - generic [ref=e767]:
+                  - link "Mediarte Medical Center" [ref=e768] [cursor=pointer]:
+                    - /url: https://www.facebook.com/100080597526806/
+                  - generic [ref=e772]:
+                    - strong [ref=e774]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e775]:
+                - 'button "No todos los tratamientos capilares son iguales. En Mediarte evaluamos tu caso y te ofrecemos soluciones reales: implante capilar, terapias avanzadas y acompañamiento médico en cada etapa. Más de 12 años de experiencia y presencia nacional e internacional nos respaldan. 👉 Agenda tu valoración y conoce la mejor opción para ti." [ref=e778]':
+                  - generic [ref=e781]:
+                    - text: No todos los tratamientos capilares son iguales.
+                    - text: "En Mediarte evaluamos tu caso y te ofrecemos soluciones reales: implante capilar, terapias avanzadas y acompañamiento médico en cada etapa."
+                    - text: Más de 12 años de experiencia y presencia nacional e internacional nos respaldan.
+                    - text: 👉 Agenda tu valoración y conoce la mejor opción para ti.
+                - group "Video player" [ref=e791]:
+                  - button "Reproducir vídeo" [ref=e793] [cursor=pointer]
+                  - generic [ref=e795]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 1:01
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - link "WWW.INSTAGRAM.COM Mediarte Medical Center Enviar mensaje" [ref=e797] [cursor=pointer]:
+                  - /url: https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.instagram.com%2F&h=AUAT2Kh3hkakgo_ysaAmVhQSRc3ciaH1Pm-4J-S-PHBxLrs-Zu1lxiI4M3X9g6gcR1G-HRuJb0yl2eqIj96gWonSb4N87ZJn9urhtBbMDuR4wabgaZtyUZDCAb0cXEgEfax-Ymnv8SJ7VZ2ohkp1V_rPxXU
+                  - generic [ref=e798]:
+                    - generic [ref=e799]:
+                      - button "WWW.INSTAGRAM.COM" [ref=e801]:
+                        - generic [ref=e802]: WWW.INSTAGRAM.COM
+                      - button "Mediarte Medical Center" [ref=e804]:
+                        - generic [ref=e805]: Mediarte Medical Center
+                      - generic:
+                        - button
+                      - generic:
+                        - button
+                    - button "Enviar mensaje" [ref=e807]:
+                      - generic [ref=e811]: Enviar mensaje
+          - generic [ref=e813]:
+            - generic [ref=e815]:
+              - generic [ref=e816]:
+                - generic [ref=e823]: Activo
+                - generic [ref=e826]: "Identificador de la biblioteca: 922702667225960"
+                - generic [ref=e828]: En circulación desde el 7 abr. 2026
+                - generic [ref=e830]: Plataformas
+              - button "Abrir menú desplegable" [ref=e844] [cursor=pointer]:
+                - generic [ref=e847]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e850] [cursor=pointer]:
+              - generic [ref=e854]: Ver detalles del anuncio
+            - separator [ref=e855]
+            - generic [ref=e860]:
+              - generic [ref=e862]:
+                - img "Mediarte Valledupar" [ref=e863]
+                - generic [ref=e865]:
+                  - link "Mediarte Valledupar" [ref=e866] [cursor=pointer]:
+                    - /url: https://www.facebook.com/61569238540286/
+                  - generic [ref=e870]:
+                    - strong [ref=e872]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e873]:
+                - 'button "¿Por qué tratar tu caída capilar en Mediarte Valledupar? Somos una clínica capilar con presencia en más de 21 ciudades en Colombia, México y Panamá 🌎 Más de 30.000 pacientes han confiado en nuestros tratamientos 🤝 Contamos con procedimientos médicos como implante capilar, PRP y mesoterapia capilar, indicados según tu diagnóstico 🧬 Agenda tu cita de valoración capilar GRATIS en Mediarte Valledupar y empieza tu proceso con respaldo profesional 📲✨ #valledupar #calvicie #alopecia #caidadecabello #implantecapilar" [ref=e876]':
+                  - generic [ref=e879]:
+                    - text: ¿Por qué tratar tu caída capilar en Mediarte Valledupar?
+                    - text: Somos una clínica capilar con presencia en más de 21 ciudades en Colombia, México y Panamá 🌎
+                    - text: Más de 30.000 pacientes han confiado en nuestros tratamientos 🤝
+                    - text: Contamos con procedimientos médicos como implante capilar, PRP y mesoterapia capilar, indicados según tu diagnóstico 🧬
+                    - text: Agenda tu cita de valoración capilar GRATIS en Mediarte Valledupar y empieza tu proceso con respaldo profesional 📲✨
+                    - text: "#valledupar #calvicie #alopecia #caidadecabello #implantecapilar"
+                - group "Video player" [ref=e890]:
+                  - button "Reproducir vídeo" [ref=e892] [cursor=pointer]
+                  - generic [ref=e894]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:31
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - generic [ref=e895]:
+                  - generic [ref=e896]:
+                    - button "API.WHATSAPP.COM" [ref=e898]:
+                      - generic [ref=e899]: API.WHATSAPP.COM
+                    - button "Mediarte Valledupar" [ref=e901]:
+                      - generic [ref=e902]: Mediarte Valledupar
+                    - generic:
+                      - button
+                    - generic:
+                      - button
+                  - button "Enviar mensaje de WhatsApp" [disabled] [ref=e904]:
+                    - generic [ref=e908]: Enviar mensaje de WhatsApp
+          - generic [ref=e910]:
+            - generic [ref=e912]:
+              - generic [ref=e913]:
+                - generic [ref=e920]: Activo
+                - generic [ref=e923]: "Identificador de la biblioteca: 26600809169619740"
+                - generic [ref=e925]: En circulación desde el 14 may. 2026
+                - generic [ref=e927]: Plataformas
+              - button "Abrir menú desplegable" [ref=e936] [cursor=pointer]:
+                - generic [ref=e939]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e942] [cursor=pointer]:
+              - generic [ref=e946]: Ver detalles del anuncio
+            - separator [ref=e947]
+            - generic [ref=e952]:
+              - generic [ref=e954]:
+                - img "Mediarte Medical Center" [ref=e955]
+                - generic [ref=e957]:
+                  - link "Mediarte Medical Center" [ref=e958] [cursor=pointer]:
+                    - /url: https://www.facebook.com/100080597526806/
+                  - generic [ref=e962]:
+                    - strong [ref=e964]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e965]:
+                - 'button "Las redes sociales te muestran el “antes y después”… pero casi nunca te muestran el proceso. No te muestran la valoración médica, el diagnóstico personalizado, las horas de cirugía, los controles, el seguimiento, la paciencia… Detrás de cada resultado natural hay ciencia, experiencia y un equipo médico acompañando cada paso. Porque el verdadero cambio no pasa en una foto… pasa en el proceso. . . . . . . . . . . . . . . . . . . . . . . #implantecapilar #valoracion #mediarte" [ref=e968]':
+                  - generic [ref=e971]:
+                    - text: Las redes sociales te muestran el “antes y después”…
+                    - text: pero casi nunca te muestran el proceso.
+                    - text: No te muestran la valoración médica,
+                    - text: el diagnóstico personalizado,
+                    - text: las horas de cirugía,
+                    - text: los controles,
+                    - text: el seguimiento,
+                    - text: la paciencia…
+                    - text: Detrás de cada resultado natural hay ciencia, experiencia y un equipo médico acompañando cada paso.
+                    - text: Porque el verdadero cambio no pasa en una foto…
+                    - text: pasa en el proceso.
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: .
+                    - text: "#implantecapilar #valoracion #mediarte"
+                - group "Video player" [ref=e982]:
+                  - button "Reproducir vídeo" [ref=e984] [cursor=pointer]
+                  - generic [ref=e986]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:15
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - link "WWW.INSTAGRAM.COM Mediarte Medical Center Enviar mensaje" [ref=e988] [cursor=pointer]:
+                  - /url: https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.instagram.com%2F&h=AUAT2Kh3hkakgo_ysaAmVhQSRc3ciaH1Pm-4J-S-PHBxLrs-Zu1lxiI4M3X9g6gcR1G-HRuJb0yl2eqIj96gWonSb4N87ZJn9urhtBbMDuR4wabgaZtyUZDCAb0cXEgEfax-Ymnv8SJ7VZ2ohkp1V_rPxXU
+                  - generic [ref=e989]:
+                    - generic [ref=e990]:
+                      - button "WWW.INSTAGRAM.COM" [ref=e992]:
+                        - generic [ref=e993]: WWW.INSTAGRAM.COM
+                      - button "Mediarte Medical Center" [ref=e995]:
+                        - generic [ref=e996]: Mediarte Medical Center
+                      - generic:
+                        - button
+                      - generic:
+                        - button
+                    - button "Enviar mensaje" [ref=e998]:
+                      - generic [ref=e1002]: Enviar mensaje
+          - generic [ref=e1004]:
+            - generic [ref=e1006]:
+              - generic [ref=e1007]:
+                - generic [ref=e1014]: Activo
+                - generic [ref=e1017]: "Identificador de la biblioteca: 1621005132305992"
+                - generic [ref=e1019]: En circulación desde el 7 may. 2026
+                - generic [ref=e1021]: Plataformas
+              - button "Abrir menú desplegable" [ref=e1040] [cursor=pointer]:
+                - generic [ref=e1043]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e1046] [cursor=pointer]:
+              - generic [ref=e1050]: Ver detalles del anuncio
+            - separator [ref=e1051]
+            - generic [ref=e1056]:
+              - generic [ref=e1058]:
+                - img "Mediarte Monteria" [ref=e1059]
+                - generic [ref=e1061]:
+                  - link "Mediarte Monteria" [ref=e1062] [cursor=pointer]:
+                    - /url: https://www.facebook.com/Mediarte.Monteria1/
+                  - generic [ref=e1066]:
+                    - strong [ref=e1068]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e1069]:
+                - button "🔥 MONTERÍA 🔥 Este mes de mayo en Mediarte podrás acceder a promociones especiales para recuperar tu cabello. ✅ Hasta 40% OFF en implantes capilares ✅ 2x1 en terapias capilares 📍 Solo 10 cupos disponibles. Agenda tu valoración gratuita." [ref=e1072]:
+                  - generic [ref=e1075]:
+                    - text: 🔥 MONTERÍA 🔥
+                    - text: Este mes de mayo en Mediarte podrás acceder a promociones especiales para recuperar tu cabello.
+                    - text: ✅ Hasta 40% OFF en implantes capilares
+                    - text: ✅ 2x1 en terapias capilares
+                    - text: 📍 Solo 10 cupos disponibles.
+                    - text: Agenda tu valoración gratuita.
+                - generic [ref=e1078]:
+                  - generic [ref=e1079]:
+                    - button "WHATSAPP" [ref=e1081]:
+                      - generic [ref=e1082]: WHATSAPP
+                    - button "💥 Promoción Capilar Mayo" [ref=e1084]:
+                      - generic [ref=e1085]: 💥 Promoción Capilar Mayo
+                    - button "Solo por tiempo limitado." [ref=e1087]:
+                      - generic [ref=e1088]: Solo por tiempo limitado.
+                    - generic:
+                      - button
+                  - button "Enviar mensaje de WhatsApp" [disabled] [ref=e1090]:
+                    - generic [ref=e1094]: Enviar mensaje de WhatsApp
+          - generic [ref=e1096]:
+            - generic [ref=e1098]:
+              - generic [ref=e1099]:
+                - generic [ref=e1106]: Activo
+                - generic [ref=e1109]: "Identificador de la biblioteca: 1959917711543763"
+                - generic [ref=e1111]: En circulación desde el 14 ene. 2026
+                - generic [ref=e1113]: Plataformas
+              - button "Abrir menú desplegable" [ref=e1142] [cursor=pointer]:
+                - generic [ref=e1145]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e1148] [cursor=pointer]:
+              - generic [ref=e1152]: Ver detalles del anuncio
+            - separator [ref=e1153]
+            - generic [ref=e1158]:
+              - generic [ref=e1160]:
+                - img "Mediarte Pereira" [ref=e1161]
+                - generic [ref=e1163]:
+                  - link "Mediarte Pereira" [ref=e1164] [cursor=pointer]:
+                    - /url: https://www.facebook.com/mediartepereira/
+                  - generic [ref=e1168]:
+                    - strong [ref=e1170]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e1171]:
+                - button "Atrévete a cambiar" [ref=e1174]:
+                  - generic [ref=e1176]: Atrévete a cambiar
+                - link "WHATSAPP Valoración sin costo Más información" [ref=e1177] [cursor=pointer]:
+                  - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend&h=AUAT2Kh3hkakgo_ysaAmVhQSRc3ciaH1Pm-4J-S-PHBxLrs-Zu1lxiI4M3X9g6gcR1G-HRuJb0yl2eqIj96gWonSb4N87ZJn9urhtBbMDuR4wabgaZtyUZDCAb0cXEgEfax-Ymnv8SJ7VZ2ohkp1V_rPxXU
+                  - generic [ref=e1179]:
+                    - generic [ref=e1180]:
+                      - button "WHATSAPP" [ref=e1182]:
+                        - generic [ref=e1183]: WHATSAPP
+                      - button "Valoración sin costo" [ref=e1185]:
+                        - generic [ref=e1186]: Valoración sin costo
+                      - generic:
+                        - button
+                      - generic:
+                        - button
+                    - button "Más información" [ref=e1188]:
+                      - generic [ref=e1192]: Más información
+          - generic [ref=e1194]:
+            - generic [ref=e1196]:
+              - generic [ref=e1197]:
+                - generic [ref=e1204]: Activo
+                - generic [ref=e1207]: "Identificador de la biblioteca: 1668809364549431"
+                - generic [ref=e1209]: En circulación desde el 7 abr. 2026
+                - generic [ref=e1211]: Plataformas
+              - button "Abrir menú desplegable" [ref=e1225] [cursor=pointer]:
+                - generic [ref=e1228]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e1231] [cursor=pointer]:
+              - generic [ref=e1235]: Ver detalles del anuncio
+            - separator [ref=e1236]
+            - generic [ref=e1241]:
+              - generic [ref=e1243]:
+                - img "Mediarte Valledupar" [ref=e1244]
+                - generic [ref=e1246]:
+                  - link "Mediarte Valledupar" [ref=e1247] [cursor=pointer]:
+                    - /url: https://www.facebook.com/61569238540286/
+                  - generic [ref=e1251]:
+                    - strong [ref=e1253]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e1254]:
+                - 'button "En Mediarte, ofrecemos soluciones avanzadas de para que puedas restaurar tu cabello como: implantes capilares, trasplantes de barba y cejas con técnicas modernas como FUE y tratamientos de mesoterapia y plasma rico en plaquetas." [ref=e1257]':
+                  - generic [ref=e1259]: "En Mediarte, ofrecemos soluciones avanzadas de para que puedas restaurar tu cabello como: implantes capilares, trasplantes de barba y cejas con técnicas modernas como FUE y tratamientos de mesoterapia y plasma rico en plaquetas."
+                - group "Video player" [ref=e1269]:
+                  - button "Reproducir vídeo" [ref=e1271] [cursor=pointer]
+                  - generic [ref=e1273]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:47
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - generic [ref=e1274]:
+                  - generic [ref=e1275]:
+                    - button "API.WHATSAPP.COM" [ref=e1277]:
+                      - generic [ref=e1278]: API.WHATSAPP.COM
+                    - button "Mediarte Valledupar" [ref=e1280]:
+                      - generic [ref=e1281]: Mediarte Valledupar
+                    - generic:
+                      - button
+                    - generic:
+                      - button
+                  - button "Enviar mensaje de WhatsApp" [disabled] [ref=e1283]:
+                    - generic [ref=e1287]: Enviar mensaje de WhatsApp
+          - generic [ref=e1289]:
+            - generic [ref=e1291]:
+              - generic [ref=e1292]:
+                - generic [ref=e1299]: Activo
+                - generic [ref=e1302]: "Identificador de la biblioteca: 987917303628850"
+                - generic [ref=e1304]: En circulación desde el 16 may. 2026
+                - generic [ref=e1306]: Plataformas
+                - generic [ref=e1319]:
+                  - strong [ref=e1320]: 3 anuncios
+                  - text: usan este contenido y texto
+              - button "Abrir menú desplegable" [ref=e1323] [cursor=pointer]:
+                - generic [ref=e1326]: Abrir menú desplegable
+            - button "Ver detalles del resumen" [ref=e1329] [cursor=pointer]:
+              - generic [ref=e1333]: Ver detalles del resumen
+            - separator [ref=e1334]
+            - generic [ref=e1339]:
+              - generic [ref=e1341]:
+                - img "Mediarte Medical Center" [ref=e1342]
+                - generic [ref=e1344]:
+                  - link "Mediarte Medical Center" [ref=e1345] [cursor=pointer]:
+                    - /url: https://www.facebook.com/100080597526806/
+                  - generic [ref=e1349]:
+                    - strong [ref=e1351]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e1352]:
+                - 'button "🌟 Transformación en Acción: ¡Deja que tu confianza brille! Descubre cómo nuestro implante capilar femenino, al reducir el tamaño de la frente puede revitalizar tu imagen. 💆‍♀️✨ Ya queremos ver los resultados 🥰 #ConfianzaRenovada #implantecapilarfemenino #TratamientosCapilares #TransformaciónCapilar #alopecia #frontoplastía #implantecapilar #SaludCapilar" [ref=e1355]':
+                  - generic [ref=e1358]:
+                    - text: "🌟 Transformación en Acción: ¡Deja que tu confianza brille! Descubre cómo nuestro implante capilar femenino, al reducir el tamaño de la frente puede revitalizar tu imagen. 💆‍♀️✨"
+                    - text: Ya queremos ver los resultados 🥰
+                    - text: "#ConfianzaRenovada #implantecapilarfemenino #TratamientosCapilares #TransformaciónCapilar #alopecia #frontoplastía #implantecapilar #SaludCapilar"
+                - group "Video player" [ref=e1368]:
+                  - button "Reproducir vídeo" [ref=e1370] [cursor=pointer]
+                  - generic [ref=e1372]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:59
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - generic:
+                  - link:
+                    - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&h=AUAT2Kh3hkakgo_ysaAmVhQSRc3ciaH1Pm-4J-S-PHBxLrs-Zu1lxiI4M3X9g6gcR1G-HRuJb0yl2eqIj96gWonSb4N87ZJn9urhtBbMDuR4wabgaZtyUZDCAb0cXEgEfax-Ymnv8SJ7VZ2ohkp1V_rPxXU
+          - generic [ref=e1374]:
+            - generic [ref=e1376]:
+              - generic [ref=e1377]:
+                - generic [ref=e1384]: Activo
+                - generic [ref=e1387]: "Identificador de la biblioteca: 2938763086311642"
+                - generic [ref=e1389]: En circulación desde el 26 jul. 2025
+                - generic [ref=e1391]: Plataformas
+              - button "Abrir menú desplegable" [ref=e1405] [cursor=pointer]:
+                - generic [ref=e1408]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e1411] [cursor=pointer]:
+              - generic [ref=e1415]: Ver detalles del anuncio
+            - separator [ref=e1416]
+            - generic [ref=e1421]:
+              - generic [ref=e1423]:
+                - img "Mediarte Pereira" [ref=e1424]
+                - generic [ref=e1426]:
+                  - link "Mediarte Pereira" [ref=e1427] [cursor=pointer]:
+                    - /url: https://www.facebook.com/mediartepereira/
+                  - generic [ref=e1431]:
+                    - strong [ref=e1433]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e1434]:
+                - 'button "Federico no solo recuperó su imagen. Recuperó su seguridad, su bienestar emocional y su forma de mirarse al espejo con orgullo. En este último video nos cuenta todo su proceso y cómo fue vivir esta experiencia en la Clínica de Implante Capilar MediArte. Y tú, ¿hace cuánto piensas en hacerte un implante capilar? Tal vez este es el momento que estabas esperando. 📍 Somos la única clínica del Eje Cafetero con valoración sin costo. #ImplanteCapilar #CambioDeVida #ConfianzaRenovada #MediArte #FedericoConfiò #ValoraciónGratis #EjeCafetero" [ref=e1437]':
+                  - generic [ref=e1440]:
+                    - text: Federico no solo recuperó su imagen. Recuperó su seguridad, su bienestar emocional y su forma de mirarse al espejo con orgullo.
+                    - text: En este último video nos cuenta todo su proceso y cómo fue vivir esta experiencia en la Clínica de Implante Capilar MediArte.
+                    - text: Y tú, ¿hace cuánto piensas en hacerte un implante capilar?
+                    - text: Tal vez este es el momento que estabas esperando.
+                    - text: 📍 Somos la única clínica del Eje Cafetero con valoración sin costo.
+                    - text: "#ImplanteCapilar #CambioDeVida #ConfianzaRenovada #MediArte #FedericoConfiò #ValoraciónGratis #EjeCafetero"
+                - group "Video player" [ref=e1451]:
+                  - button "Reproducir vídeo" [ref=e1453] [cursor=pointer]
+                  - generic [ref=e1455]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:45
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - link "INSTAGRAM.COM Mediarte Pereira Ir al perfil de Instagram" [ref=e1457] [cursor=pointer]:
+                  - /url: https://l.facebook.com/l.php?u=http%3A%2F%2Finstagram.com%2Fmediartepereira&h=AUAT2Kh3hkakgo_ysaAmVhQSRc3ciaH1Pm-4J-S-PHBxLrs-Zu1lxiI4M3X9g6gcR1G-HRuJb0yl2eqIj96gWonSb4N87ZJn9urhtBbMDuR4wabgaZtyUZDCAb0cXEgEfax-Ymnv8SJ7VZ2ohkp1V_rPxXU
+                  - generic [ref=e1458]:
+                    - generic [ref=e1459]:
+                      - button "INSTAGRAM.COM" [ref=e1461]:
+                        - generic [ref=e1462]: INSTAGRAM.COM
+                      - button "Mediarte Pereira" [ref=e1464]:
+                        - generic [ref=e1465]: Mediarte Pereira
+                      - generic:
+                        - button
+                      - generic:
+                        - button
+                    - button "Ir al perfil de Instagram" [ref=e1467]:
+                      - generic [ref=e1471]: Ir al perfil de Instagram
+          - generic [ref=e1473]:
+            - generic [ref=e1475]:
+              - generic [ref=e1476]:
+                - generic [ref=e1483]: Activo
+                - generic [ref=e1486]: "Identificador de la biblioteca: 984924387626132"
+                - generic [ref=e1488]: En circulación desde el 22 abr. 2026
+                - generic [ref=e1490]: Plataformas
+              - button "Abrir menú desplegable" [ref=e1504] [cursor=pointer]:
+                - generic [ref=e1507]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e1510] [cursor=pointer]:
+              - generic [ref=e1514]: Ver detalles del anuncio
+            - separator [ref=e1515]
+            - generic [ref=e1520]:
+              - generic [ref=e1522]:
+                - img "Mediarte Valledupar" [ref=e1523]
+                - generic [ref=e1525]:
+                  - link "Mediarte Valledupar" [ref=e1526] [cursor=pointer]:
+                    - /url: https://www.facebook.com/61569238540286/
+                  - generic [ref=e1530]:
+                    - strong [ref=e1532]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e1533]:
+                - 'button "En Mediarte, ofrecemos soluciones avanzadas de para que puedas restaurar tu cabello como: implantes capilares, trasplantes de barba y cejas con técnicas modernas como FUE y tratamientos de mesoterapia y plasma rico en plaquetas." [ref=e1536]':
+                  - generic [ref=e1538]: "En Mediarte, ofrecemos soluciones avanzadas de para que puedas restaurar tu cabello como: implantes capilares, trasplantes de barba y cejas con técnicas modernas como FUE y tratamientos de mesoterapia y plasma rico en plaquetas."
+                - group "Video player" [ref=e1548]:
+                  - button "Reproducir vídeo" [ref=e1550] [cursor=pointer]
+                  - generic [ref=e1552]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:38
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - generic [ref=e1553]:
+                  - generic [ref=e1554]:
+                    - button "API.WHATSAPP.COM" [ref=e1556]:
+                      - generic [ref=e1557]: API.WHATSAPP.COM
+                    - button "Mediarte Valledupar" [ref=e1559]:
+                      - generic [ref=e1560]: Mediarte Valledupar
+                    - generic:
+                      - button
+                    - generic:
+                      - button
+                  - button "Enviar mensaje de WhatsApp" [disabled] [ref=e1562]:
+                    - generic [ref=e1566]: Enviar mensaje de WhatsApp
+          - generic [ref=e1568]:
+            - generic [ref=e1570]:
+              - generic [ref=e1571]:
+                - generic [ref=e1578]: Activo
+                - generic [ref=e1581]: "Identificador de la biblioteca: 1946303109634561"
+                - generic [ref=e1583]: En circulación desde el 14 ene. 2026
+                - generic [ref=e1585]: Plataformas
+                - generic [ref=e1613]:
+                  - strong [ref=e1614]: 2 anuncios
+                  - text: usan este contenido y texto
+              - button "Abrir menú desplegable" [ref=e1617] [cursor=pointer]:
+                - generic [ref=e1620]: Abrir menú desplegable
+            - button "Ver detalles del resumen" [ref=e1623] [cursor=pointer]:
+              - generic [ref=e1627]: Ver detalles del resumen
+            - separator [ref=e1628]
+            - generic [ref=e1633]:
+              - generic [ref=e1635]:
+                - img "Mediarte Pereira" [ref=e1636]
+                - generic [ref=e1638]:
+                  - link "Mediarte Pereira" [ref=e1639] [cursor=pointer]:
+                    - /url: https://www.facebook.com/mediartepereira/
+                  - generic [ref=e1643]:
+                    - strong [ref=e1645]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e1646]:
+                - button "Somos la empresa No. 1 del país en tratamientos contra la caída del cabello" [ref=e1649]:
+                  - generic [ref=e1651]: Somos la empresa No. 1 del país en tratamientos contra la caída del cabello
+                - group "Video player" [ref=e1661]:
+                  - button "Reproducir vídeo" [ref=e1663] [cursor=pointer]
+                  - generic [ref=e1665]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:34
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+          - generic [ref=e1667]:
+            - generic [ref=e1669]:
+              - generic [ref=e1670]:
+                - generic [ref=e1677]: Activo
+                - generic [ref=e1680]: "Identificador de la biblioteca: 857784080392732"
+                - generic [ref=e1682]: En circulación desde el 14 ene. 2026
+                - generic [ref=e1684]: Plataformas
+                - generic [ref=e1712]:
+                  - strong [ref=e1713]: 3 anuncios
+                  - text: usan este contenido y texto
+              - button "Abrir menú desplegable" [ref=e1716] [cursor=pointer]:
+                - generic [ref=e1719]: Abrir menú desplegable
+            - button "Ver detalles del resumen" [ref=e1722] [cursor=pointer]:
+              - generic [ref=e1726]: Ver detalles del resumen
+            - separator [ref=e1727]
+            - generic [ref=e1732]:
+              - generic [ref=e1734]:
+                - img "Mediarte Pereira" [ref=e1735]
+                - generic [ref=e1737]:
+                  - link "Mediarte Pereira" [ref=e1738] [cursor=pointer]:
+                    - /url: https://www.facebook.com/mediartepereira/
+                  - generic [ref=e1742]:
+                    - strong [ref=e1744]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e1745]:
+                - button "Tratamientos alternativos para recuperar el cabello para hombres y mujeres" [ref=e1748]:
+                  - generic [ref=e1750]: Tratamientos alternativos para recuperar el cabello para hombres y mujeres
+                - group "Video player" [ref=e1760]:
+                  - button "Reproducir vídeo" [ref=e1762] [cursor=pointer]
+                  - generic [ref=e1764]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:38
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+          - generic [ref=e1766]:
+            - generic [ref=e1768]:
+              - generic [ref=e1769]:
+                - generic [ref=e1776]: Activo
+                - generic [ref=e1779]: "Identificador de la biblioteca: 2988005908070674"
+                - generic [ref=e1781]: En circulación desde el 14 ene. 2026
+                - generic [ref=e1783]: Plataformas
+                - generic [ref=e1811]:
+                  - strong [ref=e1812]: 2 anuncios
+                  - text: usan este contenido y texto
+              - button "Abrir menú desplegable" [ref=e1815] [cursor=pointer]:
+                - generic [ref=e1818]: Abrir menú desplegable
+            - button "Ver detalles del resumen" [ref=e1821] [cursor=pointer]:
+              - generic [ref=e1825]: Ver detalles del resumen
+            - separator [ref=e1826]
+            - generic [ref=e1831]:
+              - generic [ref=e1833]:
+                - img "Mediarte Pereira" [ref=e1834]
+                - generic [ref=e1836]:
+                  - link "Mediarte Pereira" [ref=e1837] [cursor=pointer]:
+                    - /url: https://www.facebook.com/mediartepereira/
+                  - generic [ref=e1841]:
+                    - strong [ref=e1843]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e1844]:
+                - button "Somos la empresa No. 1 del país en tratamientos contra la caída del cabello" [ref=e1847]:
+                  - generic [ref=e1849]: Somos la empresa No. 1 del país en tratamientos contra la caída del cabello
+                - group "Video player" [ref=e1859]:
+                  - button "Reproducir vídeo" [ref=e1861] [cursor=pointer]
+                  - generic [ref=e1863]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 1:00
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+          - generic [ref=e1865]:
+            - generic [ref=e1867]:
+              - generic [ref=e1868]:
+                - generic [ref=e1875]: Activo
+                - generic [ref=e1878]: "Identificador de la biblioteca: 1655398142378351"
+                - generic [ref=e1880]: En circulación desde el 16 may. 2026
+                - generic [ref=e1882]: Plataformas
+                - generic [ref=e1896]: Este anuncio tiene varias versiones
+                - generic [ref=e1902]:
+                  - strong [ref=e1903]: 3 anuncios
+                  - text: usan este contenido y texto
+              - button "Abrir menú desplegable" [ref=e1906] [cursor=pointer]:
+                - generic [ref=e1909]: Abrir menú desplegable
+            - button "Ver detalles del resumen" [ref=e1912] [cursor=pointer]:
+              - generic [ref=e1916]: Ver detalles del resumen
+            - separator [ref=e1917]
+            - generic [ref=e1922]:
+              - generic [ref=e1925]:
+                - img "Mediarte Medical Center" [ref=e1926]
+                - generic [ref=e1928]:
+                  - link "Mediarte Medical Center" [ref=e1929] [cursor=pointer]:
+                    - /url: https://www.facebook.com/100080597526806/
+                  - generic [ref=e1933]:
+                    - strong [ref=e1935]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e1937]:
+                - button "CIENCIA DE ALTO NIVEL CAPILAR. En Mediarte no solo implantamos folículos, esculpimos tu imagen. Nuestros especialistas médicos utilizan tecnología avanzada de alta precisión para integrar cada cabello de forma orgánica, sin necesidad de rapar la zona. Un proceso milimétrico con acompañamiento en cada etapa para garantizar que el resultado sea tan natural como el original. Descubre el poder de la precisión médica. 📩" [ref=e1940]:
+                  - generic [ref=e1943]:
+                    - text: CIENCIA DE ALTO NIVEL CAPILAR.
+                    - text: En Mediarte no solo implantamos folículos, esculpimos tu imagen. Nuestros especialistas médicos utilizan tecnología avanzada de alta precisión para integrar cada cabello de forma orgánica, sin necesidad de rapar la zona. Un proceso milimétrico con acompañamiento en cada etapa para garantizar que el resultado sea tan natural como el original.
+                    - text: Descubre el poder de la precisión médica. 📩
+                - link "Send Message" [ref=e1944] [cursor=pointer]:
+                  - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&h=AUAT2Kh3hkakgo_ysaAmVhQSRc3ciaH1Pm-4J-S-PHBxLrs-Zu1lxiI4M3X9g6gcR1G-HRuJb0yl2eqIj96gWonSb4N87ZJn9urhtBbMDuR4wabgaZtyUZDCAb0cXEgEfax-Ymnv8SJ7VZ2ohkp1V_rPxXU
+                  - generic [ref=e1946]:
+                    - generic:
+                      - generic:
+                        - button
+                      - generic:
+                        - button
+                      - generic:
+                        - button
+                      - generic:
+                        - button
+                    - button "Send Message" [ref=e1948]:
+                      - generic [ref=e1952]: Send Message
+          - generic [ref=e1954]:
+            - generic [ref=e1956]:
+              - generic [ref=e1957]:
+                - generic [ref=e1964]: Activo
+                - generic [ref=e1967]: "Identificador de la biblioteca: 3910659122507810"
+                - generic [ref=e1969]: En circulación desde el 31 mar. 2025
+                - generic [ref=e1971]: Plataformas
+              - button "Abrir menú desplegable" [ref=e1985] [cursor=pointer]:
+                - generic [ref=e1988]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e1991] [cursor=pointer]:
+              - generic [ref=e1995]: Ver detalles del anuncio
+            - separator [ref=e1996]
+            - generic [ref=e2001]:
+              - generic [ref=e2003]:
+                - img "Neoscalp" [ref=e2004]
+                - generic [ref=e2006]:
+                  - link "Neoscalp" [ref=e2007] [cursor=pointer]:
+                    - /url: https://www.facebook.com/61570398285337/
+                  - generic [ref=e2011]:
+                    - strong [ref=e2013]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e2014]:
+                - 'button "Este paciente presentaba entradas pronunciadas por alopecia androgénica. Con 1800 unidades foliculares logramos un resultado natural y mayor densidad. 💡 Da el primer paso, agenda tu valoración. Paciente operado en Mediarte por la Dra. Juliana Sánchez R, nuestra especialista en NeoScalp. #NeoScalp #TrasplanteCapilar #HairRestoration #Resultados" [ref=e2017]':
+                  - generic [ref=e2020]:
+                    - text: Este paciente presentaba entradas pronunciadas por alopecia androgénica. Con 1800 unidades foliculares logramos un resultado natural y mayor densidad. 💡 Da el primer paso, agenda tu valoración.
+                    - text: Paciente operado en Mediarte por la Dra. Juliana Sánchez R, nuestra especialista en NeoScalp.
+                    - text: "#NeoScalp #TrasplanteCapilar #HairRestoration #Resultados"
+                - group "Video player" [ref=e2031]:
+                  - button "Reproducir vídeo" [ref=e2033] [cursor=pointer]
+                  - generic [ref=e2035]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:44
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - link "INSTAGRAM.COM Neoscalp Ir al perfil de Instagram" [ref=e2037] [cursor=pointer]:
+                  - /url: https://l.facebook.com/l.php?u=http%3A%2F%2Finstagram.com%2Fneoscalp&h=AUAT2Kh3hkakgo_ysaAmVhQSRc3ciaH1Pm-4J-S-PHBxLrs-Zu1lxiI4M3X9g6gcR1G-HRuJb0yl2eqIj96gWonSb4N87ZJn9urhtBbMDuR4wabgaZtyUZDCAb0cXEgEfax-Ymnv8SJ7VZ2ohkp1V_rPxXU
+                  - generic [ref=e2038]:
+                    - generic [ref=e2039]:
+                      - button "INSTAGRAM.COM" [ref=e2041]:
+                        - generic [ref=e2042]: INSTAGRAM.COM
+                      - button "Neoscalp" [ref=e2044]:
+                        - generic [ref=e2045]: Neoscalp
+                      - generic:
+                        - button
+                      - generic:
+                        - button
+                    - button "Ir al perfil de Instagram" [ref=e2047]:
+                      - generic [ref=e2051]: Ir al perfil de Instagram
+          - generic [ref=e2053]:
+            - generic [ref=e2055]:
+              - generic [ref=e2056]:
+                - generic [ref=e2063]: Activo
+                - generic [ref=e2066]: "Identificador de la biblioteca: 1394708075299064"
+                - generic [ref=e2068]: En circulación desde el 2 mar. 2026
+                - generic [ref=e2070]: Plataformas
+              - button "Abrir menú desplegable" [ref=e2099] [cursor=pointer]:
+                - generic [ref=e2102]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e2105] [cursor=pointer]:
+              - generic [ref=e2109]: Ver detalles del anuncio
+            - separator [ref=e2110]
+            - generic [ref=e2115]:
+              - generic [ref=e2117]:
+                - img "Mediarte Pereira" [ref=e2118]
+                - generic [ref=e2120]:
+                  - link "Mediarte Pereira" [ref=e2121] [cursor=pointer]:
+                    - /url: https://www.facebook.com/mediartepereira/
+                  - generic [ref=e2125]:
+                    - strong [ref=e2127]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e2128]:
+                - button "El implante capilar es la solución definitiva a la caída del cabello, como pueden ver en el video, el proceso en indoloro y los resultados garantizados. Somos la empresa número 1 en implante capilar. Solicita ya mismo tu valoración y diagnostico profesional sin costo, por parte de nuestros expertos ." [ref=e2131]:
+                  - generic [ref=e2133]: El implante capilar es la solución definitiva a la caída del cabello, como pueden ver en el video, el proceso en indoloro y los resultados garantizados. Somos la empresa número 1 en implante capilar. Solicita ya mismo tu valoración y diagnostico profesional sin costo, por parte de nuestros expertos .
+                - group "Video player" [ref=e2143]:
+                  - button "Reproducir vídeo" [ref=e2145] [cursor=pointer]
+                  - generic [ref=e2147]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:48
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - generic [ref=e2148]:
+                  - generic [ref=e2149]:
+                    - button "API.WHATSAPP.COM" [ref=e2151]:
+                      - generic [ref=e2152]: API.WHATSAPP.COM
+                    - button "Mediarte Pereira" [ref=e2154]:
+                      - generic [ref=e2155]: Mediarte Pereira
+                    - generic:
+                      - button
+                    - generic:
+                      - button
+                  - button "Enviar mensaje de WhatsApp" [disabled] [ref=e2157]:
+                    - generic [ref=e2161]: Enviar mensaje de WhatsApp
+          - generic [ref=e2163]:
+            - generic [ref=e2165]:
+              - generic [ref=e2166]:
+                - generic [ref=e2173]: Activo
+                - generic [ref=e2176]: "Identificador de la biblioteca: 1368480250879439"
+                - generic [ref=e2178]: En circulación desde el 26 jul. 2025
+                - generic [ref=e2180]: Plataformas
+              - button "Abrir menú desplegable" [ref=e2194] [cursor=pointer]:
+                - generic [ref=e2197]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e2200] [cursor=pointer]:
+              - generic [ref=e2204]: Ver detalles del anuncio
+            - separator [ref=e2205]
+            - generic [ref=e2210]:
+              - generic [ref=e2212]:
+                - img "Mediarte Pereira" [ref=e2213]
+                - generic [ref=e2215]:
+                  - link "Mediarte Pereira" [ref=e2216] [cursor=pointer]:
+                    - /url: https://www.facebook.com/mediartepereira/
+                  - generic [ref=e2220]:
+                    - strong [ref=e2222]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e2223]:
+                - 'button "¿Sabías que tu propio cuerpo tiene el poder de reactivar el crecimiento capilar? Con el Plasma Rico en Plaquetas (PRP) estimulamos los folículos desde la raíz, fortalecemos el cabello debilitado y mejoramos la salud del cuero cabelludo tanto en hombres como en mujeres. Extraemos tu sangre, la procesamos con tecnología especializada y aplicamos solo la parte más rica en factores de crecimiento… ¡100% natural y seguro! 📅 Agenda hoy tu valoración gratuita y descubre si eres candidato. #PlasmaCapilar #ImplanteCapilar #SaludCapilar #PRPcapilar #Mediarte #CaídaDelCabello #PRPhair #CabelloFuerte" [ref=e2226]':
+                  - generic [ref=e2229]:
+                    - text: ¿Sabías que tu propio cuerpo tiene el poder de reactivar el crecimiento capilar?
+                    - text: Con el Plasma Rico en Plaquetas (PRP) estimulamos los folículos desde la raíz, fortalecemos el cabello debilitado y mejoramos la salud del cuero cabelludo tanto en hombres como en mujeres.
+                    - text: Extraemos tu sangre, la procesamos con tecnología especializada y aplicamos solo la parte más rica en factores de crecimiento… ¡100% natural y seguro!
+                    - text: 📅 Agenda hoy tu valoración gratuita y descubre si eres candidato.
+                    - text: "#PlasmaCapilar #ImplanteCapilar #SaludCapilar #PRPcapilar #Mediarte #CaídaDelCabello #PRPhair #CabelloFuerte"
+                - group "Video player" [ref=e2240]:
+                  - button "Reproducir vídeo" [ref=e2242] [cursor=pointer]
+                  - generic [ref=e2244]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:34
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - link "INSTAGRAM.COM Mediarte Pereira Ir al perfil de Instagram" [ref=e2246] [cursor=pointer]:
+                  - /url: https://l.facebook.com/l.php?u=http%3A%2F%2Finstagram.com%2Fmediartepereira&h=AUAT2Kh3hkakgo_ysaAmVhQSRc3ciaH1Pm-4J-S-PHBxLrs-Zu1lxiI4M3X9g6gcR1G-HRuJb0yl2eqIj96gWonSb4N87ZJn9urhtBbMDuR4wabgaZtyUZDCAb0cXEgEfax-Ymnv8SJ7VZ2ohkp1V_rPxXU
+                  - generic [ref=e2247]:
+                    - generic [ref=e2248]:
+                      - button "INSTAGRAM.COM" [ref=e2250]:
+                        - generic [ref=e2251]: INSTAGRAM.COM
+                      - button "Mediarte Pereira" [ref=e2253]:
+                        - generic [ref=e2254]: Mediarte Pereira
+                      - generic:
+                        - button
+                      - generic:
+                        - button
+                    - button "Ir al perfil de Instagram" [ref=e2256]:
+                      - generic [ref=e2260]: Ir al perfil de Instagram
+          - generic [ref=e2262]:
+            - generic [ref=e2264]:
+              - generic [ref=e2265]:
+                - generic [ref=e2272]: Activo
+                - generic [ref=e2275]: "Identificador de la biblioteca: 1646135446606808"
+                - generic [ref=e2277]: En circulación desde el 12 may. 2026
+                - generic [ref=e2279]: Plataformas
+              - button "Abrir menú desplegable" [ref=e2293] [cursor=pointer]:
+                - generic [ref=e2296]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e2299] [cursor=pointer]:
+              - generic [ref=e2303]: Ver detalles del anuncio
+            - separator [ref=e2304]
+            - generic [ref=e2309]:
+              - generic [ref=e2311]:
+                - img "Mediarte Monteria" [ref=e2312]
+                - generic [ref=e2314]:
+                  - link "Mediarte Monteria" [ref=e2315] [cursor=pointer]:
+                    - /url: https://www.facebook.com/Mediarte.Monteria1/
+                  - generic [ref=e2319]:
+                    - strong [ref=e2321]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e2322]:
+                - button "¿La pérdida de cabello está afectando tu seguridad? En Mediarte Montería queremos ayudarte a dar el paso hacia un cambio real con promociones especiales durante mayo. 🔥 Hasta 40% OFF en implantes capilares 🔥 2x1 en terapias capilares 📲 Agenda tu valoración gratuita hoy mismo. ⚠️ Solo tendremos 10 cupos disponibles." [ref=e2325]:
+                  - generic [ref=e2328]:
+                    - text: ¿La pérdida de cabello está afectando tu seguridad?
+                    - text: En Mediarte Montería queremos ayudarte a dar el paso hacia un cambio real con promociones especiales durante mayo.
+                    - text: 🔥 Hasta 40% OFF en implantes capilares
+                    - text: 🔥 2x1 en terapias capilares
+                    - text: 📲 Agenda tu valoración gratuita hoy mismo.
+                    - text: ⚠️ Solo tendremos 10 cupos disponibles.
+                - group "Video player" [ref=e2339]:
+                  - button "Reproducir vídeo" [ref=e2341] [cursor=pointer]
+                  - generic [ref=e2343]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:21
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - link "FB.ME 🔥 Últimos Cupos Disponibles Promoción válida solo en mayo. Obtener oferta" [ref=e2345] [cursor=pointer]:
+                  - /url: https://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUAT2Kh3hkakgo_ysaAmVhQSRc3ciaH1Pm-4J-S-PHBxLrs-Zu1lxiI4M3X9g6gcR1G-HRuJb0yl2eqIj96gWonSb4N87ZJn9urhtBbMDuR4wabgaZtyUZDCAb0cXEgEfax-Ymnv8SJ7VZ2ohkp1V_rPxXU
+                  - generic [ref=e2346]:
+                    - generic [ref=e2347]:
+                      - button "FB.ME" [ref=e2349]:
+                        - generic [ref=e2350]: FB.ME
+                      - button "🔥 Últimos Cupos Disponibles" [ref=e2352]:
+                        - generic [ref=e2353]: 🔥 Últimos Cupos Disponibles
+                      - button "Promoción válida solo en mayo." [ref=e2355]:
+                        - generic [ref=e2356]: Promoción válida solo en mayo.
+                      - generic:
+                        - button
+                    - button "Obtener oferta" [disabled] [ref=e2358]:
+                      - generic [ref=e2362]: Obtener oferta
+          - generic [ref=e2364]:
+            - generic [ref=e2366]:
+              - generic [ref=e2367]:
+                - generic [ref=e2374]: Activo
+                - generic [ref=e2377]: "Identificador de la biblioteca: 2483109905480405"
+                - generic [ref=e2379]: En circulación desde el 7 may. 2026
+                - generic [ref=e2381]: Plataformas
+              - button "Abrir menú desplegable" [ref=e2395] [cursor=pointer]:
+                - generic [ref=e2398]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e2401] [cursor=pointer]:
+              - generic [ref=e2405]: Ver detalles del anuncio
+            - separator [ref=e2406]
+            - generic [ref=e2411]:
+              - generic [ref=e2413]:
+                - img "Mediarte Cúcuta" [ref=e2414]
+                - generic [ref=e2416]:
+                  - link "Mediarte Cúcuta" [ref=e2417] [cursor=pointer]:
+                    - /url: https://www.facebook.com/mediartecucutaa/
+                  - generic [ref=e2421]:
+                    - strong [ref=e2423]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e2424]:
+                - 'button "🔥 PROMOCIONES ESPECIALES SOLO POR MAYO EN MEDIARTE CÚCUTA 🔥 Aprovecha este mes: ✅ Hasta 40% OFF en implantes capilares ✅ 2x1 en terapias capilares 📍 Solo 10 cupos disponibles para pacientes que quieran iniciar su cambio capilar este mes. 📲 Escríbenos ahora por WhatsApp y recibe información personalizada sobre nuestros tratamientos y valoración especializada." [ref=e2427]':
+                  - generic [ref=e2430]:
+                    - text: 🔥 PROMOCIONES ESPECIALES SOLO POR MAYO EN MEDIARTE CÚCUTA 🔥
+                    - text: "Aprovecha este mes:"
+                    - text: ✅ Hasta 40% OFF en implantes capilares
+                    - text: ✅ 2x1 en terapias capilares
+                    - text: 📍 Solo 10 cupos disponibles para pacientes que quieran iniciar su cambio capilar este mes.
+                    - text: 📲 Escríbenos ahora por WhatsApp y recibe información personalizada sobre nuestros tratamientos y valoración especializada.
+                - generic [ref=e2433]:
+                  - generic [ref=e2434]:
+                    - button "WHATSAPP" [ref=e2436]:
+                      - generic [ref=e2437]: WHATSAPP
+                    - button "💥 Promoción Capilar Mayo" [ref=e2439]:
+                      - generic [ref=e2440]: 💥 Promoción Capilar Mayo
+                    - button "Escríbenos ahora y agenda tu valoración." [ref=e2442]:
+                      - generic [ref=e2443]: Escríbenos ahora y agenda tu valoración.
+                    - generic:
+                      - button
+                  - button "Enviar mensaje de WhatsApp" [disabled] [ref=e2445]:
+                    - generic [ref=e2449]: Enviar mensaje de WhatsApp
+          - generic [ref=e2451]:
+            - generic [ref=e2453]:
+              - generic [ref=e2454]:
+                - generic [ref=e2461]: Activo
+                - generic [ref=e2464]: "Identificador de la biblioteca: 1456295672409949"
+                - generic [ref=e2466]: En circulación desde el 7 may. 2026
+                - generic [ref=e2468]: Plataformas
+                - generic [ref=e2486]:
+                  - strong [ref=e2487]: 2 anuncios
+                  - text: usan este contenido y texto
+              - button "Abrir menú desplegable" [ref=e2490] [cursor=pointer]:
+                - generic [ref=e2493]: Abrir menú desplegable
+            - button "Ver detalles del resumen" [ref=e2496] [cursor=pointer]:
+              - generic [ref=e2500]: Ver detalles del resumen
+            - separator [ref=e2501]
+            - generic [ref=e2506]:
+              - generic [ref=e2508]:
+                - img "Mediarte Monteria" [ref=e2509]
+                - generic [ref=e2511]:
+                  - link "Mediarte Monteria" [ref=e2512] [cursor=pointer]:
+                    - /url: https://www.facebook.com/Mediarte.Monteria1/
+                  - generic [ref=e2516]:
+                    - strong [ref=e2518]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e2519]:
+                - 'button "🔥 SOLO POR MAYO EN MEDIARTE MONTERÍA Aprovecha nuestras promociones especiales para recuperar tu cabello este mes: ✅ Hasta 40% OFF en implantes capilares ✅ 2x1 en terapias capilares 📍 Solo tendremos 10 cupos disponibles. 📲 Agenda ahora tu valoración totalmente gratuita antes de que los cupos se agoten." [ref=e2522]':
+                  - generic [ref=e2525]:
+                    - text: 🔥 SOLO POR MAYO EN MEDIARTE MONTERÍA
+                    - text: "Aprovecha nuestras promociones especiales para recuperar tu cabello este mes:"
+                    - text: ✅ Hasta 40% OFF en implantes capilares
+                    - text: ✅ 2x1 en terapias capilares
+                    - text: 📍 Solo tendremos 10 cupos disponibles.
+                    - text: 📲 Agenda ahora tu valoración totalmente gratuita antes de que los cupos se agoten.
+                - group "Video player" [ref=e2536]:
+                  - button "Reproducir vídeo" [ref=e2538] [cursor=pointer]
+                  - generic [ref=e2540]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:24
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+          - generic [ref=e2542]:
+            - generic [ref=e2544]:
+              - generic [ref=e2545]:
+                - generic [ref=e2552]: Activo
+                - generic [ref=e2555]: "Identificador de la biblioteca: 1506630717841771"
+                - generic [ref=e2557]: En circulación desde el 7 may. 2026
+                - generic [ref=e2559]: Plataformas
+              - button "Abrir menú desplegable" [ref=e2573] [cursor=pointer]:
+                - generic [ref=e2576]: Abrir menú desplegable
+            - button "Ver detalles del anuncio" [ref=e2579] [cursor=pointer]:
+              - generic [ref=e2583]: Ver detalles del anuncio
+            - separator [ref=e2584]
+            - generic [ref=e2589]:
+              - generic [ref=e2591]:
+                - img "Mediarte Cúcuta" [ref=e2592]
+                - generic [ref=e2594]:
+                  - link "Mediarte Cúcuta" [ref=e2595] [cursor=pointer]:
+                    - /url: https://www.facebook.com/mediartecucutaa/
+                  - generic [ref=e2599]:
+                    - strong [ref=e2601]: Publicidad
+                    - generic:
+                      - strong
+              - generic [ref=e2602]:
+                - button "¿La pérdida de cabello está afectando tu seguridad? En Mediarte Cúcuta queremos ayudarte a dar el paso hacia un cambio real con promociones especiales durante mayo. 🔥 Hasta 40% OFF en implantes capilares 🔥 2x1 en terapias capilares 📲 Agenda tu valoración gratuita hoy mismo. ⚠️ Solo tendremos 10 cupos disponibles." [ref=e2605]:
+                  - generic [ref=e2608]:
+                    - text: ¿La pérdida de cabello está afectando tu seguridad?
+                    - text: En Mediarte Cúcuta queremos ayudarte a dar el paso hacia un cambio real con promociones especiales durante mayo.
+                    - text: 🔥 Hasta 40% OFF en implantes capilares
+                    - text: 🔥 2x1 en terapias capilares
+                    - text: 📲 Agenda tu valoración gratuita hoy mismo.
+                    - text: ⚠️ Solo tendremos 10 cupos disponibles.
+                - group "Video player" [ref=e2619]:
+                  - button "Reproducir vídeo" [ref=e2621] [cursor=pointer]
+                  - generic [ref=e2623]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Reproducir"
+                      - generic: 0:00 / 0:22
+                    - generic:
+                      - generic:
+                        - slider "Change Position"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Configuración"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button "Ir a pantalla completa"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - slider "Ajustar volumen"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button "Reactivar":
+                                - img
+                - link "FB.ME Recupera tu cabello este mayo Agenda tu valoración gratuita. Obtener oferta" [ref=e2625] [cursor=pointer]:
+                  - /url: https://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUAT2Kh3hkakgo_ysaAmVhQSRc3ciaH1Pm-4J-S-PHBxLrs-Zu1lxiI4M3X9g6gcR1G-HRuJb0yl2eqIj96gWonSb4N87ZJn9urhtBbMDuR4wabgaZtyUZDCAb0cXEgEfax-Ymnv8SJ7VZ2ohkp1V_rPxXU
+                  - generic [ref=e2626]:
+                    - generic [ref=e2627]:
+                      - button "FB.ME" [ref=e2629]:
+                        - generic [ref=e2630]: FB.ME
+                      - button "Recupera tu cabello este mayo" [ref=e2632]:
+                        - generic [ref=e2633]: Recupera tu cabello este mayo
+                      - button "Agenda tu valoración gratuita." [ref=e2635]:
+                        - generic [ref=e2636]: Agenda tu valoración gratuita.
+                      - generic:
+                        - button
+                    - button "Obtener oferta" [disabled] [ref=e2638]:
+                      - generic [ref=e2642]: Obtener oferta
+        - button "Ver más" [ref=e2643] [cursor=pointer]:
+          - generic [ref=e2644]: Ver más
+    - generic [ref=e2647]:
+      - generic [ref=e2655]: Estado del sistema
+      - generic [ref=e2659]:
+        - list [ref=e2660]:
+          - listitem [ref=e2661]:
+            - heading "API de la Biblioteca de anuncios" [level=3] [ref=e2662]:
+              - link "API de la Biblioteca de anuncios" [ref=e2663] [cursor=pointer]:
+                - /url: /ads/library/api/?source=archive-landing-page
+          - listitem [ref=e2664]:
+            - heading "Información sobre los anuncios y el uso de datos" [level=3] [ref=e2665]:
+              - link "Información sobre los anuncios y el uso de datos" [ref=e2666] [cursor=pointer]:
+                - /url: /ads/about/?entry_product=ad_library
+          - listitem [ref=e2667]:
+            - heading "Privacidad" [level=3] [ref=e2668]:
+              - link "Privacidad" [ref=e2669] [cursor=pointer]:
+                - /url: /privacy/center/?entry_point=privacy_basics_redirect
+          - listitem [ref=e2670]:
+            - heading "Condiciones" [level=3] [ref=e2671]:
+              - link "Condiciones" [ref=e2672] [cursor=pointer]:
+                - /url: /policies/
+          - listitem [ref=e2673]:
+            - heading "Cookies" [level=3] [ref=e2674]:
+              - link "Cookies" [ref=e2675] [cursor=pointer]:
+                - /url: /policies/cookies/
+        - heading "Meta © 2026 | Español (España)" [level=3] [ref=e2677]:
+          - text: Meta © 2026 |
+          - link "Español (España)" [ref=e2678] [cursor=pointer]:
+            - /url: /language/
