@@ -9,14 +9,14 @@ metadata:
 
 ## Volumen total (2026-05-18)
 
-| Sede | Oportunidades totales |
-|---|---|
-| Cuenta Raíz | 103,463 |
-| Bogotá | 25,241 |
-| Barranquilla | 13,112 |
-| Medellín | 11,049 |
-| Panamá | 7,231 |
-| Bucaramanga | 0 (recién creada) |
+| Sede         | Oportunidades totales |
+| ------------ | --------------------- |
+| Cuenta Raíz  | 103,463               |
+| Bogotá       | 25,241                |
+| Barranquilla | 13,112                |
+| Medellín     | 11,049                |
+| Panamá       | 7,231                 |
+| Bucaramanga  | 0 (recién creada)     |
 
 ## Velocidad de entrada (estimada)
 - Bogotá: ~15-25 leads/día

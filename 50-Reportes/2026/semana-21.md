@@ -36,13 +36,13 @@ generado: 2026-05-18
 
 _Datos derivados de análisis de tags en los últimos 100 contactos por subcuenta. Son aproximaciones — verificar cifras exactas directamente en GHL._
 
-| Etapa | Bogotá | Medellín | BQ | BGA | PTY |
-|-------|--------|----------|----|-----|-----|
-| Nuevos / Primer contacto | ~35 | ~40 | ~45 | 50¹ | ~55 |
-| En seguimiento (frio) | ~45 | ~42 | ~25 | 0 | ~18 |
-| Agenda valoración | ~17 | ~8 | ~10 | 0 | ~10 |
-| Won | 0 | 0 | 1 | 0 | 0 |
-| Perdido / No apto | ~4 | ~5 | ~5 | 0 | ~5 |
+| Etapa                    | Bogotá | Medellín | BQ  | BGA | PTY |
+| ------------------------ | ------ | -------- | --- | --- | --- |
+| Nuevos / Primer contacto | ~35    | ~40      | ~45 | 50¹ | ~55 |
+| En seguimiento (frio)    | ~45    | ~42      | ~25 | 0   | ~18 |
+| Agenda valoración        | ~17    | ~8       | ~10 | 0   | ~10 |
+| Won                      | 0      | 0        | 1   | 0   | 0   |
+| Perdido / No apto        | ~4     | ~5       | ~5  | 0   | ~5  |
 
 ¹ *BGA: todos en `landing_formulario`, sin progresión de bot visible.*
 

@@ -212,12 +212,12 @@ Monitor automático: [[20-Pauta/Competidores/_instrucciones-monitor]]
 
 ## 11. Contactos y accesos
 
-| Sistema | Acceso |
-|---------|--------|
-| GHL (CRM) | 6 subcuentas — ver MCP gohighlevel |
-| GitHub vault | `github.com/JavierForeroAI/innovart-vault` |
-| Obsidian | `~/Documents/Obsidian-Innovart` |
-| Claude Code | `innovart` (alias) o `cd ~/Documents/Obsidian-Innovart && claude` |
+| Sistema      | Acceso                                                            |
+| ------------ | ----------------------------------------------------------------- |
+| GHL (CRM)    | 6 subcuentas — ver MCP gohighlevel                                |
+| GitHub vault | `github.com/JavierForeroAI/innovart-vault`                        |
+| Obsidian     | `~/Documents/Obsidian-Innovart`                                   |
+| Claude Code  | `innovart` (alias) o `cd ~/Documents/Obsidian-Innovart && claude` |
 
 ---
 

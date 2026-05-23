@@ -32,6 +32,21 @@ tema: competidores
 - **Meta Ads Library**: buscar "DHI Colombia" en library
 - **Google Maps**: buscar "DHI Colombia Bogotá" en maps
 
+## MxCapilar
+- **País**: México (norte) — Nogales, Sonora + Ciudad Juárez, Chihuahua + USA (Tucson área)
+- **Nota de ubicación**: No tiene sede en CDMX; opera en ciudades fronterizas con fuerte captación de pacientes estadounidenses
+- **Precio**: No publicado en sitio
+- **Técnicas**: FUE, Long FUE, FUSS/FUT, BHT (vello corporal), implante de barba, implante de pestañas, células madre capilar
+- **Médico**: Dr. Alejandro González Quiroz — Cédula 09298823 — Director y fundador
+- **Afiliaciones**: ASHRS (American Academy of Hair Restoration Surgery), AMETREC, European Society of FUE
+- **Experiencia**: +8 años, Premio Doctor's Choice Award 2019
+- **Diferenciadores**: Pionero en células madre para restauración capilar en México; Long FUE sin rasurar; BHT (vello corporal como donante); mercado binacional MX/USA
+- **URL sitio**: https://mxcapilar.com
+- **Instagram**: @mx_capilar
+- **Facebook**: @MXCAPILAR8
+- **YouTube**: @mxcapilar280
+- **Contacto**: Info@mxcapilar.com | +52 631 129 8320 (Nogales) | +52 656 395 6245 (Juárez)
+
 ## Benchmarks de alerta
 
 | Señal | Acción sugerida |
