@@ -16,6 +16,9 @@
 ## CRM y leads
 - [Volumen CRM y funnel](crm-funnel.md) — 160K+ oportunidades, tracking de won roto, 15-25 leads/día en Bogotá
 
+## Avatares y Comunicación
+- [Avatares de Cliente — Matriz Oficial](avatares-clientes.md) — 5 avatares oficiales (Profesional Premium, Militar, Gubernamental, Gay Premium, Emprendedor) + ángulos de venta, hooks, estética visual y cierres por avatar. Incluye análisis creativos Mundial 2026.
+
 ## Contenido
 - [Ángulos creativos activos](angulos-creativos.md) — "Garantía Vitalicia", "Resultados en 6 Meses", flag emojis por país
 
