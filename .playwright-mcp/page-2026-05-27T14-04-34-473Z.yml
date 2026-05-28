@@ -1,0 +1,466 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Ir al contenido principal" [ref=e2] [cursor=pointer]
+      - link "Ayuda sobre la accesibilidad" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=es-CO
+  - generic [ref=e8]:
+    - search [ref=e9]:
+      - generic [ref=e11]:
+        - link "Ir a la página principal de Google" [ref=e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=es&sa=X&ved=0ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQPAgI
+          - img [ref=e14]
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - combobox "Buscar" [ref=e25]: Mediarte Medical Center Bogota resenas calificacion Mediarte Medical Center Bogota resenas calificacion
+            - generic [ref=e26]:
+              - button "Borrar" [ref=e28] [cursor=pointer]:
+                - img [ref=e30]
+              - generic [ref=e33]:
+                - button "Búsqueda por voz" [ref=e34] [cursor=pointer]:
+                  - img [ref=e35]
+                - button "Búsqueda por imagen" [ref=e37] [cursor=pointer]:
+                  - img [ref=e38]
+          - button "Buscar" [ref=e40] [cursor=pointer]:
+            - img [ref=e43]
+    - generic [ref=e45]:
+      - button "Configuración" [ref=e47] [cursor=pointer]:
+        - img [ref=e50]
+      - generic [ref=e53]:
+        - button "Aplicaciones de Google" [ref=e55] [cursor=pointer]:
+          - img [ref=e56]
+        - link "Iniciar sesión" [ref=e60] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=es&passive=true&continue=https://www.google.com/search%3Fq%3DMediarte%2BMedical%2BCenter%2BBogota%2Bresenas%2Bcalificacion&ec=futura_srp_og_si_72236_p
+  - generic [ref=e62]:
+    - navigation [ref=e68]:
+      - generic [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "Modo IA" [ref=e79] [cursor=pointer]:
+              - /url: /search?q=Mediarte+Medical+Center+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&udm=50&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTa-EmKihfPCcL-IqUf21OsKU1W5EeK5MUcv-IjtZsZ9nej15XAOpH0D7Y-6apQCwCYWho9luP8jt5wnLeWFTbLsdgO0ZOeQ89njKTSu8sQeb9Nerk5u_fl-QXMmpHWN76GJ6bqxlMlZt6jBwsw19J6umdh5U80msqBJLUd2qxIZbhaLmotcxLVdOKSyFUqjHWZUU3SE&aep=1&ntc=1&sa=X&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ2J8OegQIEhAD
+              - generic [ref=e82]: Modo IA
+          - listitem [ref=e83]:
+            - link "Todo" [disabled] [ref=e84]:
+              - generic [ref=e86]: Todo
+          - listitem [ref=e87]:
+            - link "Imágenes" [ref=e88] [cursor=pointer]:
+              - /url: /search?sca_esv=423685a90e5df121&udm=2&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTa-EmKihfPCcL-IqUf21OsKU1W5EeK5MUcv-IjtZsZ9nej15XAOpH0D7Y-6apQCwCYWho9luP8jt5wnLeWFTbLsdgO0ZOeQ89njKTSu8sQeb9Nerk5u_fl-QXMmpHWN76GJ6bqxlMlZt6jBwsw19J6umdh5U80msqBJLUd2qxIZbhaLmotcxLVdOKSyFUqjHWZUU3SE&q=Mediarte+Medical+Center+Bogota+resenas+calificacion&sa=X&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQtKgLegQIGBAB
+              - generic [ref=e90]: Imágenes
+          - listitem [ref=e91]:
+            - link "Vídeos cortos" [ref=e92] [cursor=pointer]:
+              - /url: /search?sca_esv=423685a90e5df121&udm=39&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTa-EmKihfPCcL-IqUf21OsKU1W5EeK5MUcv-IjtZsZ9nej15XAOpH0D7Y-6apQCwCYWho9luP8jt5wnLeWFTbLsdgO0ZOeQ89njKTSu8sQeb9Nerk5u_fl-QXMmpHWN76GJ6bqxlMlZt6jBwsw19J6umdh5U80msqBJLUd2qxIZbhaLmotcxLVdOKSyFUqjHWZUU3SE&q=Mediarte+Medical+Center+Bogota+resenas+calificacion&sa=X&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQs6gLegQIFxAB
+              - generic [ref=e94]: Vídeos cortos
+          - listitem [ref=e95]:
+            - link "Shopping" [ref=e96] [cursor=pointer]:
+              - /url: /search?sca_esv=423685a90e5df121&udm=28&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTa-EmKihfPCcL-IqUf21OsKU1W5EeK5MUcv-IjtZsZ9nej15XAOpH0D7Y-6apQCwCYWho9luP8jt5wnLeWFTbLsdgO0ZOeQ89njKTSu8sQeb9Nerk5u_fl-QXMmpHWN76GJ6bqxlMlZt6jBwsw19J6umdh5U80msqBJLUd2qxIZbhaLmotcxLVdOKSyFUqjHWZUU3SE&q=Mediarte+Medical+Center+Bogota+resenas+calificacion&ved=1t:220175&ictx=111
+              - generic [ref=e98]: Shopping
+          - listitem [ref=e99]:
+            - link "Vídeos" [ref=e100] [cursor=pointer]:
+              - /url: /search?sca_esv=423685a90e5df121&udm=7&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTa-EmKihfPCcL-IqUf21OsKU1W5EeK5MUcv-IjtZsZ9nej15XAOpH0D7Y-6apQCwCYWho9luP8jt5wnLeWFTbLsdgO0ZOeQ89njKTSu8sQeb9Nerk5u_fl-QXMmpHWN76GJ6bqxlMlZt6jBwsw19J6umdh5U80msqBJLUd2qxIZbhaLmotcxLVdOKSyFUqjHWZUU3SE&q=Mediarte+Medical+Center+Bogota+resenas+calificacion&sa=X&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQtKgLegQIFBAB
+              - generic [ref=e102]: Vídeos
+          - listitem [ref=e103]:
+            - link "Noticias" [ref=e104] [cursor=pointer]:
+              - /url: /search?sca_esv=423685a90e5df121&q=Mediarte+Medical+Center+Bogota+resenas+calificacion&tbm=nws&source=lnms&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTa-EmKihfPCcL-IqUf21OsKU1W5EeK5MUcv-IjtZsZ9nej15XAOpH0D7Y-6apQCwCYWho9luP8jt5wnLeWFTbLsdgO0ZOeQ89njKTSu8sQeb9Nerk5u_fl-QXMmpHWN76GJ6bqxlMlZt6jBwsw19J6umdh5U80msqBJLUd2qxIZbhaLmotcxLVdOKSyFUqjHWZUU3SE&sa=X&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ0pQJegQIFhAB
+              - generic [ref=e106]: Noticias
+          - listitem [ref=e107]:
+            - button "Más filtros" [ref=e108] [cursor=pointer]:
+              - generic "Más filtros" [ref=e109]:
+                - generic [ref=e110]:
+                  - generic [ref=e111]: Más
+                  - img [ref=e113]
+        - button "Herramientas" [ref=e116] [cursor=pointer]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: Herramientas
+            - img [ref=e121]
+    - heading "Resultados de búsqueda" [level=1] [ref=e123]
+    - generic [ref=e128]:
+      - generic [ref=e129]:
+        - generic [ref=e136]:
+          - 'heading "Mediarte Medical Center S.a.s., Cl 93b #17-12" [level=2] [ref=e137]':
+            - img [ref=e140]:
+              - img [ref=e141]
+            - generic [ref=e144]: "Mediarte Medical Center S.a.s., Cl 93b #17-12"
+          - generic [ref=e146]:
+            - text: ∙
+            - button "Elegir área" [ref=e147] [cursor=pointer]
+          - button "Cómo se utiliza la ubicación" [ref=e150] [cursor=pointer]:
+            - img [ref=e152]
+        - generic [ref=e168]:
+          - generic [ref=e170]:
+            - generic [ref=e172]:
+              - generic [ref=e173]:
+                - img [ref=e174]
+                - heading "Visión general creada por IA" [level=2] [ref=e176]
+              - button "Acerca de este resultado" [ref=e180]:
+                - img [ref=e182]
+            - generic [ref=e186]:
+              - generic [ref=e206]:
+                - generic [ref=e207]:
+                  - strong [ref=e208]: Mediarte Medical Center
+                  - text: en Bogotá es una clínica especializada en restauración capilar con una calificación promedio excelente (
+                  - mark [ref=e209]: 4.5 a 4.8 estrellas en plataformas de reseñas)
+                  - text: . Los pacientes destacan el profesionalismo de sus especialistas, los resultados naturales y el acompañamiento, aunque sus servicios representan una inversión significativa.
+                  - generic [ref=e211]:
+                    - link "YouTube (más de 1) - Ver vínculos relacionados" [ref=e212] [cursor=pointer]:
+                      - /url: https://www.youtube.com/watch?v=OAhALOwuRNs
+                    - button "YouTube (más de 1) - Ver vínculos relacionados" [disabled] [ref=e213]:
+                      - generic [ref=e215]:
+                        - generic [ref=e216]: YouTube
+                        - generic [ref=e217]: "+1"
+                - heading "🌟 Calificaciones y Reseñas" [level=3] [ref=e218]
+                - list [ref=e220]:
+                  - listitem [ref=e221]:
+                    - generic [ref=e222]:
+                      - strong [ref=e223]: "Lo que más gusta:"
+                      - text: Los pacientes resaltan la atención personalizada, las instalaciones modernas, la efectividad del método FUE (Extracción de Unidades Foliculares) y la calidad del servicio al cliente.
+                  - listitem [ref=e224]:
+                    - generic [ref=e225]:
+                      - strong [ref=e226]: "Percepciones:"
+                      - text: Al ser una clínica reconocida, cuenta con el respaldo de varias figuras públicas y ha logrado posicionarse como una de las cadenas más grandes de Latinoamérica en restauración capilar (más de 10 años de trayectoria).
+                    - generic [ref=e228]:
+                      - link "Mediarte Implante Capilar (más de 3) - Ver vínculos relacionados" [ref=e229] [cursor=pointer]:
+                        - /url: https://mediarte.co/resultados-implante-capilar/
+                      - button "Mediarte Implante Capilar (más de 3) - Ver vínculos relacionados" [disabled] [ref=e230]:
+                        - generic [ref=e232]:
+                          - generic [ref=e233]: Mediarte Implante Capilar
+                          - generic [ref=e234]: "+3"
+              - progressbar [ref=e241]
+          - button "Mostrar más Visión general creada por IA" [ref=e265]:
+            - generic [ref=e267] [cursor=pointer]:
+              - generic [ref=e268]: Mostrar más
+              - img [ref=e270]
+      - main [ref=e273]:
+        - generic [ref=e277]:
+          - generic [ref=e280]:
+            - heading "Resultados web" [level=2] [ref=e281]
+            - generic [ref=e282]:
+              - generic [ref=e285]:
+                - link "Implante capilar Bogotá | Resultados naturales – Mediarte Mediarte Implante Capilar https://mediarte.co" [ref=e287] [cursor=pointer]:
+                  - /url: https://mediarte.co/
+                  - heading "Implante capilar Bogotá | Resultados naturales – Mediarte" [level=3] [ref=e288]
+                  - generic [ref=e293]:
+                    - generic [ref=e295]: Mediarte Implante Capilar
+                    - generic [ref=e297]: https://mediarte.co
+                - button "Acerca de este resultado" [ref=e298] [cursor=pointer]:
+                  - img [ref=e301]
+              - generic [ref=e305]:
+                - emphasis [ref=e306]: Agenda valoración gratis
+                - text: "! Descubre el innovador implante capilar Bogotá FUE en MEDIARTE. Sin cicatrices ni dolor, con resultados naturales."
+          - generic [ref=e311]:
+            - heading "Más preguntas" [level=2] [ref=e313]
+            - generic [ref=e314]:
+              - button "¿Cuánto cuesta un implante capilar en Mediarte?" [ref=e320] [cursor=pointer]:
+                - generic [ref=e322]: ¿Cuánto cuesta un implante capilar en Mediarte?
+                - img [ref=e325]
+              - button "¿Cuánto cubren 3000 folículos?" [ref=e334] [cursor=pointer]:
+                - generic [ref=e336]: ¿Cuánto cubren 3000 folículos?
+                - img [ref=e339]
+              - button "¿Dónde se hizo el injerto capilar Rafa Nadal?" [ref=e348] [cursor=pointer]:
+                - generic [ref=e350]: ¿Dónde se hizo el injerto capilar Rafa Nadal?
+                - img [ref=e353]
+              - button "¿Cuánto cuestan 3000 folículos?" [ref=e362] [cursor=pointer]:
+                - generic [ref=e364]: ¿Cuánto cuestan 3000 folículos?
+                - img [ref=e367]
+          - generic [ref=e372]:
+            - heading "Resultados web" [level=2] [ref=e373]
+            - generic [ref=e374]:
+              - generic [ref=e377]:
+                - link "Mediarte | Bogotá Facebook · Mediarte Más de 21,7 k seguidores" [ref=e379] [cursor=pointer]:
+                  - /url: https://www.facebook.com/Mediarte.Medical.Center/?locale=es_LA
+                  - heading "Mediarte | Bogotá" [level=3] [ref=e380]
+                  - generic [ref=e385]:
+                    - generic [ref=e387]: Facebook · Mediarte
+                    - generic [ref=e389]: Más de 21,7 k seguidores
+                - button "Acerca de este resultado" [ref=e390] [cursor=pointer]:
+                  - img [ref=e393]
+              - generic [ref=e397]:
+                - text: En
+                - emphasis [ref=e398]: Mediarte
+                - text: somos la única clínica certificada en Colombia para realizar implantes con fibras biocompatibles. Escoge color, textura y longitud, con resultados ...
+          - generic [ref=e402]:
+            - generic [ref=e405]:
+              - link "IPS (@mediarte.implante.capilar) · Bogotá Instagram · mediarte.implante.capilar Más de 390,8 k seguidores" [ref=e407] [cursor=pointer]:
+                - /url: https://www.instagram.com/mediarte.implante.capilar/?hl=es
+                - heading "IPS (@mediarte.implante.capilar) · Bogotá" [level=3] [ref=e408]
+                - generic [ref=e413]:
+                  - generic [ref=e415]: Instagram · mediarte.implante.capilar
+                  - generic [ref=e417]: Más de 390,8 k seguidores
+              - button "Acerca de este resultado" [ref=e418] [cursor=pointer]:
+                - img [ref=e421]
+            - generic [ref=e425]:
+              - emphasis [ref=e426]: Clínica de Implante y Tratamientos Capilares
+              - text: La más grande de 22 sedes en Colombia México Panamá Hair transplant Clinic ...
+          - generic [ref=e430]:
+            - generic [ref=e433]:
+              - link "Resultados Reales de Implante Capilar FUE Mediarte Implante Capilar https://mediarte.co › resultados-implante-capilar" [ref=e435] [cursor=pointer]:
+                - /url: https://mediarte.co/resultados-implante-capilar/
+                - heading "Resultados Reales de Implante Capilar FUE" [level=3] [ref=e436]
+                - generic [ref=e441]:
+                  - generic [ref=e443]: Mediarte Implante Capilar
+                  - generic [ref=e445]: https://mediarte.co › resultados-implante-capilar
+              - button "Acerca de este resultado" [ref=e446] [cursor=pointer]:
+                - img [ref=e449]
+            - generic [ref=e453]:
+              - emphasis [ref=e454]: Todos nuestros resultados son reales y garantizados
+              - text: ", los mejores casos se obtienen cuando el paciente sigue rigurosamente las instrucciones dadas por el médico ..."
+          - generic [ref=e461]:
+            - generic [ref=e464]:
+              - link "Testimonio paciente Juan Mijares - Mediarte opiniones YouTube · Mediarte Medical Center Más de 4,3 K vistas · hace 4 años" [ref=e466] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=w2ooniayHoo
+                - heading "Testimonio paciente Juan Mijares - Mediarte opiniones" [level=3] [ref=e467]
+                - generic [ref=e472]:
+                  - generic [ref=e474]: YouTube · Mediarte Medical Center
+                  - generic [ref=e476]: Más de 4,3 K vistas · hace 4 años
+              - button "Acerca de este resultado" [ref=e477] [cursor=pointer]:
+                - img [ref=e480]
+            - generic [ref=e482]:
+              - button "Testimonio paciente Juan Mijares - Mediarte opiniones de Mediarte Medical Center en YouTube. Reproducir en Google. 7:11" [ref=e483] [cursor=pointer]:
+                - generic [ref=e485]:
+                  - img [ref=e491]
+                  - generic [ref=e494]:
+                    - generic [ref=e495]: 7:11
+                    - img [ref=e498]
+              - generic [ref=e501]: ... https://mediarte.co. Testimonio paciente Juan Mijares - Mediarte opiniones. 4.3K views · 4 years ago ...more. Mediarte Medical Center. 3.39K.
+            - generic [ref=e503]:
+              - text: "Falta(n): Bogota ‎| Realizar una búsqueda con lo siguiente:"
+              - link "Bogota" [ref=e504] [cursor=pointer]:
+                - /url: /search?sca_esv=423685a90e5df121&q=Mediarte+Medical+Center+%22Bogota%22+resenas+calificacion&sa=X&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ5t4CegQIOxAT
+          - generic [ref=e508]:
+            - generic [ref=e511]:
+              - link "Mediarte, la clínica que restaura la confianza cabello a ... ELTIEMPO.COM https://www.eltiempo.com › Más Contenido" [ref=e513] [cursor=pointer]:
+                - /url: https://www.eltiempo.com/mas-contenido/mediarte-la-clinica-que-restaura-la-confianza-cabello-a-cabello-3471284
+                - heading "Mediarte, la clínica que restaura la confianza cabello a ..." [level=3] [ref=e514]
+                - generic [ref=e519]:
+                  - generic [ref=e521]: ELTIEMPO.COM
+                  - generic [ref=e523]: https://www.eltiempo.com › Más Contenido
+              - button "Acerca de este resultado" [ref=e524] [cursor=pointer]:
+                - img [ref=e527]
+            - generic [ref=e530]:
+              - generic [ref=e531]: 11/07/2025 —
+              - text: Ofrecemos terapias alternativas como la mesoterapia capilar, la terapia láser de baja potencia, el plasma rico en plaquetas y, más recientemente ...
+          - generic [ref=e537]:
+            - generic [ref=e540]:
+              - link "“Hace 8 meses me hice mi implante en Mediarte… y hoy ... Instagram · mediarte.implante.capilar Más de 10 \"me gusta\" · hace 6 meses" [ref=e542] [cursor=pointer]:
+                - /url: https://www.instagram.com/reel/DRB5_M2jmUk/
+                - heading "“Hace 8 meses me hice mi implante en Mediarte… y hoy ..." [level=3] [ref=e543]
+                - generic [ref=e548]:
+                  - generic [ref=e550]: Instagram · mediarte.implante.capilar
+                  - generic [ref=e552]: Más de 10 "me gusta" · hace 6 meses
+              - button "Acerca de este resultado" [ref=e553] [cursor=pointer]:
+                - img [ref=e556]
+            - generic [ref=e558]:
+              - link "“Hace 8 meses me hice mi implante en Mediarte… y hoy ... de Mediarte Medical Center- IPS en Instagram. Reproducir en Instagram. 1:07" [ref=e559] [cursor=pointer]:
+                - /url: https://www.instagram.com/reel/DRB5_M2jmUk/
+                - generic [ref=e561]:
+                  - img [ref=e564]
+                  - generic [ref=e568]: 1:07
+              - generic [ref=e570]: Mi nombre es Sergio, soy paciente de Mediarte Bucaramanga y hace cuatro meses me hice mi implante capilar. Estoy muy contento con los resultados ...
+          - generic [ref=e574]:
+            - generic [ref=e577]:
+              - link "Trabajar en MEDIARTE MEDICAL CENTER SAS Colombia Computrabajo https://co.computrabajo.com › empresas › acerca-de-me..." [ref=e579] [cursor=pointer]:
+                - /url: https://co.computrabajo.com/empresas/acerca-de-mediarte-medical-center-sas-C4D2D11678204126
+                - heading "Trabajar en MEDIARTE MEDICAL CENTER SAS Colombia" [level=3] [ref=e580]
+                - generic [ref=e585]:
+                  - generic [ref=e587]: Computrabajo
+                  - generic [ref=e589]: https://co.computrabajo.com › empresas › acerca-de-me...
+              - button "Acerca de este resultado" [ref=e590] [cursor=pointer]:
+                - img [ref=e593]
+            - generic [ref=e597]:
+              - text: Actualmente es la clínica Colombiana de implante capilar más reconoc
+              - emphasis [ref=e598]: ida
+              - text: por sus excelentes resultados de pacientes nacionales y extranjeros entre los que se ...
+          - generic [ref=e602]:
+            - heading "Resultados locales" [level=2] [ref=e603]
+            - generic [ref=e604]:
+              - heading "Sitios" [level=2] [ref=e608]
+              - generic [ref=e609]:
+                - heading "Mapa" [level=3] [ref=e610]
+                - link "Mapa" [ref=e613] [cursor=pointer]:
+                  - /url: /search?q=Mediarte+Medical+Center+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&udm=1&lsack=8PkWasrHLubKp84P6cfPmA8&sa=X&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQtgN6BAhIEAM
+              - generic [ref=e617]:
+                - 'button "Mediarte Implante Capilar - Sede Bogotá Calificación: 4,5 de 5, 113 opiniones de usuarios · Clínica de trasplante capilar Edificio Zimma, Ak 15 #88-64 Local 102 \"Excelente servicio además de contar con un personal súper atento.\"" [ref=e622]':
+                  - generic [ref=e626] [cursor=pointer]:
+                    - heading "Mediarte Implante Capilar - Sede Bogotá" [level=3] [ref=e627]:
+                      - generic [ref=e628]: Mediarte Implante Capilar - Sede Bogotá
+                    - generic [ref=e629]:
+                      - 'img "Calificación: 4,5 de 5, 113 opiniones de usuarios" [ref=e631]':
+                        - text: 4,5
+                        - img [ref=e632]
+                        - text: (113)
+                      - text: · Clínica de trasplante capilar
+                    - generic [ref=e635]: "Edificio Zimma, Ak 15 #88-64 Local 102"
+                    - generic [ref=e637]:
+                      - img [ref=e640]
+                      - generic [ref=e644]: "\"Excelente servicio además de contar con un personal súper atento.\""
+                - 'button "Mediarte Implante Capilar - Sede Principal Calificación: 4,8 de 5, 69 opiniones de usuarios · Clínica de trasplante capilar Ak 9 #113-52 of 1802 \"Tuve resultados muy positivos, adicional el servicio es excelente!\"" [ref=e652]':
+                  - generic [ref=e656] [cursor=pointer]:
+                    - heading "Mediarte Implante Capilar - Sede Principal" [level=3] [ref=e657]:
+                      - generic [ref=e658]: Mediarte Implante Capilar - Sede Principal
+                    - generic [ref=e659]:
+                      - 'img "Calificación: 4,8 de 5, 69 opiniones de usuarios" [ref=e661]':
+                        - text: 4,8
+                        - img [ref=e662]
+                        - text: (69)
+                      - text: · Clínica de trasplante capilar
+                    - generic [ref=e665]: "Ak 9 #113-52 of 1802"
+                    - generic [ref=e667]:
+                      - img [ref=e670]
+                      - generic [ref=e675]: "\"Tuve resultados muy positivos, adicional el servicio es excelente!\""
+                - 'button "Mediarte Implante Capilar - Sede Bogotá Salitre Plaza Calificación: 5,0 de 5, 37 opiniones de usuarios · Clínica de trasplante capilar Cra. 68b #24-39 \"El equipo de trabajo brinda una atención muy cálida, amable y profesional.\"" [ref=e683]':
+                  - generic [ref=e687] [cursor=pointer]:
+                    - heading "Mediarte Implante Capilar - Sede Bogotá Salitre Plaza" [level=3] [ref=e688]:
+                      - generic [ref=e689]: Mediarte Implante Capilar - Sede Bogotá Salitre Plaza
+                    - generic [ref=e690]:
+                      - 'img "Calificación: 5,0 de 5, 37 opiniones de usuarios" [ref=e692]':
+                        - text: 5,0
+                        - img [ref=e693]
+                        - text: (37)
+                      - text: · Clínica de trasplante capilar
+                    - generic [ref=e696]: "Cra. 68b #24-39"
+                    - generic [ref=e698]:
+                      - img [ref=e701]
+                      - generic [ref=e705]: "\"El equipo de trabajo brinda una atención muy cálida, amable y profesional.\""
+              - heading "Más lugares" [level=3] [ref=e710]:
+                - link "Más lugares" [ref=e712] [cursor=pointer]:
+                  - /url: /search?q=Mediarte+Medical+Center+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&udm=1&lsack=8PkWasrHLubKp84P6cfPmA8&sa=X&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQjGp6BAhJEAE
+                  - separator [ref=e713]
+                  - generic [ref=e714]:
+                    - generic [ref=e715]: Más lugares
+                    - img [ref=e717]
+          - generic [ref=e721]:
+            - heading "Resultados web" [level=2] [ref=e722]
+            - generic [ref=e723]:
+              - generic [ref=e726]:
+                - link "Resultados Seguros con Trasplante Capilar FUE Mediarte Implante Capilar https://mediarte.co › trasplante-capilar" [ref=e728] [cursor=pointer]:
+                  - /url: https://mediarte.co/trasplante-capilar/
+                  - heading "Resultados Seguros con Trasplante Capilar FUE" [level=3] [ref=e729]
+                  - generic [ref=e734]:
+                    - generic [ref=e736]: Mediarte Implante Capilar
+                    - generic [ref=e738]: https://mediarte.co › trasplante-capilar
+                - button "Acerca de este resultado" [ref=e739] [cursor=pointer]:
+                  - img [ref=e742]
+              - generic [ref=e746]:
+                - text: En Mediarte son
+                - emphasis [ref=e747]: especialistas en todo el tema capilar
+                - text: ", tratamientos capilares, cejas, barba y demás, los recomiendo."
+          - generic [ref=e754]:
+            - generic [ref=e757]:
+              - 'link "Mediarte: La Mejor Clínica de Implante Capilar en Colombia ... YouTube · Mediarte Medical Center Más de 1,7 K vistas · hace 1 año" [ref=e759] [cursor=pointer]':
+                - /url: https://www.youtube.com/watch?v=OAhALOwuRNs
+                - 'heading "Mediarte: La Mejor Clínica de Implante Capilar en Colombia ..." [level=3] [ref=e760]'
+                - generic [ref=e765]:
+                  - generic [ref=e767]: YouTube · Mediarte Medical Center
+                  - generic [ref=e769]: Más de 1,7 K vistas · hace 1 año
+              - button "Acerca de este resultado" [ref=e770] [cursor=pointer]:
+                - img [ref=e773]
+            - generic [ref=e775]:
+              - 'button "Mediarte: La Mejor Clínica de Implante Capilar en Colombia ... de Mediarte Medical Center en YouTube. Reproducir en Google. 1:35" [ref=e776] [cursor=pointer]':
+                - generic [ref=e778]:
+                  - img [ref=e784]
+                  - generic [ref=e787]:
+                    - generic [ref=e788]: 1:35
+                    - img [ref=e791]
+              - generic [ref=e794]: ... resultados que puedes esperar en Mediarte. ¡No te pierdas ningún detalle ... Mediarte Medical Center•440 views · 6:53 · Go to channel Mediarte ...
+        - generic [ref=e796]:
+          - generic [ref=e801]:
+            - heading "También se buscó" [level=2] [ref=e803]
+            - generic [ref=e805]:
+              - generic [ref=e806]:
+                - link "Mediarte comentarios" [ref=e810] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=Mediarte+comentarios&sa=X&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ1QJ6BAg-EAE
+                  - generic [ref=e811]:
+                    - generic [ref=e816]: Mediarte comentarios
+                    - img [ref=e820]
+                - link "Mejores clínicas de implante capilar en Colombia" [ref=e825] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=Mejores+cl%C3%ADnicas+de+implante+capilar+en+Colombia&sa=X&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ1QJ6BAhEEAE
+                  - generic [ref=e826]:
+                    - generic [ref=e831]: Mejores clínicas de implante capilar en Colombia
+                    - img [ref=e835]
+                - link "Mediarte Bogotá" [ref=e840] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=Mediarte+Bogot%C3%A1&sa=X&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ1QJ6BAhDEAE
+                  - generic [ref=e841]:
+                    - generic [ref=e846]: Mediarte Bogotá
+                    - img [ref=e850]
+                - link "Mediarte Medical Center SAS" [ref=e855] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=Mediarte+Medical+Center+SAS&sa=X&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ1QJ6BAhCEAE
+                  - generic [ref=e856]:
+                    - generic [ref=e861]: Mediarte Medical Center SAS
+                    - img [ref=e865]
+              - generic [ref=e867]:
+                - link "Mediarte precios" [ref=e871] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=Mediarte+precios&sa=X&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ1QJ6BAhBEAE
+                  - generic [ref=e872]:
+                    - generic [ref=e877]: Mediarte precios
+                    - img [ref=e881]
+                - link "Trasplante capilar bogota precios" [ref=e886] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=Trasplante+capilar+bogota+precios&sa=X&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ1QJ6BAhAEAE
+                  - generic [ref=e887]:
+                    - generic [ref=e892]: Trasplante capilar bogota precios
+                    - img [ref=e896]
+                - link "Mediarte Medical Center Bucaramanga" [ref=e901] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=Mediarte+Medical+Center+Bucaramanga&sa=X&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ1QJ6BAg_EAE
+                  - generic [ref=e902]:
+                    - generic [ref=e907]: Mediarte Medical Center Bucaramanga
+                    - img [ref=e911]
+                - link "Implante capilar Colombia precio" [ref=e916] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=Implante+capilar+Colombia+precio&sa=X&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ1QJ6BAg9EAE
+                  - generic [ref=e917]:
+                    - generic [ref=e922]: Implante capilar Colombia precio
+                    - img [ref=e926]
+          - navigation [ref=e928]:
+            - heading "Navegación de páginas" [level=1] [ref=e929]
+            - text: "1"
+            - link "Page 2" [ref=e932] [cursor=pointer]:
+              - /url: /search?q=Mediarte+Medical+Center+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=8PkWasrHLubKp84P6cfPmA8&start=10&sa=N&sstk=AU9db-D6ssZi6ZOHnnKzi3TDkUEHbrhferJ9DtZIV_tIlL6kya1NGC4YcDnatKZhWL5xl80VH6KyVbpt_XYD4K4jhuv160q0A32Crw&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ8tMDegQIOhAE
+              - text: "2"
+            - link "Page 3" [ref=e934] [cursor=pointer]:
+              - /url: /search?q=Mediarte+Medical+Center+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=8PkWasrHLubKp84P6cfPmA8&start=20&sa=N&sstk=AU9db-D6ssZi6ZOHnnKzi3TDkUEHbrhferJ9DtZIV_tIlL6kya1NGC4YcDnatKZhWL5xl80VH6KyVbpt_XYD4K4jhuv160q0A32Crw&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ8tMDegQIOhAG
+              - text: "3"
+            - link "Page 4" [ref=e936] [cursor=pointer]:
+              - /url: /search?q=Mediarte+Medical+Center+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=8PkWasrHLubKp84P6cfPmA8&start=30&sa=N&sstk=AU9db-D6ssZi6ZOHnnKzi3TDkUEHbrhferJ9DtZIV_tIlL6kya1NGC4YcDnatKZhWL5xl80VH6KyVbpt_XYD4K4jhuv160q0A32Crw&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ8tMDegQIOhAI
+              - text: "4"
+            - link "Page 5" [ref=e938] [cursor=pointer]:
+              - /url: /search?q=Mediarte+Medical+Center+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=8PkWasrHLubKp84P6cfPmA8&start=40&sa=N&sstk=AU9db-D6ssZi6ZOHnnKzi3TDkUEHbrhferJ9DtZIV_tIlL6kya1NGC4YcDnatKZhWL5xl80VH6KyVbpt_XYD4K4jhuv160q0A32Crw&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ8tMDegQIOhAK
+              - text: "5"
+            - link "Page 6" [ref=e940] [cursor=pointer]:
+              - /url: /search?q=Mediarte+Medical+Center+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=8PkWasrHLubKp84P6cfPmA8&start=50&sa=N&sstk=AU9db-D6ssZi6ZOHnnKzi3TDkUEHbrhferJ9DtZIV_tIlL6kya1NGC4YcDnatKZhWL5xl80VH6KyVbpt_XYD4K4jhuv160q0A32Crw&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ8tMDegQIOhAM
+              - text: "6"
+            - link "Page 7" [ref=e942] [cursor=pointer]:
+              - /url: /search?q=Mediarte+Medical+Center+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=8PkWasrHLubKp84P6cfPmA8&start=60&sa=N&sstk=AU9db-D6ssZi6ZOHnnKzi3TDkUEHbrhferJ9DtZIV_tIlL6kya1NGC4YcDnatKZhWL5xl80VH6KyVbpt_XYD4K4jhuv160q0A32Crw&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ8tMDegQIOhAO
+              - text: "7"
+            - link "Page 8" [ref=e944] [cursor=pointer]:
+              - /url: /search?q=Mediarte+Medical+Center+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=8PkWasrHLubKp84P6cfPmA8&start=70&sa=N&sstk=AU9db-D6ssZi6ZOHnnKzi3TDkUEHbrhferJ9DtZIV_tIlL6kya1NGC4YcDnatKZhWL5xl80VH6KyVbpt_XYD4K4jhuv160q0A32Crw&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ8tMDegQIOhAQ
+              - text: "8"
+            - link "Page 9" [ref=e946] [cursor=pointer]:
+              - /url: /search?q=Mediarte+Medical+Center+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=8PkWasrHLubKp84P6cfPmA8&start=80&sa=N&sstk=AU9db-D6ssZi6ZOHnnKzi3TDkUEHbrhferJ9DtZIV_tIlL6kya1NGC4YcDnatKZhWL5xl80VH6KyVbpt_XYD4K4jhuv160q0A32Crw&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ8tMDegQIOhAS
+              - text: "9"
+            - link "Page 10" [ref=e948] [cursor=pointer]:
+              - /url: /search?q=Mediarte+Medical+Center+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=8PkWasrHLubKp84P6cfPmA8&start=90&sa=N&sstk=AU9db-D6ssZi6ZOHnnKzi3TDkUEHbrhferJ9DtZIV_tIlL6kya1NGC4YcDnatKZhWL5xl80VH6KyVbpt_XYD4K4jhuv160q0A32Crw&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ8tMDegQIOhAU
+              - text: "10"
+            - heading "Siguiente" [level=2] [ref=e950]:
+              - link "Siguiente" [ref=e951] [cursor=pointer]:
+                - /url: /search?q=Mediarte+Medical+Center+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=8PkWasrHLubKp84P6cfPmA8&start=10&sa=N&sstk=AU9db-D6ssZi6ZOHnnKzi3TDkUEHbrhferJ9DtZIV_tIlL6kya1NGC4YcDnatKZhWL5xl80VH6KyVbpt_XYD4K4jhuv160q0A32Crw&ved=2ahUKEwjK_6e60dmUAxVm5ckDHenjE_MQ8NMDegQIOhAW
+                - generic [ref=e953]: Siguiente
+        - navigation
+    - contentinfo [ref=e954]:
+      - heading "Vínculos a pie de página" [level=1] [ref=e955]
+      - generic [ref=e959]:
+        - generic [ref=e961]:
+          - text: Colombia
+          - generic [ref=e963]:
+            - button "Floridablanca, Bucaramanga, Santander - A través de tu dirección IP" [ref=e965] [cursor=pointer]:
+              - generic [ref=e966]: Floridablanca, Bucaramanga, Santander
+              - generic [ref=e968]:
+                - text: "-"
+                - generic [ref=e969]: A través de tu dirección IP
+            - text: "-"
+            - button "Actualizar ubicación" [ref=e971] [cursor=pointer]: Actualizar ubicación
+        - generic [ref=e974]:
+          - link "Ayuda" [ref=e975] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=es-CO&fg=1
+          - link "Enviar comentarios" [ref=e976] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacidad" [ref=e977] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=es-CO&fg=1
+          - link "Condiciones" [ref=e978] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=es-CO&fg=1

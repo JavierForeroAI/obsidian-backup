@@ -1,0 +1,488 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Ir al contenido principal" [ref=e2] [cursor=pointer]
+      - link "Ayuda sobre la accesibilidad" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=es-CO
+  - generic [ref=e8]:
+    - search [ref=e9]:
+      - generic [ref=e11]:
+        - link "Ir a la página principal de Google" [ref=e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=es&sa=X&ved=0ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQPAgI
+          - img [ref=e14]
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - combobox "Buscar" [ref=e25]: HERO Institute trasplante capilar Colombia resenas calificacion HERO Institute trasplante capilar Colombia resenas calificacion
+            - generic [ref=e26]:
+              - button "Borrar" [ref=e28] [cursor=pointer]:
+                - img [ref=e30]
+              - generic [ref=e33]:
+                - button "Búsqueda por voz" [ref=e34] [cursor=pointer]:
+                  - img [ref=e35]
+                - button "Búsqueda por imagen" [ref=e37] [cursor=pointer]:
+                  - img [ref=e38]
+          - button "Buscar" [ref=e40] [cursor=pointer]:
+            - img [ref=e43]
+    - generic [ref=e45]:
+      - button "Configuración" [ref=e47] [cursor=pointer]:
+        - img [ref=e50]
+      - generic [ref=e53]:
+        - button "Aplicaciones de Google" [ref=e55] [cursor=pointer]:
+          - img [ref=e56]
+        - link "Iniciar sesión" [ref=e60] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=es&passive=true&continue=https://www.google.com/search%3Fq%3DHERO%2BInstitute%2Btrasplante%2Bcapilar%2BColombia%2Bresenas%2Bcalificacion&ec=futura_srp_og_si_72236_p
+  - generic [ref=e62]:
+    - navigation [ref=e68]:
+      - generic [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "Modo IA" [ref=e79] [cursor=pointer]:
+              - /url: /search?q=HERO+Institute+trasplante+capilar+Colombia+resenas+calificacion&sca_esv=423685a90e5df121&udm=50&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTa-EmKihfPCcL-IqUf21OsJu9zYyK2WdTxmXdrNd_u_qIXI7EIKrpNYLQ1eKi8cVeLDkODYryvSwKstToq_9_0CVPHV0pUMPo3F4WgtaOUemT6gsEe_Hjchgdl0zOMY3Y3u0jBLjWq6cqG4dm4wvtEXE4G7Sv3AAX8CFkLiczWEBHZ9909jaDRszPPBHW7YkfcUqtcg&aep=1&ntc=1&sa=X&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ2J8OegQIERAD
+              - generic [ref=e82]: Modo IA
+          - listitem [ref=e83]:
+            - link "Todo" [disabled] [ref=e84]:
+              - generic [ref=e86]: Todo
+          - listitem [ref=e87]:
+            - link "Imágenes" [ref=e88] [cursor=pointer]:
+              - /url: /search?sca_esv=423685a90e5df121&udm=2&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTa-EmKihfPCcL-IqUf21OsJu9zYyK2WdTxmXdrNd_u_qIXI7EIKrpNYLQ1eKi8cVeLDkODYryvSwKstToq_9_0CVPHV0pUMPo3F4WgtaOUemT6gsEe_Hjchgdl0zOMY3Y3u0jBLjWq6cqG4dm4wvtEXE4G7Sv3AAX8CFkLiczWEBHZ9909jaDRszPPBHW7YkfcUqtcg&q=HERO+Institute+trasplante+capilar+Colombia+resenas+calificacion&sa=X&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQtKgLegQIFxAB
+              - generic [ref=e90]: Imágenes
+          - listitem [ref=e91]:
+            - link "Vídeos cortos" [ref=e92] [cursor=pointer]:
+              - /url: /search?sca_esv=423685a90e5df121&udm=39&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTa-EmKihfPCcL-IqUf21OsJu9zYyK2WdTxmXdrNd_u_qIXI7EIKrpNYLQ1eKi8cVeLDkODYryvSwKstToq_9_0CVPHV0pUMPo3F4WgtaOUemT6gsEe_Hjchgdl0zOMY3Y3u0jBLjWq6cqG4dm4wvtEXE4G7Sv3AAX8CFkLiczWEBHZ9909jaDRszPPBHW7YkfcUqtcg&q=HERO+Institute+trasplante+capilar+Colombia+resenas+calificacion&sa=X&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQs6gLegQIFhAB
+              - generic [ref=e94]: Vídeos cortos
+          - listitem [ref=e95]:
+            - link "Vídeos" [ref=e96] [cursor=pointer]:
+              - /url: /search?sca_esv=423685a90e5df121&udm=7&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTa-EmKihfPCcL-IqUf21OsJu9zYyK2WdTxmXdrNd_u_qIXI7EIKrpNYLQ1eKi8cVeLDkODYryvSwKstToq_9_0CVPHV0pUMPo3F4WgtaOUemT6gsEe_Hjchgdl0zOMY3Y3u0jBLjWq6cqG4dm4wvtEXE4G7Sv3AAX8CFkLiczWEBHZ9909jaDRszPPBHW7YkfcUqtcg&q=HERO+Institute+trasplante+capilar+Colombia+resenas+calificacion&sa=X&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQtKgLegQIFBAB
+              - generic [ref=e98]: Vídeos
+          - listitem [ref=e99]:
+            - link "Noticias" [ref=e100] [cursor=pointer]:
+              - /url: /search?sca_esv=423685a90e5df121&q=HERO+Institute+trasplante+capilar+Colombia+resenas+calificacion&tbm=nws&source=lnms&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTa-EmKihfPCcL-IqUf21OsJu9zYyK2WdTxmXdrNd_u_qIXI7EIKrpNYLQ1eKi8cVeLDkODYryvSwKstToq_9_0CVPHV0pUMPo3F4WgtaOUemT6gsEe_Hjchgdl0zOMY3Y3u0jBLjWq6cqG4dm4wvtEXE4G7Sv3AAX8CFkLiczWEBHZ9909jaDRszPPBHW7YkfcUqtcg&sa=X&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ0pQJegQIFRAB
+              - generic [ref=e102]: Noticias
+          - listitem [ref=e103]:
+            - link "Shopping" [ref=e104] [cursor=pointer]:
+              - /url: /search?sca_esv=423685a90e5df121&udm=28&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTa-EmKihfPCcL-IqUf21OsJu9zYyK2WdTxmXdrNd_u_qIXI7EIKrpNYLQ1eKi8cVeLDkODYryvSwKstToq_9_0CVPHV0pUMPo3F4WgtaOUemT6gsEe_Hjchgdl0zOMY3Y3u0jBLjWq6cqG4dm4wvtEXE4G7Sv3AAX8CFkLiczWEBHZ9909jaDRszPPBHW7YkfcUqtcg&q=HERO+Institute+trasplante+capilar+Colombia+resenas+calificacion&ved=1t:220175&ictx=111
+              - generic [ref=e106]: Shopping
+          - listitem [ref=e107]:
+            - button "Más filtros" [ref=e108] [cursor=pointer]:
+              - generic "Más filtros" [ref=e109]:
+                - generic [ref=e110]:
+                  - generic [ref=e111]: Más
+                  - img [ref=e113]
+        - button "Herramientas" [ref=e116] [cursor=pointer]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: Herramientas
+            - img [ref=e121]
+    - heading "Resultados de búsqueda" [level=1] [ref=e123]
+    - generic [ref=e128]:
+      - generic [ref=e147]:
+        - heading "Pensando" [level=2] [ref=e151]:
+          - generic [ref=e152]: Pensando
+        - progressbar [ref=e153]
+      - main [ref=e155]:
+        - generic [ref=e159]:
+          - generic [ref=e163]:
+            - generic [ref=e165]:
+              - heading "Videos" [level=2] [ref=e166]
+              - button "Acerca de este resultado" [ref=e167] [cursor=pointer]:
+                - img [ref=e170]
+            - generic [ref=e173]:
+              - generic [ref=e179]:
+                - generic [ref=e180]:
+                  - link "Hero Institute | Colombia Hair Transplant | Los resultados que ... Instagram Hero Institute | Colombia Hair Transplant 27/10/2025" [ref=e182] [cursor=pointer]:
+                    - /url: https://www.instagram.com/reel/DQVMivjDzqF/
+                    - heading "Hero Institute | Colombia Hair Transplant | Los resultados que ... Instagram Hero Institute | Colombia Hair Transplant 27/10/2025" [level=3] [ref=e183]:
+                      - generic [ref=e186]: Hero Institute | Colombia Hair Transplant | Los resultados que ...
+                      - generic [ref=e188]:
+                        - generic [ref=e189]:
+                          - text: Instagram
+                          - generic [ref=e190]: · Hero Institute | Colombia Hair Transplant
+                        - generic [ref=e191]: 27/10/2025
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - text: Instagram
+                            - generic: · Hero Institute | Colombia Hair Transplant
+                      - button "Acerca de este resultado" [ref=e192] [cursor=pointer]:
+                        - img [ref=e195]
+                - link "Hero Institute | Colombia Hair Transplant | Los resultados que ... de Hero Institute | Colombia Hair Transplant en Instagram. Reproducir en Instagram. 0:47" [ref=e197] [cursor=pointer]:
+                  - /url: https://www.instagram.com/reel/DQVMivjDzqF/
+                  - generic [ref=e198]:
+                    - img [ref=e204]
+                    - generic [ref=e208]: 0:47
+              - generic [ref=e214]:
+                - generic [ref=e215]:
+                  - link "Hero Institute | Colombia Hair Transplant | Muchos hablan de ... Instagram Hero Institute | Colombia Hair Transplant 21/11/2025" [ref=e217] [cursor=pointer]:
+                    - /url: https://www.instagram.com/reel/DRVlxVnjbm1/
+                    - heading "Hero Institute | Colombia Hair Transplant | Muchos hablan de ... Instagram Hero Institute | Colombia Hair Transplant 21/11/2025" [level=3] [ref=e218]:
+                      - generic [ref=e221]: Hero Institute | Colombia Hair Transplant | Muchos hablan de ...
+                      - generic [ref=e223]:
+                        - generic [ref=e224]:
+                          - text: Instagram
+                          - generic [ref=e225]: · Hero Institute | Colombia Hair Transplant
+                        - generic [ref=e226]: 21/11/2025
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - text: Instagram
+                            - generic: · Hero Institute | Colombia Hair Transplant
+                      - button "Acerca de este resultado" [ref=e227] [cursor=pointer]:
+                        - img [ref=e230]
+                - link "Hero Institute | Colombia Hair Transplant | Muchos hablan de ... de Hero Institute | Colombia Hair Transplant en Instagram. Reproducir en Instagram. 1:00" [ref=e232] [cursor=pointer]:
+                  - /url: https://www.instagram.com/reel/DRVlxVnjbm1/
+                  - generic [ref=e233]:
+                    - img [ref=e239]
+                    - generic [ref=e243]: 1:00
+              - generic [ref=e249]:
+                - generic [ref=e250]:
+                  - link "Hero Institute | Colombia Hair Transplant | En HERO, no solo ... Instagram Hero Institute | Colombia Hair Transplant 14/11/2025" [ref=e252] [cursor=pointer]:
+                    - /url: https://www.instagram.com/reel/DRDl2gpijDr/
+                    - heading "Hero Institute | Colombia Hair Transplant | En HERO, no solo ... Instagram Hero Institute | Colombia Hair Transplant 14/11/2025" [level=3] [ref=e253]:
+                      - generic [ref=e256]: Hero Institute | Colombia Hair Transplant | En HERO, no solo ...
+                      - generic [ref=e258]:
+                        - generic [ref=e259]:
+                          - text: Instagram
+                          - generic [ref=e260]: · Hero Institute | Colombia Hair Transplant
+                        - generic [ref=e261]: 14/11/2025
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - text: Instagram
+                            - generic: · Hero Institute | Colombia Hair Transplant
+                      - button "Acerca de este resultado" [ref=e262] [cursor=pointer]:
+                        - img [ref=e265]
+                - link "Hero Institute | Colombia Hair Transplant | En HERO, no solo ... de Hero Institute | Colombia Hair Transplant en Instagram. Reproducir en Instagram. 0:37" [ref=e267] [cursor=pointer]:
+                  - /url: https://www.instagram.com/reel/DRDl2gpijDr/
+                  - generic [ref=e268]:
+                    - img [ref=e274]
+                    - generic [ref=e278]: 0:37
+              - generic [ref=e284]:
+                - generic [ref=e285]:
+                  - link "Viajó a Colombia para su trasplante capilar… ¡y fue la mejor ... YouTube HERO Institute | Trasplante Capilar en Colombia 15/03/2025" [ref=e287] [cursor=pointer]:
+                    - /url: https://www.youtube.com/shorts/fj1PcYFl8PE
+                    - heading "Viajó a Colombia para su trasplante capilar… ¡y fue la mejor ... YouTube HERO Institute | Trasplante Capilar en Colombia 15/03/2025" [level=3] [ref=e288]:
+                      - generic [ref=e291]: Viajó a Colombia para su trasplante capilar… ¡y fue la mejor ...
+                      - generic [ref=e293]:
+                        - generic [ref=e294]:
+                          - text: YouTube
+                          - generic [ref=e295]: · HERO Institute | Trasplante Capilar en Colombia
+                        - generic [ref=e296]: 15/03/2025
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - text: YouTube
+                            - generic: · HERO Institute | Trasplante Capilar en Colombia
+                      - button "Acerca de este resultado" [ref=e297] [cursor=pointer]:
+                        - img [ref=e300]
+                - button "Viajó a Colombia para su trasplante capilar… ¡y fue la mejor ... de HERO Institute | Trasplante Capilar en Colombia en YouTube. Reproducir en Google. 0:35" [ref=e302] [cursor=pointer]:
+                  - generic [ref=e303]:
+                    - img [ref=e306]
+                    - generic [ref=e309]:
+                      - generic [ref=e310]: 0:35
+                      - img [ref=e313]
+            - link "Ver todos los videos" [ref=e317] [cursor=pointer]:
+              - /url: /search?sca_esv=423685a90e5df121&udm=7&q=HERO+Institute+trasplante+capilar+Colombia+resenas+calificacion&sa=X&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ8ccDKAJ6BAgcEAQ
+              - separator [ref=e318]
+              - generic [ref=e319]:
+                - generic [ref=e320]: Ver más
+                - img [ref=e322]
+          - generic [ref=e328]:
+            - heading "Más preguntas" [level=2] [ref=e330]
+            - generic [ref=e331]:
+              - button "¿Cuáles son las mejores clínicas de implante capilar en Colombia?" [ref=e337] [cursor=pointer]:
+                - generic [ref=e339]: ¿Cuáles son las mejores clínicas de implante capilar en Colombia?
+                - img [ref=e342]
+              - button "¿Qué país ofrece trasplantes capilares de la mejor calidad?" [ref=e351] [cursor=pointer]:
+                - generic [ref=e353]: ¿Qué país ofrece trasplantes capilares de la mejor calidad?
+                - img [ref=e356]
+              - button "¿Cuánto cubren 3000 folículos?" [ref=e365] [cursor=pointer]:
+                - generic [ref=e367]: ¿Cuánto cubren 3000 folículos?
+                - img [ref=e370]
+              - button "¿Es Dhi realmente mejor que Fue?" [ref=e379] [cursor=pointer]:
+                - generic [ref=e381]: ¿Es Dhi realmente mejor que Fue?
+                - img [ref=e384]
+          - generic [ref=e389]:
+            - heading "Resultados web" [level=2] [ref=e390]
+            - generic [ref=e391]:
+              - generic [ref=e394]:
+                - link "Implante Capilar en Colombia (Bogotá y Medellín) HERO Instituto de Trasplante Capilar Medellín https://www.heroinstitute.co › es-co" [ref=e396] [cursor=pointer]:
+                  - /url: https://www.heroinstitute.co/es-co
+                  - heading "Implante Capilar en Colombia (Bogotá y Medellín)" [level=3] [ref=e397]
+                  - generic [ref=e402]:
+                    - generic [ref=e404]: HERO Instituto de Trasplante Capilar Medellín
+                    - generic [ref=e406]: https://www.heroinstitute.co › es-co
+                - button "Acerca de este resultado" [ref=e407] [cursor=pointer]:
+                  - img [ref=e410]
+              - generic [ref=e414]:
+                - text: En Hero Institute,
+                - emphasis [ref=e415]: utilizamos técnicas innovadoras de implantación de cabello
+                - text: que garantizan resultados naturales y permanentes. Nuestro procedimiento se centra ...
+          - generic [ref=e419]:
+            - generic [ref=e422]:
+              - link "En @trasplantecapilar_hero nos esforzamos ... Facebook https://m.facebook.com › HEROInstitute › photos" [ref=e424] [cursor=pointer]:
+                - /url: https://m.facebook.com/HEROInstitute/photos/a.1328061367284087/4826808627409326/?type=3&source=54
+                - heading "En @trasplantecapilar_hero nos esforzamos ..." [level=3] [ref=e425]
+                - generic [ref=e430]:
+                  - generic [ref=e432]: Facebook
+                  - generic [ref=e434]: https://m.facebook.com › HEROInstitute › photos
+              - button "Acerca de este resultado" [ref=e435] [cursor=pointer]:
+                - img [ref=e438]
+            - generic [ref=e441]:
+              - generic [ref=e442]: 21/02/2022 —
+              - generic [ref=e443]:
+                - text: En @trasplantecapilar_hero nos esforzamos al máximo por brindar el mejor servicio y lo vemos reflejado en las
+                - emphasis [ref=e444]: reseñas
+                - text: que nos dejan nuestros ...
+          - generic [ref=e448]:
+            - generic [ref=e451]:
+              - link "8 Médicos de Trasplante Capilar en Colombia - Medihair medihair.com https://medihair.com › trasplante-capilar-colombia" [ref=e453] [cursor=pointer]:
+                - /url: https://medihair.com/es/trasplante-capilar-colombia/
+                - heading "8 Médicos de Trasplante Capilar en Colombia - Medihair" [level=3] [ref=e454]
+                - generic [ref=e459]:
+                  - generic [ref=e461]: medihair.com
+                  - generic [ref=e463]: https://medihair.com › trasplante-capilar-colombia
+              - button "Acerca de este resultado" [ref=e464] [cursor=pointer]:
+                - img [ref=e467]
+            - generic [ref=e470]:
+              - generic [ref=e471]: 16/11/2023 —
+              - generic [ref=e472]:
+                - text: Las 5 mejores clínicas de trasplante capilar en Colombia ;
+                - emphasis [ref=e473]: HERO Institute
+                - text: (Dr. Juan Carlos Maldonado). FUE, FUT, ARTAS. Previa solicitud ; Skin & ...
+          - generic [ref=e477]:
+            - generic [ref=e480]:
+              - link "¿Quiénes son las clínicas de trasplante capilar ... Reddit · r/HairTransplants Más de 30 comentarios · hace 3 años" [ref=e482] [cursor=pointer]:
+                - /url: https://www.reddit.com/r/HairTransplants/comments/yznfvt/who_are_the_hair_mills_lets_list_them_out_many/
+                - heading "¿Quiénes son las clínicas de trasplante capilar ..." [level=3] [ref=e483]
+                - generic [ref=e488]:
+                  - generic [ref=e490]: Reddit · r/HairTransplants
+                  - generic [ref=e492]: Más de 30 comentarios · hace 3 años
+              - button "Acerca de este resultado" [ref=e493] [cursor=pointer]:
+                - img [ref=e496]
+            - generic [ref=e498]:
+              - generic [ref=e501]:
+                - text: Se extrajeron 7500 injertos en 2 días y
+                - emphasis [ref=e502]: los resultados fueron muy malos después de 2 años
+                - text: . Le pedí comentarios a otra clínica después de ...
+              - generic [ref=e507]:
+                - img [ref=e510]
+                - generic [ref=e512]: Traducido por Google ·
+                - button "Ver original (English)" [ref=e513] [cursor=pointer]
+          - generic [ref=e517]:
+            - generic [ref=e520]:
+              - link "Hero Institute | Colombia Hair Transplant Instagram · heroinstitute.co Más de 10 \"me gusta\" · hace 6 meses" [ref=e522] [cursor=pointer]:
+                - /url: https://www.instagram.com/reel/DQ5RYyak6A9/
+                - heading "Hero Institute | Colombia Hair Transplant" [level=3] [ref=e523]
+                - generic [ref=e528]:
+                  - generic [ref=e530]: Instagram · heroinstitute.co
+                  - generic [ref=e532]: Más de 10 "me gusta" · hace 6 meses
+              - button "Acerca de este resultado" [ref=e533] [cursor=pointer]:
+                - img [ref=e536]
+            - generic [ref=e540]:
+              - text: Es un
+              - emphasis [ref=e541]: trasplante capilar
+              - text: con tecnología HARRTS FUE Fusion. Precisión, diseño y naturalidad… para que el cambio se vea, pero no se note cómo ...
+          - generic [ref=e545]:
+            - generic [ref=e548]:
+              - link "HERO Hair Institute - Bogotá, Colombia WhatClinic https://www.whatclinic.com › he..." [ref=e550] [cursor=pointer]:
+                - /url: https://www.whatclinic.com/hair-loss/colombia/bogota/hero-hair-institute-bogota
+                - heading "HERO Hair Institute - Bogotá, Colombia" [level=3] [ref=e551]
+                - generic [ref=e556]:
+                  - generic [ref=e558]: WhatClinic
+                  - generic [ref=e560]: https://www.whatclinic.com › he...
+              - generic [ref=e561]:
+                - generic [ref=e562]: ·
+                - link "Traducir esta página" [ref=e563] [cursor=pointer]:
+                  - /url: https://www.whatclinic.com/hair-loss/colombia/bogota/hero-hair-institute-bogota
+              - button "Acerca de este resultado" [ref=e564] [cursor=pointer]:
+                - img [ref=e567]
+            - generic [ref=e570]: "Enquire for a fast quote ☆ Good WhatClinic ServiceScore™ 6.5 from 6 user interactions ☆ Visit our Hair Loss Clinic - Calle 117 #6a-60 Flormorado Empresarial ..."
+          - generic [ref=e574]:
+            - generic [ref=e577]:
+              - link "Testimonials | Casos Reales YouTube · HERO Hair Evolution by Robotics Más de 1,7 K seguidores" [ref=e579] [cursor=pointer]:
+                - /url: https://www.youtube.com/playlist?list=PLsDC1j3gN7StJUIHQBL8H5bljYR8wnqMc
+                - heading "Testimonials | Casos Reales" [level=3] [ref=e580]
+                - generic [ref=e585]:
+                  - generic [ref=e587]: YouTube · HERO Hair Evolution by Robotics
+                  - generic [ref=e589]: Más de 1,7 K seguidores
+              - button "Acerca de este resultado" [ref=e590] [cursor=pointer]:
+                - img [ref=e593]
+            - generic [ref=e597]:
+              - text: 2 años después del
+              - emphasis [ref=e598]: trasplante capilar
+              - text: … · 1 año después del
+              - emphasis [ref=e599]: trasplante capilar
+              - text: "… · 5 años después: resultado real de"
+              - emphasis [ref=e600]: trasplante capilar
+              - text: "| Método"
+              - emphasis [ref=e601]: HERO
+              - text: en
+              - emphasis [ref=e602]: Colombia
+              - text: ( ...
+          - generic [ref=e606]:
+            - generic [ref=e609]:
+              - link "Programa Tu Consulta Presencial en HERO HERO Instituto de Trasplante Capilar Medellín https://www.heroinstitute.co › es-co › programa-cita-pr..." [ref=e611] [cursor=pointer]:
+                - /url: https://www.heroinstitute.co/es-co/programa-cita-presencial
+                - heading "Programa Tu Consulta Presencial en HERO" [level=3] [ref=e612]
+                - generic [ref=e617]:
+                  - generic [ref=e619]: HERO Instituto de Trasplante Capilar Medellín
+                  - generic [ref=e621]: https://www.heroinstitute.co › es-co › programa-cita-pr...
+              - button "Acerca de este resultado" [ref=e622] [cursor=pointer]:
+                - img [ref=e625]
+            - generic [ref=e629]:
+              - text: "\"Tuve una gran experiencia recibiendo mi"
+              - emphasis [ref=e630]: trasplante
+              - text: de cabello en
+              - emphasis [ref=e631]: Hero Institute
+              - text: . El equipo es extremadamente profesional y conocedor e hizo que todo el ...
+          - generic [ref=e635]:
+            - heading "Imágenes" [level=2] [ref=e639]
+            - generic [ref=e643]:
+              - generic [ref=e647] [cursor=pointer]:
+                - link "Muchos hablan de resultados…, Pero pocos te muestran el proceso completo, como lo hacemos en HERO., En este video ves paso a paso cómo cuidamos cada detalle durante un trasplante capilar:, 🧪 La ... Instagram":
+                  - /url: https://www.instagram.com/reel/DRVlxVnjbm1/
+                - button "Muchos hablan de resultados…, Pero pocos te muestran el proceso completo, como lo hacemos en HERO., En este video ves paso a paso cómo cuidamos cada detalle durante un trasplante capilar:, 🧪 La ..." [ref=e649]:
+                  - img "Muchos hablan de resultados…, Pero pocos te muestran el proceso completo, como lo hacemos en HERO., En este video ves paso a paso cómo cuidamos cada detalle durante un trasplante capilar:, 🧪 La ..." [ref=e651]
+                - generic [ref=e653]:
+                  - generic [ref=e655]: Muchos hablan de resultados…, Pero pocos te muestran el proceso completo, como lo hacemos en HERO., En este video ves paso a paso cómo cuidamos cada detalle durante un trasplante capilar:, 🧪 La ...
+                  - generic [ref=e656]:
+                    - generic [ref=e663]: Instagram
+                    - button "Acerca de este resultado" [ref=e666]:
+                      - img [ref=e669]
+              - generic [ref=e674] [cursor=pointer]:
+                - 'link "Los resultados que cambian tu vida empiezan con un paso. Mira lo que logramos juntos en casi 1 año., #ResultadosReales #ConfianzaRenovada #HEROtransforma #1AñoDeCambio #fyp #fypage Instagram"':
+                  - /url: https://www.instagram.com/reel/DQVMivjDzqF/
+                - 'button "Los resultados que cambian tu vida empiezan con un paso. Mira lo que logramos juntos en casi 1 año., #ResultadosReales #ConfianzaRenovada #HEROtransforma #1AñoDeCambio #fyp #fypage" [ref=e676]':
+                  - 'img "Los resultados que cambian tu vida empiezan con un paso. Mira lo que logramos juntos en casi 1 año., #ResultadosReales #ConfianzaRenovada #HEROtransforma #1AñoDeCambio #fyp #fypage" [ref=e678]'
+                - generic [ref=e680]:
+                  - generic [ref=e682]: "Los resultados que cambian tu vida empiezan con un paso. Mira lo que logramos juntos en casi 1 año., #ResultadosReales #ConfianzaRenovada #HEROtransforma #1AñoDeCambio #fyp #fypage"
+                  - generic [ref=e683]:
+                    - generic [ref=e690]: Instagram
+                    - button "Acerca de este resultado" [ref=e693]:
+                      - img [ref=e696]
+              - generic [ref=e701] [cursor=pointer]:
+                - 'link "Trasplante de cabello: antes y después del Instituto HERO HERO Institute"':
+                  - /url: https://www.heroinstitute.co/es-co
+                - 'button "Trasplante de cabello: antes y después del Instituto HERO" [ref=e703]':
+                  - 'img "Trasplante de cabello: antes y después del Instituto HERO" [ref=e705]'
+                - generic [ref=e707]:
+                  - generic [ref=e709]: "Trasplante de cabello: antes y después del Instituto HERO"
+                  - generic [ref=e710]:
+                    - generic [ref=e717]: HERO Institute
+                    - button "Acerca de este resultado" [ref=e720]:
+                      - img [ref=e723]
+            - button "Mostrar más imágenes" [ref=e726] [cursor=pointer]:
+              - separator [ref=e727]
+              - generic [ref=e728]:
+                - generic [ref=e729]: Mostrar más imágenes
+                - img [ref=e731]
+        - generic [ref=e734]:
+          - generic [ref=e739]:
+            - heading "También se buscó" [level=2] [ref=e741]
+            - generic [ref=e743]:
+              - generic [ref=e744]:
+                - link "Mejores clínicas de implante capilar en Colombia" [ref=e748] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=Mejores+cl%C3%ADnicas+de+implante+capilar+en+Colombia&sa=X&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ1QJ6BAhAEAE
+                  - generic [ref=e749]:
+                    - generic [ref=e754]: Mejores clínicas de implante capilar en Colombia
+                    - img [ref=e758]
+                - link "Implante capilar Colombia precio" [ref=e763] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=Implante+capilar+Colombia+precio&sa=X&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ1QJ6BAhTEAE
+                  - generic [ref=e764]:
+                    - generic [ref=e769]: Implante capilar Colombia precio
+                    - img [ref=e773]
+                - link "Trasplante capilar Medellín precio" [ref=e778] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=Trasplante+capilar+Medell%C3%ADn+precio&sa=X&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ1QJ6BAhUEAE
+                  - generic [ref=e779]:
+                    - generic [ref=e784]: Trasplante capilar Medellín precio
+                    - img [ref=e788]
+                - link "HERO Institute Medellín" [ref=e793] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=HERO+Institute+Medell%C3%ADn&sa=X&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ1QJ6BAhVEAE
+                  - generic [ref=e794]:
+                    - generic [ref=e799]: HERO Institute Medellín
+                    - img [ref=e803]
+              - generic [ref=e805]:
+                - link "Trasplante capilar Medellín" [ref=e809] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=Trasplante+capilar+Medell%C3%ADn&sa=X&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ1QJ6BAhSEAE
+                  - generic [ref=e810]:
+                    - generic [ref=e815]: Trasplante capilar Medellín
+                    - img [ref=e819]
+                - link "DHI Colombia opiniones" [ref=e824] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=DHI+Colombia+opiniones&sa=X&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ1QJ6BAhMEAE
+                  - generic [ref=e825]:
+                    - generic [ref=e830]: DHI Colombia opiniones
+                    - img [ref=e834]
+                - link "Hero instituto de trasplante capilar bogotá" [ref=e839] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=Hero+instituto+de+trasplante+capilar+bogot%C3%A1&sa=X&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ1QJ6BAhGEAE
+                  - generic [ref=e840]:
+                    - generic [ref=e845]: Hero instituto de trasplante capilar bogotá
+                    - img [ref=e849]
+                - link "Total Hair Colombia" [ref=e854] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=Total+Hair+Colombia&sa=X&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ1QJ6BAhCEAE
+                  - generic [ref=e855]:
+                    - generic [ref=e860]: Total Hair Colombia
+                    - img [ref=e864]
+          - navigation [ref=e866]:
+            - heading "Navegación de páginas" [level=1] [ref=e867]
+            - text: "1"
+            - link "Page 2" [ref=e870] [cursor=pointer]:
+              - /url: /search?q=HERO+Institute+trasplante+capilar+Colombia+resenas+calificacion&sca_esv=423685a90e5df121&ei=__kWaubkIfLfp84PyLfYmA0&start=10&sa=N&sstk=AU9db-BlO1FZZKTIEJb60IZeM4fV-4_tj-5wL7f0bcNsp_Ao__l6oZweXl_adhmu0IkAzmjE-2y0XULXeEvMEVPLBcwCW1yOs_JviA&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ8tMDegQINxAE
+              - text: "2"
+            - link "Page 3" [ref=e872] [cursor=pointer]:
+              - /url: /search?q=HERO+Institute+trasplante+capilar+Colombia+resenas+calificacion&sca_esv=423685a90e5df121&ei=__kWaubkIfLfp84PyLfYmA0&start=20&sa=N&sstk=AU9db-BlO1FZZKTIEJb60IZeM4fV-4_tj-5wL7f0bcNsp_Ao__l6oZweXl_adhmu0IkAzmjE-2y0XULXeEvMEVPLBcwCW1yOs_JviA&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ8tMDegQINxAG
+              - text: "3"
+            - link "Page 4" [ref=e874] [cursor=pointer]:
+              - /url: /search?q=HERO+Institute+trasplante+capilar+Colombia+resenas+calificacion&sca_esv=423685a90e5df121&ei=__kWaubkIfLfp84PyLfYmA0&start=30&sa=N&sstk=AU9db-BlO1FZZKTIEJb60IZeM4fV-4_tj-5wL7f0bcNsp_Ao__l6oZweXl_adhmu0IkAzmjE-2y0XULXeEvMEVPLBcwCW1yOs_JviA&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ8tMDegQINxAI
+              - text: "4"
+            - link "Page 5" [ref=e876] [cursor=pointer]:
+              - /url: /search?q=HERO+Institute+trasplante+capilar+Colombia+resenas+calificacion&sca_esv=423685a90e5df121&ei=__kWaubkIfLfp84PyLfYmA0&start=40&sa=N&sstk=AU9db-BlO1FZZKTIEJb60IZeM4fV-4_tj-5wL7f0bcNsp_Ao__l6oZweXl_adhmu0IkAzmjE-2y0XULXeEvMEVPLBcwCW1yOs_JviA&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ8tMDegQINxAK
+              - text: "5"
+            - link "Page 6" [ref=e878] [cursor=pointer]:
+              - /url: /search?q=HERO+Institute+trasplante+capilar+Colombia+resenas+calificacion&sca_esv=423685a90e5df121&ei=__kWaubkIfLfp84PyLfYmA0&start=50&sa=N&sstk=AU9db-BlO1FZZKTIEJb60IZeM4fV-4_tj-5wL7f0bcNsp_Ao__l6oZweXl_adhmu0IkAzmjE-2y0XULXeEvMEVPLBcwCW1yOs_JviA&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ8tMDegQINxAM
+              - text: "6"
+            - link "Page 7" [ref=e880] [cursor=pointer]:
+              - /url: /search?q=HERO+Institute+trasplante+capilar+Colombia+resenas+calificacion&sca_esv=423685a90e5df121&ei=__kWaubkIfLfp84PyLfYmA0&start=60&sa=N&sstk=AU9db-BlO1FZZKTIEJb60IZeM4fV-4_tj-5wL7f0bcNsp_Ao__l6oZweXl_adhmu0IkAzmjE-2y0XULXeEvMEVPLBcwCW1yOs_JviA&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ8tMDegQINxAO
+              - text: "7"
+            - link "Page 8" [ref=e882] [cursor=pointer]:
+              - /url: /search?q=HERO+Institute+trasplante+capilar+Colombia+resenas+calificacion&sca_esv=423685a90e5df121&ei=__kWaubkIfLfp84PyLfYmA0&start=70&sa=N&sstk=AU9db-BlO1FZZKTIEJb60IZeM4fV-4_tj-5wL7f0bcNsp_Ao__l6oZweXl_adhmu0IkAzmjE-2y0XULXeEvMEVPLBcwCW1yOs_JviA&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ8tMDegQINxAQ
+              - text: "8"
+            - link "Page 9" [ref=e884] [cursor=pointer]:
+              - /url: /search?q=HERO+Institute+trasplante+capilar+Colombia+resenas+calificacion&sca_esv=423685a90e5df121&ei=__kWaubkIfLfp84PyLfYmA0&start=80&sa=N&sstk=AU9db-BlO1FZZKTIEJb60IZeM4fV-4_tj-5wL7f0bcNsp_Ao__l6oZweXl_adhmu0IkAzmjE-2y0XULXeEvMEVPLBcwCW1yOs_JviA&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ8tMDegQINxAS
+              - text: "9"
+            - link "Page 10" [ref=e886] [cursor=pointer]:
+              - /url: /search?q=HERO+Institute+trasplante+capilar+Colombia+resenas+calificacion&sca_esv=423685a90e5df121&ei=__kWaubkIfLfp84PyLfYmA0&start=90&sa=N&sstk=AU9db-BlO1FZZKTIEJb60IZeM4fV-4_tj-5wL7f0bcNsp_Ao__l6oZweXl_adhmu0IkAzmjE-2y0XULXeEvMEVPLBcwCW1yOs_JviA&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ8tMDegQINxAU
+              - text: "10"
+            - heading "Siguiente" [level=2] [ref=e888]:
+              - link "Siguiente" [ref=e889] [cursor=pointer]:
+                - /url: /search?q=HERO+Institute+trasplante+capilar+Colombia+resenas+calificacion&sca_esv=423685a90e5df121&ei=__kWaubkIfLfp84PyLfYmA0&start=10&sa=N&sstk=AU9db-BlO1FZZKTIEJb60IZeM4fV-4_tj-5wL7f0bcNsp_Ao__l6oZweXl_adhmu0IkAzmjE-2y0XULXeEvMEVPLBcwCW1yOs_JviA&ved=2ahUKEwim4K7B0dmUAxXy78kDHcgbFtMQ8NMDegQINxAW
+                - generic [ref=e891]: Siguiente
+        - navigation
+    - contentinfo [ref=e892]:
+      - heading "Vínculos a pie de página" [level=1] [ref=e893]
+      - generic [ref=e897]:
+        - generic [ref=e899]:
+          - text: Colombia
+          - generic [ref=e901]:
+            - button "Floridablanca, Bucaramanga, Santander - A través de tu dirección IP" [ref=e903] [cursor=pointer]:
+              - generic [ref=e904]: Floridablanca, Bucaramanga, Santander
+              - generic [ref=e906]:
+                - text: "-"
+                - generic [ref=e907]: A través de tu dirección IP
+            - text: "-"
+            - button "Actualizar ubicación" [ref=e909] [cursor=pointer]: Actualizar ubicación
+        - generic [ref=e912]:
+          - link "Ayuda" [ref=e913] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=es-CO&fg=1
+          - link "Enviar comentarios" [ref=e914] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacidad" [ref=e915] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=es-CO&fg=1
+          - link "Condiciones" [ref=e916] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=es-CO&fg=1

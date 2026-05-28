@@ -32,6 +32,9 @@
 - [Escuela de Alopecia Dr. Muñoz](notebooklm/escuela-alopecia.md) — Metodología médica, calvofobia, efecto nocebo, técnicas diferenciadas, insights de paciente
 - [GEMagenciaADS](notebooklm/agencia-ads.md) — Meta era Andrómeda, frameworks PPPP/95-5/2R, casos de éxito, tácticas específicas para Innovart
 
+## SEO
+- [Plan SEO Shopify — Mayo 2026](seo-plan-shopify-2026-05.md) — 17 acciones automáticas + 8 parciales + 5 manuales; landing pages de ciudad, blog, schema, correcciones on-page
+
 ## Aprendizajes
 - [Dossier descubrimiento 2026-05-18](../10-Clientes/Innovart/_dossier-2026-05-18.md) — Investigación completa inicial
 

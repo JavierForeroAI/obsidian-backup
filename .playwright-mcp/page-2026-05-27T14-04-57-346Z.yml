@@ -1,0 +1,474 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Ir al contenido principal" [ref=e2] [cursor=pointer]
+      - link "Ayuda sobre la accesibilidad" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=es-CO
+  - generic [ref=e8]:
+    - search [ref=e9]:
+      - generic [ref=e11]:
+        - link "Ir a la página principal de Google" [ref=e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=es&sa=X&ved=0ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQPAgI
+          - img [ref=e14]
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - combobox "Buscar" [ref=e25]: DHI Colombia trasplante capilar Bogota resenas calificacion DHI Colombia trasplante capilar Bogota resenas calificacion
+            - generic [ref=e26]:
+              - button "Borrar" [ref=e28] [cursor=pointer]:
+                - img [ref=e30]
+              - generic [ref=e33]:
+                - button "Búsqueda por voz" [ref=e34] [cursor=pointer]:
+                  - img [ref=e35]
+                - button "Búsqueda por imagen" [ref=e37] [cursor=pointer]:
+                  - img [ref=e38]
+          - button "Buscar" [ref=e40] [cursor=pointer]:
+            - img [ref=e43]
+    - generic [ref=e45]:
+      - button "Configuración" [ref=e47] [cursor=pointer]:
+        - img [ref=e50]
+      - generic [ref=e53]:
+        - button "Aplicaciones de Google" [ref=e55] [cursor=pointer]:
+          - img [ref=e56]
+        - link "Iniciar sesión" [ref=e60] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=es&passive=true&continue=https://www.google.com/search%3Fq%3DDHI%2BColombia%2Btrasplante%2Bcapilar%2BBogota%2Bresenas%2Bcalificacion&ec=futura_srp_og_si_72236_p
+  - generic [ref=e62]:
+    - navigation [ref=e68]:
+      - generic [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "Modo IA" [ref=e79] [cursor=pointer]:
+              - /url: /search?q=DHI+Colombia+trasplante+capilar+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&udm=50&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTaMb_WtLz8zQ41bNqiqMK_0GCDA2eBSrpJajLJh54y7KaCHLPvoYcuFrrCOzk_nugrV4iIWfPa091uWzhe1c92_Pmi4ODVg1Z4iDaiM5aK_aVoKZ6y4a6dKuuLEyb6CCpfFwT7z9o4Nb7dgxghDHJfACa7YjX-WvfeQYnjRpuILji5LlRw&aep=1&ntc=1&sa=X&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ2J8OegQIDhAD
+              - generic [ref=e82]: Modo IA
+          - listitem [ref=e83]:
+            - link "Todo" [disabled] [ref=e84]:
+              - generic [ref=e86]: Todo
+          - listitem [ref=e87]:
+            - link "Imágenes" [ref=e88] [cursor=pointer]:
+              - /url: /search?sca_esv=423685a90e5df121&udm=2&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTaMb_WtLz8zQ41bNqiqMK_0GCDA2eBSrpJajLJh54y7KaCHLPvoYcuFrrCOzk_nugrV4iIWfPa091uWzhe1c92_Pmi4ODVg1Z4iDaiM5aK_aVoKZ6y4a6dKuuLEyb6CCpfFwT7z9o4Nb7dgxghDHJfACa7YjX-WvfeQYnjRpuILji5LlRw&q=DHI+Colombia+trasplante+capilar+Bogota+resenas+calificacion&sa=X&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQtKgLegQIEhAB
+              - generic [ref=e90]: Imágenes
+          - listitem [ref=e91]:
+            - link "Vídeos" [ref=e92] [cursor=pointer]:
+              - /url: /search?sca_esv=423685a90e5df121&udm=7&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTaMb_WtLz8zQ41bNqiqMK_0GCDA2eBSrpJajLJh54y7KaCHLPvoYcuFrrCOzk_nugrV4iIWfPa091uWzhe1c92_Pmi4ODVg1Z4iDaiM5aK_aVoKZ6y4a6dKuuLEyb6CCpfFwT7z9o4Nb7dgxghDHJfACa7YjX-WvfeQYnjRpuILji5LlRw&q=DHI+Colombia+trasplante+capilar+Bogota+resenas+calificacion&sa=X&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQtKgLegQIExAB
+              - generic [ref=e94]: Vídeos
+          - listitem [ref=e95]:
+            - link "Vídeos cortos" [ref=e96] [cursor=pointer]:
+              - /url: /search?sca_esv=423685a90e5df121&udm=39&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTaMb_WtLz8zQ41bNqiqMK_0GCDA2eBSrpJajLJh54y7KaCHLPvoYcuFrrCOzk_nugrV4iIWfPa091uWzhe1c92_Pmi4ODVg1Z4iDaiM5aK_aVoKZ6y4a6dKuuLEyb6CCpfFwT7z9o4Nb7dgxghDHJfACa7YjX-WvfeQYnjRpuILji5LlRw&q=DHI+Colombia+trasplante+capilar+Bogota+resenas+calificacion&sa=X&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQs6gLegQIERAB
+              - generic [ref=e98]: Vídeos cortos
+          - listitem [ref=e99]:
+            - link "Shopping" [ref=e100] [cursor=pointer]:
+              - /url: /search?sca_esv=423685a90e5df121&udm=28&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTaMb_WtLz8zQ41bNqiqMK_0GCDA2eBSrpJajLJh54y7KaCHLPvoYcuFrrCOzk_nugrV4iIWfPa091uWzhe1c92_Pmi4ODVg1Z4iDaiM5aK_aVoKZ6y4a6dKuuLEyb6CCpfFwT7z9o4Nb7dgxghDHJfACa7YjX-WvfeQYnjRpuILji5LlRw&q=DHI+Colombia+trasplante+capilar+Bogota+resenas+calificacion&ved=1t:220175&ictx=111
+              - generic [ref=e102]: Shopping
+          - listitem [ref=e103]:
+            - link "Noticias" [ref=e104] [cursor=pointer]:
+              - /url: /search?sca_esv=423685a90e5df121&q=DHI+Colombia+trasplante+capilar+Bogota+resenas+calificacion&tbm=nws&source=lnms&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTaMb_WtLz8zQ41bNqiqMK_0GCDA2eBSrpJajLJh54y7KaCHLPvoYcuFrrCOzk_nugrV4iIWfPa091uWzhe1c92_Pmi4ODVg1Z4iDaiM5aK_aVoKZ6y4a6dKuuLEyb6CCpfFwT7z9o4Nb7dgxghDHJfACa7YjX-WvfeQYnjRpuILji5LlRw&sa=X&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ0pQJegQIFRAB
+              - generic [ref=e106]: Noticias
+          - listitem [ref=e107]:
+            - button "Más filtros" [ref=e108] [cursor=pointer]:
+              - generic "Más filtros" [ref=e109]:
+                - generic [ref=e110]:
+                  - generic [ref=e111]: Más
+                  - img [ref=e113]
+        - button "Herramientas" [ref=e116] [cursor=pointer]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: Herramientas
+            - img [ref=e121]
+    - heading "Resultados de búsqueda" [level=1] [ref=e123]
+    - generic [ref=e128]:
+      - generic [ref=e147]:
+        - heading "Pensando" [level=2] [ref=e151]:
+          - generic [ref=e152]: Pensando
+        - progressbar [ref=e153]
+      - main [ref=e155]:
+        - generic [ref=e159]:
+          - generic [ref=e162]:
+            - heading "Resultados web" [level=2] [ref=e163]
+            - generic [ref=e164]:
+              - generic [ref=e167]:
+                - 'link "Resultados de un Implante Capilar: Testimonios y Evolución DHI Colombia https://dhicolombia.com.co › resultados-de-un-implante..." [ref=e169] [cursor=pointer]':
+                  - /url: https://dhicolombia.com.co/resultados-de-un-implante-capilar-testimonios/
+                  - 'heading "Resultados de un Implante Capilar: Testimonios y Evolución" [level=3] [ref=e170]'
+                  - generic [ref=e175]:
+                    - generic [ref=e177]: DHI Colombia
+                    - generic [ref=e179]: https://dhicolombia.com.co › resultados-de-un-implante...
+                - button "Acerca de este resultado" [ref=e180] [cursor=pointer]:
+                  - img [ref=e183]
+              - generic [ref=e186]:
+                - generic [ref=e187]: 29/12/2025 —
+                - generic [ref=e188]:
+                  - text: Conoce los resultados de un implante
+                  - emphasis [ref=e189]: capilar
+                  - text: mediante testimonios reales. Descubre la evolución mes a mes y recupera tu imagen con expertos ...
+          - generic [ref=e194]:
+            - heading "Más preguntas" [level=2] [ref=e196]
+            - generic [ref=e197]:
+              - button "¿Cuáles son las reseñas de DHI Colombia?" [ref=e203] [cursor=pointer]:
+                - generic [ref=e205]: ¿Cuáles son las reseñas de DHI Colombia?
+                - img [ref=e208]
+              - button "¿Cuáles son las desventajas de DHI?" [ref=e217] [cursor=pointer]:
+                - generic [ref=e219]: ¿Cuáles son las desventajas de DHI?
+                - img [ref=e222]
+              - button "¿Cuáles son las mejores clínicas de implante capilar en Colombia?" [ref=e231] [cursor=pointer]:
+                - generic [ref=e233]: ¿Cuáles son las mejores clínicas de implante capilar en Colombia?
+                - img [ref=e236]
+              - button "¿Qué es mejor, fue o dhi?" [ref=e245] [cursor=pointer]:
+                - generic [ref=e247]: ¿Qué es mejor, fue o dhi?
+                - img [ref=e250]
+          - generic [ref=e256]:
+            - generic [ref=e258]:
+              - heading "Videos" [level=2] [ref=e259]
+              - button "Acerca de este resultado" [ref=e260] [cursor=pointer]:
+                - img [ref=e263]
+            - generic [ref=e266]:
+              - generic [ref=e271]:
+                - generic [ref=e272]:
+                  - link "El cambio es real y los resultados también. Así luce Jonathan ... Instagram DHI_Colombia implante capilar 13/01/2026" [ref=e274] [cursor=pointer]:
+                    - /url: https://www.instagram.com/reel/DTd6g2Jkqg2/
+                    - heading "El cambio es real y los resultados también. Así luce Jonathan ... Instagram DHI_Colombia implante capilar 13/01/2026" [level=3] [ref=e275]:
+                      - generic [ref=e278]: El cambio es real y los resultados también. Así luce Jonathan ...
+                      - generic [ref=e280]:
+                        - generic [ref=e281]:
+                          - text: Instagram
+                          - generic [ref=e282]: · DHI_Colombia implante capilar
+                        - generic [ref=e283]: 13/01/2026
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - text: Instagram
+                            - generic: · DHI_Colombia implante capilar
+                      - button "Acerca de este resultado" [ref=e284] [cursor=pointer]:
+                        - img [ref=e287]
+                - link "El cambio es real y los resultados también. Así luce Jonathan ... de DHI_Colombia implante capilar en Instagram. Reproducir en Instagram. 1:20" [ref=e289] [cursor=pointer]:
+                  - /url: https://www.instagram.com/reel/DTd6g2Jkqg2/
+                  - generic [ref=e290]:
+                    - img [ref=e293]
+                    - generic [ref=e297]: 1:20
+              - generic [ref=e303]:
+                - generic [ref=e304]:
+                  - link "Un resultado que habla por sí solo. Porque en DHI no solo ... Instagram DHI_Colombia implante capilar 6/10/2025" [ref=e306] [cursor=pointer]:
+                    - /url: https://www.instagram.com/reel/DPfMti_j4r5/
+                    - heading "Un resultado que habla por sí solo. Porque en DHI no solo ... Instagram DHI_Colombia implante capilar 6/10/2025" [level=3] [ref=e307]:
+                      - generic [ref=e310]: Un resultado que habla por sí solo. Porque en DHI no solo ...
+                      - generic [ref=e312]:
+                        - generic [ref=e313]:
+                          - text: Instagram
+                          - generic [ref=e314]: · DHI_Colombia implante capilar
+                        - generic [ref=e315]: 6/10/2025
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - text: Instagram
+                            - generic: · DHI_Colombia implante capilar
+                      - button "Acerca de este resultado" [ref=e316] [cursor=pointer]:
+                        - img [ref=e319]
+                - link "Un resultado que habla por sí solo. Porque en DHI no solo ... de DHI_Colombia implante capilar en Instagram. Reproducir en Instagram. 0:14" [ref=e321] [cursor=pointer]:
+                  - /url: https://www.instagram.com/reel/DPfMti_j4r5/
+                  - generic [ref=e322]:
+                    - img [ref=e328]
+                    - generic [ref=e332]: 0:14
+              - generic [ref=e338]:
+                - generic [ref=e339]:
+                  - link "Opiniones sobre calificaciones en implantes capilares TikTok doctores.pulido 24/07/2025" [ref=e341] [cursor=pointer]:
+                    - /url: https://www.tiktok.com/@doctores.pulido/video/7530845555581406520
+                    - heading "Opiniones sobre calificaciones en implantes capilares TikTok doctores.pulido 24/07/2025" [level=3] [ref=e342]:
+                      - generic [ref=e345]: Opiniones sobre calificaciones en implantes capilares
+                      - generic [ref=e347]:
+                        - generic [ref=e348]:
+                          - text: TikTok
+                          - generic [ref=e349]: · doctores.pulido
+                        - generic [ref=e350]: 24/07/2025
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - text: TikTok
+                            - generic: · doctores.pulido
+                      - button "Acerca de este resultado" [ref=e351] [cursor=pointer]:
+                        - img [ref=e354]
+                - link "Opiniones sobre calificaciones en implantes capilares de doctores.pulido en TikTok. Reproducir en TikTok. 1:11" [ref=e356] [cursor=pointer]:
+                  - /url: https://www.tiktok.com/@doctores.pulido/video/7530845555581406520
+                  - generic [ref=e357]:
+                    - img [ref=e363]
+                    - generic [ref=e367]: 1:11
+              - generic [ref=e373]:
+                - generic [ref=e374]:
+                  - link "En DHI Gradeco Bogotá, @alejavalenciapo te cuenta cómo ... Instagram DHI_Colombia implante capilar 17/10/2025" [ref=e376] [cursor=pointer]:
+                    - /url: https://www.instagram.com/reel/DP7UJlzEute/
+                    - heading "En DHI Gradeco Bogotá, @alejavalenciapo te cuenta cómo ... Instagram DHI_Colombia implante capilar 17/10/2025" [level=3] [ref=e377]:
+                      - generic [ref=e380]: En DHI Gradeco Bogotá, @alejavalenciapo te cuenta cómo ...
+                      - generic [ref=e382]:
+                        - generic [ref=e383]:
+                          - text: Instagram
+                          - generic [ref=e384]: · DHI_Colombia implante capilar
+                        - generic [ref=e385]: 17/10/2025
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - text: Instagram
+                            - generic: · DHI_Colombia implante capilar
+                      - button "Acerca de este resultado" [ref=e386] [cursor=pointer]:
+                        - img [ref=e389]
+                - link "En DHI Gradeco Bogotá, @alejavalenciapo te cuenta cómo ... de DHI_Colombia implante capilar en Instagram. Reproducir en Instagram. 1:28" [ref=e391] [cursor=pointer]:
+                  - /url: https://www.instagram.com/reel/DP7UJlzEute/
+                  - generic [ref=e392]:
+                    - img [ref=e398]
+                    - generic [ref=e402]: 1:28
+            - link "Ver todos los videos" [ref=e405] [cursor=pointer]:
+              - /url: /search?sca_esv=423685a90e5df121&udm=7&q=DHI+Colombia+trasplante+capilar+Bogota+resenas+calificacion&sa=X&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ8ccDKAJ6BAhEEAQ
+              - separator [ref=e406]
+              - generic [ref=e407]:
+                - generic [ref=e408]: Ver más
+                - img [ref=e410]
+          - generic [ref=e414]:
+            - heading "Resultados web" [level=2] [ref=e415]
+            - generic [ref=e416]:
+              - generic [ref=e419]:
+                - link "Estas son las 5 mejores clínicas de implante capilar en ... El Espectador https://www.elespectador.com › contenido-patrocinado" [ref=e421] [cursor=pointer]:
+                  - /url: https://www.elespectador.com/contenido-patrocinado/estas-son-las-5-mejores-clinicas-de-implante-capilar-en-colombia/
+                  - heading "Estas son las 5 mejores clínicas de implante capilar en ..." [level=3] [ref=e422]
+                  - generic [ref=e427]:
+                    - generic [ref=e429]: El Espectador
+                    - generic [ref=e431]: https://www.elespectador.com › contenido-patrocinado
+                - button "Acerca de este resultado" [ref=e432] [cursor=pointer]:
+                  - img [ref=e435]
+              - generic [ref=e438]:
+                - generic [ref=e439]: 28/05/2022 —
+                - generic [ref=e440]:
+                  - emphasis [ref=e441]: DHI
+                  - text: Global Medical
+                  - emphasis [ref=e442]: Colombia
+                  - text: cuenta con una trayectoria de más de 50 años en el mercado
+                  - emphasis [ref=e443]: capilar
+                  - text: . Esta excelente institución es especialista en la ...
+          - generic [ref=e447]:
+            - generic [ref=e450]:
+              - 'link "DHI Colombia: Clínica de implante capilar en colombia DHI Colombia https://dhicolombia.com.co" [ref=e452] [cursor=pointer]':
+                - /url: https://dhicolombia.com.co/
+                - 'heading "DHI Colombia: Clínica de implante capilar en colombia" [level=3] [ref=e453]'
+                - generic [ref=e458]:
+                  - generic [ref=e460]: DHI Colombia
+                  - generic [ref=e462]: https://dhicolombia.com.co
+              - button "Acerca de este resultado" [ref=e463] [cursor=pointer]:
+                - img [ref=e466]
+            - generic [ref=e470]:
+              - emphasis [ref=e471]: Expertos en implante capilar, barba y cejas con más de 54 años de experiencia
+              - text: . Soluciones para alopecia en hombres y mujeres. Agenda tu consulta hoy.
+          - generic [ref=e475]:
+            - generic [ref=e478]:
+              - link "DHI_Colombia implante capilar (@ ... Instagram · dhi_colombia Más de 84,9 k seguidores" [ref=e480] [cursor=pointer]:
+                - /url: https://www.instagram.com/dhi_colombia/?hl=es-la
+                - heading "DHI_Colombia implante capilar (@ ..." [level=3] [ref=e481]
+                - generic [ref=e486]:
+                  - generic [ref=e488]: Instagram · dhi_colombia
+                  - generic [ref=e490]: Más de 84,9 k seguidores
+              - button "Acerca de este resultado" [ref=e491] [cursor=pointer]:
+                - img [ref=e494]
+            - generic [ref=e498]:
+              - emphasis [ref=e499]: Clínica líder mundial en implante capilar y restauración capilar
+              - text: ". + 54 años de experiencia + 80 países. +270 mil pacientes #DHIColombia ."
+          - generic [ref=e503]:
+            - generic [ref=e506]:
+              - link "Resultados DHI DHI Colombia https://dhicolombia.com.co › resultados-dhi" [ref=e508] [cursor=pointer]:
+                - /url: https://dhicolombia.com.co/resultados-dhi/
+                - heading "Resultados DHI" [level=3] [ref=e509]
+                - generic [ref=e514]:
+                  - generic [ref=e516]: DHI Colombia
+                  - generic [ref=e518]: https://dhicolombia.com.co › resultados-dhi
+              - button "Acerca de este resultado" [ref=e519] [cursor=pointer]:
+                - img [ref=e522]
+            - generic [ref=e526]:
+              - text: En esta página encuentras distintos resultados
+              - emphasis [ref=e527]: DHI
+              - text: agrupadas por partes de cuerpo tanto de hombre como mujer. Confía en nuestra experiencia y tecnología.
+          - generic [ref=e531]:
+            - generic [ref=e534]:
+              - link "DHI Colombia Facebook · DHI Colombia Más de 50 reacciones · hace 3 años" [ref=e536] [cursor=pointer]:
+                - /url: https://www.facebook.com/DhiColombia/posts/despu%C3%A9s-de-un-a%C3%B1o-de-haberse-realizado-su-procedimiento-de-implante-capilar-en-d/3190049294587861/
+                - heading "DHI Colombia" [level=3] [ref=e537]
+                - generic [ref=e542]:
+                  - generic [ref=e544]: Facebook · DHI Colombia
+                  - generic [ref=e546]: Más de 50 reacciones · hace 3 años
+              - button "Acerca de este resultado" [ref=e547] [cursor=pointer]:
+                - img [ref=e550]
+            - generic [ref=e553]: Alejandro Gomez tiene que ir a una valoracion muchacho. y es carisimo de una vez le digo que los implantes oscilan entre los 20 25 palos y ...
+          - generic [ref=e557]:
+            - generic [ref=e560]:
+              - link "8 Médicos de Trasplante Capilar en Colombia - Medihair medihair.com https://medihair.com › trasplante-capilar-colombia" [ref=e562] [cursor=pointer]:
+                - /url: https://medihair.com/es/trasplante-capilar-colombia/
+                - heading "8 Médicos de Trasplante Capilar en Colombia - Medihair" [level=3] [ref=e563]
+                - generic [ref=e568]:
+                  - generic [ref=e570]: medihair.com
+                  - generic [ref=e572]: https://medihair.com › trasplante-capilar-colombia
+              - button "Acerca de este resultado" [ref=e573] [cursor=pointer]:
+                - img [ref=e576]
+            - generic [ref=e579]:
+              - generic [ref=e580]: 16/11/2023 —
+              - generic [ref=e581]:
+                - text: Mejor
+                - emphasis [ref=e582]: trasplante capilar
+                - text: en
+                - emphasis [ref=e583]: Colombia
+                - text: Ahorra hasta $3200 ✓ 15+ médicos comparados | opiniones, precios y antes y después.
+          - generic [ref=e587]:
+            - generic [ref=e590]:
+              - link "Implante Capilar en Colombia | Técnica DHI DHI Colombia https://dhicolombia.com.co › implante-capilar" [ref=e592] [cursor=pointer]:
+                - /url: https://dhicolombia.com.co/implante-capilar/
+                - heading "Implante Capilar en Colombia | Técnica DHI" [level=3] [ref=e593]
+                - generic [ref=e598]:
+                  - generic [ref=e600]: DHI Colombia
+                  - generic [ref=e602]: https://dhicolombia.com.co › implante-capilar
+              - button "Acerca de este resultado" [ref=e603] [cursor=pointer]:
+                - img [ref=e606]
+            - generic [ref=e610]:
+              - emphasis [ref=e611]: Clínica especializada en implante capilar en Colombia
+              - text: ". Técnica DHI: folículos implantados uno a uno, sin cicatriz y con 97% de éxito. Agenda tu valoración."
+          - generic [ref=e615]:
+            - heading "Imágenes" [level=2] [ref=e619]
+            - generic [ref=e623]:
+              - generic [ref=e627] [cursor=pointer]:
+                - 'link "Implante Capilar DHI: Resultados que Duran Toda la Vida DHI Colombia"':
+                  - /url: https://dhicolombia.com.co/implante-capilar-dhi-resultados-naturales-que-duran-toda-la-vida/
+                - 'button "Implante Capilar DHI: Resultados que Duran Toda la Vida" [ref=e629]':
+                  - 'img "Implante Capilar DHI: Resultados que Duran Toda la Vida" [ref=e631]'
+                - generic [ref=e633]:
+                  - generic [ref=e635]: "Implante Capilar DHI: Resultados que Duran Toda la Vida"
+                  - generic [ref=e636]:
+                    - generic [ref=e643]: DHI Colombia
+                    - button "Acerca de este resultado" [ref=e646]:
+                      - img [ref=e649]
+              - generic [ref=e654] [cursor=pointer]:
+                - link "Clínica de implante capilar en colombia | DHI Colombia dhicolombia.com.co":
+                  - /url: https://dhicolombia.com.co/
+                - button "Clínica de implante capilar en colombia | DHI Colombia" [ref=e656]:
+                  - img "Clínica de implante capilar en colombia | DHI Colombia" [ref=e658]
+                - generic [ref=e660]:
+                  - generic [ref=e662]: Clínica de implante capilar en colombia | DHI Colombia
+                  - generic [ref=e663]:
+                    - generic [ref=e670]: dhicolombia.com.co
+                    - button "Acerca de este resultado" [ref=e673]:
+                      - img [ref=e676]
+              - generic [ref=e681] [cursor=pointer]:
+                - link "DHI Bogotá Norte Unicentro | DHI Colombia DHI Colombia":
+                  - /url: https://dhicolombia.com.co/dhi-bogota-norte-unicentro/
+                - button "DHI Bogotá Norte Unicentro | DHI Colombia" [ref=e683]:
+                  - img "DHI Bogotá Norte Unicentro | DHI Colombia" [ref=e685]
+                - generic [ref=e687]:
+                  - generic [ref=e689]: DHI Bogotá Norte Unicentro | DHI Colombia
+                  - generic [ref=e690]:
+                    - generic [ref=e697]: DHI Colombia
+                    - button "Acerca de este resultado" [ref=e700]:
+                      - img [ref=e703]
+            - button "Mostrar más imágenes" [ref=e706] [cursor=pointer]:
+              - separator [ref=e707]
+              - generic [ref=e708]:
+                - generic [ref=e709]: Mostrar más imágenes
+                - img [ref=e711]
+        - generic [ref=e714]:
+          - generic [ref=e719]:
+            - heading "También se buscó" [level=2] [ref=e721]
+            - generic [ref=e723]:
+              - generic [ref=e724]:
+                - link "DHI Colombia opiniones" [ref=e728] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=DHI+Colombia+opiniones&sa=X&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ1QJ6BAhKEAE
+                  - generic [ref=e729]:
+                    - generic [ref=e734]: DHI Colombia opiniones
+                    - img [ref=e738]
+                - link "Mejores clínicas de implante capilar en Colombia" [ref=e743] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=Mejores+cl%C3%ADnicas+de+implante+capilar+en+Colombia&sa=X&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ1QJ6BAhREAE
+                  - generic [ref=e744]:
+                    - generic [ref=e749]: Mejores clínicas de implante capilar en Colombia
+                    - img [ref=e753]
+                - link "Implante capilar Bogotá" [ref=e758] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=Implante+capilar+Bogot%C3%A1&sa=X&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ1QJ6BAhMEAE
+                  - generic [ref=e759]:
+                    - generic [ref=e764]: Implante capilar Bogotá
+                    - img [ref=e768]
+                - link "DHI implante capilar" [ref=e773] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=DHI+implante+capilar&sa=X&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ1QJ6BAhQEAE
+                  - generic [ref=e774]:
+                    - generic [ref=e779]: DHI implante capilar
+                    - img [ref=e783]
+              - generic [ref=e785]:
+                - link "DHI Colombia precios" [ref=e789] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=DHI+Colombia+precios&sa=X&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ1QJ6BAhPEAE
+                  - generic [ref=e790]:
+                    - generic [ref=e795]: DHI Colombia precios
+                    - img [ref=e799]
+                - link "Implante capilar DHI precio" [ref=e804] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=Implante+capilar+DHI+precio&sa=X&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ1QJ6BAhOEAE
+                  - generic [ref=e805]:
+                    - generic [ref=e810]: Implante capilar DHI precio
+                    - img [ref=e814]
+                - link "Implante capilar Colombia precio" [ref=e819] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=Implante+capilar+Colombia+precio&sa=X&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ1QJ6BAhNEAE
+                  - generic [ref=e820]:
+                    - generic [ref=e825]: Implante capilar Colombia precio
+                    - img [ref=e829]
+                - link "Implante capilar Bogotá precio" [ref=e834] [cursor=pointer]:
+                  - /url: /search?sca_esv=423685a90e5df121&q=Implante+capilar+Bogot%C3%A1+precio&sa=X&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ1QJ6BAhLEAE
+                  - generic [ref=e835]:
+                    - generic [ref=e840]: Implante capilar Bogotá precio
+                    - img [ref=e844]
+          - navigation [ref=e846]:
+            - heading "Navegación de páginas" [level=1] [ref=e847]
+            - text: "1"
+            - link "Page 2" [ref=e850] [cursor=pointer]:
+              - /url: /search?q=DHI+Colombia+trasplante+capilar+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=CPoWasraIID_p84Piceu2AU&start=10&sa=N&sstk=AU9db-AaQsDlVDcQ1eKifsYwhn8UmI_XawemhxVxDnEf0vX7H_IyTIPix1h8N5wVUzqJpkEFTPInQI0ztfpqn-_zpcCdBCRv2969UA&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ8tMDegQIRRAE
+              - text: "2"
+            - link "Page 3" [ref=e852] [cursor=pointer]:
+              - /url: /search?q=DHI+Colombia+trasplante+capilar+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=CPoWasraIID_p84Piceu2AU&start=20&sa=N&sstk=AU9db-AaQsDlVDcQ1eKifsYwhn8UmI_XawemhxVxDnEf0vX7H_IyTIPix1h8N5wVUzqJpkEFTPInQI0ztfpqn-_zpcCdBCRv2969UA&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ8tMDegQIRRAG
+              - text: "3"
+            - link "Page 4" [ref=e854] [cursor=pointer]:
+              - /url: /search?q=DHI+Colombia+trasplante+capilar+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=CPoWasraIID_p84Piceu2AU&start=30&sa=N&sstk=AU9db-AaQsDlVDcQ1eKifsYwhn8UmI_XawemhxVxDnEf0vX7H_IyTIPix1h8N5wVUzqJpkEFTPInQI0ztfpqn-_zpcCdBCRv2969UA&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ8tMDegQIRRAI
+              - text: "4"
+            - link "Page 5" [ref=e856] [cursor=pointer]:
+              - /url: /search?q=DHI+Colombia+trasplante+capilar+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=CPoWasraIID_p84Piceu2AU&start=40&sa=N&sstk=AU9db-AaQsDlVDcQ1eKifsYwhn8UmI_XawemhxVxDnEf0vX7H_IyTIPix1h8N5wVUzqJpkEFTPInQI0ztfpqn-_zpcCdBCRv2969UA&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ8tMDegQIRRAK
+              - text: "5"
+            - link "Page 6" [ref=e858] [cursor=pointer]:
+              - /url: /search?q=DHI+Colombia+trasplante+capilar+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=CPoWasraIID_p84Piceu2AU&start=50&sa=N&sstk=AU9db-AaQsDlVDcQ1eKifsYwhn8UmI_XawemhxVxDnEf0vX7H_IyTIPix1h8N5wVUzqJpkEFTPInQI0ztfpqn-_zpcCdBCRv2969UA&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ8tMDegQIRRAM
+              - text: "6"
+            - link "Page 7" [ref=e860] [cursor=pointer]:
+              - /url: /search?q=DHI+Colombia+trasplante+capilar+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=CPoWasraIID_p84Piceu2AU&start=60&sa=N&sstk=AU9db-AaQsDlVDcQ1eKifsYwhn8UmI_XawemhxVxDnEf0vX7H_IyTIPix1h8N5wVUzqJpkEFTPInQI0ztfpqn-_zpcCdBCRv2969UA&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ8tMDegQIRRAO
+              - text: "7"
+            - link "Page 8" [ref=e862] [cursor=pointer]:
+              - /url: /search?q=DHI+Colombia+trasplante+capilar+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=CPoWasraIID_p84Piceu2AU&start=70&sa=N&sstk=AU9db-AaQsDlVDcQ1eKifsYwhn8UmI_XawemhxVxDnEf0vX7H_IyTIPix1h8N5wVUzqJpkEFTPInQI0ztfpqn-_zpcCdBCRv2969UA&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ8tMDegQIRRAQ
+              - text: "8"
+            - link "Page 9" [ref=e864] [cursor=pointer]:
+              - /url: /search?q=DHI+Colombia+trasplante+capilar+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=CPoWasraIID_p84Piceu2AU&start=80&sa=N&sstk=AU9db-AaQsDlVDcQ1eKifsYwhn8UmI_XawemhxVxDnEf0vX7H_IyTIPix1h8N5wVUzqJpkEFTPInQI0ztfpqn-_zpcCdBCRv2969UA&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ8tMDegQIRRAS
+              - text: "9"
+            - link "Page 10" [ref=e866] [cursor=pointer]:
+              - /url: /search?q=DHI+Colombia+trasplante+capilar+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=CPoWasraIID_p84Piceu2AU&start=90&sa=N&sstk=AU9db-AaQsDlVDcQ1eKifsYwhn8UmI_XawemhxVxDnEf0vX7H_IyTIPix1h8N5wVUzqJpkEFTPInQI0ztfpqn-_zpcCdBCRv2969UA&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ8tMDegQIRRAU
+              - text: "10"
+            - heading "Siguiente" [level=2] [ref=e868]:
+              - link "Siguiente" [ref=e869] [cursor=pointer]:
+                - /url: /search?q=DHI+Colombia+trasplante+capilar+Bogota+resenas+calificacion&sca_esv=423685a90e5df121&ei=CPoWasraIID_p84Piceu2AU&start=10&sa=N&sstk=AU9db-AaQsDlVDcQ1eKifsYwhn8UmI_XawemhxVxDnEf0vX7H_IyTIPix1h8N5wVUzqJpkEFTPInQI0ztfpqn-_zpcCdBCRv2969UA&ved=2ahUKEwjK_tLF0dmUAxWA_8kDHYmjC1sQ8NMDegQIRRAW
+                - generic [ref=e871]: Siguiente
+        - navigation
+    - contentinfo [ref=e872]:
+      - heading "Vínculos a pie de página" [level=1] [ref=e873]
+      - generic [ref=e877]:
+        - generic [ref=e879]:
+          - text: Colombia
+          - generic [ref=e881]:
+            - button "Bucaramanga, Santander - Según tu actividad anterior" [ref=e883] [cursor=pointer]:
+              - generic [ref=e884]: Bucaramanga, Santander
+              - generic [ref=e886]:
+                - text: "-"
+                - generic [ref=e887]: Según tu actividad anterior
+            - text: "-"
+            - button "Actualizar ubicación" [ref=e889] [cursor=pointer]: Actualizar ubicación
+        - generic [ref=e892]:
+          - link "Ayuda" [ref=e893] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=es-CO&fg=1
+          - link "Enviar comentarios" [ref=e894] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacidad" [ref=e895] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=es-CO&fg=1
+          - link "Condiciones" [ref=e896] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=es-CO&fg=1

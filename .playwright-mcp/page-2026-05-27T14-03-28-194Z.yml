@@ -1,0 +1,676 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e9]:
+    - text:                                            
+    - generic [ref=e10]:
+      - text:     
+      - generic [ref=e13]:
+        - generic [ref=e15]:
+          - paragraph [ref=e18]:
+            - generic [ref=e19]: TU GUÍA COMPLETA PARA LA RESTAURACIÓN DEL CABELLO.
+            - link "OBTEN TU KIT DE INFORMACIÓN GRATUITO." [ref=e20] [cursor=pointer]:
+              - /url: https://www.heroinstitute.co/es-co/tu-guia-de-trasplante-capilar
+          - link "Español " [ref=e25] [cursor=pointer]:
+            - /url: /es-co
+            - generic [ref=e26]: Español
+            - generic [ref=e27]: 
+        - generic [ref=e29]:
+          - link "HERO | Hair Evolution by Robotics" [ref=e32] [cursor=pointer]:
+            - /url: /es-co/
+            - img "HERO | Hair Evolution by Robotics" [ref=e33]
+          - navigation [ref=e35]:
+            - menubar [ref=e36]:
+              - menuitem "INICIO" [ref=e37]:
+                - link "INICIO" [ref=e38] [cursor=pointer]:
+                  - /url: /es-co
+                  - generic: INICIO 
+              - menuitem "PROCEDIMIENTOS " [ref=e39]:
+                - link "PROCEDIMIENTOS " [ref=e40] [cursor=pointer]:
+                  - /url: "#"
+                  - generic:
+                    - text: PROCEDIMIENTOS
+                    - generic: 
+                - menu:
+                  - menuitem "INJERTO CAPILAR":
+                    - link "INJERTO CAPILAR":
+                      - /url: /es-co/injerto-trasplante-capilar
+                      - generic: INJERTO CAPILAR 
+                  - menuitem "RESTAURACIÓN DE BARBA":
+                    - link "RESTAURACIÓN DE BARBA":
+                      - /url: /es-co/restauracion-de-barba
+                      - generic: RESTAURACIÓN DE BARBA 
+                  - menuitem "TRASPLANTE DE CEJAS":
+                    - link "TRASPLANTE DE CEJAS":
+                      - /url: /es-co/trasplante-cejas
+                      - generic: TRASPLANTE DE CEJAS 
+                  - menuitem "TRASPLANTE ROBÓTICO":
+                    - link "TRASPLANTE ROBÓTICO":
+                      - /url: /es-co/extraccion-robot-artas
+                      - generic: TRASPLANTE ROBÓTICO 
+                  - menuitem "TRASPLANTE CAPILAR FUE":
+                    - link "TRASPLANTE CAPILAR FUE":
+                      - /url: /es-co/extraccion-folicular-manual
+                      - generic: TRASPLANTE CAPILAR FUE 
+                  - menuitem "TRASPLANTE DE TIRA (FUT)":
+                    - link "TRASPLANTE DE TIRA (FUT)":
+                      - /url: /es-co/trasplante-capilar-tira
+                      - generic: TRASPLANTE DE TIRA (FUT) 
+                  - menuitem "TERAPIA LÁSER":
+                    - link "TERAPIA LÁSER":
+                      - /url: /es-co/terapia-laser
+                      - generic: TERAPIA LÁSER 
+                  - menuitem "PLASMA RICO EN PLAQUETAS (PRP)":
+                    - link "PLASMA RICO EN PLAQUETAS (PRP)":
+                      - /url: /es-co/Plasma-rico-en-plaquetas-para-la-restauración-capilar
+                      - generic: PLASMA RICO EN PLAQUETAS (PRP) 
+              - menuitem "UBICACIONES " [ref=e41]:
+                - link "UBICACIONES " [ref=e42] [cursor=pointer]:
+                  - /url: /es-co/ubicacion
+                  - generic:
+                    - text: UBICACIONES
+                    - generic: 
+                - menu:
+                  - menuitem "MEDELLIN":
+                    - link "MEDELLIN":
+                      - /url: /es-co/ubicacion/trasplante-capilar-colombia-medellin
+                      - generic: MEDELLIN 
+                  - menuitem "BOGOTÁ":
+                    - link "BOGOTÁ":
+                      - /url: /es-co/ubicacion/trasplante-capilar-bogota-colombia
+                      - generic: BOGOTÁ 
+              - menuitem "NOSOTROS " [ref=e43]:
+                - link "NOSOTROS " [ref=e44] [cursor=pointer]:
+                  - /url: "#"
+                  - generic:
+                    - text: NOSOTROS
+                    - generic: 
+                - menu:
+                  - menuitem "ACERCA DE":
+                    - link "ACERCA DE":
+                      - /url: /es-co/acerca-de-nosotros
+                      - generic: ACERCA DE 
+                  - menuitem "MÉTODO HERO":
+                    - link "MÉTODO HERO":
+                      - /url: /es-co/metodo-hero
+                      - generic: MÉTODO HERO 
+                  - menuitem "KIT DE INFORMACIÓN":
+                    - link "KIT DE INFORMACIÓN":
+                      - /url: /es-co/tu-guia-de-trasplante-capilar
+                      - generic: KIT DE INFORMACIÓN 
+                  - menuitem "INSTRUCCIONES PREOPERATORIAS":
+                    - link "INSTRUCCIONES PREOPERATORIAS":
+                      - /url: /es-co/instrucciones-pre-operatorias-trasplante-capilar
+                      - generic: INSTRUCCIONES PREOPERATORIAS 
+                  - menuitem "INSTRUCCIONES POSTOPERATORIAS":
+                    - link "INSTRUCCIONES POSTOPERATORIAS":
+                      - /url: /es-co/instrucciones-post-operatorias-trasplante-capilar
+                      - generic: INSTRUCCIONES POSTOPERATORIAS 
+                  - menuitem "ASOCIACIÓN DE USUARIOS":
+                    - link "ASOCIACIÓN DE USUARIOS":
+                      - /url: /es-co/asociacion-de-usuarios
+                      - generic: ASOCIACIÓN DE USUARIOS 
+                  - menuitem "FINANCIACIÓN":
+                    - link "FINANCIACIÓN":
+                      - /url: /es-co/financia-tu-trasplate-capilar
+                      - generic: FINANCIACIÓN 
+                  - menuitem "TESTIMONIOS":
+                    - link "TESTIMONIOS":
+                      - /url: /es-co/pacientes-reales-de-restauracion-capilar
+                      - generic: TESTIMONIOS 
+              - menuitem "CONTACTO " [ref=e45]:
+                - link "CONTACTO " [ref=e46] [cursor=pointer]:
+                  - /url: /es-co/contacto
+                  - generic:
+                    - text: CONTACTO
+                    - generic: 
+                - menu:
+                  - menuitem "CONSULTA VIRTUAL":
+                    - link "CONSULTA VIRTUAL":
+                      - /url: /es-co/programar-consulta-virtual
+                      - generic: CONSULTA VIRTUAL 
+                  - menuitem "CONSULTA EN PERSONA":
+                    - link "CONSULTA EN PERSONA":
+                      - /url: /es-co/programa-cita-presencial
+                      - generic: CONSULTA EN PERSONA 
+              - menuitem "BLOG" [ref=e47]:
+                - link "BLOG" [ref=e48] [cursor=pointer]:
+                  - /url: /es-co/blog
+                  - generic: BLOG 
+              - menuitem "NUESTROS RESULTADOS" [ref=e49]:
+                - link "NUESTROS RESULTADOS" [ref=e50] [cursor=pointer]:
+                  - /url: /es-co/resultados-trasplante-capilar
+                  - generic: NUESTROS RESULTADOS 
+              - menuitem "INICIO" [ref=e51]:
+                - link "INICIO" [ref=e52] [cursor=pointer]:
+                  - /url: /es-co
+                  - generic: INICIO 
+          - generic [ref=e53]:
+            - generic [ref=e56]:
+              - link "facebook" [ref=e57] [cursor=pointer]:
+                - /url: https://facebook.com/HEROInstitute/
+                - generic [ref=e58]: 
+              - link "instagram" [ref=e59] [cursor=pointer]:
+                - /url: https://instagram.com/heroinstitute.co/
+                - generic [ref=e60]: 
+              - link "youtube" [ref=e61] [cursor=pointer]:
+                - /url: https://youtube.com/channel/UC_SWSrjmqBFgmk3icJSFPCg
+                - generic [ref=e62]: 
+            - link "WhatsApp" [ref=e63] [cursor=pointer]:
+              - /url: https://linkly.link/1pNVf
+              - text: 
+              - generic [ref=e64]: WhatsApp
+      - main [ref=e68]:
+        - generic [ref=e69]:
+          - generic [ref=e73]:
+            - generic [ref=e74]:
+              - generic [ref=e76]:
+                - img "A person's balding scalp, with thin hair at the top and forehead."
+                - generic:
+                  - img "Close-up of a person's forehead and hairline; dark brown hair; slight receding hairline."
+                - generic:
+                  - generic: Before
+                  - generic: After
+              - generic [ref=e80]:
+                - heading "Expertos en Implante Capilar en Colombia." [level=1] [ref=e83]
+                - paragraph [ref=e86]: En Hero Institute, somos líderes en procedimientos de implante capilar en Colombia, especializados en técnicas avanzadas. Con un equipo de expertos dedicados, ofrecemos soluciones personalizadas tanto para hombres como para mujeres que desean combatir la pérdida de pelo y recuperar su confianza.
+            - generic [ref=e87]:
+              - generic [ref=e89]:
+                - img "A man with a shaved head smiles, wearing a blue medical garment against a white background."
+                - generic:
+                  - img "Man with dark hair and brown eyes, looking directly at the camera."
+                - generic:
+                  - generic: Before
+                  - generic: After
+              - generic [ref=e95]:
+                - link "Programa una Consulta Virtual" [ref=e98] [cursor=pointer]:
+                  - /url: /es-co/programar-consulta-virtual
+                  - text: 
+                  - generic [ref=e99]: Programa una Consulta Virtual
+                - link "Programa una Consulta Presencial" [ref=e101] [cursor=pointer]:
+                  - /url: /es-co/programa-cita-presencial
+                  - text: 
+                  - generic [ref=e102]: Programa una Consulta Presencial
+          - generic [ref=e104]:
+            - paragraph [ref=e107]:
+              - generic [ref=e108]: ¡Más de 25 años transformando vidas a través de la restauración capilar!
+            - link "Hablemos por WhatsApp" [ref=e110] [cursor=pointer]:
+              - /url: https://linkly.link/1pNVf
+              - text: 
+              - generic [ref=e111]: Hablemos por WhatsApp
+          - generic [ref=e113]:
+            - generic [ref=e114]:
+              - heading "Técnicas modernas de Implantación de cabello" [level=2] [ref=e116]
+              - paragraph [ref=e118]: En Hero Institute, utilizamos técnicas innovadoras de implantación de cabello que garantizan resultados naturales y permanentes. Nuestro procedimiento se centra en la extracción de folículos de la zona donante (también conocida como área donante) que es la región del cuero cabelludo donde el cabello es más resistente a la caída. Estos folículos se trasplantan cuidadosamente a la zona receptora, donde se ha producido la pérdida de cabello.
+              - link "Tratamiento de Trasplante Capilar" [ref=e119] [cursor=pointer]:
+                - /url: /es-co/injerto-trasplante-capilar
+                - text: 
+                - generic [ref=e120]: Tratamiento de Trasplante Capilar
+            - img "Un grupo de cirujanos está trabajando en un paciente en un hero institute." [ref=e123]
+          - generic [ref=e125]:
+            - img "Una cirujano de trasplante capilar está trabajando con un paciente en un quirófano." [ref=e128]
+            - generic [ref=e130]:
+              - heading "Técnicas de Implantación Personalizadas" [level=2] [ref=e131]
+              - paragraph [ref=e132]
+              - paragraph [ref=e133]: Entendemos que cada paciente es único, por lo que nuestras técnicas de implantación se adaptan a las necesidades individuales de cada persona. Desde la planificación del diseño de la línea capilar hasta la implantación de cada injerto capilar, nuestro enfoque meticuloso garantiza que los resultados se vean completamente naturales.
+              - paragraph [ref=e134]
+              - heading "Un Procedimiento Quirúrgico Seguro y Efectivo" [level=2] [ref=e135]
+              - paragraph [ref=e136]
+              - paragraph [ref=e137]:
+                - generic [ref=e138]: Nuestro procedimiento quirúrgico es realizado por cirujanos altamente capacitados y con años de experiencia en el campo del implante de pelo. En nuestra clínica para trasplante capilar utilizamos equipos de última generación y cumplimos con los más altos estándares de seguridad para asegurar el éxito del tratamiento y la satisfacción de nuestros pacientes.
+          - generic [ref=e140]:
+            - paragraph [ref=e143]:
+              - generic [ref=e144]: ¡Más de 25 años transformando vidas a través de la restauración capilar!
+            - link "Hablemos por WhatsApp" [ref=e146] [cursor=pointer]:
+              - /url: https://linkly.link/1pNVf
+              - text: 
+              - generic [ref=e147]: Hablemos por WhatsApp
+          - generic [ref=e150]:
+            - 'heading "Implante Capilar Integral: Cabello, Cejas y Barba" [level=2] [ref=e152]'
+            - paragraph [ref=e154]:
+              - generic [ref=e155]: En HERO Institute, ofrecemos una variedad de servicios de restauración capilar, incluyendo el trasplante de unidades foliculares (FUT) y la técnica de extracción mínimamente invasiva FUE. Nuestros procedimientos, conocidos como cirugía de trasplante capilar ó la cirugía de restauración capilar, se realizan bajo anestesia local para garantizar tu comodidad, permitiéndote retomar tus actividades diarias en poco tiempo. Además, incorporamos el tratamiento PRP (plasma rico en plaquetas) y las células madre para potenciar los resultados y promover el crecimiento natural. Te invitamos a programar una consulta y descubrir cómo podemos ayudarte a recuperar tu cabello, cejas, o barba con resultados naturales y duraderos.
+          - generic [ref=e157]:
+            - generic [ref=e158]:
+              - generic [ref=e162]:
+                - img "Una cabeza de hombre antes de un injerto capilar"
+                - generic:
+                  - img "Una cabeza de hombre después de un injerto capilar"
+                - generic:
+                  - generic: Antes
+                  - generic: Después
+              - heading "Trasplante de Cabello" [level=3] [ref=e167]
+              - paragraph [ref=e169]: Un trasplante capilar es un procedimiento quirúrgico diseñado para tratar la alopecia y la calvicie. Consiste en transferir implantes capilares de áreas donantes a zonas donde el cabello se ha perdido, restaurando así el crecimiento y la densidad capilar.
+              - link "Ver Más" [ref=e170] [cursor=pointer]:
+                - /url: /es-co/injerto-trasplante-capilar
+                - text: 
+                - generic [ref=e171]: Ver Más
+            - generic [ref=e172]:
+              - generic [ref=e176]:
+                - img "Una cabeza de hombre antes de un injerto capilar en barba"
+                - generic:
+                  - img "Una cabeza de hombre después de un injerto capilar en Barba"
+                - generic:
+                  - generic: Antes
+                  - generic: Después
+              - heading "Trasplante de Barba" [level=3] [ref=e181]
+              - paragraph [ref=e183]: El trasplante de barba es una cirugía que ofrece resultados permanentes y una barba más densa. Mediante un injerto de barba, los folículos trasplantados continúan creciendo indefinidamente, proporcionando un aspecto natural y duradero.
+              - link "Ver Más" [ref=e184] [cursor=pointer]:
+                - /url: /es-co/restauracion-de-barba
+                - text: 
+                - generic [ref=e185]: Ver Más
+            - generic [ref=e186]:
+              - generic [ref=e190]:
+                - img "Una cabeza de hombre antes de un injerto capilar en barba"
+                - generic:
+                  - img "Una cabeza de hombre después de un injerto capilar en Barba"
+                - generic:
+                  - generic: Antes
+                  - generic: Después
+              - heading "Plasma Rico en Plaquetas" [level=3] [ref=e195]
+              - paragraph [ref=e197]: El plasma rico en plaquetas (PRP) puede mejorar la densidad del cabello. Se ha observado que es especialmente efectivo cuando se combina con trasplante capilar y células madre, potenciando los resultados y promoviendo un crecimiento más robusto y saludable.
+              - link "Ver Más" [ref=e198] [cursor=pointer]:
+                - /url: /es-co/Plasma-rico-en-plaquetas-para-la-restauración-capilar
+                - text: 
+                - generic [ref=e199]: Ver Más
+          - generic [ref=e202]:
+            - heading "Resultados que Cambian Vidas" [level=2] [ref=e204]
+            - paragraph [ref=e206]:
+              - generic [ref=e207]: En HERO Institute, nuestro objetivo es ofrecer a nuestros pacientes una solución definitiva para la pérdida de pelo. Nos enorgullece ver cómo nuestros tratamientos transforman vidas, devolviendo la confianza y la autoestima a quienes han sufrido de calvicie o adelgazamiento del cabello.
+            - generic [ref=e219]:
+              - iframe [ref=e223]:
+                - generic [active] [ref=f5e1]:
+                  - generic "Reproductor de video de YouTube" [ref=f5e3]
+                  - generic [ref=f5e5]:
+                    - generic:
+                      - generic:
+                        - button "Reproducir video" [ref=f5e10] [cursor=pointer]
+                        - button "De un proveedor de salud regulado de Colombia" [ref=f5e13] [cursor=pointer]:
+                          - generic [ref=f5e16]: De un proveedor de salud regulado de Colombia
+                        - button "Ocultar controles del reproductor" [ref=f5e17] [cursor=pointer]
+                        - generic [ref=f5e19]:
+                          - generic [ref=f5e24]:
+                            - generic [ref=f5e25]:
+                              - 'link "Trasplante capilar en Colombia: ¡no más calvicie! | Caso real | Método HERO Medellín/Bogotá" [ref=f5e26] [cursor=pointer]':
+                                - /url: https://www.youtube.com/watch?v=1BdHi_NJcus
+                              - link "HERO Institute | Trasplante Capilar en Colombia" [ref=f5e27] [cursor=pointer]:
+                                - /url: /channel/UC_SWSrjmqBFgmk3icJSFPCg
+                                - generic [ref=f5e28]: HERO Institute | Trasplante Capilar en Colombia
+                            - generic [ref=f5e29]:
+                              - button [ref=f5e30] [cursor=pointer]
+                              - generic [ref=f5e32]:
+                                - generic: HERO Institute | Trasplante Capilar en Colombia
+                                - generic: 1.69 K suscriptores
+                          - generic [ref=f5e33]:
+                            - button "Compartir" [ref=f5e36] [cursor=pointer]:
+                              - generic [ref=f5e40]:
+                                - img
+                            - link "Mirar en YouTube" [ref=f5e47] [cursor=pointer]:
+                              - /url: https://www.youtube.com/watch?v=1BdHi_NJcus
+                              - generic [ref=f5e50]:
+                                - text: Mirar en
+                                - img [ref=f5e52]:
+                                  - generic [ref=f5e54]:
+                                    - img
+              - iframe [ref=e227]:
+                - generic [active] [ref=f6e1]:
+                  - generic "Reproductor de video de YouTube" [ref=f6e3]
+                  - generic [ref=f6e5]:
+                    - generic:
+                      - generic:
+                        - button "Reproducir video" [ref=f6e10] [cursor=pointer]
+                        - button "De un proveedor de salud regulado de Colombia" [ref=f6e13] [cursor=pointer]:
+                          - generic [ref=f6e16]: De un proveedor de salud regulado de Colombia
+                        - button "Ocultar controles del reproductor" [ref=f6e17] [cursor=pointer]
+                        - generic [ref=f6e19]:
+                          - generic [ref=f6e24]:
+                            - generic [ref=f6e25]:
+                              - link "CASO REAL | ¡Trasplante de pelo en COLOMBIA! | Injerto Capilar Antes y Después" [ref=f6e26] [cursor=pointer]:
+                                - /url: https://www.youtube.com/watch?v=4IxcSG5dCvw
+                              - link "HERO Institute | Trasplante Capilar en Colombia" [ref=f6e27] [cursor=pointer]:
+                                - /url: /channel/UC_SWSrjmqBFgmk3icJSFPCg
+                                - generic [ref=f6e28]: HERO Institute | Trasplante Capilar en Colombia
+                            - generic [ref=f6e29]:
+                              - button [ref=f6e30] [cursor=pointer]
+                              - generic [ref=f6e32]:
+                                - generic: HERO Institute | Trasplante Capilar en Colombia
+                                - generic: 1.69 K suscriptores
+                          - generic [ref=f6e33]:
+                            - button "Compartir" [ref=f6e36] [cursor=pointer]:
+                              - generic [ref=f6e40]:
+                                - img
+                            - link "Mirar en YouTube" [ref=f6e47] [cursor=pointer]:
+                              - /url: https://www.youtube.com/watch?v=4IxcSG5dCvw
+                              - generic [ref=f6e50]:
+                                - text: Mirar en
+                                - img [ref=f6e52]:
+                                  - generic [ref=f6e54]:
+                                    - img
+          - generic [ref=e230]:
+            - heading "Identifica tu nivel de alopecia y comienza a restaurar tu confianza hoy." [level=2] [ref=e232]:
+              - strong [ref=e233]: Identifica tu nivel de alopecia y comienza a restaurar tu confianza hoy.
+            - paragraph [ref=e235]: "Da el primer paso hoy: Identifica tu grado de calvicie (Escala de Norwood) y observa resultados reales de personas que han pasado por procedimientos exitosos de trasplante de cabello en la misma etapa de calvicie en la que te encuentras. Descubre cómo nuestras técnicas avanzadas han transformado vidas y han logrado resultados naturales y duraderos. ¡Agenda tu cita ahora y comienza tu camino hacia la restauración de tu cabello y tu confianza!"
+            - link "Agenda tu Valoración" [ref=e236] [cursor=pointer]:
+              - /url: /es-co/precio-trasplante-capilar
+              - text: 
+              - generic [ref=e237]: Agenda tu Valoración
+            - generic [ref=e239] [cursor=pointer]:
+              - generic [ref=e240]:
+                - generic [ref=e243]:
+                  - link "NORWOOD 7" [ref=e245]:
+                    - /url: /es-co/niveles-alopecia/entendiendo_alopecia_norwood_7
+                  - generic [ref=e247]:
+                    - heading "NORWOOD 7" [level=3] [ref=e248]
+                    - link "¡Clic para ver resultados!" [ref=e249]:
+                      - /url: /es-co/niveles-alopecia/entendiendo_alopecia_norwood_7
+                      - generic [ref=e250]: ¡Clic para ver resultados!
+                - generic [ref=e253]:
+                  - link "NORWOOD 6" [ref=e255]:
+                    - /url: /es-co/niveles-alopecia/entendiendo_alopecia_norwood_6
+                  - generic [ref=e257]:
+                    - heading "NORWOOD 6" [level=3] [ref=e258]
+                    - link "¡Clic para ver resultados!" [ref=e259]:
+                      - /url: /es-co/niveles-alopecia/entendiendo_alopecia_norwood_6
+                      - generic [ref=e260]: ¡Clic para ver resultados!
+                - generic [ref=e263]:
+                  - link "NORWOOD 5" [ref=e265]:
+                    - /url: /es-co/niveles-alopecia/entendiendo_alopecia_norwood_5
+                  - generic [ref=e267]:
+                    - heading "NORWOOD 5" [level=3] [ref=e268]
+                    - link "¡Clic para ver resultados!" [ref=e269]:
+                      - /url: /es-co/niveles-alopecia/entendiendo_alopecia_norwood_5
+                      - generic [ref=e270]: ¡Clic para ver resultados!
+              - generic [ref=e271]:
+                - generic [ref=e274]:
+                  - link "NORWOOD 4" [ref=e276]:
+                    - /url: /es-co/niveles-alopecia/entendiendo_alopecia_norwood_4
+                  - generic [ref=e278]:
+                    - heading "NORWOOD 4" [level=3] [ref=e279]
+                    - link "¡Clic para ver resultados!" [ref=e280]:
+                      - /url: /es-co/niveles-alopecia/entendiendo_alopecia_norwood_4
+                      - generic [ref=e281]: ¡Clic para ver resultados!
+                - generic [ref=e284]:
+                  - link "NORWOOD 3" [ref=e286]:
+                    - /url: /es-co/niveles-alopecia/entendiendo_alopecia_norwood_3
+                  - generic [ref=e288]:
+                    - heading "NORWOOD 3" [level=3] [ref=e289]
+                    - link "¡Clic para ver resultados!" [ref=e290]:
+                      - /url: /es-co/niveles-alopecia/entendiendo_alopecia_norwood_3
+                      - generic [ref=e291]: ¡Clic para ver resultados!
+                - generic [ref=e294]:
+                  - link "NORWOOD 2" [ref=e296]:
+                    - /url: /es-co/niveles-alopecia/entendiendo_alopecia_norwood_2
+                  - generic [ref=e298]:
+                    - heading "NORWOOD 2" [level=3] [ref=e299]
+                    - link "¡Clic para ver resultados!" [ref=e300]:
+                      - /url: /es-co/niveles-alopecia/entendiendo_alopecia_norwood_2
+                      - generic [ref=e301]: ¡Clic para ver resultados!
+              - generic [ref=e302]:
+                - generic [ref=e305]:
+                  - link "NORWOOD 1" [ref=e307]:
+                    - /url: /es-co/niveles-alopecia/entendiendo_alopecia_norwood_1
+                  - generic [ref=e309]:
+                    - heading "NORWOOD 1" [level=3] [ref=e310]
+                    - link "¡Clic para ver resultados!" [ref=e311]:
+                      - /url: /es-co/niveles-alopecia/entendiendo_alopecia_norwood_1
+                      - generic [ref=e312]: ¡Clic para ver resultados!
+                - generic [ref=e315]:
+                  - link "ALOPECIA DIFUSA" [ref=e317]:
+                    - /url: /es-co/niveles-alopecia/entendiendo_alopecia_difusa
+                  - generic [ref=e319]:
+                    - heading "ALOPECIA DIFUSA" [level=3] [ref=e320]
+                    - link "¡Clic para ver resultados!" [ref=e321]:
+                      - /url: /es-co/niveles-alopecia/entendiendo_alopecia_difusa
+                      - generic [ref=e322]: ¡Clic para ver resultados!
+                - generic [ref=e325]:
+                  - link "VERTEX / CORONILLA" [ref=e327]:
+                    - /url: /es-co/niveles-alopecia/entendiendo_vertex_coronilla
+                  - generic [ref=e329]:
+                    - heading "VERTEX / CORONILLA" [level=3] [ref=e330]
+                    - link "¡Clic para ver resultados!" [ref=e331]:
+                      - /url: /es-co/niveles-alopecia/entendiendo_vertex_coronilla
+                      - generic [ref=e332]: ¡Clic para ver resultados!
+          - generic [ref=e334]:
+            - paragraph [ref=e337]:
+              - generic [ref=e338]: ¡Más de 25 años transformando vidas a través de la restauración capilar!
+            - link "Hablemos por WhatsApp" [ref=e340] [cursor=pointer]:
+              - /url: https://linkly.link/1pNVf
+              - text: 
+              - generic [ref=e341]: Hablemos por WhatsApp
+          - generic [ref=e344]:
+            - heading "Explora Nuestro Blog" [level=2] [ref=e346]
+            - paragraph [ref=e348]:
+              - generic [ref=e349]: Además de ofrecer tratamientos de implante capilar de primera clase, en HERO Institute también nos dedicamos a educar a nuestros pacientes y visitantes a través de nuestro blog. Aquí, encontrarás artículos informativos sobre la pérdida de pelo, innovaciones en técnicas de implantación, y consejos para mantener una cabellera saludable. Nuestro blog está diseñado para ser una fuente confiable de información, ayudándote a tomar decisiones informadas sobre tu salud capilar.
+            - generic [ref=e350]:
+              - generic [ref=e351]:
+                - generic [ref=e353]:
+                  - link "A doctor in a lab coat is near a petri dish and a wooden spatula, with forceps holding tissue." [ref=e354] [cursor=pointer]:
+                    - /url: /blog/mismo-cirujano-trasplante-capilar
+                  - generic [ref=e357]:
+                    - heading "Por qué es vital que tu cirujano te acompañe en todo el proceso del trasplante capilar" [level=3] [ref=e359]:
+                      - link "Por qué es vital que tu cirujano te acompañe en todo el proceso del trasplante capilar" [ref=e360] [cursor=pointer]:
+                        - /url: /blog/mismo-cirujano-trasplante-capilar
+                    - generic [ref=e361]: Tu proceso de restauración capilar no termina después del procedimiento. Descubre la importancia del seguimiento estructurado.
+                - generic [ref=e363]:
+                  - link "A group of surgeons are operating on a patient in an operating room." [ref=e364] [cursor=pointer]:
+                    - /url: /conoce-a-los-mejores-cirujanos-de-trasplante-capilar-por-que-la-experiencia-importa
+                  - generic [ref=e367]:
+                    - 'heading "Conoce a los Mejores Cirujanos de Trasplante Capilar: Por Qué la Experiencia Importa!" [level=3] [ref=e369]':
+                      - 'link "Conoce a los Mejores Cirujanos de Trasplante Capilar: Por Qué la Experiencia Importa!" [ref=e370] [cursor=pointer]':
+                        - /url: /conoce-a-los-mejores-cirujanos-de-trasplante-capilar-por-que-la-experiencia-importa
+                    - generic [ref=e371]: "Conoce a los Mejores Cirujanos de Trasplante de Cabello: Por Qué la Experiencia y la Pericia son Importantes Elegir al cirujano de trasplante de cabello adecuado es esencial para obtener los resultados que deseas. En el HERO Institute, creemos que solo cirujanos experimentados deben encargarse de tu procedimiento. El Dr. Juan Carlos Maldonado lidera nuestro equipo para ofrecer atención de primera calidad y resultados de aspecto natural. La Importancia de Elegir Cirujanos de Trasplante de Cabello Cualificados En muchas clínicas de trasplante de cabello, los técnicos o asistentes a veces realizan procedimientos. En el Instituto HERO, creemos que solo los médicos calificados en trasplante de cabello deberían llevar a cabo estas cirugías. Nuestros cirujanos de trasplante de cabello cuentan con años de experiencia y capacitación especializada en restauración capilar médica, lo que nos convierte en una opción destacada para una atención de calidad."
+                - generic [ref=e373]:
+                  - link "mujer peinándose las cejas" [ref=e374] [cursor=pointer]:
+                    - /url: /los-trasplantes-de-cejas-existen
+                  - generic [ref=e377]:
+                    - heading "¡Los trasplantes de cejas existen!" [level=3] [ref=e379]:
+                      - link "¡Los trasplantes de cejas existen!" [ref=e380] [cursor=pointer]:
+                        - /url: /los-trasplantes-de-cejas-existen
+                    - generic [ref=e381]: ¿Cejas ralas o poco pobladas? Descubre los trasplantes de cejas, una solución innovadora para darles un aspecto natural y abundante. Conoce los beneficios y detalles de la técnica FUE en esta guía completa.
+              - generic [ref=e383] [cursor=pointer]: Ver más blogs
+          - heading "Nuestras Clínicas de restauración capilar" [level=2] [ref=e388]
+          - generic [ref=e390]:
+            - generic [ref=e391]:
+              - generic [ref=e392]:
+                - heading "HERO Institute" [level=2] [ref=e393]: HERO Institute
+                - heading "Implante Capilar Colombia" [level=2] [ref=e394]
+              - paragraph [ref=e396]: En Colombia, estamos ubicados en Medellín y Bogotá, donde contamos con instalaciones de vanguardia y un equipo altamente calificado.
+              - generic [ref=e398]:
+                - link "Hero Medellin" [ref=e400] [cursor=pointer]:
+                  - /url: /es-co/ubicacion/trasplante-capilar-colombia-medellin
+                  - text: 
+                  - generic [ref=e401]: Hero Medellin
+                - link "Hero Bogotá" [ref=e403] [cursor=pointer]:
+                  - /url: /es-co/ubicacion/trasplante-capilar-bogota-colombia
+                  - text: 
+                  - generic [ref=e404]: Hero Bogotá
+            - generic [ref=e409]:
+              - generic [ref=e412]:
+                - link "Flormorado Empresarial" [ref=e415] [cursor=pointer]:
+                  - /url: /es-co/ubicacion/trasplante-capilar-bogota-colombia
+                  - img "Flormorado Empresarial" [ref=e417]
+                - link [ref=e422] [cursor=pointer]:
+                  - /url: PAGE_404
+              - generic [ref=e426]:
+                - button "go to slide 1" [ref=e427] [cursor=pointer]
+                - button "go to slide 2" [ref=e428] [cursor=pointer]
+          - generic [ref=e430]:
+            - generic [ref=e431]:
+              - heading "Testimoniales" [level=2] [ref=e433]
+              - paragraph [ref=e435]: "Descubre lo que nuestros pacientes dicen: ¡lee sus testimoniales y conoce sus experiencias!"
+              - link "Reseñas Bogotá" [ref=e436] [cursor=pointer]:
+                - /url: https://g.page/HERO-Hair-Institute-Bogota?gm
+                - text: 
+                - generic [ref=e437]: Reseñas Bogotá
+              - link "Reseñas Medellín" [ref=e438] [cursor=pointer]:
+                - /url: https://g.page/HERO-Hair-Institute-Medellin?gm
+                - text: 
+                - generic [ref=e439]: Reseñas Medellín
+            - generic [ref=e440]:
+              - iframe [ref=e443]:
+                - generic [active] [ref=f7e1]:
+                  - generic "Reproductor de video de YouTube" [ref=f7e3]
+                  - generic [ref=f7e5]:
+                    - generic:
+                      - generic:
+                        - button "Reproducir video" [ref=f7e10] [cursor=pointer]
+                        - button "De un proveedor de salud regulado de Colombia" [ref=f7e13] [cursor=pointer]:
+                          - generic [ref=f7e16]: De un proveedor de salud regulado de Colombia
+                        - button "Ocultar controles del reproductor" [ref=f7e17] [cursor=pointer]
+                        - generic [ref=f7e19]:
+                          - generic [ref=f7e24]:
+                            - generic [ref=f7e25]:
+                              - link "Implante capilar antes y después | RESULTADOS REALES | Paciente Real" [ref=f7e26] [cursor=pointer]:
+                                - /url: https://www.youtube.com/watch?v=fW8ZeMtm_4g
+                              - link "HERO Institute | Trasplante Capilar en Colombia" [ref=f7e27] [cursor=pointer]:
+                                - /url: /channel/UC_SWSrjmqBFgmk3icJSFPCg
+                                - generic [ref=f7e28]: HERO Institute | Trasplante Capilar en Colombia
+                            - generic [ref=f7e29]:
+                              - button [ref=f7e30] [cursor=pointer]
+                              - generic [ref=f7e32]:
+                                - generic: HERO Institute | Trasplante Capilar en Colombia
+                                - generic: 1.69 K suscriptores
+                          - generic [ref=f7e33]:
+                            - button "Compartir" [ref=f7e36] [cursor=pointer]:
+                              - generic [ref=f7e40]:
+                                - img
+                            - link "Mirar en YouTube" [ref=f7e47] [cursor=pointer]:
+                              - /url: https://www.youtube.com/watch?v=fW8ZeMtm_4g
+                              - generic [ref=f7e50]:
+                                - text: Mirar en
+                                - img [ref=f7e52]:
+                                  - generic [ref=f7e54]:
+                                    - img
+              - paragraph [ref=e445]: Paciente real. Los resultados individuales pueden variar.
+          - generic [ref=e448]:
+            - generic [ref=e451]:
+              - link "facebook" [ref=e452] [cursor=pointer]:
+                - /url: https://facebook.com/HEROInstitute
+                - generic [ref=e453]: 
+              - link "instagram" [ref=e454] [cursor=pointer]:
+                - /url: https://instagram.com/heroinstitute.co
+                - generic [ref=e455]: 
+              - link "youtube" [ref=e456] [cursor=pointer]:
+                - /url: https://youtube.com/channel/UC_SWSrjmqBFgmk3icJSFPCg
+                - generic [ref=e457]: 
+              - link "email" [ref=e458] [cursor=pointer]:
+                - /url: mailto:informacion@heroinstitute.co
+                - generic [ref=e459]: 
+            - heading "Unete a la communidad" [level=3] [ref=e461]
+            - heading "#GETHAIRHERO" [level=2] [ref=e463]
+            - link "Síguenos en Instagram" [ref=e464] [cursor=pointer]:
+              - /url: https://www.instagram.com/heroinstitute.co/
+              - text: 
+              - generic [ref=e465]: Síguenos en Instagram
+            - generic [ref=e466] [cursor=pointer]:
+              - generic [ref=e468]:
+                - 'link "No es solo cabello. Es autoestima, seguridad y nuevas oportunidades. #AntesYDespues #ConfianzaRestaurada #HEROtransforma #fyp" [ref=e473]':
+                  - /url: https://www.instagram.com/reel/DY0tCbfDEuE/
+                - 'link "En HERO, cada resultado tiene una historia. #ResultadosReales #ConfianzaRenovada #HEROtransforma #1AñoDeCambio #fyp" [ref=e478]':
+                  - /url: https://www.instagram.com/reel/DYx5UZwlGq0/
+                - 'link "Cada proceso tiene su tiempo… y el resultado vale la pena. descubre cómo es la recuperación con el Método HERO. #RecuperaciónCapilar #MétodoHERO #ConfianzaQueVuelve #TiempoDeCambio #TransformaciónCapilar #fyp" [ref=e483]':
+                  - /url: https://www.instagram.com/reel/DYnsoeHilbX/
+                - 'link "No esperes al próximo año para verte como quieres. Los cambios empiezan hoy. #TransformaciónHERO #ConfianzaRestaurada #HEROtransforma #CierreDeAñoConConfianza #fyp" [ref=e488]':
+                  - /url: https://www.instagram.com/reel/DYigy70APQg/
+              - generic [ref=e489]: Ver más
+      - generic [ref=e495]:
+        - generic [ref=e497]:
+          - generic [ref=e498]:
+            - link "HERO | Hair Evolution by Robotics Logo" [ref=e500] [cursor=pointer]:
+              - /url: /es-co
+              - img "HERO | Hair Evolution by Robotics Logo" [ref=e501]
+            - paragraph [ref=e503]: "Envíanos un correo electrónico:"
+            - paragraph [ref=e505]:
+              - link "informacion@heroinstitute.co" [ref=e506] [cursor=pointer]:
+                - /url: https://linkly.link/2CVvR
+                - strong [ref=e507]: informacion@heroinstitute.co
+            - paragraph [ref=e509]: "También puedes encontrarnos aquí:"
+            - generic [ref=e512]:
+              - link "facebook" [ref=e513] [cursor=pointer]:
+                - /url: https://facebook.com/HEROInstitute
+                - generic [ref=e514]: 
+              - link "instagram" [ref=e515] [cursor=pointer]:
+                - /url: https://instagram.com/heroinstitute.co/
+                - generic [ref=e516]: 
+              - link "youtube" [ref=e517] [cursor=pointer]:
+                - /url: https://youtube.com/channel/UC_SWSrjmqBFgmk3icJSFPCg
+                - generic [ref=e518]: 
+              - link "email" [ref=e519] [cursor=pointer]:
+                - /url: mailto:informacion@heroinstitute.co
+                - generic [ref=e520]: 
+              - link "Social network" [ref=e521] [cursor=pointer]:
+                - /url: https://linkly.link/1pNVf
+                - img [ref=e523]
+              - link "Social network" [ref=e525] [cursor=pointer]:
+                - /url: https://linkly.link/1pNWd
+                - img [ref=e527]
+            - link "¡Llama Ya!" [ref=e530] [cursor=pointer]:
+              - /url: https://linkly.link/1pNWd
+              - heading "¡Llama Ya!" [level=3] [ref=e532]
+              - img
+          - generic [ref=e533]:
+            - paragraph [ref=e535]: Nuestras Sedes
+            - separator [ref=e537]
+            - paragraph [ref=e539]: Colombia
+            - generic [ref=e540]:
+              - paragraph [ref=e541]:
+                - generic [ref=e542]: Carrera 25 A Nro 1 A Sur 45
+              - paragraph [ref=e543]: Torre Médica El Tesoro, Torre 1, Consultorio 730, Medellín, Antioquia
+              - paragraph [ref=e544]
+              - paragraph [ref=e545]:
+                - generic [ref=e546]: "Calle 117 #6a-60"
+              - paragraph [ref=e547]:
+                - generic [ref=e548]: Flormorado Empresarial, Consultorio 509, Bogotá, Cundinamarca
+              - paragraph [ref=e549]
+              - paragraph [ref=e550]:
+                - generic [ref=e551]: "WhatsApp:"
+              - paragraph [ref=e552]:
+                - link "+57 314 7418831" [ref=e553] [cursor=pointer]:
+                  - /url: https://api.whatsapp.com/send?phone=573147418831&text=%C2%A1Hola!
+                  - strong [ref=e554]: +57 314 7418831
+              - paragraph [ref=e555]:
+                - generic [ref=e556]: "Llamada:"
+              - paragraph [ref=e557]:
+                - link "+57 6019196727" [ref=e558] [cursor=pointer]:
+                  - /url: tel:+57 601 9196727
+                  - strong [ref=e559]: +57 6019196727
+          - generic [ref=e560]:
+            - paragraph [ref=e562]: Procedimientos
+            - separator [ref=e564]
+            - generic [ref=e565]:
+              - paragraph [ref=e566]:
+                - link "Trasplante de cabello" [ref=e567] [cursor=pointer]:
+                  - /url: /es-co/injerto-trasplante-capilar
+              - paragraph [ref=e568]:
+                - link "Trasplante de barba" [ref=e569] [cursor=pointer]:
+                  - /url: /es-co/restauracion-de-barba
+              - paragraph [ref=e570]:
+                - link "Trasplante de cejas" [ref=e571] [cursor=pointer]:
+                  - /url: https://www.heroinstitute.co/es-co/injerto-trasplante-capilar#EYEBROWANDBEARDRESTORATION
+              - paragraph [ref=e572]:
+                - link "Plasma Capilar (PRP)" [ref=e573] [cursor=pointer]:
+                  - /url: /es-co/Plasma-rico-en-plaquetas-para-la-restauración-capilar
+        - separator [ref=e575]
+        - generic [ref=e577]:
+          - link "Texto" [ref=e580] [cursor=pointer]:
+            - /url: /es-co
+            - img "Texto" [ref=e581]
+          - generic [ref=e582]:
+            - paragraph [ref=e584]:
+              - link "Términos y" [ref=e585] [cursor=pointer]:
+                - /url: /es-co/politica-de-privacidad
+              - link [ref=e586] [cursor=pointer]:
+                - /url: /es-co/politica-de-privacidad
+              - link "privacidad" [ref=e587] [cursor=pointer]:
+                - /url: /es-co/politica-de-privacidad
+            - paragraph [ref=e589]:
+              - link "Descargo deresponsabilidadmédica" [ref=e590] [cursor=pointer]:
+                - /url: /es-co/disclaimer
+          - link "Vigilado Supersalud" [ref=e593] [cursor=pointer]:
+            - /url: /es-co
+            - img "Vigilado Supersalud" [ref=e594]
+        - separator [ref=e596]
+        - generic [ref=e598]:
+          - generic [ref=e599]: © 2026
+          - paragraph [ref=e601]: Todos los derechos reservados | HERO Institute
+  - generic:
+    - generic:
+      - generic: 
+    - generic: "Share by:"
