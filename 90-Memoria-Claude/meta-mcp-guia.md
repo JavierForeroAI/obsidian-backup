@@ -3,14 +3,14 @@ name: meta-mcp-guia
 description: Guía de uso del MCP meta-dajf para gestión de Meta Ads — cuentas disponibles, herramientas y flujo de trabajo
 metadata:
   type: reference
-  updated: 2026-05-22
+  updated: 2026-05-29
 ---
 
 # Guía MCP Meta Ads (meta-dajf)
 
 ## Conexión verificada
 
-Conexión confirmada el 2026-05-22. Todas las cuentas activas bajo Business Manager **Implante Innovart Medical** (BM ID: `940287337027000`).
+Conexión confirmada el 2026-05-29. Token válido con 18 scopes incluyendo `ads_management`, `ads_read`, `leads_retrieval`. Todas las cuentas activas bajo Business Manager **Implante Innovart Medical** (BM ID: `940287337027000`).
 
 ---
 

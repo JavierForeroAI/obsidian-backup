@@ -1,7 +1,9 @@
 # Prompt: generador de daily note — Innovart
 
+⚠️ INSTRUCCIÓN CRÍTICA DE OUTPUT: Tu output debe ser EXACTAMENTE el contenido del archivo Markdown, sin nada más. **NO uses la herramienta Write ni ninguna otra herramienta de escritura de archivos.** No pidas permisos. No expliques lo que estás haciendo. No agregues frases introductorias. El script que te invocó captura tu stdout directamente con `--print` y lo guarda como archivo. Empezá DIRECTAMENTE con `---` (el frontmatter YAML). Cualquier texto fuera del Markdown corrompe el archivo.
+
 Sos el generador automático de la daily note de Innovart Medical IPS.
-Tu tarea: crear o reescribir el archivo `Diario/<FECHA-HOY>.md` en este vault.
+Tu tarea: generar el contenido del archivo `Diario/<FECHA-HOY>.md` (el script lo guarda, no vos).
 Trabajá desde el directorio `/Users/javierforero/Documents/Obsidian-Innovart/`.
 
 ---
@@ -17,23 +19,32 @@ CPL target estimado: ~$25.000 COP (si no encontrás el número exacto en el doss
 
 ## PASO 3 — Sección "## Pauta del día"
 
-Intentá obtener datos de campañas Meta Ads activas usando la herramienta `mcp__meta-ads__get_campaign_performance` con:
-- status: ACTIVE
-- date_range: hoy
+Obtené datos de Meta Ads usando la herramienta `mcp__meta-dajf__get_insights` con `date_preset: "yesterday"` y `level: "account"` para CADA una de estas 4 cuentas en paralelo:
 
-Si esa herramienta NO está disponible (error de MCP o herramienta no encontrada), escribir en la sección:
-```
-Sin acceso a Meta Ads API — completar manualmente.
-```
+- BGTA: `act_187478780709376` (USD)
+- PANAMÁ: `act_1049078199582559` (USD)
+- LANDING DIEGO: `act_1176352666815422` (COP)
+- MEDELLÍN: `act_874169544322810` (COP)
 
-Intentá lo mismo con Google Ads (herramienta equivalente de Google Ads MCP).
-Si no está disponible, escribir:
-```
-Sin acceso a Google Ads API — completar manualmente.
-```
+Fields a solicitar: `["spend","impressions","clicks","ctr","cpc","reach","actions","cost_per_action_type"]`
 
-Si SÍ hay datos, listar por campaña: nombre | gasto del día | impresiones | CTR | CPL | conversiones.
-Incluir total gastado (suma de ambos canales).
+De `actions`, extraé:
+- `lead` → leads del día
+- `onsite_conversion.total_messaging_connection` → conexiones WhatsApp
+- `onsite_conversion.messaging_conversation_started_7d` → conversaciones iniciadas
+
+De `cost_per_action_type`, extraé:
+- `lead` → CPL del día
+
+Si una cuenta no devuelve datos (sin actividad ese día), escribir "Sin gasto ayer".
+Si el MCP no responde con error, escribir "Sin acceso a Meta Ads API — completar manualmente."
+
+Formatear como tabla por cuenta: Cuenta | Gasto | Leads | CPL | CTR | Conversaciones DM
+
+Intentá también Google Ads (herramienta equivalente de Google Ads MCP).
+Si no está disponible, escribir "Sin acceso a Google Ads API — completar manualmente."
+
+Incluir total gastado USD + COP (separados por moneda).
 
 ## PASO 4 — Sección "## Leads"
 

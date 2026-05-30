@@ -7,5 +7,13 @@
 - `mensuales/` — reporte consolidado con análisis y recomendaciones
 - `dashboard.md` — KPIs principales del cliente
 
+## Reportes generados
+
+| Archivo | Período | Fuente |
+|---------|---------|--------|
+| [[2026/semana-21]] | 11–17 May 2026 | GHL manual |
+| [[2026/semana-22]] | 18–24 May 2026 | GHL manual |
+| [[2026/semana-23]] | 25–29 May 2026 | Meta Ads MCP |
+
 ## Notas
 
