@@ -40,6 +40,7 @@
 
 ## Feedback (cómo trabajar conmigo)
 - [GHL análisis por fechas — hacerlo manualmente](feedback-ghl-fechas-manual.md) — Endpoint de citas da 404; leer timestamps de conversaciones/contactos y calcular métricas a mano
+- [Informes → siempre en Drive 3. MERCADEO / CLAUDE](feedback-informes-drive.md) — Guardar todo informe/reporte/auditoría en carpeta CLAUDE (ID: 1rGB1E0XR4lcUwOes2Q9yACe4NphL8Tv5) de Google Drive
 
 ## Brief del cliente
 - Ver [[../10-Clientes/Innovart/_dossier-2026-05-18]]
