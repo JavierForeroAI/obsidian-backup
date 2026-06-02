@@ -18,9 +18,11 @@
 
 ## Avatares y Comunicación
 - [Avatares de Cliente — Matriz Oficial](avatares-clientes.md) — 5 avatares oficiales (Profesional Premium, Militar, Gubernamental, Gay Premium, Emprendedor) + ángulos de venta, hooks, estética visual y cierres por avatar. Incluye análisis creativos Mundial 2026.
+- [Canvas M4 por Avatar — Biblioteca de Anuncios](../20-Pauta/avatares-m4-canvas.md) — Canvas completo Playbook M4: dolores textuales, objeciones, creencias falsas, niveles de consciencia, Matriz 5×3 ángulos, 30 hooks, mapeo COLD/LAL/RTG. Junio 2026.
+- [⚠️ Restricciones de Lenguaje](restricciones-lenguaje.md) — Términos PROHIBIDOS en toda comunicación Innovart. Leer antes de escribir cualquier copy.
 
 ## Contenido
-- [Ángulos creativos activos](angulos-creativos.md) — "Garantía Vitalicia", "Resultados en 6 Meses", flag emojis por país
+- [Ángulos creativos activos](angulos-creativos.md) — ~~"Garantía Vitalicia"~~ ⚠️ PROHIBIDO · "Garantía de resultado", "Resultados en 6 Meses", flag emojis por país
 
 ## NotebookLM — Innovart (extraído 2026-05-22)
 - [Índice de notebooks](notebooklm/INDEX.md) — 7 notebooks Innovart extraídos, 15 pendientes

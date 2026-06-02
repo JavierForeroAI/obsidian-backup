@@ -22,13 +22,13 @@ metadata:
 Ingrid, Karla, Angie, Isabel, Sofía, Leidy, Daniel
 
 ## Sedes
-| Ciudad | Dirección |
-|---|---|
-| Bogotá | Cl. 116 No. 9-72, Consultorio 405 |
-| Medellín | CC Oviedo |
-| Barranquilla | Green Tower |
-| Bucaramanga | HIC |
-| Panamá | CC Town Center, Torre Arboleda, Consultorio 7030, Costa del Este |
+| Ciudad       | Dirección                                                        |
+| ------------ | ---------------------------------------------------------------- |
+| Bogotá       | Cl. 116 No. 9-72, Consultorio 405                                |
+| Medellín     | CC Oviedo                                                        |
+| Barranquilla | Green Tower                                                      |
+| Bucaramanga  | HIC                                                              |
+| Panamá       | CC Town Center, Torre Arboleda, Consultorio 7030, Costa del Este |
 
 ## Canales digitales
 - IG: @innovartmedicalips (~30K seguidores)

@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trasplante Capilar en Colombia | Innovart Medical</title>
+  <meta name="description" content="Clínica especializada en trasplante capilar FUE en Colombia. 6.000+ pacientes, 24 controles postoperatorios incluidos, garantía de resultado. Consulta gratuita." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <style>
+    /* ─── RESET & BASE ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --c-primary:   #1A2E4A;
+      --c-deep:      #0D1B2A;
+      --c-gold:      #C9963D;
+      --c-gold-lt:   #E8B355;
+      --c-blue:      #3D7EBF;
+      --c-bg:        #F9FAFB;
+      --c-bg-alt:    #EDF1F5;
+      --c-text:      #3A4A5C;
+      --c-text-dark: #0D1B2A;
+      --c-white:     #ffffff;
+      --f-head:      'Playfair Display', Georgia, serif;
+      --f-body:      'Inter', system-ui, sans-serif;
+      --f-num:       'DM Serif Display', Georgia, serif;
+      --radius:      12px;
+      --shadow-sm:   0 2px 12px rgba(26,46,74,.08);
+      --shadow-md:   0 8px 32px rgba(26,46,74,.14);
+      --transition:  0.25s ease;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--f-body); color: var(--c-text); background: var(--c-bg); line-height: 1.65; overflow-x: hidden; }
+    img  { max-width: 100%; height: auto; display: block; }
+    a    { text-decoration: none; color: inherit; }
+
+    /* ─── TYPOGRAPHY ─── */
+    h1 { font-family: var(--f-head); font-weight: 700; line-height: 1.15; color: var(--c-white); }
+    h2 { font-family: var(--f-head); font-weight: 700; line-height: 1.2; color: var(--c-text-dark); font-size: clamp(1.8rem, 4vw, 2.6rem); }
+    h3 { font-family: var(--f-head); font-weight: 600; color: var(--c-primary); }
+    p  { line-height: 1.75; }
+
+    /* ─── UTILS ─── */
+    .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+    .section    { padding: 100px 0; }
+    .section-sm { padding: 70px 0; }
+    .text-gold  { color: var(--c-gold); }
+    .text-center { text-align: center; }
+
+    /* ─── REVEAL ANIMATION ─── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .65s ease, transform .65s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-d1 { transition-delay: .1s; }
+    .reveal-d2 { transition-delay: .2s; }
+    .reveal-d3 { transition-delay: .3s; }
+    .reveal-d4 { transition-delay: .4s; }
+
+    /* ─── BUTTONS ─── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--f-body); font-weight: 600; font-size: 1rem;
+      padding: 17px 36px; border-radius: 8px; border: none; cursor: pointer;
+      transition: var(--transition); position: relative; overflow: hidden; white-space: nowrap;
+    }
+    .btn::after {
+      content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.22), transparent);
+      transition: left .4s ease;
+    }
+    .btn:hover::after { left: 100%; }
+    .btn-gold {
+      background: linear-gradient(135deg, var(--c-gold) 0%, var(--c-gold-lt) 100%);
+      color: var(--c-deep); box-shadow: 0 4px 18px rgba(201,150,61,.42);
+    }
+    .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(201,150,61,.52); }
+    .btn-outline-white {
+      background: transparent; color: var(--c-white);
+      border: 2px solid rgba(255,255,255,.55);
+    }
+    .btn-outline-white:hover { border-color: var(--c-white); background: rgba(255,255,255,.10); }
+    .btn-outline-dark {
+      background: transparent; color: var(--c-primary);
+      border: 2px solid var(--c-primary);
+    }
+    .btn-outline-dark:hover { background: var(--c-primary); color: var(--c-white); }
+
+    /* ════════════════════════════════════
+       1. HERO
+    ════════════════════════════════════ */
+    .hero {
+      position: relative; min-height: 100vh;
+      display: flex; align-items: center;
+      background: linear-gradient(105deg, rgba(13,27,42,.92) 0%, rgba(13,27,42,.6) 55%, rgba(13,27,42,.18) 100%),
+                  linear-gradient(135deg, #1A2E4A 0%, #0D1B2A 100%);
+      overflow: hidden;
+    }
+    .hero-video {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; z-index: 0; opacity: .55;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(105deg, rgba(13,27,42,.90) 0%, rgba(13,27,42,.55) 55%, rgba(13,27,42,.15) 100%);
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      max-width: 720px; padding: 40px 24px 40px;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,.10); backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,.18); border-radius: 50px;
+      padding: 10px 20px; font-size: .8rem; font-weight: 500;
+      color: rgba(255,255,255,.9); letter-spacing: .04em;
+      margin-bottom: 28px;
+    }
+    .hero-badge span { width: 6px; height: 6px; background: var(--c-gold); border-radius: 50%; flex-shrink: 0; }
+    .hero h1 { font-size: clamp(2.2rem, 5.5vw, 3.8rem); margin-bottom: 24px; }
+    .hero h1 em { font-style: normal; color: var(--c-gold); }
+    .hero-sub {
+      font-size: 1.1rem; color: rgba(255,255,255,.82); margin-bottom: 16px; line-height: 1.7;
+    }
+    .hero-tags {
+      display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px;
+    }
+    .hero-tag {
+      font-size: .8rem; font-weight: 500; color: rgba(255,255,255,.75);
+      border: 1px solid rgba(255,255,255,.25); border-radius: 20px; padding: 5px 14px;
+    }
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; }
+    .hero-scroll {
+      position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
+      z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 8px;
+      color: rgba(255,255,255,.5); font-size: .75rem; letter-spacing: .1em;
+    }
+    .hero-scroll-line {
+      width: 1px; height: 40px; background: linear-gradient(to bottom, rgba(255,255,255,.5), transparent);
+      animation: scrollLine 2s ease-in-out infinite;
+    }
+    @keyframes scrollLine { 0%,100%{opacity:.5;transform:scaleY(1)} 50%{opacity:1;transform:scaleY(1.2)} }
+    .hero-decoration {
+      position: absolute; bottom: 0; right: 0; z-index: 1;
+      width: 45%; height: 100%; pointer-events: none;
+      background: linear-gradient(135deg, transparent 40%, rgba(201,150,61,.04) 100%);
+    }
+
+    /* ════════════════════════════════════
+       2. TRUST BAR
+    ════════════════════════════════════ */
+    .trust-bar { background: var(--c-deep); padding: 32px 0; }
+    .trust-bar-inner {
+      display: flex; align-items: center; justify-content: center;
+      flex-wrap: wrap; gap: 0;
+    }
+    .trust-stat {
+      flex: 1; min-width: 160px; text-align: center; padding: 16px 24px;
+      position: relative;
+    }
+    .trust-stat + .trust-stat::before {
+      content: ''; position: absolute; left: 0; top: 20%; height: 60%;
+      width: 1px; background: var(--c-gold); opacity: .4;
+    }
+    .trust-stat-num {
+      font-family: var(--f-num); font-size: 2.4rem; color: var(--c-gold);
+      line-height: 1; display: block; margin-bottom: 6px;
+    }
+    .trust-stat-label { font-size: .8rem; color: rgba(255,255,255,.65); font-weight: 500; line-height: 1.4; }
+
+    /* ════════════════════════════════════
+       3. IDENTIFICACIÓN
+    ════════════════════════════════════ */
+    .identify { background: var(--c-bg); }
+    .identify-intro { max-width: 620px; margin: 0 auto 56px; text-align: center; }
+    .identify-intro h2 { margin-bottom: 16px; }
+    .identify-intro p { font-size: 1.05rem; color: var(--c-text); }
+    .identify-list { max-width: 680px; margin: 0 auto 48px; display: flex; flex-direction: column; gap: 16px; }
+    .identify-item {
+      display: flex; align-items: flex-start; gap: 16px;
+      background: var(--c-white); border: 1px solid #E5EAF0;
+      border-left: 4px solid transparent; border-radius: var(--radius);
+      padding: 20px 24px; cursor: pointer; transition: var(--transition);
+    }
+    .identify-item:hover, .identify-item.checked {
+      border-left-color: var(--c-gold); box-shadow: var(--shadow-sm);
+    }
+    .identify-item.checked { background: #FFFBF4; }
+    .identify-checkbox {
+      width: 22px; height: 22px; border: 2px solid #C5CDD8; border-radius: 5px;
+      flex-shrink: 0; margin-top: 1px; display: grid; place-items: center;
+      transition: var(--transition);
+    }
+    .identify-item.checked .identify-checkbox {
+      background: var(--c-gold); border-color: var(--c-gold);
+    }
+    .identify-checkbox svg { display: none; }
+    .identify-item.checked .identify-checkbox svg { display: block; }
+    .identify-text { font-size: 1rem; font-weight: 500; color: var(--c-text-dark); padding-top: 1px; }
+    .identify-cta-wrap { text-align: center; }
+    .identify-cta-wrap p { font-size: .85rem; color: var(--c-text); margin-top: 14px; opacity: .7; }
+
+    /* ════════════════════════════════════
+       4. DIFERENCIADORES
+    ════════════════════════════════════ */
+    .differentiators { background: var(--c-bg-alt); }
+    .diff-intro { text-align: center; max-width: 640px; margin: 0 auto 56px; }
+    .diff-intro h2 { margin-bottom: 14px; }
+    .diff-intro p { font-size: 1.05rem; color: var(--c-text); }
+    .diff-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .diff-card {
+      background: var(--c-white); border-radius: var(--radius);
+      padding: 36px 32px; position: relative; overflow: hidden;
+      border-top: 4px solid var(--c-gold); box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .diff-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+    .diff-card-num {
+      position: absolute; top: 12px; right: 20px; font-family: var(--f-num);
+      font-size: 5rem; color: var(--c-bg-alt); line-height: 1; user-select: none; z-index: 0;
+    }
+    .diff-card-icon {
+      width: 52px; height: 52px; background: rgba(61,126,191,.12);
+      border-radius: 10px; display: grid; place-items: center;
+      margin-bottom: 20px; position: relative; z-index: 1;
+    }
+    .diff-card-icon svg { width: 26px; height: 26px; stroke: var(--c-blue); fill: none; stroke-width: 2; }
+    .diff-card h3 { font-size: 1.15rem; margin-bottom: 12px; position: relative; z-index: 1; }
+    .diff-card p { font-size: .95rem; color: var(--c-text); position: relative; z-index: 1; line-height: 1.7; }
+
+    /* ════════════════════════════════════
+       5. TESTIMONIOS
+    ════════════════════════════════════ */
+    .testimonials { background: var(--c-bg); }
+    .test-intro { text-align: center; max-width: 600px; margin: 0 auto 48px; }
+    .test-intro h2 { margin-bottom: 12px; }
+    .test-track-wrap { overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding-bottom: 16px; }
+    .test-track-wrap::-webkit-scrollbar { display: none; }
+    .test-track { display: flex; gap: 20px; padding: 12px 4px; width: max-content; }
+    .test-card {
+      width: 340px; flex-shrink: 0; scroll-snap-align: start;
+      background: var(--c-white); border-radius: var(--radius);
+      box-shadow: var(--shadow-sm); overflow: hidden;
+      transition: box-shadow var(--transition);
+    }
+    .test-card:hover { box-shadow: var(--shadow-md); }
+    .test-thumb {
+      position: relative; height: 200px; background: linear-gradient(135deg, var(--c-primary), var(--c-blue));
+      display: grid; place-items: center;
+    }
+    .test-play {
+      width: 64px; height: 64px; background: var(--c-gold); border-radius: 50%;
+      display: grid; place-items: center; box-shadow: 0 4px 20px rgba(201,150,61,.5);
+      cursor: pointer; transition: transform var(--transition);
+    }
+    .test-play:hover { transform: scale(1.1); }
+    .test-play svg { width: 24px; height: 24px; fill: var(--c-deep); margin-left: 3px; }
+    .test-thumb-label {
+      position: absolute; bottom: 12px; left: 12px;
+      background: rgba(13,27,42,.8); backdrop-filter: blur(8px);
+      color: var(--c-white); font-size: .75rem; font-weight: 500;
+      padding: 5px 12px; border-radius: 20px; letter-spacing: .03em;
+    }
+    .test-body { padding: 24px; }
+    .test-stars { color: var(--c-gold); font-size: 1rem; margin-bottom: 10px; letter-spacing: 2px; }
+    .test-quote { font-size: .92rem; color: var(--c-text); line-height: 1.7; margin-bottom: 16px; font-style: italic; }
+    .test-quote::before { content: '"'; font-family: var(--f-head); font-size: 2rem; color: var(--c-gold); line-height: 0; vertical-align: -12px; margin-right: 4px; }
+    .test-name { font-weight: 600; color: var(--c-text-dark); font-size: .9rem; }
+    .test-city { font-size: .8rem; color: var(--c-text); opacity: .7; }
+    .test-nav { display: flex; justify-content: center; gap: 10px; margin-top: 24px; }
+    .test-nav button {
+      width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--c-primary);
+      background: transparent; cursor: pointer; display: grid; place-items: center;
+      color: var(--c-primary); transition: var(--transition); font-size: 1rem;
+    }
+    .test-nav button:hover { background: var(--c-primary); color: var(--c-white); }
+
+    /* ════════════════════════════════════
+       6. PROCESO
+    ════════════════════════════════════ */
+    .process { background: var(--c-bg-alt); }
+    .process-intro { text-align: center; max-width: 580px; margin: 0 auto 56px; }
+    .process-intro h2 { margin-bottom: 12px; }
+    .process-timeline { display: grid; grid-template-columns: repeat(4,1fr); gap: 0; position: relative; }
+    .process-timeline::before {
+      content: ''; position: absolute; top: 44px; left: 12.5%; right: 12.5%; height: 2px;
+      background: repeating-linear-gradient(90deg, var(--c-gold) 0, var(--c-gold) 8px, transparent 8px, transparent 16px);
+      z-index: 0;
+    }
+    .process-step { text-align: center; padding: 0 16px; position: relative; z-index: 1; }
+    .process-node {
+      width: 88px; height: 88px; border-radius: 50%; background: var(--c-primary);
+      display: grid; place-items: center; margin: 0 auto 24px;
+      box-shadow: 0 0 0 10px rgba(26,46,74,.10);
+      font-family: var(--f-num); font-size: 1.8rem; color: var(--c-gold);
+    }
+    .process-step h3 { font-size: 1rem; margin-bottom: 10px; color: var(--c-primary); }
+    .process-step p { font-size: .88rem; color: var(--c-text); line-height: 1.65; }
+
+    /* ════════════════════════════════════
+       7. FINANCIAMIENTO
+    ════════════════════════════════════ */
+    .financing { background: var(--c-bg); }
+    .financing-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .financing-text h2 { margin-bottom: 20px; }
+    .financing-text p { font-size: 1.05rem; margin-bottom: 28px; }
+    .financing-list { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 36px; }
+    .financing-list li { display: flex; align-items: flex-start; gap: 12px; font-size: .95rem; }
+    .financing-list li::before { content: '✓'; color: var(--c-gold); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+    .financing-logos { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
+    .financing-logo {
+      background: var(--c-bg-alt); border: 1px solid #DDE3EA;
+      border-radius: 8px; height: 60px; display: grid; place-items: center;
+      font-size: .75rem; font-weight: 700; color: var(--c-primary);
+      letter-spacing: .08em; text-transform: uppercase;
+    }
+
+    /* ════════════════════════════════════
+       8. SEDES
+    ════════════════════════════════════ */
+    .locations { background: var(--c-bg-alt); }
+    .locations-intro { text-align: center; max-width: 560px; margin: 0 auto 48px; }
+    .locations-intro h2 { margin-bottom: 12px; }
+    .locations-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 16px; margin-bottom: 28px; }
+    .location-card {
+      background: var(--c-white); border-radius: var(--radius);
+      padding: 28px 18px; text-align: center; box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+    .location-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+    .location-pin { color: var(--c-gold); margin-bottom: 12px; }
+    .location-pin svg { width: 28px; height: 28px; fill: var(--c-gold); }
+    .location-city { font-family: var(--f-head); font-weight: 700; font-size: 1rem; color: var(--c-primary); margin-bottom: 6px; }
+    .location-addr { font-size: .78rem; color: var(--c-text); line-height: 1.5; }
+    .locations-virtual {
+      background: linear-gradient(135deg, var(--c-primary), var(--c-blue));
+      color: var(--c-white); border-radius: var(--radius); padding: 24px 32px;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+    }
+    .locations-virtual p { font-size: 1rem; font-weight: 500; }
+
+    /* ════════════════════════════════════
+       9. GARANTÍAS DARK
+    ════════════════════════════════════ */
+    .guarantees { background: var(--c-primary); padding: 80px 0; }
+    .guarantees-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .guarantees-heading h2 { color: var(--c-white); margin-bottom: 20px; }
+    .guarantees-heading p { color: rgba(255,255,255,.72); font-size: 1.05rem; line-height: 1.7; }
+    .guarantees-list { display: flex; flex-direction: column; gap: 18px; }
+    .guarantee-item { display: flex; align-items: flex-start; gap: 16px; }
+    .guarantee-icon {
+      width: 36px; height: 36px; background: rgba(201,150,61,.2); border-radius: 8px;
+      display: grid; place-items: center; flex-shrink: 0;
+    }
+    .guarantee-icon svg { width: 18px; height: 18px; fill: var(--c-gold); }
+    .guarantee-text { color: rgba(255,255,255,.88); font-size: .98rem; line-height: 1.6; padding-top: 6px; }
+    .guarantee-text strong { color: var(--c-white); display: block; margin-bottom: 2px; }
+
+    /* ════════════════════════════════════
+       10. FAQ
+    ════════════════════════════════════ */
+    .faq { background: var(--c-bg); }
+    .faq-intro { text-align: center; max-width: 580px; margin: 0 auto 48px; }
+    .faq-intro h2 { margin-bottom: 12px; }
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0; }
+    .faq-item { border-bottom: 1px solid #E5EAF0; }
+    .faq-item:first-child { border-top: 1px solid #E5EAF0; }
+    .faq-q {
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+      padding: 22px 4px; cursor: pointer; font-weight: 600;
+      font-size: 1rem; color: var(--c-text-dark); transition: color var(--transition);
+    }
+    .faq-q:hover { color: var(--c-primary); }
+    .faq-icon {
+      width: 28px; height: 28px; border-radius: 50%; border: 2px solid #DDE3EA;
+      display: grid; place-items: center; flex-shrink: 0;
+      font-size: 1.1rem; font-weight: 300; color: var(--c-text); transition: var(--transition);
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); border-color: var(--c-gold); color: var(--c-gold); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height .4s ease; }
+    .faq-item.open .faq-a { max-height: 300px; }
+    .faq-a-inner { padding: 0 4px 22px; font-size: .97rem; color: var(--c-text); line-height: 1.75; }
+
+    /* ════════════════════════════════════
+       11. CTA FINAL
+    ════════════════════════════════════ */
+    .cta-final {
+      background: linear-gradient(135deg, var(--c-deep) 0%, var(--c-primary) 100%);
+      padding: 120px 0; position: relative; overflow: hidden;
+    }
+    .cta-final::before {
+      content: ''; position: absolute; top: -60%; right: -10%;
+      width: 600px; height: 600px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,150,61,.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cta-final-inner { max-width: 700px; margin: 0 auto; text-align: center; position: relative; z-index: 1; padding: 0 24px; }
+    .cta-final h2 { color: var(--c-white); margin-bottom: 24px; }
+    .cta-final p { color: rgba(255,255,255,.78); font-size: 1.1rem; margin-bottom: 40px; line-height: 1.8; }
+    .cta-final-trust { display: flex; flex-direction: column; gap: 10px; margin-bottom: 40px; text-align: left; max-width: 460px; margin-left: auto; margin-right: auto; }
+    .cta-final-trust-item { display: flex; align-items: flex-start; gap: 12px; font-size: .9rem; color: rgba(255,255,255,.82); }
+    .cta-final-trust-item::before { content: '✓'; color: var(--c-gold); font-weight: 700; flex-shrink: 0; }
+    .cta-final-ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+    .cta-micro { margin-top: 20px; font-size: .82rem; color: rgba(255,255,255,.45); }
+
+    /* ════════════════════════════════════
+       WHATSAPP STICKY
+    ════════════════════════════════════ */
+    .wa-sticky {
+      position: fixed; bottom: 28px; right: 24px; z-index: 9999;
+      width: 62px; height: 62px; border-radius: 50%;
+      background: #25D366; display: grid; place-items: center;
+      box-shadow: 0 4px 22px rgba(37,211,102,.45);
+      cursor: pointer; animation: waPulse 2.4s infinite; text-decoration: none;
+    }
+    .wa-sticky svg { width: 32px; height: 32px; fill: white; }
+    .wa-sticky-label {
+      position: absolute; right: 74px; top: 50%; transform: translateY(-50%);
+      background: var(--c-deep); color: white; font-size: .78rem; font-weight: 500;
+      padding: 7px 14px; border-radius: 6px; white-space: nowrap;
+      opacity: 0; pointer-events: none; transition: opacity .2s ease;
+    }
+    .wa-sticky:hover .wa-sticky-label { opacity: 1; }
+    @keyframes waPulse {
+      0%   { box-shadow: 0 0 0 0 rgba(37,211,102,.55); }
+      70%  { box-shadow: 0 0 0 16px rgba(37,211,102,0); }
+      100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+    }
+    @media (prefers-reduced-motion: reduce) { .wa-sticky, .hero-scroll-line { animation: none; } }
+
+    /* ════════════════════════════════════
+       FOOTER
+    ════════════════════════════════════ */
+    .footer {
+      background: var(--c-deep); color: rgba(255,255,255,.5);
+      padding: 32px 0; text-align: center; font-size: .82rem; line-height: 1.8;
+    }
+    .footer a { color: rgba(255,255,255,.6); }
+    .footer a:hover { color: var(--c-gold); }
+    .footer-brand { font-family: var(--f-head); color: var(--c-gold); font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; display: block; }
+
+    /* ════════════════════════════════════
+       RESPONSIVE
+    ════════════════════════════════════ */
+    @media (max-width: 980px) {
+      .locations-grid { grid-template-columns: repeat(3,1fr); }
+    }
+    @media (max-width: 768px) {
+      .section { padding: 70px 0; }
+      .diff-grid { grid-template-columns: 1fr; }
+      .financing-inner { grid-template-columns: 1fr; gap: 40px; }
+      .guarantees-inner { grid-template-columns: 1fr; gap: 40px; }
+      .locations-grid { grid-template-columns: repeat(2,1fr); }
+      .process-timeline { grid-template-columns: 1fr; gap: 32px; }
+      .process-timeline::before { display: none; }
+      .hero h1 { font-size: 2.1rem; }
+      .hero-ctas { flex-direction: column; }
+      .btn { width: 100%; justify-content: center; }
+      .trust-stat { min-width: 140px; }
+      .locations-virtual { flex-direction: column; text-align: center; }
+    }
+    @media (max-width: 520px) {
+      .locations-grid { grid-template-columns: 1fr 1fr; }
+      .trust-bar-inner { gap: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════
+     1. HERO
+══════════════════════════════ -->
+<section class="hero">
+  <!-- Reemplaza src con tu video real -->
+  <video class="hero-video" autoplay muted loop playsinline
+    poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span></span>
+        IPS certificada &nbsp;·&nbsp; 5 sedes en Colombia y Panamá &nbsp;·&nbsp; 6.000+ procedimientos
+      </div>
+      <h1 class="reveal reveal-d1">
+        Hace años que no te reconoces<br>
+        <em>en el espejo.</em><br>
+        Ya es hora de cambiar eso.
+      </h1>
+      <p class="hero-sub reveal reveal-d2">
+        Resultados reales, con cabello que crece de verdad.<br>
+        Natural, permanente, tuyo para siempre.
+      </p>
+      <div class="hero-tags reveal reveal-d2">
+        <span class="hero-tag">Técnica FUE</span>
+        <span class="hero-tag">24 controles incluidos</span>
+        <span class="hero-tag">Garantía de resultado</span>
+        <span class="hero-tag">Valoración gratis</span>
+      </div>
+      <div class="hero-ctas reveal reveal-d3">
+        <a href="https://wa.me/573208653730?text=Hola%2C+quiero+saber+si+soy+candidato+para+un+trasplante+capilar"
+           class="btn btn-gold">
+          Quiero ver si soy candidato
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://wa.me/573208653730?text=Hola%2C+quiero+hablar+con+un+asesor+de+Innovart+Medical"
+           class="btn btn-outline-white">
+          <svg width="18" height="18" viewBox="0 0 32 32" fill="white"><path d="M16 1C7.716 1 1 7.716 1 16c0 2.628.662 5.1 1.826 7.268L1 31l7.938-1.796A14.94 14.94 0 0016 31c8.284 0 15-6.716 15-15S24.284 1 16 1zm0 27.2a12.14 12.14 0 01-6.174-1.686l-.442-.264-4.714 1.066 1.088-4.59-.29-.47A12.2 12.2 0 113.8 16 12.216 12.216 0 0116 28.2zm6.694-9.154c-.366-.184-2.168-1.07-2.504-1.19-.336-.122-.582-.184-.826.184s-.95 1.19-1.162 1.436c-.214.244-.428.274-.794.09-.366-.184-1.546-.57-2.944-1.816-1.088-.97-1.824-2.168-2.038-2.534-.214-.366-.022-.562.16-.746.164-.162.366-.428.55-.642.184-.214.244-.366.366-.61.122-.244.06-.458-.03-.642-.092-.184-.826-1.988-1.13-2.726-.298-.714-.602-.618-.826-.63-.214-.01-.458-.014-.702-.014s-.642.09-.978.458c-.336.366-1.282 1.252-1.282 3.054s1.312 3.542 1.496 3.786c.184.244 2.582 3.944 6.256 5.53.874.376 1.556.6 2.086.77.876.278 1.674.238 2.304.144.702-.104 2.168-.886 2.474-1.742.304-.856.304-1.59.214-1.742-.09-.152-.336-.244-.702-.428z"/></svg>
+          Hablar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-decoration"></div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span>SCROLL</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     2. TRUST BAR
+══════════════════════════════ -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-bar-inner">
+      <div class="trust-stat">
+        <span class="trust-stat-num" data-counter="6000">0</span>
+        <span class="trust-stat-label">Pacientes con<br>resultados reales</span>
+      </div>
+      <div class="trust-stat">
+        <span class="trust-stat-num" data-counter="24">0</span>
+        <span class="trust-stat-label">Controles post-op<br>únicos en Colombia</span>
+      </div>
+      <div class="trust-stat">
+        <span class="trust-stat-num" style="font-size:1.9rem">4.9 ⭐</span>
+        <span class="trust-stat-label">En Google<br>+200 reseñas verificadas</span>
+      </div>
+      <div class="trust-stat">
+        <span class="trust-stat-num">$0</span>
+        <span class="trust-stat-label">Costo de tu valoración<br>Sin compromiso</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     3. IDENTIFICACIÓN
+══════════════════════════════ -->
+<section class="identify section">
+  <div class="container">
+    <div class="identify-intro reveal">
+      <h2>¿Te identificas con alguna<br>de estas situaciones?</h2>
+      <p>La mayoría de nuestros pacientes llegaron preguntando exactamente lo mismo que tú te estás preguntando ahora.</p>
+    </div>
+    <div class="identify-list">
+      <div class="identify-item reveal reveal-d1" onclick="this.classList.toggle('checked')">
+        <div class="identify-checkbox">
+          <svg width="13" height="10" viewBox="0 0 13 10" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 5 5 9 12 1"/></svg>
+        </div>
+        <span class="identify-text">Cabello que se adelgaza y entradas que avanzan cada vez más</span>
+      </div>
+      <div class="identify-item reveal reveal-d2" onclick="this.classList.toggle('checked')">
+        <div class="identify-checkbox">
+          <svg width="13" height="10" viewBox="0 0 13 10" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 5 5 9 12 1"/></svg>
+        </div>
+        <span class="identify-text">Ya probaste shampús, vitaminas, tratamientos — nada funcionó de verdad</span>
+      </div>
+      <div class="identify-item reveal reveal-d3" onclick="this.classList.toggle('checked')">
+        <div class="identify-checkbox">
+          <svg width="13" height="10" viewBox="0 0 13 10" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 5 5 9 12 1"/></svg>
+        </div>
+        <span class="identify-text">Evitas fotos, ciertos cortes de cabello o situaciones con luz directa</span>
+      </div>
+      <div class="identify-item reveal reveal-d4" onclick="this.classList.toggle('checked')">
+        <div class="identify-checkbox">
+          <svg width="13" height="10" viewBox="0 0 13 10" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 5 5 9 12 1"/></svg>
+        </div>
+        <span class="identify-text">Buscas una solución definitiva, no otro parche temporal</span>
+      </div>
+    </div>
+    <div class="identify-cta-wrap reveal">
+      <a href="https://wa.me/573208653730?text=S%C3%AD%2C+me+identifico+con+estas+situaciones.+Quiero+ver+los+resultados+de+Innovart+Medical"
+         class="btn btn-gold">
+        Sí, esto me describe — quiero ver los resultados
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <p>Sin compromiso. Te respondemos en menos de 2 horas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     4. DIFERENCIADORES
+══════════════════════════════ -->
+<section class="differentiators section">
+  <div class="container">
+    <div class="diff-intro reveal">
+      <h2>Lo que nos hace diferentes<br>no es lo que decimos.<br><span class="text-gold">Es lo que hacemos.</span></h2>
+      <p>Cuatro razones por las que más de 6.000 hombres eligieron Innovart — y no se arrepintieron.</p>
+    </div>
+    <div class="diff-grid">
+      <div class="diff-card reveal reveal-d1">
+        <span class="diff-card-num">01</span>
+        <div class="diff-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Garantía de resultado</h3>
+        <p>Si el resultado no es el que acordamos, volvemos a operar sin costo adicional. Sin letra pequeña, sin condiciones imposibles de cumplir.</p>
+      </div>
+      <div class="diff-card reveal reveal-d2">
+        <span class="diff-card-num">02</span>
+        <div class="diff-card-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>24 controles postoperatorios</h3>
+        <p>Únicos en Colombia. Mientras otras clínicas te ven una vez, nosotros te acompañamos durante todo el año de crecimiento — con seguimiento real.</p>
+      </div>
+      <div class="diff-card reveal reveal-d3">
+        <span class="diff-card-num">03</span>
+        <div class="diff-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h3>Especialistas certificados FUE</h3>
+        <p>El Dr. Fabián Carreño y la Dra. Gloris Morales operan personalmente cada caso. No un técnico, no un asistente — el especialista, desde el primer folículo hasta el último.</p>
+      </div>
+      <div class="diff-card reveal reveal-d4">
+        <span class="diff-card-num">04</span>
+        <div class="diff-card-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+        </div>
+        <h3>Financiamiento disponible</h3>
+        <p>Para que el presupuesto no sea la razón por la que sigues esperando. Cuotas cómodas, aprobación en 24 horas, solo tu cédula y tu número.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     5. TESTIMONIOS
+══════════════════════════════ -->
+<section class="testimonials section">
+  <div class="container">
+    <div class="test-intro reveal">
+      <h2>Hombres reales, en sus propias palabras.</h2>
+      <p style="color:var(--c-text);font-size:1.05rem">Sin edición, sin guión, sin filtro.</p>
+    </div>
+    <div class="test-track-wrap reveal">
+      <div class="test-track" id="testTrack">
+        <div class="test-card">
+          <div class="test-thumb">
+            <a href="https://wa.me/573208653730?text=Vi+el+testimonio+de+Juli%C3%A1n+y+quiero+el+mismo+resultado" class="test-play" aria-label="Ver testimonio">
+              <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </a>
+            <span class="test-thumb-label">Bogotá · 8 meses post-op</span>
+          </div>
+          <div class="test-body">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">Desde la valoración con la Dra. Gloris sentí que estaba en el lugar correcto. Me explicó cada etapa con una honestidad que no encontré en otros lugares.</p>
+            <div class="test-name">Julián Castro</div>
+            <div class="test-city">Bogotá</div>
+          </div>
+        </div>
+        <div class="test-card">
+          <div class="test-thumb">
+            <a href="https://wa.me/573208653730?text=Quiero+el+mismo+resultado+que+Mateo+G%C3%B3mez" class="test-play" aria-label="Ver testimonio">
+              <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </a>
+            <span class="test-thumb-label">Medellín · 10 meses post-op</span>
+          </div>
+          <div class="test-body">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">El Dr. Fabián Carreño es un artista. Mi línea frontal quedó tan natural que nadie nota que me hice un implante. Fue la mejor decisión que tomé.</p>
+            <div class="test-name">Mateo Gómez</div>
+            <div class="test-city">Medellín</div>
+          </div>
+        </div>
+        <div class="test-card">
+          <div class="test-thumb">
+            <a href="https://wa.me/573208653730?text=Vi+el+resultado+de+Andr%C3%A9s+y+quiero+hablar+con+un+asesor" class="test-play" aria-label="Ver testimonio">
+              <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </a>
+            <span class="test-thumb-label">Cali · 12 meses post-op</span>
+          </div>
+          <div class="test-body">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">Vine desde Cali solo por los 24 controles postoperatorios. Ninguna otra clínica en Colombia ofrece ese nivel de seguimiento. Vale cada peso.</p>
+            <div class="test-name">Andrés Rivera</div>
+            <div class="test-city">Cali</div>
+          </div>
+        </div>
+        <div class="test-card">
+          <div class="test-thumb">
+            <a href="https://wa.me/573208653730?text=Quiero+ser+el+pr%C3%B3ximo+caso+de+%C3%A9xito+de+Innovart" class="test-play" aria-label="Ver testimonio">
+              <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </a>
+            <span class="test-thumb-label">Barranquilla · 9 meses post-op</span>
+          </div>
+          <div class="test-body">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">Buscaba algo definitivo y lo encontré. El procedimiento no dolió nada gracias a la precisión del equipo. Hoy me tomo fotos sin pensarlo dos veces.</p>
+            <div class="test-name">Felipe Suárez</div>
+            <div class="test-city">Barranquilla</div>
+          </div>
+        </div>
+        <div class="test-card">
+          <div class="test-thumb">
+            <a href="https://wa.me/573208653730?text=Quiero+iniciar+mi+transformaci%C3%B3n+como+Sebasti%C3%A1n" class="test-play" aria-label="Ver testimonio">
+              <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </a>
+            <span class="test-thumb-label">Bucaramanga · 11 meses post-op</span>
+          </div>
+          <div class="test-body">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">El Dr. Fabián se toma el tiempo de diseñar la zona que armoniza con tu rostro. No es solo poner cabello — es recuperar la imagen que tenías.</p>
+            <div class="test-name">Sebastián Ortiz</div>
+            <div class="test-city">Bucaramanga</div>
+          </div>
+        </div>
+        <div class="test-card">
+          <div class="test-thumb">
+            <a href="https://wa.me/573208653730?text=Quiero+saber+si+califico+para+un+trasplante+capilar" class="test-play" aria-label="Ver testimonio">
+              <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </a>
+            <span class="test-thumb-label">Pereira · 13 meses post-op</span>
+          </div>
+          <div class="test-body">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">Después de mucho investigar elegí Innovart por su reputación. El trato humano es excepcional — cualquier duda la respondían ese mismo día por WhatsApp.</p>
+            <div class="test-name">Daniel Vargas</div>
+            <div class="test-city">Pereira</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="test-nav">
+      <button onclick="scrollTrack(-1)" aria-label="Anterior">&#8592;</button>
+      <button onclick="scrollTrack(1)" aria-label="Siguiente">&#8594;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     6. PROCESO
+══════════════════════════════ -->
+<section class="process section">
+  <div class="container">
+    <div class="process-intro reveal">
+      <h2>Así funciona.<br><span class="text-gold">Simple, claro, sin sorpresas.</span></h2>
+      <p>De la primera consulta a los resultados finales — aquí va todo lo que vas a vivir.</p>
+    </div>
+    <div class="process-timeline">
+      <div class="process-step reveal reveal-d1">
+        <div class="process-node">①</div>
+        <h3>Nos escribes por WhatsApp</h3>
+        <p>Orientación rápida de tu caso. Te respondemos en menos de 2 horas en horario hábil.</p>
+      </div>
+      <div class="process-step reveal reveal-d2">
+        <div class="process-node">②</div>
+        <h3>Valoración gratuita con el especialista</h3>
+        <p>El especialista revisa tu caso personalmente. 20 minutos, sin costo, sin compromiso.</p>
+      </div>
+      <div class="process-step reveal reveal-d3">
+        <div class="process-node">③</div>
+        <h3>Plan claro y personalizado</h3>
+        <p>Tiempos exactos, opciones técnicas, costos y opciones de financiamiento. Sin letra pequeña.</p>
+      </div>
+      <div class="process-step reveal reveal-d4">
+        <div class="process-node">④</div>
+        <h3>Tu procedimiento + 24 controles</h3>
+        <p>Acompañamiento durante todo el año de crecimiento. Seguimiento real, no una llamada suelta.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     7. FINANCIAMIENTO
+══════════════════════════════ -->
+<section class="financing section">
+  <div class="container">
+    <div class="financing-inner">
+      <div class="financing-text reveal">
+        <h2>El precio no debería ser<br>lo que te impida tener<br><span class="text-gold">el resultado que quieres.</span></h2>
+        <p>Sabemos que llevas tiempo "esperando el momento". Tenemos opciones de financiamiento para que ese momento sea ahora.</p>
+        <ul class="financing-list">
+          <li>Cuotas desde $XXX.000/mes — cómodas y sin sorpresas</li>
+          <li>Aprobación en 24 horas — respuesta rápida</li>
+          <li>Solo necesitas tu cédula y tu número</li>
+          <li>¿Historial de crédito negativo? Lo evaluamos diferente</li>
+        </ul>
+        <a href="https://wa.me/573208653730?text=Quiero+ver+opciones+de+financiamiento+para+mi+trasplante+capilar" class="btn btn-gold">
+          Quiero ver opciones de financiamiento →
+        </a>
+      </div>
+      <div class="reveal reveal-d2">
+        <div class="financing-logos">
+          <div class="financing-logo">BANCOLOMBIA</div>
+          <div class="financing-logo">ADDI</div>
+          <div class="financing-logo">SISTECRÉDITO</div>
+          <div class="financing-logo">CREDITOP</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     8. SEDES
+══════════════════════════════ -->
+<section class="locations section-sm">
+  <div class="container">
+    <div class="locations-intro reveal">
+      <h2>Estamos donde estás tú.</h2>
+      <p>5 sedes en Colombia y Panamá, más valoraciones virtuales para todo el mundo.</p>
+    </div>
+    <div class="locations-grid">
+      <div class="location-card reveal reveal-d1">
+        <div class="location-pin"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+        <div class="location-city">Bogotá</div>
+        <div class="location-addr">Calle 119 #7-84<br>Diagonal a Clínica SantaFe</div>
+      </div>
+      <div class="location-card reveal reveal-d2">
+        <div class="location-pin"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+        <div class="location-city">Medellín</div>
+        <div class="location-addr">C.C. Oviedo<br>Torre Médica, Cons. 678</div>
+      </div>
+      <div class="location-card reveal reveal-d3">
+        <div class="location-pin"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+        <div class="location-city">Barranquilla</div>
+        <div class="location-addr">Green Tower<br>Calle 77B #57-103, Cons. 706</div>
+      </div>
+      <div class="location-card reveal reveal-d4">
+        <div class="location-pin"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+        <div class="location-city">Bucaramanga</div>
+        <div class="location-addr">Centro HIC Km 7<br>Cons. 719N, Piso 7</div>
+      </div>
+      <div class="location-card reveal reveal-d4">
+        <div class="location-pin"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+        <div class="location-city">Panamá</div>
+        <div class="location-addr">Town Center<br>Torre Arboleda</div>
+      </div>
+    </div>
+    <div class="locations-virtual reveal">
+      <p>¿No estás en ninguna de estas ciudades? Agenda tu <strong>valoración virtual</strong> desde donde estés — sin costo, sin compromiso.</p>
+      <a href="https://wa.me/573208653730?text=Quiero+agendar+una+valoraci%C3%B3n+virtual+para+trasplante+capilar" class="btn btn-gold">
+        Agendar valoración virtual →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     9. GARANTÍAS DARK
+══════════════════════════════ -->
+<section class="guarantees">
+  <div class="container">
+    <div class="guarantees-inner">
+      <div class="guarantees-heading reveal">
+        <h2>Respaldamos<br>cada procedimiento.</h2>
+        <p>No son promesas de marketing. Son compromisos reales, por escrito, que cumplimos antes de que los pidas.</p>
+        <br/>
+        <a href="https://wa.me/573208653730?text=Quiero+congelar+mi+precio+y+agendar+una+valoraci%C3%B3n" class="btn btn-gold" style="margin-top:16px">
+          Congelar mi precio y agendar →
+        </a>
+      </div>
+      <div class="guarantees-list">
+        <div class="guarantee-item reveal reveal-d1">
+          <div class="guarantee-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+          <div class="guarantee-text"><strong>Garantía de resultado por escrito</strong>Si el resultado no es el acordado, volvemos a operar sin costo adicional.</div>
+        </div>
+        <div class="guarantee-item reveal reveal-d2">
+          <div class="guarantee-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+          <div class="guarantee-text"><strong>IPS habilitada — Ministerio de Salud Colombia</strong>Cumplimos con todos los estándares de habilitación médica del país.</div>
+        </div>
+        <div class="guarantee-item reveal reveal-d3">
+          <div class="guarantee-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+          <div class="guarantee-text"><strong>100% especialistas certificados en técnica FUE</strong>Cada procedimiento lo ejecuta el médico especialista, no un asistente.</div>
+        </div>
+        <div class="guarantee-item reveal reveal-d4">
+          <div class="guarantee-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+          <div class="guarantee-text"><strong>Si no eres candidato, te lo decimos con honestidad</strong>Nunca operamos a alguien que no tiene las condiciones para un buen resultado.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     10. FAQ
+══════════════════════════════ -->
+<section class="faq section">
+  <div class="container">
+    <div class="faq-intro reveal">
+      <h2>Preguntas frecuentes</h2>
+      <p>Lo que todo el mundo quiere saber antes de dar el paso.</p>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          ¿Duele el procedimiento?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">No. El procedimiento se realiza con anestesia local — no sientes dolor durante el proceso. La mayoría de nuestros pacientes nos dicen que fue mucho más cómodo de lo que esperaban. El momento más incómodo es la aplicación de la anestesia, que dura menos de 2 minutos.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          ¿Cuánto tiempo necesito de recuperación?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Es ambulatorio — sales caminando el mismo día. Puedes trabajar desde el día siguiente si tu trabajo es de escritorio. En 7 a 10 días ya no hay señales visibles de que te hiciste algo. Puedes viajar desde el tercer día.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          ¿Cuándo voy a ver los resultados?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">El proceso tiene etapas. Los primeros 3 meses verás el área trasplantada estabilizarse. Entre el mes 4 y el 8 empieza el crecimiento visible. El resultado final, con el cabello completamente desarrollado, se alcanza entre los 12 y 18 meses. Por eso los 24 controles son tan importantes.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          ¿Qué pasa si el resultado no es el que esperaba?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Volvemos a operar sin costo adicional. Sin letra pequeña, sin condiciones imposibles de cumplir. Si después de completado el proceso de crecimiento el resultado no es el que acordamos, realizamos la corrección necesaria. Eso es lo que significa nuestra garantía de resultado.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          ¿Puedo pagarlo en cuotas?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Sí. Trabajamos con opciones de financiamiento para que el presupuesto no sea lo que te impida tener el resultado que quieres. Aprobación en 24 horas, solo necesitas tu cédula y tu número. Pregúntanos por las condiciones actuales.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          ¿Quién realiza el procedimiento?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">El Dr. Fabián Carreño o la Dra. Gloris Morales — el especialista — desde el primer folículo hasta el último. En Innovart nunca delegamos el procedimiento a técnicos o asistentes. Esa es una diferencia que sientes en el resultado.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     11. CTA FINAL
+══════════════════════════════ -->
+<section class="cta-final">
+  <div class="cta-final-inner">
+    <h2 class="reveal">El momento de seguir<br>esperando ya pasó.</h2>
+    <p class="reveal reveal-d1">Cada mes que pasa hay menos zona donante disponible. La caída no para sola. La valoración es gratuita, dura 20 minutos, y te dice exactamente si tienes solución.</p>
+    <div class="cta-final-trust reveal reveal-d2">
+      <div class="cta-final-trust-item">Sin compromiso — la valoración es gratuita y sin presión de venta</div>
+      <div class="cta-final-trust-item">Tu caso lo revisa el especialista personalmente — no un asesor comercial</div>
+      <div class="cta-final-trust-item">Si no eres candidato, te lo decimos con honestidad</div>
+    </div>
+    <div class="cta-final-ctas reveal reveal-d3">
+      <a href="https://wa.me/573208653730?text=Quiero+iniciar+mi+transformaci%C3%B3n+hoy+mismo+con+Innovart+Medical" class="btn btn-gold" style="font-size:1.05rem;padding:20px 44px">
+        Iniciar mi transformación hoy mismo →
+      </a>
+      <a href="https://wa.me/573208653730?text=Hola%2C+escribo+desde+la+landing+de+Innovart+Medical" class="btn btn-outline-white">
+        O escríbenos por WhatsApp ahora
+      </a>
+    </div>
+    <p class="cta-micro reveal reveal-d4">Respondemos en menos de 2 horas en horario hábil · Lunes a Sábado 8am–6pm</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <span class="footer-brand">INNOVART MEDICAL IPS</span>
+    <p>Clínica especializada en trasplante capilar · Colombia y Panamá</p>
+    <p style="margin-top:8px">
+      <a href="https://wa.me/573208653730">WhatsApp: +57 320 865 3730</a> &nbsp;·&nbsp;
+      <a href="mailto:innovartmedicalips@gmail.com">innovartmedicalips@gmail.com</a>
+    </p>
+    <p style="margin-top:12px;font-size:.75rem;opacity:.5">
+      Los resultados pueden variar según cada paciente. Consulte con nuestro equipo médico para una valoración personalizada.<br>
+      © 2026 Innovart Medical IPS · Todos los derechos reservados
+    </p>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════
+     WHATSAPP STICKY
+══════════════════════════════ -->
+<a href="https://wa.me/573208653730?text=Hola%2C+quiero+informaci%C3%B3n+sobre+el+trasplante+capilar+en+Innovart+Medical"
+   class="wa-sticky" aria-label="Contactar por WhatsApp">
+  <span class="wa-sticky-label">¿Tienes dudas? Escríbenos</span>
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16 1C7.716 1 1 7.716 1 16c0 2.628.662 5.1 1.826 7.268L1 31l7.938-1.796A14.94 14.94 0 0016 31c8.284 0 15-6.716 15-15S24.284 1 16 1zm0 27.2a12.14 12.14 0 01-6.174-1.686l-.442-.264-4.714 1.066 1.088-4.59-.29-.47A12.2 12.2 0 113.8 16 12.216 12.216 0 0116 28.2zm6.694-9.154c-.366-.184-2.168-1.07-2.504-1.19-.336-.122-.582-.184-.826.184s-.95 1.19-1.162 1.436c-.214.244-.428.274-.794.09-.366-.184-1.546-.57-2.944-1.816-1.088-.97-1.824-2.168-2.038-2.534-.214-.366-.022-.562.16-.746.164-.162.366-.428.55-.642.184-.214.244-.366.366-.61.122-.244.06-.458-.03-.642-.092-.184-.826-1.988-1.13-2.726-.298-.714-.602-.618-.826-.63-.214-.01-.458-.014-.702-.014s-.642.09-.978.458c-.336.366-1.282 1.252-1.282 3.054s1.312 3.542 1.496 3.786c.184.244 2.582 3.944 6.256 5.53.874.376 1.556.6 2.086.77.876.278 1.674.238 2.304.144.702-.104 2.168-.886 2.474-1.742.304-.856.304-1.59.214-1.742-.09-.152-.336-.244-.702-.428z"/>
+  </svg>
+</a>
+
+<!-- ══════════════════════════════
+     JAVASCRIPT
+══════════════════════════════ -->
+<script>
+  // ── SCROLL REVEAL ──
+  const revealEls = document.querySelectorAll('.reveal');
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => revealObs.observe(el));
+
+  // ── COUNTER ANIMATION ──
+  function animateCounter(el, target, duration = 1800) {
+    const start = performance.now();
+    const update = (now) => {
+      const p = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      const val = Math.floor(eased * target);
+      el.textContent = val >= 1000 ? '+' + val.toLocaleString('es-CO') : val;
+      if (p < 1) requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+  }
+  const counterObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const target = parseInt(e.target.dataset.counter);
+        if (!isNaN(target)) animateCounter(e.target, target);
+        counterObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('[data-counter]').forEach(el => counterObs.observe(el));
+
+  // ── FAQ ACORDEÓN ──
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // ── TESTIMONIOS SLIDER ──
+  function scrollTrack(dir) {
+    const track = document.getElementById('testTrack').parentElement;
+    track.scrollBy({ left: dir * 360, behavior: 'smooth' });
+  }
+
+  // ── VIDEO HERO LAZY LOAD ──
+  const heroVideo = document.querySelector('.hero-video');
+  if (heroVideo && window.innerWidth > 768) {
+    const src = 'TU-VIDEO-AQUI.mp4'; // ← reemplaza con tu video
+    // heroVideo.src = src; // descomenta cuando tengas el video
+  }
+</script>
+
+</body>
+</html>

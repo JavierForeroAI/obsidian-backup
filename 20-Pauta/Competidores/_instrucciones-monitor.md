@@ -59,7 +59,29 @@ Buscá en Google Maps "DHI Colombia Bogotá" usando playwright y capturá:
 Para Meta Ads Library buscá "DHI Colombia trasplante":
 - ¿Anuncios activos?
 
-## Paso 5 — Reviews Google Maps (los 3)
+## Paso 5 — Monitoreo de Rogans Care
+
+Navegá a https://rogansya.com/implantes-capilares/
+
+Capturá:
+- ¿Cambios en headline, CTA o precios vs semana anterior?
+- ¿Nuevas secciones, testimonios o servicios?
+- ¿Promociones o descuentos visibles?
+
+Luego Meta Ads Library (https://www.facebook.com/ads/library/?country=CO&q=rogans&search_type=keyword_unordered):
+- ¿Cuántos anuncios activos?
+- ¿Qué formatos usan (imagen, video, carrusel)?
+- ¿Ángulo del copy dominante (garantía, precio, testimonial, técnica)?
+- ¿Novedades vs semana anterior?
+
+Google Ads: el competidor tiene campaña activa en Google (`utm_campaign=hight+ticket_ads2`). Si es posible buscar "implante capilar colombia" y verificar si su anuncio aparece y qué copy usa.
+
+### Google Maps
+Buscá "Rogans trasplante capilar Bogotá":
+- Rating actual y total de reviews
+- Últimas 2-3 reviews visibles
+
+## Paso 6 — Reviews Google Maps (los 4)
 
 Para cada competidor, buscá en Google Maps y anotá:
 - Rating actual (X.X ⭐)
@@ -122,6 +144,29 @@ _2-3 bullets de lo más relevante detectado esta semana_
 
 ### Google Maps
 [misma estructura]
+
+---
+
+## Rogans Care
+
+### Sitio web (https://rogansya.com/implantes-capilares/)
+- Cambios en headline/CTA: sí/no — [descripción]
+- Cambios en precios o garantía: sí/no — [descripción]
+- Nuevas secciones o testimonios: [descripción o "sin cambios"]
+
+### Meta Ads
+- Anuncios activos: X
+- Formatos: imagen / video / carrusel
+- Ángulo dominante: [garantía / precio / testimonial / técnica]
+- Novedades vs semana anterior: [descripción o "sin cambios"]
+
+### Google Ads
+- ¿Aparece en búsqueda "implante capilar colombia"?: sí/no
+- Copy del anuncio detectado: [texto o "no visible"]
+
+### Google Maps
+- Rating: X.X ⭐ (N reviews)
+- Tendencia reviews: positiva / negativa / neutra
 
 ---
 

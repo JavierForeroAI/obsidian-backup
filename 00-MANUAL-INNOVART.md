@@ -202,6 +202,7 @@ Luego reinstalar Claude Code desde claude.ai/code y reconfigurar los hooks.
 | **Mediarte** | $14M–$17.5M COP | 22+ sedes, Long FUE sin rasurar |
 | **HERO Institute** | No publicado | Robótica ARTAS, 70% pacientes internacionales |
 | **DHI Colombia** | No publicado | Especialización exclusiva en DHI |
+| **Rogans Care** | Desde $10M COP | Garantía 10% repoblamiento, financiamiento 0%, cobertura nacional virtual · Landing Google Ads activa analizada jun-2026 |
 
 **Ventaja de Innovart:** 2x más barato que Mediarte para el mismo procedimiento. No está siendo comunicado en pauta actualmente.
 
