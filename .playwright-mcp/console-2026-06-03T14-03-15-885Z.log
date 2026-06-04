@@ -1,0 +1,9 @@
+[      54ms] [WARNING] [Meta Pixel] - Duplicate Pixel ID: 501146658671340. @ https://connect.facebook.net/en_US/fbevents.js:183
+[    1166ms] [LOG] 
+%c¡Detente! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ https://static.xx.fbcdn.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js:244
+[    1166ms] [LOG] 
+%cEsta función del navegador está pensada para desarrolladores. Si alguna persona te ha indicado que copiaras y pegaras algo aquí para habilitar una función de Facebook o para "hackear" la cuenta de alguien, se trata de un fraude. Si lo haces, esta persona podrá acceder a tu cuenta. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js:244
+[    1166ms] [LOG] 
+%cPara obtener más información, consulta https://www.facebook.com/selfxss. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js:244
+[    1166ms] [LOG] 
+%c  @ https://static.xx.fbcdn.net/rsrc.php/v4/yK/r/GdpyBJ3A7sG.js:244

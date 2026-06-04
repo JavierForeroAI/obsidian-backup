@@ -1,0 +1,380 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e6]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: https://mediarte.co/
+        - generic [ref=e14]:
+          - text: 
+          - generic [ref=e15]:
+            - list [ref=e17]:
+              - listitem [ref=e18]:
+                - link "Inicio" [ref=e19] [cursor=pointer]:
+                  - /url: https://mediarte.co/
+              - listitem [ref=e20]:
+                - link "Nosotros" [ref=e21] [cursor=pointer]:
+                  - /url: https://mediarte.co/clinica-capilar-mediarte/
+                  - text: Nosotros
+                  - generic [ref=e22]: 璉
+              - listitem [ref=e23]:
+                - link "Trasplante" [ref=e24] [cursor=pointer]:
+                  - /url: https://mediarte.co/tecnica-fue/
+                  - text: Trasplante
+                  - generic [ref=e25]: 璉
+              - listitem [ref=e26]:
+                - link "Terapias" [ref=e27] [cursor=pointer]:
+                  - /url: "#"
+                  - text: Terapias
+                  - generic [ref=e28]: 璉
+              - listitem [ref=e29]:
+                - link "Precio" [ref=e30] [cursor=pointer]:
+                  - /url: https://mediarte.co/precios-implante-de-cabello/
+              - listitem [ref=e31]:
+                - link "Resultados" [ref=e32] [cursor=pointer]:
+                  - /url: https://mediarte.co/resultados-implante-capilar/
+              - listitem [ref=e33]:
+                - link "Noticias" [ref=e34] [cursor=pointer]:
+                  - /url: https://mediarte.co/noticias/
+              - listitem [ref=e35]:
+                - link "Contacto" [ref=e36] [cursor=pointer]:
+                  - /url: https://mediarte.co/contactanos-mediarte/
+            - generic: 
+    - generic [ref=e39]:
+      - text: 
+      - generic [ref=e42]:
+        - generic [ref=e44]:
+          - generic [ref=e45]: Especialistas en Implante capilar Bogotá y colombia
+          - paragraph [ref=e47]: ¡Recupera tu Confianza con Mediarte!
+          - link "Agenda una cita" [ref=e49] [cursor=pointer]:
+            - /url: https://mediarte.co/citas-para-implante-de-pelo/
+            - generic [ref=e51]: Agenda una cita
+          - link "Resultados" [ref=e54] [cursor=pointer]:
+            - /url: https://mediarte.co/resultados-implante-capilar/
+            - text: Resultados
+            - generic [ref=e55]: 
+        - generic [ref=e57]:
+          - generic [ref=e61]: Implante Capilar F.U.E
+          - generic [ref=e65]: Implante en barba
+          - generic [ref=e69]: Mesoterapia Capilar
+      - generic [ref=e75]:
+        - heading "Nuestra Técnica De Implante Capilar bogotá Es La Más Avanzada" [level=1] [ref=e77]
+        - heading "En Mediarte, ofrecemos soluciones avanzadas de implante capilar Bogotá, trasplantes de barba y cejas con técnicas modernas como FUE. Nuestros expertos garantizan resultados naturales y duraderos." [level=5] [ref=e79]:
+          - generic [ref=e80]:
+            - text: En Mediarte, ofrecemos soluciones avanzadas de
+            - strong [ref=e81]: implante capilar Bogotá
+            - text: ", trasplantes de barba y cejas con técnicas modernas como FUE. Nuestros expertos garantizan resultados naturales y duraderos."
+      - generic [ref=e83]:
+        - list [ref=e95]:
+          - listitem [ref=e96]:
+            - generic [ref=e98]: זּ
+            - generic [ref=e99]: Tecnología de Alto Desempeño
+        - generic [ref=e101]:
+          - heading "I.P.S Dedicada Mediarte" [level=2] [ref=e103]
+          - paragraph [ref=e105]: En Mediarte Medical Center confiamos tanto en nuestro trabajo que ofrecemos una garantía escrita sobre el resultado permitiendo que nuestros pacientes cumplan su sueño de recuperar el cabello con la técnica FUE, sin cicatriz, sin dolor, sin suturas, sin bisturí y con una rápida recuperación.
+      - generic [ref=e109]:
+        - heading "Beneficios Mediarte" [level=3] [ref=e111]
+        - generic [ref=e115]:
+          - generic [ref=e122]:
+            - heading "Respaldo" [level=3] [ref=e123]
+            - paragraph [ref=e124]: Somos la Clínica Capilar Colombiana más grande con sedes en Bogotá, Chía, Medellín, Cali, Barranquilla, Cartagena, Villavicencio, Ibagué, Monteria, Valledupar, Pereira y Bucaramanga, así como en México y Panamá, nuestros resultados hablan pos sí solos, es por eso que el 98% de nuestros pacientes nos recomiendan. Confiamos tanto en nuestro trabajo que otorgamos una garantía escrita por el crecimiento del cabello implantado.
+          - generic [ref=e128]:
+            - heading "Experiencia" [level=3] [ref=e129]
+            - paragraph [ref=e130]: Nuestros profesionales se dedican tiempo completo al microimplante capilar FUE, realizamos procedimientos a diario por lo cual contamos con el conocimiento teórico y las habilidades prácticas necesarias para obtener resultados de alta calidad.
+          - generic [ref=e137]:
+            - heading "Todo Incluido" [level=3] [ref=e138]
+            - paragraph [ref=e139]: "Dentro del precio se incluye:"
+          - list [ref=e141]:
+            - listitem [ref=e142]:
+              - img [ref=e144]
+              - generic [ref=e146]: Honorarios Médicos
+            - listitem [ref=e147]:
+              - img [ref=e149]
+              - generic [ref=e151]: Insumos
+            - listitem [ref=e152]:
+              - img [ref=e154]
+              - generic [ref=e156]: Alimentación
+            - listitem [ref=e157]:
+              - img [ref=e159]
+              - generic [ref=e161]: Medicamentos Profilácticos
+            - listitem [ref=e162]:
+              - img [ref=e164]
+              - generic [ref=e166]: Controles
+            - listitem [ref=e167]:
+              - img [ref=e169]
+              - generic [ref=e171]: Terapia Capilar
+          - paragraph [ref=e173]: Queremos darte una solución confiable y duradera, descarga nuestra presentación y mira todos los beneficios que tenemos para ti.
+      - heading "Preguntas Frecuentes" [level=4] [ref=e186]
+      - generic [ref=e187]:
+        - generic [ref=e189]:
+          - link "¿Cuántos folículos necesito?" [ref=e192] [cursor=pointer]:
+            - /url: "#expand-b1eb7d9"
+            - generic [ref=e193]: ¿Cuántos folículos necesito?
+            - generic [ref=e194]:
+              - generic [ref=e196]: 璉
+              - text: 秊
+          - link "¿Cual es la densidad media sin pérdida capilar?" [ref=e199] [cursor=pointer]:
+            - /url: "#expand-36120d0"
+            - generic [ref=e200]: ¿Cual es la densidad media sin pérdida capilar?
+            - generic [ref=e201]:
+              - generic [ref=e203]: 璉
+              - text: 秊
+          - link "¿Debo raparme la cabeza?" [ref=e206] [cursor=pointer]:
+            - /url: "#expand-3192bfe"
+            - generic [ref=e207]: ¿Debo raparme la cabeza?
+            - generic [ref=e208]:
+              - generic [ref=e210]: 璉
+              - text: 秊
+          - link "¿En cuánto tiempo se ven los resultados de un trasplante capilar?" [ref=e213] [cursor=pointer]:
+            - /url: "#expand-70a952e"
+            - generic [ref=e214]: ¿En cuánto tiempo se ven los resultados de un trasplante capilar?
+            - generic [ref=e215]:
+              - generic [ref=e217]: 璉
+              - text: 秊
+          - link "¿El resultado es duradero?" [ref=e220] [cursor=pointer]:
+            - /url: "#expand-8369d98"
+            - generic [ref=e221]: ¿El resultado es duradero?
+            - generic [ref=e222]:
+              - generic [ref=e224]: 璉
+              - text: 秊
+          - link "¿Cuánto dura la cirugía de injerto capilar?" [ref=e227] [cursor=pointer]:
+            - /url: "#expand-e44a22c"
+            - generic [ref=e228]: ¿Cuánto dura la cirugía de injerto capilar?
+            - generic [ref=e229]:
+              - generic [ref=e231]: 璉
+              - text: 秊
+          - link "¿Es doloroso?" [ref=e234] [cursor=pointer]:
+            - /url: "#expand-e71a615"
+            - generic [ref=e235]: ¿Es doloroso?
+            - generic [ref=e236]:
+              - generic [ref=e238]: 璉
+              - text: 秊
+          - link "¿Cuántos Cabellos se caen la día?" [ref=e241] [cursor=pointer]:
+            - /url: "#expand-6613ff2"
+            - generic [ref=e242]: ¿Cuántos Cabellos se caen la día?
+            - generic [ref=e243]:
+              - generic [ref=e245]: 璉
+              - text: 秊
+          - link "¿Por qué se cae el cabello?" [ref=e248] [cursor=pointer]:
+            - /url: "#expand-a378b08"
+            - generic [ref=e249]: ¿Por qué se cae el cabello?
+            - generic [ref=e250]:
+              - generic [ref=e252]: 璉
+              - text: 秊
+          - link "¿A quienes afecta la caída del cabello?" [ref=e255] [cursor=pointer]:
+            - /url: "#expand-89f5dc9"
+            - generic [ref=e256]: ¿A quienes afecta la caída del cabello?
+            - generic [ref=e257]:
+              - generic [ref=e259]: 璉
+              - text: 秊
+          - link "¿Cómo evitar la caída del cabello?" [ref=e262] [cursor=pointer]:
+            - /url: "#expand-f6e10bb"
+            - generic [ref=e263]: ¿Cómo evitar la caída del cabello?
+            - generic [ref=e264]:
+              - generic [ref=e266]: 璉
+              - text: 秊
+          - link "¿Las mujeres se pueden hacer un trasplante capilar?" [ref=e269] [cursor=pointer]:
+            - /url: "#expand-ffd7ef0"
+            - generic [ref=e270]: ¿Las mujeres se pueden hacer un trasplante capilar?
+            - generic [ref=e271]:
+              - generic [ref=e273]: 璉
+              - text: 秊
+          - link "¿Cuándo hacer un trasplante capilar?" [ref=e276] [cursor=pointer]:
+            - /url: "#expand-b33dcf9"
+            - generic [ref=e277]: ¿Cuándo hacer un trasplante capilar?
+            - generic [ref=e278]:
+              - generic [ref=e280]: 璉
+              - text: 秊
+          - link "¿Qué debo hacer después de la primera semana de la cirugía?" [ref=e283] [cursor=pointer]:
+            - /url: "#expand-34ec436"
+            - generic [ref=e284]: ¿Qué debo hacer después de la primera semana de la cirugía?
+            - generic [ref=e285]:
+              - generic [ref=e287]: 璉
+              - text: 秊
+        - generic [ref=e289]:
+          - link "¿Qué debo hacer antes de un injerto capilar?" [ref=e292] [cursor=pointer]:
+            - /url: "#expand-2fbe466"
+            - generic [ref=e293]: ¿Qué debo hacer antes de un injerto capilar?
+            - generic [ref=e294]:
+              - generic [ref=e296]: 璉
+              - text: 秊
+          - link "¿Cuáles son los exámenes previos al trasplante capilar?" [ref=e299] [cursor=pointer]:
+            - /url: "#expand-7bf6656"
+            - generic [ref=e300]: ¿Cuáles son los exámenes previos al trasplante capilar?
+            - generic [ref=e301]:
+              - generic [ref=e303]: 璉
+              - text: 秊
+          - link "¿Cómo funciona el implanter o lápiz implantador?" [ref=e306] [cursor=pointer]:
+            - /url: "#expand-f82feb5"
+            - generic [ref=e307]: ¿Cómo funciona el implanter o lápiz implantador?
+            - generic [ref=e308]:
+              - generic [ref=e310]: 璉
+              - text: 秊
+          - link "¿Cuáles técnicas de trasplante capilar existen?" [ref=e313] [cursor=pointer]:
+            - /url: "#expand-2336034"
+            - generic [ref=e314]: ¿Cuáles técnicas de trasplante capilar existen?
+            - generic [ref=e315]:
+              - generic [ref=e317]: 璉
+              - text: 秊
+          - link "¿Cuáles técnicas de implante capilar se usan en Colombia?" [ref=e320] [cursor=pointer]:
+            - /url: "#expand-e5028c7"
+            - generic [ref=e321]: ¿Cuáles técnicas de implante capilar se usan en Colombia?
+            - generic [ref=e322]:
+              - generic [ref=e324]: 璉
+              - text: 秊
+          - link "¿Cuáles son las fases del implante capilar?" [ref=e327] [cursor=pointer]:
+            - /url: "#expand-77b9ff6"
+            - generic [ref=e328]: ¿Cuáles son las fases del implante capilar?
+            - generic [ref=e329]:
+              - generic [ref=e331]: 璉
+              - text: 秊
+          - link "¿Quedan cicatrices después de un injerto capilar?" [ref=e334] [cursor=pointer]:
+            - /url: "#expand-eebf88f"
+            - generic [ref=e335]: ¿Quedan cicatrices después de un injerto capilar?
+            - generic [ref=e336]:
+              - generic [ref=e338]: 璉
+              - text: 秊
+          - link "¿Cuánto tiempo de recuperación e incapacidad se requiere en un trasplante capilar?" [ref=e341] [cursor=pointer]:
+            - /url: "#expand-1e39a30"
+            - generic [ref=e342]: ¿Cuánto tiempo de recuperación e incapacidad se requiere en un trasplante capilar?
+            - generic [ref=e343]:
+              - generic [ref=e345]: 璉
+              - text: 秊
+          - link "¿Cómo se hace un trasplante de barba?" [ref=e348] [cursor=pointer]:
+            - /url: "#expand-0671e1e"
+            - generic [ref=e349]: ¿Cómo se hace un trasplante de barba?
+            - generic [ref=e350]:
+              - generic [ref=e352]: 璉
+              - text: 秊
+          - link "¿Cuidados posteriores al implante de barba?" [ref=e355] [cursor=pointer]:
+            - /url: "#expand-999aa90"
+            - generic [ref=e356]: ¿Cuidados posteriores al implante de barba?
+            - generic [ref=e357]:
+              - generic [ref=e359]: 璉
+              - text: 秊
+          - link "¿Quienes pueden hacerse un implante de barba?" [ref=e362] [cursor=pointer]:
+            - /url: "#expand-e9ad48e"
+            - generic [ref=e363]: ¿Quienes pueden hacerse un implante de barba?
+            - generic [ref=e364]:
+              - generic [ref=e366]: 璉
+              - text: 秊
+          - link "¿Cuál es el precio de un implante capilar en Mediarte?" [ref=e369] [cursor=pointer]:
+            - /url: "#expand-c6222b6"
+            - generic [ref=e370]: ¿Cuál es el precio de un implante capilar en Mediarte?
+            - generic [ref=e371]:
+              - generic [ref=e373]: 璉
+              - text: 秊
+          - link "¿Debo hacer algo después del injerto capilar?" [ref=e376] [cursor=pointer]:
+            - /url: "#expand-c96d51c"
+            - generic [ref=e377]: ¿Debo hacer algo después del injerto capilar?
+            - generic [ref=e378]:
+              - generic [ref=e380]: 璉
+              - text: 秊
+      - generic [ref=e385]:
+        - heading "Testimonios Reales" [level=4] [ref=e387]
+        - generic [ref=e394]:
+          - generic [ref=e395]: ★ ★
+          - generic [ref=e396]: ★ ★
+          - generic [ref=e397]: ★ ★
+          - generic [ref=e398]: ★ ★
+          - generic [ref=e399]: ★ ★
+          - generic [ref=e400]: Valorado con 5 de 5
+      - heading "Mediarte en los Medios" [level=4] [ref=e415]
+      - generic [ref=e417]:
+        - link [ref=e420] [cursor=pointer]:
+          - /url: https://www.semana.com/vida-moderna/articulo/este-es-el-tipo-de-alopecia-que-afecta-principalmente-a-las-mujeres/202251/
+        - link [ref=e423] [cursor=pointer]:
+          - /url: https://www.larepublica.co/empresas/esperamos-que-20-de-los-pagos-que-se-hagan-en-la-clinica-sean-con-criptomonedas-3327734
+        - link [ref=e426] [cursor=pointer]:
+          - /url: https://www.elcolombiano.com/informes-comerciales/las-marcas-hablan/mediarte-medical-center-ofrece-solucion-eficaz-contra-la-calvicie-GD15430350
+        - link [ref=e429] [cursor=pointer]:
+          - /url: https://www.lafm.com.co/salud/que-es-la-alopecia-areata-y-la-razon-por-la-que-es-tan-frecuente-en-mujeres
+        - link [ref=e432] [cursor=pointer]:
+          - /url: https://caracol.com.co/programa/2022/05/10/sanamente/1652203111_018994.html?ssm=whatsapp
+        - link [ref=e435] [cursor=pointer]:
+          - /url: https://www.rcnradio.com/estilo-de-vida/alopecia-areata-que-es-y-por-que-es-tan-frecuente-en-mujeres
+    - contentinfo:
+      - generic [ref=e441]:
+        - generic [ref=e443]:
+          - list [ref=e447]:
+            - listitem [ref=e448]:
+              - link "Jki-facebook-light" [ref=e449] [cursor=pointer]:
+                - /url: https://www.facebook.com/Mediarte.Medical.Center/?locale=es_LA
+                - generic [ref=e450]: Jki-facebook-light
+                - generic [ref=e451]: ףּ
+            - listitem [ref=e452]:
+              - link "Jki-instagram-1-light" [ref=e453] [cursor=pointer]:
+                - /url: https://www.instagram.com/mediarte.implante.capilar/?hl=es
+                - generic [ref=e454]: Jki-instagram-1-light
+                - generic [ref=e455]: ﭬ
+            - listitem [ref=e456]:
+              - link "Jki-linkedin-light" [ref=e457] [cursor=pointer]:
+                - /url: https://co.linkedin.com/company/mediarte-medical-center-sas
+                - generic [ref=e458]: Jki-linkedin-light
+                - generic [ref=e459]: ﭅
+          - generic [ref=e461]:
+            - heading "Otras páginas" [level=3] [ref=e463]
+            - list [ref=e465]:
+              - listitem [ref=e466]:
+                - link "Nosotros" [ref=e467] [cursor=pointer]:
+                  - /url: https://mediarte.co/clinica-capilar/
+                  - generic [ref=e468]: Nosotros
+              - listitem [ref=e469]:
+                - link "Resultados" [ref=e470] [cursor=pointer]:
+                  - /url: https://mediarte.co/resultados-implante-capilar/
+                  - generic [ref=e471]: Resultados
+              - listitem [ref=e472]:
+                - link "Precio" [ref=e473] [cursor=pointer]:
+                  - /url: https://mediarte.co/precios-implante-de-cabello/
+                  - generic [ref=e474]: Precio
+          - generic [ref=e476]:
+            - heading "Servicios" [level=3] [ref=e478]
+            - list [ref=e480]:
+              - listitem [ref=e481]:
+                - link "Trasplante Capilar" [ref=e482] [cursor=pointer]:
+                  - /url: https://mediarte.co/trasplante-capilar
+                  - generic [ref=e483]: Trasplante Capilar
+              - listitem [ref=e484]:
+                - link "Trasplante de Barba" [ref=e485] [cursor=pointer]:
+                  - /url: https://mediarte.co/trasplante-de-barba/
+                  - generic [ref=e486]: Trasplante de Barba
+              - listitem [ref=e487]:
+                - link "Trasplante de Cejas" [ref=e488] [cursor=pointer]:
+                  - /url: https://mediarte.co/trasplante-de-cejas/
+                  - generic [ref=e489]: Trasplante de Cejas
+              - listitem [ref=e490]:
+                - link "Implante de fibra biocompatible" [ref=e491] [cursor=pointer]:
+                  - /url: https://mediarte.co/implante-con-biofibre/
+                  - generic [ref=e492]: Implante de fibra biocompatible
+              - listitem [ref=e493]:
+                - link "Tratamientos anticaida" [ref=e494] [cursor=pointer]:
+                  - /url: https://mediarte.co/mesoterapia-capilar/
+                  - generic [ref=e495]: Tratamientos anticaida
+          - generic [ref=e497]:
+            - heading "Sede Principal" [level=3] [ref=e499]
+            - list [ref=e501]:
+              - listitem [ref=e502]:
+                - img [ref=e504]
+                - generic [ref=e506]: Edificio VES, Cons 1802, Bogotá-Colombia
+            - list [ref=e508]:
+              - listitem [ref=e509]:
+                - link "Mediarte México" [ref=e510] [cursor=pointer]:
+                  - /url: https://mediarte.com.mx/
+                  - generic [ref=e511]: Mediarte México
+              - listitem [ref=e512]:
+                - link "Mediarte Panamá" [ref=e513] [cursor=pointer]:
+                  - /url: https://mediartepanama.com
+                  - generic [ref=e514]: Mediarte Panamá
+        - generic [ref=e516]:
+          - paragraph [ref=e520]:
+            - strong [ref=e521]: Mediarte Medical Center S.A.S © 2024 Todos los derechos reservados, Mediarte ®
+          - link [ref=e526] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e527]: 
+  - generic [ref=e529]:
+    - link "es_ES Spanish":
+      - /url: "#"
+      - img "es_ES"
+      - text: Spanish
+  - text: 
+  - button "Contacto de WhatsApp" [ref=e530] [cursor=pointer]
+  - generic [ref=e531]: desktop

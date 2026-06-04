@@ -1,0 +1,718 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Ir al contenido principal" [ref=e2] [cursor=pointer]
+      - link "Ayuda sobre la accesibilidad" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=es-CO
+  - generic [ref=e8]:
+    - search [ref=e9]:
+      - generic [ref=e11]:
+        - link "Ir a la página principal de Google" [ref=e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=es&sa=X&ved=0ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQPAgI
+          - img [ref=e14]
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - combobox "Buscar" [ref=e25]: implante capilar colombia implante capilar colombia
+            - generic [ref=e26]:
+              - button "Borrar" [ref=e28] [cursor=pointer]:
+                - img [ref=e30]
+              - generic [ref=e33]:
+                - button "Búsqueda por voz" [ref=e34] [cursor=pointer]:
+                  - img [ref=e35]
+                - button "Búsqueda por imagen" [ref=e37] [cursor=pointer]:
+                  - img [ref=e38]
+          - button "Buscar" [ref=e40] [cursor=pointer]:
+            - img [ref=e43]
+    - generic [ref=e45]:
+      - button "Configuración" [ref=e47] [cursor=pointer]:
+        - img [ref=e50]
+      - generic [ref=e53]:
+        - button "Aplicaciones de Google" [ref=e55] [cursor=pointer]:
+          - img [ref=e56]
+        - link "Iniciar sesión" [ref=e60] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=es&passive=true&continue=https://www.google.com/search%3Fq%3Dimplante%2Bcapilar%2Bcolombia%26gl%3Dco%26hl%3Des&ec=futura_srp_og_si_72236_p
+  - generic [ref=e62]:
+    - navigation [ref=e68]:
+      - generic [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "Modo IA" [ref=e79] [cursor=pointer]:
+              - /url: /search?q=implante+capilar+colombia&sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&udm=50&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTaMb_WtLz8zQ41bNqiqMK_04Ozv42qQXGXRTVAFht9zrxKRrC957s7UePa8UGAP5emsJINUukcK1IFL3ND2_x71Weo-btdKrQMObyeU_-X3qNFLAhybeDR6tWk5lbG0EYBC1iCIaur56HjmCGRUJXHbPAfcHzYgRa4Grr36kAj4A4L8xwg&aep=1&ntc=1&sa=X&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ2J8OegQIEBAD
+              - generic [ref=e82]: Modo IA
+          - listitem [ref=e83]:
+            - link "Todo" [disabled] [ref=e84]:
+              - generic [ref=e86]: Todo
+          - listitem [ref=e87]:
+            - link "Imágenes" [ref=e88] [cursor=pointer]:
+              - /url: /search?sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&udm=2&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTaMb_WtLz8zQ41bNqiqMK_04Ozv42qQXGXRTVAFht9zrxKRrC957s7UePa8UGAP5emsJINUukcK1IFL3ND2_x71Weo-btdKrQMObyeU_-X3qNFLAhybeDR6tWk5lbG0EYBC1iCIaur56HjmCGRUJXHbPAfcHzYgRa4Grr36kAj4A4L8xwg&q=implante+capilar+colombia&sa=X&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQtKgLegQIFhAB
+              - generic [ref=e90]: Imágenes
+          - listitem [ref=e91]:
+            - link "Vídeos" [ref=e92] [cursor=pointer]:
+              - /url: /search?sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&udm=7&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTaMb_WtLz8zQ41bNqiqMK_04Ozv42qQXGXRTVAFht9zrxKRrC957s7UePa8UGAP5emsJINUukcK1IFL3ND2_x71Weo-btdKrQMObyeU_-X3qNFLAhybeDR6tWk5lbG0EYBC1iCIaur56HjmCGRUJXHbPAfcHzYgRa4Grr36kAj4A4L8xwg&q=implante+capilar+colombia&sa=X&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQtKgLegQIFRAB
+              - generic [ref=e94]: Vídeos
+          - listitem [ref=e95]:
+            - link "Shopping" [ref=e96] [cursor=pointer]:
+              - /url: /search?sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&udm=28&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTaMb_WtLz8zQ41bNqiqMK_04Ozv42qQXGXRTVAFht9zrxKRrC957s7UePa8UGAP5emsJINUukcK1IFL3ND2_x71Weo-btdKrQMObyeU_-X3qNFLAhybeDR6tWk5lbG0EYBC1iCIaur56HjmCGRUJXHbPAfcHzYgRa4Grr36kAj4A4L8xwg&q=implante+capilar+colombia&ved=1t:220175&ictx=111
+              - generic [ref=e98]: Shopping
+          - listitem [ref=e99]:
+            - link "Noticias" [ref=e100] [cursor=pointer]:
+              - /url: /search?sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&q=implante+capilar+colombia&tbm=nws&source=lnms&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTaMb_WtLz8zQ41bNqiqMK_04Ozv42qQXGXRTVAFht9zrxKRrC957s7UePa8UGAP5emsJINUukcK1IFL3ND2_x71Weo-btdKrQMObyeU_-X3qNFLAhybeDR6tWk5lbG0EYBC1iCIaur56HjmCGRUJXHbPAfcHzYgRa4Grr36kAj4A4L8xwg&sa=X&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ0pQJegQIFBAB
+              - generic [ref=e102]: Noticias
+          - listitem [ref=e103]:
+            - link "Vídeos cortos" [ref=e104] [cursor=pointer]:
+              - /url: /search?sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&udm=39&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTaMb_WtLz8zQ41bNqiqMK_04Ozv42qQXGXRTVAFht9zrxKRrC957s7UePa8UGAP5emsJINUukcK1IFL3ND2_x71Weo-btdKrQMObyeU_-X3qNFLAhybeDR6tWk5lbG0EYBC1iCIaur56HjmCGRUJXHbPAfcHzYgRa4Grr36kAj4A4L8xwg&q=implante+capilar+colombia&sa=X&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQs6gLegQIEhAB
+              - generic [ref=e106]: Vídeos cortos
+          - listitem [ref=e107]:
+            - button "Más filtros" [ref=e108] [cursor=pointer]:
+              - generic "Más filtros" [ref=e109]:
+                - generic [ref=e110]:
+                  - generic [ref=e111]: Más
+                  - img [ref=e113]
+        - button "Herramientas" [ref=e116] [cursor=pointer]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: Herramientas
+            - img [ref=e121]
+    - heading "Resultados de búsqueda" [level=1] [ref=e123]
+    - generic [ref=e128]:
+      - generic [ref=e129]:
+        - generic [ref=e131]:
+          - generic [ref=e136]:
+            - heading "Colombia" [level=2] [ref=e137]:
+              - img [ref=e140]:
+                - img [ref=e141]
+              - generic [ref=e144]: Colombia
+            - generic [ref=e146]:
+              - text: ∙
+              - button "Elegir área" [ref=e147] [cursor=pointer]
+            - button "Cómo se utiliza la ubicación" [ref=e150] [cursor=pointer]:
+              - img [ref=e152]
+          - region "Anuncios" [ref=e155]:
+            - generic [ref=e156]:
+              - heading "Resultados patrocinados" [level=2] [ref=e163]
+              - generic [ref=e164]:
+                - generic [ref=e171]:
+                  - generic [ref=e177]:
+                    - generic [ref=e178]:
+                      - link "Injerto Capilar Bucaramanga - Precio del Injerto de Cabello dhicolombia.com.co https://www.dhicolombia.com.co › injerto › capilar" [ref=e179] [cursor=pointer]:
+                        - /url: https://dhicolombia.com.co/registro/ibague/implante-capilar/
+                        - heading "Injerto Capilar Bucaramanga - Precio del Injerto de Cabello" [level=3] [ref=e180]
+                        - generic [ref=e186]:
+                          - generic [ref=e188]: dhicolombia.com.co
+                          - generic [ref=e189]: https://www.dhicolombia.com.co › injerto › capilar
+                      - button "¿Por qué este anuncio?" [ref=e192] [cursor=pointer]:
+                        - img [ref=e194]
+                    - generic [ref=e199]:
+                      - text: Pregunta por nuestro injerto de
+                      - emphasis [ref=e200]: capilar
+                      - text: y comienza una nueva vida. DHI Bucaramanga, sí es posible recuperar de forma natural nuestro cabello.
+                    - generic [ref=e205]: Más de 10,000 visitas en el último mes
+                    - generic [ref=e206]:
+                      - link "Injertos Capilares Clínica especialista en implante y restauración capilar." [ref=e210] [cursor=pointer]:
+                        - /url: /aclk?sa=L&pf=1&ai=DChsSEwiL-Om1nuuUAxXNsgMAHfwcI8IYACICCAEQBBoCb2E&co=1&ase=2&gclid=EAIaIQobChMIi_jptZ7rlAMVzbIDAB38HCPCEAAYASACEgKmrvD_BwE&cid=CAASuwHkaDCG59__T78h_hOcNe166nB_ZhdqjulJCXceTksRWmg5ICB53zXhYbX8AnoQhqeyk780zbBkvI72T_dYL_O0ZTQLAIMK0N1Y_Wbb63rQoGJB5Bb7acwXcfAP5xgk3jrfdKycOivIh9aZYKmIrA_tgjYEnEXbfuYAEN5g88UwLl_Jn4YvkNMrSOmQ0fK6K2b-XvkBrSD-z1J5xvkuKkCLmEl9M-dVd3TmYNHEICdoVBcqWEQVD3HinunQ&cce=2&category=acrcp_v1_32&sig=AOD64_3NkpeAzyzmxztFkGTTmNerja-fTA&adurl=https://dhicolombia.com.co/registro/bucaramanga/implante-capilar/%3Fv%3D7%26utm_term%3Dclinica%2520injerto%2520capilar%26utm_campaign%3DDHI%2BI%2BBucaramanga%2BI%2BNueva%2BEstructura%2B%257C%2B2022%26utm_source%3Dadwords%26utm_medium%3Dppc%26hsa_acc%3D1695295009%26hsa_cam%3D21259249372%26hsa_grp%3D161128857279%26hsa_ad%3D698367347165%26hsa_src%3Dg%26hsa_tgt%3Dkwd-5850905230%26hsa_kw%3Dclinica%2520injerto%2520capilar%26hsa_mt%3Db%26hsa_net%3Dadwords%26hsa_ver%3D3%26gad_source%3D1%26gad_campaignid%3D21259249372%26gbraid%3D0AAAAA9qNb_KsNsomfs_fWT21amTdl5fCc%26gclid%3DEAIaIQobChMIi_jptZ7rlAMVzbIDAB38HCPCEAAYASACEgKmrvD_BwE&q=
+                        - generic [ref=e211]: Injertos Capilares
+                        - generic [ref=e214]: Clínica especialista en implante y restauración capilar.
+                      - 'link "Agenda Tu Cita DHI Sí Cumple #1 Mundial Resultados Naturales" [ref=e218] [cursor=pointer]':
+                        - /url: https://dhicolombia.com.co/registro/bucaramanga/?v=222
+                        - generic [ref=e219]: Agenda Tu Cita
+                        - generic [ref=e222]: "DHI Sí Cumple #1 Mundial Resultados Naturales"
+                      - link "No busques más, Ingresa Aquí Tenemos más de 54 años en el mercado ayudando a personas." [ref=e226] [cursor=pointer]:
+                        - /url: /aclk?sa=L&pf=1&ai=DChsSEwiL-Om1nuuUAxXNsgMAHfwcI8IYACICCAEQBhoCb2E&co=1&ase=2&gclid=EAIaIQobChMIi_jptZ7rlAMVzbIDAB38HCPCEAAYASADEgIMEvD_BwE&cid=CAASuwHkaDCG59__T78h_hOcNe166nB_ZhdqjulJCXceTksRWmg5ICB53zXhYbX8AnoQhqeyk780zbBkvI72T_dYL_O0ZTQLAIMK0N1Y_Wbb63rQoGJB5Bb7acwXcfAP5xgk3jrfdKycOivIh9aZYKmIrA_tgjYEnEXbfuYAEN5g88UwLl_Jn4YvkNMrSOmQ0fK6K2b-XvkBrSD-z1J5xvkuKkCLmEl9M-dVd3TmYNHEICdoVBcqWEQVD3HinunQ&cce=2&category=acrcp_v1_32&sig=AOD64_0zSgckr8D27CUAB_B4RzyQ43X4iQ&adurl=https://dhicolombia.com.co/registro/bucaramanga/implante-capilar/%3Fv%3D7%26utm_term%3Dclinica%2520injerto%2520capilar%26utm_campaign%3DDHI%2BI%2BBucaramanga%2BI%2BNueva%2BEstructura%2B%257C%2B2022%26utm_source%3Dadwords%26utm_medium%3Dppc%26hsa_acc%3D1695295009%26hsa_cam%3D21259249372%26hsa_grp%3D161128857279%26hsa_ad%3D698367347165%26hsa_src%3Dg%26hsa_tgt%3Dkwd-5850905230%26hsa_kw%3Dclinica%2520injerto%2520capilar%26hsa_mt%3Db%26hsa_net%3Dadwords%26hsa_ver%3D3%26gad_source%3D1%26gad_campaignid%3D21259249372%26gbraid%3D0AAAAA9qNb_KsNsomfs_fWT21amTdl5fCc%26gclid%3DEAIaIQobChMIi_jptZ7rlAMVzbIDAB38HCPCEAAYASADEgIMEvD_BwE&q=
+                        - generic [ref=e227]: No busques más, Ingresa Aquí
+                        - generic [ref=e230]: Tenemos más de 54 años en el mercado ayudando a personas.
+                  - generic [ref=e237]:
+                    - link "Imagen de rogansya.com" [ref=e239] [cursor=pointer]:
+                      - /url: https://www.google.com/aclk?sa=L&pf=1&ai=DChsSEwiL-Om1nuuUAxXNsgMAHfwcI8IYACICCAEQBxoCb2E&co=1&ase=2&gclid=EAIaIQobChMIi_jptZ7rlAMVzbIDAB38HCPCEAAYAiADEgKLBPD_BwE&cid=CAASuwHkaDCG59__T78h_hOcNe166nB_ZhdqjulJCXceTksRWmg5ICB53zXhYbX8AnoQhqeyk780zbBkvI72T_dYL_O0ZTQLAIMK0N1Y_Wbb63rQoGJB5Bb7acwXcfAP5xgk3jrfdKycOivIh9aZYKmIrA_tgjYEnEXbfuYAEN5g88UwLl_Jn4YvkNMrSOmQ0fK6K2b-XvkBrSD-z1J5xvkuKkCLmEl9M-dVd3TmYNHEICdoVBcqWEQVD3HinunQ&cce=2&category=acrcp_v1_32&sig=AOD64_1gyO5B3nGpVhiePRj00lLSemHs-g&q=&nis=4&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQh78CegQIFxAB&adurl=https://rogansya.com/implantes-capilares/%3Futm_source%3DGoogle%26utm_medium%3Dcpc%26utm_campaign%3Dhight%2Bticket_ads1%26utm_id%3Dhight%2Bticket%26utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3D23624782216%26utm_term%3Dprecio%2520implante%2520capilar%26utm_content%3D799001625111%26utm_device%3Dc%26utm_placement%3D%26gad_source%3D1%26gad_campaignid%3D23624782216%26gbraid%3D0AAAAABvMVTCXvTNFCIHIIkPPDGTaOa79G%26gclid%3DEAIaIQobChMIi_jptZ7rlAMVzbIDAB38HCPCEAAYAiADEgKLBPD_BwE
+                      - img "Imagen de rogansya.com" [ref=e241]
+                    - generic [ref=e242]:
+                      - link "Precio implante capilar Rogans https://www.rogansya.com" [ref=e243] [cursor=pointer]:
+                        - /url: https://rogansya.com/implantes-capilares/
+                        - heading "Precio implante capilar" [level=3] [ref=e245]
+                        - generic [ref=e251]:
+                          - generic [ref=e253]: Rogans
+                          - generic [ref=e254]: https://www.rogansya.com
+                      - button "¿Por qué este anuncio?" [ref=e257] [cursor=pointer]:
+                        - img [ref=e259]
+                    - generic [ref=e264]:
+                      - text: Clínica
+                      - emphasis [ref=e265]: Capilar
+                      - text: Rogans — Precios accesible y planes de financiamiento, tenemos todas las opciones de credito. En Rogans garantizamos resultados naturales y seguimiento médico. Citas 100% online.
+                    - generic [ref=e266]:
+                      - link "Planes de financiamiento" [ref=e269] [cursor=pointer]:
+                        - /url: https://rogansya.com/implantes-capilares/?sa=X&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQwgUoAXoECBcQEw#financiamiento
+                        - img [ref=e271]
+                        - generic [ref=e273]: Planes de financiamiento
+                      - link "Implantes capilares" [ref=e276] [cursor=pointer]:
+                        - /url: https://rogansya.com/implantes-capilares/?sa=X&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQwgUoA3oECBcQFQ
+                        - img [ref=e278]
+                        - generic [ref=e280]: Implantes capilares
+                - button "Ocultar resultados patrocinados" [ref=e283] [cursor=pointer]:
+                  - separator [ref=e284]
+                  - generic [ref=e285]:
+                    - generic [ref=e286]: Ocultar resultados patrocinados
+                    - img [ref=e288]
+        - generic [ref=e292]:
+          - generic [ref=e304]:
+            - generic [ref=e306]:
+              - generic [ref=e308]:
+                - generic [ref=e309]:
+                  - img [ref=e310]
+                  - heading "Visión general creada por IA" [level=2] [ref=e312]
+                - button "Acerca de este resultado" [ref=e316]:
+                  - img [ref=e318]
+              - generic [ref=e322]:
+                - generic [ref=e342]:
+                  - generic [ref=e343]:
+                    - text: El implante capilar en Colombia es un procedimiento ambulatorio que cuesta entre
+                    - generic [ref=e346]:
+                      - generic [ref=e347]:
+                        - img
+                        - img [ref=e348]:
+                          - generic [ref=e349]: $
+                      - generic [ref=e350]:
+                        - img
+                        - img [ref=e351]:
+                          - generic [ref=e352]: "7"
+                          - generic [ref=e353]: .
+                          - generic [ref=e354]: "0"
+                          - generic [ref=e355]: "0"
+                          - generic [ref=e356]: "0"
+                      - generic [ref=e357]:
+                        - img
+                        - img [ref=e358]:
+                          - generic [ref=e359]: .
+                      - generic [ref=e360]:
+                        - img
+                        - img [ref=e361]:
+                          - generic [ref=e362]: "0"
+                          - generic [ref=e363]: "0"
+                          - generic [ref=e364]: "0"
+                    - text: "y"
+                    - generic [ref=e367]:
+                      - generic [ref=e368]:
+                        - img
+                        - img [ref=e369]:
+                          - generic [ref=e370]: $
+                      - generic [ref=e371]:
+                        - img
+                        - img [ref=e372]:
+                          - generic [ref=e373]: "2"
+                          - generic [ref=e374]: "5"
+                          - generic [ref=e375]: .
+                          - generic [ref=e376]: "0"
+                          - generic [ref=e377]: "0"
+                          - generic [ref=e378]: "0"
+                      - generic [ref=e379]:
+                        - img
+                        - img [ref=e380]:
+                          - generic [ref=e381]: .
+                      - generic [ref=e382]:
+                        - img
+                        - img [ref=e383]:
+                          - generic [ref=e384]: "0"
+                          - generic [ref=e385]: "0"
+                          - generic [ref=e386]: "0"
+                    - text: de pesos colombianos. El valor exacto se calcula multiplicando cada folículo extraído por un precio promedio de
+                    - generic [ref=e389]:
+                      - generic [ref=e390]:
+                        - img
+                        - img [ref=e391]:
+                          - generic [ref=e392]: $
+                      - generic [ref=e393]:
+                        - img
+                        - img [ref=e394]:
+                          - generic [ref=e395]: "3"
+                          - generic [ref=e396]: .
+                          - generic [ref=e397]: "5"
+                          - generic [ref=e398]: "0"
+                          - generic [ref=e399]: "0"
+                    - text: COP. La duración de la cirugía es de
+                    - generic [ref=e402]:
+                      - img
+                      - math [ref=e404]:
+                        - generic [ref=e406]: "3"
+                      - img [ref=e407]:
+                        - generic [ref=e408]: "3"
+                    - text: a
+                    - generic [ref=e411]:
+                      - img
+                      - math [ref=e413]:
+                        - generic [ref=e415]: "10"
+                      - img [ref=e416]:
+                        - generic [ref=e417]: "1"
+                        - generic [ref=e418]: "0"
+                    - text: horas bajo anestesia local.
+                    - generic [ref=e420]:
+                      - link "Mediarte Implante Capilar (más de 1) - Ver vínculos relacionados" [ref=e421] [cursor=pointer]:
+                        - /url: https://mediarte.co/
+                      - button "Mediarte Implante Capilar (más de 1) - Ver vínculos relacionados" [disabled] [ref=e422]:
+                        - generic [ref=e424]:
+                          - generic [ref=e425]: Mediarte Implante Capilar
+                          - generic [ref=e426]: "+1"
+                  - generic [ref=e427]: "Las técnicas más utilizadas en clínicas especializadas son:"
+                  - list [ref=e429]:
+                    - listitem [ref=e430]:
+                      - generic [ref=e431]:
+                        - strong [ref=e432]: "FUE (Extracción de Unidades Foliculares):"
+                        - text: Extrae e implanta folículos uno a uno sin dejar cicatrices visibles.
+                    - listitem [ref=e433]:
+                      - generic [ref=e434]:
+                        - strong [ref=e435]: "DHI (Direct Hair Implantation):"
+                        - text: Permite extraer e implantar el folículo simultáneamente con un instrumento especializado.
+                      - generic [ref=e437]:
+                        - link "Mediarte Implante Capilar (más de 2) - Ver vínculos relacionados" [ref=e438] [cursor=pointer]:
+                          - /url: https://mediarte.co/
+                        - button "Mediarte Implante Capilar (más de 2) - Ver vínculos relacionados" [disabled] [ref=e439]:
+                          - generic [ref=e441]:
+                            - generic [ref=e442]: Mediarte Implante Capilar
+                            - generic [ref=e443]: "+2"
+                - progressbar [ref=e450]
+            - button "Mostrar más Visión general creada por IA" [ref=e474]:
+              - generic [ref=e476] [cursor=pointer]:
+                - generic [ref=e477]: Mostrar más
+                - img [ref=e479]
+          - generic [ref=e486]:
+            - 'heading "Sitios: Resultados de ubicación para implante capilar colombia" [level=2] [ref=e491]':
+              - generic [ref=e492]: Sitios
+            - generic [ref=e494]:
+              - generic [ref=e495]:
+                - generic [ref=e498]:
+                  - 'button "Mediarte Implante Capilar Bucaramanga Calificación: 4,8 de 5, 52 opiniones de usuarios · Clínica especializada Bucaramanga, Santander \"Excelente atención y resultados increíbles\"" [ref=e503]':
+                    - generic [ref=e507] [cursor=pointer]:
+                      - heading "Mediarte Implante Capilar Bucaramanga" [level=3] [ref=e508]:
+                        - generic [ref=e509]: Mediarte Implante Capilar Bucaramanga
+                      - generic [ref=e510]:
+                        - 'img "Calificación: 4,8 de 5, 52 opiniones de usuarios" [ref=e512]':
+                          - text: 4,8
+                          - img [ref=e513]
+                          - text: (52)
+                        - text: · Clínica especializada
+                      - generic [ref=e516]: Bucaramanga, Santander
+                      - generic [ref=e518]:
+                        - img [ref=e521]
+                        - generic [ref=e525]: "\"Excelente atención y resultados increíbles\""
+                  - 'button "Dra. Melissa Castillo - Implante capilar en Bogotá Calificación: 5,0 de 5, 93 opiniones de usuarios · Clínica de trasplante capilar Cundinamarca \"Fui a colombia a hacerme un implante capilar en las cejas!\"" [ref=e532]':
+                    - generic [ref=e536] [cursor=pointer]:
+                      - heading "Dra. Melissa Castillo - Implante capilar en Bogotá" [level=3] [ref=e537]:
+                        - generic [ref=e538]: Dra. Melissa Castillo - Implante capilar en Bogotá
+                      - generic [ref=e539]:
+                        - 'img "Calificación: 5,0 de 5, 93 opiniones de usuarios" [ref=e541]':
+                          - text: 5,0
+                          - img [ref=e542]
+                          - text: (93)
+                        - text: · Clínica de trasplante capilar
+                      - generic [ref=e545]: Cundinamarca
+                      - generic [ref=e547]:
+                        - img [ref=e550]
+                        - generic [ref=e555]: "\"Fui a colombia a hacerme un implante capilar en las cejas!\""
+                  - 'button "Total Hair Colombia Calificación: 4,6 de 5, 54 opiniones de usuarios · Clínica de trasplante capilar Cundinamarca \"Me realize mi implante capilar hace dos años y fue todo un exito.\"" [ref=e562]':
+                    - generic [ref=e566] [cursor=pointer]:
+                      - heading "Total Hair Colombia" [level=3] [ref=e567]:
+                        - generic [ref=e568]: Total Hair Colombia
+                      - generic [ref=e569]:
+                        - 'img "Calificación: 4,6 de 5, 54 opiniones de usuarios" [ref=e571]':
+                          - text: 4,6
+                          - img [ref=e572]
+                          - text: (54)
+                        - text: · Clínica de trasplante capilar
+                      - generic [ref=e575]: Cundinamarca
+                      - generic [ref=e577]:
+                        - img [ref=e580]
+                        - generic [ref=e585]: "\"Me realize mi implante capilar hace dos años y fue todo un exito.\""
+                - heading "Más lugares" [level=3] [ref=e590]:
+                  - link "Más lugares" [ref=e592] [cursor=pointer]:
+                    - /url: /search?q=implante+capilar+colombia&sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&udm=1&lsack=WDQgasaBFbK4p84PhKGU4AE&sa=X&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQjGp6BAggEAA
+                    - separator [ref=e593]
+                    - generic [ref=e594]:
+                      - generic [ref=e595]: Más lugares
+                      - img [ref=e597]
+              - heading "Mapa" [level=3] [ref=e600]
+      - main [ref=e602]:
+        - generic [ref=e606]:
+          - generic [ref=e609]:
+            - heading "Resultados web" [level=2] [ref=e610]
+            - generic [ref=e611]:
+              - generic [ref=e614]:
+                - 'link "DHI Colombia: Clínica de implante capilar en colombia DHI Colombia https://dhicolombia.com.co" [ref=e616] [cursor=pointer]':
+                  - /url: https://dhicolombia.com.co/
+                  - 'heading "DHI Colombia: Clínica de implante capilar en colombia" [level=3] [ref=e617]'
+                  - generic [ref=e622]:
+                    - generic [ref=e624]: DHI Colombia
+                    - generic [ref=e626]: https://dhicolombia.com.co
+                - button "Acerca de este resultado" [ref=e627] [cursor=pointer]:
+                  - img [ref=e630]
+              - generic [ref=e634]:
+                - emphasis [ref=e635]: Expertos en implante capilar
+                - text: ", barba y cejas con más de 54 años de experiencia. Soluciones para alopecia en hombres y mujeres. Agenda tu consulta hoy."
+              - link "implante capilar colombia de dhicolombia.com.co" [ref=e638] [cursor=pointer]:
+                - /url: https://dhicolombia.com.co/
+                - img "implante capilar colombia de dhicolombia.com.co" [ref=e640]
+          - generic [ref=e644]:
+            - generic [ref=e647]:
+              - link "Implante capilar Bogotá | Resultados naturales – Mediarte Mediarte Implante Capilar https://mediarte.co" [ref=e649] [cursor=pointer]:
+                - /url: https://mediarte.co/
+                - heading "Implante capilar Bogotá | Resultados naturales – Mediarte" [level=3] [ref=e650]
+                - generic [ref=e655]:
+                  - generic [ref=e657]: Mediarte Implante Capilar
+                  - generic [ref=e659]: https://mediarte.co
+              - button "Acerca de este resultado" [ref=e660] [cursor=pointer]:
+                - img [ref=e663]
+            - generic [ref=e667]:
+              - emphasis [ref=e668]: "En Colombia se utilizan las 3 técnicas descritas anteriormente: FUE, DHI y TIRA"
+              - text: ", siendo de preferencia por la mayoría de los cirujanos las dos primeras. La ..."
+            - link "implante capilar colombia de mediarte.co" [ref=e671] [cursor=pointer]:
+              - /url: https://mediarte.co/
+              - img "implante capilar colombia de mediarte.co" [ref=e673]
+          - generic [ref=e677]:
+            - generic [ref=e680]:
+              - link "Implante Capilar en Colombia (Bogotá y Medellín) HERO Instituto de Trasplante Capilar Medellín https://www.heroinstitute.co › es-co" [ref=e682] [cursor=pointer]:
+                - /url: https://www.heroinstitute.co/es-co
+                - heading "Implante Capilar en Colombia (Bogotá y Medellín)" [level=3] [ref=e683]
+                - generic [ref=e688]:
+                  - generic [ref=e690]: HERO Instituto de Trasplante Capilar Medellín
+                  - generic [ref=e692]: https://www.heroinstitute.co › es-co
+              - button "Acerca de este resultado" [ref=e693] [cursor=pointer]:
+                - img [ref=e696]
+            - generic [ref=e700]:
+              - text: En
+              - emphasis [ref=e701]: Hero Institute
+              - text: ", somos líderes en procedimientos de implante capilar en Colombia, especializados en técnicas avanzadas. Con un equipo de expertos dedicados, ..."
+          - generic [ref=e705]:
+            - generic [ref=e708]:
+              - link "Precio de trasplante capilar en Colombia Sin Calvicie https://sincalvicie.com › precio-de-trasplante-capilar-en-..." [ref=e710] [cursor=pointer]:
+                - /url: https://sincalvicie.com/precio-de-trasplante-capilar-en-colombia/
+                - heading "Precio de trasplante capilar en Colombia" [level=3] [ref=e711]
+                - generic [ref=e716]:
+                  - generic [ref=e718]: Sin Calvicie
+                  - generic [ref=e720]: https://sincalvicie.com › precio-de-trasplante-capilar-en-...
+              - button "Acerca de este resultado" [ref=e721] [cursor=pointer]:
+                - img [ref=e724]
+            - generic [ref=e727]: En Sin Calvicie, se estima un valor que va desde los 8.000.0000 a los 14.000.000 de pesos colombianos aproximadamente (precios año 2023), de acuerdo a la ...
+          - generic [ref=e732]:
+            - heading "Más preguntas" [level=2] [ref=e734]
+            - generic [ref=e735]:
+              - button "¿Cuánto cuesta un implante capilar en Colombia?" [ref=e741] [cursor=pointer]:
+                - generic [ref=e743]: ¿Cuánto cuesta un implante capilar en Colombia?
+                - img [ref=e746]
+              - button "¿Cuánto cubren 3000 folículos?" [ref=e755] [cursor=pointer]:
+                - generic [ref=e757]: ¿Cuánto cubren 3000 folículos?
+                - img [ref=e760]
+              - button "¿Cuál es la mejor clínica de implante capilar en Colombia?" [ref=e769] [cursor=pointer]:
+                - generic [ref=e771]: ¿Cuál es la mejor clínica de implante capilar en Colombia?
+                - img [ref=e774]
+              - button "¿Cuánto cubren 1000 unidades foliculares?" [ref=e783] [cursor=pointer]:
+                - generic [ref=e785]: ¿Cuánto cubren 1000 unidades foliculares?
+                - img [ref=e788]
+          - generic [ref=e793]:
+            - heading "Resultados web" [level=2] [ref=e794]
+            - generic [ref=e795]:
+              - generic [ref=e798]:
+                - link "IPS (@mediarte.implante.capilar) · Bogotá Instagram · mediarte.implante.capilar Más de 391,3 k seguidores" [ref=e800] [cursor=pointer]:
+                  - /url: https://www.instagram.com/mediarte.implante.capilar/?hl=es
+                  - heading "IPS (@mediarte.implante.capilar) · Bogotá" [level=3] [ref=e801]
+                  - generic [ref=e806]:
+                    - generic [ref=e808]: Instagram · mediarte.implante.capilar
+                    - generic [ref=e810]: Más de 391,3 k seguidores
+                - button "Acerca de este resultado" [ref=e811] [cursor=pointer]:
+                  - img [ref=e814]
+              - generic [ref=e818]:
+                - emphasis [ref=e819]: Clínica de Implante y Tratamientos Capilares
+                - text: La más grande de 22 sedes en Colombia México Panamá Hair transplant Clinic ...
+              - link "implante capilar colombia de www.instagram.com" [ref=e822] [cursor=pointer]:
+                - /url: https://www.instagram.com/mediarte.implante.capilar/?hl=es
+                - img "implante capilar colombia de www.instagram.com" [ref=e824]
+          - generic [ref=e828]:
+            - generic [ref=e831]:
+              - link "Implante Capilar Medellín - Dr David Delgado daviddelgadocirujano.com https://daviddelgadocirujano.com › implante-capilar-me..." [ref=e833] [cursor=pointer]:
+                - /url: https://daviddelgadocirujano.com/implante-capilar-medellin/
+                - heading "Implante Capilar Medellín - Dr David Delgado" [level=3] [ref=e834]
+                - generic [ref=e839]:
+                  - generic [ref=e841]: daviddelgadocirujano.com
+                  - generic [ref=e843]: https://daviddelgadocirujano.com › implante-capilar-me...
+              - button "Acerca de este resultado" [ref=e844] [cursor=pointer]:
+                - img [ref=e847]
+            - generic [ref=e851]:
+              - text: El implante capilar Medellín
+              - emphasis [ref=e852]: es un procedimiento quirúrgico que se utiliza para tratar la alopecia o pérdida de cabello
+              - text: . Consiste en extraer folículos ...
+          - generic [ref=e856]:
+            - generic [ref=e859]:
+              - 'link "Implante capilar colombia precio: 3 ejemplos para ... rogans care https://rogansya.com › implante-capilar-colombia-precio" [ref=e861] [cursor=pointer]':
+                - /url: https://rogansya.com/implante-capilar-colombia-precio/
+                - 'heading "Implante capilar colombia precio: 3 ejemplos para ..." [level=3] [ref=e862]'
+                - generic [ref=e867]:
+                  - generic [ref=e869]: rogans care
+                  - generic [ref=e871]: https://rogansya.com › implante-capilar-colombia-precio
+              - button "Acerca de este resultado" [ref=e872] [cursor=pointer]:
+                - img [ref=e875]
+            - generic [ref=e879]:
+              - text: En Rogans, el costo promedio del
+              - emphasis [ref=e880]: implante capilar
+              - text: en
+              - emphasis [ref=e881]: Colombia
+              - text: es de $3.500 COP por folículo hasta 2.000 unidades. A partir de ese punto, el valor por folículo ...
+          - generic [ref=e885]:
+            - generic [ref=e888]:
+              - link "Implante capilar en Bogotá | Trasplante de cabello en Bogotá Dra Melissa Castillo https://implantecapilarmc.com" [ref=e890] [cursor=pointer]:
+                - /url: https://implantecapilarmc.com/
+                - heading "Implante capilar en Bogotá | Trasplante de cabello en Bogotá" [level=3] [ref=e891]
+                - generic [ref=e896]:
+                  - generic [ref=e898]: Dra Melissa Castillo
+                  - generic [ref=e900]: https://implantecapilarmc.com
+              - button "Acerca de este resultado" [ref=e901] [cursor=pointer]:
+                - img [ref=e904]
+            - generic [ref=e908]:
+              - emphasis [ref=e909]: Somos especialistas en implante capilar en Bogot
+              - text: á con la técnica FUE | Tu trasplante de cabello en Bogotá en manos expertas, ¡cotiza ahora!
+          - generic [ref=e913]:
+            - generic [ref=e915]:
+              - heading "Videos" [level=2] [ref=e916]
+              - button "Acerca de este resultado" [ref=e917] [cursor=pointer]:
+                - img [ref=e920]
+            - generic [ref=e923]:
+              - generic [ref=e930]:
+                - generic [ref=e931]:
+                  - 'link "Mediarte: La Mejor Clínica de Implante Capilar en Colombia ... YouTube Mediarte Medical Center 16/04/2025" [ref=e933] [cursor=pointer]':
+                    - /url: https://www.youtube.com/watch?v=OAhALOwuRNs
+                    - 'heading "Mediarte: La Mejor Clínica de Implante Capilar en Colombia ... YouTube Mediarte Medical Center 16/04/2025" [level=3] [ref=e934]':
+                      - generic [ref=e937]: "Mediarte: La Mejor Clínica de Implante Capilar en Colombia ..."
+                      - generic [ref=e939]:
+                        - generic [ref=e940]:
+                          - text: YouTube
+                          - generic [ref=e941]: · Mediarte Medical Center
+                        - generic [ref=e942]: 16/04/2025
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - text: YouTube
+                            - generic: · Mediarte Medical Center
+                      - button "Acerca de este resultado" [ref=e943] [cursor=pointer]:
+                        - img [ref=e946]
+                - 'button "Mediarte: La Mejor Clínica de Implante Capilar en Colombia ... de Mediarte Medical Center en YouTube. Reproducir en Google. 1:35" [ref=e948] [cursor=pointer]':
+                  - generic [ref=e949]:
+                    - img [ref=e955]
+                    - generic [ref=e958]:
+                      - generic [ref=e959]: 1:35
+                      - img [ref=e962]
+              - generic [ref=e968]:
+                - generic [ref=e969]:
+                  - 'link "Proceso de Implante Capilar en Colombia: Pasos Clave TikTok doctores.pulido 3/11/2025" [ref=e971] [cursor=pointer]':
+                    - /url: https://www.tiktok.com/@doctores.pulido/video/7568647504791604488
+                    - 'heading "Proceso de Implante Capilar en Colombia: Pasos Clave TikTok doctores.pulido 3/11/2025" [level=3] [ref=e972]':
+                      - generic [ref=e975]: "Proceso de Implante Capilar en Colombia: Pasos Clave"
+                      - generic [ref=e977]:
+                        - generic [ref=e978]:
+                          - text: TikTok
+                          - generic [ref=e979]: · doctores.pulido
+                        - generic [ref=e980]: 3/11/2025
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - text: TikTok
+                            - generic: · doctores.pulido
+                      - button "Acerca de este resultado" [ref=e981] [cursor=pointer]:
+                        - img [ref=e984]
+                - 'link "Proceso de Implante Capilar en Colombia: Pasos Clave de doctores.pulido en TikTok. Reproducir en TikTok. 0:27" [ref=e986] [cursor=pointer]':
+                  - /url: https://www.tiktok.com/@doctores.pulido/video/7568647504791604488
+                  - generic [ref=e987]:
+                    - img [ref=e990]
+                    - generic [ref=e994]: 0:27
+              - generic [ref=e1000]:
+                - generic [ref=e1001]:
+                  - link "Cuánto vale un injerto capilar en Colombia YouTube Mediarte Medical Center 26/07/2024" [ref=e1003] [cursor=pointer]:
+                    - /url: https://www.youtube.com/watch?v=YvYoMbJnkQY
+                    - heading "Cuánto vale un injerto capilar en Colombia YouTube Mediarte Medical Center 26/07/2024" [level=3] [ref=e1004]:
+                      - generic [ref=e1007]: Cuánto vale un injerto capilar en Colombia
+                      - generic [ref=e1009]:
+                        - generic [ref=e1010]:
+                          - text: YouTube
+                          - generic [ref=e1011]: · Mediarte Medical Center
+                        - generic [ref=e1012]: 26/07/2024
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - text: YouTube
+                            - generic: · Mediarte Medical Center
+                      - button "Acerca de este resultado" [ref=e1013] [cursor=pointer]:
+                        - img [ref=e1016]
+                - button "Cuánto vale un injerto capilar en Colombia de Mediarte Medical Center en YouTube. Reproducir en Google. 0:43" [ref=e1018] [cursor=pointer]:
+                  - generic [ref=e1019]:
+                    - img [ref=e1022]
+                    - generic [ref=e1025]:
+                      - generic [ref=e1026]: 0:43
+                      - img [ref=e1029]
+            - link "Ver todos los videos" [ref=e1033] [cursor=pointer]:
+              - /url: /search?sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&udm=7&q=implante+capilar+colombia&sa=X&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ8ccDKAJ6BAhNEAQ
+              - separator [ref=e1034]
+              - generic [ref=e1035]:
+                - generic [ref=e1036]: Ver más
+                - img [ref=e1038]
+          - region "Anuncios" [ref=e1043]:
+            - generic [ref=e1044]:
+              - heading "Resultados patrocinados" [level=2] [ref=e1051]
+              - generic [ref=e1052]:
+                - generic [ref=e1059]:
+                  - generic [ref=e1064]:
+                    - link "Imagen de dhicolombia.com.co" [ref=e1066] [cursor=pointer]:
+                      - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwiL-Om1nuuUAxXNsgMAHfwcI8IYACICCAIQBhoCb2E&co=1&ase=2&gclid=EAIaIQobChMIi_jptZ7rlAMVzbIDAB38HCPCEAMYASAEEgIl0vD_BwE&cid=CAASuwHkaDCG59__T78h_hOcNe166nB_ZhdqjulJCXceTksRWmg5ICB53zXhYbX8AnoQhqeyk780zbBkvI72T_dYL_O0ZTQLAIMK0N1Y_Wbb63rQoGJB5Bb7acwXcfAP5xgk3jrfdKycOivIh9aZYKmIrA_tgjYEnEXbfuYAEN5g88UwLl_Jn4YvkNMrSOmQ0fK6K2b-XvkBrSD-z1J5xvkuKkCLmEl9M-dVd3TmYNHEICdoVBcqWEQVD3HinunQ&cce=2&category=acrcp_v1_32&sig=AOD64_0L_popDqAJqRk5b6XLFDLO1iYR8Q&q=&nis=4&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQh78CegQIZBAB&adurl=
+                      - img "Imagen de dhicolombia.com.co" [ref=e1068]
+                    - generic [ref=e1069]:
+                      - link "Injerto Capilar Bucaramanga - Injerto Capilar Precio dhicolombia.com.co https://www.dhicolombia.com.co › injerto › capilar" [ref=e1070] [cursor=pointer]:
+                        - /url: https://dhicolombia.com.co/registro/ibague/implante-capilar/
+                        - heading "Injerto Capilar Bucaramanga - Injerto Capilar Precio" [level=3] [ref=e1072]
+                        - generic [ref=e1078]:
+                          - generic [ref=e1080]: dhicolombia.com.co
+                          - generic [ref=e1081]: https://www.dhicolombia.com.co › injerto › capilar
+                      - button "¿Por qué este anuncio?" [ref=e1084] [cursor=pointer]:
+                        - img [ref=e1086]
+                    - generic [ref=e1091]:
+                      - text: Pregunta por nuestro injerto de
+                      - emphasis [ref=e1092]: capilar
+                      - text: y comienza una nueva vida. DHI Bucaramanga, sí es posible recuperar de forma natural nuestro cabello. 54 Años...
+                    - generic [ref=e1094]:
+                      - text: ‎
+                      - link "Agenda Tu Cita" [ref=e1095] [cursor=pointer]:
+                        - /url: https://dhicolombia.com.co/registro/bucaramanga/?v=222
+                      - text: · ‎
+                      - link "No busques más, Ingresa Aquí" [ref=e1096] [cursor=pointer]:
+                        - /url: /aclk?sa=L&ai=DChsSEwiL-Om1nuuUAxXNsgMAHfwcI8IYACICCAIQBxoCb2E&co=1&ase=2&gclid=EAIaIQobChMIi_jptZ7rlAMVzbIDAB38HCPCEAMYASAFEgI0s_D_BwE&cid=CAASuwHkaDCG59__T78h_hOcNe166nB_ZhdqjulJCXceTksRWmg5ICB53zXhYbX8AnoQhqeyk780zbBkvI72T_dYL_O0ZTQLAIMK0N1Y_Wbb63rQoGJB5Bb7acwXcfAP5xgk3jrfdKycOivIh9aZYKmIrA_tgjYEnEXbfuYAEN5g88UwLl_Jn4YvkNMrSOmQ0fK6K2b-XvkBrSD-z1J5xvkuKkCLmEl9M-dVd3TmYNHEICdoVBcqWEQVD3HinunQ&cce=2&category=acrcp_v1_32&sig=AOD64_0cHN56RA7_jAJq0LvUrzF52_rQdA&adurl=&q=
+                      - text: · ‎
+                      - link "Clinica injerto capilar" [ref=e1097] [cursor=pointer]:
+                        - /url: /aclk?sa=L&ai=DChsSEwiL-Om1nuuUAxXNsgMAHfwcI8IYACICCAIQCBoCb2E&co=1&ase=2&gclid=EAIaIQobChMIi_jptZ7rlAMVzbIDAB38HCPCEAMYASAGEgL8FvD_BwE&cid=CAASuwHkaDCG59__T78h_hOcNe166nB_ZhdqjulJCXceTksRWmg5ICB53zXhYbX8AnoQhqeyk780zbBkvI72T_dYL_O0ZTQLAIMK0N1Y_Wbb63rQoGJB5Bb7acwXcfAP5xgk3jrfdKycOivIh9aZYKmIrA_tgjYEnEXbfuYAEN5g88UwLl_Jn4YvkNMrSOmQ0fK6K2b-XvkBrSD-z1J5xvkuKkCLmEl9M-dVd3TmYNHEICdoVBcqWEQVD3HinunQ&cce=2&category=acrcp_v1_32&sig=AOD64_2VoYHv9YiN_aD7OCdCdE3w1gCkkw&adurl=&q=
+                      - text: · ‎
+                      - link "¿Que Esperas?" [ref=e1098] [cursor=pointer]:
+                        - /url: https://dhicolombia.com.co/registro/bucaramanga/?v=111
+                    - generic [ref=e1100]:
+                      - generic [ref=e1101]: "Oferta:"
+                      - link "COP 120,000 de descuento en tú Consulta Capilar" [ref=e1102] [cursor=pointer]:
+                        - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwiL-Om1nuuUAxXNsgMAHfwcI8IYACICCAIQBRoCb2E&co=1&ase=2&gclid=EAIaIQobChMIi_jptZ7rlAMVzbIDAB38HCPCEAMYASADEgKB1PD_BwE&cid=CAASuwHkaDCG59__T78h_hOcNe166nB_ZhdqjulJCXceTksRWmg5ICB53zXhYbX8AnoQhqeyk780zbBkvI72T_dYL_O0ZTQLAIMK0N1Y_Wbb63rQoGJB5Bb7acwXcfAP5xgk3jrfdKycOivIh9aZYKmIrA_tgjYEnEXbfuYAEN5g88UwLl_Jn4YvkNMrSOmQ0fK6K2b-XvkBrSD-z1J5xvkuKkCLmEl9M-dVd3TmYNHEICdoVBcqWEQVD3HinunQ&cce=2&category=acrcp_v1_32&sig=AOD64_3pJ_i8lYjrFc6ybsQltAKp2MLJmg&nis=4&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQgtsBegQIZBAY&adurl=
+                  - generic [ref=e1107]:
+                    - link "Imagen de rogansya.com" [ref=e1109] [cursor=pointer]:
+                      - /url: https://www.google.com/aclk?sa=L&ai=DChsSEwiL-Om1nuuUAxXNsgMAHfwcI8IYACICCAIQAxoCb2E&co=1&ase=2&gclid=EAIaIQobChMIi_jptZ7rlAMVzbIDAB38HCPCEAMYAiABEgIzcvD_BwE&cid=CAASuwHkaDCG59__T78h_hOcNe166nB_ZhdqjulJCXceTksRWmg5ICB53zXhYbX8AnoQhqeyk780zbBkvI72T_dYL_O0ZTQLAIMK0N1Y_Wbb63rQoGJB5Bb7acwXcfAP5xgk3jrfdKycOivIh9aZYKmIrA_tgjYEnEXbfuYAEN5g88UwLl_Jn4YvkNMrSOmQ0fK6K2b-XvkBrSD-z1J5xvkuKkCLmEl9M-dVd3TmYNHEICdoVBcqWEQVD3HinunQ&cce=2&category=acrcp_v1_32&sig=AOD64_2XDdN3nUq2oU6cI2phnLeOxraIOQ&q=&nis=4&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQh78CegQIYxAB&adurl=
+                      - img "Imagen de rogansya.com" [ref=e1111]
+                    - generic [ref=e1112]:
+                      - link "Precio implante capilar Rogans https://www.rogansya.com" [ref=e1113] [cursor=pointer]:
+                        - /url: https://rogansya.com/implantes-capilares/
+                        - heading "Precio implante capilar" [level=3] [ref=e1115]
+                        - generic [ref=e1121]:
+                          - generic [ref=e1123]: Rogans
+                          - generic [ref=e1124]: https://www.rogansya.com
+                      - button "¿Por qué este anuncio?" [ref=e1127] [cursor=pointer]:
+                        - img [ref=e1129]
+                    - generic [ref=e1134]:
+                      - text: Mejor Clínica
+                      - emphasis [ref=e1135]: Implante Capilar
+                      - text: — Precios accesible y planes de financiamiento, tenemos todas las opciones de credito. En Rogans garantizamos resultados naturales y seguimiento médico. Citas 100% online. Tratamiento Alopecia.
+                - button "Ocultar resultados patrocinados" [ref=e1137] [cursor=pointer]:
+                  - separator [ref=e1138]
+                  - generic [ref=e1139]:
+                    - generic [ref=e1140]: Ocultar resultados patrocinados
+                    - img [ref=e1142]
+        - generic [ref=e1145]:
+          - generic [ref=e1150]:
+            - heading "También se buscó" [level=2] [ref=e1152]
+            - generic [ref=e1154]:
+              - generic [ref=e1155]:
+                - link "Implante capilar precio Colombia" [ref=e1159] [cursor=pointer]:
+                  - /url: /search?sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&q=Implante+capilar+precio+Colombia&sa=X&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ1QJ6BAgiEAE
+                  - generic [ref=e1160]:
+                    - generic [ref=e1165]: Implante capilar precio Colombia
+                    - img [ref=e1169]
+                - link "Mejores clínicas de implante capilar en Colombia" [ref=e1174] [cursor=pointer]:
+                  - /url: /search?sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&q=Mejores+cl%C3%ADnicas+de+implante+capilar+en+Colombia&sa=X&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ1QJ6BAgvEAE
+                  - generic [ref=e1175]:
+                    - generic [ref=e1180]: Mejores clínicas de implante capilar en Colombia
+                    - img [ref=e1184]
+                - link "Implante capilar Bogotá precio" [ref=e1189] [cursor=pointer]:
+                  - /url: /search?sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&q=Implante+capilar+Bogot%C3%A1+precio&sa=X&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ1QJ6BAguEAE
+                  - generic [ref=e1190]:
+                    - generic [ref=e1195]: Implante capilar Bogotá precio
+                    - img [ref=e1199]
+                - link "Mediarte implante capilar" [ref=e1204] [cursor=pointer]:
+                  - /url: /search?sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&q=Mediarte+implante+capilar&sa=X&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ1QJ6BAgqEAE
+                  - generic [ref=e1205]:
+                    - generic [ref=e1210]: Mediarte implante capilar
+                    - img [ref=e1214]
+              - generic [ref=e1216]:
+                - link "Implante capilar Bogotá" [ref=e1220] [cursor=pointer]:
+                  - /url: /search?sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&q=Implante+capilar+Bogot%C3%A1&sa=X&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ1QJ6BAgmEAE
+                  - generic [ref=e1221]:
+                    - generic [ref=e1226]: Implante capilar Bogotá
+                    - img [ref=e1230]
+                - link "Implante capilar DHI precio" [ref=e1235] [cursor=pointer]:
+                  - /url: /search?sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&q=Implante+capilar+DHI+precio&sa=X&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ1QJ6BAglEAE
+                  - generic [ref=e1236]:
+                    - generic [ref=e1241]: Implante capilar DHI precio
+                    - img [ref=e1245]
+                - link "Implante capilar Medellín" [ref=e1250] [cursor=pointer]:
+                  - /url: /search?sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&q=Implante+capilar+Medell%C3%ADn&sa=X&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ1QJ6BAgkEAE
+                  - generic [ref=e1251]:
+                    - generic [ref=e1256]: Implante capilar Medellín
+                    - img [ref=e1260]
+                - link "Implante capilar Pereira" [ref=e1265] [cursor=pointer]:
+                  - /url: /search?sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&q=Implante+capilar+Pereira&sa=X&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ1QJ6BAgjEAE
+                  - generic [ref=e1266]:
+                    - generic [ref=e1271]: Implante capilar Pereira
+                    - img [ref=e1275]
+          - navigation [ref=e1277]:
+            - heading "Navegación de páginas" [level=1] [ref=e1278]
+            - text: "1"
+            - link "Page 2" [ref=e1281] [cursor=pointer]:
+              - /url: /search?q=implante+capilar+colombia&sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&ei=WDQgasaBFbK4p84PhKGU4AE&start=10&sa=N&sstk=AU9db-DKM5FUsakq6bsZczN1RfloJ2iX-wJQb1IPIKwUinB5coF9epd_nC1edgBSqUg481_t7xIrGgZj04NNjB9qj8sw65RZeLTvoQ&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ8tMDegQIQBAE
+              - text: "2"
+            - link "Page 3" [ref=e1283] [cursor=pointer]:
+              - /url: /search?q=implante+capilar+colombia&sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&ei=WDQgasaBFbK4p84PhKGU4AE&start=20&sa=N&sstk=AU9db-DKM5FUsakq6bsZczN1RfloJ2iX-wJQb1IPIKwUinB5coF9epd_nC1edgBSqUg481_t7xIrGgZj04NNjB9qj8sw65RZeLTvoQ&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ8tMDegQIQBAG
+              - text: "3"
+            - link "Page 4" [ref=e1285] [cursor=pointer]:
+              - /url: /search?q=implante+capilar+colombia&sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&ei=WDQgasaBFbK4p84PhKGU4AE&start=30&sa=N&sstk=AU9db-DKM5FUsakq6bsZczN1RfloJ2iX-wJQb1IPIKwUinB5coF9epd_nC1edgBSqUg481_t7xIrGgZj04NNjB9qj8sw65RZeLTvoQ&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ8tMDegQIQBAI
+              - text: "4"
+            - link "Page 5" [ref=e1287] [cursor=pointer]:
+              - /url: /search?q=implante+capilar+colombia&sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&ei=WDQgasaBFbK4p84PhKGU4AE&start=40&sa=N&sstk=AU9db-DKM5FUsakq6bsZczN1RfloJ2iX-wJQb1IPIKwUinB5coF9epd_nC1edgBSqUg481_t7xIrGgZj04NNjB9qj8sw65RZeLTvoQ&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ8tMDegQIQBAK
+              - text: "5"
+            - link "Page 6" [ref=e1289] [cursor=pointer]:
+              - /url: /search?q=implante+capilar+colombia&sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&ei=WDQgasaBFbK4p84PhKGU4AE&start=50&sa=N&sstk=AU9db-DKM5FUsakq6bsZczN1RfloJ2iX-wJQb1IPIKwUinB5coF9epd_nC1edgBSqUg481_t7xIrGgZj04NNjB9qj8sw65RZeLTvoQ&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ8tMDegQIQBAM
+              - text: "6"
+            - link "Page 7" [ref=e1291] [cursor=pointer]:
+              - /url: /search?q=implante+capilar+colombia&sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&ei=WDQgasaBFbK4p84PhKGU4AE&start=60&sa=N&sstk=AU9db-DKM5FUsakq6bsZczN1RfloJ2iX-wJQb1IPIKwUinB5coF9epd_nC1edgBSqUg481_t7xIrGgZj04NNjB9qj8sw65RZeLTvoQ&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ8tMDegQIQBAO
+              - text: "7"
+            - link "Page 8" [ref=e1293] [cursor=pointer]:
+              - /url: /search?q=implante+capilar+colombia&sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&ei=WDQgasaBFbK4p84PhKGU4AE&start=70&sa=N&sstk=AU9db-DKM5FUsakq6bsZczN1RfloJ2iX-wJQb1IPIKwUinB5coF9epd_nC1edgBSqUg481_t7xIrGgZj04NNjB9qj8sw65RZeLTvoQ&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ8tMDegQIQBAQ
+              - text: "8"
+            - link "Page 9" [ref=e1295] [cursor=pointer]:
+              - /url: /search?q=implante+capilar+colombia&sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&ei=WDQgasaBFbK4p84PhKGU4AE&start=80&sa=N&sstk=AU9db-DKM5FUsakq6bsZczN1RfloJ2iX-wJQb1IPIKwUinB5coF9epd_nC1edgBSqUg481_t7xIrGgZj04NNjB9qj8sw65RZeLTvoQ&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ8tMDegQIQBAS
+              - text: "9"
+            - link "Page 10" [ref=e1297] [cursor=pointer]:
+              - /url: /search?q=implante+capilar+colombia&sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&ei=WDQgasaBFbK4p84PhKGU4AE&start=90&sa=N&sstk=AU9db-DKM5FUsakq6bsZczN1RfloJ2iX-wJQb1IPIKwUinB5coF9epd_nC1edgBSqUg481_t7xIrGgZj04NNjB9qj8sw65RZeLTvoQ&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ8tMDegQIQBAU
+              - text: "10"
+            - heading "Siguiente" [level=2] [ref=e1299]:
+              - link "Siguiente" [ref=e1300] [cursor=pointer]:
+                - /url: /search?q=implante+capilar+colombia&sca_esv=fd0edd9ad72f1f9a&gl=co&hl=es&ei=WDQgasaBFbK4p84PhKGU4AE&start=10&sa=N&sstk=AU9db-DKM5FUsakq6bsZczN1RfloJ2iX-wJQb1IPIKwUinB5coF9epd_nC1edgBSqUg481_t7xIrGgZj04NNjB9qj8sw65RZeLTvoQ&ved=2ahUKEwjGjeS1nuuUAxUy3MkDHYQQBRwQ8NMDegQIQBAW
+                - generic [ref=e1302]: Siguiente
+        - navigation
+    - contentinfo [ref=e1303]:
+      - heading "Vínculos a pie de página" [level=1] [ref=e1304]
+      - generic [ref=e1308]:
+        - generic [ref=e1310]:
+          - text: Colombia
+          - generic [ref=e1312]:
+            - button "Bucaramanga, Santander - Según tu actividad anterior" [ref=e1314] [cursor=pointer]:
+              - generic [ref=e1315]: Bucaramanga, Santander
+              - generic [ref=e1317]:
+                - text: "-"
+                - generic [ref=e1318]: Según tu actividad anterior
+            - text: "-"
+            - button "Actualizar ubicación" [ref=e1320] [cursor=pointer]: Actualizar ubicación
+        - generic [ref=e1323]:
+          - link "Ayuda" [ref=e1324] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=es-CO&fg=1
+          - link "Enviar comentarios" [ref=e1325] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacidad" [ref=e1326] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=es-CO&fg=1
+          - link "Condiciones" [ref=e1327] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=es-CO&fg=1

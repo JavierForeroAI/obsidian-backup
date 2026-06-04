@@ -1,0 +1,8 @@
+[     703ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://dhicolombia.com.co/wp-content/plugins/popup-maker/dist/packages/block-library-style.css?ver=7424eb959f91acb8bbb2:0
+[    1349ms] [LOG] JQMIGRATE: Migrate is installed, version 3.4.1 @ https://dhicolombia.com.co/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1:1
+[    1880ms] [LOG] Comprobando ubicación y métodos de envío al cargar la página de checkout... @ https://dhicolombia.com.co/wp-content/themes/clilab/js/sync-stock-location-state.js:79
+[    1880ms] [LOG] Ubicación obtenida de localStorage: null @ https://dhicolombia.com.co/wp-content/themes/clilab/js/sync-stock-location-state.js:21
+[    1880ms] [LOG] No se ha seleccionado una ubicación válida. @ https://dhicolombia.com.co/wp-content/themes/clilab/js/sync-stock-location-state.js:45
+[    1880ms] [LOG] Valor total del carrito: NaN @ https://dhicolombia.com.co/wp-content/themes/clilab/js/sync-stock-location-state.js:52
+[    1880ms] [LOG] No se encontraron métodos de envío válidos. @ https://dhicolombia.com.co/wp-content/themes/clilab/js/sync-stock-location-state.js:74
+[    2093ms] [ERROR] Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID @ https://cli.21lab.co/wp-content/uploads/2021/08/bg-sidebar.jpg:0

@@ -85,6 +85,53 @@ tema: competidores
 - Rogans apunta masivo — su comunicación no segmenta por avatar
 - **Oportunidad:** Innovart puede dominar nichos específicos (Militar, Gubernamental, Gay Premium) que Rogans no trabaja con messaging diferenciado
 
+## Dharma Hair Colombia
+- **Categoría**: Competidor indirecto · Referente SEO #1 del sector capilar en Colombia
+- **Precio**: No publicado
+- **Sede**: Torre Médica Oviedo, Medellín (1 sede)
+- **Director**: Dr. David Delgado — Cirujano Plástico, miembro SCCP
+- **Agencia SEO**: amedik.co (especializada en salud)
+- **Técnicas**: FUE, ARTAS, implante de barba, implante de cejas, mesoterapia capilar
+- **Diferenciadores**: Arquitectura SEO más avanzada del sector · Artículos 2.500–4.000 palabras firmados por médico con referencias PubMed · Simulación 3D · Contenido en inglés y español para turismo médico · Galería antes/después SEO-optimizada
+- **URL sitio**: https://dharmahair.co
+- **Meta Ads Library**: buscar "Dharma Hair" en library (Colombia)
+- **Google Maps**: buscar "Dharma Hair Medellín" en maps
+
+### Debilidades vs Innovart
+- Sin garantía vitalicia · Sin múltiples sedes nacionales · Sin financiación · Solo cubre Medellín
+
+### Lecciones para Innovart
+- Replicar estructura URL `/implante-capilar-bogota/` (no `/pages/bogota/`)
+- Artículos largos con autoridad médica firmados por Dr. Carreño o Dra. Morales
+- Páginas separadas por género (hombres / mujeres)
+- Contenido en inglés para turismo médico internacional
+- Página dedicada de antes/después con imágenes optimizadas
+
+---
+
+## Ileanovo
+- **Categoría**: Competidor regional · Referente arquitectura SEO #2 en Latinoamérica
+- **Precio**: No publicado
+- **Presencia**: Colombia (Bogotá, Medellín, Cali) · Ecuador (Quito, Guayaquil) · Perú (Lima)
+- **Experiencia**: 8+ años · 5.000+ procedimientos
+- **Técnicas**: Implante capilar (técnica no especificada en sitio)
+- **Diferenciadores**: Mejor arquitectura de URLs del sector en Latam (país → ciudad → servicio) · Google Reviews 5.0 en todas las sedes · Sitio bilingüe inglés/español · Turismo médico internacional activo
+- **URL sitio**: https://ileanovo.com
+- **Estructura URLs modelo**: `ileanovo.com/en/colombia/bogota/hair-transplant/`
+- **Meta Ads Library**: buscar "Ileanovo" en library (Colombia)
+- **Google Maps**: buscar "Ileanovo Bogotá" / "Ileanovo Medellín" en maps
+
+### Debilidades vs Innovart
+- Sin garantía vitalicia · Sin financiación · Blog menos profundo que Dharma Hair · Sin segmentación por género en páginas de ciudad
+
+### Lecciones para Innovart
+- La jerarquía de URLs es el activo SEO más valioso — invertir en hacerla bien desde el inicio
+- El modelo escala fácilmente: agregar nueva ciudad = nueva URL siguiendo el mismo patrón
+- Integrar Google Reviews visualmente en cada página de sede
+- Una versión en inglés de páginas principales abriría el mercado de turismo médico americano
+
+---
+
 ## Benchmarks de alerta
 
 | Señal | Acción sugerida |

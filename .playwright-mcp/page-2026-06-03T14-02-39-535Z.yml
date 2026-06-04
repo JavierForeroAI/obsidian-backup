@@ -1,0 +1,332 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - link "DHI Colombia" [ref=e6] [cursor=pointer]:
+        - /url: https://dhicolombia.com.co
+        - img "DHI Colombia" [ref=e7]
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link "Inicio" [ref=e11] [cursor=pointer]:
+              - /url: https://dhicolombia.com.co/
+          - listitem [ref=e12]:
+            - link " Implante" [ref=e13] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e14]:
+            - link " Restauración Capilar" [ref=e15] [cursor=pointer]:
+              - /url: https://dhicolombia.com.co/restauracion-capilar/
+          - listitem [ref=e16]:
+            - link "Resultados DHI" [ref=e17] [cursor=pointer]:
+              - /url: https://dhicolombia.com.co/resultados-dhi/
+          - listitem [ref=e18]:
+            - link " Sedes" [ref=e19] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e20]:
+            - link "PQR" [ref=e21] [cursor=pointer]:
+              - /url: https://dhicolombia.com.co/pqr/
+          - listitem [ref=e22]:
+            - link "Tienda Virtual" [ref=e23] [cursor=pointer]:
+              - /url: /tienda
+      - generic [ref=e24]:
+        - link "" [ref=e25] [cursor=pointer]:
+          - /url: https://www.facebook.com/DhiColombia/
+          - generic [ref=e26]: 
+        - link "" [ref=e27] [cursor=pointer]:
+          - /url: https://www.youtube.com/channel/UC9ighxV2CY-y96QaIfp7zsA
+          - generic [ref=e28]: 
+        - link "" [ref=e29] [cursor=pointer]:
+          - /url: https://www.instagram.com/dhi_colombia/
+          - generic [ref=e30]: 
+    - generic [ref=e32]:
+      - link "DHI Colombia" [ref=e34] [cursor=pointer]:
+        - /url: https://dhicolombia.com.co
+        - img "DHI Colombia" [ref=e35]
+      - navigation [ref=e36]:
+        - list [ref=e37]:
+          - listitem [ref=e38]:
+            - link "Inicio" [ref=e39] [cursor=pointer]:
+              - /url: https://dhicolombia.com.co/
+          - listitem [ref=e40]:
+            - link " Implante" [ref=e41] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e42]:
+            - link " Restauración Capilar" [ref=e43] [cursor=pointer]:
+              - /url: https://dhicolombia.com.co/restauracion-capilar/
+          - listitem [ref=e44]:
+            - link "Resultados DHI" [ref=e45] [cursor=pointer]:
+              - /url: https://dhicolombia.com.co/resultados-dhi/
+          - listitem [ref=e46]:
+            - link " Sedes" [ref=e47] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e48]:
+            - link "PQR" [ref=e49] [cursor=pointer]:
+              - /url: https://dhicolombia.com.co/pqr/
+          - listitem [ref=e50]:
+            - link "Tienda Virtual" [ref=e51] [cursor=pointer]:
+              - /url: /tienda
+      - generic [ref=e52]:
+        - link "" [ref=e53] [cursor=pointer]:
+          - /url: https://www.facebook.com/DhiColombia/
+          - generic [ref=e54]: 
+        - link "" [ref=e55] [cursor=pointer]:
+          - /url: https://www.youtube.com/channel/UC9ighxV2CY-y96QaIfp7zsA
+          - generic [ref=e56]: 
+        - link "" [ref=e57] [cursor=pointer]:
+          - /url: https://www.instagram.com/dhi_colombia/
+          - generic [ref=e58]: 
+    - main [ref=e62]:
+      - generic [ref=e63]:
+        - generic [ref=e74] [cursor=pointer]:
+          - img "Agenda tu consulta capilar con DHI Colombia"
+        - list [ref=e91]:
+          - listitem [ref=e92]:
+            - link " event create 1 Reserva una cita" [ref=e93] [cursor=pointer]:
+              - /url: /agendar-cita/
+              - text: 
+              - img "event create 1" [ref=e95]
+              - generic [ref=e99]: Reserva una cita
+          - listitem [ref=e100]:
+            - link " square pin Nuestras sedes" [ref=e101] [cursor=pointer]:
+              - /url: /directorio-de-sedes/
+              - text: 
+              - img "square pin" [ref=e103]
+              - generic [ref=e108]: Nuestras sedes
+          - listitem [ref=e109]:
+            - link " stethoscope Servicios" [ref=e110] [cursor=pointer]:
+              - /url: /servicios/
+              - text: 
+              - img "stethoscope" [ref=e112]
+              - generic [ref=e117]: Servicios
+          - listitem [ref=e118]:
+            - link " cheque 3 Pagos en línea" [ref=e119] [cursor=pointer]:
+              - /url: "#"
+              - text: 
+              - img "cheque 3" [ref=e121]
+              - generic [ref=e125]: Pagos en línea
+        - generic [ref=e129]:
+          - generic [ref=e131]:
+            - heading "Nuestros tratamientos en DHI" [level=2] [ref=e136]:
+              - text: Nuestros tratamientos
+              - text: en DHI
+            - paragraph [ref=e141]:
+              - link " Descubre DHI, líder en restauración capilar con 54 años de experiencia. Patentes en EE. UU. y la UE, y estándares ISO. Recupera tu cabello con resultados excepcionales." [ref=e142] [cursor=pointer]:
+                - /url: "#"
+          - generic [ref=e146]:
+            - list [ref=e149]:
+              - listitem [ref=e150]:
+                - generic [ref=e151]:
+                  - link [ref=e152] [cursor=pointer]:
+                    - /url: https://dhicolombia.com.co/servicios/implante-capilar/
+                  - heading "Implante Capilar" [level=3] [ref=e155]:
+                    - link "Implante Capilar" [ref=e156] [cursor=pointer]:
+                      - /url: https://dhicolombia.com.co/servicios/implante-capilar/
+              - listitem [ref=e157]:
+                - generic [ref=e158]:
+                  - link [ref=e159] [cursor=pointer]:
+                    - /url: https://dhicolombia.com.co/servicios/implante-de-barba/
+                  - heading "Implante de barba" [level=3] [ref=e162]:
+                    - link "Implante de barba" [ref=e163] [cursor=pointer]:
+                      - /url: https://dhicolombia.com.co/servicios/implante-de-barba/
+              - listitem [ref=e164]:
+                - generic [ref=e165]:
+                  - link "implante de cejas- DHI" [ref=e166] [cursor=pointer]:
+                    - /url: https://dhicolombia.com.co/servicios/implante-de-cejas/
+                    - img "implante de cejas- DHI" [ref=e168]
+                  - heading "Implante de cejas" [level=3] [ref=e170]:
+                    - link "Implante de cejas" [ref=e171] [cursor=pointer]:
+                      - /url: https://dhicolombia.com.co/servicios/implante-de-cejas/
+              - listitem [ref=e172]:
+                - generic [ref=e173]:
+                  - link [ref=e174] [cursor=pointer]:
+                    - /url: https://dhicolombia.com.co/servicios/micropigmentacion/
+                  - heading "Micropigmentación" [level=3] [ref=e177]:
+                    - link "Micropigmentación" [ref=e178] [cursor=pointer]:
+                      - /url: https://dhicolombia.com.co/servicios/micropigmentacion/
+              - listitem [ref=e179]:
+                - generic [ref=e180]:
+                  - link "Terapia capilar-DHI" [ref=e181] [cursor=pointer]:
+                    - /url: https://dhicolombia.com.co/terapia-capilar/
+                    - img "Terapia capilar-DHI" [ref=e183]
+                  - heading "Mesoterapia Capilar en Colombia" [level=3] [ref=e185]:
+                    - link "Mesoterapia Capilar en Colombia" [ref=e186] [cursor=pointer]:
+                      - /url: https://dhicolombia.com.co/terapia-capilar/
+            - link "Agenda tu cita" [ref=e190] [cursor=pointer]:
+              - /url: https://dhicolombia.com.co/agendar-cita/
+              - generic [ref=e192]: Agenda tu cita
+        - generic [ref=e193]:
+          - heading "¡DHI, Cambiando vidas!" [level=2] [ref=e196]
+          - heading "HISTORIAS REALES" [level=3] [ref=e199]
+        - generic [ref=e201]:
+          - generic [ref=e207] [cursor=pointer]:
+            - img "DHI Colombia - Oscar Córdoba - Restauración Capilar" [ref=e208]
+            - button "Reproducir vídeo" [ref=e209]:
+              - img [ref=e210]
+          - generic [ref=e213]:
+            - generic [ref=e215]:
+              - generic [ref=e221] [cursor=pointer]:
+                - img "DHI Colombia - Líder en restauración Capilar" [ref=e222]
+                - button "Reproducir vídeo" [ref=e223]:
+                  - img [ref=e224]
+              - generic [ref=e231] [cursor=pointer]:
+                - img "DHI Líder Mundial en restauración capilar" [ref=e232]
+                - button "Reproducir vídeo" [ref=e233]:
+                  - img [ref=e234]
+            - generic [ref=e237]:
+              - button "Reproducir vídeo" [ref=e244] [cursor=pointer]:
+                - img [ref=e245]
+              - button "Reproducir vídeo" [ref=e253] [cursor=pointer]:
+                - img [ref=e254]
+        - generic [ref=e261]:
+          - heading "¿Por qué elegirnos?" [level=2] [ref=e264]
+          - generic [ref=e266]:
+            - heading "¿QUÉ NOS HACE DIFERENTES?" [level=3] [ref=e270]
+            - generic [ref=e273]: Nuestra única técnica de implante capilar Direct Hair Implant es el resultado de más de 50 años de experiencia e investigación.
+          - generic [ref=e279]:
+            - heading "¿QUÉ OFRECEMOS?" [level=3] [ref=e283]
+            - generic [ref=e286]:
+              - paragraph [ref=e287]:
+                - strong [ref=e288]: DHI TOTAL CARE SYSTEM
+              - list [ref=e289]:
+                - listitem [ref=e290]: Diagnóstico avanzado para el tratamiento ideal
+                - listitem [ref=e291]: Tratamientos superiores
+                - listitem [ref=e292]: Propuestas de valor
+                - listitem [ref=e293]: Soporte continuo
+          - generic [ref=e299]:
+            - heading "SOMOS ESPECIALISTAS EXPERTOS" [level=3] [ref=e303]
+            - paragraph [ref=e307]: Nuestros médicos especializados son parte de un equipo global de expertos en caída del cabello que están presentes en más de 40 países. Contamos con productos únicos y exclusivos para mejorar la caida del cabello.
+        - heading "\"Nuestra misión es mejorar la salud capilar y el bienestar brindando la mejor calidad en nuestros servicios\"" [level=3] [ref=e324]
+        - generic [ref=e343]:
+          - figure [ref=e344]:
+            - link [ref=e345] [cursor=pointer]:
+              - /url: https://dhicolombia.com.co/blog/
+          - generic [ref=e346]:
+            - heading "CUIDADO PERSONAL" [level=3] [ref=e347]:
+              - link "CUIDADO PERSONAL" [ref=e348] [cursor=pointer]:
+                - /url: https://dhicolombia.com.co/blog/
+            - paragraph [ref=e349]:
+              - text: Encuentra información valiosa para el cuidado de tu cuero cabelludo o cabello.
+              - link "SABER MÁS" [ref=e350] [cursor=pointer]:
+                - /url: https://dhicolombia.com.co/2024/blog/
+        - generic [ref=e358]:
+          - generic [ref=e362]:
+            - heading "Reconocimientos" [level=2] [ref=e365]
+            - paragraph [ref=e368]: "Nos sentimos honrados de ser reconocidos por la calidad de la atención, la seguridad y la excelencia ambiental. Algunos de los premios que hemos recibido incluyen:"
+          - generic [ref=e386]:
+            - heading "Blog" [level=1] [ref=e391]
+            - link "Ver más publicaciones " [ref=e397] [cursor=pointer]:
+              - /url: https://dhicolombia.com.co/2024/blog/
+              - generic [ref=e399]: Ver más publicaciones
+              - text: 
+    - generic [ref=e412]:
+      - complementary [ref=e416]:
+        - generic [ref=e418]:
+          - heading "El 80% de los hombres y el 50% de las mujeres sufren de alopecia." [level=2] [ref=e419]:
+            - text: El 8
+            - strong [ref=e420]: 0%
+            - text: de los hombres y el 50
+            - strong [ref=e421]: "%"
+            - text: de las mujeres sufren de alopecia.
+          - heading "!Aún estás a tiempo! registra tu cita en la sede más cercana." [level=3] [ref=e422]:
+            - strong [ref=e423]: "!Aún estás a tiempo!"
+            - text: registra tu cita en la sede más cercana.
+          - link " Reservar una cita" [ref=e425] [cursor=pointer]:
+            - /url: https://dhicolombia.com.co/agendar-cita/
+            - generic [ref=e426]: 
+            - text: Reservar una cita
+      - generic [ref=e429]:
+        - complementary [ref=e430]:
+          - link [ref=e432] [cursor=pointer]:
+            - /url: "#"
+        - complementary [ref=e433]:
+          - generic [ref=e434]:
+            - heading "DESCUBRE" [level=3] [ref=e435]
+            - list [ref=e437]:
+              - listitem [ref=e438]:
+                - link "• Blog DHI" [ref=e439] [cursor=pointer]:
+                  - /url: https://dhicolombia.com.co/blog/
+              - listitem [ref=e440]:
+                - link "• Resultados" [ref=e441] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e442]:
+                - link "• Kits Capilares" [ref=e443] [cursor=pointer]:
+                  - /url: https://dhicolombia.com.co/kits-capilares/
+        - complementary [ref=e444]:
+          - generic [ref=e445]:
+            - heading "DHI GLOBAL" [level=3] [ref=e446]
+            - list [ref=e448]:
+              - listitem [ref=e449]:
+                - link "• Acerca de DHI" [ref=e450] [cursor=pointer]:
+                  - /url: https://dhiglobal.com/about/
+              - listitem [ref=e451]:
+                - link "• Hitos DHI" [ref=e452] [cursor=pointer]:
+                  - /url: https://dhiglobal.com/about/milestones/
+              - listitem [ref=e453]:
+                - link "• Concejo Cientifico" [ref=e454] [cursor=pointer]:
+                  - /url: https://dhiglobal.com/about/board/
+              - listitem [ref=e455]:
+                - link "• Sedes internacionales" [ref=e456] [cursor=pointer]:
+                  - /url: https://dhiglobal.com/about/clinics/
+        - complementary [ref=e457]:
+          - generic [ref=e458]:
+            - heading "LEGAL" [level=3] [ref=e459]
+            - list [ref=e461]:
+              - listitem [ref=e462]:
+                - link "• Política de privacidad" [ref=e463] [cursor=pointer]:
+                  - /url: https://dhicolombia.com.co/politica-de-privacidad/
+              - listitem [ref=e464]:
+                - link "• Notas Legales" [ref=e465] [cursor=pointer]:
+                  - /url: https://dhicolombia.com.co/notas-legales/
+              - listitem [ref=e466]:
+                - link "• Responsabilidad Médica" [ref=e467] [cursor=pointer]:
+                  - /url: https://dhicolombia.com.co/responsabilidad-medica/
+              - listitem [ref=e468]:
+                - link "• PQR" [ref=e469] [cursor=pointer]:
+                  - /url: https://dhicolombia.com.co/pqr/
+      - generic [ref=e471]:
+        - link "" [ref=e473] [cursor=pointer]:
+          - /url: javascript:;
+        - generic [ref=e474]:
+          - generic [ref=e475]: Copyright © 2025 DHI Colombia. Todos los derechos reservados. La información en este sitio web es de carácter informativo y no reemplaza la consulta médica profesional. Los resultados pueden variar entre pacientes.
+          - generic [ref=e476]:
+            - link "" [ref=e477] [cursor=pointer]:
+              - /url: https://www.facebook.com/DhiColombia/
+              - generic [ref=e478]: 
+            - link "" [ref=e479] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UC9ighxV2CY-y96QaIfp7zsA
+              - generic [ref=e480]: 
+            - link "" [ref=e481] [cursor=pointer]:
+              - /url: https://www.instagram.com/dhi_colombia/
+              - generic [ref=e482]: 
+  - dialog [ref=e483]:
+    - generic [ref=e484]:
+      - generic [active] [ref=e485]:
+        - generic [ref=e486]:
+          - heading "Bienvenido a DHI Colombia" [level=1] [ref=e487]
+          - paragraph [ref=e488]: Encuentra tu sede más cercana
+          - paragraph [ref=e489]:
+            - combobox [ref=e490] [cursor=pointer]:
+              - option "Selecciona una sede" [selected]
+              - option "Barranquilla"
+              - option "Bogotá Norte Unicentro"
+              - option "Bogotá Salitre"
+              - option "Bogotá Gran Estación"
+              - option "Bucaramanga"
+              - option "Cajicá"
+              - option "Cali Sede Sur"
+              - option "Cali Sede Norte"
+              - option "Cartagena"
+              - option "Ibagué"
+              - option "Medellín"
+              - option "Pereira"
+              - option "Tunja"
+              - option "Villavicencio"
+          - paragraph [ref=e491]:
+            - button "Ir" [ref=e492] [cursor=pointer]
+        - paragraph
+      - button "Cerrar" [ref=e493] [cursor=pointer]: ×
+  - generic [ref=e494] [cursor=pointer]:
+    - generic [ref=e495]: 
+    - generic [ref=e496]: "0"
+  - generic [ref=e497]: desktop
+  - status [ref=e498]
+  - generic: BESbswy
