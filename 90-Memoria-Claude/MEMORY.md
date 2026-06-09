@@ -40,9 +40,13 @@
 ## Aprendizajes
 - [Dossier descubrimiento 2026-05-18](../10-Clientes/Innovart/_dossier-2026-05-18.md) — Investigación completa inicial
 
+## Integraciones técnicas
+- [GHL ↔ Meta CAPI Worker](integracion-ghl-meta-capi.md) — Worker Cloudflare activo en innovart-meta-capi, corre cada 5min, envía Lead/Schedule/Purchase con PII hasheada + ctwa_clid + fbc
+
 ## Feedback (cómo trabajar conmigo)
 - [GHL análisis por fechas — hacerlo manualmente](feedback-ghl-fechas-manual.md) — Endpoint de citas da 404; leer timestamps de conversaciones/contactos y calcular métricas a mano
 - [Informes → siempre en Drive 3. MERCADEO / CLAUDE](feedback-informes-drive.md) — Guardar todo informe/reporte/auditoría en carpeta CLAUDE (ID: 1rGB1E0XR4lcUwOes2Q9yACe4NphL8Tv5) de Google Drive
+- [fbclid obligatorio en toda landing page](feedback_fbclid_landing_pages.md) — Todo formulario/landing desarrollado para Innovart debe capturar fbclid → campo fb_click_id (GHL ID: FYVJpTGSmAPhiqoRwm97) y ctwa_clid. Sin excepción.
 
 ## Brief del cliente
 - Ver [[../10-Clientes/Innovart/_dossier-2026-05-18]]
