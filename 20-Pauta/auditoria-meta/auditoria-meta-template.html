@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auditoría Meta Ads — Innovart Medical IPS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:       #0B1A28;
+      --bg-card:  #111F2E;
+      --bg-card2: #162840;
+      --border:   #1C3248;
+      --border2:  #243F5A;
+      --teal:     #14B8A6;
+      --teal-dim: #0D9488;
+      --teal-hi:  #2DD4BF;
+      --teal-glow:rgba(20,184,166,0.18);
+      --text:     #DFF5F2;
+      --text-2:   #6FA8A3;
+      --text-3:   #3D6E6A;
+      --red:      #F87171;
+      --red-bg:   rgba(248,113,113,0.09);
+      --amber:    #FCD34D;
+      --amber-bg: rgba(252,211,77,0.08);
+      --green:    #34D399;
+      --green-bg: rgba(52,211,153,0.09);
+      --indigo:   #818CF8;
+      --indigo-bg:rgba(129,140,248,0.1);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .mono { font-family: 'Fira Code', monospace; font-variant-numeric: tabular-nums; }
+
+    .card {
+      background: var(--bg-card);
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      transition: box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+    .card:hover {
+      box-shadow: 0 6px 32px rgba(20,184,166,0.14);
+      border-color: var(--border2);
+    }
+
+    /* Status badges */
+    .status-green  { background: var(--green-bg);  color: var(--green);  }
+    .status-yellow { background: var(--amber-bg);  color: var(--amber);  }
+    .status-red    { background: var(--red-bg);    color: var(--red);    }
+
+    /* Status dots with glow */
+    .dot-green  { background: var(--green);  box-shadow: 0 0 0 3px rgba(52,211,153,0.2);  }
+    .dot-yellow { background: var(--amber);  box-shadow: 0 0 0 3px rgba(252,211,77,0.2);  }
+    .dot-red    { background: var(--red);    box-shadow: 0 0 0 3px rgba(248,113,113,0.2); }
+
+    /* Alert strips */
+    .alert-card   { border-left: 3px solid var(--red);   background: var(--red-bg);   }
+    .warning-card { border-left: 3px solid var(--amber); background: var(--amber-bg); }
+    .winner-card  { border-left: 3px solid var(--green); background: var(--green-bg); }
+
+    /* Delta colors */
+    .delta-pos { color: var(--green); }
+    .delta-neg { color: var(--red);   }
+    .delta-neu { color: var(--text-3);}
+
+    /* Table rows */
+    .trow { border-bottom: 1px solid var(--border); }
+    .trow:hover { background: rgba(20,184,166,0.05); }
+    .thead-cell { color: var(--text-3); font-weight: 500; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; }
+
+    /* Details / accordion */
+    details > summary { list-style: none; cursor: pointer; user-select: none; }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] .chevron { transform: rotate(180deg); }
+    .chevron { transition: transform 0.2s ease; display: inline-block; }
+
+    /* Dividers */
+    .divider { border-color: var(--border); }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 5px; height: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+    /* Metric mini-cards inside account details */
+    .metric-card-teal   { background: rgba(20,184,166,0.1); border: 1px solid rgba(20,184,166,0.2); }
+    .metric-card-indigo { background: var(--indigo-bg); border: 1px solid rgba(129,140,248,0.2); }
+    .metric-card-amber  { background: var(--amber-bg);  border: 1px solid rgba(252,211,77,0.2); }
+
+    /* Campaign row */
+    .cmp-row { border-bottom: 1px solid rgba(255,255,255,0.04); }
+    .cmp-row:hover { background: rgba(255,255,255,0.03); }
+
+    /* Glow accent on page top */
+    .page-glow {
+      position: fixed; top: -120px; left: 50%; transform: translateX(-50%);
+      width: 600px; height: 300px;
+      background: radial-gradient(ellipse, rgba(20,184,166,0.12) 0%, transparent 70%);
+      pointer-events: none; z-index: 0;
+    }
+
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+  </style>
+</head>
+<body>
+
+<div class="page-glow"></div>
+
+<!-- ============================================================
+     DATA BLOCK — El agente reemplaza este objeto con datos reales
+     ============================================================ -->
+<script>
+const DATA = {
+  date: "Sábado, 14 de junio de 2026",
+  generated_at: "2026-06-14 08:04 (Bogotá)",
+  period_label: "Viernes 13 de junio de 2026",
+
+  summary: {
+    total_leads: 47,
+    total_spend_usd: 342.50,
+    total_spend_cop: 2840000,
+    critical_alerts: 1,
+    warnings: 2,
+    winners: 3,
+    vs7d_leads: 12,
+    vs7d_cpl_usd: -8
+  },
+
+  accounts: [
+    {
+      name: "BGTA", city: "Bogotá", id: "act_187478780709376", currency: "USD", status: "green",
+      yesterday: { spend: 145.20, leads: 18, cpl: 8.07, ctr: 1.82, cpm: 7.45, frequency: 2.1 },
+      avg7d:     { spend: 138.50, leads: 15, cpl: 9.23, ctr: 1.65, cpm: 6.90, frequency: 1.8 },
+      trend7d: [12, 14, 11, 16, 15, 17, 18],
+      campaigns: [
+        { name: "data-cold-traffic-standard-bogota-leads-abo-jun25", spend: 95.30, leads: 12, cpl: 7.94, ctr: 2.10, status: "green" },
+        { name: "data-warm-traffic-standard-bogota-leads-abo-jun10", spend: 49.90, leads:  6, cpl: 8.32, ctr: 1.40, status: "yellow" }
+      ],
+      best_ctr_ad: "UGC_testimonio_masculino_v3", best_ctr: 2.8,
+      best_cpl_ad: "hook_presencia_ejecutivo_v1", best_cpl: 6.50,
+      risk_freq_ad: "retargeting_carousel_v1",   risk_freq: 2.4,
+      dx_what:   "Leads +20% vs prom. 7d, CPL −12%. Mejor día de la semana.",
+      dx_why:    "UGC testimonio masculino (CTR 2.8%) traccionando en cold traffic.",
+      dx_action: "Escalar presupuesto del UGC ad set en 20%."
+    },
+    {
+      name: "QUILLA", city: "Barranquilla", id: "act_676872971127807", currency: "USD", status: "green",
+      yesterday: { spend: 0, leads: 0, cpl: null, ctr: null, cpm: null, frequency: null },
+      avg7d:     { spend: 0, leads: 0, cpl: null, ctr: null, cpm: null, frequency: null },
+      trend7d: [0,0,0,0,0,0,0],
+      campaigns: [],
+      best_ctr_ad: "—", best_ctr: null, best_cpl_ad: "—", best_cpl: null, risk_freq_ad: "—", risk_freq: null,
+      dx_what: "Cuenta sin actividad ($0 saldo).",
+      dx_why:  "Cuenta pausada — sin presupuesto asignado.",
+      dx_action: "Verificar si hay plan de reactivar para Q3."
+    },
+    {
+      name: "PANAMA", city: "Panamá", id: "act_1049078199582559", currency: "USD", status: "yellow",
+      yesterday: { spend: 197.30, leads: 10, cpl: 19.73, ctr: 1.12, cpm: 14.20, frequency: 3.4 },
+      avg7d:     { spend: 185.00, leads: 11, cpl: 17.82, ctr: 1.30, cpm: 12.50, frequency: 2.7 },
+      trend7d: [13, 10, 11, 12, 9, 11, 10],
+      campaigns: [
+        { name: "data-cold-traffic-standard-panama-leads-abo-jun01", spend: 140.00, leads: 6, cpl: 23.33, ctr: 0.98, status: "yellow" },
+        { name: "data-warm-traffic-standard-panama-leads-abo-may25", spend:  57.30, leads: 4, cpl: 14.33, ctr: 1.45, status: "green" }
+      ],
+      best_ctr_ad: "hook_presencia_ejecutivo_v2", best_ctr: 2.1,
+      best_cpl_ad: "hook_presencia_ejecutivo_v2", best_cpl: 14.20,
+      risk_freq_ad: "cold_traffic_banner_v3",    risk_freq: 3.4,
+      dx_what:   "CPL +10.7% vs prom 7d. Frecuencia llegó a 3.4 en cold traffic.",
+      dx_why:    "Audiencia cold en fatiga. Creativos sin refresh en 13 días.",
+      dx_action: "Activar 2 creativos nuevos. Expandir lookalike audience."
+    },
+    {
+      name: "INTERACCION", city: "Redes Diego", id: "act_885062283062302", currency: "COP", status: "green",
+      yesterday: { spend: 0, leads: 0, cpl: null, ctr: null, cpm: null, frequency: null },
+      avg7d:     { spend: 0, leads: 0, cpl: null, ctr: null, cpm: null, frequency: null },
+      trend7d: [0,0,0,0,0,0,0],
+      campaigns: [],
+      best_ctr_ad: "—", best_ctr: null, best_cpl_ad: "—", best_cpl: null, risk_freq_ad: "—", risk_freq: null,
+      dx_what: "Cuenta sin actividad ($0 saldo).",
+      dx_why:  "Cuenta de engagement sin campañas de leads activas.",
+      dx_action: "Sin acción requerida."
+    },
+    {
+      name: "LANDING", city: "Landing Diego", id: "act_1176352666815422", currency: "COP", status: "green",
+      yesterday: { spend: 1240000, leads: 14, cpl: 88571, ctr: 1.65, cpm: 28500, frequency: 2.2 },
+      avg7d:     { spend: 1180000, leads: 12, cpl: 98333, ctr: 1.55, cpm: 27000, frequency: 2.0 },
+      trend7d: [10, 12, 11, 13, 11, 13, 14],
+      campaigns: [
+        { name: "data-cold-traffic-standard-landing-leads-abo-jun08", spend: 780000, leads: 9, cpl: 86667, ctr: 1.72, status: "green" },
+        { name: "data-warm-traffic-standard-landing-leads-abo-jun01", spend: 460000, leads: 5, cpl: 92000, ctr: 1.53, status: "green" }
+      ],
+      best_ctr_ad: "testimonial_calvicie_v2_reel", best_ctr: 2.3,
+      best_cpl_ad: "testimonial_calvicie_v2_reel", best_cpl: 72000,
+      risk_freq_ad: "banner_garantia_resultado_v1", risk_freq: 2.5,
+      dx_what:   "Leads +16.7% vs prom 7d, CPL −9.9%.",
+      dx_why:    "Reel de testimonio (CTR 2.3%) convirtiendo bien en cold.",
+      dx_action: "Escalar reel de testimonio 15% y monitorear tendencia."
+    },
+    {
+      name: "MEDELLIN", city: "Medellín", id: "act_874169544322810", currency: "COP", status: "red",
+      yesterday: { spend: 1600000, leads: 5, cpl: 320000, ctr: 0.65, cpm: 38000, frequency: 1.9 },
+      avg7d:     { spend: 1520000, leads: 14, cpl: 108571, ctr: 1.45, cpm: 29500, frequency: 1.7 },
+      trend7d: [13, 15, 12, 14, 16, 11, 5],
+      campaigns: [
+        { name: "data-cold-traffic-standard-medellin-leads-abo-may15",     spend: 1100000, leads: 2, cpl: 550000, ctr: 0.55, status: "red" },
+        { name: "data-cold-traffic-standard-medellin-advantage-abo-jun05", spend:  500000, leads: 3, cpl: 166667, ctr: 0.82, status: "yellow" }
+      ],
+      best_ctr_ad: "advantage_auto_v1",       best_ctr: 0.82,
+      best_cpl_ad: "advantage_auto_v1",       best_cpl: 166667,
+      risk_freq_ad: "banner_fuerza_aerea_v2", risk_freq: 1.9,
+      dx_what:   "Caída severa: CPL 2.95× el promedio 7d, leads −64%.",
+      dx_why:    "Campaña may15 con audiencia agotada o reset de aprendizaje.",
+      dx_action: "Pausar may15 INMEDIATAMENTE. Redistribuir a Advantage+."
+    }
+  ],
+
+  alerts_critical: [
+    {
+      account: "MEDELLIN",
+      campaign: "data-cold-traffic-standard-medellin-leads-abo-may15",
+      metric: "CPL",
+      value: "$320,000 COP",
+      benchmark: "$108,571 COP (prom. 7d)",
+      action: "Pausar ad set. CPL 2.95× histórico. Redistribuir $1.1M COP a Advantage+."
+    }
+  ],
+
+  warnings: [
+    {
+      account: "PANAMA",
+      campaign: "data-cold-traffic-standard-panama-leads-abo-jun01",
+      metric: "Frecuencia",
+      value: "3.4",
+      benchmark: "< 3.0",
+      recommendation: "Activar 2 creativos nuevos. Audiencia cercana a fatiga severa."
+    },
+    {
+      account: "BGTA",
+      campaign: "data-warm-traffic-standard-bogota-leads-abo-jun10",
+      metric: "CTR",
+      value: "0.72%",
+      benchmark: "> 0.8%",
+      recommendation: "Refresh de copy en retargeting. Sin creativo nuevo en 18 días."
+    }
+  ],
+
+  winners: [
+    {
+      account: "BGTA",
+      name: "UGC_testimonio_masculino_v3",
+      type: "Creativo",
+      reason: "CTR 2.8% — 70% sobre benchmark. Testimonial ejecutivo 40–48 años en cold traffic."
+    },
+    {
+      account: "MEDELLIN",
+      name: "data-cold-traffic…advantage-abo-jun05",
+      type: "Campaña",
+      reason: "Advantage+ genera CPL $167k vs $550k campaña manual. 70% más eficiente."
+    },
+    {
+      account: "PANAMA",
+      name: "hook_presencia_ejecutivo_v2",
+      type: "Creativo",
+      reason: "CPL $14.20 vs prom $19.73 en cuenta. Ángulo liderazgo resonando en Panama City."
+    }
+  ],
+
+  action_plan: {
+    urgent: [
+      {
+        action: "Pausar data-cold…medellin…may15",
+        account: "MEDELLIN",
+        impact: "Eliminar CPL $320k COP. Mover $1.1M COP a Advantage+."
+      },
+      {
+        action: "Escalar UGC_testimonio_masculino_v3 +20%",
+        account: "BGTA",
+        impact: "Aprovechar CTR 2.8% en peak. Est. +3–4 leads/día."
+      }
+    ],
+    this_week: [
+      {
+        action: "Producir 2 creativos nuevos para PANAMA cold",
+        account: "PANAMA",
+        context: "Frecuencia 3.4 → refresh urgente antes de llegar a 4.0"
+      },
+      {
+        action: "Testear nuevo copy retargeting BGTA warm",
+        account: "BGTA",
+        context: "CTR 0.72% bajo benchmark. Sin refresh en 18 días."
+      }
+    ],
+    opportunities: [
+      "MEDELLIN Advantage+ funcionando: si confirma eficiencia esta semana, replicar en QUILLA al reactivar.",
+      "Testimoniales ejecutivos: producir 2–3 variaciones del formato UGC dado CTR 2.8% en BGTA."
+    ]
+  }
+};
+</script>
+
+<!-- ============================================================
+     RENDER ENGINE
+     ============================================================ -->
+<script>
+const C = {
+  grid:  'rgba(255,255,255,0.05)',
+  tick:  '#3D6E6A',
+  label: '#6FA8A3',
+  teal:  '#14B8A6',
+  tealHi:'#2DD4BF',
+  red:   '#F87171',
+  amber: '#FCD34D',
+  green: '#34D399',
+  indigo:'#818CF8'
+};
+
+const fmt = {
+  currency(v, cur, compact = false) {
+    if (v === null || v === undefined) return '—';
+    if (cur === 'COP') {
+      if (compact && v >= 1000000) return '$' + (v/1000000).toFixed(1) + 'M';
+      if (compact && v >= 1000) return '$' + Math.round(v/1000) + 'k';
+      return '$' + v.toLocaleString('es-CO');
+    }
+    return '$' + (compact ? v.toFixed(0) : v.toFixed(2));
+  },
+  pct(v) { return v !== null && v !== undefined ? v.toFixed(2) + '%' : '—'; },
+  num(v)  { return v !== null && v !== undefined ? v.toString() : '—'; }
+};
+
+function calcDelta(y, a) {
+  if (!a || a === 0 || y === null || y === undefined) return null;
+  return Math.round(((y - a) / a) * 100);
+}
+function dClass(pct, inv = false) {
+  if (pct === null) return 'delta-neu';
+  if (inv) return pct < -2 ? 'delta-pos' : pct > 5 ? 'delta-neg' : 'delta-neu';
+  return pct > 2 ? 'delta-pos' : pct < -5 ? 'delta-neg' : 'delta-neu';
+}
+function dArrow(pct, inv = false) {
+  if (pct === null) return '';
+  const up = inv ? pct < 0 : pct > 0;
+  return (up ? '↑' : '↓') + ' ' + Math.abs(pct) + '%';
+}
+function badge(s) {
+  const m = { green:['status-green','Normal'], yellow:['status-yellow','Atención'], red:['status-red','Alerta'] };
+  const [cls, lbl] = m[s] || ['','—'];
+  return `<span class="px-2 py-0.5 rounded-full text-xs font-semibold ${cls}">${lbl}</span>`;
+}
+function dot(s) { return { green:'dot-green', yellow:'dot-yellow', red:'dot-red' }[s] || ''; }
+function freqBadge(f) {
+  if (!f) return '<span class="mono text-sm" style="color:var(--text-3)">—</span>';
+  const cls = f >= 4.0 ? 'color:var(--red)' : f >= 3.0 ? 'color:var(--amber)' : 'color:var(--green)';
+  const bg  = f >= 4.0 ? 'background:var(--red-bg)' : f >= 3.0 ? 'background:var(--amber-bg)' : 'background:var(--green-bg)';
+  return `<span class="mono text-xs font-bold px-2 py-0.5 rounded" style="${cls};${bg}">${f.toFixed(1)}</span>`;
+}
+
+// ── Header ──────────────────────────────────────────────────────
+function renderHeader() {
+  document.getElementById('hdr-date').textContent = DATA.date;
+  document.getElementById('hdr-period').textContent = 'Datos: ' + DATA.period_label;
+  document.getElementById('hdr-ts').textContent = 'Generado: ' + DATA.generated_at;
+}
+
+// ── Summary strip ────────────────────────────────────────────────
+function renderSummary() {
+  const s = DATA.summary;
+  document.getElementById('s-leads').textContent = s.total_leads;
+  const dl = document.getElementById('s-leads-d');
+  dl.className = 'text-xs mono mt-1.5 ' + dClass(s.vs7d_leads);
+  dl.textContent = dArrow(s.vs7d_leads) + ' vs 7d';
+
+  document.getElementById('s-usd').textContent = '$' + s.total_spend_usd.toFixed(0);
+  document.getElementById('s-cop').textContent = '$' + (s.total_spend_cop/1000000).toFixed(1) + 'M COP';
+
+  const ae = document.getElementById('s-alerts');
+  ae.textContent = s.critical_alerts;
+  ae.className = 'text-5xl font-extrabold mono leading-none ' + (s.critical_alerts > 0 ? 'delta-neg' : 'delta-pos');
+  document.getElementById('s-warnings').textContent = s.warnings + ' advertencia' + (s.warnings !== 1 ? 's' : '');
+  document.getElementById('s-winners').textContent = s.winners;
+}
+
+// ── Alerts / Warnings / Winners ─────────────────────────────────
+function renderAlerts() {
+  const el = document.getElementById('alerts-body');
+  if (!DATA.alerts_critical.length) {
+    el.innerHTML = '<p class="text-sm font-medium" style="color:var(--green)">Sin alertas críticas hoy.</p>';
+    return;
+  }
+  el.innerHTML = DATA.alerts_critical.map(a => `
+    <div class="alert-card rounded-xl p-4 mb-2">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-xs font-bold px-2 py-0.5 rounded-full" style="background:var(--red-bg);color:var(--red)">${a.account}</span>
+        <span class="text-xs mono truncate" style="color:var(--text-3)">${a.campaign}</span>
+      </div>
+      <p class="text-sm" style="color:var(--text)">
+        <span class="font-semibold" style="color:var(--red)">${a.metric}</span>
+        <span class="mono font-bold"> ${a.value}</span>
+        <span style="color:var(--text-2)"> · </span>
+        <span style="color:var(--text-2)">benchmark </span>
+        <span class="mono" style="color:var(--text-2)">${a.benchmark}</span>
+      </p>
+      <p class="text-sm mt-1.5 font-semibold" style="color:var(--text)">→ ${a.action}</p>
+    </div>`).join('');
+}
+
+function renderWarnings() {
+  const el = document.getElementById('warnings-body');
+  if (!DATA.warnings.length) {
+    el.innerHTML = '<p class="text-sm font-medium" style="color:var(--green)">Sin advertencias relevantes.</p>';
+    return;
+  }
+  el.innerHTML = DATA.warnings.map(w => `
+    <div class="warning-card rounded-xl p-4 mb-2">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-xs font-bold px-2 py-0.5 rounded-full" style="background:var(--amber-bg);color:var(--amber)">${w.account}</span>
+        <span class="text-xs mono truncate" style="color:var(--text-3)">${w.campaign}</span>
+      </div>
+      <p class="text-sm" style="color:var(--text)">
+        <span class="font-semibold">${w.metric}:</span>
+        <span class="mono font-bold"> ${w.value}</span>
+        <span style="color:var(--text-2)"> · benchmark </span>
+        <span class="mono" style="color:var(--text-2)">${w.benchmark}</span>
+      </p>
+      <p class="text-sm mt-1.5" style="color:var(--text-2)">→ ${w.recommendation}</p>
+    </div>`).join('');
+}
+
+function renderWinners() {
+  document.getElementById('winners-body').innerHTML = DATA.winners.map((w, i) => `
+    <div class="winner-card rounded-xl p-4 flex gap-3">
+      <span class="text-2xl font-extrabold mono leading-none flex-shrink-0 mt-0.5" style="color:rgba(52,211,153,0.3)">0${i+1}</span>
+      <div>
+        <div class="flex items-center gap-2 mb-0.5">
+          <span class="text-xs font-bold px-2 py-0.5 rounded-full" style="background:var(--green-bg);color:var(--green)">${w.account}</span>
+          <span class="text-xs uppercase tracking-wider" style="color:var(--text-3)">${w.type}</span>
+        </div>
+        <p class="text-xs mono font-semibold truncate" style="color:var(--text)" title="${w.name}">${w.name}</p>
+        <p class="text-sm mt-0.5 leading-relaxed" style="color:var(--text-2)">${w.reason}</p>
+      </div>
+    </div>`).join('');
+}
+
+// ── Accounts table ───────────────────────────────────────────────
+function renderTable() {
+  document.getElementById('tbl-body').innerHTML = DATA.accounts.map(acc => {
+    const y = acc.yesterday, a = acc.avg7d;
+    const dead = y.spend === 0;
+    const spd = dead ? '—' : (acc.currency === 'COP' ? '$'+(y.spend/1000000).toFixed(1)+'M' : '$'+y.spend.toFixed(0));
+    const cpl = dead ? '—' : (acc.currency === 'COP' ? '$'+Math.round(y.cpl/1000)+'k' : '$'+y.cpl.toFixed(2));
+    const dcpl = calcDelta(y.cpl, a.cpl);
+    const dld  = calcDelta(y.leads, a.leads);
+    const dctr = calcDelta(y.ctr, a.ctr);
+    return `
+      <tr class="trow cursor-default">
+        <td class="py-3 px-4">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full flex-shrink-0 ${dot(acc.status)}"></span>
+            <span class="font-semibold" style="color:var(--teal-hi)">${acc.name}</span>
+            <span class="text-xs" style="color:var(--text-3)">${acc.city}</span>
+          </div>
+        </td>
+        <td class="py-3 px-4 text-right mono text-sm" style="color:${dead?'var(--text-3)':'var(--text-2)'}">
+          ${spd} <span class="text-xs" style="color:var(--text-3)">${acc.currency}</span>
+        </td>
+        <td class="py-3 px-4 text-right">
+          <span class="mono font-bold text-lg" style="color:${dead?'var(--text-3)':'var(--teal)'}">${dead ? '—' : y.leads}</span>
+          ${!dead && dld !== null ? `<span class="ml-1 text-xs mono ${dClass(dld)}">${dArrow(dld)}</span>` : ''}
+        </td>
+        <td class="py-3 px-4 text-right">
+          <span class="mono text-sm font-semibold" style="color:${dead?'var(--text-3)':'var(--text)'}">${cpl}</span>
+          ${!dead && dcpl !== null ? `<br><span class="text-xs mono ${dClass(dcpl,true)}">${dArrow(dcpl,true)}</span>` : ''}
+        </td>
+        <td class="py-3 px-4 text-right mono text-sm" style="color:${dead?'var(--text-3)':'var(--text-2)'}">
+          ${dead ? '—' : fmt.pct(y.ctr)}
+          ${!dead && dctr !== null ? `<br><span class="text-xs ${dClass(dctr)}">${dArrow(dctr)}</span>` : ''}
+        </td>
+        <td class="py-3 px-4 text-right mono text-sm" style="color:${dead?'var(--text-3)':'var(--text-2)'}">
+          ${dead ? '—' : (acc.currency==='COP'?'$'+Math.round(y.cpm/1000)+'k':'$'+y.cpm?.toFixed(2))}
+        </td>
+        <td class="py-3 px-4 text-right">${freqBadge(y.frequency)}</td>
+        <td class="py-3 px-4 text-center">
+          <canvas id="sp-${acc.name}" width="76" height="28" style="opacity:${dead?0.15:1}"></canvas>
+        </td>
+        <td class="py-3 px-4 text-center">${badge(acc.status)}</td>
+      </tr>`;
+  }).join('');
+  DATA.accounts.forEach(drawSparkline);
+}
+
+function drawSparkline(acc) {
+  const c = document.getElementById('sp-' + acc.name);
+  if (!c) return;
+  const col = acc.status === 'red' ? C.red : acc.status === 'yellow' ? C.amber : C.teal;
+  new Chart(c, {
+    type: 'line',
+    data: { labels: Array(7).fill(''), datasets: [{ data: acc.trend7d, borderColor: col, borderWidth: 1.5, fill: true, backgroundColor: col+'22', pointRadius: 0, tension: 0.4 }] },
+    options: { responsive: false, animation: false, plugins: { legend: { display: false }, tooltip: { enabled: false } }, scales: { x: { display: false }, y: { display: false } } }
+  });
+}
+
+// ── Account detail cards ─────────────────────────────────────────
+function renderDetails() {
+  document.getElementById('details-wrap').innerHTML = DATA.accounts.map(acc => {
+    const y = acc.yesterday, a = acc.avg7d;
+    const dead = y.spend === 0;
+    const cur = acc.currency;
+    const fmtC = (v, cp = false) => fmt.currency(v, cur, cp);
+
+    const mRow = (lbl, yv, av, fFn, inv = false) => {
+      const d = calcDelta(yv, av);
+      return `<tr style="border-bottom:1px solid var(--border)">
+        <td class="py-2 pr-4 text-sm font-medium whitespace-nowrap" style="color:var(--text-2)">${lbl}</td>
+        <td class="py-2 text-right mono font-semibold text-sm" style="color:var(--text)">${fFn(yv)}</td>
+        <td class="py-2 text-right mono text-xs" style="color:var(--text-3)">${fFn(av)}</td>
+        <td class="py-2 text-right"><span class="mono text-xs ${dClass(d,inv)}">${d!==null?(d>0?'↑':'↓')+' '+Math.abs(d)+'%':'—'}</span></td>
+      </tr>`;
+    };
+
+    const cmpHtml = acc.campaigns.length ? `
+      <div class="mt-5">
+        <p class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--text-3)">Campañas activas</p>
+        <table class="w-full text-xs">
+          <thead><tr style="border-bottom:1px solid var(--border)">
+            <th class="thead-cell text-left pb-1.5">Nombre</th>
+            <th class="thead-cell text-right pb-1.5 pr-2">Spend</th>
+            <th class="thead-cell text-right pb-1.5 pr-2">Leads</th>
+            <th class="thead-cell text-right pb-1.5 pr-2">CPL</th>
+            <th class="thead-cell text-right pb-1.5">CTR</th>
+          </tr></thead>
+          <tbody>
+          ${acc.campaigns.map(c=>`
+            <tr class="cmp-row">
+              <td class="py-1.5 pr-3">
+                <span class="inline-flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full flex-shrink-0 ${dot(c.status)}"></span>
+                  <span class="mono truncate" style="color:var(--text-2);max-width:280px" title="${c.name}">${c.name.length>50?c.name.slice(0,50)+'…':c.name}</span>
+                </span>
+              </td>
+              <td class="py-1.5 text-right mono pr-2" style="color:var(--text-2)">${cur==='COP'?'$'+(c.spend/1000000).toFixed(1)+'M':'$'+c.spend.toFixed(0)}</td>
+              <td class="py-1.5 text-right mono font-bold pr-2" style="color:var(--teal)">${c.leads}</td>
+              <td class="py-1.5 text-right mono pr-2" style="color:var(--text-2)">${cur==='COP'?'$'+Math.round(c.cpl/1000)+'k':'$'+c.cpl.toFixed(2)}</td>
+              <td class="py-1.5 text-right mono" style="color:var(--text-3)">${c.ctr.toFixed(2)}%</td>
+            </tr>`).join('')}
+          </tbody>
+        </table>
+      </div>` : '';
+
+    const creativeHtml = !dead ? `
+      <div class="mt-4 grid grid-cols-3 gap-2">
+        <div class="metric-card-teal rounded-xl p-3">
+          <p class="text-xs font-bold mb-1" style="color:var(--teal)">Mejor CTR</p>
+          <p class="text-xs mono truncate leading-tight" style="color:var(--text-2)" title="${acc.best_ctr_ad}">${acc.best_ctr_ad}</p>
+          <p class="text-sm mono font-bold mt-0.5" style="color:var(--teal-hi)">${acc.best_ctr ? acc.best_ctr+'%' : '—'}</p>
+        </div>
+        <div class="metric-card-indigo rounded-xl p-3">
+          <p class="text-xs font-bold mb-1" style="color:var(--indigo)">Mejor CPL</p>
+          <p class="text-xs mono truncate leading-tight" style="color:var(--text-2)" title="${acc.best_cpl_ad}">${acc.best_cpl_ad}</p>
+          <p class="text-sm mono font-bold mt-0.5" style="color:var(--indigo)">${acc.best_cpl ? fmtC(acc.best_cpl,true) : '—'}</p>
+        </div>
+        <div class="metric-card-amber rounded-xl p-3">
+          <p class="text-xs font-bold mb-1" style="color:var(--amber)">Mayor Frecuencia</p>
+          <p class="text-xs mono truncate leading-tight" style="color:var(--text-2)" title="${acc.risk_freq_ad}">${acc.risk_freq_ad}</p>
+          <p class="text-sm mono font-bold mt-0.5" style="color:${(acc.risk_freq||0)>=3.5?'var(--red)':(acc.risk_freq||0)>=2.8?'var(--amber)':'var(--text-2)'}">${acc.risk_freq ? acc.risk_freq.toFixed(1) : '—'}</p>
+        </div>
+      </div>` : '';
+
+    const dxHtml = `
+      <div class="mt-4 rounded-xl p-3.5 space-y-1.5" style="background:var(--bg-card2);border:1px solid var(--border)">
+        <p class="text-xs leading-relaxed" style="color:var(--text-2)"><span class="font-semibold" style="color:var(--text)">¿Qué pasó?</span> ${acc.dx_what}</p>
+        <p class="text-xs leading-relaxed" style="color:var(--text-2)"><span class="font-semibold" style="color:var(--text)">¿Por qué?</span> ${acc.dx_why}</p>
+        <p class="text-xs font-semibold" style="color:var(--teal)">→ ${acc.dx_action}</p>
+      </div>`;
+
+    const borderCol = { green:'var(--border)', yellow:'rgba(252,211,77,0.3)', red:'rgba(248,113,113,0.35)' }[acc.status];
+
+    return `
+      <details class="card mb-2.5 overflow-hidden" style="border-color:${borderCol}" ${acc.status==='red'?'open':''}>
+        <summary class="flex items-center justify-between px-5 py-4 select-none">
+          <div class="flex items-center gap-3 min-w-0">
+            <span class="w-3 h-3 rounded-full flex-shrink-0 ${dot(acc.status)}"></span>
+            <span class="font-bold" style="color:var(--teal-hi)">${acc.name}</span>
+            <span class="text-sm" style="color:var(--text-3)">${acc.city}</span>
+            <span class="text-xs mono hidden lg:inline" style="color:var(--border2)">${acc.id}</span>
+          </div>
+          <div class="flex items-center gap-5 flex-shrink-0 ml-4">
+            ${!dead ? `
+              <div class="text-right hidden sm:block">
+                <p class="text-xs mb-0.5" style="color:var(--text-3)">Leads</p>
+                <p class="mono font-bold" style="color:var(--teal)">${y.leads}</p>
+              </div>
+              <div class="text-right hidden sm:block">
+                <p class="text-xs mb-0.5" style="color:var(--text-3)">CPL</p>
+                <p class="mono font-semibold text-sm" style="color:var(--text)">${fmtC(y.cpl,true)}</p>
+              </div>
+              <div class="text-right hidden md:block">
+                <p class="text-xs mb-0.5" style="color:var(--text-3)">CTR</p>
+                <p class="mono text-sm" style="color:var(--text-2)">${fmt.pct(y.ctr)}</p>
+              </div>` :
+              `<span class="text-xs" style="color:var(--text-3)">Sin actividad</span>`}
+            ${badge(acc.status)}
+            <svg class="chevron w-4 h-4 flex-shrink-0" style="color:var(--text-3)" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </div>
+        </summary>
+        <div class="px-5 pb-5" style="border-top:1px solid var(--border)">
+          ${dead
+            ? `<p class="text-sm italic py-3" style="color:var(--text-3)">${acc.dx_action}</p>`
+            : `<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                <div>
+                  <table class="w-full">
+                    <thead><tr style="border-bottom:1px solid var(--border)">
+                      <th class="thead-cell text-left pb-2">Métrica</th>
+                      <th class="thead-cell text-right pb-2">Ayer</th>
+                      <th class="thead-cell text-right pb-2">Prom 7d</th>
+                      <th class="thead-cell text-right pb-2">Δ</th>
+                    </tr></thead>
+                    <tbody>
+                      ${mRow('Spend', y.spend, a.spend, fmtC)}
+                      ${mRow('Leads', y.leads, a.leads, v => v!==null?v.toString():'—')}
+                      ${mRow('CPL',   y.cpl,   a.cpl,   v=>fmtC(v,true), true)}
+                      ${mRow('CTR',   y.ctr,   a.ctr,   fmt.pct)}
+                      ${mRow('CPM',   y.cpm,   a.cpm,   v=>fmtC(v,true), true)}
+                      ${mRow('Frecuencia', y.frequency, a.frequency, v=>v?v.toFixed(2):'—', true)}
+                    </tbody>
+                  </table>
+                </div>
+                <div>
+                  <p class="text-xs font-medium mb-2" style="color:var(--text-3)">Leads últimos 7 días</p>
+                  <canvas id="tr-${acc.name}" height="90"></canvas>
+                </div>
+              </div>
+              ${creativeHtml}${cmpHtml}${dxHtml}`}
+        </div>
+      </details>`;
+  }).join('');
+
+  DATA.accounts.forEach(acc => {
+    const c = document.getElementById('tr-' + acc.name);
+    if (!c || acc.yesterday.spend === 0) return;
+    const col = acc.status === 'red' ? C.red : acc.status === 'yellow' ? C.amber : C.teal;
+    new Chart(c, {
+      type: 'bar',
+      data: {
+        labels: ['D-6','D-5','D-4','D-3','D-2','Ayer','Hoy'],
+        datasets: [{ data: acc.trend7d, backgroundColor: acc.trend7d.map((_,i)=>i===6?col:col+'55'), borderRadius: 5, borderSkipped: false }]
+      },
+      options: {
+        responsive: true, animation: { duration: 400 },
+        plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ` ${ctx.parsed.y} leads` } } },
+        scales: {
+          x: { grid: { display: false }, ticks: { font: { size: 9, family: "'Fira Code'" }, color: C.tick } },
+          y: { grid: { color: C.grid },  ticks: { font: { size: 9 }, color: C.tick, precision: 0 }, beginAtZero: true }
+        }
+      }
+    });
+  });
+}
+
+// ── Comparison charts ────────────────────────────────────────────
+function renderCharts() {
+  const active = DATA.accounts.filter(a => a.yesterday.leads > 0);
+  const lc = document.getElementById('chart-leads');
+  if (lc) {
+    new Chart(lc, {
+      type: 'bar',
+      data: {
+        labels: active.map(a => a.name),
+        datasets: [
+          { label: 'Ayer',    data: active.map(a => a.yesterday.leads), backgroundColor: C.teal,          borderRadius: 6, barPercentage: 0.55 },
+          { label: 'Prom 7d', data: active.map(a => a.avg7d.leads),    backgroundColor: C.teal + '33', borderRadius: 6, barPercentage: 0.55 }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'top', labels: { font: { size: 11, family: "'Plus Jakarta Sans'" }, boxWidth: 10, color: C.label, padding: 12 } }
+        },
+        scales: {
+          x: { grid: { display: false }, ticks: { font: { size: 11, family: "'Fira Code'" }, color: C.tick } },
+          y: { grid: { color: C.grid },  ticks: { font: { size: 10 }, color: C.tick, precision: 0 }, beginAtZero: true }
+        }
+      }
+    });
+  }
+
+  const sc = document.getElementById('chart-spend');
+  if (sc) {
+    const colors = [C.teal, C.amber, C.indigo, C.red, C.green, '#FB7185'];
+    new Chart(sc, {
+      type: 'doughnut',
+      data: {
+        labels: active.map(a => a.name + ' (' + a.currency + ')'),
+        datasets: [{
+          data: active.map(a => a.currency === 'COP' ? a.yesterday.spend / 3800 : a.yesterday.spend),
+          backgroundColor: colors.slice(0, active.length),
+          borderWidth: 0,
+          hoverOffset: 8
+        }]
+      },
+      options: {
+        responsive: true, cutout: '70%',
+        plugins: {
+          legend: { position: 'right', labels: { font: { size: 10, family: "'Plus Jakarta Sans'" }, boxWidth: 10, color: C.label, padding: 10 } },
+          tooltip: {
+            callbacks: {
+              label: ctx => {
+                const acc = active[ctx.dataIndex];
+                const v = acc.yesterday.spend;
+                return ` ${acc.name}: ${acc.currency==='COP'?'$'+(v/1000000).toFixed(1)+'M COP':'$'+v.toFixed(0)+' USD'}`;
+              }
+            }
+          }
+        }
+      }
+    });
+  }
+}
+
+// ── Action plan ──────────────────────────────────────────────────
+function renderActionPlan() {
+  const p = DATA.action_plan;
+  document.getElementById('act-urgent').innerHTML = p.urgent.map((x,i) => `
+    <div class="flex gap-3 items-start p-3 rounded-xl" style="background:var(--red-bg);border:1px solid rgba(248,113,113,0.2)">
+      <span class="w-6 h-6 rounded-full text-xs font-bold flex items-center justify-center flex-shrink-0" style="background:var(--red);color:#0B1A28">${i+1}</span>
+      <div>
+        <p class="text-sm font-semibold" style="color:var(--text)">${x.action}</p>
+        <div class="flex items-center gap-2 mt-0.5">
+          <span class="text-xs font-bold px-2 py-0.5 rounded-full" style="background:var(--red-bg);color:var(--red)">${x.account}</span>
+          <span class="text-xs" style="color:var(--text-3)">${x.impact}</span>
+        </div>
+      </div>
+    </div>`).join('');
+
+  document.getElementById('act-week').innerHTML = p.this_week.map((x,i) => `
+    <div class="flex gap-3 items-start p-3 rounded-xl" style="background:var(--amber-bg);border:1px solid rgba(252,211,77,0.2)">
+      <span class="w-6 h-6 rounded-full text-xs font-bold flex items-center justify-center flex-shrink-0" style="background:var(--amber);color:#0B1A28">${i+1}</span>
+      <div>
+        <p class="text-sm font-semibold" style="color:var(--text)">${x.action}</p>
+        <div class="flex items-center gap-2 mt-0.5">
+          <span class="text-xs font-bold px-2 py-0.5 rounded-full" style="background:var(--amber-bg);color:var(--amber)">${x.account}</span>
+          <span class="text-xs" style="color:var(--text-3)">${x.context}</span>
+        </div>
+      </div>
+    </div>`).join('');
+
+  document.getElementById('act-opp').innerHTML = p.opportunities.map(o => `
+    <li class="text-sm leading-relaxed flex gap-2" style="color:var(--text-2)">
+      <span class="font-bold flex-shrink-0" style="color:var(--teal)">→</span><span>${o}</span>
+    </li>`).join('');
+}
+
+// ── Init ─────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  renderHeader();
+  renderSummary();
+  renderAlerts();
+  renderWarnings();
+  renderWinners();
+  renderTable();
+  renderDetails();
+  renderCharts();
+  renderActionPlan();
+});
+</script>
+
+<!-- ============================================================
+     MARKUP
+     ============================================================ -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 relative z-10">
+
+  <!-- HEADER -->
+  <header class="mb-8 flex flex-wrap items-start justify-between gap-4">
+    <div>
+      <div class="flex items-center gap-2 mb-1.5">
+        <svg class="w-4 h-4" style="color:var(--teal)" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16z"/>
+        </svg>
+        <span class="text-xs font-bold uppercase tracking-widest" style="color:var(--teal)">Innovart Medical IPS · Meta Ads</span>
+      </div>
+      <h1 class="text-3xl font-extrabold tracking-tight" style="color:var(--text)">Auditoría Diaria</h1>
+      <p id="hdr-date" class="text-sm mt-1" style="color:var(--text-2)"></p>
+    </div>
+    <div class="text-right">
+      <p id="hdr-period" class="text-xs mono" style="color:var(--text-3)"></p>
+      <p id="hdr-ts"     class="text-xs mono mt-0.5" style="color:var(--border2)"></p>
+    </div>
+  </header>
+
+  <!-- SUMMARY STRIP -->
+  <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+    <div class="card p-5">
+      <p class="text-xs font-semibold uppercase tracking-wider mb-2" style="color:var(--text-3)">Total Leads</p>
+      <p id="s-leads" class="text-5xl font-extrabold mono leading-none" style="color:var(--teal)"></p>
+      <p id="s-leads-d" class="mt-1.5"></p>
+    </div>
+    <div class="card p-5">
+      <p class="text-xs font-semibold uppercase tracking-wider mb-2" style="color:var(--text-3)">Gasto</p>
+      <p id="s-usd" class="text-3xl font-extrabold mono leading-none" style="color:var(--text)"></p>
+      <p class="text-xs mono mt-0.5" style="color:var(--text-3)">USD</p>
+      <p id="s-cop" class="text-xs mono mt-1" style="color:var(--text-2)"></p>
+    </div>
+    <div class="card p-5">
+      <p class="text-xs font-semibold uppercase tracking-wider mb-2" style="color:var(--text-3)">Alertas</p>
+      <p id="s-alerts" class="text-5xl font-extrabold mono leading-none"></p>
+      <p id="s-warnings" class="text-xs mono mt-1.5" style="color:var(--amber)"></p>
+    </div>
+    <div class="card p-5">
+      <p class="text-xs font-semibold uppercase tracking-wider mb-2" style="color:var(--text-3)">Ganadores</p>
+      <p id="s-winners" class="text-5xl font-extrabold mono leading-none" style="color:var(--green)"></p>
+      <p class="text-xs mt-1.5" style="color:var(--text-3)">top performers hoy</p>
+    </div>
+  </div>
+
+  <!-- ALERTS / WARNINGS / WINNERS -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-6">
+    <div class="card p-5">
+      <div class="flex items-center gap-2 mb-3">
+        <svg class="w-4 h-4 flex-shrink-0" style="color:var(--red)" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+        </svg>
+        <h2 class="text-sm font-bold" style="color:var(--text)">Alertas Críticas</h2>
+      </div>
+      <div id="alerts-body"></div>
+    </div>
+    <div class="card p-5">
+      <div class="flex items-center gap-2 mb-3">
+        <svg class="w-4 h-4 flex-shrink-0" style="color:var(--amber)" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+        </svg>
+        <h2 class="text-sm font-bold" style="color:var(--text)">Advertencias</h2>
+      </div>
+      <div id="warnings-body"></div>
+    </div>
+    <div class="card p-5">
+      <div class="flex items-center gap-2 mb-3">
+        <svg class="w-4 h-4 flex-shrink-0" style="color:var(--green)" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+        </svg>
+        <h2 class="text-sm font-bold" style="color:var(--text)">Ganadores del Día</h2>
+      </div>
+      <div id="winners-body" class="space-y-2"></div>
+    </div>
+  </div>
+
+  <!-- ACCOUNTS TABLE + CHARTS -->
+  <div class="card p-5 mb-6">
+    <h2 class="text-sm font-bold mb-4" style="color:var(--text)">Resumen de Cuentas</h2>
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead>
+          <tr style="border-bottom:1px solid var(--border2)">
+            <th class="thead-cell text-left pb-3 pr-4">Cuenta</th>
+            <th class="thead-cell text-right pb-3 px-4">Spend</th>
+            <th class="thead-cell text-right pb-3 px-4">Leads</th>
+            <th class="thead-cell text-right pb-3 px-4">CPL</th>
+            <th class="thead-cell text-right pb-3 px-4">CTR</th>
+            <th class="thead-cell text-right pb-3 px-4">CPM</th>
+            <th class="thead-cell text-right pb-3 px-4">Freq</th>
+            <th class="thead-cell text-center pb-3 px-4">7d</th>
+            <th class="thead-cell text-center pb-3 pl-4">Estado</th>
+          </tr>
+        </thead>
+        <tbody id="tbl-body"></tbody>
+      </table>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 pt-5" style="border-top:1px solid var(--border)">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-3)">Leads — Ayer vs Promedio 7d</p>
+        <canvas id="chart-leads" height="170"></canvas>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:var(--text-3)">Distribución de Gasto · cuentas activas</p>
+        <canvas id="chart-spend" height="170"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACCOUNT DETAIL CARDS -->
+  <div class="mb-6">
+    <div class="flex items-center gap-3 mb-3">
+      <h2 class="text-sm font-bold" style="color:var(--text)">Análisis por Cuenta</h2>
+      <span class="text-xs" style="color:var(--text-3)">· click para expandir · alertas abiertas por defecto</span>
+    </div>
+    <div id="details-wrap"></div>
+  </div>
+
+  <!-- ACTION PLAN -->
+  <div class="card p-5 mb-6">
+    <h2 class="text-sm font-bold mb-5" style="color:var(--text)">Plan de Acción</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-widest mb-3" style="color:var(--red)">Urgente · antes del mediodía</p>
+        <div id="act-urgent" class="space-y-2"></div>
+      </div>
+      <div>
+        <p class="text-xs font-bold uppercase tracking-widest mb-3" style="color:var(--amber)">Esta semana</p>
+        <div id="act-week" class="space-y-2"></div>
+      </div>
+      <div>
+        <p class="text-xs font-bold uppercase tracking-widest mb-3" style="color:var(--teal)">Oportunidades</p>
+        <ul id="act-opp" class="space-y-2.5"></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="text-center pt-4 pb-8" style="border-top:1px solid var(--border)">
+    <p class="text-xs mono" style="color:var(--text-3)">
+      Auditoría automática · Innovart Medical IPS · Próxima ejecución mañana 8:00am Bogotá
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

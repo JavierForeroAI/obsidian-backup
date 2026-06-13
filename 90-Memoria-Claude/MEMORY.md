@@ -15,6 +15,12 @@
 
 ## CRM y leads
 - [Volumen CRM y funnel](crm-funnel.md) — 160K+ oportunidades, tracking de won roto, 15-25 leads/día en Bogotá
+- [Diagnóstico IA Prospección 2026-06-12](../20-Pauta/diagnostico-ai-prospeccion-2026-06-12.md) — Auditoría completa: 7 workflows GHL, ~400 convs, 5 sedes. Show rate <40%. 3 fallos críticos + 10 mejoras + 4 nuevos flows. [Drive](https://docs.google.com/document/d/16HRE1ipMJrafGPUovInV14f1qATd_1P_mZLVyyK-xkA)
+
+## Ecosistema de Agentes AI — Sistema Completo (2026-06-12)
+- [Arquitectura Agentes AI](../20-Pauta/arquitectura-agentes-consciencia.md) — Blueprint técnico 9 agentes, ~60 tags GHL, 17 custom fields, 10+ workflows, diccionario de intención, KPIs, guía de implementación 5 fases. [Drive](https://docs.google.com/document/d/18wQaJuUxljBntthoQhy450o4OuIBv2MOfXxyjVVxUds)
+- [Copy Agentes AI](../20-Pauta/copy-agentes-consciencia.md) — Copy GHL-ready completo: hooks por canal (WA/IG/FB/form), 5+ mensajes por nivel con Rama A/B, 5 objeciones por nivel, reactivaciones, 10 urgencias, 5 social proof mini-testimonios, variables dinámicas. [Drive](https://docs.google.com/document/d/1J_a9P77WEpKyu0ahO7coApo2_JXxnme70COnb4fV56Y)
+- [Presentación Ejecutiva — De Bot a Ecosistema](../20-Pauta/presentacion-ecosistema-agentes-ai.md) — 15 diapositivas para C-level: $72K USD/año recuperados de no-shows, $225K USD/mes ingresos adicionales a 3.5% conversión, roadmap 4 semanas, speaker notes 20 min. [Drive](https://docs.google.com/document/d/1gHs60DfhBd_FhVsZavWrvutRexVzMXv6_uuM9FLZsO0)
 
 ## Avatares y Comunicación
 - [Avatares de Cliente — Matriz Oficial](avatares-clientes.md) — 5 avatares oficiales (Profesional Premium, Militar, Gubernamental, Gay Premium, Emprendedor) + ángulos de venta, hooks, estética visual y cierres por avatar. Incluye análisis creativos Mundial 2026.
@@ -44,9 +50,14 @@
 - [GHL ↔ Meta CAPI Worker](integracion-ghl-meta-capi.md) — Worker Cloudflare activo en innovart-meta-capi, corre cada 5min, envía Lead/Schedule/Purchase con PII hasheada + ctwa_clid + fbc
 
 ## Feedback (cómo trabajar conmigo)
+- [⚠️ Informes por correo — HTML email-safe obligatorio](feedback-email-formato.md) — Siempre tables + inline styles. Nunca CSS Grid/Flex ni Google Fonts. Gmail no los soporta.
 - [GHL análisis por fechas — hacerlo manualmente](feedback-ghl-fechas-manual.md) — Endpoint de citas da 404; leer timestamps de conversaciones/contactos y calcular métricas a mano
-- [Informes → siempre en Drive 3. MERCADEO / CLAUDE](feedback-informes-drive.md) — Guardar todo informe/reporte/auditoría en carpeta CLAUDE (ID: 1rGB1E0XR4lcUwOes2Q9yACe4NphL8Tv5) de Google Drive
+- [Informes → Drive + rclone para archivos pesados](feedback-informes-drive.md) — HTML/texto: MCP Drive. PDF/imagen/binario >80KB: usar `rclone copy` vía Bash (autenticado, remote `gdrive`). NUNCA intentar subir PDF por MCP.
 - [fbclid obligatorio en toda landing page](feedback_fbclid_landing_pages.md) — Todo formulario/landing desarrollado para Innovart debe capturar fbclid → campo fb_click_id (GHL ID: FYVJpTGSmAPhiqoRwm97) y ctwa_clid. Sin excepción.
+- [⚠️ Carpeta Drive: Auditoría GHL](feedback-carpeta-auditoria-ghl.md) — TODO lo de auditoría/mejoras GHL (workflows, bots, agentes, copy, diagnósticos) va a Drive ID `1LCzzvFFQgz-SHm_5raj2DTBOoJYsli3A` (CLAUDE > AUDITORIA COMUNICACION GHL Y MEJORAS). Sin excepción.
+
+## Equipo
+- [Equipo y contactos](equipo-contactos.md) — Esneider (Media Buyer): esneidervc17@gmail.com — usar directamente sin preguntar
 
 ## Brief del cliente
 - Ver [[../10-Clientes/Innovart/_dossier-2026-05-18]]
