@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academia Capilar Innovart — Estrategia de Ecosistema de Contenido</title>
+<style>
+  :root{
+    --ink:#16202A; --muted:#5C6B79; --bg:#EEF3F8; --card:#FFFFFF;
+    --brand:#0E5A8A; --brand-deep:#0A3F63; --teal:#14A0A6; --accent:#E2A34B;
+    --line:#E1E9F0; --soft:#F6F9FC;
+    --p1:#0E5A8A; --p2:#14868C; --p3:#5B6BB5; --p4:#D98C3F; --p5:#B5475A;
+    --ok:#2E8B6F; --warn:#C8553D;
+    --shadow:0 1px 3px rgba(16,40,64,.06),0 8px 28px rgba(16,40,64,.07);
+    --radius:16px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif; line-height:1.2; letter-spacing:-.01em;}
+  a{color:var(--brand); text-decoration:none}
+  .wrap{max-width:1080px; margin:0 auto; padding:0 22px}
+  .eyebrow{font-family:-apple-system,sans-serif; text-transform:uppercase; letter-spacing:.18em; font-size:12px; font-weight:700; color:var(--teal)}
+
+  /* HERO */
+  header.hero{
+    background:linear-gradient(135deg,var(--brand-deep) 0%,var(--brand) 55%,#127a9e 100%);
+    color:#fff; padding:64px 0 120px; position:relative; overflow:hidden;
+  }
+  header.hero::after{
+    content:""; position:absolute; right:-120px; top:-120px; width:420px; height:420px;
+    background:radial-gradient(circle,rgba(255,255,255,.14),transparent 65%); border-radius:50%;
+  }
+  .hero .eyebrow{color:#9fe3e8}
+  .hero h1{font-size:46px; margin:14px 0 10px; max-width:760px}
+  .hero p.lead{font-size:19px; max-width:680px; color:#dbeefb; margin:0}
+  .hero .meta{margin-top:26px; display:flex; gap:10px; flex-wrap:wrap}
+  .chip{display:inline-flex; align-items:center; gap:7px; background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.22); color:#eaf6ff; padding:7px 13px; border-radius:999px; font-size:13px; font-weight:600}
+
+  /* layout cards floating over hero */
+  .deck{margin-top:-86px; position:relative; z-index:2}
+  .grid{display:grid; gap:20px}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:820px){.g3,.g2{grid-template-columns:1fr}}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); padding:24px}
+  .card h3{margin:0 0 6px; font-size:18px}
+  .card .num{font-size:34px; font-family:Georgia,serif; color:var(--brand); font-weight:700}
+  .card small{color:var(--muted)}
+
+  /* NAV / TOC */
+  nav.toc{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.92); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line); padding:12px 0; margin-top:48px}
+  nav.toc .wrap{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  nav.toc a{font-size:13px; font-weight:600; color:var(--muted); padding:6px 11px; border-radius:8px}
+  nav.toc a:hover{background:var(--soft); color:var(--brand)}
+  nav.toc .brandtag{font-family:Georgia,serif; font-weight:700; color:var(--brand); margin-right:6px}
+
+  section{padding:54px 0}
+  section h2{font-size:30px; margin:0 0 6px}
+  section .sub{color:var(--muted); font-size:17px; margin:0 0 26px; max-width:760px}
+  .kicker{display:inline-block; font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--teal); margin-bottom:8px}
+
+  /* architecture diagram */
+  .arch{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:30px; box-shadow:var(--shadow)}
+  .brain{text-align:center; margin-bottom:18px}
+  .brain .b{display:inline-block; background:var(--brand-deep); color:#fff; padding:12px 22px; border-radius:12px; font-weight:700}
+  .layer3{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:8px}
+  @media(max-width:820px){.layer3{grid-template-columns:1fr}}
+  .lay{border-radius:12px; padding:18px; color:#fff}
+  .lay h4{margin:0 0 6px; font-size:16px; color:#fff}
+  .lay p{margin:0; font-size:13.5px; opacity:.92}
+  .lay.capt{background:linear-gradient(160deg,#0E5A8A,#127a9e)}
+  .lay.conv{background:linear-gradient(160deg,#14868C,#17a6a6)}
+  .lay.close{background:linear-gradient(160deg,#B5475A,#c9685a)}
+  .arrowrow{text-align:center; color:var(--muted); font-size:22px; margin:8px 0}
+  .track{margin-top:16px; text-align:center; background:var(--soft); border:1px dashed var(--line); border-radius:10px; padding:12px; font-size:13.5px; color:var(--muted)}
+
+  /* pillar table */
+  table{width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow)}
+  th,td{text-align:left; padding:14px 16px; border-bottom:1px solid var(--line); vertical-align:top; font-size:14px}
+  th{background:var(--brand-deep); color:#fff; font-family:-apple-system,sans-serif; font-size:12px; text-transform:uppercase; letter-spacing:.07em}
+  tr:last-child td{border-bottom:none}
+  td.pill{font-weight:700}
+  .dot{display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:7px; vertical-align:middle}
+  .tag{display:inline-block; font-size:11px; font-weight:700; padding:3px 9px; border-radius:999px; background:var(--soft); color:var(--muted); border:1px solid var(--line)}
+  .tag.exist{background:#E7F4EE; color:var(--ok); border-color:#bfe5d3}
+  .tag.todo{background:#FBEFE9; color:var(--warn); border-color:#f2cdbe}
+
+  /* pillar cards */
+  .pcard{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden; display:flex; flex-direction:column}
+  .pcard .top{padding:18px 20px; color:#fff}
+  .pcard .top h3{margin:0; font-size:19px; color:#fff}
+  .pcard .top span{font-size:13px; opacity:.9}
+  .pcard .body{padding:18px 20px}
+  .pcard ul{margin:0 0 12px; padding-left:18px; font-size:13.5px; color:var(--muted)}
+  .pcard .ebk{font-size:13.5px; background:var(--soft); border:1px solid var(--line); border-radius:10px; padding:10px 12px}
+  .pcard .ebk b{color:var(--ink)}
+
+  /* funnel */
+  .funnel{display:flex; flex-direction:column; gap:0; max-width:620px; margin:0 auto}
+  .step{display:flex; align-items:center; gap:14px}
+  .step .box{flex:1; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; box-shadow:var(--shadow)}
+  .step .box b{display:block; font-size:14.5px}
+  .step .box small{color:var(--muted)}
+  .step .ar{color:var(--brand); font-size:22px}
+  .vline{width:2px; height:18px; background:var(--line); margin:0 auto}
+
+  /* roadmap timeline */
+  .timeline{position:relative; margin-left:8px; padding-left:26px; border-left:3px solid var(--line)}
+  .tnode{position:relative; margin-bottom:22px}
+  .tnode::before{content:""; position:absolute; left:-34px; top:3px; width:16px; height:16px; border-radius:50%; background:var(--brand); border:3px solid #fff; box-shadow:0 0 0 2px var(--brand)}
+  .tnode h4{margin:0 0 3px; font-size:16px}
+  .tnode p{margin:0; color:var(--muted); font-size:14px}
+  .phase{font-size:11px; font-weight:800; color:var(--teal); letter-spacing:.12em; text-transform:uppercase}
+
+  /* callout */
+  .callout{border-left:4px solid var(--warn); background:#FCF2EE; border-radius:0 12px 12px 0; padding:18px 20px; margin-top:10px}
+  .callout b{color:var(--warn)}
+  .note{border-left:4px solid var(--teal); background:#ECF7F8; border-radius:0 12px 12px 0; padding:18px 20px}
+
+  /* why list */
+  .why{display:grid; grid-template-columns:repeat(2,1fr); gap:16px}
+  @media(max-width:820px){.why{grid-template-columns:1fr}}
+  .why .item{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px; box-shadow:var(--shadow)}
+  .why .item .ic{width:34px; height:34px; border-radius:9px; background:var(--soft); display:flex; align-items:center; justify-content:center; font-size:18px; margin-bottom:10px}
+  .why .item b{font-size:15px}
+  .why .item p{margin:6px 0 0; color:var(--muted); font-size:13.5px}
+
+  footer{background:var(--brand-deep); color:#cfe4f2; padding:40px 0; margin-top:30px}
+  footer .wrap{display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; align-items:flex-end}
+  footer b{color:#fff}
+  footer small{display:block; opacity:.7; margin-top:4px}
+
+  .secalt{background:var(--card); border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+
+  @media print{
+    nav.toc{display:none} header.hero{padding:30px 0 40px} .deck{margin-top:24px}
+    body{background:#fff} .card,.arch,table,.pcard,.why .item{box-shadow:none}
+    section{padding:24px 0; page-break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Innovart Medical IPS · Estrategia de contenido 2026</span>
+    <h1>Academia Capilar Innovart</h1>
+    <p class="lead">El ecosistema que une blogs, ebooks y SEO en un solo motor de autoridad médica que convierte conocimiento en pacientes.</p>
+    <div class="meta">
+      <span class="chip">🧠 Fuente: NotebookLM Muñoz + notebooks Innovart</span>
+      <span class="chip">📊 5 pilares temáticos</span>
+      <span class="chip">📝 15 blogs · 📘 5 ebooks · 🔎 SEO Shopify</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ DECK / KPIs ============ -->
+<div class="wrap deck">
+  <div class="grid g3">
+    <div class="card">
+      <div class="num">15</div>
+      <h3>Blogs ya producidos</h3>
+      <small>HTML listos en Drive (notebook Muñoz). Hoy sin publicar = ROI dormido.</small>
+    </div>
+    <div class="card">
+      <div class="num">5</div>
+      <h3>Ebooks imán de leads</h3>
+      <small>Uno por pilar. El nº2 es la transformación profunda de tu PDF actual.</small>
+    </div>
+    <div class="card">
+      <div class="num">1</div>
+      <h3>Máquina integrada</h3>
+      <small>SEO → Lead → Nurture → Valoración → Cirugía, con tracking de punta a punta.</small>
+    </div>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<nav class="toc">
+  <div class="wrap">
+    <span class="brandtag">Academia Capilar</span>
+    <a href="#idea">La idea</a>
+    <a href="#arquitectura">Arquitectura</a>
+    <a href="#pilares">5 Pilares</a>
+    <a href="#mapa">Mapa maestro</a>
+    <a href="#recorrido">Recorrido</a>
+    <a href="#ebooks">Los ebooks</a>
+    <a href="#porque">Por qué ambicioso</a>
+    <a href="#cumplimiento">Cumplimiento</a>
+    <a href="#roadmap">Roadmap</a>
+  </div>
+</nav>
+
+<!-- ============ IDEA ============ -->
+<section id="idea">
+  <div class="wrap">
+    <span class="kicker">El cambio de mentalidad</span>
+    <h2>De tres iniciativas sueltas a un solo sistema</h2>
+    <p class="sub">Hoy los blogs, los ebooks y el plan SEO son proyectos separados que beben del mismo cerebro. Lo ambicioso es fusionarlos: todo nace del NotebookLM (Muñoz + Innovart) y trabaja como una sola máquina de cinco pilares, donde cada pieza alimenta a la siguiente.</p>
+    <div class="grid g3">
+      <div class="card" style="border-top:3px solid var(--p1)">
+        <span class="tag exist">Ya existe</span>
+        <h3 style="margin-top:10px">15 blogs (Muñoz)</h3>
+        <small>Contenido técnico en HTML, en Drive. Capa de captación orgánica (SEO/TOFU).</small>
+      </div>
+      <div class="card" style="border-top:3px solid var(--p3)">
+        <span class="tag todo">Por producir</span>
+        <h3 style="margin-top:10px">5 ebooks</h3>
+        <small>Imanes de leads (MOFU). Versión profunda y gated de cada clúster temático.</small>
+      </div>
+      <div class="card" style="border-top:3px solid var(--p5)">
+        <span class="tag todo">En plan SEO</span>
+        <h3 style="margin-top:10px">Landings + Shopify</h3>
+        <small>Capa comercial (BOFU): precios, ciudades, servicios → valoración gratis.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARQUITECTURA ============ -->
+<section id="arquitectura" class="secalt">
+  <div class="wrap">
+    <span class="kicker">Arquitectura</span>
+    <h2>El motor de autoridad capilar</h2>
+    <p class="sub">Un cerebro único de contenido se reparte en tres funciones —captar, convertir y cerrar— atadas por una capa de medición.</p>
+    <div class="arch">
+      <div class="brain"><span class="b">🧠 NotebookLM (Muñoz + Innovart) — cerebro único de contenido</span></div>
+      <div class="arrowrow">▼</div>
+      <div class="layer3">
+        <div class="lay capt">
+          <h4>① CAPTAR — SEO / TOFU</h4>
+          <p>15 blogs + 5 páginas pilar (hub-and-spoke). Tráfico orgánico informacional.</p>
+        </div>
+        <div class="lay conv">
+          <h4>② CONVERTIR — Lead / MOFU</h4>
+          <p>5 ebooks gated (content upgrade) + nurture GHL (email + WhatsApp).</p>
+        </div>
+        <div class="lay close">
+          <h4>③ CERRAR — Comercial / BOFU</h4>
+          <p>Landings (precios, ciudades) + valoración gratis + ads por avatar.</p>
+        </div>
+      </div>
+      <div class="track">🔗 Capa de medición transversal: <b>fbclid → fb_click_id + ctwa_clid</b> en todo form · CAPI worker dispara <b>Lead</b> · Schema Article/FAQ en blogs · LocalBusiness/MedicalClinic en landings · CRM GHL</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PILARES ============ -->
+<section id="pilares">
+  <div class="wrap">
+    <span class="kicker">La estructura</span>
+    <h2>5 pilares, cada uno un clúster completo</h2>
+    <p class="sub">Cada pilar = página hub + sus blogs (spokes, ya hechos) + su ebook (imán) + su nurture + su landing + su ángulo de ad. Hub-and-spoke real, no contenido suelto.</p>
+    <div class="grid g2">
+
+      <div class="pcard">
+        <div class="top" style="background:linear-gradient(160deg,var(--p1),#127a9e)">
+          <h3>1 · ¿Por qué se me cae el pelo?</h3>
+          <span>Diagnóstico / Ciencia · TOFU frío · todos</span>
+        </div>
+        <div class="body">
+          <ul>
+            <li>#1 Alopecia androgenética</li>
+            <li>#2 Señales tempranas</li>
+            <li>#14 Mitos desmontados</li>
+            <li>#15 Areata y cicatricial</li>
+          </ul>
+          <div class="ebk">📘 <b>Ebook 1 — La Verdad Sobre tu Caída</b><br>Ciencia de la DHT + desmitificación honesta.</div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="top" style="background:linear-gradient(160deg,var(--p2),#17a6a6)">
+          <h3>2 · El injerto bien hecho</h3>
+          <span>Cirugía / Técnica · 35-50 ROI</span>
+        </div>
+        <div class="body">
+          <ul>
+            <li>#3 Candidato y zona donante</li>
+            <li>#4 FUE vs DHI</li>
+            <li>#5 Cuánto dura un injerto</li>
+            <li>#6 Cómo prepararte</li>
+            <li>#7 Rapar o no rapar</li>
+          </ul>
+          <div class="ebk">📗 <b>Ebook 2 — 10 Verdades de tu Cirujano</b><br>Tu PDF actual transformado: "fórmula del pelazo", cartuchos limitados.</div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="top" style="background:linear-gradient(160deg,var(--p3),#7a86d4)">
+          <h3>3 · Tratamiento médico que funciona</h3>
+          <span>Fármacos / Terapias · 20-35 prevención</span>
+        </div>
+        <div class="body">
+          <ul>
+            <li>#9 Minoxidil / finasterida — mitos</li>
+            <li>#10 PRP, mesoterapia, exosomas</li>
+            <li>#11 Shedding al empezar</li>
+          </ul>
+          <div class="ebk">📘 <b>Ebook 3 — El Tratamiento que Protege tu Inversión</b><br>Sin medicación, el implante se pierde. Desmonta el efecto nocebo.</div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="top" style="background:linear-gradient(160deg,var(--p4),#e6a45c)">
+          <h3>4 · Salud capilar integral</h3>
+          <span>Mente / Cuerpo / Mujer · emocional</span>
+        </div>
+        <div class="body">
+          <ul>
+            <li>#8 Alopecia femenina</li>
+            <li>#12 Estrés y caída</li>
+            <li>#13 Nutrición y cabello</li>
+          </ul>
+          <div class="ebk">📙 <b>Ebook 4 — Más que Cabello</b><br>La psicología de recuperar la confianza. Humaniza la medicina capilar.</div>
+        </div>
+      </div>
+
+      <div class="pcard" style="grid-column:1/-1">
+        <div class="top" style="background:linear-gradient(160deg,var(--p5),#cb6a5c)">
+          <h3>5 · Elegir clínica con cabeza</h3>
+          <span>Decisión / Comercial · +50 decisor · alimentado por los 4 pilares</span>
+        </div>
+        <div class="body">
+          <ul>
+            <li>Bridge: se nutre de los otros 4 pilares + nuevo blog "cuánto cuesta 2026"</li>
+            <li>Conecta con landings SEO: /precios, /implante-capilar-bogota, /panama…</li>
+          </ul>
+          <div class="ebk">📔 <b>Ebook 5 — Cómo Elegir sin que te Estafen</b><br>12 preguntas antes de pagar · banderas rojas del low-cost · IPS habilitada · garantía de resultado.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ MAPA MAESTRO ============ -->
+<section id="mapa" class="secalt">
+  <div class="wrap">
+    <span class="kicker">Vista de tabla</span>
+    <h2>Mapa maestro — todo conectado</h2>
+    <p class="sub">Los 15 blogs caen exactos en los 4 primeros pilares. El pilar 5 es el embudo comercial que cierra el sistema.</p>
+    <table>
+      <thead>
+        <tr><th>Pilar</th><th>Página hub (Shopify)</th><th>Blogs spokes</th><th>Ebook imán</th><th>Avatar</th><th>Ángulo de ad</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="pill"><span class="dot" style="background:var(--p1)"></span>1 · Por qué se cae</td>
+          <td>/guia-capilar/por-que-se-cae-el-pelo</td>
+          <td>#1 · #2 · #14 · #15 <span class="tag exist">hechos</span></td>
+          <td>Ebook 1 <span class="tag todo">producir</span></td>
+          <td>TOFU frío, todos</td>
+          <td>Educativo / desmitificación</td>
+        </tr>
+        <tr>
+          <td class="pill"><span class="dot" style="background:var(--p2)"></span>2 · Injerto bien hecho</td>
+          <td>/guia-capilar/injerto-capilar</td>
+          <td>#3 · #4 · #5 · #6 · #7 <span class="tag exist">hechos</span></td>
+          <td>Ebook 2 <span class="tag todo">producir</span></td>
+          <td>35-50 ROI</td>
+          <td>Autoridad técnica ("fórmula del pelazo")</td>
+        </tr>
+        <tr>
+          <td class="pill"><span class="dot" style="background:var(--p3)"></span>3 · Tratamiento médico</td>
+          <td>/guia-capilar/tratamiento-medico</td>
+          <td>#9 · #10 · #11 <span class="tag exist">hechos</span></td>
+          <td>Ebook 3 <span class="tag todo">producir</span></td>
+          <td>20-35 prevención</td>
+          <td>"Sin tratamiento, el implante se pierde"</td>
+        </tr>
+        <tr>
+          <td class="pill"><span class="dot" style="background:var(--p4)"></span>4 · Salud integral</td>
+          <td>/guia-capilar/salud-capilar-integral</td>
+          <td>#8 · #12 · #13 <span class="tag exist">hechos</span></td>
+          <td>Ebook 4 <span class="tag todo">producir</span></td>
+          <td>Emocional / mujer</td>
+          <td>Psicología / confianza</td>
+        </tr>
+        <tr>
+          <td class="pill"><span class="dot" style="background:var(--p5)"></span>5 · Elegir clínica</td>
+          <td>/guia-capilar/elegir-clinica</td>
+          <td>Bridge + "cuánto cuesta 2026" <span class="tag todo">nuevo</span></td>
+          <td>Ebook 5 <span class="tag todo">producir</span></td>
+          <td>+50 decisor</td>
+          <td>"12 preguntas antes de pagar"</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ RECORRIDO ============ -->
+<section id="recorrido">
+  <div class="wrap">
+    <span class="kicker">El recorrido del paciente</span>
+    <h2>Cómo una búsqueda en Google se vuelve cirugía</h2>
+    <p class="sub">El mismo flujo funciona en orgánico y en pago: ad por avatar → ebook (lead form) → mismo nurture. Más retargeting a quien leyó el blog y no descargó.</p>
+    <div class="funnel">
+      <div class="step"><div class="box"><b>🔎 Google: "por qué se me cae el pelo"</b><small>Intención informacional</small></div></div>
+      <div class="vline"></div>
+      <div class="step"><div class="box"><b>📝 Blog #1 (ya existe) → enlace interno → Página Pilar 1 (hub)</b><small>SEO + autoridad temática</small></div></div>
+      <div class="vline"></div>
+      <div class="step"><div class="box"><b>📘 CTA content-upgrade: "Descarga gratis: La Verdad Sobre tu Caída"</b><small>Form captura email/WhatsApp + fbclid</small></div></div>
+      <div class="vline"></div>
+      <div class="step"><div class="box"><b>🤖 GHL: tag por pilar → nurture (5-7 toques email + WhatsApp)</b><small>Educación + aversión a la pérdida</small></div></div>
+      <div class="vline"></div>
+      <div class="step"><div class="box"><b>📅 Valoración gratis → landing comercial (/precios, /ciudad)</b><small>WhatsApp → cirugía</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EBOOKS ============ -->
+<section id="ebooks" class="secalt">
+  <div class="wrap">
+    <span class="kicker">Los imanes</span>
+    <h2>Los 5 ebooks — el estándar de profundidad</h2>
+    <p class="sub">Cada tema se profundiza en 5 capas: QUÉ (dato) → POR QUÉ (mecanismo/ciencia) → CRITERIO (experto) → MITO (desmitificación) → ACCIÓN (CTA Innovart). Eso separa un ebook genérico de uno de autoridad.</p>
+    <table>
+      <thead><tr><th>#</th><th>Título</th><th>Gancho de portada</th><th>Fuente dominante</th></tr></thead>
+      <tbody>
+        <tr><td><b>1</b></td><td>La Verdad Sobre tu Caída</td><td>"El 90% de lo que te vendieron para la caída no sirve. Esto sí."</td><td>Libro Alopecia + Muñoz</td></tr>
+        <tr><td><b>2</b></td><td>10 Verdades que tu Cirujano Debería Decirte <span class="tag">tu PDF transformado</span></td><td>"No es cuántos folículos. Es quién y cómo."</td><td>Muñoz + GEMinnovart</td></tr>
+        <tr><td><b>3</b></td><td>El Tratamiento que Protege tu Inversión</td><td>"Un implante sin tratamiento médico es dinero tirado."</td><td>Libro Alopecia + Muñoz</td></tr>
+        <tr><td><b>4</b></td><td>Más que Cabello</td><td>"No es vanidad. Es cómo te ves a ti mismo."</td><td>Escuela Alopecia + Avatares</td></tr>
+        <tr><td><b>5</b></td><td>Cómo Elegir Clínica sin que te Estafen</td><td>"Antes de pagar un implante, hazte estas 12 preguntas."</td><td>GEMinnovart + 100 Preguntas</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ POR QUÉ AMBICIOSO ============ -->
+<section id="porque">
+  <div class="wrap">
+    <span class="kicker">El argumento</span>
+    <h2>Qué hace esto ambicioso de verdad</h2>
+    <p class="sub">No es "más contenido". Es que cada pieza empieza a trabajar para las demás.</p>
+    <div class="why">
+      <div class="item"><div class="ic">⚡</div><b>El contenido que ya existe empieza a producir</b><p>Tus 15 blogs hoy están en Drive sin generar nada. Publicados y enlazados en clústers = tráfico orgánico real (hoy solo 5-6 páginas indexadas; competidores 50-200).</p></div>
+      <div class="item"><div class="ic">🧲</div><b>Cada blog se vuelve imán de leads</b><p>Vía content-upgrade hacia el ebook del pilar. Tráfico informacional → lead → CRM, sin gastar más en ads.</p></div>
+      <div class="item"><div class="ic">🎯</div><b>Un mensaje coherente por avatar</b><p>El ad, el blog, el ebook, el nurture y la landing dicen lo mismo de punta a punta.</p></div>
+      <div class="item"><div class="ic">🔗</div><b>SEO + Ads + CRM + Tracking integrados</b><p>Schema en blogs y landings, fbclid + ctwa_clid en todo form, CAPI disparando Lead. Medición real.</p></div>
+      <div class="item"><div class="ic">♻️</div><b>Escalable como plantilla</b><p>Cada pilar nuevo = misma receta: hub + spokes + ebook + nurture + ad.</p></div>
+      <div class="item"><div class="ic">🏆</div><b>Posiciona a Innovart como la autoridad</b><p>Ciencia real + criterio Muñoz vs. clínicas low-cost que "prometen 5.000 folículos".</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CUMPLIMIENTO ============ -->
+<section id="cumplimiento" class="secalt">
+  <div class="wrap">
+    <span class="kicker">No negociable</span>
+    <h2>Cumplimiento</h2>
+    <div class="callout">
+      <b>⚠️ Corrección que arrastra el plan SEO de mayo:</b> tiene <b>"garantía vitalicia"</b> en varias meta descriptions y H1 (/barberia, /panama, landings de ciudad). Quedó <b>PROHIBIDO</b> el 2026-06-01. Al ejecutar, se reemplaza todo por <b>"garantía de resultado"</b>.
+    </div>
+    <div style="height:14px"></div>
+    <div class="note">
+      ✓ Sin promesas absolutas en salud (políticas Meta/Google) → usar "Resultados en 6 meses", "hasta 95% de éxito en &lt;45 años".<br>
+      ✓ Todo copy pasa por la skill <b>medical-compliance-copy</b> antes de publicar.<br>
+      ✓ Before/after solo bajo reglas de <b>before-after-strategy</b> (consentimiento, sin IA engañosa).<br>
+      ✓ En PRP hay debate Muñoz vs. Innovart → priorizar protocolo clínico de Innovart + consenso científico.
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROADMAP ============ -->
+<section id="roadmap">
+  <div class="wrap">
+    <span class="kicker">Ejecución</span>
+    <h2>Roadmap por palanca</h2>
+    <p class="sub">Empezar por lo que ya está hecho y hoy no produce nada: publicar los blogs y montar la arquitectura.</p>
+    <div class="timeline">
+      <div class="tnode">
+        <span class="phase">Fase 0 · ROI inmediato</span>
+        <h4>Publicar los 15 blogs + 5 páginas pilar + enlazado hub-spoke + schema</h4>
+        <p>El contenido ya existe en Drive. Es la palanca más rápida: contenido dormido → tráfico orgánico.</p>
+      </div>
+      <div class="tnode">
+        <span class="phase">Fase 1 · Primer imán</span>
+        <h4>Producir Ebook 2 (tu PDF transformado) + content-upgrade en el Pilar 2</h4>
+        <p>El de mayor intención de compra (35-50 ROI). Sirve de muestra del estándar de diseño.</p>
+      </div>
+      <div class="tnode">
+        <span class="phase">Fase 2 · Cerrar el lazo</span>
+        <h4>Nurture GHL del Pilar 2 (email + WhatsApp) → valoración</h4>
+        <p>Convierte el lead en cita agendada.</p>
+      </div>
+      <div class="tnode">
+        <span class="phase">Fase 3 · Escalar</span>
+        <h4>Replicar ebooks 1, 3, 4, 5 + sus nurtures</h4>
+        <p>Misma plantilla aplicada a cada pilar.</p>
+      </div>
+      <div class="tnode">
+        <span class="phase">Fase 4 · Amplificar</span>
+        <h4>Ads por avatar hacia cada ebook + retargeting de lectores de blog</h4>
+        <p>Pagar para acelerar lo que ya convierte orgánicamente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div>
+      <b>Academia Capilar Innovart</b>
+      <small>Estrategia de ecosistema de contenido · Innovart Medical IPS · 2026</small>
+      <small>Sedes: Bogotá · Medellín · Barranquilla · Bucaramanga · Ciudad de Panamá</small>
+    </div>
+    <div style="text-align:right">
+      <b>Fuente</b>
+      <small>NotebookLM: Escuela de Alopecia (Dr. Muñoz) + GEMinnovart + Libro de Alopecia + 100 Preguntas</small>
+      <small>Documento de trabajo — editable en Claude cowork</small>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

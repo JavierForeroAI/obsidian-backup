@@ -15,12 +15,13 @@
 
 ## CRM y leads
 - [Volumen CRM y funnel](crm-funnel.md) — 160K+ oportunidades, tracking de won roto, 15-25 leads/día en Bogotá
+- [Plan Agencia Internacional + conteos en vivo](plan-agencia-internacional.md) — 163,412 opps por CRM (2026-06-13), snapshot Meta mayo 2026, plan estratégico ~$4M, entregable en Drive/Gmail
 - [Diagnóstico IA Prospección 2026-06-12](../20-Pauta/diagnostico-ai-prospeccion-2026-06-12.md) — Auditoría completa: 7 workflows GHL, ~400 convs, 5 sedes. Show rate <40%. 3 fallos críticos + 10 mejoras + 4 nuevos flows. [Drive](https://docs.google.com/document/d/16HRE1ipMJrafGPUovInV14f1qATd_1P_mZLVyyK-xkA)
 
 ## Ecosistema de Agentes AI — Sistema Completo (2026-06-12)
-- [Arquitectura Agentes AI](../20-Pauta/arquitectura-agentes-consciencia.md) — Blueprint técnico 9 agentes, ~60 tags GHL, 17 custom fields, 10+ workflows, diccionario de intención, KPIs, guía de implementación 5 fases. [Drive](https://docs.google.com/document/d/18wQaJuUxljBntthoQhy450o4OuIBv2MOfXxyjVVxUds)
-- [Copy Agentes AI](../20-Pauta/copy-agentes-consciencia.md) — Copy GHL-ready completo: hooks por canal (WA/IG/FB/form), 5+ mensajes por nivel con Rama A/B, 5 objeciones por nivel, reactivaciones, 10 urgencias, 5 social proof mini-testimonios, variables dinámicas. [Drive](https://docs.google.com/document/d/1J_a9P77WEpKyu0ahO7coApo2_JXxnme70COnb4fV56Y)
-- [Presentación Ejecutiva — De Bot a Ecosistema](../20-Pauta/presentacion-ecosistema-agentes-ai.md) — 15 diapositivas para C-level: $72K USD/año recuperados de no-shows, $225K USD/mes ingresos adicionales a 3.5% conversión, roadmap 4 semanas, speaker notes 20 min. [Drive](https://docs.google.com/document/d/1gHs60DfhBd_FhVsZavWrvutRexVzMXv6_uuM9FLZsO0)
+- [Arquitectura Agentes AI](arquitectura-agentes-consciencia.md) — Blueprint técnico 9 agentes, ~60 tags GHL, 17 custom fields, 10+ workflows, diccionario de intención, KPIs, guía de implementación 5 fases. [Drive original](https://docs.google.com/document/d/18wQaJuUxljBntthoQhy450o4OuIBv2MOfXxyjVVxUds) · [Drive V2 HTML](https://drive.google.com/file/d/1w6a79SZzgSq1cHcK6t91hBj5iCnxaNcR/view)
+- [Copy Agentes AI](copy-agentes-consciencia.md) — Copy GHL-ready completo: hooks por canal (WA/IG/FB/form), 5+ mensajes por nivel con Rama A/B, 5 objeciones por nivel, reactivaciones, 10 urgencias, 5 social proof mini-testimonios, variables dinámicas. [Drive original](https://docs.google.com/document/d/1J_a9P77WEpKyu0ahO7coApo2_JXxnme70COnb4fV56Y) · [Drive V2 HTML](https://drive.google.com/file/d/1_hgUQdSpLgCMta16307Kygb3iFhY9eWT/view)
+- [Presentación Ejecutiva — De Bot a Ecosistema](presentacion-ecosistema-agentes-ai.md) — 15 diapositivas para C-level: $72K USD/año recuperados de no-shows, $225K USD/mes ingresos adicionales a 3.5% conversión, roadmap 4 semanas, speaker notes 20 min. [Drive original](https://docs.google.com/document/d/1gHs60DfhBd_FhVsZavWrvutRexVzMXv6_uuM9FLZsO0) · [Drive V2 HTML](https://drive.google.com/file/d/1bFvvugwUjwGuNCf0MAg533K2SGsXYLAt/view)
 
 ## Avatares y Comunicación
 - [Avatares de Cliente — Matriz Oficial](avatares-clientes.md) — 5 avatares oficiales (Profesional Premium, Militar, Gubernamental, Gay Premium, Emprendedor) + ángulos de venta, hooks, estética visual y cierres por avatar. Incluye análisis creativos Mundial 2026.
@@ -29,6 +30,7 @@
 
 ## Contenido
 - [Ángulos creativos activos](angulos-creativos.md) — ~~"Garantía Vitalicia"~~ ⚠️ PROHIBIDO · "Garantía de resultado", "Resultados en 6 Meses", flag emojis por país
+- [⭐ Academia Capilar Innovart — Ecosistema de contenido](academia-capilar-ecosistema.md) — 2026-06-13. Estrategia maestra que une los 15 blogs + 5 ebooks nuevos + plan SEO en un motor de 5 pilares (hub-and-spoke). Nace del PDF genérico "10 Things". HTML de la estrategia en el cerebro + Downloads. Fase 0: publicar blogs + páginas pilar.
 
 ## NotebookLM — Innovart (extraído 2026-05-22)
 - [Índice de notebooks](notebooklm/INDEX.md) — 7 notebooks Innovart extraídos, 15 pendientes
@@ -42,12 +44,17 @@
 
 ## SEO
 - [Plan SEO Shopify — Mayo 2026](seo-plan-shopify-2026-05.md) — 17 acciones automáticas + 8 parciales + 5 manuales; landing pages de ciudad, blog, schema, correcciones on-page
+- [Blog Salud Capilar — 15 artículos HTML en Drive](blog-salud-capilar-drive.md) — 2026-06-13. Generados desde notebook Carlos Muñoz, voz clínica. Carpeta Drive `Blogs` (ID `1DTXGHxIohr0sk9gu28AB3YeBm-TBL7Su`) en 3.MERCADEO/CLAUDE. Pendiente: publicar en Shopify + fotografía real + schema.
 
 ## Aprendizajes
 - [Dossier descubrimiento 2026-05-18](../10-Clientes/Innovart/_dossier-2026-05-18.md) — Investigación completa inicial
 
 ## Integraciones técnicas
 - [GHL ↔ Meta CAPI Worker](integracion-ghl-meta-capi.md) — Worker Cloudflare activo en innovart-meta-capi, corre cada 5min, envía Lead/Schedule/Purchase con PII hasheada + ctwa_clid + fbc
+- [Worker CAPI vía Webhook (innovart-capi-webhook-no-tocar)](capi-webhook-worker.md) — 2026-06-13. Worker dedicado: GHL acción Webhook → hashea PII → Meta CAPI (2 píxeles). Reemplaza el custom_code de GHL (que NO puede hacer fetch). Lo usan las 3 landings de financiación. URL + key + cómo conectarlo.
+- [Reporte diario Meta automático](reporte-diario-meta-automatico.md) — 2 crons locales: genera HTML 8:00 (`generate-meta-report.py`) + PDF 8:25 (`convert-meta-report.sh`) → Drive `informesdiariosmeta`. Detallado por campaña, 6 cuentas. ⚠ MEDELLIN/PANAMA en período de gracia (facturación)
+- [Landing /home4 → ruteo de leads](landing-home4-routing.md) — 2026-06-13. Form `6aGxlY1g` (diseño nuevo s/fotos+fbclid) → router `fbd5387a` (tag `landing_form_home4` + aviso a Sofia) → flujo `4.1`. Bogotá. No mover el SMS "Barranquilla" de 4.1 (compartido). Form gemelo en cuenta principal `akg7psKDdPd3yE9uvD91` NO usar.
+- [Flujo Financiación — Asignación + Respuesta + CAPI Purchase (3 sedes)](flujo-financiacion-bta-capi.md) — 2026-06-13. Workflows publicados y activos en BTA (`20eb73fb`), MDE (`c3572764`) y BAQ (`2f258215`). Trigger **SMS `type 2`** (WhatsApp entra como SMS por applevel) + body "Meddipay" → apaga IA (`ai_parar`+`update_conversation_ai_status`), oportunidad Paciente MeddiPay, asigna Sofia si libre (`only_unassigned_contact`), responde por SMS, **CAPI Purchase $8M COP vía acción Webhook → worker** [[capi-webhook-worker]] (ya NO custom_code). WABA por sede: BTA `609046938958518` / MDE `611850088685930` / BAQ `625405087319822`. Píxeles `1642103999710262`/`1625645205284016`. Landing solo existe en BTA (`/financiacionbta` CTA `573208167253`); copiar a MDE/BAQ con nativo GHL.
 
 ## Feedback (cómo trabajar conmigo)
 - [⚠️ Informes por correo — HTML email-safe obligatorio](feedback-email-formato.md) — Siempre tables + inline styles. Nunca CSS Grid/Flex ni Google Fonts. Gmail no los soporta.
@@ -55,6 +62,8 @@
 - [Informes → Drive + rclone para archivos pesados](feedback-informes-drive.md) — HTML/texto: MCP Drive. PDF/imagen/binario >80KB: usar `rclone copy` vía Bash (autenticado, remote `gdrive`). NUNCA intentar subir PDF por MCP.
 - [fbclid obligatorio en toda landing page](feedback_fbclid_landing_pages.md) — Todo formulario/landing desarrollado para Innovart debe capturar fbclid → campo fb_click_id (GHL ID: FYVJpTGSmAPhiqoRwm97) y ctwa_clid. Sin excepción.
 - [⚠️ Carpeta Drive: Auditoría GHL](feedback-carpeta-auditoria-ghl.md) — TODO lo de auditoría/mejoras GHL (workflows, bots, agentes, copy, diagnósticos) va a Drive ID `1LCzzvFFQgz-SHm_5raj2DTBOoJYsli3A` (CLAUDE > AUDITORIA COMUNICACION GHL Y MEJORAS). Sin excepción.
+- [⚠️ MCP ghl: `update_page_content` no persiste](feedback-mcp-ghl-update-page.md) — Editar contenido de páginas/funnels en el editor de GHL, no por MCP (devuelve OK pero no guarda). El MCP sí lee páginas y sí guarda workflows.
+- [⚠️ WhatsApp de Innovart entra como SMS (applevel)](feedback-whatsapp-applevel-sms.md) — El WhatsApp se maneja por applevel ("WhatsApp Plugins") y los entrantes llegan a GHL como SMS (`type 20`/TYPE_CUSTOM_SMS). En triggers customer_reply usar **Reply channel = SMS (`message.type==2`)**, NUNCA WhatsApp (19). Aplica a TODO desarrollo pasado/futuro.
 
 ## Equipo
 - [Equipo y contactos](equipo-contactos.md) — Esneider (Media Buyer): esneidervc17@gmail.com — usar directamente sin preguntar

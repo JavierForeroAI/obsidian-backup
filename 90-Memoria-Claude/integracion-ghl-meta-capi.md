@@ -25,7 +25,7 @@ metadata:
 | Barranquilla | cXH8KbMaAPGzkmf3Z2pP | lr9AYYbE3MKxcbMqGOew | fMwEe8gzC5AxkOw8D7D5 |
 | IPS Principal (Bogotá-CRM) | NPhQTmLOHd6FbDtqLPnG | pmfzBxCFdjeojgCLmEWu | wy6FYlxKsMDvtXljeC9O |
 
-> **Nota:** La subcuenta Bogotá Ads (DgjjDzD9nkCKv8AGF1Qb) tiene el campo fb_click_id y las landing pages actualizadas, pero NO está en el Worker — no es necesario por ahora.
+> ⚠️ **CORRECCIÓN 2026-06-13:** La subcuenta **Bogotá Ads (DgjjDzD9nkCKv8AGF1Qb) NO está en este cron — y SÍ era necesario.** Es el **intake principal de WhatsApp FB/IG ads (25,627 contactos)**. Al no estar en el cron, esos leads NO mandaban `Lead` server-side (y al entrar por WhatsApp, tampoco había evento de navegador) = **hueco grande**. Cerrado con un webhook de Lead independiente → ver [[capi-webhook-worker]]. Pendiente: el funnel de DgjjDzD9 (si los leads avanzan ahí dentro) y capturar `ctwa_clid` (no existe el campo en DgjjDzD9).
 
 ## Eventos enviados a Meta CAPI
 
@@ -56,6 +56,14 @@ metadata:
 - **stages object:** `{stageId: eventName}` (no al revés) — permite N stages → mismo evento (Schedule presencial + virtual)
 - **Bogotá sin InitiateCheckout:** Bucaramanga no tiene stage equivalente; simplemente omitido
 - **Purchase valor:** `opp.monetaryValue` del campo monetario de la oportunidad en GHL
+
+## Detalles verificados del código (descargado 2026-06-13)
+Fuente descargable vía CF API: `GET https://api.cloudflare.com/client/v4/accounts/<acc>/workers/scripts/innovart-meta-capi` (endpoint `/content` da 405 con User API Token; el endpoint sin `/content` sí devuelve el JS). Cuenta `d85e2b4ba4cdb4d7a59d17621f80eb3c`.
+- **1 SOLO píxel** en el cron: `1642103999710262` (los webhooks nuevos mandan a 2: +`1625645205284016`). Token Meta del cron ≠ token del webhook worker (son distintos, ambos válidos). `action_source: system_generated`, Graph `v21.0`.
+- `processNewContacts`: trae contactos creados en ventana de **6 min** (`startAfter`), `limit=100` **sin paginar** → cada uno manda **Lead**. Cron cada 5 min (overlap 1 min).
+- `processOpportunities`: trae **100 oportunidades sin `startAfter` ni paginación** y filtra en código por `lastActivityDate`/`updatedAt` ≥ 6 min → a volumen alto **puede perder cambios de etapa** (depende del orden que devuelva el endpoint). Riesgo real a vigilar.
+- Cada sede tiene su **PIT** (`pit-...`) hardcodeado y su mapa `stageId → eventName` (están en el código). Los PIT coinciden con los que usa el MCP de ghl por sede.
+- Match (`sendToMeta`): `external_id` + `ct`(ciudad) + `country` siempre; + `em/ph/fn/ln` SHA-256 si existen; + `ctwa_clid`/`fbc` si los campos custom de esa sede tienen valor.
 
 ## FASE 1 completada: Match de Identidad
 
