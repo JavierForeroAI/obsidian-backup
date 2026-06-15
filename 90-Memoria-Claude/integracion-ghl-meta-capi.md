@@ -1,8 +1,55 @@
 ---
 name: integracion-ghl-meta-capi
-description: Worker Cloudflare activo para todas las 5 sedes de Innovart; envía 9 eventos a Meta CAPI con PII hasheada, ctwa_clid y fbc. FASE 1 y FASE 2 completadas al 2026-06-08.
-metadata:
+description: "Worker Cloudflare activo para todas las 5 sedes de Innovart; envía 9 eventos a Meta CAPI con PII hasheada, ctwa_clid y fbc. FASE 1 y FASE 2 completadas al 2026-06-08."
+metadata: 
+  node_type: memory
   type: project
+  originSessionId: 4e59d124-363f-4666-9838-f5c75f5725c2
+---
+
+# GHL ↔ Meta CAPI — Estado al 2026-06-08
+
+## ⚠️ Estado 2026-06-14 — El Purchase de VENTA ("Ganado") sigue SIN llegar a Meta
+
+**Verificado en Meta (Events Manager API, 28 días, ambos píxeles `1642103999710262` + `1625645205284016`): `Purchase = 0`.** Nada manda el Purchase de venta. Dos causas confirmadas:
+
+1. **Cron `innovart-meta-capi`** mapea Ganado→Purchase, PERO la opp **pasa por "Ganado Y cancelado" en segundos** (el workflow `11. Venta-Ganado → Operacion-Programacion` la mueve de inmediato a Operaciones) → el poll de 5 min **no la alcanza**. Por eso la etapa está **siempre vacía (0 opps en las 6 sedes)**: es de **paso por diseño**, NO un bypass del comercial. URL del cron no responde (HTTP 000) — posiblemente apagado.
+2. **El `custom_code` "CAPI → Meta (Purchase)"** del workflow "Etiqueta Ganado y cancelado" (Bogotá `b2028df1`, Medellín `2f78cf72`, Barranquilla `5b2fdd06`, Panamá dedicado `aa67d560`) **NO funciona**: GHL custom_code no puede hacer `fetch` + usa `action_source:'crm'` (inválido). Parte del set "nunca funcionó" → ver [[capi-webhook-worker]].
+
+**Diseño de pase CONFIRMADO por prueba (2026-06-14):** creé una opp en "Ganado Y cancelado" (Barranquilla) → el workflow corrió (aplicó tags `oportunidad ganado` + `oportunidad operacion programacion de cirugia`, opp movida a Operaciones por wf11). El gatillo está BIEN. **NO mover el trigger a Operaciones** (sería doble disparo). El cuello no es el trigger — es el método de envío (custom_code muerto).
+
+**✅ FIX HECHO Y VERIFICADO (2026-06-14):** convertido el Purchase de venta de `custom_code` (muerto, no hace fetch) → **acción Webhook** al worker `innovart-capi-webhook-no-tocar` en el workflow "Etiqueta Ganado y cancelado" de las 4 sedes que venden. Pasos: Add Tag `oportunidad ganado` → Remove Tags → **Webhook "CAPI Meta Webhook (NO TOCAR)"** (POST). Triggers (Opportunity Created + Pipeline Stage Changed en etapa Ganado) intactos.
+
+| Sede | Workflow | Versión | URL webhook (Purchase) |
+|---|---|---|---|
+| Bogotá Ads | `b2028df1` | v9 | `…/?k=7743365e334edde60edadf38dec1ad21&event=Purchase&value=8000000&currency=COP` |
+| Medellín | `2f78cf72` | v9 | idem (COP 8M) |
+| Barranquilla | `5b2fdd06` | v8 | idem (COP 8M) |
+| Panamá | `aa67d560` ("…CAPI Purchase USD") | v6 | `…&event=Purchase&value=3500&currency=USD` |
+
+⚠ Panamá: al `ec941c4f` "Etiqueta Ganado y cancelado" se le **quitó** el custom_code Purchase (quedó solo tags) para no duplicar con `aa67d560`. El `value` 8M que se había metido al custom_code (Med/Baq) quedó obsoleto: el paso ahora es webhook.
+
+**Verificación 2026-06-14:**
+1. **GHL:** crear opp en "Ganado Y cancelado" → workflow corre, aplica tags y wf11 mueve a Operaciones (pase confirmado).
+2. **Meta (definitiva):** `curl` POST Purchase $8M COP al worker → Meta respondió **`events_received:1` en AMBOS píxeles** (`1642…` + `1625…`), matchKeys `em,ph,fn,ln,country,external_id`, `messages:[]` (sin errores). Cadena completa funcionando. Aparece agregado en Events Manager en ~15-30 min.
+
+Cron `innovart-meta-capi` no responde (HTTP 000 → ~apagado) = sin riesgo de doble Purchase.
+
+**Pendiente:** (a) confirmar visualmente en Events Manager las próximas ventas reales; (b) si se quiere `fbc`/fbclid en el match, agregar custom data en la acción Webhook (hoy matchea por PII, 6 claves = EMQ alto); (c) IPS Principal no vende (no requiere Purchase); (d) Bucaramanga: borrar pipeline "Ventas" duplicado.
+
+**Mapa de IDs — trigger del Purchase de venta por sede:**
+
+| Sede | Location | Pipeline Ventas | Etapa "Ganado Y cancelado" | Pipeline Operaciones | Etapa "Programación cirugía" |
+|---|---|---|---|---|---|
+| Bogotá Ads | DgjjDzD9nkCKv8AGF1Qb | RpC0O3mYkxyKV1jvMqm6 | 50d2786c-a074-4812-819f-c6395bc739f4 | B9faYO7EER00acsuqxv9 | 88e69b46-7e15-42b0-8b2d-1626d35d0cd0 |
+| Medellín | h8DplQKVE6epDbbj5Kg8 | 8vqcl7aQIBiR2YiebPv3 | 847bb988-3fdf-4693-9cc1-3e782e1e1bfe | SxkXqYkZzNjl84WJnBeq | dc3cfbb6-e68c-4ed3-8834-2d83ef479679 |
+| Barranquilla | cXH8KbMaAPGzkmf3Z2pP | fJqdW5ZKRTQZ68Dv57Sr | 2489801f-ee0a-4001-b6cd-f7d9c27a158d | NchoLsboSYN89VwflGM7 | 12105dcf-115b-4bc1-9ee0-803d9e8bfab4 |
+| Panamá | 45SKYgIDgr4Eh6a6JcFz | uFYBp4Jr378BK7bWYn58 | 48807d03-b21f-4cfc-8c04-e889be1ec902 | LDjxHqsvjVap61Z1nOAr | b284a6fe-bfe5-454f-8dc3-8ab01d137095 |
+| IPS Principal | NPhQTmLOHd6FbDtqLPnG | ZUMTSA6dbzMnXFlOBGzi | b09608a9-0a27-48d7-820e-82249242721a | HgGTdUkQTFC15Wjqean6 | 10d4147c-f701-49ee-8adf-69dc626f1a5a |
+| Bucaramanga | s40Wa8mXYBxlFCieKohO | r6twTNR4DbLvYrtXCIHR (+ dup `qwGmtY8FB2p4ImnppWCE` — borrar) | 84f5adf8-107e-43f9-aa51-a19009181adc | nFn2m2clpGe9UAKFAbwO | 34ff4408-b1f5-4617-80c4-afc9e474c002 |
+
+**Notas:** IPS Principal **no hace ventas** (es el intake de leads de redes) → no necesita Purchase. Valores del Purchase por sede: **Panamá USD 3.500** (`system_generated`, +507, v3.1 — el más completo), **Bogotá/Medellín/Barranquilla COP 8.000.000**. Panamá además tiene la **matriz CAPI completa** como workflows separados (Lead/Contact/Schedule/ViewContent/no_show/lost_lead/Purchase) — todos custom_code, así que también muertos hasta pasarlos a webhook.
+
 ---
 
 # GHL ↔ Meta CAPI — Estado al 2026-06-08

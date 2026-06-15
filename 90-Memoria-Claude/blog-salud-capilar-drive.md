@@ -40,8 +40,22 @@ El 2026-06-13 se generaron **15 artículos tipo blog en HTML autocontenido** (CS
 ## Detalles técnicos
 - Cada artículo: hero con gradiente + SVG, TOC, "Lo esencial en 30 seg", H2/H3, tablas, timelines, comparativas, FAQ (`<details>`), CTA a valoración, aviso médico, footer con sedes.
 - **Imágenes:** hero SVG renderizado + componentes visuales (stats/timeline/compare) + bloques de "sugerencia de imagen" con prompt y alt-text para que el equipo inserte fotografía real (no se generaron antes/después por cumplimiento — ver [[before-after-strategy]]).
-- Plantilla generadora local: `/tmp/innovart-blogs/innovart_template.py` (efímero).
+- **Motor generador (persistente):** `90-Memoria-Claude/blog-capilar-src/` → `innovart_template.py` (diseño) + `batch1..4.py` (contenido) + `build_index.py` + `LEEME.txt`. (El original estaba en `/tmp`, efímero; se copió al vault).
 - Cumplimiento: NO se usó "Garantía Vitalicia" (ver [[restricciones-lenguaje]]); se usó "garantía de resultado / respaldamos tu procedimiento". Tono educativo sin promesas médicas absolutas.
+
+## Contacto embebido (2026-06-13)
+- Se agregó la **línea principal +57 312 456 5014** a los 15 blogs + índice (5 apariciones c/u): barra superior (botón dorado), botón CTA, línea de sedes, y pie (WhatsApp + Llamar).
+- Enlaces: WhatsApp `https://wa.me/573124565014` · Llamada `tel:+573124565014`.
+- Fuente del número: dossier (línea Bogotá). Constantes `PHONE_DISPLAY/PHONE_WA/PHONE_TEL` al inicio de `innovart_template.py`.
+
+## Cómo regenerar y re-subir (avances/mantenimiento)
+1. Copiar `blog-capilar-src/` a una ruta de trabajo (p.ej. `/tmp/innovart-blogs/`).
+2. `python3 batch1.py && python3 batch2.py && python3 batch3.py && python3 batch4.py && python3 build_index.py` → genera `./html/`.
+3. `rclone copy ./html/ "gdrive:" --drive-root-folder-id 1DTXGHxIohr0sk9gu28AB3YeBm-TBL7Su --transfers 8` → sobrescribe conservando enlaces/IDs.
+- Remote rclone: `gdrive` (cuenta innovartmedicalips@gmail.com).
+
+## Estado
+✅ 16 HTML generados, con teléfono, subidos y verificados en Drive. Motor generador respaldado en el vault.
 
 ## Pendiente sugerido
 - Publicar en blog de Shopify (ver [[seo-plan-shopify-2026-05]]), insertar fotografía real en los bloques de sugerencia, añadir schema Article/FAQ.

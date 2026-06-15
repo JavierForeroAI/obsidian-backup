@@ -1,0 +1,20 @@
+MOTOR GENERADOR — Blog Salud Capilar Innovart
+=============================================
+Archivos:
+  innovart_template.py  -> diseño/plantilla (CSS, SVG, componentes, CTA, teléfono)
+  batch1..4.py          -> contenido de los 15 artículos (texto)
+  build_index.py        -> página índice del blog
+
+Teléfono principal embebido: +57 312 456 5014 (wa.me/573124565014 / tel:+573124565014)
+  -> definido como constantes PHONE_* al inicio de innovart_template.py
+
+CÓMO REGENERAR Y RE-SUBIR A DRIVE:
+  1) Copiar esta carpeta a una ruta de trabajo, p.ej. /tmp/innovart-blogs/
+  2) cd /tmp/innovart-blogs
+  3) python3 batch1.py && python3 batch2.py && python3 batch3.py && python3 batch4.py && python3 build_index.py
+     -> genera los .html en ./html/
+  4) Subir (sobrescribe, conserva enlaces/IDs):
+     rclone copy /tmp/innovart-blogs/html/ "gdrive:" --drive-root-folder-id 1DTXGHxIohr0sk9gu28AB3YeBm-TBL7Su --transfers 8
+
+Carpeta Drive "Blogs": 1DTXGHxIohr0sk9gu28AB3YeBm-TBL7Su  (3.MERCADEO/CLAUDE/Blogs)
+Cuenta: innovartmedicalips@gmail.com (rclone remote: gdrive)

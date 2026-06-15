@@ -13,6 +13,9 @@
 - [Guía Google Ads desde Claude](google-ads-guia.md) — Agentes y skills disponibles (audit-google, /ads-google), flujo de trabajo, métricas clave y tipos de campaña para Innovart
 - [Políticas de Publicidad de Google Ads](google-politicas-publicitarias.md) — Referencia obligatoria: prohibiciones, categorías restringidas (salud, estética), requisitos editoriales y aplicación para Innovart
 
+## Tracking y Atribución
+- [Auditoría UTM — Junio 2026](reporte-utm-junio-2026.md) — 176 ads activos, 0% con UTMs. GHL Medellín listo (campos confirmados). Plantilla estándar + plan 3 pasos. Reporte enviado a Esneider 2026-06-12.
+
 ## CRM y leads
 - [Volumen CRM y funnel](crm-funnel.md) — 160K+ oportunidades, tracking de won roto, 15-25 leads/día en Bogotá
 - [Plan Agencia Internacional + conteos en vivo](plan-agencia-internacional.md) — 163,412 opps por CRM (2026-06-13), snapshot Meta mayo 2026, plan estratégico ~$4M, entregable en Drive/Gmail
@@ -44,14 +47,16 @@
 
 ## SEO
 - [Plan SEO Shopify — Mayo 2026](seo-plan-shopify-2026-05.md) — 17 acciones automáticas + 8 parciales + 5 manuales; landing pages de ciudad, blog, schema, correcciones on-page
-- [Blog Salud Capilar — 15 artículos HTML en Drive](blog-salud-capilar-drive.md) — 2026-06-13. Generados desde notebook Carlos Muñoz, voz clínica. Carpeta Drive `Blogs` (ID `1DTXGHxIohr0sk9gu28AB3YeBm-TBL7Su`) en 3.MERCADEO/CLAUDE. Pendiente: publicar en Shopify + fotografía real + schema.
+- [Blog Salud Capilar — 15 artículos HTML en Drive](blog-salud-capilar-drive.md) — 2026-06-13. Generados desde notebook Carlos Muñoz, voz clínica. Tel **+57 312 456 5014** embebido. Carpeta Drive `Blogs` (ID `1DTXGHxIohr0sk9gu28AB3YeBm-TBL7Su`) en 3.MERCADEO/CLAUDE. Motor generador respaldado en `blog-capilar-src/`. Pendiente: publicar en Shopify + fotografía real + schema.
 
 ## Aprendizajes
 - [Dossier descubrimiento 2026-05-18](../10-Clientes/Innovart/_dossier-2026-05-18.md) — Investigación completa inicial
 
 ## Integraciones técnicas
+- [⭐ CAPIMETAGHL — Diagnóstico Maestro + Base de Auditoría Diaria](auditoria-capimetaghl-base.md) — 2026-06-14. Estado verificado de las 6 cuentas: 3 mecanismos de envío (webhook ✅ / cron ⚠️ apagado / custom_code ❌ muerto), matriz de eventos, mapa de pipelines/etapas (IDs) para detectar drift, estándar canónico y **checklist del agente de auditoría diaria (C1–C11)** con herramientas, valores esperados, severidad y remediación. Purchase de venta migrado a webhook en las 4 sedes que venden + verificado `events_received:1` en los 2 píxeles.
 - [GHL ↔ Meta CAPI Worker](integracion-ghl-meta-capi.md) — Worker Cloudflare activo en innovart-meta-capi, corre cada 5min, envía Lead/Schedule/Purchase con PII hasheada + ctwa_clid + fbc
 - [Worker CAPI vía Webhook (innovart-capi-webhook-no-tocar)](capi-webhook-worker.md) — 2026-06-13. Worker dedicado: GHL acción Webhook → hashea PII → Meta CAPI (2 píxeles). Reemplaza el custom_code de GHL (que NO puede hacer fetch). Lo usan las 3 landings de financiación. URL + key + cómo conectarlo.
+- [Reporte auditoría CAPIMETAGHL automático](reporte-auditoria-capimetaghl-automatico.md) — 2026-06-14. Cron local: diario 7:30 (`audit-capimetaghl.py` → HTML a Drive `CONFIGURACIONAPICONVERSIONMETAGHL/REPORTES` `1hpDYd5jVT9H8jakkcPcfopZA2EtkDpvx`) + lunes 7:45 `--weekly` (Drive + correo). **Monitor de SALUD (v2), no conteo de leads:** verifica comunicación GHL→Meta fluyendo (evento HealthCheck → `events_received` por píxel), volumen real de eventos en Meta 48h (`/stats`), workflows CAPI `published` por sede, alertas + checklist landing. Lee PIT del registro `elitedcs-ghl-mcp/.ghl-tokens.json` + token Meta (UA de navegador obligatorio por Cloudflare 1010). ⚠ Correo pendiente: App Password Gmail en `.capimetaghl-mail.json`. Base: [[auditoria-capimetaghl-base]].
 - [Reporte diario Meta automático](reporte-diario-meta-automatico.md) — 2 crons locales: genera HTML 8:00 (`generate-meta-report.py`) + PDF 8:25 (`convert-meta-report.sh`) → Drive `informesdiariosmeta`. Detallado por campaña, 6 cuentas. ⚠ MEDELLIN/PANAMA en período de gracia (facturación)
 - [Landing /home4 → ruteo de leads](landing-home4-routing.md) — 2026-06-13. Form `6aGxlY1g` (diseño nuevo s/fotos+fbclid) → router `fbd5387a` (tag `landing_form_home4` + aviso a Sofia) → flujo `4.1`. Bogotá. No mover el SMS "Barranquilla" de 4.1 (compartido). Form gemelo en cuenta principal `akg7psKDdPd3yE9uvD91` NO usar.
 - [Flujo Financiación — Asignación + Respuesta + CAPI Purchase (3 sedes)](flujo-financiacion-bta-capi.md) — 2026-06-13. Workflows publicados y activos en BTA (`20eb73fb`), MDE (`c3572764`) y BAQ (`2f258215`). Trigger **SMS `type 2`** (WhatsApp entra como SMS por applevel) + body "Meddipay" → apaga IA (`ai_parar`+`update_conversation_ai_status`), oportunidad Paciente MeddiPay, asigna Sofia si libre (`only_unassigned_contact`), responde por SMS, **CAPI Purchase $8M COP vía acción Webhook → worker** [[capi-webhook-worker]] (ya NO custom_code). WABA por sede: BTA `609046938958518` / MDE `611850088685930` / BAQ `625405087319822`. Píxeles `1642103999710262`/`1625645205284016`. Landing solo existe en BTA (`/financiacionbta` CTA `573208167253`); copiar a MDE/BAQ con nativo GHL.
