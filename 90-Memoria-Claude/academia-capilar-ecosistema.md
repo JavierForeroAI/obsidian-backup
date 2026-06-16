@@ -49,6 +49,7 @@ Google → blog (spoke) → enlace interno → página pilar (hub) → CTA conte
 
 ## Entregables
 - **HTML de la estrategia (presentación de trabajo):**
+  - En Drive: 3.MERCADEO/CLAUDE/Blogs — [ver](https://drive.google.com/file/d/1trq_CdYWjmWUWVlciAHOvmdQVaM7IUOM/view) (file ID `1trq_CdYWjmWUWVlciAHOvmdQVaM7IUOM`)
   - En el cerebro: `90-Memoria-Claude/Academia-Capilar-Innovart-Estrategia.html`
   - Copia de trabajo: `/Users/javierforero/Downloads/Academia-Capilar-Innovart-Estrategia.html`
 - Diseño autocontenido (CSS + diagramas inline), editable en Claude cowork. Paleta clínica azul Innovart + acento cálido; pensado como muestra del estándar visual de los ebooks.

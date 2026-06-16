@@ -34,6 +34,7 @@
 ## Contenido
 - [Ángulos creativos activos](angulos-creativos.md) — ~~"Garantía Vitalicia"~~ ⚠️ PROHIBIDO · "Garantía de resultado", "Resultados en 6 Meses", flag emojis por país
 - [⭐ Academia Capilar Innovart — Ecosistema de contenido](academia-capilar-ecosistema.md) — 2026-06-13. Estrategia maestra que une los 15 blogs + 5 ebooks nuevos + plan SEO en un motor de 5 pilares (hub-and-spoke). Nace del PDF genérico "10 Things". HTML de la estrategia en el cerebro + Downloads. Fase 0: publicar blogs + páginas pilar.
+- [⭐ Plan Marketing — Ebooks como Motor TOFU en Meta Ads](plan-ebooks-metaads.md) — 2026-06-15. Valida la idea de captar TOFU masivo con ebooks (capa sobre la respuesta directa, NO reemplazo). Arquitectura Meta calibrada a gasto real mayo 2026, audiencias CA-1..7+lookalikes, matriz creativa/copy compliant, nurture+lead scoring (ataca show rate <40%), economía (caso base ROAS ~9x, CAC ~COP 869K) y secuencia 5 fases. Bloqueantes: UTMs 0% + funnel CAPI. HTML en cerebro + Downloads.
 
 ## NotebookLM — Innovart (extraído 2026-05-22)
 - [Índice de notebooks](notebooklm/INDEX.md) — 7 notebooks Innovart extraídos, 15 pendientes

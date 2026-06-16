@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan de Marketing — Ebooks como Motor TOFU en Meta Ads · Innovart</title>
+<style>
+  :root{
+    --ink:#16202A; --muted:#5C6B79; --bg:#EEF3F8; --card:#FFFFFF;
+    --brand:#0E5A8A; --brand-deep:#0A3F63; --teal:#14A0A6; --accent:#E2A34B;
+    --line:#E1E9F0; --soft:#F6F9FC;
+    --p1:#0E5A8A; --p2:#14868C; --p3:#5B6BB5; --p4:#D98C3F; --p5:#B5475A;
+    --ok:#2E8B6F; --warn:#C8553D;
+    --shadow:0 1px 3px rgba(16,40,64,.06),0 8px 28px rgba(16,40,64,.07);
+    --radius:16px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;}
+  h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif; line-height:1.2; letter-spacing:-.01em;}
+  a{color:var(--brand); text-decoration:none}
+  .wrap{max-width:1080px; margin:0 auto; padding:0 22px}
+  .eyebrow{font-family:-apple-system,sans-serif; text-transform:uppercase; letter-spacing:.18em; font-size:12px; font-weight:700; color:var(--teal)}
+  header.hero{background:linear-gradient(135deg,var(--brand-deep) 0%,var(--brand) 55%,#127a9e 100%);
+    color:#fff; padding:64px 0 120px; position:relative; overflow:hidden;}
+  header.hero::after{content:""; position:absolute; right:-120px; top:-120px; width:420px; height:420px;
+    background:radial-gradient(circle,rgba(255,255,255,.14),transparent 65%); border-radius:50%;}
+  .hero .eyebrow{color:#9fe3e8}
+  .hero h1{font-size:44px; margin:14px 0 10px; max-width:820px}
+  .hero p.lead{font-size:19px; max-width:720px; color:#dbeefb; margin:0}
+  .hero .meta{margin-top:26px; display:flex; gap:10px; flex-wrap:wrap}
+  .chip{display:inline-flex; align-items:center; gap:7px; background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.22); color:#eaf6ff; padding:7px 13px; border-radius:999px; font-size:13px; font-weight:600}
+  .deck{margin-top:-86px; position:relative; z-index:2}
+  .grid{display:grid; gap:20px}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:880px){.g4,.g3,.g2{grid-template-columns:1fr}}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); padding:24px}
+  .card h3{margin:0 0 6px; font-size:17px}
+  .card .num{font-size:30px; font-family:Georgia,serif; color:var(--brand); font-weight:700}
+  .card small{color:var(--muted)}
+  nav.toc{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.92); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line); padding:12px 0; margin-top:48px}
+  nav.toc .wrap{display:flex; gap:6px; flex-wrap:wrap; align-items:center}
+  nav.toc a{font-size:12.5px; font-weight:600; color:var(--muted); padding:6px 10px; border-radius:8px}
+  nav.toc a:hover{background:var(--soft); color:var(--brand)}
+  nav.toc .brandtag{font-family:Georgia,serif; font-weight:700; color:var(--brand); margin-right:6px}
+  section{padding:50px 0}
+  section h2{font-size:29px; margin:0 0 6px}
+  section .sub{color:var(--muted); font-size:17px; margin:0 0 26px; max-width:820px}
+  .kicker{display:inline-block; font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--teal); margin-bottom:8px}
+  .secalt{background:var(--card); border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+  table{width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); margin:8px 0 18px}
+  th,td{text-align:left; padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; font-size:13.5px}
+  th{background:var(--brand-deep); color:#fff; font-family:-apple-system,sans-serif; font-size:11.5px; text-transform:uppercase; letter-spacing:.06em}
+  tr:last-child td{border-bottom:none}
+  td.pill{font-weight:700}
+  .dot{display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:7px; vertical-align:middle}
+  .tag{display:inline-block; font-size:11px; font-weight:700; padding:3px 9px; border-radius:999px; background:var(--soft); color:var(--muted); border:1px solid var(--line)}
+  .tag.ok{background:#E7F4EE; color:var(--ok); border-color:#bfe5d3}
+  .tag.warn{background:#FBEFE9; color:var(--warn); border-color:#f2cdbe}
+  .tag.new{background:#EAF1FB; color:var(--brand); border-color:#cbddf5}
+  .arch{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:28px; box-shadow:var(--shadow)}
+  .brain{text-align:center; margin-bottom:14px}
+  .brain .b{display:inline-block; background:var(--brand-deep); color:#fff; padding:11px 20px; border-radius:12px; font-weight:700; font-size:14px}
+  .layer3{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:8px}
+  @media(max-width:820px){.layer3{grid-template-columns:1fr}}
+  .lay{border-radius:12px; padding:18px; color:#fff}
+  .lay h4{margin:0 0 6px; font-size:15px; color:#fff}
+  .lay p{margin:0; font-size:13px; opacity:.93}
+  .lay.capt{background:linear-gradient(160deg,#0E5A8A,#127a9e)}
+  .lay.conv{background:linear-gradient(160deg,#14868C,#17a6a6)}
+  .lay.close{background:linear-gradient(160deg,#B5475A,#c9685a)}
+  .arrowrow{text-align:center; color:var(--muted); font-size:22px; margin:6px 0}
+  .track{margin-top:16px; text-align:center; background:var(--soft); border:1px dashed var(--line); border-radius:10px; padding:12px; font-size:13px; color:var(--muted)}
+  .callout{border-left:4px solid var(--warn); background:#FCF2EE; border-radius:0 12px 12px 0; padding:16px 18px; margin:10px 0}
+  .callout b{color:var(--warn)}
+  .note{border-left:4px solid var(--teal); background:#ECF7F8; border-radius:0 12px 12px 0; padding:16px 18px; margin:10px 0}
+  .ok-note{border-left:4px solid var(--ok); background:#ECF7F1; border-radius:0 12px 12px 0; padding:16px 18px; margin:10px 0}
+  .why{display:grid; grid-template-columns:repeat(2,1fr); gap:16px}
+  @media(max-width:820px){.why{grid-template-columns:1fr}}
+  .why .item{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px; box-shadow:var(--shadow)}
+  .why .item .ic{width:34px; height:34px; border-radius:9px; background:var(--soft); display:flex; align-items:center; justify-content:center; font-size:18px; margin-bottom:10px}
+  .why .item b{font-size:15px}
+  .why .item p{margin:6px 0 0; color:var(--muted); font-size:13.5px}
+  .timeline{position:relative; margin-left:8px; padding-left:26px; border-left:3px solid var(--line)}
+  .tnode{position:relative; margin-bottom:22px}
+  .tnode::before{content:""; position:absolute; left:-34px; top:3px; width:16px; height:16px; border-radius:50%; background:var(--brand); border:3px solid #fff; box-shadow:0 0 0 2px var(--brand)}
+  .tnode h4{margin:0 0 3px; font-size:16px}
+  .tnode p{margin:0; color:var(--muted); font-size:14px}
+  .phase{font-size:11px; font-weight:800; color:var(--teal); letter-spacing:.12em; text-transform:uppercase}
+  .funnel{display:flex; flex-direction:column; gap:0; max-width:680px; margin:0 auto}
+  .step{display:flex; align-items:center; gap:14px}
+  .step .box{flex:1; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:13px 15px; box-shadow:var(--shadow)}
+  .step .box b{display:block; font-size:14px}
+  .step .box small{color:var(--muted)}
+  .vline{width:2px; height:16px; background:var(--line); margin:0 auto}
+  .verdict{background:linear-gradient(160deg,#0A3F63,#0E5A8A); color:#fff; border-radius:var(--radius); padding:26px 28px; box-shadow:var(--shadow)}
+  .verdict h3{color:#fff; margin:0 0 8px; font-size:20px}
+  .verdict p{margin:0 0 8px; color:#dbeefb; font-size:15px}
+  .verdict .big{font-size:15px; color:#fff; font-weight:700}
+  code{background:var(--soft); border:1px solid var(--line); border-radius:6px; padding:1px 6px; font-size:12.5px}
+  .lead-x{font-size:14px}
+  ul.clean{margin:8px 0 0; padding-left:18px; font-size:14px; color:var(--muted)}
+  ul.clean li{margin-bottom:5px}
+  footer{background:var(--brand-deep); color:#cfe4f2; padding:38px 0; margin-top:24px}
+  footer .wrap{display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; align-items:flex-end}
+  footer b{color:#fff}
+  footer small{display:block; opacity:.7; margin-top:4px}
+  @media print{nav.toc{display:none} header.hero{padding:30px 0 40px} .deck{margin-top:24px}
+    body{background:#fff} .card,.arch,table,.why .item,.verdict{box-shadow:none} section{padding:22px 0; page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Innovart Medical IPS · Plan de Marketing 2026</span>
+    <h1>Ebooks como motor de TOFU en Meta Ads</h1>
+    <p class="lead">Cómo captar usuarios de forma masiva con ebooks, sin inflar el CRM de curiosos — y convertir ese conocimiento en cirugías. Validación estratégica + plan ejecutable de punta a punta.</p>
+    <div class="meta">
+      <span class="chip">✅ Estrategia validada (con condiciones)</span>
+      <span class="chip">📊 Calibrado a gasto real mayo 2026</span>
+      <span class="chip">🎯 Meta Ads · GHL · CAPI · 5 avatares · 5 ebooks</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap deck">
+  <div class="grid g4">
+    <div class="card"><div class="num">+3x</div><h3>Capa nueva</h3><small>El ebook se suma como capa TOFU. NO reemplaza la respuesta directa: la alimenta.</small></div>
+    <div class="card"><div class="num">~9x</div><h3>ROAS caso base</h3><small>CAC ≈ COP 865K / USD 216 por cirugía, si el lead frío califica y el show sube a ≥50%.</small></div>
+    <div class="card"><div class="num">0,66%</div><h3>Descarga → cirugía</h3><small>La mayoría nunca compra. Por eso NUNCA se optimiza por la descarga.</small></div>
+    <div class="card"><div class="num">2</div><h3>Bloqueantes</h3><small>UTMs al 0% hoy + funnel CAPI intermedio en cron dudoso. Arreglar antes de escalar.</small></div>
+  </div>
+</div>
+
+<nav class="toc">
+  <div class="wrap">
+    <span class="brandtag">Plan Ebooks-Meta</span>
+    <a href="#veredicto">Veredicto</a>
+    <a href="#modelo">El modelo</a>
+    <a href="#arquitectura">Arquitectura Meta</a>
+    <a href="#audiencias">Audiencias</a>
+    <a href="#creativos">Creativos + Copy</a>
+    <a href="#entrega">Lead magnet</a>
+    <a href="#nurture">Nurture + Scoring</a>
+    <a href="#economia">Economía + KPIs</a>
+    <a href="#cumplimiento">Cumplimiento</a>
+    <a href="#secuencia">Secuencia</a>
+  </div>
+</nav>
+
+<!-- VEREDICTO -->
+<section id="veredicto">
+  <div class="wrap">
+    <span class="kicker">La validación honesta</span>
+    <h2>¿Funciona la idea de captar con ebooks para Meta Ads?</h2>
+    <p class="sub">Respuesta corta: <b>sí, pero no como la mayoría la ejecuta.</b> La idea es sólida si se monta como una <b>capa de alimentación del algoritmo</b>, no como una campaña de "descargas baratas". Aquí está el porqué, los riesgos reales y las condiciones para que produzca cirugías y no solo PDFs bajados.</p>
+    <div class="verdict">
+      <h3>Veredicto: VÁLIDA — con 4 condiciones no negociables</h3>
+      <p class="big">El ebook resuelve un hueco real de Innovart: hoy se va directo al lead/booking (BOFU) y casi no hay capa fría educativa. El ebook abre el embudo, baja el costo de entrada, construye audiencias propias (descargadores + lookalikes) y educa al lead <em>antes</em> de hablar con ventas — lo que ataca de raíz el show rate &lt;40%.</p>
+      <p>Pero un trasplante es una compra de ~COP 8M. Si se ejecuta mal, el ebook inunda el CRM (ya con 160K+ opps y won roto) de curiosos que jamás pagan. Las 4 condiciones de abajo son lo que separa "máquina de autoridad" de "máquina de leads basura".</p>
+    </div>
+    <div class="grid g2" style="margin-top:18px">
+      <div class="card" style="border-top:3px solid var(--ok)">
+        <h3>✅ Por qué SÍ tiene sentido</h3>
+        <ul class="clean">
+          <li><b>Llena un TOFU que hoy no existe</b> — Innovart capta en caliente; falta el frío educativo que diferencia de las clínicas low-cost.</li>
+          <li><b>Señal de primera parte</b> — los descargadores reales = semilla de lookalikes y pool de retargeting que abaratan TODO el embudo.</li>
+          <li><b>Ataca el show rate &lt;40%</b> — un lead que ya leyó el ebook llega educado y con menos objeciones a la valoración.</li>
+          <li><b>Contenido casi gratis</b> — 15 blogs y los notebooks (Muñoz, GEMinnovart, Libro de Alopecia) ya existen. El costo marginal del ebook es bajo.</li>
+          <li><b>CPL de descarga muy bajo + ticket muy alto</b> — la economía funciona aunque el 99% no compre.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:3px solid var(--warn)">
+        <h3>⚠️ Los riesgos reales (a controlar)</h3>
+        <ul class="clean">
+          <li><b>La trampa del lead-gen</b> — si optimizas por la descarga, Meta te trae descargadores baratos, no compradores.</li>
+          <li><b>Dilución del CRM</b> — más leads fríos sobre un CRM con won-tracking roto = más ruido si no hay scoring.</li>
+          <li><b>Capacidad de nurture</b> — sin un motor de seguimiento real, el lead de ebook se enfría y se pierde.</li>
+          <li><b>Atribución rota</b> — 176 ads con 0% UTMs hoy: imposible probar que el ebook produce cirugías sin arreglarlo.</li>
+          <li><b>Ciclo largo</b> — un ebook de julio puede ser cirugía en octubre; medir a 7 días mata el TOFU por falsa pobreza.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note" style="margin-top:18px">
+      <b>Las 4 condiciones no negociables:</b>
+      <ol style="margin:8px 0 0; padding-left:20px; font-size:14px; color:var(--ink)">
+        <li><b>Capa, no reemplazo.</b> La respuesta directa actual (BOFU) es piso intocable; el ebook es incremental encima.</li>
+        <li><b>Nunca optimizar por la descarga.</b> Optimizar por <code>Schedule</code> donde haya volumen, o por <code>Lead</code> cualificado <em>sembrado con lookalike de compradores</em> donde no.</li>
+        <li><b>El motor de nurture + lead scoring se construye ANTES de escalar gasto.</b> Separar al curioso del candidato real es la diferencia entre rentable y ruinoso.</li>
+        <li><b>Arreglar el tracking primero.</b> UTMs al 95%+ y el funnel CAPI intermedio a webhook, o no se puede probar el ROI.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- MODELO -->
+<section id="modelo" class="secalt">
+  <div class="wrap">
+    <span class="kicker">El cambio de mentalidad</span>
+    <h2>El ebook no es una campaña: es combustible para el algoritmo</h2>
+    <p class="sub">El trabajo real del ebook no es generar descargas. Es fabricar señal de primera parte de alta calidad (descargadores reales → semilla de lookalikes → retargeting cálido) que vuelve más barata y precisa a la capa de respuesta directa que ya genera la caja.</p>
+    <div class="arch">
+      <div class="brain"><span class="b">🧠 Catálogo de creativos por avatar × ebook (NotebookLM Muñoz + Innovart)</span></div>
+      <div class="arrowrow">▼</div>
+      <div class="layer3">
+        <div class="lay capt">
+          <h4>① TOFU — Ebook (capa NUEVA)</h4>
+          <p>Captación masiva fría. Advantage+ / CBO broad + lookalike de compradores. Optimiza evento profundo, NO la descarga.</p>
+        </div>
+        <div class="lay conv">
+          <h4>② MOFU — Retargeting + Nurture</h4>
+          <p>Descargó/leyó pero no agendó → ads de "siguiente paso" + nurture GHL (email + WhatsApp) + lead scoring. Optimiza Schedule.</p>
+        </div>
+        <div class="lay close">
+          <h4>③ BOFU — Respuesta directa (YA EXISTE)</h4>
+          <p>CTWA / Lead Forms por ciudad → WhatsApp → valoración → cirugía. Se mantiene intacta. Es el motor de caja.</p>
+        </div>
+      </div>
+      <div class="track">🔗 Capa de medición transversal: <b>fbclid → fb_click_id + ctwa_clid</b> en todo form · CAPI dispara <b>Lead → Schedule → Purchase</b> (COP 8M / USD 3.500) · UTMs al 95%+ desde el día 1 · lead scoring en GHL</div>
+    </div>
+    <div class="callout" style="margin-top:18px">
+      <b>El riesgo central, en una frase:</b> en la era Andrómeda/Advantage+, Meta es brutalmente eficiente. Si le pides "descargas", te trae cazadores de PDFs gratis. Hay que pedirle "gente que se parece a quien compra" — y eso se logra con el evento de optimización + la semilla de lookalike, no con la oferta del ebook.
+    </div>
+  </div>
+</section>
+
+<!-- ARQUITECTURA -->
+<section id="arquitectura">
+  <div class="wrap">
+    <span class="kicker">Arquitectura de campañas</span>
+    <h2>Estructura de cuenta y qué evento optimizar</h2>
+    <p class="sub">Calibrado al gasto real de mayo 2026 (vía MCP Meta): base ≈ <b>$11.300 USD-equiv./mes</b> — BGTA $3.454 USD · PANAMA $2.089 USD · MEDELLIN ≈$5.553 USD (COP 22,2M) · LANDING DIEGO ≈$198 USD. QUILLA y REDES en $0. Tasa: 1 USD = 4.000 COP. USD y COP siempre por separado.</p>
+
+    <h3 style="font-size:18px">Qué evento optimizar según volumen (la regla de oro)</h3>
+    <table>
+      <thead><tr><th>Capa</th><th>Qué captura</th><th>Evento que optimiza Meta</th><th>Por qué</th></tr></thead>
+      <tbody>
+        <tr><td class="pill"><span class="dot" style="background:var(--p1)"></span>TOFU-Ebook (frío)</td><td>Descarga (Instant Form / CTWA / web)</td><td><b>NUNCA la descarga.</b> Schedule si hay volumen; si no, Lead cualificado + lookalike de compradores como semilla</td><td>Obliga al algoritmo a buscar perfiles tipo-comprador, usando la descarga solo como puerta</td></tr>
+        <tr><td class="pill"><span class="dot" style="background:var(--p2)"></span>MOFU (retargeting)</td><td>Reimpacto a quien no agendó</td><td><b>Schedule</b> (agendamiento de valoración)</td><td>Ya hay intención: se optimiza por el paso que importa, la cita</td></tr>
+        <tr><td class="pill"><span class="dot" style="background:var(--p5)"></span>BOFU (directa actual)</td><td>Conversación WhatsApp / Lead Form</td><td>Se mantiene como hoy (CTWA / Lead)</td><td>Es el motor probado. No se canibaliza</td></tr>
+      </tbody>
+    </table>
+    <div class="note">
+      <b>Escalera de eventos por volumen:</b> Meta necesita ~50 eventos/conjunto/semana para salir de aprendizaje. <b>Purchase</b> es demasiado raro (ventas de COP 8M no llegan a 50/sem) → úsalo solo como valor CAPI + semilla lookalike, nunca como evento de optimización. <b>Schedule</b> es el norte (hoy alcanzable en BGTA y MEDELLIN). <b>Lead cualificado</b> es el puente para ciudades con poco volumen (PANAMA, Barranquilla, Bucaramanga).
+    </div>
+
+    <h3 style="font-size:18px; margin-top:24px">Decisiones estructurales</h3>
+    <table>
+      <thead><tr><th>Decisión</th><th>Elección para Innovart</th><th>Por qué</th></tr></thead>
+      <tbody>
+        <tr><td class="pill">Consolidado vs ciudad</td><td>Híbrido forzado: 6 cuentas separadas por ciudad/moneda; dentro de cada cuenta se <b>consolidan los conjuntos</b> (no fragmentar por interés)</td><td>Las cuentas son estructurales (USD vs COP); pero Andrómeda penaliza la sobre-segmentación dentro de la cuenta</td></tr>
+        <tr><td class="pill">CBO vs ABO</td><td>TOFU-Ebook: <b>CBO</b>. MOFU/BOFU: <b>ABO</b> (como hoy)</td><td>TOFU broad rinde con reparto automático; retargeting/directa necesitan control fino por ciudad</td></tr>
+        <tr><td class="pill">Advantage+ vs manual</td><td>TOFU: <b>Advantage+ Leads/Sales</b> broad. MOFU: <b>manual</b> con Custom Audiences. BOFU: como hoy</td><td>El creativo auto-segmenta en frío; el retargeting necesita audiencias cerradas</td></tr>
+        <tr><td class="pill">Campañas por cuenta</td><td>1 TOFU-Ebook (CBO) + 1 MOFU (ABO) + las BOFU existentes. No más</td><td>Evitar fragmentar presupuesto y solapamiento de subastas (auction overlap)</td></tr>
+        <tr><td class="pill">Anuncios por conjunto</td><td>3–6 creativos (uno por avatar/pilar relevante)</td><td>Diversidad creativa para Advantage+ sin diluir la señal</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size:18px; margin-top:24px">Estructura concreta (ciudad fuerte: BGTA / MEDELLIN)</h3>
+    <div class="grid g3">
+      <div class="card" style="border-top:3px solid var(--p1)"><h3>Campaña 1 · TOFU-Ebook (CBO)</h3>
+        <ul class="clean"><li><b>Conj. A — Broad</b> (25-55, ciudad) → Schedule/Lead cualificado · Ads: E1+E2+E4</li><li><b>Conj. B — Lookalike compradores 1-3%</b> → Lead/Schedule · Ads: E2+E5</li></ul></div>
+      <div class="card" style="border-top:3px solid var(--p2)"><h3>Campaña 2 · MOFU (ABO)</h3>
+        <ul class="clean"><li>Descargó/leyó/conversó pero NO agendó (30-90 d) → Schedule</li><li>Ads: "siguiente paso" + prueba social + valoración gratis</li></ul></div>
+      <div class="card" style="border-top:3px solid var(--p5)"><h3>Campañas BOFU existentes</h3>
+        <ul class="clean"><li><code>data-[cold/warm]-traffic-standard-[ciudad]-[obj]-abo-[fecha]</code></li><li><b>Se mantienen intactas.</b></li></ul></div>
+    </div>
+    <div class="note" style="margin-top:14px"><b>Ciudades sin volumen (PANAMA, Barranquilla, Bucaramanga):</b> una sola campaña TOFU-Ebook (CBO) optimizada por Lead cualificado (Instant Form o CTWA) + lookalike de compradores. Bucaramanga (CRM nuevo, 0 opps): solo Instant Form para construir píxel/base desde cero.</div>
+  </div>
+</section>
+
+<!-- AUDIENCIAS -->
+<section id="audiencias" class="secalt">
+  <div class="wrap">
+    <span class="kicker">Audiencias</span>
+    <h2>Broad para captar, datos propios para cualificar</h2>
+    <p class="sub">El antídoto contra los descargadores baratos: cada audiencia cálida y cada lookalike se construye desde <b>compradores y agendadores reales</b>, no desde descargadores. Hay además un activo enorme y desaprovechado: <b>960K+ video views</b> ya generados (274K BGTA + 685K MEDELLIN).</p>
+    <table>
+      <thead><tr><th>#</th><th>Custom Audience a crear</th><th>Fuente</th><th>Uso</th></tr></thead>
+      <tbody>
+        <tr><td>CA-1</td><td><b>Compradores CRM (Purchase)</b></td><td>Lista GHL de operados (won roto → filtrar por pipeline Operaciones)</td><td>Semilla #1 de lookalikes · exclusión TOFU</td></tr>
+        <tr><td>CA-2</td><td>Agendaron valoración (Schedule)</td><td>CRM / pixel Schedule</td><td>Semilla lookalike de intención · exclusión MOFU</td></tr>
+        <tr><td>CA-3</td><td>Descargadores de ebook</td><td>Instant Form + CTWA + form web</td><td>Retargeting MOFU + semilla lookalike secundaria</td></tr>
+        <tr><td>CA-4</td><td>Lectores de blog (por pilar)</td><td>Pixel en blogs Shopify</td><td>Retargeting segmentado por pilar/avatar</td></tr>
+        <tr><td>CA-5</td><td>Abrió/vio ebook, no agendó</td><td>Pixel landing + tag GHL sin "agendó"</td><td>Núcleo del MOFU</td></tr>
+        <tr><td>CA-6</td><td>Engagers IG/FB 365d</td><td>Cuenta REDES + páginas</td><td>Retargeting + semilla lookalike de marca</td></tr>
+        <tr><td>CA-7</td><td><b>Video viewers 50%/75%</b></td><td>960K+ views ya generados</td><td>Retargeting tibio masivo y barato — hoy desaprovechado</td></tr>
+      </tbody>
+    </table>
+    <div class="grid g2">
+      <div class="card"><h3>Lookalikes (la audiencia de oro)</h3>
+        <ul class="clean">
+          <li><b>LAL Compradores 1%</b> (CA-1) → conjunto dedicado en TOFU. <b>Esto resuelve el riesgo central.</b></li>
+          <li><b>LAL Agendadores 1-3%</b> (CA-2) → conjunto secundario TOFU.</li>
+          <li><b>LAL value-based</b> con el valor de venta (COP 8M / USD 3.500) → prioriza a quien se parece a los que más pagaron.</li>
+        </ul>
+      </div>
+      <div class="card"><h3>Exclusiones (no canibalizar)</h3>
+        <ul class="clean">
+          <li>TOFU excluye CA-1, CA-2, CA-3, CA-5 (no pagar frío por quien ya está dentro).</li>
+          <li>MOFU excluye CA-1, CA-2 (no re-perseguir a quien agendó/compró).</li>
+          <li>TOFU y BOFU se excluyen mutuamente por ciudad (auction overlap).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREATIVOS -->
+<section id="creativos">
+  <div class="wrap">
+    <span class="kicker">Creativos + Copy</span>
+    <h2>Matriz ebook × avatar, hooks y copy validado</h2>
+    <p class="sub">No todos los ebooks van a todos los avatares. <b>●</b> encaje primario (correr sí o sí) · <b>○</b> secundario (retargeting/expansión) · <b>—</b> no priorizar. Todo el copy de abajo ya pasó el filtro <code>medical-compliance-copy</code>.</p>
+    <table>
+      <thead><tr><th>Ebook ↓ / Avatar →</th><th>Profesional<br>35-50</th><th>Militar<br>25-50</th><th>Gubernam.<br>30-50</th><th>Gay Premium<br>25-45</th><th>Emprendedor<br>25-45</th></tr></thead>
+      <tbody>
+        <tr><td class="pill">E1 · La Verdad Sobre tu Caída</td><td>○</td><td>●</td><td>○</td><td>●</td><td>●</td></tr>
+        <tr><td class="pill">E2 · 10 Verdades de tu Cirujano</td><td>●</td><td>○</td><td>○</td><td>—</td><td>●</td></tr>
+        <tr><td class="pill">E3 · El Tratamiento que Protege tu Inversión</td><td>○</td><td>●</td><td>—</td><td>●</td><td>●</td></tr>
+        <tr><td class="pill">E4 · Más que Cabello</td><td>○</td><td>—</td><td>○</td><td>●</td><td>○</td></tr>
+        <tr><td class="pill">E5 · Cómo Elegir sin que te Estafen</td><td>●</td><td>○</td><td>●</td><td>○</td><td>●</td></tr>
+      </tbody>
+    </table>
+    <p class="lead-x" style="color:var(--muted)"><b>Lectura:</b> E1 es el imán más amplio (ideal COLD broad). E5 es el de mayor intención (ideal MOFU/decisor). E4 es el más nicho (Gay Premium). El Gubernamental nunca es primario en TOFU frío masivo — entra fuerte solo en E5.</p>
+
+    <h3 style="font-size:18px; margin-top:20px">Banco de hooks por avatar (orientados a descargar, compliant)</h3>
+    <div class="grid g2">
+      <div class="card"><h3>Profesional Premium</h3><ul class="clean"><li>"No es cuántos folículos. Es quién y cómo. La guía que separa criterio de marketing."</li><li>"Antes de invertir en tu imagen, lee lo que tu cirujano debería decirte. (Descarga gratis)"</li><li>"La decisión que un ejecutivo no debería tomar sin información. 12 preguntas antes de pagar."</li></ul></div>
+      <div class="card"><h3>Militar</h3><ul class="clean"><li>"La verdad sobre la caída del cabello, sin mitos. (Guía gratuita)"</li><li>"Compatible con corte corto, cicatrices mínimas y poco perceptibles. Resultados individuales."</li><li>"Un líder decide informado. Descarga la guía y decide con base, no con rumores."</li></ul></div>
+      <div class="card"><h3>Gay Premium</h3><ul class="clean"><li>"No es vanidad: es cómo te ves a ti mismo. La guía sobre confianza e imagen."</li><li>"El envejecimiento que ves en las fotos tiene explicación. La guía honesta, gratis."</li><li>"Tu cabello también es parte de tu estilo. Entiende cómo cuidarlo de verdad."</li></ul></div>
+      <div class="card"><h3>Emprendedor</h3><ul class="clean"><li>"Evalúa una clínica como evaluarías un proveedor: 12 preguntas antes de pagar."</li><li>"Una decisión, bien informada, una sola vez. La guía para decidir con criterio de inversor."</li><li>"Tu imagen también comunica resultados. Empieza por la información que sí importa."</li></ul></div>
+    </div>
+
+    <h3 style="font-size:18px; margin-top:20px">Matriz de formatos por ebook</h3>
+    <table>
+      <thead><tr><th>Ebook</th><th>Formatos a correr</th><th>Por qué</th></tr></thead>
+      <tbody>
+        <tr><td class="pill">E1 · Caída</td><td>Carrusel "mito vs realidad" · Reel cinemático educativo 15-25s · Estático "dato fuerte"</td><td>TOFU frío amplio; el carrusel da micro-valor antes del clic</td></tr>
+        <tr><td class="pill">E2 · Cirujano</td><td>Talking-head autoridad 30-45s · Carrusel "10 verdades" teaser (muestra 3) · Estático</td><td>La autoridad técnica necesita rostro/voz; el teaser genera curiosity gap</td></tr>
+        <tr><td class="pill">E3 · Tratamiento</td><td>Reel "qué pasa sin un plan médico" 20-30s · Carrusel comparativo ilustrado · UGC constancia</td><td>Aversión a la pérdida; comparación ilustrada evita riesgo de before/after</td></tr>
+        <tr><td class="pill">E4 · Más que Cabello</td><td>UGC emocional 30-45s · Reel aspiracional lifestyle · Estático editorial</td><td>Tema emocional → narrativa humana convierte mejor que dato técnico</td></tr>
+        <tr><td class="pill">E5 · Elegir clínica</td><td>Talking-head "12 preguntas" (muestra 3) · Carrusel "banderas rojas" · Estático lista</td><td>Decisión/BOFU; el checklist es altamente guardable y clicable</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size:18px; margin-top:20px">Copy Deck — 3 campañas prioritarias (post-compliance)</h3>
+    <div class="grid g3">
+      <div class="card" style="border-top:3px solid var(--p1)"><h3>A · E1 → COLD broad</h3>
+        <p class="lead-x"><b>Primary:</b> "La mayoría de lo que se vende para la caída del cabello no cambia el fondo del problema. Lo que sí ayuda empieza por entender qué la causa. Reunimos años de ciencia capilar en una guía gratuita, sin mitos. Descárgala y decide con información."</p>
+        <p class="lead-x" style="color:var(--muted)"><b>Headline:</b> La verdad sobre la caída, gratis · <b>CTA:</b> Descargar · <small>+ "Resultados individuales. Consulta médica requerida."</small></p>
+      </div>
+      <div class="card" style="border-top:3px solid var(--p5)"><h3>B · E5 → MOFU/decisor</h3>
+        <p class="lead-x"><b>Primary:</b> "Antes de pagar un trasplante capilar, hazte estas 12 preguntas. La mayoría se entera de las banderas rojas cuando ya pagó. Esta guía gratuita te da el criterio para elegir bien la primera vez: qué validar, qué preguntar y qué promesas evitar."</p>
+        <p class="lead-x" style="color:var(--muted)"><b>Headline:</b> 12 preguntas antes de pagar · <b>CTA:</b> Descargar <span class="tag ok">aprobado</span></p>
+      </div>
+      <div class="card" style="border-top:3px solid var(--p4)"><h3>C · E4 → emocional</h3>
+        <p class="lead-x"><b>Primary:</b> "No es vanidad. Es cómo te ves a ti mismo cada mañana. Esta guía gratuita habla de algo de lo que casi nadie habla: lo que la imagen hace por tu confianza, y cómo recuperarla sin obsesionarte."</p>
+        <p class="lead-x" style="color:var(--muted)"><b>Headline:</b> Más que cabello: tu confianza · <b>CTA:</b> Descargar <span class="tag ok">aprobado</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENTREGA -->
+<section id="entrega" class="secalt">
+  <div class="wrap">
+    <span class="kicker">El lead magnet</span>
+    <h2>Cómo se entrega el ebook (y se captura el tracking)</h2>
+    <table>
+      <thead><tr><th>Mecanismo</th><th>Cuándo usarlo</th><th>Pro / Contra</th></tr></thead>
+      <tbody>
+        <tr><td class="pill">Instant Form (Lead nativo)</td><td>COLD broad de máximo volumen + ciudades nuevas (Bucaramanga)</td><td>+ menor fricción, CPL bajo, captura fbclid · − lead más frío. <b>Exige pregunta de cualificación.</b></td></tr>
+        <tr><td class="pill">CTWA → WhatsApp</td><td>Ciudades fuertes (BGTA, MEDELLIN, PANAMA) y MOFU/decisor</td><td>+ captura ctwa_clid, abre conversación 1:1, lead más caliente · − requiere bot/agente listo</td></tr>
+        <tr><td class="pill">Landing web (Shopify) + form</td><td>Cuando el hub del pilar ya rankea / para optimizar por evento web profundo</td><td>+ pixel propio, schema, retargeting de lectores · − más fricción</td></tr>
+      </tbody>
+    </table>
+    <div class="grid g2">
+      <div class="card"><h3>Campos a pedir (mínimos, compliant)</h3>
+        <ul class="clean"><li>Nombre · WhatsApp · Email · Ciudad (rutea sede)</li><li>1 pregunta de etapa NO sensible: "¿En qué etapa estás?" → Informándome / Evaluando / Listo para valoración</li></ul>
+        <div class="callout" style="margin-top:10px"><b>Prohibido en Lead Ads:</b> NO preguntar salud (grado de alopecia, tratamientos), ni orientación sexual, ni datos financieros. El grado de calvicie se infiere en la conversación, no en el form.</div>
+      </div>
+      <div class="card"><h3>Captura técnica (la capa de medición)</h3>
+        <ul class="clean"><li><code>fbclid → fb_click_id</code> en todo form/landing</li><li><code>ctwa_clid</code> en flujos Click-to-WhatsApp</li><li>Dispara <b>Lead</b> vía CAPI al completar la descarga</li><li>UTM <code>ebook-[temp]-[ciudad]-[pilar]-[tema]-[periodo]</code></li><li>Tag por ebook/pilar en GHL → enruta el nurture correcto</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NURTURE -->
+<section id="nurture">
+  <div class="wrap">
+    <span class="kicker">Nurture + Lead Scoring</span>
+    <h2>El motor que separa al curioso del candidato real</h2>
+    <p class="sub">Cada lead se enruta por 3 ejes (pilar/ebook + ciudad + avatar) hacia su secuencia. El nurture mezcla email + WhatsApp — recordando: el WhatsApp de Innovart <b>entra a GHL como SMS (type 2)</b>; todo trigger <code>customer_reply</code> filtra Reply channel = SMS, nunca WhatsApp(19).</p>
+    <div class="funnel">
+      <div class="step"><div class="box"><b>📘 Descarga ebook → WF-00 Enrutador</b><small>set tags ebook::E# + ciudad + avatar · CF ebook_pilar · CAPI Lead · entrega ebook · score=0</small></div></div>
+      <div class="vline"></div>
+      <div class="step"><div class="box"><b>🔁 Secuencia por pilar (5-7 toques email + WhatsApp)</b><small>QUÉ→POR QUÉ→CRITERIO→MITO→ACCIÓN + aversión a la pérdida + prueba social</small></div></div>
+      <div class="vline"></div>
+      <div class="step"><div class="box"><b>📊 Lead scoring recalculado en cada toque</b><small>responde WA +15 · pregunta caso/precio +20 · clic agenda +25 · "solo mirando" −15</small></div></div>
+      <div class="vline"></div>
+      <div class="step"><div class="box"><b>🔥 ≥60 HOT → handoff a Sofia (ai_parar)</b> · 🟠 30-59 WARM → ofrecer valoración · 🟡 watch → seguir nutriendo · 🔵 frío → retargeting</div></div>
+      <div class="vline"></div>
+      <div class="step"><div class="box"><b>📅 Agenda valoración → WF-CITA (Schedule CAPI)</b><small>confirmación activa + recordatorios 24h/3h/30min → ataque al show rate &lt;40%</small></div></div>
+    </div>
+
+    <h3 style="font-size:18px; margin-top:22px">Modelo de Lead Scoring (extracto)</h3>
+    <div class="grid g2">
+      <div class="card"><h3>Señales que suman</h3><ul class="clean"><li>Responde por WhatsApp (inbound) <b>+15</b></li><li>Pregunta concreta de su caso/precio <b>+20</b></li><li>Clic en link de agenda <b>+25</b></li><li>"¿Cuándo hay cita?" <b>+30</b></li><li>Pregunta por MeddiPay <b>+20</b></li><li>Edad 30-55 / ciudad con sede <b>+10 / +8</b></li></ul></div>
+      <div class="card"><h3>Umbrales → acción</h3>
+        <ul class="clean"><li><b>≥60 🔥 HOT</b> → handoff a Sofia, <code>ai_parar</code>, ofrecer valoración YA</li><li><b>30-59 🟠 WARM</b> → ofrecer valoración con link, bot sigue activo</li><li><b>10-29 🟡 WATCH</b> → seguir nurture</li><li><b>&lt;10 tras toque 4 🔵 COLD</b> → salir a retargeting Meta + goteo mensual</li></ul></div>
+    </div>
+
+    <div class="note" style="margin-top:14px">
+      <b>Ataque al show rate &lt;40% (el mayor ROI del sistema):</b> confirmación activa obligatoria ("responde SÍ"), recordatorios 24h + 3h + 30min, opción de reagendar en 1 toque, anclar valor en cada recordatorio (nº folículos + diseño + presupuesto), y priorizar citas dentro de 48-72h. + Secuencia <b>WF-NOSHOW</b> de reactivación (+15min, +1d, +3d, +7d).
+    </div>
+    <div class="ok-note">
+      <b>Quick win sin esperar los ebooks:</b> reactivar la base fría (160K+ opps) por olas segmentadas — los "casi-clientes" (llegaron a Agenda sin cerrar) y los no-shows históricos van directo a <b>E5 + oferta de valoración</b>. Re-permission limpio ("¿te mando la guía? responde SÍ"), 500-1.000/día/sede para cuidar la WABA, excluyendo a quien ya operó (pipeline Operaciones).
+    </div>
+  </div>
+</section>
+
+<!-- ECONOMIA -->
+<section id="economia" class="secalt">
+  <div class="wrap">
+    <span class="kicker">Economía + KPIs</span>
+    <h2>¿Cuántas cirugías produce y a qué costo?</h2>
+    <p class="sub">Cadena de conversión para un lead <b>frío de ebook</b> (más frío que la respuesta directa). Supuestos explícitos, calibrados al dato propio. Tasa 1 USD = 4.000 COP. La tasa global descarga→cirugía (~0,66%) es normal: el embudo gana por CPL bajo × ticket alto (COP 8M).</p>
+
+    <h3 style="font-size:18px">Caso BASE — USD 5.000 (COP 20M) / mes, 1 sede</h3>
+    <table>
+      <thead><tr><th>Paso</th><th>Tasa supuesta</th><th>Resultado</th><th>Costo/unidad</th></tr></thead>
+      <tbody>
+        <tr><td>Impresiones (CPM USD 6)</td><td>—</td><td>833.333</td><td>—</td></tr>
+        <tr><td>Clicks (CTR 1,2%)</td><td>—</td><td>10.000</td><td>USD 0,50</td></tr>
+        <tr><td>Descargas</td><td>35% del click</td><td>3.500</td><td>CPL USD 1,43 (COP 5.714)</td></tr>
+        <tr><td>Leads cualificados</td><td>20% de descargas</td><td>700</td><td>CPLQ USD 7,14 (COP 28.571)</td></tr>
+        <tr><td>Valoraciones agendadas</td><td>30% de LQ</td><td>210</td><td>USD 23,8</td></tr>
+        <tr><td>Valoraciones asistidas</td><td>50% show</td><td>105</td><td>USD 47,6</td></tr>
+        <tr><td><b>Cirugías</b></td><td>22% cierre</td><td><b>≈23</b></td><td><b>CAC ≈ USD 217 / COP 869K</b></td></tr>
+      </tbody>
+    </table>
+    <p class="lead-x"><b>Resultado base:</b> 23 cirugías · Ingreso COP 184M · <b>ROAS ≈ 9,2x</b>. El modelo es frágil en 2 nodos: <b>% lead cualificado</b> y <b>show rate</b>. Si cae a "descargadores puros" (LQ 6%, show 35%) → ~3 cirugías, ROAS 1,3x = se mata o rediseña.</p>
+
+    <h3 style="font-size:18px; margin-top:20px">3 escenarios de presupuesto → cirugías</h3>
+    <table>
+      <thead><tr><th>Métrica</th><th>Conservador</th><th>Base</th><th>Optimista</th></tr></thead>
+      <tbody>
+        <tr><td>Inversión USD / mes</td><td>3.000</td><td>8.000</td><td>15.000</td></tr>
+        <tr><td>Inversión COP / mes</td><td>12.000.000</td><td>32.000.000</td><td>60.000.000</td></tr>
+        <tr><td>% lead cualificado</td><td>14%</td><td>20%</td><td>28%</td></tr>
+        <tr><td>Show rate</td><td>42%</td><td>50%</td><td>58%</td></tr>
+        <tr><td>Tasa de cierre</td><td>18%</td><td>22%</td><td>27%</td></tr>
+        <tr><td>Descargas</td><td>1.500</td><td>5.600</td><td>12.500</td></tr>
+        <tr><td>Valoraciones agendadas</td><td>53</td><td>336</td><td>1.330</td></tr>
+        <tr><td><b>Cirugías</b></td><td><b>≈4</b></td><td><b>≈37</b></td><td><b>≈208</b></td></tr>
+        <tr><td>Ingreso (COP)</td><td>32M</td><td>296M</td><td>1.664M</td></tr>
+        <tr><td>CAC (USD / COP)</td><td>750 / 3,0M</td><td>216 / 865K</td><td>72 / 288K</td></tr>
+        <tr><td><b>ROAS</b></td><td>2,7x</td><td>9,3x</td><td>27,7x</td></tr>
+      </tbody>
+    </table>
+    <div class="callout">
+      <b>Cómo leerlo:</b> "Conservador" (2,7x) está al borde de la regla de kill (3x) — es el piso de prueba a presupuesto bajo. "Base" (37 cirugías) es el objetivo realista con tracking + show ≥50%. "Optimista" asume rendimientos casi lineales: trátalo como techo teórico, no como plan — escalar degrada CPL y cierre. <b>Regla de despliegue: arrancar en Conservador 1 sede, validar 30-45 días por cohortes, y solo escalar si el costo por lead cualificado y el ROAS se sostienen.</b>
+    </div>
+    <div class="note">
+      <b>Probar el ROI del ciclo largo:</b> un ebook de julio puede ser cirugía en octubre. (1) <b>Cohortes por mes de descarga</b> — no se juzga rentable hasta mes+3/+4. (2) <b>Ventana de negocio 90-120 días</b> en GHL (la atribución Meta de 7d subcuenta). (3) <b>Geo-holdout</b>: apagar el ebook en 1-2 ciudades comparables y comparar cirugías totales — la prueba que vence el "iban a comprar igual". (4) Escalar por <b>leading</b> (CPL cualificado, show), validar por <b>lagging</b> (cohortes, lift).
+    </div>
+  </div>
+</section>
+
+<!-- CUMPLIMIENTO -->
+<section id="cumplimiento">
+  <div class="wrap">
+    <span class="kicker">No negociable</span>
+    <h2>Cumplimiento médico (filtro aplicado)</h2>
+    <p class="sub">Todo el copy pasó por <code>medical-compliance-copy</code>. Veredicto por elemento:</p>
+    <table>
+      <thead><tr><th>Elemento</th><th>Veredicto</th><th>Corrección aplicada</th></tr></thead>
+      <tbody>
+        <tr><td>"La verdad sobre la caída, sin mitos"</td><td><span class="tag ok">aprobado</span></td><td>—</td></tr>
+        <tr><td>"12 preguntas antes de pagar" / Copy E5 / Copy E4 / msg WhatsApp</td><td><span class="tag ok">aprobado</span></td><td>CTA siempre a valoración/consulta</td></tr>
+        <tr><td>"El 90% de lo que se vende no cambia nada"</td><td><span class="tag warn">ajustado</span></td><td>El "90%" sin fuente → reformulado a "la mayoría… no cambia el fondo"</td></tr>
+        <tr><td>"sin cicatriz visible"</td><td><span class="tag warn">ajustado</span></td><td>→ "cicatrices mínimas y poco perceptibles" + "resultados individuales"</td></tr>
+        <tr><td>"el implante sin tratamiento se pierde"</td><td><span class="tag warn">ajustado</span></td><td>→ "sin un plan médico, el cabello nativo alrededor puede seguir cayendo"</td></tr>
+        <tr><td>"hasta 95% de éxito en &lt;45 años"</td><td><span class="tag warn">ajustado</span></td><td>Solo con fuente/estudio citado</td></tr>
+      </tbody>
+    </table>
+    <div class="callout"><b>Prohibido siempre:</b> "garantía vitalicia" (usar "garantía de resultado"), "garantizado/100%", "cura la alopecia", "resultados inmediatos", "sin riesgos", testimonios/fotos sin consentimiento escrito.</div>
+    <div class="ok-note"><b>Disclaimer obligatorio</b> en todo anuncio que muestre resultados o before/after: <em>"Resultados individuales. Consulta médica requerida. Innovart Medical IPS — registro sanitario vigente."</em> Before/after solo bajo la skill <code>before-after-strategy</code> (consentimiento, sin IA engañosa). Marco legal: Decreto 4725/2005, Resolución 2003/2014, Meta Health Policy.</div>
+    <div class="callout"><b>⚠️ Deuda detectada:</b> el archivo fuente <code>avatares-m4-canvas.md</code> aún contiene "garantía vitalicia" (líneas 326, 328, 340, 352). Corregir en el cerebro.</div>
+  </div>
+</section>
+
+<!-- SECUENCIA -->
+<section id="secuencia" class="secalt">
+  <div class="wrap">
+    <span class="kicker">Ejecución</span>
+    <h2>La secuencia — orden exacto de implementación</h2>
+    <p class="sub">No se lanza el ad primero. Se construyen los cimientos (tracking + nurture), se valida pequeño, y se escala solo lo que prueba cirugías. 5 fases.</p>
+    <div class="timeline">
+      <div class="tnode"><span class="phase">Fase 0 · Cimientos (bloqueante) · sem 1-2</span>
+        <h4>Arreglar tracking + crear las Custom Audiences</h4>
+        <p>UTMs al 95%+ en campañas-ebook (URL Parameters + campos GHL). Migrar funnel CAPI intermedio (Contact/Schedule/ViewContent/NoShow) a webhook. Crear CA-1 a CA-7 + lookalike de compradores. Sin esto, no se puede probar el ROI ni proteger la señal.</p></div>
+      <div class="tnode"><span class="phase">Fase 1 · Motor de conversión · sem 2-3</span>
+        <h4>Construir nurture + lead scoring + ataque al show rate</h4>
+        <p>CFs + tags en las 6 sedes. WF-00 Enrutador + WF-SCORE + WF-HANDOFF. WF-E2 y WF-E5 primero (mayor conversión). Activar WF-CITA y WF-NOSHOW <b>ya</b> (independiente de los ebooks — ataca el show rate desde hoy). Quick win: reactivar casi-clientes + no-shows con E5.</p></div>
+      <div class="tnode"><span class="phase">Fase 2 · Primer imán + prueba · sem 3-5</span>
+        <h4>Producir E2 + E5, lanzar TOFU en escenario Conservador, 1-2 sedes</h4>
+        <p>Empezar por E2 (PDF transformado, 35-50 ROI) y E5 (decisor, mayor intención). CTWA en ciudad fuerte + Instant Form cualificado. USD 3.000 / 1 sede. No tocar 7 días / 50 eventos.</p></div>
+      <div class="tnode"><span class="phase">Fase 3 · Validar por cohortes · sem 5-12</span>
+        <h4>Medir descarga→agenda, show rate y costo por lead cualificado</h4>
+        <p>Cohortes por mes de descarga. Geo-holdout si hay 2 ciudades comparables. Escalar 20%/semana SOLO si el CPLQ y el ROAS se sostienen. Matar lo que caiga a "descargadores puros".</p></div>
+      <div class="tnode"><span class="phase">Fase 4 · Escalar + completar · sem 12+</span>
+        <h4>Replicar E1/E3/E4 + sus nurtures, abrir más ciudades, migrar a optimización por evento profundo</h4>
+        <p>Al acumular ≥50 Purchase/semana → cambiar optimización Lead → Schedule/Purchase + Value-Based Bidding. Alimentar lookalikes con la base creciente de descargadores y compradores.</p></div>
+    </div>
+    <div class="callout" style="margin-top:8px">
+      <b>Dependencias bloqueantes (antes de gastar fuerte):</b> (1) UTMs ≥95% — hoy 0%. (2) Funnel CAPI intermedio a webhook — hoy en cron dudoso/custom_code muerto. (3) Show rate del &lt;40% a ≥50%. Purchase ya está validado ✅ (2026-06-14). Tabla de cohortes operando desde el día 1.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <b>Plan de Marketing — Ebooks como Motor TOFU en Meta Ads</b>
+      <small>Innovart Medical IPS · 2026 · companion de "Academia Capilar Innovart — Ecosistema de Contenido"</small>
+      <small>Sedes: Bogotá · Medellín · Barranquilla · Bucaramanga · Ciudad de Panamá</small>
+    </div>
+    <div style="text-align:right">
+      <b>Fuente y calibración</b>
+      <small>Gasto real mayo 2026 (MCP Meta) · NotebookLM Muñoz + GEMinnovart + Libro de Alopecia + 100 Preguntas</small>
+      <small>Avatares oficiales · Stack GHL/CAPI · Restricciones de lenguaje · Documento editable en Claude cowork</small>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
