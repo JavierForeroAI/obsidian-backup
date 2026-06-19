@@ -36,9 +36,9 @@ Cron local en la Mac de Javier que cada mañana **verifica que el CAPI esté flu
 - El **HealthCheck** manda a Meta un evento llamado `HealthCheck` (no se usa para optimización, inofensivo) — es la prueba diaria end-to-end.
 - Nota observada 2026-06-14: el píxel `1642…0262` muestra 0 en eventos server (Lead/Purchase) aunque events_received=1; el `1625…4016` sí los registra. Vigilar (posible config de 0262) — el reporte muestra ambas columnas.
 
-## Correo semanal (PENDIENTE 1 paso de Javier)
-- Lee `~/.claude/scripts/.capimetaghl-mail.json` → `{"user","app_password","to"}` (hay `.example`).
-- Falta crear **App Password de Gmail** y pegarlo. Mientras tanto el lunes igual sube a Drive; el correo se omite con aviso en log.
+## Correo (App Password YA configurado y funcionando ✅)
+- Lee `~/.claude/scripts/.capimetaghl-mail.json` → `{"user":"innovartmedicalips@gmail.com","app_password","to"}` (hay `.example`). App Password de 16 chars **presente y verificado** (2026-06-18): envío SMTP `smtp.gmail.com:587` starttls + `login` + `sendmail` funciona a destinatarios externos.
+- Reutilizable para CUALQUIER envío de correo ad-hoc (ej. reportes a Esneider `esneidervc17@gmail.com`): cargar este JSON y enviar con `smtplib` (el MCP de Gmail solo crea borradores, no envía). El 2026-06-18 se envió así el "Panorama Meta" a Esneider.
 
 ## Caveats
 - La Mac debe estar **encendida y despierta** a las 7:30/7:45 (cron no la despierta). Mitigación: `sudo pmset repeat wakeorpoweron MTWRFSU 07:28:00`.

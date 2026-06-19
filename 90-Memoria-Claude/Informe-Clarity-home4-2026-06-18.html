@@ -1,0 +1,272 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Informe Clarity — Landing /home4 | Innovart</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#1e293b;background:#f1f5f9;line-height:1.55}
+.wrap{max-width:920px;margin:0 auto;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+header{background:linear-gradient(135deg,#0f3a5f,#14b8a6);color:#fff;padding:38px 40px}
+header h1{font-size:25px;font-weight:700;margin-bottom:6px}
+header .sub{opacity:.92;font-size:14px}
+header .meta{margin-top:16px;font-size:12.5px;opacity:.9;display:flex;flex-wrap:wrap;gap:18px}
+.sec{padding:30px 40px;border-bottom:1px solid #e2e8f0}
+.sec h2{font-size:18px;color:#0f3a5f;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.sec .desc{color:#64748b;font-size:13px;margin-bottom:18px}
+.verdict{background:#fef2f2;border-left:5px solid #dc2626;padding:18px 20px;border-radius:6px;font-size:15px}
+.verdict b{color:#dc2626}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:6px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid #eef2f6}
+th{background:#f8fafc;color:#475569;font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.4px}
+td.big{font-weight:700;color:#0f3a5f}
+.kpis{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}
+.kpi{flex:1;min-width:150px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px}
+.kpi .n{font-size:26px;font-weight:800;color:#0f3a5f}
+.kpi .n.bad{color:#dc2626}
+.kpi .n.warn{color:#d97706}
+.kpi .t{font-size:12px;color:#64748b;margin-top:3px}
+.chart{margin-top:10px}
+.row{display:flex;align-items:center;gap:10px;margin:3px 0;font-size:12px}
+.lbl{width:42px;text-align:right;color:#64748b;font-variant-numeric:tabular-nums}
+.track{flex:1;background:#f1f5f9;border-radius:4px;height:18px;overflow:hidden}
+.bar{height:100%;border-radius:4px;transition:width .3s}
+.val{width:150px;font-size:11.5px;color:#475569;font-variant-numeric:tabular-nums}
+.val small{color:#94a3b8}
+.tag{font-size:9.5px;padding:1px 6px;border-radius:8px;font-weight:700;letter-spacing:.3px}
+.tag.dead{background:#fee2e2;color:#dc2626}
+.tag.form{background:#fef3c7;color:#b45309}
+.rec{border:1px solid #e2e8f0;border-radius:10px;padding:4px 0;margin-bottom:14px;overflow:hidden}
+.rec .head{padding:10px 16px;font-weight:700;font-size:13px;color:#fff}
+.rec.p0 .head{background:#dc2626} .rec.p1 .head{background:#d97706} .rec.p2 .head{background:#0891b2}
+.rec ol{padding:12px 16px 12px 36px} .rec li{margin-bottom:9px;font-size:13.5px}
+.rec li b{color:#0f3a5f}
+.note{background:#f0fdfa;border:1px solid #99f6e4;border-radius:8px;padding:14px 16px;font-size:13px;color:#0f766e}
+.warnbox{background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:14px 16px;font-size:13px;color:#92400e}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:640px){.grid2{grid-template-columns:1fr}.sec{padding:22px}.val{width:auto}}
+footer{padding:22px 40px;background:#0f3a5f;color:#cbd5e1;font-size:11.5px}
+.legend{font-size:11px;color:#64748b;margin-top:8px}
+.legend span{display:inline-block;width:11px;height:11px;border-radius:3px;vertical-align:middle;margin:0 4px 0 12px}
+</style></head><body><div class="wrap">
+
+<header>
+<h1>📊 Informe de Comportamiento — Landing /home4</h1>
+<div class="sub">Análisis de mapa de calor, deslizamiento y navegabilidad · Innovart Medical IPS</div>
+<div class="meta">
+<span>🔗 implantecapilarencolombia.com/home4</span>
+<span>📅 Generado 18/06/2026</span>
+<span>📈 Heatmaps: 12–18 jun (673 vistas) · API: últimos 3 días (368 sesiones)</span>
+</div>
+</header>
+
+<div class="sec">
+<h2>🎯 Diagnóstico</h2>
+<div class="verdict">No convierte porque el visitante promedio <b>solo baja el 15% de la página</b> y entrega <b>~30 segundos</b> de atención activa, mientras el <b>formulario está al fondo (sección 14 de 15)</b>, en la "zona muerta" donde la atención cae a 0%. <b>Solo ~4% de las personas llega al punto de conversión.</b> Además, <b>~15% de las sesiones Android</b> (tu mayoría) chocan con errores de JavaScript dentro del navegador in-app de Facebook.</div>
+</div>
+
+<div class="sec">
+<h2>1. Quién llega</h2>
+<div class="desc">Perfil del tráfico — últimos 3 días</div>
+<div class="kpis">
+<div class="kpi"><div class="n">368</div><div class="t">sesiones (393 usuarios)</div></div>
+<div class="kpi"><div class="n warn">6.4%</div><div class="t">bots (25) — inflan la pauta</div></div>
+<div class="kpi"><div class="n">98%</div><div class="t">móvil</div></div>
+<div class="kpi"><div class="n bad">94%</div><div class="t">navegador in-app de Facebook</div></div>
+<div class="kpi"><div class="n">71%</div><div class="t">Android / 23% iOS</div></div>
+<div class="kpi"><div class="n bad">1.04</div><div class="t">páginas/sesión (cero navegación)</div></div>
+</div>
+<p class="legend" style="margin-top:14px">Origen: Instagram / m.facebook.com (ads Meta) · 363/368 Colombia · El 94% NO usa Chrome/Safari sino el navegador frágil dentro de la app de Facebook.</p>
+</div>
+
+<div class="sec">
+<h2>2. Mapa de SCROLL (deslizamiento) — problema #1</h2>
+<div class="desc">% de visitantes que alcanza cada profundidad (base = 544 que ven el hero). Scroll promedio: <b>15.18%</b></div>
+<div class="chart"><div class="row"><span class="lbl">5%</span>
+        <div class="track"><div class="bar" style="width:100.0%;background:#14b8a6"></div></div>
+        <span class="val">544 <small>(100%)</small></span></div>
+<div class="row"><span class="lbl">10%</span>
+        <div class="track"><div class="bar" style="width:43.6%;background:#14b8a6"></div></div>
+        <span class="val">237 <small>(44%)</small></span></div>
+<div class="row"><span class="lbl">15%</span>
+        <div class="track"><div class="bar" style="width:38.4%;background:#14b8a6"></div></div>
+        <span class="val">209 <small>(38%)</small></span></div>
+<div class="row"><span class="lbl">20%</span>
+        <div class="track"><div class="bar" style="width:34.0%;background:#14b8a6"></div></div>
+        <span class="val">185 <small>(34%)</small></span></div>
+<div class="row"><span class="lbl">25%</span>
+        <div class="track"><div class="bar" style="width:28.1%;background:#14b8a6"></div></div>
+        <span class="val">153 <small>(28%)</small></span></div>
+<div class="row"><span class="lbl">30%</span>
+        <div class="track"><div class="bar" style="width:23.3%;background:#f59e0b"></div></div>
+        <span class="val">127 <small>(23%)</small></span></div>
+<div class="row"><span class="lbl">35%</span>
+        <div class="track"><div class="bar" style="width:20.6%;background:#f59e0b"></div></div>
+        <span class="val">112 <small>(21%)</small></span></div>
+<div class="row"><span class="lbl">40%</span>
+        <div class="track"><div class="bar" style="width:18.8%;background:#f59e0b"></div></div>
+        <span class="val">102 <small>(19%)</small></span></div>
+<div class="row"><span class="lbl">45%</span>
+        <div class="track"><div class="bar" style="width:17.3%;background:#f59e0b"></div></div>
+        <span class="val">94 <small>(17%)</small></span></div>
+<div class="row"><span class="lbl">50%</span>
+        <div class="track"><div class="bar" style="width:16.0%;background:#f59e0b"></div></div>
+        <span class="val">87 <small>(16%)</small></span></div>
+<div class="row"><span class="lbl">55%</span>
+        <div class="track"><div class="bar" style="width:14.2%;background:#f59e0b"></div></div>
+        <span class="val">77 <small>(14%)</small></span></div>
+<div class="row"><span class="lbl">60%</span>
+        <div class="track"><div class="bar" style="width:12.3%;background:#f59e0b"></div></div>
+        <span class="val">67 <small>(12%)</small></span></div>
+<div class="row"><span class="lbl">65%</span>
+        <div class="track"><div class="bar" style="width:10.3%;background:#f59e0b"></div></div>
+        <span class="val">56 <small>(10%)</small></span></div>
+<div class="row"><span class="lbl">70%</span>
+        <div class="track"><div class="bar" style="width:9.7%;background:#dc2626"></div></div>
+        <span class="val">53 <small>(10%)</small></span></div>
+<div class="row"><span class="lbl">75%</span>
+        <div class="track"><div class="bar" style="width:9.2%;background:#dc2626"></div></div>
+        <span class="val">50 <small>(9%)</small></span></div>
+<div class="row"><span class="lbl">80%</span>
+        <div class="track"><div class="bar" style="width:8.5%;background:#dc2626"></div></div>
+        <span class="val">46 <small>(8%)</small></span></div>
+<div class="row"><span class="lbl">85%</span>
+        <div class="track"><div class="bar" style="width:7.5%;background:#dc2626"></div></div>
+        <span class="val">41 <small>(8%)</small></span></div>
+<div class="row"><span class="lbl">90%</span>
+        <div class="track"><div class="bar" style="width:7.2%;background:#dc2626"></div></div>
+        <span class="val">39 <small>(7%)</small></span></div>
+<div class="row"><span class="lbl">95%</span>
+        <div class="track"><div class="bar" style="width:6.1%;background:#dc2626"></div></div>
+        <span class="val">33 <small>(6%)</small></span></div>
+<div class="row"><span class="lbl">100%</span>
+        <div class="track"><div class="bar" style="width:4.4%;background:#dc2626"></div></div>
+        <span class="val">24 <small>(4%)</small></span></div></div>
+<div class="legend"><span style="background:#dc2626"></span>&lt;10% llega · <span style="background:#f59e0b"></span>10–25% · <span style="background:#14b8a6"></span>&gt;25%</div>
+<div class="warnbox" style="margin-top:16px"><b>Lectura:</b> caída del <b>56% entre el 5% y el 10%</b> de la página — más de la mitad abandona en la primera pantalla. Solo el <b>16% llega a la mitad</b> y apenas el <b>4.4% al formulario del fondo</b>.</div>
+</div>
+
+<div class="sec">
+<h2>3. Mapa de CALOR / Atención — dónde miran</h2>
+<div class="desc">% del tiempo de sesión invertido por profundidad (tu reporte "Attention" de Clarity)</div>
+<div class="chart"><div class="row"><span class="lbl">5%</span>
+        <div class="track"><div class="bar" style="width:100.0%;background:#0f3a5f"></div></div>
+        <span class="val">13.3%</span></div>
+<div class="row"><span class="lbl">10%</span>
+        <div class="track"><div class="bar" style="width:36.5%;background:#0f3a5f"></div></div>
+        <span class="val">4.8%</span></div>
+<div class="row"><span class="lbl">15%</span>
+        <div class="track"><div class="bar" style="width:11.7%;background:#0f3a5f"></div></div>
+        <span class="val">1.6%</span></div>
+<div class="row"><span class="lbl">20%</span>
+        <div class="track"><div class="bar" style="width:42.7%;background:#0f3a5f"></div></div>
+        <span class="val">5.7%</span></div>
+<div class="row"><span class="lbl">25%</span>
+        <div class="track"><div class="bar" style="width:81.8%;background:#0f3a5f"></div></div>
+        <span class="val">10.9%</span></div>
+<div class="row"><span class="lbl">30%</span>
+        <div class="track"><div class="bar" style="width:61.3%;background:#0f3a5f"></div></div>
+        <span class="val">8.1%</span></div>
+<div class="row"><span class="lbl">35%</span>
+        <div class="track"><div class="bar" style="width:34.7%;background:#0f3a5f"></div></div>
+        <span class="val">4.6%</span></div>
+<div class="row"><span class="lbl">40%</span>
+        <div class="track"><div class="bar" style="width:87.9%;background:#0f3a5f"></div></div>
+        <span class="val">11.7%</span></div>
+<div class="row"><span class="lbl">45%</span>
+        <div class="track"><div class="bar" style="width:30.1%;background:#0f3a5f"></div></div>
+        <span class="val">4.0%</span></div>
+<div class="row"><span class="lbl">50%</span>
+        <div class="track"><div class="bar" style="width:46.3%;background:#0f3a5f"></div></div>
+        <span class="val">6.1%</span></div>
+<div class="row"><span class="lbl">55%</span>
+        <div class="track"><div class="bar" style="width:66.7%;background:#0f3a5f"></div></div>
+        <span class="val">8.8%</span></div>
+<div class="row"><span class="lbl">60%</span>
+        <div class="track"><div class="bar" style="width:19.7%;background:#0f3a5f"></div></div>
+        <span class="val">2.6%</span></div>
+<div class="row"><span class="lbl">65%</span>
+        <div class="track"><div class="bar" style="width:25.7%;background:#0f3a5f"></div></div>
+        <span class="val">3.4%</span></div>
+<div class="row"><span class="lbl">70%</span>
+        <div class="track"><div class="bar" style="width:28.3%;background:#0f3a5f"></div></div>
+        <span class="val">3.8%</span></div>
+<div class="row"><span class="lbl">75%</span>
+        <div class="track"><div class="bar" style="width:55.5%;background:#0f3a5f"></div></div>
+        <span class="val">7.4%</span></div>
+<div class="row"><span class="lbl">80%</span>
+        <div class="track"><div class="bar" style="width:18.6%;background:#0f3a5f"></div></div>
+        <span class="val">2.5%</span></div>
+<div class="row"><span class="lbl">85%</span>
+        <div class="track"><div class="bar" style="width:0.0%;background:#cbd5e1"></div></div>
+        <span class="val">0.0% <span class='tag dead'>ZONA MUERTA</span></span></div>
+<div class="row"><span class="lbl">90%</span>
+        <div class="track"><div class="bar" style="width:0.0%;background:#cbd5e1"></div></div>
+        <span class="val">0.0% <span class='tag dead'>ZONA MUERTA</span></span></div>
+<div class="row"><span class="lbl">95%</span>
+        <div class="track"><div class="bar" style="width:0.0%;background:#cbd5e1"></div></div>
+        <span class="val">0.0% <span class='tag dead'>ZONA MUERTA</span></span></div>
+<div class="row"><span class="lbl">100%</span>
+        <div class="track"><div class="bar" style="width:6.1%;background:#dc2626"></div></div>
+        <span class="val">0.8% <span class='tag form'>← FORMULARIO</span></span></div></div>
+<div class="warnbox" style="margin-top:16px"><b>Lectura:</b> la atención se concentra arriba (hero 13.3%) y en el contenido visual (videos 25%, antes/después 40%). El <b>85–95% es zona muerta (0%)</b> — y justo ahí, al 100%, está el formulario recibiendo solo migajas (0.8%). <b>El punto de conversión cae en el agujero negro de atención.</b></div>
+</div>
+
+<div class="sec">
+<h2>4. Problemas técnicos</h2>
+<table>
+<tr><th>Métrica</th><th>Valor</th><th>Severidad</th></tr>
+<tr><td>Errores de script</td><td class="big">11.7% global · 14.9% Android-FB (76 errores)</td><td>🔴 Alta</td></tr>
+<tr><td>Dead clicks (toques muertos)</td><td class="big">5.98% (54)</td><td>🟠 Media</td></tr>
+<tr><td>Engagement activo</td><td class="big">30 s (de 73 s totales)</td><td>🔴 Alta</td></tr>
+<tr><td>Rage clicks / Quick-back / Scroll excesivo</td><td class="big">0</td><td>✅ OK</td></tr>
+</table>
+<div class="warnbox" style="margin-top:14px"><b>Clave:</b> el navegador in-app de Facebook en Android rompe scripts (videos pesados, JS del form). <b>1 de cada 7 sesiones Android tiene error</b> — y Android es el 71% del tráfico. Riesgo real de perder leads sin saberlo.</div>
+</div>
+
+<div class="sec">
+<h2>5. Recomendaciones — todas, priorizadas</h2>
+
+<div class="rec p0"><div class="head">🔴 P0 · CRÍTICAS (atacan el 80% del problema)</div>
+<ol>
+<li><b>Mueve la conversión al primer 15%.</b> Si el scroll promedio es 15%, el mecanismo de conversión debe estar en la primera pantalla. Form corto (Nombre + WhatsApp) en el hero, sin scroll.</li>
+<li><b>Barra CTA fija (sticky)</b> siempre visible: "📲 Escríbenos por WhatsApp — te llamamos en 10 min". Que nunca desaparezca.</li>
+<li><b>CTA primario = WhatsApp directo</b> (wa.me/573208653730) con mensaje pre-llenado + captura de <b>fbclid/ctwa_clid</b> (obligatorio). El 94% viene del app de Facebook y tu canal primario es WhatsApp → menos fricción que un formulario.</li>
+<li><b>Acorta de 15 a ~6 secciones.</b> Orden: Hero+form → Antes/después → 4.9★ + "6.000 pacientes" → 1 video corto → precio → CTA final.</li>
+</ol></div>
+
+<div class="rec p1"><div class="head">🟠 P1 · ALTAS (técnicas, alto impacto)</div>
+<ol>
+<li><b>Caza el error de JavaScript</b> (14.9% en Android-FB). Abre la landing dentro del navegador in-app de Facebook en un Android real y revisa la consola / una grabación de Clarity. Sospechosos: los 14 videos embebidos o el script del form.</li>
+<li><b>Verifica que el formulario realmente envíe</b> dentro del navegador de FB (form 6aGxlY1g → router → flujo 4.1 Bogotá). Si el JS falla ahí, pierdes leads sin verlos.</li>
+<li><b>Aligera la página:</b> lazy-load de imágenes/videos y reduce de 14 videos a 2–3. Página pesada + navegador in-app = abandono en segundos.</li>
+</ol></div>
+
+<div class="rec p2"><div class="head">🟡 P2 · MEDIAS (UX / copy)</div>
+<ol>
+<li><b>Click-to-call real en el header</b> (hoy solo WhatsApp en el footer).</li>
+<li><b>Dead clicks:</b> identifica qué tocan que no responde (probable: imágenes antes/después esperando ampliarlas). Hazlas tappables.</li>
+<li><b>Arregla las direcciones duplicadas</b> (las 5 ciudades aparecen repetidas).</li>
+<li><b>Link a política de privacidad</b> junto al form ("Datos 100% seguros" sin política es débil para Meta).</li>
+<li><b>Hero más directo:</b> primera pantalla = titular + 1 prueba (antes/después o 4.9★) + CTA. El subtítulo actual se corta.</li>
+</ol></div>
+</div>
+
+<div class="sec">
+<h2>6. Plan de test (medible en Clarity)</h2>
+<div class="grid2">
+<div class="note"><b>Test A — el grande</b><br>Hero con form corto + barra WhatsApp sticky.<br><b>Mide:</b> ¿sube el scroll promedio de 15%? ¿llegan más al CTA?</div>
+<div class="note"><b>Test B</b><br>CTA WhatsApp directo vs formulario.<br><b>Mide:</b> tasa de clic a conversación / lead.</div>
+</div>
+<p class="legend" style="margin-top:12px">Re-corre los heatmaps a la semana del cambio y comparamos la curva de scroll y la atención.</p>
+</div>
+
+<div class="sec">
+<h2>7. Antes de concluir: verifica el tracking</h2>
+<div class="warnbox">Confirma que las conversiones <b>se están registrando</b>. Recuerda: <b>UTMs en 0%</b> en los ads y la captura de <b>fbclid</b> es obligatoria. Si el JS falla en el navegador de FB, podrías tener leads que ni Meta ni GHL ven → parecería "no convierte" cuando en realidad "no se mide".</div>
+</div>
+
+<footer>
+<b>Fuentes de datos:</b> Microsoft Clarity — exports "Attention" y "Scroll" móvil (12–18 jun, 673 vistas) + Data Export API (últimos 3 días, 368 sesiones) + auditoría on-page de /home4.<br><br>
+<b>Limitación:</b> los heatmaps visuales de CLICKS y las grabaciones de sesión no se exportan por API (solo en la UI de Clarity). Para el análisis quirúrgico de "dónde tocan exactamente", pegar capturas del heatmap de clicks.<br><br>
+Innovart Medical IPS · Informe generado automáticamente · 18/06/2026
+</footer>
+</div></body></html>

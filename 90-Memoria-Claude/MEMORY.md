@@ -5,6 +5,7 @@
 
 ## Herramientas de IA
 - [Gemini CLI — Guía de uso](gemini-cli-guia.md) — v0.43.0 instalado, comandos headless/interactivos, modelos disponibles (2.5-pro, 2.5-flash, 3-pro), casos de uso para Innovart
+- [Microsoft Clarity — MCP oficial + token](clarity-mcp-microsoft.md) — 2026-06-18. `@microsoft/clarity-mcp-server` (first-party MS, 0 vulns) para heatmaps/navegabilidad de landings. Token Data Export guardado (⚠️ REGENERAR, expuesto en chat) y **probado HTTP 200**. Límite duro 10 llamadas/día → pull 1 vez y cachear para análisis multi-agente.
 
 ## Pauta
 - [Stack de pauta y CRM](stack-pauta.md) — Meta Ads → WhatsApp como canal primario, GHL 6 subcuentas, AI bot activo
@@ -15,8 +16,13 @@
 
 ## Tracking y Atribución
 - [Auditoría UTM — Junio 2026](reporte-utm-junio-2026.md) — 176 ads activos, 0% con UTMs. GHL Medellín listo (campos confirmados). Plantilla estándar + plan 3 pasos. Reporte enviado a Esneider 2026-06-12.
+- [⭐ Método carga UTMs por API + app meta-dajf en Live](metodo-carga-utms-api-meta.md) — 2026-06-18. App "CLAUDE CODE DA-JF" (`1698932398019234`) pasada a **modo Live** → ya se pueden crear/recrear creativos por API. Método verificado: recrear creativo (quitar `standard_enhancements` y `thumbnail_url`/`image_url`) + `url_tags` + reasignar al mismo ad_id; conserva `asset_feed_spec`, reinicia aprendizaje. 1ª carga real: 5 ads web de "Trafico a web RM (Fase 2)" (LANDING DIEGO). Click-to-message NO lleva UTM (ctwa_clid). Script `/tmp/apply_utms.py`.
+
+## CRO / Landing
+- [Informe Clarity — Landing /home4 (móvil)](Informe-Clarity-home4-2026-06-18.html) — 2026-06-18. Diagnóstico de calor+scroll+navegabilidad. **No convierte porque scroll promedio 15% + atención 30s y el form está al fondo (zona muerta 85-95%); solo ~4% lo alcanza.** 94% tráfico es navegador in-app FB, 14.9% errores JS en Android. Recs P0/P1/P2 + plan A/B. HTML+PDF en cerebro y Downloads. Datos: exports Attention/Scroll + Clarity API.
 
 ## CRM y leads
+- [⭐ Medición leads del Blog por WhatsApp (GHL)](medicion-leads-blog-whatsapp.md) — 2026-06-18. Workflow `Leads del Blog (WhatsApp)` (ID `ddc39bd2…`) PUBLICADO en cuenta principal: tag `lead del blog` + 13 ramas por `(Ref: ...)`; entra solo a `0.1 SMS GPT` (oportunidad+IA, modo AUTO, no se tocó). 14 tags creados.
 - [Volumen CRM y funnel](crm-funnel.md) — 160K+ oportunidades, tracking de won roto, 15-25 leads/día en Bogotá
 - [Plan Agencia Internacional + conteos en vivo](plan-agencia-internacional.md) — 163,412 opps por CRM (2026-06-13), snapshot Meta mayo 2026, plan estratégico ~$4M, entregable en Drive/Gmail
 - [Diagnóstico IA Prospección 2026-06-12](../20-Pauta/diagnostico-ai-prospeccion-2026-06-12.md) — Auditoría completa: 7 workflows GHL, ~400 convs, 5 sedes. Show rate <40%. 3 fallos críticos + 10 mejoras + 4 nuevos flows. [Drive](https://docs.google.com/document/d/16HRE1ipMJrafGPUovInV14f1qATd_1P_mZLVyyK-xkA)
@@ -54,6 +60,8 @@
 - [Dossier descubrimiento 2026-05-18](../10-Clientes/Innovart/_dossier-2026-05-18.md) — Investigación completa inicial
 
 ## Integraciones técnicas
+- [🧩 Referencia — Cuentas GHL Innovart (IDs)](referencia-ghl-cuentas-innovart.md) — Las 6 sub-cuentas + IDs. ⚠️ La activa puede arrancar en The Voice Digital (ajena): verificar `get_current_location` y `switch_location` antes de escribir.
+- [🛠️ Referencia — Construir workflows GHL por MCP](referencia-ghl-workflows-mcp.md) — Recetas verificadas: create→update_actions→validate→publish; if/else por `message.body` (contains) anidado; tags en minúsculas; no se puede simular entrante por API (probar con WhatsApp real). Incluye nota de la skill **`ghl-carpetas-workflows`** (carpetas de workflows — pendiente cablear endpoint).
 - [⭐ CAPIMETAGHL — Diagnóstico Maestro + Base de Auditoría Diaria](auditoria-capimetaghl-base.md) — 2026-06-14. Estado verificado de las 6 cuentas: 3 mecanismos de envío (webhook ✅ / cron ⚠️ apagado / custom_code ❌ muerto), matriz de eventos, mapa de pipelines/etapas (IDs) para detectar drift, estándar canónico y **checklist del agente de auditoría diaria (C1–C11)** con herramientas, valores esperados, severidad y remediación. Purchase de venta migrado a webhook en las 4 sedes que venden + verificado `events_received:1` en los 2 píxeles.
 - [GHL ↔ Meta CAPI Worker](integracion-ghl-meta-capi.md) — Worker Cloudflare activo en innovart-meta-capi, corre cada 5min, envía Lead/Schedule/Purchase con PII hasheada + ctwa_clid + fbc
 - [Worker CAPI vía Webhook (innovart-capi-webhook-no-tocar)](capi-webhook-worker.md) — 2026-06-13. Worker dedicado: GHL acción Webhook → hashea PII → Meta CAPI (2 píxeles). Reemplaza el custom_code de GHL (que NO puede hacer fetch). Lo usan las 3 landings de financiación. URL + key + cómo conectarlo.
@@ -63,6 +71,7 @@
 - [Flujo Financiación — Asignación + Respuesta + CAPI Purchase (3 sedes)](flujo-financiacion-bta-capi.md) — 2026-06-13. Workflows publicados y activos en BTA (`20eb73fb`), MDE (`c3572764`) y BAQ (`2f258215`). Trigger **SMS `type 2`** (WhatsApp entra como SMS por applevel) + body "Meddipay" → apaga IA (`ai_parar`+`update_conversation_ai_status`), oportunidad Paciente MeddiPay, asigna Sofia si libre (`only_unassigned_contact`), responde por SMS, **CAPI Purchase $8M COP vía acción Webhook → worker** [[capi-webhook-worker]] (ya NO custom_code). WABA por sede: BTA `609046938958518` / MDE `611850088685930` / BAQ `625405087319822`. Píxeles `1642103999710262`/`1625645205284016`. Landing solo existe en BTA (`/financiacionbta` CTA `573208167253`); copiar a MDE/BAQ con nativo GHL.
 
 ## Feedback (cómo trabajar conmigo)
+- [🇪🇸 Idioma: español siempre para GHL](feedback-idioma-espanol-ghl.md) — Todo lo de GoHighLevel (workflows, tags, planes, reportes) se comunica SIEMPRE en español.
 - [⚠️ Cuentas Meta ≠ sedes](feedback-cuentas-meta-no-son-sedes.md) — Los nombres de cuenta (MEDELLIN, BGTA, QUILLA/Barranquilla, PANAMA, LANDING/INTERACCION DIEGO) son solo nombres de cuenta publicitaria, NO la sede física. En cualquier cuenta se corren campañas de varias sedes (ej. conjuntos BOGOTÁ/MEDELLIN/BARRANQUILLA/PANAMA dentro de la cuenta MEDELLIN). Nunca asumir cuenta=sede.
 - [⚠️ Informes por correo — HTML email-safe obligatorio](feedback-email-formato.md) — Siempre tables + inline styles. Nunca CSS Grid/Flex ni Google Fonts. Gmail no los soporta.
 - [GHL análisis por fechas — hacerlo manualmente](feedback-ghl-fechas-manual.md) — Endpoint de citas da 404; leer timestamps de conversaciones/contactos y calcular métricas a mano
@@ -71,6 +80,7 @@
 - [⚠️ Carpeta Drive: Auditoría GHL](feedback-carpeta-auditoria-ghl.md) — TODO lo de auditoría/mejoras GHL (workflows, bots, agentes, copy, diagnósticos) va a Drive ID `1LCzzvFFQgz-SHm_5raj2DTBOoJYsli3A` (CLAUDE > AUDITORIA COMUNICACION GHL Y MEJORAS). Sin excepción.
 - [⚠️ MCP ghl: `update_page_content` no persiste](feedback-mcp-ghl-update-page.md) — Editar contenido de páginas/funnels en el editor de GHL, no por MCP (devuelve OK pero no guarda). El MCP sí lee páginas y sí guarda workflows.
 - [⚠️ WhatsApp de Innovart entra como SMS (applevel)](feedback-whatsapp-applevel-sms.md) — El WhatsApp se maneja por applevel ("WhatsApp Plugins") y los entrantes llegan a GHL como SMS (`type 20`/TYPE_CUSTOM_SMS). En triggers customer_reply usar **Reply channel = SMS (`message.type==2`)**, NUNCA WhatsApp (19). Aplica a TODO desarrollo pasado/futuro.
+- [⚠️ Informe + correo → versión extensa en Drive + link en el correo](feedback-informe-correo-link-drive.md) — SIEMPRE que un informe se envíe por correo: subir el informe completo a Drive y poner en el correo solo el resumen + link al Drive para profundizar. El correo nunca lleva todo el detalle embebido. Sin excepción.
 
 ## Equipo
 - [Equipo y contactos](equipo-contactos.md) — Esneider (Media Buyer): esneidervc17@gmail.com — usar directamente sin preguntar

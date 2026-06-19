@@ -76,7 +76,7 @@ metadata:
 
 | Píxel | Rol | Qué recibe hoy |
 |---|---|---|
-| `1642103999710262` | "Pixel CRM" | Casi solo **PageView web** (~133K/28d). CAPI server por webhook/cron. |
+| `1642103999710262` | "Pixel CRM" | Casi solo **PageView web** (~133K/28d). CAPI server por webhook/cron. **La web Shopify `www.innovartmedical.com` dispara a ESTE píxel (el "262")** — confirmado por Javier 2026-06-17. |
 | `1625645205284016` | Pixel web/funnel | Eventos de navegador del funnel (Lead, ViewContent, InitiateCheckout, Schedule, clickfunnel…) + CAPI por webhook. |
 
 > El **webhook** manda a los 2; el **cron** manda solo a `1642`. **Estándar: ambos píxeles.** Token CAPI = custom value `{{ custom_values.meta_capi_token }}` (`BhBhR3Hj03iYSAMHcS8L`).
