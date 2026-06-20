@@ -3,13 +3,14 @@ name: google-ads-guia
 description: Guía de trabajo con Google Ads desde Claude — agentes disponibles, skills, flujo de trabajo y cuentas de Innovart
 metadata:
   type: reference
-  updated: 2026-05-22
+  updated: 2026-06-19
 ---
 
 # Guía de Google Ads desde Claude
 
-> A diferencia de Meta Ads, Google Ads **no tiene un MCP directo** (como meta-dajf). 
-> El trabajo se realiza mediante **agentes especializados** y **skills** disponibles en Claude Code.
+> ✅ **ACTUALIZACIÓN 2026-06-19:** Google Ads YA tiene MCP conectado (oficial de Google, modo **solo lectura**).
+> Ver detalles de la conexión en [[google-ads-mcp-conexion]].
+> Además siguen disponibles los **agentes especializados** y **skills** para análisis profundo.
 
 ---
 

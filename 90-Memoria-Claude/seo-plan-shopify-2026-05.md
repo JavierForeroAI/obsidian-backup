@@ -13,6 +13,11 @@ metadata:
 **Fecha auditoría:** Mayo 2026
 **Problema central:** Solo 5-6 páginas indexadas en Google. Competidores tienen 50-200+.
 
+> ⚠️ **DESACTUALIZADO (compliance):** varias meta descriptions y títulos de abajo usan
+> **"garantía vitalicia"**, hoy **término prohibido** ([[restricciones-lenguaje]], [[angulos-creativos]]).
+> Reemplazar por "garantía de resultado" antes de ejecutar. Versión más ambiciosa y al día:
+> [[seo-puro-seo-cowork]] (proyecto "PURO SEO" de COWORK).
+
 ## Contexto del problema
 - Cero páginas de ciudad indexadas (Bogotá, Medellín, Barranquilla, Bucaramanga)
 - Títulos SEO genéricos en páginas existentes ("/pages/barberia" → título solo "Barberia")

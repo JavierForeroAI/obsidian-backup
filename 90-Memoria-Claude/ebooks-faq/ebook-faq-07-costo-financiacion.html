@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¿Cuánto cuesta y cómo pagarlo? Precio real y financiación hasta 90%</title>
+<style>
+:root{--ink:#16202A;--muted:#5C6B79;--bg:#EEF3F8;--card:#FFFFFF;--brand:#0E5A8A;--brand-deep:#0A3F63;--teal:#14A0A6;--accent:#E2A34B;--line:#E1E9F0;--soft:#F6F9FC;--ok:#2E8B6F;--warn:#C8553D;--shadow:0 1px 3px rgba(16,40,64,.06),0 8px 28px rgba(16,40,64,.07);}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif;line-height:1.22;letter-spacing:-.01em}
+.wrap{max-width:780px;margin:0 auto;padding:0 22px}
+.cover{background:linear-gradient(135deg,var(--brand-deep),var(--brand) 60%,#127a9e);color:#fff;padding:70px 0 64px;position:relative;overflow:hidden}
+.cover::after{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;background:radial-gradient(circle,rgba(255,255,255,.13),transparent 65%);border-radius:50%}
+.cover .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:700;color:#9fe3e8}
+.cover h1{font-size:40px;margin:14px 0 12px;max-width:680px}
+.cover p{font-size:19px;color:#dbeefb;max-width:600px;margin:0}
+.cover .badge{margin-top:22px;display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#eaf6ff;padding:7px 14px;border-radius:999px;font-size:13px;font-weight:600}
+section{padding:30px 0}
+h2{font-size:27px;margin:26px 0 8px;color:var(--brand-deep)}
+h3{font-size:20px;margin:22px 0 6px}
+p{font-size:16.5px;margin:0 0 14px}
+.lead{font-size:18px;color:var(--muted)}
+.kicker{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:22px;margin:16px 0}
+.faq{border-left:4px solid var(--brand);background:var(--soft);border-radius:0 12px 12px 0;padding:14px 18px;margin:14px 0}
+.faq b{color:var(--brand-deep)}
+.note{border-left:4px solid var(--teal);background:#ECF7F8;border-radius:0 12px 12px 0;padding:14px 18px;margin:14px 0}
+.myth{border-left:4px solid var(--warn);background:#FCF2EE;border-radius:0 12px 12px 0;padding:14px 18px;margin:14px 0}
+.myth b{color:var(--warn)}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);margin:14px 0}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);font-size:14.5px}
+th{background:var(--brand-deep);color:#fff;font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+tr:last-child td{border-bottom:none}
+ul,ol{font-size:16.5px;padding-left:20px}li{margin-bottom:7px}
+.cta{background:linear-gradient(160deg,var(--brand-deep),var(--brand));color:#fff;border-radius:16px;padding:28px;text-align:center;margin:28px 0}
+.cta h3{color:#fff;font-size:23px;margin:0 0 8px}
+.cta p{color:#dbeefb;margin:0 0 16px}
+.btn{display:inline-block;background:var(--accent);color:#16202A;font-weight:800;padding:13px 26px;border-radius:999px;text-decoration:none;font-size:16px}
+.steps{counter-reset:s;padding:0;list-style:none}
+.steps li{position:relative;padding:6px 0 6px 44px;margin-bottom:8px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:4px;width:30px;height:30px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif}
+footer{background:var(--brand-deep);color:#cfe4f2;padding:30px 0;margin-top:24px;font-size:13px}
+footer b{color:#fff}
+.disc{font-size:12px;color:#9bb6cc;margin-top:10px;font-style:italic}
+@media(max-width:640px){.cover h1{font-size:30px}h2{font-size:22px}}
+/* --- CTAs comerciales --- */
+.fab{position:fixed;bottom:18px;right:18px;z-index:999;background:#25D366;color:#fff;font-weight:800;padding:13px 20px;border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28);font-size:15px}
+.fab:hover{filter:brightness(1.06)}
+.topbar{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:18px 0;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.topbar b{font-size:15px;color:var(--brand-deep)}
+.topbar .acts{display:flex;gap:8px;flex-wrap:wrap}
+.btn2{display:inline-block;font-weight:800;padding:11px 20px;border-radius:999px;text-decoration:none;font-size:14.5px}
+.btn-wa{background:#25D366;color:#fff}
+.btn-web{background:var(--brand);color:#fff}
+.ctacard{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;background:linear-gradient(160deg,#0E5A8A,#127a9e);color:#fff;border-radius:14px;padding:18px 20px;margin:24px 0}
+.ctacard .tx b{display:block;font-size:16px;color:#fff;font-family:Georgia,serif}
+.ctacard .tx span{font-size:13.5px;color:#dbeefb}
+.ctacard .btn2{white-space:nowrap;background:var(--accent);color:#16202A}
+.cta .row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:4px}
+.cta .btn-web{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.4);color:#fff}
+.footweb a{color:#9fe3e8;font-weight:700}
+@media(max-width:560px){.fab{padding:11px 16px;font-size:14px}.ctacard{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<a class="fab" href="https://wa.me/573124565014?text=Hola%2C%20vengo%20de%20una%20gu%C3%ADa%20de%20Innovart%20y%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratis." target="_blank" rel="noopener">💬 Valoración gratis</a>
+
+<header class="cover">
+  <div class="wrap">
+    <span class="eyebrow">Guía Innovart</span>
+    <h1>¿Cuánto cuesta y cómo pagarlo? Precio real y financiación hasta 90%</h1>
+    <p>El número claro, sin letra pequeña: qué incluye de verdad, por qué lo barato suele salir caro y cómo convertir la cifra en una cuota que sí te cabe.</p>
+    <span class="badge">Lectura 6 min · Sin tecnicismos</span>
+  </div>
+</header>
+
+<div class="wrap"><div class="topbar"><b>¿Prefieres resolver tu caso con un especialista? Tu primera valoración es gratis.</b><div class="acts"><a class="btn2 btn-wa" href="https://wa.me/573124565014?text=Hola%2C%20vengo%20de%20una%20gu%C3%ADa%20de%20Innovart%20y%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratis." target="_blank" rel="noopener">💬 Agendar por WhatsApp</a><a class="btn2 btn-web" href="https://www.innovartmedical.com/?utm_source=ebook&utm_medium=guia&utm_campaign=reimpacto&utm_content=e07" target="_blank" rel="noopener">🌐 Ir a la web</a></div></div></div>
+
+<div class="wrap">
+
+  <section>
+    <span class="kicker">Lo primero que todos preguntan</span>
+    <h2>"Me interesa… pero, ¿cuánto vale?"</h2>
+    <p class="lead">Es la pregunta más honesta y la más normal del mundo. Casi nadie la dice de una porque suena incómodo preguntar por plata. Así que la dejamos para el final, googleamos a medias y nos quedamos con una cifra suelta sin saber qué incluye.</p>
+    <p>Si llegaste hasta aquí, ya pasaste la primera etapa: dejaste de preguntarte <em>si</em> hacerte el implante y empezaste a preguntarte <em>cómo</em>. Esta guía es para eso. No vamos a venderte nada. Vamos a ponerte el número sobre la mesa, explicarte exactamente qué cubre y mostrarte cómo otras personas en tu misma situación lo organizaron sin descapitalizarse.</p>
+    <p>Porque el problema casi nunca es el precio en sí. El problema es la <strong>incertidumbre</strong>: no saber si te van a cobrar extras, si lo barato es una trampa, si conviene esperar a juntar todo o si financiar es "tirar la plata". Vamos una por una.</p>
+  </section>
+
+  <section>
+    <span class="kicker">El número real</span>
+    <h2>¿Cuánto cuesta un implante capilar?</h2>
+
+    <div class="faq">
+      <p><b>¿Cuánto cuesta un implante capilar en Colombia?</b></p>
+      <p>En el mercado colombiano, un implante capilar serio va, en términos generales, de <strong>$8.500.000 a $15.000.000 COP</strong> dependiendo de la clínica, la técnica y el número de folículos. En Innovart el precio referencia es de alrededor de <strong>$8.500.000 COP</strong>, con una <strong>tarifa preferencial desde $7.000.000 COP</strong> para casos óptimos de 2.000 a 5.000 folículos, que son la mayoría. Ese rango cubre el procedimiento completo, no "una parte".</p>
+    </div>
+
+    <div class="faq">
+      <p><b>¿Cuánto cuesta en Panamá comparado con Estados Unidos o Europa?</b></p>
+      <p>En nuestra sede de <strong>Ciudad de Panamá</strong> el procedimiento ronda los <strong>$3.000 USD</strong>. Frente a clínicas de Estados Unidos o Europa, donde el mismo procedimiento puede costar varias veces más, hablamos de un <strong>ahorro del 50% al 70%</strong> aprovechando el turismo médico, con los mismos estándares clínicos. Es la opción que eligen muchos pacientes internacionales: misma calidad, una fracción del costo.</p>
+    </div>
+
+    <div class="note">
+      <p><b>Nota importante sobre las cifras:</b> el precio de Colombia se expresa en pesos colombianos (COP) y el de Panamá en dólares (USD). Son dos sedes, dos monedas y dos mercados distintos. No los sumes ni los conviertas como si fueran un solo total: son alternativas, eliges una según dónde quieras operarte.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="kicker">Qué estás pagando de verdad</span>
+    <h2>¿El precio es "todo incluido" o me van a cobrar extras?</h2>
+
+    <div class="faq">
+      <p><b>¿El precio se cobra por folículo o es todo incluido?</b></p>
+      <p>En Innovart el precio es <strong>todo incluido</strong>, no folículo por folículo. Algunas clínicas publican un precio bajo por unidad folicular y, cuando ya estás en la silla, la cuenta se infla porque "necesitas más folículos de los que pensabas". Ese modelo convierte una cifra atractiva en una sorpresa cara. Nosotros te damos un valor cerrado para tu caso después de la valoración, y eso es lo que pagas.</p>
+    </div>
+
+    <div class="faq">
+      <p><b>¿Qué incluye exactamente el precio? ¿Medicamentos y controles aparte?</b></p>
+      <p>El valor cubre cuatro cosas que muchas opciones "económicas" dejan por fuera:</p>
+      <ul>
+        <li><strong>El procedimiento completo</strong> con técnica FUE (o DHI según tu caso), 6 a 8 horas bajo anestesia local.</li>
+        <li><strong>Los medicamentos</strong> del proceso, no como un gasto extra que aparece después.</li>
+        <li><strong>Los controles y el seguimiento:</strong> 24 controles y terapias médicas durante el primer año (incluye PRP y mesoterapia capilar), totalmente acompañado por el equipo médico.</li>
+        <li><strong>Garantía de resultado:</strong> si el resultado no cumple lo acordado, se hacen los ajustes correspondientes.</li>
+      </ul>
+      <p>Ese acompañamiento es justo lo que marca la diferencia entre un implante que se ve natural a los 12-18 meses y uno que quedó a la suerte.</p>
+    </div>
+
+    <div class="card">
+      <h3>Qué incluye el precio: comparación honesta</h3>
+      <table>
+        <tr><th>Concepto</th><th>Innovart (todo incluido)</th><th>Opción "low-cost" típica</th></tr>
+        <tr><td>Procedimiento FUE/DHI</td><td>Incluido</td><td>Incluido</td></tr>
+        <tr><td>Medicamentos del proceso</td><td>Incluidos</td><td>Suelen cobrarse aparte</td></tr>
+        <tr><td>Controles de seguimiento</td><td>24 controles / 1er año</td><td>Pocos o ninguno</td></tr>
+        <tr><td>Terapias (PRP + mesoterapia)</td><td>Incluidas</td><td>Adicionales</td></tr>
+        <tr><td>Garantía de resultado</td><td>Sí</td><td>Variable / inexistente</td></tr>
+        <tr><td>Diseño y dirección médica</td><td>Equipo 10+ años</td><td>No siempre médico</td></tr>
+      </table>
+      <p style="margin-top:6px;font-size:14.5px;color:var(--muted)">Comparar solo el precio "de entrada" es engañoso. El valor real está en el resultado, el diseño de la línea capilar y el seguimiento que sostiene ese resultado en el tiempo.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="kicker">La pregunta que de verdad importa</span>
+    <h2>¿Es un gasto… o una inversión?</h2>
+    <p>Vale la pena detenerse aquí, porque cambia toda la conversación. La alopecia androgenética es <strong>progresiva</strong>: no se queda quieta esperando a que reúnas el dinero. Cada año que pasa, sigues perdiendo cabello nativo en las zonas afectadas.</p>
+    <p>¿Qué significa eso en términos prácticos? Que el área a cubrir tiende a crecer y, potencialmente, vas a necesitar más folículos para cubrir la misma cabeza más adelante. Lo que hoy se resuelve con un caso óptimo de 2.000–5.000 folículos, dentro de unos años puede requerir más trabajo. Esperar no congela el problema: lo agranda.</p>
+    <p>Por eso el reencuadre es honesto, no un truco de venta: <strong>no es un gasto estético, es una intervención médica para detener algo que la alopecia te está quitando cada mes.</strong> Recuperar tu zona donante es invertir en algo finito. No tienes que elegir entre tu pelo y tu presupuesto, pero sí conviene entender que el reloj corre.</p>
+
+    <div class="note">
+      <p><b>Beneficio tributario que pocos conocen:</b> en Colombia, las reconstrucciones por <strong>alopecia severa</strong> pueden estar <strong>exentas del IVA (19%)</strong> según la ley, cuando el caso aplica. En la valoración te indican si tu situación califica. Es un ahorro real que vale la pena confirmar antes de decidir.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="kicker">Cómo pagarlo sin descapitalizarte</span>
+    <h2>¿Se puede financiar? ¿A cuántas cuotas?</h2>
+
+    <div class="faq">
+      <p><b>¿Se puede financiar el implante capilar y a cuántas cuotas?</b></p>
+      <p>Sí. Trabajamos con financiación de <strong>hasta el 90% del valor</strong>, con <strong>aprobación en menos de 5 minutos</strong>, <strong>tasas competitivas</strong> y plazos de <strong>hasta 12 meses</strong>. Esto convierte una cifra grande de una sola vez en una cuota mensual manejable, sin tener que vaciar tus ahorros ni esperar meses para empezar.</p>
+    </div>
+
+    <p>El proceso es directo y lo coordinamos contigo el mismo día de la valoración:</p>
+    <ol class="steps">
+      <li>Haces tu <strong>valoración gratuita</strong> (presencial o virtual) y recibes el valor cerrado de tu caso.</li>
+      <li>Si quieres financiar, aplicas y obtienes <strong>respuesta en menos de 5 minutos</strong>.</li>
+      <li>Eliges el <strong>plazo</strong> (hasta 12 meses) y la cuota que se ajusta a tu bolsillo.</li>
+      <li>Agendas tu procedimiento. El reloj de la alopecia deja de correr a tu favor en lugar de en tu contra.</li>
+    </ol>
+
+    <div class="note">
+      <p><b>Por qué financiar suele ser la jugada inteligente:</b> las tasas de esta financiación son competitivas, normalmente más bajas que las de una tarjeta de crédito. Y, sobre todo, te permite <strong>frenar la pérdida ahora</strong> en lugar de seguir perdiendo folículos durante los meses que tardarías en juntar el monto completo.</p>
+    </div>
+  </section>
+
+  <div class="ctacard"><div class="tx"><b>¿Cuánto quedaría tu cuota mensual?</b><span>En la valoración gratis te damos el valor cerrado de tu caso y simulamos tu cuota con financiación hasta del 90%.</span></div><a class="btn2" href="https://wa.me/573124565014?text=Hola%2C%20vengo%20de%20una%20gu%C3%ADa%20de%20Innovart%20y%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratis." target="_blank" rel="noopener">Agenda tu valoración gratis</a></div>
+
+  <section>
+    <span class="kicker">FUE vs DHI · low-cost · timing</span>
+    <h2>Las dudas que quedan dando vueltas</h2>
+
+    <div class="faq">
+      <p><b>¿La técnica DHI cuesta más que la FUE?</b></p>
+      <p>Sí, la <strong>DHI tiene una prima adicional de alrededor del 18%</strong> sobre la FUE. No es un capricho de precio: la DHI usa un instrumento especializado (Choi Pen) que permite controlar ángulo, profundidad y dirección de cada cabello con la incisión y el implante simultáneos, lo que exige más instrumental y más tiempo. Es especialmente útil para líneas frontales, cejas y barba. En la valoración el médico te dice cuál técnica conviene a tu caso; no siempre la más cara es la que necesitas.</p>
+    </div>
+
+    <div class="faq">
+      <p><b>¿Por qué hay clínicas tan baratas? ¿Es buena idea el low-cost?</b></p>
+      <p>Una clínica puede bajar el precio recortando justo lo que no se ve en la primera consulta: medicamentos, controles, diseño hecho por un médico con experiencia y garantía. El riesgo más serio es la <strong>zona donante</strong>, que es <strong>finita</strong>: si un procedimiento mal hecho la agota o la deja con apariencia poco natural, no hay vuelta atrás fácil. El low-cost puede salir carísimo si arruina la donante o te obliga a una corrección. Lo barato no es malo por definición, pero pregunta siempre qué <em>no</em> incluye.</p>
+    </div>
+
+    <div class="faq">
+      <p><b>¿Me conviene operarme ahora o esperar a juntar el dinero?</b></p>
+      <p>Desde lo médico, esperar tiene un costo invisible: cada mes que pasa, la alopecia avanza. Si el dinero es el único freno, la financiación existe justamente para eso: empezar ahora con una cuota cómoda en vez de perder más cabello mientras ahorras. La decisión es tuya, pero conviene tomarla con la información completa, no por miedo a la cifra.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="kicker">Desmontando creencias</span>
+    <h2>Tres mitos que te pueden costar caro</h2>
+
+    <div class="myth">
+      <p><b>Mito: "Lo barato es igual de bueno."</b></p>
+      <p>Realidad: el low-cost suele excluir medicamentos, controles y un diseño hecho por expertos. Y puede malgastar tu zona donante, que no se regenera. Pagar menos hoy por un resultado que toca corregir mañana termina siendo más caro, en plata y en folículos perdidos.</p>
+    </div>
+
+    <div class="myth">
+      <p><b>Mito: "Lo único que importa es el precio por folículo."</b></p>
+      <p>Realidad: comparar solo por número de folículos es engañoso. Lo que define el resultado es el paquete completo: procedimiento + medicación + controles + garantía de resultado + el criterio médico que diseña tu línea capilar. Un buen diseño con menos folículos se ve mejor que muchos folículos mal puestos.</p>
+    </div>
+
+    <div class="myth">
+      <p><b>Mito: "Mejor espero a tener todo el dinero junto."</b></p>
+      <p>Realidad: esperar deja que la alopecia siga avanzando. Financiar te permite frenar la pérdida antes y, muchas veces, necesitar menos trabajo del que necesitarías dentro de un par de años. El tiempo, en este caso, no juega a tu favor.</p>
+    </div>
+  </section>
+
+  <div class="ctacard"><div class="tx"><b>¿Low-cost o todo incluido? Compáralo con tu caso real</b><span>Un especialista revisa tu zona donante y te explica qué cubre cada precio, sin compromiso.</span></div><a class="btn2" href="https://wa.me/573124565014?text=Hola%2C%20vengo%20de%20una%20gu%C3%ADa%20de%20Innovart%20y%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratis." target="_blank" rel="noopener">Agenda tu valoración gratis</a></div>
+
+  <section>
+    <span class="kicker">Por qué confiar el número (y tu pelo) a Innovart</span>
+    <h2>Lo que respalda el precio</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Más de 6.000 pacientes</strong> operados con técnica FUE (y DHI).</li>
+        <li><strong>Equipo médico con más de 10 años</strong> de experiencia, bajo la dirección del <strong>Dr. Fabián Carreño, Director Médico</strong>, con protocolos de referencia internacional.</li>
+        <li><strong>24 controles médicos gratuitos</strong> durante el primer año, incluidos en el precio: el resultado se acompaña, no se abandona.</li>
+        <li><strong>Cinco sedes</strong> en Bogotá, Medellín, Barranquilla, Bucaramanga y Ciudad de Panamá.</li>
+        <li><strong>Valoración gratuita</strong> de 30 a 45 minutos, presencial o virtual, donde recibes el valor cerrado de tu caso, sin compromiso.</li>
+        <li><strong>Innovart Medical IPS</strong> con registro sanitario vigente bajo estándares del Ministerio de Salud de Colombia.</li>
+      </ul>
+    </div>
+    <p>El precio no es una cifra suelta: es el reflejo de un proceso médico completo, acompañado y respaldado. Eso es justo lo que no aparece en las cotizaciones "baratas" de internet.</p>
+  </section>
+
+  <div class="ctacard"><div class="tx"><b>El reloj de la alopecia no espera: pon número a tu caso hoy</b><span>Saber el valor exacto y tu cuota mensual no te cuesta nada y te quita la duda que más pesa.</span></div><a class="btn2" href="https://wa.me/573124565014?text=Hola%2C%20vengo%20de%20una%20gu%C3%ADa%20de%20Innovart%20y%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratis." target="_blank" rel="noopener">Agenda tu valoración gratis</a></div>
+
+  <div class="cta">
+    <h3>Conoce el número exacto de tu caso, sin compromiso</h3>
+    <p>En la valoración gratuita recibes el valor cerrado para tu caso y, si quieres, la simulación de tu cuota mensual con financiación hasta del 90%. Sin presión, sin sorpresas. Solo claridad para que decidas tranquilo.</p>
+    <div class="row"><a class="btn2 btn-wa" href="https://wa.me/573124565014?text=Hola%2C%20vengo%20de%20una%20gu%C3%ADa%20de%20Innovart%20y%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratis." target="_blank" rel="noopener">💬 Agenda tu valoración gratis</a><a class="btn2 btn-web" href="https://www.innovartmedical.com/?utm_source=ebook&utm_medium=guia&utm_campaign=reimpacto&utm_content=e07" target="_blank" rel="noopener">🌐 Conoce Innovart</a></div>
+  </div>
+
+  <section>
+    <p class="lead" style="text-align:center">Tu zona donante es finita y la alopecia no espera. Saber el número exacto hoy no te cuesta nada y te quita la duda que más pesa.</p>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <p><b>Innovart Medical IPS</b> · Clínica de implante capilar · Técnica FUE y DHI</p>
+    <p><b>Sedes:</b> Bogotá · Medellín · Barranquilla · Bucaramanga · Ciudad de Panamá</p>
+    <p><b>WhatsApp:</b> +57 312 456 5014 · <a href="https://wa.me/573124565014" style="color:#9fe3e8" target="_blank" rel="noopener">wa.me/573124565014</a></p>
+    <p class="footweb">Conoce más en <a href="https://www.innovartmedical.com/?utm_source=ebook&utm_medium=guia&utm_campaign=reimpacto&utm_content=e07" target="_blank" rel="noopener">innovartmedical.com</a> · WhatsApp: +57 312 456 5014</p>
+    <p class="disc">Los resultados pueden variar. Consulta médica requerida. Innovart Medical IPS - registro sanitario vigente.</p>
+  </div>
+</footer>
+
+</body>
+</html>

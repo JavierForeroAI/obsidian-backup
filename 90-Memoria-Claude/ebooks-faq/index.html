@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyecto Reimpacto — 8 Ebooks Técnicos + Estrategia GHL · Innovart</title>
+<style>
+  :root{--ink:#16202A;--muted:#5C6B79;--bg:#EEF3F8;--card:#FFFFFF;--brand:#0E5A8A;--brand-deep:#0A3F63;--teal:#14A0A6;--accent:#E2A34B;--line:#E1E9F0;--soft:#F6F9FC;--ok:#2E8B6F;--warn:#C8553D;--shadow:0 1px 3px rgba(16,40,64,.06),0 8px 28px rgba(16,40,64,.07);--radius:16px;}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif;line-height:1.2;letter-spacing:-.01em}
+  a{color:var(--brand);text-decoration:none}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+  .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:700;color:#9fe3e8}
+  header.hero{background:linear-gradient(135deg,var(--brand-deep) 0%,var(--brand) 55%,#127a9e 100%);color:#fff;padding:60px 0 110px;position:relative;overflow:hidden}
+  header.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;background:radial-gradient(circle,rgba(255,255,255,.14),transparent 65%);border-radius:50%}
+  .hero h1{font-size:42px;margin:14px 0 10px;max-width:820px}
+  .hero p.lead{font-size:19px;max-width:720px;color:#dbeefb;margin:0}
+  .hero .meta{margin-top:24px;display:flex;gap:10px;flex-wrap:wrap}
+  .chip{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#eaf6ff;padding:7px 13px;border-radius:999px;font-size:13px;font-weight:600}
+  .deck{margin-top:-80px;position:relative;z-index:2}
+  .grid{display:grid;gap:18px}
+  .g4{grid-template-columns:repeat(4,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:880px){.g4,.g2{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+  .card .num{font-size:30px;font-family:Georgia,serif;color:var(--brand);font-weight:700}
+  .card h3{margin:2px 0 6px;font-size:16px}.card small{color:var(--muted)}
+  section{padding:48px 0}section h2{font-size:28px;margin:0 0 6px}
+  section .sub{color:var(--muted);font-size:17px;margin:0 0 24px;max-width:820px}
+  .kicker{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:8px}
+  .secalt{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .ebk{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:18px 20px;height:100%;transition:transform .12s,box-shadow .12s}
+  .ebk:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(16,40,64,.13)}
+  .ebk .tagseg{display:inline-block;font-size:11px;font-weight:800;padding:3px 10px;border-radius:999px;text-transform:uppercase;letter-spacing:.04em}
+  .seg-frio{background:#EAF1FB;color:#0E5A8A;border:1px solid #cbddf5}
+  .seg-tibio{background:#FBEFE9;color:#C8553D;border:1px solid #f2cdbe}
+  .ebk h3{margin:10px 0 6px;font-size:17px;color:var(--brand-deep)}
+  .ebk p{margin:0;color:var(--muted);font-size:13.5px}
+  .ebk .open{margin-top:12px;font-weight:700;font-size:13.5px;color:var(--brand)}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0 0}
+  .flow .b{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:13px;font-weight:600}
+  .flow .ar{color:var(--brand);font-weight:700}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);margin:8px 0 16px}
+  th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);font-size:13.5px;vertical-align:top}
+  th{background:var(--brand-deep);color:#fff;font-size:11.5px;text-transform:uppercase;letter-spacing:.05em}
+  tr:last-child td{border-bottom:none}
+  .doclink{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:18px 20px;margin-bottom:14px}
+  .doclink .ic{font-size:26px}.doclink b{font-size:16px}.doclink small{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+  .note{border-left:4px solid var(--teal);background:#ECF7F8;border-radius:0 12px 12px 0;padding:16px 18px;margin:10px 0}
+  .ok-note{border-left:4px solid var(--ok);background:#ECF7F1;border-radius:0 12px 12px 0;padding:16px 18px;margin:10px 0}
+  .callout{border-left:4px solid var(--warn);background:#FCF2EE;border-radius:0 12px 12px 0;padding:16px 18px;margin:10px 0}
+  ul.clean{margin:6px 0 0;padding-left:18px;font-size:14px;color:var(--muted)}ul.clean li{margin-bottom:5px}
+  .timeline{position:relative;margin-left:8px;padding-left:26px;border-left:3px solid var(--line)}
+  .tnode{position:relative;margin-bottom:20px}
+  .tnode::before{content:"";position:absolute;left:-34px;top:3px;width:16px;height:16px;border-radius:50%;background:var(--brand);border:3px solid #fff;box-shadow:0 0 0 2px var(--brand)}
+  .tnode h4{margin:0 0 3px;font-size:16px}.tnode p{margin:0;color:var(--muted);font-size:14px}
+  .phase{font-size:11px;font-weight:800;color:var(--teal);letter-spacing:.12em;text-transform:uppercase}
+  footer{background:var(--brand-deep);color:#cfe4f2;padding:36px 0;margin-top:24px}
+  footer b{color:#fff}footer small{display:block;opacity:.7;margin-top:4px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Innovart Medical IPS · Proyecto ejecutado · 2026-06-19</span>
+    <h1>Reimpacto con 8 Ebooks Técnicos</h1>
+    <p class="lead">Reactivar leads fríos y tibios respondiendo sus preguntas reales. 8 ebooks listos, estrategia de segmentación y mensajes listos para enviar por API de GHL.</p>
+    <div class="meta">
+      <span class="chip">📘 8 ebooks producidos hoy</span>
+      <span class="chip">✅ Cumplimiento médico verificado</span>
+      <span class="chip">💬 14 mensajes GHL + objeciones + no-show</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap deck">
+  <div class="grid g4">
+    <div class="card"><div class="num">8</div><h3>Ebooks técnicos</h3><small>17.000+ palabras totales, FAQ reales, diseño Innovart, 0 términos prohibidos.</small></div>
+    <div class="card"><div class="num">2</div><h3>Secuencias GHL</h3><small>Frío (re-permiso) + Tibio, 7 toques cada una, listas para pegar.</small></div>
+    <div class="card"><div class="num">8</div><h3>Sub-segmentos</h3><small>3 fríos (F1-F3) + 5 tibios (T1-T5) con ebook ancla por freno.</small></div>
+    <div class="card"><div class="num">~160K</div><h3>Opps a reactivar</h3><small>Base dormida del CRM. Quick win: no-shows + casi-clientes.</small></div>
+  </div>
+</div>
+
+<!-- IDEA -->
+<section>
+  <div class="wrap">
+    <span class="kicker">La idea</span>
+    <h2>El ebook es excusa de valor, no oferta de venta</h2>
+    <p class="sub">En lugar de perseguir a los leads dormidos con "¿sigues interesado?", les damos valor: una guía corta que responde justo la pregunta que los frena. Eso genera micro-compromiso (clic / respuesta) → sube el lead score → handoff a Sofia → valoración. Como el <em>won</em> del CRM está roto, medimos por señales propias (respuesta, clic, agenda), no por etapa del pipeline.</p>
+    <div class="flow">
+      <span class="b">📩 Reimpacto (ebook)</span><span class="ar">→</span>
+      <span class="b">👆 Clic / respuesta</span><span class="ar">→</span>
+      <span class="b">📊 +Lead score</span><span class="ar">→</span>
+      <span class="b">🙋 Handoff a Sofia</span><span class="ar">→</span>
+      <span class="b">📅 Valoración gratis</span><span class="ar">→</span>
+      <span class="b">🩺 Cirugía</span>
+    </div>
+  </div>
+</section>
+
+<!-- LOS 8 EBOOKS -->
+<section class="secalt">
+  <div class="wrap">
+    <span class="kicker">Los entregables</span>
+    <h2>Los 8 ebooks (clic para abrir)</h2>
+    <p class="sub">Cada uno responde una FAQ técnica de implante capilar, con marco QUÉ → POR QUÉ → CRITERIO → MITO → ACCIÓN, prueba social y CTA a valoración gratis. <span class="tagseg seg-frio">frío</span> = educar / despertar interés · <span class="tagseg seg-tibio">tibio</span> = resolver objeción / mover a decisión.</p>
+    <div class="grid g2">
+      <a class="ebk" href="ebook-faq-01-duele-anestesia.html"><span class="tagseg seg-frio">E01 · frío</span><h3>¿Duele el implante capilar?</h3><p>La verdad sobre el dolor y la anestesia. Quita el miedo #1.</p><div class="open">Abrir ebook →</div></a>
+      <a class="ebk" href="ebook-faq-02-fue-vs-dhi.html"><span class="tagseg seg-tibio">E02 · tibio</span><h3>FUE vs DHI</h3><p>Qué técnica te conviene y por qué. Decisión informada, sin sesgo.</p><div class="open">Abrir ebook →</div></a>
+      <a class="ebk" href="ebook-faq-03-foliculos-zona-donante.html"><span class="tagseg seg-tibio">E03 · tibio</span><h3>¿Cuántos folículos necesitas?</h3><p>Zona donante y el diseño que envejece bien. Autoridad técnica.</p><div class="open">Abrir ebook →</div></a>
+      <a class="ebk" href="ebook-faq-04-proceso-dia-a-dia.html"><span class="tagseg seg-frio">E04 · frío</span><h3>El día del implante y los 8 días siguientes</h3><p>Qué esperar, hora por hora. Baja la incertidumbre.</p><div class="open">Abrir ebook →</div></a>
+      <a class="ebk" href="ebook-faq-05-resultados-shedding.html"><span class="tagseg seg-tibio">E05 · tibio</span><h3>¿Cuándo veré mi cabello?</h3><p>El shedding y la línea de tiempo real (3 a 18 meses). Gestiona expectativas.</p><div class="open">Abrir ebook →</div></a>
+      <a class="ebk" href="ebook-faq-06-soy-candidato.html"><span class="tagseg seg-frio">E06 · frío</span><h3>¿Soy candidato?</h3><p>Edad, grado de alopecia, mujeres y casos especiales. Cualifica y abre puerta.</p><div class="open">Abrir ebook →</div></a>
+      <a class="ebk" href="ebook-faq-07-costo-financiacion.html"><span class="tagseg seg-tibio">E07 · tibio</span><h3>¿Cuánto cuesta y cómo pagarlo?</h3><p>Precio real + financiación hasta 90%. Quita la objeción de plata.</p><div class="open">Abrir ebook →</div></a>
+      <a class="ebk" href="ebook-faq-08-proteger-inversion.html"><span class="tagseg seg-frio">E08 · frío</span><h3>Proteger tu inversión</h3><p>El plan médico que mantiene tu resultado. Diferenciador de seriedad.</p><div class="open">Abrir ebook →</div></a>
+    </div>
+  </div>
+</section>
+
+<!-- ESTRATEGIA -->
+<section>
+  <div class="wrap">
+    <span class="kicker">La estrategia de reimpacto</span>
+    <h2>A quién, con qué ebook y en qué orden</h2>
+    <p class="sub">Fríos = educación/curiosidad (E01, E04, E06, E08). Tibios = decisión/objeciones (E02, E03, E05, E07). Un ebook por toque; el ancla depende del freno específico.</p>
+    <table>
+      <thead><tr><th>Sub-segmento</th><th>Ebook ancla</th><th>Secuencia</th></tr></thead>
+      <tbody>
+        <tr><td><b>F1</b> Curioso TOFU</td><td>E01 duele</td><td>E01 → E06 → E04 → E05</td></tr>
+        <tr><td><b>F2</b> Dormido (+60-90d)</td><td>E01 duele</td><td>E01 → E06 → E02</td></tr>
+        <tr><td><b>F3</b> Dudas de candidatura</td><td>E06 candidato</td><td>E06 → E03 → E05</td></tr>
+        <tr><td><b>T1</b> No-show</td><td>E05 resultados</td><td>E05 → E07 → reagendar</td></tr>
+        <tr><td><b>T2</b> Pareja / casi-cliente</td><td>E04 día a día</td><td>E04 → E08 → E05</td></tr>
+        <tr><td><b>T3</b> Precio / MeddiPay</td><td>E07 costo</td><td>E07 → E03 → valoración</td></tr>
+        <tr><td><b>T4</b> Cancelado</td><td>E02 FUE vs DHI</td><td>E02 → E05 → reagendar</td></tr>
+        <tr><td><b>T5</b> Vacaciones / timing</td><td>E04 día a día</td><td>E04 → E08 → fecha futura</td></tr>
+      </tbody>
+    </table>
+    <div class="grid g2">
+      <div class="card"><h3>Cadencia</h3><ul class="clean"><li><b>Fríos:</b> re-permiso (responde SÍ) → máx 3 ebooks → CTA. D0/D2/D5/D9/D14.</li><li><b>Tibios:</b> ebook directo, más ágil. D0/D3/D7/D12.</li><li>Horario: mar-sáb 10-12 y 15-18. Olas 500-1000/día/sede (salud WABA).</li></ul></div>
+      <div class="card"><h3>Mecánica GHL por API</h3><ul class="clean"><li>1 workflow por segmento por sede (<code>WF-REIMP-FRIO/TIBIO</code>).</li><li>Envío acción WhatsApp (WABA sede); escucha <code>message.type==2</code>.</li><li>Ebooks como <b>trigger links</b> medibles + scoring + handoff <code>ai_parar</code>.</li><li>Agenda → Schedule CAPI; cirugía → Purchase CAPI.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCUMENTOS -->
+<section class="secalt">
+  <div class="wrap">
+    <span class="kicker">Documentos del proyecto</span>
+    <h2>Todo lo ejecutado</h2>
+    <a class="doclink" href="00-estrategia-reimpacto.md"><span class="ic">🧭</span><div><b>Estrategia de reimpacto (completa)</b><small>Segmentación frío/tibio, mapa ebook→segmento, cadencia, mecánica GHL, KPIs y reglas de parar/insistir.</small></div></a>
+    <a class="doclink" href="00-mensajes-ghl-api.md"><span class="ic">💬</span><div><b>Mensajes listos para GHL API</b><small>Secuencia fría (7) + tibia (7), banco de 8 ganchos, 5 objeciones, conversión y no-show. Con merge fields y placeholders.</small></div></a>
+    <div class="ok-note"><b>Cumplimiento verificado:</b> los 8 ebooks pasaron el chequeo automático — 0 términos prohibidos ("garantía vitalicia", "garantizado", "100% natural", "cura", "resultados inmediatos", "sin riesgos"), los 8 con disclaimer obligatorio. Mensajes en tuteo colombiano, disclaimer en cada uno que menciona resultados.</div>
+  </div>
+</section>
+
+<!-- PUESTA EN MARCHA -->
+<section>
+  <div class="wrap">
+    <span class="kicker">Para activarlo</span>
+    <h2>Qué falta para enviar (3 pasos)</h2>
+    <div class="timeline">
+      <div class="tnode"><span class="phase">Paso 1 · Hospedar</span><h4>Subir los 8 ebooks a una URL pública + crear los trigger links</h4><p>Hospedar en Shopify (o un host estático) → crear <code>{{ebook_link_e01}}</code>…<code>e08</code> con <code>create_trigger_link</code> por sede para medir clics.</p></div>
+      <div class="tnode"><span class="phase">Paso 2 · Montar en GHL</span><h4>Crear tags + smart lists + los workflows WF-REIMP por sede</h4><p>Cargar las secuencias de mensajes, los filtros de segmentación y el scoring/handoff. Aprobar plantillas WhatsApp.</p></div>
+      <div class="tnode"><span class="phase">Paso 3 · Quick win</span><h4>Primera ola: no-shows (T1) + casi-clientes (T2) con E05 y E07</h4><p>El segmento de mayor retorno sobre las ~160K opps dormidas. Ataca directo el show rate &lt;40%.</p></div>
+    </div>
+    <div class="note"><b>Puedo ejecutar los 3 pasos en GHL</b> (tengo el MCP conectado): crear tags, smart lists, trigger links y los workflows con los mensajes ya cargados. Solo dime por cuál sede arrancamos.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <b>Proyecto Reimpacto — 8 Ebooks Técnicos + Estrategia GHL</b>
+      <small>Innovart Medical IPS · 2026-06-19 · companion de "Plan Ebooks-MetaAds" y "Academia Capilar"</small>
+      <small>Sedes: Bogotá · Medellín · Barranquilla · Bucaramanga · Ciudad de Panamá · WhatsApp +57 312 456 5014</small>
+    </div>
+    <div style="text-align:right">
+      <b>Fuentes técnicas</b>
+      <small>NotebookLM: 100 Preguntas · Libro de Alopecia · GEMinnovart · investigación médica de FAQ</small>
+      <small>+ investigación web de FAQ · Construido con equipo multiagente en Claude</small>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¿Cuántos folículos necesitas? La zona donante y el diseño que envejece bien</title>
+<style>
+:root{--ink:#16202A;--muted:#5C6B79;--bg:#EEF3F8;--card:#FFFFFF;--brand:#0E5A8A;--brand-deep:#0A3F63;--teal:#14A0A6;--accent:#E2A34B;--line:#E1E9F0;--soft:#F6F9FC;--ok:#2E8B6F;--warn:#C8553D;--shadow:0 1px 3px rgba(16,40,64,.06),0 8px 28px rgba(16,40,64,.07);}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif;line-height:1.22;letter-spacing:-.01em}
+.wrap{max-width:780px;margin:0 auto;padding:0 22px}
+.cover{background:linear-gradient(135deg,var(--brand-deep),var(--brand) 60%,#127a9e);color:#fff;padding:70px 0 64px;position:relative;overflow:hidden}
+.cover::after{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;background:radial-gradient(circle,rgba(255,255,255,.13),transparent 65%);border-radius:50%}
+.cover .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:700;color:#9fe3e8}
+.cover h1{font-size:40px;margin:14px 0 12px;max-width:680px}
+.cover p{font-size:19px;color:#dbeefb;max-width:600px;margin:0}
+.cover .badge{margin-top:22px;display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#eaf6ff;padding:7px 14px;border-radius:999px;font-size:13px;font-weight:600}
+section{padding:30px 0}
+h2{font-size:27px;margin:26px 0 8px;color:var(--brand-deep)}
+h3{font-size:20px;margin:22px 0 6px}
+p{font-size:16.5px;margin:0 0 14px}
+.lead{font-size:18px;color:var(--muted)}
+.kicker{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:22px;margin:16px 0}
+.faq{border-left:4px solid var(--brand);background:var(--soft);border-radius:0 12px 12px 0;padding:14px 18px;margin:14px 0}
+.faq b{color:var(--brand-deep)}
+.note{border-left:4px solid var(--teal);background:#ECF7F8;border-radius:0 12px 12px 0;padding:14px 18px;margin:14px 0}
+.myth{border-left:4px solid var(--warn);background:#FCF2EE;border-radius:0 12px 12px 0;padding:14px 18px;margin:14px 0}
+.myth b{color:var(--warn)}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);margin:14px 0}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);font-size:14.5px}
+th{background:var(--brand-deep);color:#fff;font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+tr:last-child td{border-bottom:none}
+ul,ol{font-size:16.5px;padding-left:20px}li{margin-bottom:7px}
+.cta{background:linear-gradient(160deg,var(--brand-deep),var(--brand));color:#fff;border-radius:16px;padding:28px;text-align:center;margin:28px 0}
+.cta h3{color:#fff;font-size:23px;margin:0 0 8px}
+.cta p{color:#dbeefb;margin:0 0 16px}
+.btn{display:inline-block;background:var(--accent);color:#16202A;font-weight:800;padding:13px 26px;border-radius:999px;text-decoration:none;font-size:16px}
+.steps{counter-reset:s;padding:0;list-style:none}
+.steps li{position:relative;padding:6px 0 6px 44px;margin-bottom:8px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:4px;width:30px;height:30px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif}
+footer{background:var(--brand-deep);color:#cfe4f2;padding:30px 0;margin-top:24px;font-size:13px}
+footer b{color:#fff}
+.disc{font-size:12px;color:#9bb6cc;margin-top:10px;font-style:italic}
+@media(max-width:640px){.cover h1{font-size:30px}h2{font-size:22px}}
+/* --- CTAs comerciales --- */
+.fab{position:fixed;bottom:18px;right:18px;z-index:999;background:#25D366;color:#fff;font-weight:800;padding:13px 20px;border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28);font-size:15px}
+.fab:hover{filter:brightness(1.06)}
+.topbar{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:18px 0;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.topbar b{font-size:15px;color:var(--brand-deep)}
+.topbar .acts{display:flex;gap:8px;flex-wrap:wrap}
+.btn2{display:inline-block;font-weight:800;padding:11px 20px;border-radius:999px;text-decoration:none;font-size:14.5px}
+.btn-wa{background:#25D366;color:#fff}
+.btn-web{background:var(--brand);color:#fff}
+.ctacard{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;background:linear-gradient(160deg,#0E5A8A,#127a9e);color:#fff;border-radius:14px;padding:18px 20px;margin:24px 0}
+.ctacard .tx b{display:block;font-size:16px;color:#fff;font-family:Georgia,serif}
+.ctacard .tx span{font-size:13.5px;color:#dbeefb}
+.ctacard .btn2{white-space:nowrap;background:var(--accent);color:#16202A}
+.cta .row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:4px}
+.cta .btn-web{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.4);color:#fff}
+.footweb a{color:#9fe3e8;font-weight:700}
+@media(max-width:560px){.fab{padding:11px 16px;font-size:14px}.ctacard{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<a class="fab" href="https://wa.me/573124565014?text=Hola%2C%20vengo%20de%20una%20gu%C3%ADa%20de%20Innovart%20y%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratis." target="_blank" rel="noopener">💬 Valoración gratis</a>
+
+<header class="cover">
+  <div class="wrap">
+    <span class="eyebrow">Guía Innovart</span>
+    <h1>¿Cuántos folículos necesitas? La zona donante y el diseño que envejece bien</h1>
+    <p>La pregunta correcta no es cuántos folículos te ofrecen, sino qué cobertura logra tu zona donante y cómo se verá tu pelo dentro de quince años.</p>
+    <span class="badge">Lectura 6 min · Sin tecnicismos</span>
+  </div>
+</header>
+
+<div class="wrap"><div class="topbar"><b>¿Prefieres resolver tu caso con un especialista? Tu primera valoración es gratis.</b><div class="acts"><a class="btn2 btn-wa" href="https://wa.me/573124565014?text=Hola%2C%20vengo%20de%20una%20gu%C3%ADa%20de%20Innovart%20y%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratis." target="_blank" rel="noopener">💬 Agendar por WhatsApp</a><a class="btn2 btn-web" href="https://www.innovartmedical.com/?utm_source=ebook&utm_medium=guia&utm_campaign=reimpacto&utm_content=e03" target="_blank" rel="noopener">🌐 Ir a la web</a></div></div></div>
+
+<div class="wrap">
+
+  <section>
+    <span class="kicker">Por dónde empezar</span>
+    <h2>Si ya estás cotizando por número de folículos, esto es para ti</h2>
+    <p>Es lo más normal del mundo. Empiezas a investigar un implante capilar y, en cuestión de días, terminas comparando clínicas por una sola cifra: cuántos folículos te ofrecen. Una te dice 3.000, otra 5.000, y casi sin darte cuenta empiezas a pensar que la que ofrece más es la mejor.</p>
+    <p>Es una pregunta razonable. Pero es incompleta. Y tomar la decisión solo por esa cifra puede costarte caro, porque hay algo que casi nadie te explica antes de operarte: <b>tu zona donante es finita</b>. No es un grifo del que puedes sacar pelo para siempre. Tienes un número limitado de folículos disponibles para toda tu vida, y la manera en que se usen hoy define lo que podrás hacer mañana.</p>
+    <p>En esta guía te explicamos, sin rodeos y con criterio médico, lo que de verdad determina un buen resultado: el <b>valor de cobertura</b> de tu pelo, los límites reales de tu zona donante y por qué un diseño conservador es el que mejor envejece. La idea no es venderte una cifra. Es darte las herramientas para que hagas la pregunta correcta.</p>
+  </section>
+
+  <section>
+    <span class="kicker">Lo que de verdad importa</span>
+    <h2>No es cuántos folículos, es cuánto cubren</h2>
+
+    <div class="faq">
+      <p><b>¿Cuántos folículos necesito para cubrir mi calvicie?</b></p>
+      <p>Depende, y no es una respuesta evasiva: depende de tu grado de calvicie, del área a cubrir y, sobre todo, de la calidad de tu pelo. Como orientación general, los grados leves a moderados (Hamilton-Norwood 2 a 4) suelen resolverse con 1.500 a 3.000 folículos, mientras que los grados avanzados (5 a 7) pueden requerir 4.000 a 6.000 o más. En Innovart, el promedio por procedimiento se mueve entre 2.000 y 5.000 folículos.</p>
+      <p>Pero aquí viene lo importante: dos personas con la misma calvicie pueden necesitar cantidades muy distintas de folículos para verse igual de pobladas. ¿Por qué? Porque lo que cubre tu cabeza no es el número de folículos, sino su <b>valor de cobertura</b>.</p>
+    </div>
+
+    <div class="card">
+      <h3>La "fórmula del pelazo": el Valor de Cobertura</h3>
+      <p>El criterio técnico que usamos para evaluar un caso es el <b>Valor de Cobertura</b>, una idea bien establecida en la cirugía capilar moderna y que se resume en una fórmula sencilla:</p>
+      <p style="text-align:center;font-size:19px;color:var(--brand-deep);font-weight:700;margin:18px 0;">Valor de Cobertura = Calibre del pelo (grosor en micras) × Ratio folicular (pelos por unidad)</p>
+      <p>Traducido: un pelo grueso cubre mucho más que uno fino, y una unidad folicular que trae tres o cuatro pelos rinde más que una que trae uno solo. Por eso una persona con pelo grueso y abundante puede lograr una melena densa con menos injertos que otra con pelo fino, aunque ambas se operen la misma área.</p>
+      <p>El implante capilar es, en buena medida, una ilusión óptica calculada. No se trata de rellenar agujeros uno a uno hasta tapar todo, sino de distribuir estratégicamente la cobertura para que el ojo perciba densidad. Y esa cobertura la define la materia prima de tu pelo, no la cifra del presupuesto.</p>
+    </div>
+
+    <div class="note">
+      <p>El criterio práctico: <b>no preguntes solo cuántos folículos te ofrecen. Pregunta qué valor de cobertura logra tu zona donante.</b> Esa es la conversación que realmente predice tu resultado.</p>
+    </div>
+
+    <div class="ctacard"><div class="tx"><b>¿Qué valor de cobertura tiene tu pelo?</b><span>En la valoración medimos el calibre y el ratio folicular de tu caso real: sabrás cuánta área puede cubrir tu donante antes de comparar cifras.</span></div><a class="btn2" href="https://wa.me/573124565014?text=Hola%2C%20vengo%20de%20una%20gu%C3%ADa%20de%20Innovart%20y%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratis." target="_blank" rel="noopener">Agenda tu valoración gratis</a></div>
+  </section>
+
+  <section>
+    <span class="kicker">El recurso que no se renueva</span>
+    <h2>Tu zona donante tiene cupos limitados para toda la vida</h2>
+
+    <div class="faq">
+      <p><b>¿La zona donante se agota? ¿Cuántos implantes puedo hacerme en la vida?</b></p>
+      <p>Sí, se agota, y esta es probablemente la información más importante de toda la guía. La zona donante —la franja posterior y lateral de la cabeza, resistente a la alopecia— es <b>finita</b>. Una zona sana tiene alrededor de 70 a 90 unidades foliculares por centímetro cuadrado, y solo se puede extraer una fracción (aproximadamente un 25 a 30%) sin que queden claros visibles donde antes había pelo.</p>
+      <p>Eso significa que, en la práctica, la mayoría de las personas tienen material para <b>una a tres cirugías en toda su vida</b>. No más. Por eso en cirugía capilar se habla de "cartuchos limitados": cada cirugía consume parte de un recurso que no se vuelve a llenar.</p>
+    </div>
+
+    <div class="faq">
+      <p><b>¿Cuántos injertos se pueden hacer en una sola sesión?</b></p>
+      <p>Una sesión estándar habitual maneja entre 2.000 y 4.000 unidades; en Innovart el rango promedio va de 2.000 a 5.000 folículos por procedimiento, que se realiza en 6 a 8 horas bajo anestesia local. El número exacto no se decide de antemano por presupuesto: se decide en la valoración, evaluando cuánto puede dar tu donante hoy sin comprometer lo que necesitarás mañana.</p>
+    </div>
+
+    <div class="myth">
+      <p><b>Mito: "La zona donante es infinita y me puedo operar las veces que quiera."</b></p>
+      <p>Realidad: es uno de los recursos más limitados de tu cuerpo para este fin. Alcanza para pocas cirugías. Si se vacía mal en la primera, no hay segunda oportunidad: ningún cirujano puede crear folículos donde ya no quedan. Por eso el primer procedimiento es el más importante de tu vida capilar.</p>
+    </div>
+
+    <div class="ctacard"><div class="tx"><b>Tu donante es finita: que la primera vez se haga bien</b><span>Antes de usar un recurso que no se renueva, deja que midamos cuánto puede dar hoy sin comprometer el mañana. Valoración gratuita, sin compromiso de operarte.</span></div><a class="btn2" href="https://wa.me/573124565014?text=Hola%2C%20vengo%20de%20una%20gu%C3%ADa%20de%20Innovart%20y%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratis." target="_blank" rel="noopener">Agenda tu valoración gratis</a></div>
+  </section>
+
+  <section>
+    <span class="kicker">Cuando una cifra alta es una señal de alarma</span>
+    <h2>Por qué desconfiar de "te ofrezco 5.000 folículos" sin evaluarte</h2>
+
+    <div class="faq">
+      <p><b>¿Por qué una clínica me ofrece 5.000 folículos y otra menos?</b></p>
+      <p>Porque están vendiendo cosas distintas. Prometer una cifra alta antes de evaluar tu zona donante es fácil; es lo que más vende. Pero si esa donante no da para tanto, hay dos desenlaces posibles, y ninguno es bueno: o se sobreexplota la zona donante dejándola con claros visibles de por vida, o no se cumple lo prometido y el resultado queda ralo.</p>
+      <p>La cifra alta también es atractiva porque te hace sentir que recibes "más por tu dinero". Pero en restauración capilar, más no siempre es mejor. Vaciar tu donante de golpe en una zona puede dejarte sin reservas para cuando la alopecia siga avanzando hacia otras áreas, algo que ocurre porque el implante no detiene la calvicie del pelo nativo que tienes alrededor.</p>
+    </div>
+
+    <div class="note">
+      <p>El criterio honesto que aplicamos: la cifra correcta no es la más alta, es la que tu donante puede dar hoy <b>protegiendo</b> lo que vas a necesitar mañana. Una clínica que piensa a largo plazo en tu pelo a veces te ofrece menos folículos que otra; eso no es una debilidad, es responsabilidad.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="kicker">El agujero negro</span>
+    <h2>La coronilla: por qué casi nunca conviene empezar por ahí</h2>
+
+    <div class="faq">
+      <p><b>¿Sirve cubrir la coronilla o no vale la pena?</b></p>
+      <p>La coronilla es lo que en cirugía capilar se conoce como un "agujero negro". Por su forma en espiral (el remolino) y porque suele seguir cayendo con el tiempo, consume una cantidad desproporcionada de folículos para lograr una densidad que se note. Puedes invertir miles de injertos ahí y, si la alopecia avanza alrededor, el resultado se diluye.</p>
+      <p>El criterio que aplicamos es priorizar el <b>marco facial</b> —el tercio anterior, la línea frontal y las entradas— sobre la coronilla. ¿Por qué? Porque el marco facial es lo que enmarca tu rostro, lo que la gente ve cuando te mira de frente, y lo que más rejuvenece la cara. Rinde muchísimo más por folículo invertido.</p>
+    </div>
+
+    <div class="myth">
+      <p><b>Mito: "Hay que rellenar primero la coronilla."</b></p>
+      <p>Realidad: la coronilla consume folículos de forma desproporcionada y tiende a seguir despoblándose. Salvo casos muy específicos, suele priorizarse el marco facial, que da un impacto visual mucho mayor con un uso más eficiente de una donante limitada. Cubrir primero la coronilla, en cambio, puede gastar tu reserva sin que el resultado se note tanto.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="kicker">El factor que la cifra no muestra</span>
+    <h2>Un diseño que envejece bien (no uno que se ve bien solo hoy)</h2>
+    <p>Aquí está la diferencia entre un implante que se ve natural a los 30 y uno que se ve natural también a los 55. El diseño. Un buen implante no se nota nunca, ni recién hecho ni dentro de veinte años, y eso solo se logra con planeación, no con cantidad.</p>
+
+    <h3>Las reglas de un diseño atemporal</h3>
+    <p>En Innovart el diseño sigue parámetros de cirugía plástica: considera la fisionomía del rostro, los puntos faciales, el grado de calvicie y, muy importante, tu edad. Los principios de un diseño conservador que envejece bien son:</p>
+    <ul>
+      <li><b>Densidad progresiva:</b> menos densidad en la primera línea, aumentando hacia atrás, imitando cómo nace el pelo de forma natural.</li>
+      <li><b>Un solo pelo en la primera línea:</b> las unidades de un pelo van adelante para que el borde se vea suave y difuminado, nunca como un bloque.</li>
+      <li><b>Irregularidades naturales:</b> una línea frontal perfectamente recta delata el implante. La naturaleza es irregular, y un buen diseño la imita.</li>
+      <li><b>Línea frontal atemporal:</b> ni recta ni demasiado baja, especialmente en jóvenes. Una línea muy baja a los 25 se verá artificial a los 50, cuando el resto del pelo haya cambiado.</li>
+    </ul>
+
+    <div class="note">
+      <p>Esto explica un punto delicado: en hombres jóvenes que piden una línea frontal agresiva y baja, un buen cirujano la modera. No por capricho, sino porque la alopecia seguirá avanzando y esa línea, perfecta hoy, quedaría desfasada del resto del rostro mañana. Diseñar pensando en cómo envejecerás es proteger tu inversión.</p>
+    </div>
+
+    <div class="ctacard"><div class="tx"><b>Diseñemos una línea que se vea natural a los 30 y a los 55</b><span>Lleva tus dudas sobre densidad, línea frontal y diseño a una valoración gratuita: lo vemos sobre tu caso real, no sobre una cifra de catálogo.</span></div><a class="btn2" href="https://wa.me/573124565014?text=Hola%2C%20vengo%20de%20una%20gu%C3%ADa%20de%20Innovart%20y%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratis." target="_blank" rel="noopener">Agenda tu valoración gratis</a></div>
+  </section>
+
+  <section>
+    <span class="kicker">Cuando la donante no alcanza</span>
+    <h2>¿Y si tengo la zona donante débil o escasa?</h2>
+
+    <div class="faq">
+      <p><b>¿Qué pasa si tengo la zona donante débil o escasa?</b></p>
+      <p>No necesariamente quedas descartado, pero sí cambia la estrategia. En Innovart, cuando la zona donante está débil, antes de operar aplicamos un <b>Tratamiento de Rescate Capilar</b>: cuatro meses con Dutasteride y Minoxidil para fortalecer y engrosar el pelo de la donante. Es un protocolo con alta efectividad reportada, especialmente en pacientes menores de 45 años, y permite que la donante rinda más y mejor el día de la cirugía.</p>
+      <p>Esto conecta con un principio que defiende la medicina basada en evidencia: el implante no sustituye al tratamiento médico. Los fármacos (inhibidores de la 5-alfa reductasa como el Dutasteride, y el Minoxidil) atacan la raíz del problema frenando la DHT, la hormona que miniaturiza el folículo. Una donante bien tratada es una donante más generosa.</p>
+    </div>
+
+    <div class="faq">
+      <p><b>¿Se puede usar pelo de la barba o el pecho para el implante?</b></p>
+      <p>Sí. Cuando el cuero cabelludo no ofrece suficientes folículos, el vello de la barba o del pecho puede usarse como fuente complementaria. No reemplaza al pelo de la cabeza para todas las zonas, pero amplía las opciones en casos de donante escasa y se integra bien en áreas determinadas. Es una de las razones por las que vale la pena una valoración real antes de descartarte: lo que parece imposible muchas veces tiene salida.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="kicker">Más allá de la cantidad</span>
+    <h2>¿Más folículos significan más densidad y mejor resultado?</h2>
+
+    <div class="faq">
+      <p><b>¿Más folículos significan más densidad y mejor resultado?</b></p>
+      <p>No automáticamente. La densidad final y la supervivencia del injerto dependen de tres cosas que la cifra no muestra: la calidad de tu pelo (el valor de cobertura), la planeación del diseño y las manos que lo ejecutan. Un cirujano experto con 3.000 folículos bien distribuidos logra un resultado más natural y duradero que manos inexpertas con 5.000 mal colocados.</p>
+      <p>Hay un detalle técnico que pesa: cada folículo extraído debe sobrevivir al trasplante. Una extracción y una implantación cuidadosas, con el ángulo, la profundidad y la dirección correctos, maximizan cuántos de esos folículos prenden y crecen. Por eso usamos técnicas como FUE Zafiro (cuchillas de cristal de zafiro que hacen incisiones más finas y reducen el trauma) y DHI con instrumento Choi Pen, que da control absoluto sobre cada cabello.</p>
+    </div>
+
+    <div class="myth">
+      <p><b>Mito: "Mientras más folículos, mejor."</b></p>
+      <p>Realidad: lo que cubre tu cabeza es el valor de cobertura (calibre × ratio folicular) y el diseño, no solo la cantidad. Y como la donante es finita, pedir "más folículos" sin criterio puede agotarla. El objetivo no es el número más grande; es el resultado natural más duradero con el uso más inteligente de lo que tienes.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="kicker">Tu hoja de ruta</span>
+    <h2>El cronograma de un implante bien planeado</h2>
+    <p>Saber qué esperar y cuándo te ayuda a tomar la decisión con la cabeza fría. Este es el recorrido típico de un procedimiento en Innovart:</p>
+
+    <table>
+      <thead>
+        <tr><th>Momento</th><th>Qué ocurre</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Valoración (día previo)</td><td>Evaluación gratuita de 30-45 min. Se mide la zona donante, se calcula el valor de cobertura y se diseña pensando en el largo plazo.</td></tr>
+        <tr><td>Día 0</td><td>Procedimiento FUE / DHI, 6-8 horas, anestesia local. Promedio 2.000-5.000 folículos.</td></tr>
+        <tr><td>Días 1-8</td><td>Recuperación inicial. Cuidados básicos: evitar sol directo, ejercicio intenso y gorras los primeros días.</td></tr>
+        <tr><td>Día 3</td><td>Ya es posible viajar.</td></tr>
+        <tr><td>Primeras semanas</td><td>Shock loss (caída temporal del cabello implantado). Es completamente normal y esperado.</td></tr>
+        <tr><td>~3 meses</td><td>Primeros resultados visibles: empieza a crecer el cabello nuevo.</td></tr>
+        <tr><td>12-18 meses</td><td>Resultado definitivo, con la densidad y naturalidad finales.</td></tr>
+      </tbody>
+    </table>
+    <p class="lead">Durante el primer año recibes 24 controles médicos gratuitos para acompañar cada etapa de ese proceso.</p>
+  </section>
+
+  <section>
+    <span class="kicker">Cómo decidimos en tu caso</span>
+    <h2>Qué evaluamos antes de darte una cifra</h2>
+    <ol class="steps">
+      <li><b>Tu zona donante.</b> Medimos densidad y calidad real para saber cuánto puede dar hoy sin comprometer el mañana.</li>
+      <li><b>El valor de cobertura de tu pelo.</b> Calibre y ratio folicular, porque eso define cuánta área cubrirá cada injerto.</li>
+      <li><b>Tu grado y patrón de alopecia.</b> Para anticipar cómo avanzará y reservar donante si hace falta.</li>
+      <li><b>El diseño atemporal.</b> Línea frontal y prioridades (marco facial primero) pensando en cómo se verá en el futuro.</li>
+      <li><b>Si tu donante necesita rescate.</b> Si está débil, proponemos el Tratamiento de Rescate Capilar antes de operar.</li>
+    </ol>
+    <p>Solo después de eso te damos una cifra. Una cifra que protege tu pelo a largo plazo, no la que mejor suena en un anuncio.</p>
+  </section>
+
+  <section>
+    <span class="kicker">Por qué confiar el cálculo a Innovart</span>
+    <h2>Autoridad técnica, no la cifra más grande</h2>
+    <p>Más de <b>6.000 pacientes operados</b> respaldan nuestro criterio. Contamos con un equipo de <b>más de 30 profesionales certificados y más de 10 años de experiencia</b>, con protocolos adoptados de las mejores escuelas de Turquía, España y China. Trabajamos como IPS habilitada bajo los estándares del Ministerio de Salud de Colombia, bajo la dirección médica del Dr. Fabián Carreño.</p>
+    <p>Nuestro enfoque es deliberado: aplicamos el criterio de valor de cobertura, diseñamos bajo reglas de cirugía plástica para una línea frontal atemporal, y cuando tu donante lo necesita, la fortalecemos primero con el Tratamiento de Rescate Capilar (Dutasteride + Minoxidil, 4 meses) en lugar de simplemente extraer de más. Pensamos en tu pelo a 15 años, no en cerrar una venta hoy.</p>
+    <p>Y porque la confianza se construye acompañando: incluimos <b>24 controles médicos gratuitos durante el primer año</b> y una garantía de resultado, con ajustes sin costo si el resultado no cumple lo acordado.</p>
+  </section>
+
+  <section>
+    <div class="cta">
+      <h3>Pregunta lo correcto: qué cobertura logra tu zona donante</h3>
+      <p>Antes de comparar clínicas por una cifra, deja que evaluemos tu zona donante de verdad. La valoración es gratis, dura 30-45 minutos y puede ser presencial o virtual. Sales sabiendo cuántos folículos puede dar tu donante, qué cobertura lograrías y cómo cuidar tu pelo a largo plazo, sin compromiso de operarte.</p>
+      <div class="row"><a class="btn2 btn-wa" href="https://wa.me/573124565014?text=Hola%2C%20vengo%20de%20una%20gu%C3%ADa%20de%20Innovart%20y%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratis." target="_blank" rel="noopener">💬 Agenda tu valoración gratis</a><a class="btn2 btn-web" href="https://www.innovartmedical.com/?utm_source=ebook&utm_medium=guia&utm_campaign=reimpacto&utm_content=e03" target="_blank" rel="noopener">🌐 Conoce Innovart</a></div>
+    </div>
+    <p style="text-align:center;color:var(--muted);font-size:15px;">Tu zona donante no se renueva. Vale la pena conocerla antes de decidir. Financiación hasta 90% con aprobación en 5 minutos.</p>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <p><b>Innovart Medical IPS</b> — Restauración capilar con técnica avanzada FUE y DHI.</p>
+    <p>Sedes: <b>Bogotá · Medellín · Barranquilla · Bucaramanga · Ciudad de Panamá</b></p>
+    <p>WhatsApp: <b>+57 312 456 5014</b> · Valoración gratuita presencial o virtual · 24 controles médicos gratis el primer año.</p>
+    <p class="footweb">Conoce más en <a href="https://www.innovartmedical.com/?utm_source=ebook&utm_medium=guia&utm_campaign=reimpacto&utm_content=e03" target="_blank" rel="noopener">innovartmedical.com</a> · WhatsApp: +57 312 456 5014</p>
+    <p class="disc">Los resultados pueden variar. Consulta médica requerida. Innovart Medical IPS - registro sanitario vigente.</p>
+  </div>
+</footer>
+
+</body>
+</html>

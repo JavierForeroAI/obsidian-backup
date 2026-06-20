@@ -16,6 +16,7 @@ updated: 2026-06-01
 | Término prohibido | Razón | Alternativa recomendada |
 |-------------------|-------|------------------------|
 | **"Garantía Vitalicia"** | Prohibido por política interna / regulación / posicionamiento | "Garantía de resultado", "respaldamos tu procedimiento", "si el resultado no es el acordado, lo corregimos sin costo" |
+| **"Dr. Óscar Muñoz" / "Dr. Muñoz" / "Carlos Muñoz" / "Escuela de Alopecia"** | NO hay autorización de su equipo para nombrarlo en contenido público (ebooks, ads, blogs, etc.). El notebook técnico es fuente interna de criterio, pero su nombre/programa NO se cita públicamente. | Atribuir al "criterio médico de Innovart", "nuestro equipo médico", "Dr. Fabián Carreño, Director Médico", o presentar el concepto técnico sin atribución de nombre |
 
 ---
 
@@ -32,3 +33,4 @@ updated: 2026-06-01
 | Fecha | Término restringido | Indicado por |
 |-------|---------------------|--------------|
 | 2026-06-01 | "Garantía Vitalicia" | Javier Forero |
+| 2026-06-19 | "Dr. Óscar Muñoz" / "Escuela de Alopecia" (sin autorización de su equipo) | Javier Forero |

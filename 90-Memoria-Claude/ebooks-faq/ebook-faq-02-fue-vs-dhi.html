@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FUE vs DHI: qué técnica te conviene y por qué | Innovart Medical</title>
+<style>
+:root{--ink:#16202A;--muted:#5C6B79;--bg:#EEF3F8;--card:#FFFFFF;--brand:#0E5A8A;--brand-deep:#0A3F63;--teal:#14A0A6;--accent:#E2A34B;--line:#E1E9F0;--soft:#F6F9FC;--ok:#2E8B6F;--warn:#C8553D;--shadow:0 1px 3px rgba(16,40,64,.06),0 8px 28px rgba(16,40,64,.07);}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif;line-height:1.22;letter-spacing:-.01em}
+.wrap{max-width:780px;margin:0 auto;padding:0 22px}
+.cover{background:linear-gradient(135deg,var(--brand-deep),var(--brand) 60%,#127a9e);color:#fff;padding:70px 0 64px;position:relative;overflow:hidden}
+.cover::after{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;background:radial-gradient(circle,rgba(255,255,255,.13),transparent 65%);border-radius:50%}
+.cover .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:700;color:#9fe3e8}
+.cover h1{font-size:40px;margin:14px 0 12px;max-width:680px}
+.cover p{font-size:19px;color:#dbeefb;max-width:600px;margin:0}
+.cover .badge{margin-top:22px;display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#eaf6ff;padding:7px 14px;border-radius:999px;font-size:13px;font-weight:600}
+section{padding:30px 0}
+h2{font-size:27px;margin:26px 0 8px;color:var(--brand-deep)}
+h3{font-size:20px;margin:22px 0 6px}
+p{font-size:16.5px;margin:0 0 14px}
+.lead{font-size:18px;color:var(--muted)}
+.kicker{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:22px;margin:16px 0}
+.faq{border-left:4px solid var(--brand);background:var(--soft);border-radius:0 12px 12px 0;padding:14px 18px;margin:14px 0}
+.faq b{color:var(--brand-deep)}
+.note{border-left:4px solid var(--teal);background:#ECF7F8;border-radius:0 12px 12px 0;padding:14px 18px;margin:14px 0}
+.myth{border-left:4px solid var(--warn);background:#FCF2EE;border-radius:0 12px 12px 0;padding:14px 18px;margin:14px 0}
+.myth b{color:var(--warn)}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);margin:14px 0}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);font-size:14.5px}
+th{background:var(--brand-deep);color:#fff;font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+tr:last-child td{border-bottom:none}
+ul,ol{font-size:16.5px;padding-left:20px}li{margin-bottom:7px}
+.cta{background:linear-gradient(160deg,var(--brand-deep),var(--brand));color:#fff;border-radius:16px;padding:28px;text-align:center;margin:28px 0}
+.cta h3{color:#fff;font-size:23px;margin:0 0 8px}
+.cta p{color:#dbeefb;margin:0 0 16px}
+.btn{display:inline-block;background:var(--accent);color:#16202A;font-weight:800;padding:13px 26px;border-radius:999px;text-decoration:none;font-size:16px}
+.steps{counter-reset:s;padding:0;list-style:none}
+.steps li{position:relative;padding:6px 0 6px 44px;margin-bottom:8px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:4px;width:30px;height:30px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif}
+footer{background:var(--brand-deep);color:#cfe4f2;padding:30px 0;margin-top:24px;font-size:13px}
+footer b{color:#fff}
+.disc{font-size:12px;color:#9bb6cc;margin-top:10px;font-style:italic}
+@media(max-width:640px){.cover h1{font-size:30px}h2{font-size:22px}}
+/* --- CTAs comerciales --- */
+.fab{position:fixed;bottom:18px;right:18px;z-index:999;background:#25D366;color:#fff;font-weight:800;padding:13px 20px;border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28);font-size:15px}
+.fab:hover{filter:brightness(1.06)}
+.topbar{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:18px 0;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.topbar b{font-size:15px;color:var(--brand-deep)}
+.topbar .acts{display:flex;gap:8px;flex-wrap:wrap}
+.btn2{display:inline-block;font-weight:800;padding:11px 20px;border-radius:999px;text-decoration:none;font-size:14.5px}
+.btn-wa{background:#25D366;color:#fff}
+.btn-web{background:var(--brand);color:#fff}
+.ctacard{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;background:linear-gradient(160deg,#0E5A8A,#127a9e);color:#fff;border-radius:14px;padding:18px 20px;margin:24px 0}
+.ctacard .tx b{display:block;font-size:16px;color:#fff;font-family:Georgia,serif}
+.ctacard .tx span{font-size:13.5px;color:#dbeefb}
+.ctacard .btn2{white-space:nowrap;background:var(--accent);color:#16202A}
+.cta .row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:4px}
+.cta .btn-web{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.4);color:#fff}
+.footweb a{color:#9fe3e8;font-weight:700}
+@media(max-width:560px){.fab{padding:11px 16px;font-size:14px}.ctacard{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<a class="fab" href="https://wa.me/573124565014?text=Hola%2C%20vengo%20de%20una%20gu%C3%ADa%20de%20Innovart%20y%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratis." target="_blank" rel="noopener">💬 Valoración gratis</a>
+
+<header class="cover">
+  <div class="wrap">
+    <span class="eyebrow">Guía Innovart</span>
+    <h1>FUE vs DHI: qué técnica te conviene y por qué</h1>
+    <p>La comparación honesta que nadie te hace antes de operarte. Aprende a leer tu propio caso y a elegir con criterio, no por moda.</p>
+    <span class="badge">Lectura 6 min · Sin tecnicismos</span>
+  </div>
+</header>
+
+<div class="wrap"><div class="topbar"><b>¿Prefieres resolver tu caso con un especialista? Tu primera valoración es gratis.</b><div class="acts"><a class="btn2 btn-wa" href="https://wa.me/573124565014?text=Hola%2C%20vengo%20de%20una%20gu%C3%ADa%20de%20Innovart%20y%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratis." target="_blank" rel="noopener">💬 Agendar por WhatsApp</a><a class="btn2 btn-web" href="https://www.innovartmedical.com/?utm_source=ebook&utm_medium=guia&utm_campaign=reimpacto&utm_content=e02" target="_blank" rel="noopener">🌐 Ir a la web</a></div></div></div>
+
+<div class="wrap">
+
+  <section>
+    <span class="kicker">Antes de empezar</span>
+    <h2>Si llegaste hasta acá, ya tomaste la decisión difícil</h2>
+    <p class="lead">Ya decidiste que quieres recuperar tu cabello. Lo difícil ya pasó. Lo que te falta es algo más concreto y más confuso: ¿FUE o DHI? ¿Cuál es mejor? ¿Por qué una clínica te jura que la DHI es lo último y otra te dice que con FUE basta?</p>
+    <p>Es una duda completamente normal. Has visto videos, comparado precios, leído foros, y cada fuente parece contradecir a la anterior. Una página dice que con la DHI no te rapan; otra que la FUE rinde más; un influencer que solo una técnica "de verdad funciona". Terminas más perdido que cuando empezaste.</p>
+    <p>Aquí vamos a poner orden. Sin venderte una sigla como si fuera magia. La verdad incómoda —y la que más vale para tu bolsillo y tu cabeza— es esta: <b>no existe una técnica universalmente mejor. Existe la técnica mejor PARA TU caso.</b> Y para saber cuál es la tuya hay que mirar tu zona donante, tu grado de alopecia, qué área quieres cubrir y qué resultado buscas.</p>
+    <div class="note"><b>Lo que vas a entender al terminar:</b> qué hace cada técnica por dentro, en qué escenario brilla cada una, por qué la DHI cuesta un poco más, qué es la FUE Zafiro, y —lo más importante— qué es lo que de verdad define que tu resultado se vea natural (pista: no es la sigla).</p>
+  </section>
+
+  <section>
+    <span class="kicker">El corazón del tema</span>
+    <h2>Qué es cada técnica, en palabras claras</h2>
+    <p>Antes de comparar, hay que entender que ambas técnicas comparten el mismo principio: tomamos folículos sanos de tu zona donante —la nuca y los lados de la cabeza, que son genéticamente resistentes a la calvicie— y los reubicamos donde hace falta. La diferencia está en <i>cómo</i> se implantan. Ahí empieza todo.</p>
+
+    <div class="faq">
+      <p><b>¿Qué diferencia hay entre FUE y DHI?</b></p>
+      <p>La <b>FUE</b> (Extracción de Unidades Foliculares) trabaja en dos pasos: primero se extraen los folículos uno a uno de la zona donante y luego, en una fase separada, se implantan en la zona receptora donde antes se hicieron pequeñas incisiones.</p>
+      <p>La <b>DHI</b> (Direct Hair Implantation) fusiona esos pasos. Con un instrumento llamado <b>Choi Pen</b> —una especie de lápiz implantador— se hace la incisión y se coloca el folículo en el mismo movimiento. Esto le da al cirujano control absoluto sobre el ángulo, la profundidad y la dirección de cada pelo, y reduce el tiempo que el folículo pasa fuera del cuerpo.</p>
+      <p>En resumen: misma materia prima (tus folículos), distinta herramienta y distinto ritmo de implante. No son rivales; son herramientas para escenarios diferentes.</p>
+    </div>
+
+    <div class="faq">
+      <p><b>¿Con cuál no me tienen que rapar la cabeza?</b></p>
+      <p>Esta es probablemente la pregunta que más pesa para quien tiene pelo largo o no quiere "anunciar" que se operó. La <b>DHI permite trabajar sin rapar toda la cabeza</b>: se puede rasurar solo la zona puntual a tratar, dejando el resto del pelo intacto. Por eso la prefieren quienes tienen melena, mujeres, o personas que necesitan volver pronto al trabajo sin que se note.</p>
+      <p>Con la FUE clásica suele rasurarse un área más amplia, pero ojo: <b>también existen abordajes FUE sin rapar por completo</b>. No es una regla absoluta. En tu valoración se define qué tan amplia debe ser la zona a rasurar según el número de folículos y el área a cubrir.</p>
+    </div>
+
+    <div class="faq">
+      <p><b>¿Cuál técnica da más densidad y mejor línea frontal?</b></p>
+      <p>Aquí hay que separar dos cosas que se confunden mucho:</p>
+      <p><b>Densidad en áreas amplias.</b> Cuando hay que cubrir mucho territorio —una calvicie avanzada que necesita 3.000 folículos o más— la <b>FUE</b> suele rendir más por sesión. Permite trasplantar muchas unidades en una sola jornada con un trauma mínimo, especialmente en su versión Zafiro.</p>
+      <p><b>Detalle fino y dirección natural.</b> Para la <b>línea frontal</b>, la barba y las cejas —donde un grado de inclinación mal puesto se nota a metros— la <b>DHI</b> brilla. El control milimétrico del Choi Pen sobre el ángulo y la dirección hace que el pelo "salga" de forma natural, imitando cómo crecía originalmente.</p>
+      <p>Por eso muchos casos reales no son "FUE o DHI", sino una estrategia combinada: cobertura con una, detalle de primera línea con la otra. Tu médico decide el mix.</p>
+    </div>
+
+    <div class="note"><b>Un criterio técnico que conviene conocer:</b> la cirugía capilar es una "ilusión óptica matemática". Lo que se ve como densidad depende del <b>Valor de Cobertura</b> = calibre del pelo (su grosor en micras) × cuántos pelos trae cada unidad folicular. Es decir: un buen plan puede lograr más impacto visual con menos folículos. La sigla de la técnica importa menos que esta planeación.</p>
+
+    <div class="ctacard"><div class="tx"><b>¿FUE o DHI para tu caso? Mídelo, no lo adivines</b><span>Un médico revisa tu zona donante y tu objetivo y te dice cuál técnica te conviene de verdad.</span></div><a class="btn2" href="https://wa.me/573124565014?text=Hola%2C%20vengo%20de%20una%20gu%C3%ADa%20de%20Innovart%20y%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratis." target="_blank" rel="noopener">Agenda tu valoración gratis</a></div>
+  </section>
+
+  <section>
+    <span class="kicker">Cara a cara</span>
+    <h2>FUE, FUE Zafiro y DHI: la tabla que aclara todo</h2>
+    <p>Esta es la comparación honesta. Ninguna columna es "la ganadora": cada una gana en un escenario distinto.</p>
+
+    <table>
+      <thead>
+        <tr><th>Criterio</th><th>FUE Zafiro</th><th>DHI (Choi Pen)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><b>Cómo trabaja</b></td><td>Extrae y luego implanta en dos fases; incisiones con cuchilla de zafiro</td><td>Incisión e implante simultáneos con el lápiz Choi</td></tr>
+        <tr><td><b>Mejor para</b></td><td>Áreas amplias, alopecia avanzada, 3.000+ folículos en una sesión</td><td>Líneas frontales, barba, cejas, detalle fino</td></tr>
+        <tr><td><b>¿Rasurar?</b></td><td>Generalmente zona amplia (existen abordajes sin rapar total)</td><td>Permite tratar zonas puntuales sin rapar toda la cabeza</td></tr>
+        <tr><td><b>Control de ángulo y dirección</b></td><td>Muy bueno</td><td>Máximo: control milimétrico por folículo</td></tr>
+        <tr><td><b>Recuperación reportada</b></td><td>7-10 días</td><td>5-7 días</td></tr>
+        <tr><td><b>Cicatriz</b></td><td>Microcicatrices puntiformes (no lineal)</td><td>Microcicatrices puntiformes (no lineal)</td></tr>
+        <tr><td><b>Precio</b></td><td>Tarifa base</td><td>Prima aprox. +18% por instrumental y tiempo</td></tr>
+      </tbody>
+    </table>
+
+    <div class="faq">
+      <p><b>¿Qué es la FUE Zafiro y en qué se diferencia?</b></p>
+      <p>La FUE Zafiro es una evolución de la FUE clásica. En lugar de hacer las incisiones de la zona receptora con cuchillas de acero, se usan <b>cuchillas de cristal de zafiro</b>. Al ser más finas y de borde más limpio, generan incisiones más pequeñas, menos trauma en el tejido y permiten ubicar los folículos más juntos, lo que favorece la densidad final. La recuperación típica es de 7 a 10 días.</p>
+    </div>
+
+    <div class="faq">
+      <p><b>¿Cuál técnica deja menos cicatriz y se recupera más rápido?</b></p>
+      <p>Buenas noticias: <b>ambas son mínimamente invasivas y dejan microcicatrices puntiformes</b>, prácticamente imperceptibles, no la cicatriz lineal que dejaba la antigua técnica FUT (la de la "tira"). En cuanto a tiempos, la DHI reporta una recuperación algo más ágil (5-7 días) y la FUE Zafiro de 7 a 10 días. En la práctica, ambas permiten una recuperación inicial cómoda; en Innovart muchos pacientes pueden viajar al tercer día con los cuidados indicados.</p>
+    </div>
+
+    <div class="faq">
+      <p><b>¿Por qué la DHI cuesta más que la FUE?</b></p>
+      <p>La prima de precio de la DHI (en Innovart, alrededor de un 18% adicional) no es marketing: responde a dos costos reales. Primero, el <b>instrumental Choi</b>, que es desechable y de mayor costo por su precisión. Segundo, el <b>tiempo de ejecución</b>: implantar uno a uno con control total de ángulo es más meticuloso y demanda más horas de quirófano del equipo médico. Pagas por precisión y por detalle, no por una etiqueta.</p>
+      <p>Por eso, si tu caso es de cobertura amplia, forzar una DHI completa puede significar pagar de más sin necesidad. Y si tu prioridad es una primera línea impecable, la inversión adicional puede valer cada peso. Otra vez: depende del caso.</p>
+    </div>
+
+    <div class="faq">
+      <p><b>¿Sirve la DHI para barba y cejas?</b></p>
+      <p>Sí, y de hecho es uno de sus terrenos favoritos. La barba y las cejas exigen una dirección de crecimiento muy específica —los pelos de la ceja, por ejemplo, cambian de ángulo a lo largo del arco—. El control milimétrico del Choi Pen hace que la DHI sea especialmente buena para estos trabajos de detalle, donde un ángulo natural lo es todo.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="kicker">Lo que de verdad decide</span>
+    <h2>¿Cuál técnica es mejor para mí?</h2>
+    <p>Aquí está el punto que cambia tu forma de elegir. La técnica no es el factor número uno de un buen resultado. Lo es el <b>diseño</b>. Puedes tener la mejor herramienta del mundo y un mal diseño te dará un resultado artificial; un diseño excelente con la técnica correcta para tu caso te dará un resultado que envejece bien y se ve tuyo.</p>
+    <p>El criterio de nuestro equipo médico y la cirugía plástica coinciden en lo que define un resultado natural:</p>
+    <ol>
+      <li><b>Línea frontal atemporal:</b> un solo pelo en la primera línea (no mechones), con irregularidades naturales. Una línea recta y agresiva delata el implante y envejece mal.</li>
+      <li><b>Densidad progresiva:</b> menos densa adelante, más densa atrás, imitando cómo nace el cabello real.</li>
+      <li><b>Prioridad al marco facial:</b> restaurar el tercio anterior antes que la coronilla, que consume demasiados folículos para poco impacto visual.</li>
+      <li><b>Respeto a la zona donante:</b> es un recurso limitado (alcanza para 1 a 3 cirugías en la vida). No se desperdicia.</li>
+    </ol>
+    <p>Por eso la pregunta correcta no es "¿FUE o DHI?", sino "¿qué combinación de técnica y diseño le conviene a MI zona donante y a MI objetivo?". Esa respuesta no sale de un video ni de un foro. Sale de una valoración con un médico que evalúe tu caso en concreto.</p>
+
+    <h3>Cómo decidimos contigo en la valoración</h3>
+    <ol class="steps">
+      <li>Evaluamos tu zona donante: densidad, calibre del pelo y cuántos folículos disponibles tienes realmente.</li>
+      <li>Medimos el grado de alopecia y el área a cubrir (escala Hamilton-Norwood / Ludwig).</li>
+      <li>Definimos tu objetivo: ¿cobertura amplia, primera línea, barba, cejas, o una combinación?</li>
+      <li>Diseñamos la línea frontal y la distribución de densidad según reglas de cirugía plástica.</li>
+      <li>Recomendamos la técnica —FUE Zafiro, DHI o una estrategia mixta— que mejor sirve a tu plan, no a un molde.</li>
+    </ol>
+
+    <div class="ctacard"><div class="tx"><b>El diseño decide tu resultado. Empieza por verlo en tu caso</b><span>Diseñamos tu línea frontal y tu densidad en una valoración gratuita, presencial o virtual.</span></div><a class="btn2" href="https://wa.me/573124565014?text=Hola%2C%20vengo%20de%20una%20gu%C3%ADa%20de%20Innovart%20y%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratis." target="_blank" rel="noopener">Agenda tu valoración gratis</a></div>
+  </section>
+
+  <section>
+    <span class="kicker">Sin humo</span>
+    <h2>Tres mitos que conviene derribar</h2>
+
+    <div class="myth">
+      <p><b>Mito: "La DHI siempre es mejor que la FUE."</b></p>
+      <p>Realidad: cada una destaca en escenarios distintos. En grandes superficies que necesitan miles de folículos, la FUE suele rendir más por sesión. La DHI brilla en detalle fino. Quien te vende una sola técnica como milagro para todos los casos, te está vendiendo, no asesorando.</p>
+    </div>
+
+    <div class="myth">
+      <p><b>Mito: "Solo importa elegir la técnica de moda."</b></p>
+      <p>Realidad: el <b>diseño</b>, el <b>médico</b> que opera y la calidad de tu <b>zona donante</b> pesan más que la sigla. Una técnica de moda mal ejecutada se ve peor que una técnica "clásica" en manos expertas y con buen diseño.</p>
+    </div>
+
+    <div class="myth">
+      <p><b>Mito: "Con FUE siempre me rapan toda la cabeza."</b></p>
+      <p>Realidad: existen abordajes que no requieren rapar por completo, y la FUE Zafiro minimiza el trauma con incisiones más finas. La extensión a rasurar depende del número de folículos y del área, no de la sigla en sí. Se define en tu valoración.</p>
+    </div>
+
+    <div class="ctacard"><div class="tx"><b>Cambia los foros por una opinión médica sobre tu caso</b><span>Resuelve tus dudas sobre rapado, densidad y técnica con un especialista, sin compromiso.</span></div><a class="btn2" href="https://wa.me/573124565014?text=Hola%2C%20vengo%20de%20una%20gu%C3%ADa%20de%20Innovart%20y%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratis." target="_blank" rel="noopener">Agenda tu valoración gratis</a></div>
+  </section>
+
+  <section>
+    <span class="kicker">Por qué confiarnos tu caso</span>
+    <h2>El asesor honesto, no el vendedor de una sola técnica</h2>
+    <p>Hay clínicas que solo dominan una técnica y, casualmente, esa técnica resulta ser "la mejor para todos". Nosotros preferimos otro camino: <b>dominar FUE, FUE Zafiro y DHI</b> para poder recomendarte la que de verdad encaja con tu caso. Cuando dominas las tres, no tienes que forzar ninguna.</p>
+    <div class="card">
+      <ul>
+        <li><b>Más de 6.000 pacientes operados</b> y un equipo médico con más de 10 años de experiencia, certificado en técnica FUE y DHI.</li>
+        <li><b>Protocolos importados de Turquía, España y China</b>, adaptados a cada caso.</li>
+        <li><b>Diseño guiado por reglas de cirugía plástica</b> para una línea frontal atemporal (criterio médico de Innovart).</li>
+        <li><b>24 controles médicos gratuitos</b> durante el primer año para acompañar tu evolución.</li>
+        <li><b>Capacidad de hasta 6 cirugías diarias solo en Bogotá</b>, con sedes en cinco ciudades.</li>
+        <li><b>Dr. Fabián Carreño, Director Médico</b>, al frente del equipo clínico.</li>
+        <li><b>Financiación hasta el 90%</b>, con aprobación en 5 minutos y plazos de hasta 12 meses.</li>
+      </ul>
+    </div>
+    <div class="note"><b>Una nota sobre expectativas honestas:</b> los primeros resultados suelen verse hacia los 3 meses y el resultado definitivo entre los 12 y 18 meses. El <i>shock loss</i> (una caída temporal del cabello implantado en las primeras semanas) es completamente normal y forma parte del proceso. Te lo decimos de frente porque preferimos un paciente informado a uno sorprendido.</p>
+  </section>
+
+  <section>
+    <div class="cta">
+      <h3>Antes de elegir técnica, descubre cuál encaja con tu caso</h3>
+      <p>No te conviene decidir entre FUE y DHI mirando una pantalla. Tu zona donante y tu objetivo son únicos. En una valoración gratuita de 30 a 45 minutos —presencial o virtual— un médico evalúa tu caso y te dice, con honestidad, qué técnica y qué diseño te convienen. Sin compromiso de comprar.</p>
+      <div class="row"><a class="btn2 btn-wa" href="https://wa.me/573124565014?text=Hola%2C%20vengo%20de%20una%20gu%C3%ADa%20de%20Innovart%20y%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratis." target="_blank" rel="noopener">💬 Agenda tu valoración gratis</a><a class="btn2 btn-web" href="https://www.innovartmedical.com/?utm_source=ebook&utm_medium=guia&utm_campaign=reimpacto&utm_content=e02" target="_blank" rel="noopener">🌐 Conoce Innovart</a></div>
+    </div>
+    <p style="text-align:center;color:var(--muted);font-size:15px">Cada mes que pospones la decisión, la alopecia avanza un poco más y la planeación se vuelve más exigente. Resolver tus dudas hoy no te cuesta nada y te ahorra elegir a ciegas.</p>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <p><b>Innovart Medical IPS</b> — Clínica de implante capilar con técnica FUE, FUE Zafiro y DHI.<br>
+    Sedes: <b>Bogotá · Medellín · Barranquilla · Bucaramanga · Ciudad de Panamá</b>.<br>
+    WhatsApp: <b>+57 312 456 5014</b> · <a href="https://wa.me/573124565014" style="color:#9fe3e8">wa.me/573124565014</a></p>
+    <p>Valoración gratuita de 30-45 minutos, presencial o virtual. Dr. Fabián Carreño, Director Médico.</p>
+    <p class="footweb">Conoce más en <a href="https://www.innovartmedical.com/?utm_source=ebook&utm_medium=guia&utm_campaign=reimpacto&utm_content=e02" target="_blank" rel="noopener">innovartmedical.com</a> · WhatsApp: +57 312 456 5014</p>
+    <p class="disc">Los resultados pueden variar. Consulta médica requerida. Innovart Medical IPS - registro sanitario vigente.</p>
+  </div>
+</footer>
+
+</body>
+</html>
