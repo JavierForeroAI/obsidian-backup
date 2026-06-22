@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan 4 Horas — Innovart · Jun 21, 2026</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --surface2: #21262d;
+    --border: #30363d;
+    --gold: #f0c040;
+    --gold-dim: #b08020;
+    --text: #e6edf3;
+    --text-dim: #8b949e;
+    --green: #3fb950;
+    --green-bg: #0f2d1a;
+    --red: #f85149;
+    --red-bg: #2d1010;
+    --yellow: #e3b341;
+    --yellow-bg: #2d2100;
+    --blue: #58a6ff;
+    --blue-bg: #0d2040;
+    --purple: #bc8cff;
+    --orange: #ffa657;
+    --navy: #1c2b3a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #0d1a2e 0%, #1a2840 50%, #0d1117 100%);
+    border-bottom: 2px solid var(--gold);
+    padding: 24px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-left h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: -0.5px;
+  }
+  .header-left p {
+    color: var(--text-dim);
+    font-size: 13px;
+    margin-top: 2px;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .timer-box {
+    background: var(--surface);
+    border: 1px solid var(--gold-dim);
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .timer-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1px; }
+  .timer-display { font-size: 28px; font-weight: 700; color: var(--gold); font-variant-numeric: tabular-nums; }
+  .progress-global {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 20px;
+    min-width: 200px;
+  }
+  .progress-label { font-size: 11px; color: var(--text-dim); display: flex; justify-content: space-between; }
+  .progress-bar-outer { background: var(--surface2); border-radius: 4px; height: 8px; margin-top: 6px; }
+  .progress-bar-inner { background: var(--gold); border-radius: 4px; height: 8px; transition: width 0.3s ease; }
+
+  /* LAYOUT */
+  .main { max-width: 1200px; margin: 0 auto; padding: 30px 40px; }
+
+  /* SUMMARY ROW */
+  .summary-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+  }
+  .stat-card .stat-num { font-size: 32px; font-weight: 700; }
+  .stat-card .stat-label { font-size: 12px; color: var(--text-dim); margin-top: 4px; }
+  .stat-card.red .stat-num { color: var(--red); }
+  .stat-card.yellow .stat-num { color: var(--yellow); }
+  .stat-card.green .stat-num { color: var(--green); }
+  .stat-card.gold .stat-num { color: var(--gold); }
+
+  /* TIMELINE */
+  .timeline {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .timeline-block {
+    flex: 1;
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    border-radius: 0;
+  }
+  .timeline-block:first-child { border-radius: 10px 0 0 10px; }
+  .timeline-block:last-child { border-radius: 0 10px 10px 0; }
+  .timeline-block:hover { opacity: 0.85; }
+  .timeline-block .tb-time { font-size: 11px; opacity: 0.8; }
+  .timeline-block .tb-name { font-size: 13px; font-weight: 600; margin-top: 2px; }
+  .timeline-block .tb-min { font-size: 11px; opacity: 0.7; }
+  .b1 { background: #1a3a5c; border-left: 3px solid #58a6ff; }
+  .b2 { background: #3a1a1a; border-left: 3px solid #f85149; }
+  .b3 { background: #2a1a3a; border-left: 3px solid #bc8cff; }
+  .b4 { background: #1a3a1a; border-left: 3px solid #3fb950; }
+  .b5 { background: #3a2a1a; border-left: 3px solid #ffa657; }
+  .b6 { background: #1a2a3a; border-left: 3px solid #f0c040; }
+
+  /* BLOQUE */
+  .bloque {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .bloque-header {
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .bloque-header:hover { background: var(--surface2); }
+  .bloque-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .bloque-meta { flex: 1; }
+  .bloque-title { font-size: 16px; font-weight: 700; }
+  .bloque-sub { font-size: 12px; color: var(--text-dim); margin-top: 2px; }
+  .bloque-badges { display: flex; gap: 8px; align-items: center; }
+  .badge {
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .badge-p1 { background: #3a1010; color: var(--red); border: 1px solid var(--red); }
+  .badge-p2 { background: #2d2100; color: var(--yellow); border: 1px solid var(--yellow); }
+  .badge-p3 { background: #0d2040; color: var(--blue); border: 1px solid var(--blue); }
+  .badge-time { background: var(--surface2); color: var(--text-dim); border: 1px solid var(--border); }
+  .bloque-progress { font-size: 12px; color: var(--text-dim); }
+  .chevron { color: var(--text-dim); font-size: 16px; transition: transform 0.2s; }
+  .chevron.open { transform: rotate(90deg); }
+
+  /* BLOQUE BODY */
+  .bloque-body { display: none; border-top: 1px solid var(--border); }
+  .bloque-body.open { display: block; }
+
+  /* CONTEXTO */
+  .contexto {
+    margin: 16px 20px;
+    background: var(--navy);
+    border: 1px solid var(--blue);
+    border-left: 4px solid var(--blue);
+    border-radius: 8px;
+    padding: 12px 16px;
+  }
+  .contexto h4 { color: var(--blue); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+  .contexto p { color: var(--text-dim); font-size: 13px; line-height: 1.6; }
+  .contexto .data { color: var(--text); font-weight: 600; }
+
+  /* ALERTA */
+  .alerta {
+    margin: 0 20px 16px;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+  .alerta.red { background: var(--red-bg); border: 1px solid var(--red); color: #ffaaaa; }
+  .alerta.yellow { background: var(--yellow-bg); border: 1px solid var(--yellow); color: #ffe08a; }
+  .alerta.green { background: var(--green-bg); border: 1px solid var(--green); color: #aaffaa; }
+  .alerta strong { font-weight: 700; }
+
+  /* TAREAS */
+  .tareas { padding: 0 20px 20px; }
+  .tarea {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .tarea.done { border-color: var(--green); background: var(--green-bg); }
+  .tarea.done .tarea-title { color: var(--green); text-decoration: line-through; }
+  .tarea-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    cursor: pointer;
+  }
+  .tarea-check {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.2s;
+    font-size: 13px;
+  }
+  .tarea.done .tarea-check { border-color: var(--green); background: var(--green); color: #000; }
+  .tarea-title { font-weight: 600; font-size: 14px; flex: 1; }
+  .tarea-tag {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--surface2);
+    color: var(--text-dim);
+    flex-shrink: 0;
+  }
+  .tarea-tag.meta { background: #1a1a3a; color: #9090ff; }
+  .tarea-tag.google { background: #1a2a1a; color: #90cc90; }
+  .tarea-tag.ghl { background: #2a1a1a; color: #cc9090; }
+  .tarea-tag.javier { background: #2a2a1a; color: var(--gold); }
+
+  .tarea-detail { padding: 0 16px 14px 48px; display: none; }
+  .tarea.expanded .tarea-detail { display: block; }
+
+  /* STEPS */
+  .steps { list-style: none; }
+  .steps li {
+    position: relative;
+    padding: 6px 0 6px 28px;
+    font-size: 13px;
+    color: var(--text-dim);
+    border-left: 2px solid var(--border);
+    margin-left: 8px;
+  }
+  .steps li::before {
+    content: attr(data-n);
+    position: absolute;
+    left: -10px;
+    top: 6px;
+    width: 18px;
+    height: 18px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-dim);
+  }
+  .steps li:last-child { border-left-color: transparent; }
+
+  /* TERMINAL */
+  .terminal {
+    background: #010409;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px 0;
+  }
+  .terminal-head {
+    background: #161b22;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #30363d;
+  }
+  .terminal-dots { display: flex; gap: 6px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; }
+  .dot.r { background: #ff5f56; }
+  .dot.y { background: #ffbd2e; }
+  .dot.g { background: #27c93f; }
+  .terminal-label { font-size: 11px; color: #8b949e; }
+  .terminal-copy {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text-dim);
+    font-size: 11px;
+    padding: 3px 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .terminal-copy:hover { background: var(--gold); color: #000; border-color: var(--gold); }
+  .terminal-body { padding: 12px 16px; font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace; font-size: 13px; line-height: 1.8; }
+  .term-line { display: flex; gap: 8px; }
+  .term-prompt { color: #3fb950; flex-shrink: 0; }
+  .term-cmd { color: #e6edf3; }
+  .term-comment { color: #6e7681; }
+  .term-output { color: #8b949e; padding-left: 16px; }
+
+  /* LINK */
+  .open-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+    margin: 4px 4px 0 0;
+  }
+  .open-link.primary { background: var(--gold); color: #000; }
+  .open-link.primary:hover { background: #ffdd66; }
+  .open-link.secondary { background: var(--surface2); color: var(--text); border: 1px solid var(--border); }
+  .open-link.secondary:hover { background: var(--navy); border-color: var(--blue); }
+  .open-link.danger { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+  /* DIVIDER */
+  .divider { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-dim);
+    margin-bottom: 8px;
+    margin-top: 12px;
+  }
+
+  /* TABLA DATOS */
+  .data-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 10px 0; }
+  .data-table th { background: var(--surface2); color: var(--text-dim); padding: 8px 12px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .data-table td { padding: 8px 12px; border-bottom: 1px solid var(--border); }
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table tr:hover td { background: var(--surface2); }
+  .pill { padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+  .pill.red { background: var(--red-bg); color: var(--red); }
+  .pill.yellow { background: var(--yellow-bg); color: var(--yellow); }
+  .pill.green { background: var(--green-bg); color: var(--green); }
+  .pill.gray { background: var(--surface2); color: var(--text-dim); }
+
+  /* FOOTER */
+  .footer { text-align: center; padding: 30px; color: var(--text-dim); font-size: 12px; }
+  .footer strong { color: var(--gold); }
+
+  /* ANIMACIONES */
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+  .live { animation: pulse 2s infinite; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-left">
+    <h1>🏥 Plan de Trabajo — Innovart Medical IPS</h1>
+    <p>Sesión de 4 horas · Meta + Google Ads + CRM Integration · Jun 21, 2026</p>
+  </div>
+  <div class="header-right">
+    <div class="timer-box">
+      <div class="timer-label">Tiempo restante</div>
+      <div class="timer-display" id="timer">4:00:00</div>
+    </div>
+    <div class="progress-global">
+      <div class="progress-label">
+        <span>Progreso general</span>
+        <span id="prog-pct">0%</span>
+      </div>
+      <div class="progress-bar-outer">
+        <div class="progress-bar-inner" id="prog-bar" style="width:0%"></div>
+      </div>
+      <div class="progress-label" style="margin-top:4px;">
+        <span id="prog-done">0 completadas</span>
+        <span id="prog-total">0 tareas</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+
+  <!-- STATS -->
+  <div class="summary-row">
+    <div class="stat-card red">
+      <div class="stat-num">🔴 4</div>
+      <div class="stat-label">Cuentas en Grace Period</div>
+    </div>
+    <div class="stat-card red">
+      <div class="stat-num">1,345</div>
+      <div class="stat-label">Eventos fantasma SubmitApplication</div>
+    </div>
+    <div class="stat-card yellow">
+      <div class="stat-num">5.0</div>
+      <div class="stat-label">EMQ Lead actual (meta: ≥6)</div>
+    </div>
+    <div class="stat-card gold">
+      <div class="stat-num">~$850</div>
+      <div class="stat-label">USD gasto Google Ads / 14 días</div>
+    </div>
+  </div>
+
+  <!-- TIMELINE -->
+  <div class="timeline">
+    <div class="timeline-block b1" onclick="scrollToBloque('b1')">
+      <div class="tb-time">0:00 – 0:45</div>
+      <div class="tb-name">Meta CAPI</div>
+      <div class="tb-min">45 min</div>
+    </div>
+    <div class="timeline-block b2" onclick="scrollToBloque('b2')">
+      <div class="tb-time">0:45 – 1:05</div>
+      <div class="tb-name">Facturación</div>
+      <div class="tb-min">20 min</div>
+    </div>
+    <div class="timeline-block b3" onclick="scrollToBloque('b3')">
+      <div class="tb-time">1:05 – 1:50</div>
+      <div class="tb-name">Google Ads</div>
+      <div class="tb-min">45 min</div>
+    </div>
+    <div class="timeline-block b4" onclick="scrollToBloque('b4')">
+      <div class="tb-time">1:50 – 2:35</div>
+      <div class="tb-name">EMQ / Email Bot</div>
+      <div class="tb-min">45 min</div>
+    </div>
+    <div class="timeline-block b5" onclick="scrollToBloque('b5')">
+      <div class="tb-time">2:35 – 3:05</div>
+      <div class="tb-name">Audiencias</div>
+      <div class="tb-min">30 min</div>
+    </div>
+    <div class="timeline-block b6" onclick="scrollToBloque('b6')">
+      <div class="tb-time">3:05 – 4:00</div>
+      <div class="tb-name">Revisión + Docs</div>
+      <div class="tb-min">55 min</div>
+    </div>
+  </div>
+
+  <!-- ===== BLOQUE 1: META CAPI ===== -->
+  <div class="bloque" id="b1">
+    <div class="bloque-header" onclick="toggleBloque('b1')">
+      <div class="bloque-icon b1" style="background:#1a3a5c;">📡</div>
+      <div class="bloque-meta">
+        <div class="bloque-title">BLOQUE 1 — Meta CAPI: Limpiar y completar señales</div>
+        <div class="bloque-sub">CAPI Lead filtrado · Schedule BGTA · SubmitApplication fantasma · Purchase verificado</div>
+      </div>
+      <div class="bloque-badges">
+        <span class="badge badge-p1">P1</span>
+        <span class="badge badge-time">45 min</span>
+        <span class="bloque-progress" id="prog-b1">0/4</span>
+      </div>
+      <span class="chevron open" id="chev-b1">▶</span>
+    </div>
+    <div class="bloque-body open" id="body-b1">
+
+      <div class="contexto">
+        <h4>📊 Estado actual verificado en vivo</h4>
+        <p>
+          <span class="data">Píxel 1625645205284016</span> (últimos 10 días): Lead <span class="data">180</span> · Schedule <span class="data">8</span> (solo MDE) · Purchase <span class="data">7</span> · SubmitApplication <span class="data">1,345</span> · HealthCheck <span class="data">9</span><br><br>
+          <span class="data">Workflow CAPI Lead</span>: trigger <code>contact_created</code> SIN filtro de fuente → dispara para TODO contacto (Meta, Google, manual, CSV).<br>
+          <span class="data">Workflow Purchase</span>: trigger "Ganado Y cancelado" en pipeline Ventas → correcto. URL CAPI activa.<br>
+          <span class="data">Schedule BGTA</span>: NO EXISTE ningún workflow. Solo Medellín tiene Schedule.
+        </p>
+      </div>
+
+      <div class="alerta red">
+        <strong>🚨 ALERTA:</strong> SubmitApplication 1,345 vs Lead 180 = ratio 7.5:1 imposible. Este evento inflado puede hacer que Meta crea que optimiza bien cuando en realidad mide clic en botones, no leads reales. <strong>Buscar qué campaña usa este evento como conversión y desactivarlo.</strong>
+      </div>
+
+      <div class="tareas">
+
+        <!-- TAREA 1.1 -->
+        <div class="tarea" id="t-1-1">
+          <div class="tarea-head" onclick="toggleTarea('1-1')">
+            <div class="tarea-check" id="check-1-1">○</div>
+            <div class="tarea-title">1.1 — Agregar filtro de fuente al CAPI Lead (solo Meta traffic)</div>
+            <span class="tarea-tag meta">Meta CAPI</span>
+            <span class="tarea-tag ghl">GHL</span>
+          </div>
+          <div class="tarea-detail" id="detail-1-1">
+            <div class="section-title">Por qué es crítico</div>
+            <p style="color:var(--text-dim); font-size:13px; margin-bottom:12px;">
+              El workflow <code>fd50246d</code> dispara en <em>todo</em> contacto nuevo sin importar la fuente. Contactos de Google Ads, orgánico, WhatsApp manual, y CSV import también envían el evento Lead a Meta. Esto contamina el pool de aprendizaje del algoritmo con personas que Meta no captó.
+            </p>
+            <div class="section-title">Solución — En Claude Code terminal</div>
+            <div class="terminal">
+              <div class="terminal-head">
+                <div class="terminal-dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+                <div class="terminal-label">Claude Code — terminal interactivo</div>
+                <button class="terminal-copy" onclick="copyCmd(this, 'cmd-1-1')">Copiar</button>
+              </div>
+              <div class="terminal-body" id="cmd-1-1">
+                <div class="term-line"><span class="term-prompt">$</span><span class="term-cmd">claude</span></div>
+                <div class="term-line" style="margin-top:6px;"><span class="term-comment"># Una vez dentro de Claude Code, escribe:</span></div>
+                <div class="term-line"><span class="term-prompt">></span><span class="term-cmd">Necesito modificar el workflow CAPI Lead en GHL Bogotá (id: fd50246d-3b6b-40ba-9fb5-97f7d9f5a66e). Agregar condición al trigger contact_created para que solo dispare cuando el contacto viene de fuente Meta (fbclid presente, o attribution source = facebook/instagram/meta). Verificar primero cómo llegan los contactos de Meta al CRM para saber qué campo filtrar.</span></div>
+              </div>
+            </div>
+            <div class="section-title" style="margin-top:10px;">Pasos manuales si prefieres hacerlo en GHL</div>
+            <ol class="steps">
+              <li data-n="1">Ir a GHL Bogotá → Automation → Workflow <code>CAPI Lead WhatsApp/Ads Bogota (NO TOCAR)</code></li>
+              <li data-n="2">Click en el trigger "Contacto nuevo (cualquier fuente)"</li>
+              <li data-n="3">Agregar filtro: Fuente del contacto → contiene → <code>facebook</code> OR <code>instagram</code></li>
+              <li data-n="4">Guardar y publicar</li>
+              <li data-n="5">Verificar en Meta Event Manager que Lead sigue llegando</li>
+            </ol>
+            <div style="margin-top:10px;">
+              <a class="open-link secondary" href="https://app.gohighlevel.com/v2/location/DgjjDzD9nkCKv8AGF1Qb/automation/fd50246d-3b6b-40ba-9fb5-97f7d9f5a66e" target="_blank">🔗 Abrir workflow en GHL</a>
+              <a class="open-link secondary" href="https://business.facebook.com/events_manager" target="_blank">🔗 Meta Event Manager</a>
+            </div>
+            <hr class="divider">
+            <button class="open-link primary" onclick="completar('1-1')">✓ Marcar completado</button>
+          </div>
+        </div>
+
+        <!-- TAREA 1.2 -->
+        <div class="tarea" id="t-1-2">
+          <div class="tarea-head" onclick="toggleTarea('1-2')">
+            <div class="tarea-check" id="check-1-2">○</div>
+            <div class="tarea-title">1.2 — Crear workflow CAPI Schedule en BGTA (clonar Medellín)</div>
+            <span class="tarea-tag meta">Meta CAPI</span>
+            <span class="tarea-tag ghl">GHL</span>
+          </div>
+          <div class="tarea-detail" id="detail-1-2">
+            <div class="section-title">Por qué es crítico</div>
+            <p style="color:var(--text-dim); font-size:13px; margin-bottom:12px;">
+              Bogotá es la sede que más gasta en Meta pero Meta NUNCA ve quién agenda valoración en Bogotá. Solo Medellín tiene el evento Schedule activo. Sin Schedule en BGTA, Meta optimiza por Lead (entrada al funnel) en lugar de Schedule (intención real de asistir).
+            </p>
+            <div class="section-title">Datos de configuración</div>
+            <table class="data-table" style="margin-bottom:12px;">
+              <tr><th>Campo</th><th>Valor</th></tr>
+              <tr><td>Workflow trigger</td><td>Pipeline stage changed → "Cte Agenda Valoracion" (stage <code>3b22fe38</code>) en pipeline Ventas</td></tr>
+              <tr><td>Webhook URL</td><td><code>https://innovart-capi-webhook-no-tocar.innovartmedicalips.workers.dev/?k=7743365e334edde60edadf38dec1ad21&event=Schedule</code></td></tr>
+              <tr><td>Método</td><td>POST</td></tr>
+              <tr><td>Pipeline ID</td><td><code>RpC0O3mYkxyKV1jvMqm6</code> (Ventas)</td></tr>
+              <tr><td>Stage ID</td><td><code>3b22fe38-9cdb-48e9-b92c-cb688fdc0c2d</code> (Cte Agenda Valoracion)</td></tr>
+            </table>
+            <div class="terminal">
+              <div class="terminal-head">
+                <div class="terminal-dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+                <div class="terminal-label">Claude Code</div>
+                <button class="terminal-copy" onclick="copyCmd(this, 'cmd-1-2')">Copiar</button>
+              </div>
+              <div class="terminal-body" id="cmd-1-2">
+                <div class="term-line"><span class="term-prompt">></span><span class="term-cmd">Crear en GHL Bogotá (locationId: DgjjDzD9nkCKv8AGF1Qb) un workflow nuevo llamado "CAPI Schedule BGTA (NO TOCAR)" que dispare cuando una oportunidad pase a la etapa "Cte Agenda Valoracion" (stageId: 3b22fe38-9cdb-48e9-b92c-cb688fdc0c2d) en el pipeline Ventas (pipelineId: RpC0O3mYkxyKV1jvMqm6). La acción debe ser un webhook POST a: https://innovart-capi-webhook-no-tocar.innovartmedicalips.workers.dev/?k=7743365e334edde60edadf38dec1ad21&event=Schedule — Publicar el workflow al final.</span></div>
+              </div>
+            </div>
+            <div style="margin-top:10px;">
+              <a class="open-link secondary" href="https://app.gohighlevel.com/v2/location/DgjjDzD9nkCKv8AGF1Qb/automation" target="_blank">🔗 GHL Automation BGTA</a>
+            </div>
+            <hr class="divider">
+            <button class="open-link primary" onclick="completar('1-2')">✓ Marcar completado</button>
+          </div>
+        </div>
+
+        <!-- TAREA 1.3 -->
+        <div class="tarea" id="t-1-3">
+          <div class="tarea-head" onclick="toggleTarea('1-3')">
+            <div class="tarea-check" id="check-1-3">○</div>
+            <div class="tarea-title">1.3 — Investigar y suprimir SubmitApplication fantasma (1,345 eventos)</div>
+            <span class="tarea-tag meta">Meta CAPI</span>
+          </div>
+          <div class="tarea-detail" id="detail-1-3">
+            <div class="section-title">Diagnóstico</div>
+            <div class="alerta yellow">
+              <strong>Hipótesis principal:</strong> GHL landing pages (home4/home5) tienen el píxel de Meta instalado vía browser y disparan SubmitApplication automáticamente cuando alguien interactúa con el formulario, incluyendo pasos intermedios, clics en campos, y clic en el botón de WhatsApp.
+            </div>
+            <div class="section-title" style="margin-top:10px;">Verificar en Meta Event Manager</div>
+            <ol class="steps">
+              <li data-n="1">Ir a Meta Events Manager → Dataset <code>1625645205284016</code></li>
+              <li data-n="2">Click en "SubmitApplication" → ver detalles del evento</li>
+              <li data-n="3">Revisar: ¿canal? ¿URL de origen? ¿parámetros del evento?</li>
+              <li data-n="4">Si viene de browser (landing pages GHL): agregar condición en GHL para no disparar este evento</li>
+              <li data-n="5">Verificar que NINGUNA campaña esté optimizando por SubmitApplication (Ads Manager → columnas → SubmitApplication)</li>
+            </ol>
+            <div class="terminal">
+              <div class="terminal-head">
+                <div class="terminal-dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+                <div class="terminal-label">Claude Code</div>
+                <button class="terminal-copy" onclick="copyCmd(this, 'cmd-1-3')">Copiar</button>
+              </div>
+              <div class="terminal-body" id="cmd-1-3">
+                <div class="term-line"><span class="term-prompt">></span><span class="term-cmd">Usar la herramienta ads_get_dataset_quality del MCP Meta para el dataset 1625645205284016, filtrando el evento SubmitApplication. Quiero saber: de dónde vienen estos 1,345 eventos (canal server vs browser, URL de origen). También verificar si algún adset en las 6 cuentas Meta usa SubmitApplication como evento de conversión optimizado.</span></div>
+              </div>
+            </div>
+            <div style="margin-top:10px;">
+              <a class="open-link secondary" href="https://business.facebook.com/events_manager2/list/pixel/1625645205284016/test-events" target="_blank">🔗 Meta Event Manager — Dataset</a>
+              <a class="open-link secondary" href="https://adsmanager.facebook.com" target="_blank">🔗 Meta Ads Manager</a>
+            </div>
+            <hr class="divider">
+            <button class="open-link primary" onclick="completar('1-3')">✓ Marcar completado</button>
+          </div>
+        </div>
+
+        <!-- TAREA 1.4 -->
+        <div class="tarea" id="t-1-4">
+          <div class="tarea-head" onclick="toggleTarea('1-4')">
+            <div class="tarea-check" id="check-1-4">○</div>
+            <div class="tarea-title">1.4 — Verificar que Purchase "Ganado Y cancelado" no mezcla cancelados reales</div>
+            <span class="tarea-tag meta">Meta CAPI</span>
+            <span class="tarea-tag ghl">GHL</span>
+          </div>
+          <div class="tarea-detail" id="detail-1-4">
+            <div class="section-title">El problema</div>
+            <p style="color:var(--text-dim); font-size:13px; margin-bottom:12px;">
+              El stage "Ganado Y cancelado" (posición 14 en Ventas) tiene nombre ambiguo. Si los comerciales mueven ahí a pacientes que cancelan cirugías para rescatarlos, cada uno dispara un Purchase falso de COP 8M a Meta. Eso contaminaría las señales de compra con no-compras.
+            </p>
+            <ol class="steps">
+              <li data-n="1">Ir a GHL BGTA → Pipeline Ventas → etapa "Ganado Y cancelado"</li>
+              <li data-n="2">Revisar las opps en esa etapa: ¿son todas cirugías confirmadas o hay cancelaciones?</li>
+              <li data-n="3">Si hay cancelaciones: crear stage separado "Cancelado Pendiente Reagendamiento" y mover las opps</li>
+              <li data-n="4">En ese caso, también renombrar "Ganado Y cancelado" → "Ganado (Cirugía Confirmada)" para mayor claridad</li>
+              <li data-n="5">Los 7 Purchase recibidos en 10 días → revisar si corresponden a cirugías reales</li>
+            </ol>
+            <div style="margin-top:10px;">
+              <a class="open-link secondary" href="https://app.gohighlevel.com/v2/location/DgjjDzD9nkCKv8AGF1Qb/pipelines/RpC0O3mYkxyKV1jvMqm6" target="_blank">🔗 Pipeline Ventas BGTA</a>
+            </div>
+            <hr class="divider">
+            <button class="open-link primary" onclick="completar('1-4')">✓ Marcar completado</button>
+          </div>
+        </div>
+
+      </div><!-- /tareas b1 -->
+    </div>
+  </div>
+
+  <!-- ===== BLOQUE 2: FACTURACIÓN ===== -->
+  <div class="bloque" id="b2">
+    <div class="bloque-header" onclick="toggleBloque('b2')">
+      <div class="bloque-icon" style="background:#3a1a1a;">💳</div>
+      <div class="bloque-meta">
+        <div class="bloque-title">BLOQUE 2 — Facturación: 4 cuentas en Grace Period</div>
+        <div class="bloque-sub">BGTA · PANAMA · MEDELLIN · LANDING DIEGO — riesgo de suspensión activo</div>
+      </div>
+      <div class="bloque-badges">
+        <span class="badge badge-p1">P1 URGENTE</span>
+        <span class="badge badge-time">20 min</span>
+        <span class="bloque-progress" id="prog-b2">0/2</span>
+      </div>
+      <span class="chevron open" id="chev-b2">▶</span>
+    </div>
+    <div class="bloque-body open" id="body-b2">
+
+      <div class="alerta red">
+        <strong>⚠️ RIESGO ACTIVO:</strong> Las 4 cuentas llevan tiempo en status 9 (Grace Period). Meta puede suspenderlas sin previo aviso. Todo el trabajo de CAPI se pierde si las cuentas se cierran. Esto va PRIMERO antes de cualquier optimización.
+      </div>
+
+      <div class="tareas">
+
+        <div class="tarea" id="t-2-1">
+          <div class="tarea-head" onclick="toggleTarea('2-1')">
+            <div class="tarea-check" id="check-2-1">○</div>
+            <div class="tarea-title">2.1 — Verificar y actualizar método de pago en las 4 cuentas</div>
+            <span class="tarea-tag javier">Javier → hace esto</span>
+          </div>
+          <div class="tarea-detail" id="detail-2-1">
+            <table class="data-table">
+              <thead><tr><th>Cuenta</th><th>Moneda</th><th>Estado</th><th>Link directo</th></tr></thead>
+              <tbody>
+                <tr><td>BGTA (Bogotá principal)</td><td>USD</td><td><span class="pill red">Grace Period</span></td><td><a href="https://adsmanager.facebook.com/adsmanager/manage/campaigns?act=1642103999710262" target="_blank" style="color:var(--blue);">Abrir ↗</a></td></tr>
+                <tr><td>PANAMA</td><td>USD</td><td><span class="pill red">Grace Period</span></td><td><a href="https://adsmanager.facebook.com" target="_blank" style="color:var(--blue);">Ads Manager ↗</a></td></tr>
+                <tr><td>MEDELLIN</td><td>COP</td><td><span class="pill red">Grace Period</span></td><td><a href="https://adsmanager.facebook.com" target="_blank" style="color:var(--blue);">Ads Manager ↗</a></td></tr>
+                <tr><td>LANDING DIEGO</td><td>COP</td><td><span class="pill red">Grace Period</span></td><td><a href="https://adsmanager.facebook.com" target="_blank" style="color:var(--blue);">Ads Manager ↗</a></td></tr>
+                <tr><td>QUILLA (Barranquilla)</td><td>USD</td><td><span class="pill green">Activa</span></td><td>—</td></tr>
+                <tr><td>INTERACCION REDES DIEGO</td><td>COP</td><td><span class="pill green">Activa</span></td><td>—</td></tr>
+              </tbody>
+            </table>
+            <div class="section-title">Pasos</div>
+            <ol class="steps">
+              <li data-n="1">Business Manager → Configuración → Cuentas publicitarias</li>
+              <li data-n="2">Para cada cuenta en Grace Period: click → Información de pago</li>
+              <li data-n="3">Verificar que el método de pago esté activo y no expirado</li>
+              <li data-n="4">Si hay deuda pendiente: pagar ahora mismo</li>
+              <li data-n="5">Si el método venció: actualizar tarjeta</li>
+            </ol>
+            <div style="margin-top:10px;">
+              <a class="open-link primary" href="https://business.facebook.com/billing" target="_blank">💳 Ir a Facturación de Meta</a>
+              <a class="open-link secondary" href="https://business.facebook.com/settings/ad-accounts" target="_blank">🔗 Configuración de cuentas</a>
+            </div>
+            <hr class="divider">
+            <button class="open-link primary" onclick="completar('2-1')">✓ Marcar completado</button>
+          </div>
+        </div>
+
+        <div class="tarea" id="t-2-2">
+          <div class="tarea-head" onclick="toggleTarea('2-2')">
+            <div class="tarea-check" id="check-2-2">○</div>
+            <div class="tarea-title">2.2 — Confirmar con Esneider y Diego que las cuentas quedaron activas</div>
+            <span class="tarea-tag javier">Javier → hace esto</span>
+          </div>
+          <div class="tarea-detail" id="detail-2-2">
+            <div class="terminal">
+              <div class="terminal-head">
+                <div class="terminal-dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+                <div class="terminal-label">Mensaje de WhatsApp para el equipo</div>
+                <button class="terminal-copy" onclick="copyCmd(this, 'cmd-2-2')">Copiar mensaje</button>
+              </div>
+              <div class="terminal-body" id="cmd-2-2">
+                <div class="term-line"><span class="term-cmd">🚨 URGENTE — Facturación Meta</span></div>
+                <div class="term-line"><span class="term-output">Las cuentas BGTA, PANAMA, MEDELLIN y LANDING DIEGO están en Grace Period (riesgo de suspensión). Acabo de revisar la facturación. Por favor confirmen mañana temprano que las campañas siguen activas y que no hay alertas en Ads Manager.</span></div>
+                <div class="term-line"><span class="term-output">Sin estas cuentas activas, el CAPI y todo el trabajo de señales se pierde.</span></div>
+              </div>
+            </div>
+            <hr class="divider">
+            <button class="open-link primary" onclick="completar('2-2')">✓ Marcar completado</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== BLOQUE 3: GOOGLE ADS ===== -->
+  <div class="bloque" id="b3">
+    <div class="bloque-header" onclick="toggleBloque('b3')">
+      <div class="bloque-icon" style="background:#2a1a3a;">🔍</div>
+      <div class="bloque-meta">
+        <div class="bloque-title">BLOQUE 3 — Google Ads: Reparar conversiones y conectar al CRM</div>
+        <div class="bloque-sub">PMax optimiza PageViews · Sin server-side · Conversiones e-commerce inútiles · Sin conexión a GHL</div>
+      </div>
+      <div class="bloque-badges">
+        <span class="badge badge-p1">P1</span>
+        <span class="badge badge-time">45 min</span>
+        <span class="bloque-progress" id="prog-b3">0/4</span>
+      </div>
+      <span class="chevron open" id="chev-b3">▶</span>
+    </div>
+    <div class="bloque-body open" id="body-b3">
+
+      <div class="contexto">
+        <h4>📊 Estado real de Google Ads (últimos 14 días)</h4>
+        <p>
+          <span class="data">Account: 9275722919</span> — MCC: <span class="data">2084232674</span> — Tag: <span class="data">AW-16490325890</span><br><br>
+          <strong>Campañas activas:</strong>
+        </p>
+        <table class="data-table" style="margin-top:8px;">
+          <thead><tr><th>Campaña</th><th>Tipo</th><th>Gasto/14d</th><th>Conversiones</th><th>CPConv</th><th>Problema</th></tr></thead>
+          <tbody>
+            <tr><td>PMax Bogotá-Marzo</td><td>PMax</td><td>~$490 USD</td><td>6,213</td><td>$0.08</td><td><span class="pill red">PageViews = goal</span></td></tr>
+            <tr><td>Search MED</td><td>Search</td><td>~$193 USD</td><td>163.9</td><td>$1.18</td><td><span class="pill yellow">Form codeless</span></td></tr>
+            <tr><td>Search PAN</td><td>Search</td><td>~$167 USD</td><td>61</td><td>$2.74</td><td><span class="pill yellow">Form codeless</span></td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:8px;"><span class="data">Conversiones habilitadas:</span> Vista de página (primaria ❌), Solicitar cotización (codeless ⚠️), Whatsapp Boton (clic ⚠️), Form_success, Google Shopping App eventos (nunca disparan ❌), Calls from ads, YouTube/Local.</p>
+      </div>
+
+      <div class="tareas">
+
+        <div class="tarea" id="t-3-1">
+          <div class="tarea-head" onclick="toggleTarea('3-1')">
+            <div class="tarea-check" id="check-3-1">○</div>
+            <div class="tarea-title">3.1 — Cambiar conversión primaria de Google Ads (PageView → Acción de valor)</div>
+            <span class="tarea-tag google">Google Ads</span>
+          </div>
+          <div class="tarea-detail" id="detail-3-1">
+            <div class="alerta red">
+              <strong>Problema crítico:</strong> PMax tiene 6,213 "conversiones" en 14 días porque cuenta cada PageView. Google Smart Bidding aprende a traer gente que hace clic y visita la web — no leads, no agendamientos. Estás pagando por tráfico, no por pacientes.
+            </div>
+            <div class="section-title" style="margin-top:10px;">Opción A — Cambiar goal primario a Form_success (más rápido)</div>
+            <ol class="steps">
+              <li data-n="1">Google Ads → Configuración de conversiones → <code>Form_success</code></li>
+              <li data-n="2">Verificar que se esté disparando (Google Tag Assistant en una landing page con thank-you URL)</li>
+              <li data-n="3">Si se dispara: marcar como "Acción de conversión primaria"</li>
+              <li data-n="4">Marcar "Vista de página" como Secundaria (no incluir en conversiones)</li>
+              <li data-n="5">Esperar 7 días antes de evaluar resultados (Smart Bidding necesita recalibrar)</li>
+            </ol>
+            <div class="section-title">Opción B — Crear conversión de agendamiento vía GHL Webhook (más preciso, semana que viene)</div>
+            <ol class="steps">
+              <li data-n="1">En GHL BGTA: crear workflow que cuando opp pase a "Cte Agenda Valoracion" → envía conversión a Google Ads API</li>
+              <li data-n="2">Requiere configurar Google Ads Enhanced Conversions con email/tel del lead</li>
+              <li data-n="3">Esta opción da atribución real de quién agendó desde qué anuncio de Google</li>
+            </ol>
+            <div class="section-title">Para Esneider/Diego — instrucciones en Google Ads</div>
+            <div class="terminal">
+              <div class="terminal-head">
+                <div class="terminal-dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+                <div class="terminal-label">Instrucciones para el trafficker</div>
+                <button class="terminal-copy" onclick="copyCmd(this, 'cmd-3-1')">Copiar</button>
+              </div>
+              <div class="terminal-body" id="cmd-3-1">
+                <div class="term-line"><span class="term-cmd">Google Ads → Herramientas → Medición → Conversiones</span></div>
+                <div class="term-line"><span class="term-output">1. "Vista de página" → editar → cambiar a "Acción secundaria (sin incluir en conversiones)"</span></div>
+                <div class="term-line"><span class="term-output">2. "Form_success" → editar → cambiar a "Acción de conversión primaria"</span></div>
+                <div class="term-line"><span class="term-output">3. Guardar — el sistema tardará 24-48h en recalibrar</span></div>
+                <div class="term-line"><span class="term-output">4. Opcional: "Whatsapp Boton" también como primaria si quieren medir clics en WA</span></div>
+              </div>
+            </div>
+            <div style="margin-top:10px;">
+              <a class="open-link primary" href="https://ads.google.com/aw/conversions" target="_blank">🎯 Google Ads — Conversiones</a>
+            </div>
+            <hr class="divider">
+            <button class="open-link primary" onclick="completar('3-1')">✓ Marcar completado</button>
+          </div>
+        </div>
+
+        <div class="tarea" id="t-3-2">
+          <div class="tarea-head" onclick="toggleTarea('3-2')">
+            <div class="tarea-check" id="check-3-2">○</div>
+            <div class="tarea-title">3.2 — Desactivar conversiones Google Shopping que nunca disparan</div>
+            <span class="tarea-tag google">Google Ads</span>
+          </div>
+          <div class="tarea-detail" id="detail-3-2">
+            <p style="color:var(--text-dim); font-size:13px; margin-bottom:12px;">
+              Las conversiones "Google Shopping App Purchase" (valor COP 1.0), "Add To Cart", "Begin Checkout", "View Item", "Search", "Add Payment Info" son eventos de e-commerce. Una clínica médica no tiene carrito de compras. Nunca van a dispararse. Solo generan ruido en el reporte y confunden el bid management.
+            </p>
+            <ol class="steps">
+              <li data-n="1">Google Ads → Herramientas → Medición → Conversiones</li>
+              <li data-n="2">Filtrar por "Google Shopping App" — aparecerán 6+ conversiones</li>
+              <li data-n="3">Cada una → editar → cambiar a "Secundaria" o directamente eliminar</li>
+              <li data-n="4">Hacer lo mismo con "YouTube channel subscriptions" y "YouTube follow-on views" si no hay estrategia activa de YouTube</li>
+            </ol>
+            <div style="margin-top:10px;">
+              <a class="open-link primary" href="https://ads.google.com/aw/conversions" target="_blank">🎯 Google Ads — Conversiones</a>
+            </div>
+            <hr class="divider">
+            <button class="open-link primary" onclick="completar('3-2')">✓ Marcar completado</button>
+          </div>
+        </div>
+
+        <div class="tarea" id="t-3-3">
+          <div class="tarea-head" onclick="toggleTarea('3-3')">
+            <div class="tarea-check" id="check-3-3">○</div>
+            <div class="tarea-title">3.3 — Verificar que Form_success se dispara en las landing pages</div>
+            <span class="tarea-tag google">Google Ads</span>
+          </div>
+          <div class="tarea-detail" id="detail-3-3">
+            <p style="color:var(--text-dim); font-size:13px; margin-bottom:12px;">
+              La conversión <code>Form_success</code> (ID: <code>AW-16490325890/YwuWCM3_yKwaEILPmbc9</code>) es tipo WEBPAGE — necesita que el tag de Google se dispare en una página específica de éxito/gracias. Si GHL muestra un mensaje inline en lugar de redirigir a una URL diferente, esta conversión nunca dispara.
+            </p>
+            <ol class="steps">
+              <li data-n="1">Instalar extensión Google Tag Assistant en Chrome</li>
+              <li data-n="2">Ir a la landing page de contacto/formulario</li>
+              <li data-n="3">Llenar y enviar el formulario</li>
+              <li data-n="4">Si se redirige a /gracias o /success: Tag Assistant debe mostrar "Form_success" disparado</li>
+              <li data-n="5">Si NO se redirige: GHL muestra inline success → la conversión NO dispara → hay que crear una thank-you page o usar Enhanced Conversions con evento manual</li>
+            </ol>
+            <div class="alerta yellow">
+              <strong>Probable:</strong> Las landing pages de GHL muestran éxito inline (sin redirigir). Si es así, Form_success NUNCA se ha disparado a pesar de estar "ENABLED". Esto explica por qué todos los números de conversión en Search dependen del formulario codeless (menos confiable).
+            </div>
+            <div style="margin-top:10px;">
+              <a class="open-link secondary" href="https://tagassistant.google.com/" target="_blank">🏷️ Google Tag Assistant</a>
+              <a class="open-link secondary" href="https://innovartmedical.com" target="_blank">🌐 Web Innovart</a>
+            </div>
+            <hr class="divider">
+            <button class="open-link primary" onclick="completar('3-3')">✓ Marcar completado</button>
+          </div>
+        </div>
+
+        <div class="tarea" id="t-3-4">
+          <div class="tarea-head" onclick="toggleTarea('3-4')">
+            <div class="tarea-check" id="check-3-4">○</div>
+            <div class="tarea-title">3.4 — Plan Enhanced Conversions (server-side Google ↔ GHL) — diseñar arquitectura</div>
+            <span class="tarea-tag google">Google Ads</span>
+            <span class="tarea-tag ghl">GHL</span>
+          </div>
+          <div class="tarea-detail" id="detail-3-4">
+            <p style="color:var(--text-dim); font-size:13px; margin-bottom:12px;">
+              Google Enhanced Conversions permite enviar conversiones del servidor (igual que CAPI de Meta) usando email/teléfono del lead. Así Google ve las conversiones reales del CRM: valoraciones agendadas, asistidas, y operaciones — sin depender del píxel de browser.
+            </p>
+            <div class="section-title">Arquitectura propuesta</div>
+            <div class="terminal">
+              <div class="terminal-head">
+                <div class="terminal-dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+                <div class="terminal-label">Flujo de datos</div>
+              </div>
+              <div class="terminal-body">
+                <div class="term-line"><span class="term-comment"># Flujo actual (roto):</span></div>
+                <div class="term-line"><span class="term-cmd">GHL Lead → browser pixel → Google Ads (unreliable)</span></div>
+                <div class="term-line style="margin-top:6px;"><span class="term-comment"># Flujo objetivo:</span></div>
+                <div class="term-line"><span class="term-cmd">GHL Stage Change → Cloudflare Worker → Google Ads API → Enhanced Conversion</span></div>
+                <div class="term-line"><span class="term-comment"># Con hashed email/tel del contacto GHL → mejor match que pixel</span></div>
+              </div>
+            </div>
+            <div class="section-title" style="margin-top:10px;">Esta semana: solo documentar, no implementar</div>
+            <ol class="steps">
+              <li data-n="1">Esta tarea es de diseño — no implementar hoy</li>
+              <li data-n="2">Anotar: necesitamos Google Ads API access (diferente al MCP de lectura que tenemos)</li>
+              <li data-n="3">El worker CAPI de Cloudflare podría extenderse para también reportar a Google Ads API</li>
+              <li data-n="4">Prioridad: después de que EMQ Meta esté en ≥6 y Schedule BGTA esté activo</li>
+            </ol>
+            <div class="alerta green" style="margin-top:10px;">
+              <strong>Quick win alternativo:</strong> Activar "Enhanced Conversions for Leads" en Google Ads — solo requiere que el form en la web capture email y lo pase al data layer. Sin worker extra. Verificar si los formularios GHL en la web ya hacen esto.
+            </div>
+            <hr class="divider">
+            <button class="open-link primary" onclick="completar('3-4')">✓ Marcar completado</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== BLOQUE 4: EMQ / EMAIL BOT ===== -->
+  <div class="bloque" id="b4">
+    <div class="bloque-header" onclick="toggleBloque('b4')">
+      <div class="bloque-icon" style="background:#1a3a1a;">📈</div>
+      <div class="bloque-meta">
+        <div class="bloque-title">BLOQUE 4 — EMQ: Subir Lead EMQ de 5.0 a ≥ 6</div>
+        <div class="bloque-sub">El problema es la falta de email — agregar pregunta de email al bot de GHL</div>
+      </div>
+      <div class="bloque-badges">
+        <span class="badge badge-p1">P1</span>
+        <span class="badge badge-time">45 min</span>
+        <span class="bloque-progress" id="prog-b4">0/3</span>
+      </div>
+      <span class="chevron open" id="chev-b4">▶</span>
+    </div>
+    <div class="bloque-body open" id="body-b4">
+
+      <div class="contexto">
+        <h4>📊 EMQ Lead actual — por señal de match</h4>
+        <p>
+          EMQ actual: <span class="data">5.0</span> (gate ≥6, óptimo ≥8)<br><br>
+        </p>
+        <table class="data-table" style="margin-top:8px;">
+          <thead><tr><th>Señal de match</th><th>Cobertura actual</th><th>Impacto en EMQ</th></tr></thead>
+          <tbody>
+            <tr><td>Teléfono</td><td><span class="pill green">100%</span></td><td>Alto</td></tr>
+            <tr><td>Nombre</td><td><span class="pill green">100%</span></td><td>Medio</td></tr>
+            <tr><td>País</td><td><span class="pill green">100%</span></td><td>Bajo</td></tr>
+            <tr><td>External ID</td><td><span class="pill green">100%</span></td><td>Medio</td></tr>
+            <tr><td>Apellido</td><td><span class="pill yellow">57.1%</span></td><td>Alto</td></tr>
+            <tr><td><strong>Email</strong></td><td><span class="pill red">7.1%</span></td><td><span class="pill red">MUY ALTO — aquí está la brecha</span></td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:8px; color:var(--text-dim); font-size:13px;">El email es la señal de match más poderosa de Meta porque casi todo el mundo tiene un email en Facebook/Instagram. Con email al 7.1%, Meta solo puede hacer match en el 7% de los leads enviados vía CAPI.</p>
+      </div>
+
+      <div class="tareas">
+
+        <div class="tarea" id="t-4-1">
+          <div class="tarea-head" onclick="toggleTarea('4-1')">
+            <div class="tarea-check" id="check-4-1">○</div>
+            <div class="tarea-title">4.1 — Agregar pregunta de email al bot de IA (1. SMS GPT) en GHL Bogotá</div>
+            <span class="tarea-tag ghl">GHL</span>
+          </div>
+          <div class="tarea-detail" id="detail-4-1">
+            <p style="color:var(--text-dim); font-size:13px; margin-bottom:12px;">
+              El bot de GHL (workflow <code>1. SMS GPT</code>, id: <code>2af751b6</code>) es quien maneja la conversación inicial con los leads. Actualmente pregunta nombre, ciudad, y tipo de alopecia — pero no el email. Agregar la pregunta de email en la secuencia inicial sube la cobertura de email de 7% → ~60%+ en pocas semanas.
+            </p>
+            <div class="section-title">Cuándo y cómo preguntar el email</div>
+            <div class="terminal">
+              <div class="terminal-head">
+                <div class="terminal-dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+                <div class="terminal-label">Mensaje sugerido para el bot</div>
+                <button class="terminal-copy" onclick="copyCmd(this, 'cmd-4-1')">Copiar</button>
+              </div>
+              <div class="terminal-body" id="cmd-4-1">
+                <div class="term-line"><span class="term-comment"># Después de capturar nombre y ciudad, agregar:</span></div>
+                <div class="term-line"><span class="term-cmd">Para enviarte información personalizada y recordatorios de tu cita,</span></div>
+                <div class="term-line"><span class="term-cmd">¿cuál es tu correo electrónico? 📧</span></div>
+                <div class="term-line"><span class="term-output"># Si el lead responde → guardar en campo Email del contacto GHL</span></div>
+                <div class="term-line"><span class="term-output"># Si no responde o dice "no tengo" → continuar sin bloquearse</span></div>
+              </div>
+            </div>
+            <div class="section-title">En Claude Code</div>
+            <div class="terminal">
+              <div class="terminal-head">
+                <div class="terminal-dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+                <div class="terminal-label">Claude Code</div>
+                <button class="terminal-copy" onclick="copyCmd(this, 'cmd-4-1b')">Copiar</button>
+              </div>
+              <div class="terminal-body" id="cmd-4-1b">
+                <div class="term-line"><span class="term-prompt">></span><span class="term-cmd">Ver el workflow "1. SMS GPT" (id: 2af751b6-ec08-48c1-b8e8-213f6a296058) en GHL Bogotá. Identificar en qué paso del flujo de conversación inicial se pueden agregar dos acciones: (1) el bot pregunta el email al lead después de capturar nombre y ciudad, (2) si el lead responde, guardar en el campo Email del contacto. El mensaje debe ser natural y no obligatorio — si el lead no lo da, el flujo continúa. No romper el flujo existente.</span></div>
+              </div>
+            </div>
+            <div style="margin-top:10px;">
+              <a class="open-link secondary" href="https://app.gohighlevel.com/v2/location/DgjjDzD9nkCKv8AGF1Qb/automation/2af751b6-ec08-48c1-b8e8-213f6a296058" target="_blank">🔗 Abrir bot SMS GPT en GHL</a>
+            </div>
+            <hr class="divider">
+            <button class="open-link primary" onclick="completar('4-1')">✓ Marcar completado</button>
+          </div>
+        </div>
+
+        <div class="tarea" id="t-4-2">
+          <div class="tarea-head" onclick="toggleTarea('4-2')">
+            <div class="tarea-check" id="check-4-2">○</div>
+            <div class="tarea-title">4.2 — Agregar fbc y fbp al payload del worker CAPI (subir EMQ +0.5 automático)</div>
+            <span class="tarea-tag meta">Meta CAPI</span>
+          </div>
+          <div class="tarea-detail" id="detail-4-2">
+            <p style="color:var(--text-dim); font-size:13px; margin-bottom:12px;">
+              Los parámetros <code>fbc</code> (click ID de Facebook) y <code>fbp</code> (browser ID de Facebook) mejoran el EMQ aunque no haya email. El worker CAPI ya recibe los datos del contacto desde GHL — hay que verificar que pase <code>fbc</code> cuando el contacto tiene <code>fbclid</code> en sus custom fields.
+            </p>
+            <div class="terminal">
+              <div class="terminal-head">
+                <div class="terminal-dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+                <div class="terminal-label">Claude Code</div>
+                <button class="terminal-copy" onclick="copyCmd(this, 'cmd-4-2')">Copiar</button>
+              </div>
+              <div class="terminal-body" id="cmd-4-2">
+                <div class="term-line"><span class="term-prompt">></span><span class="term-cmd">Revisar el worker de Cloudflare "innovart-capi-webhook-no-tocar" — específicamente el código que procesa los datos del contacto GHL antes de enviarlo a la CAPI de Meta. Verificar si incluye fbc (de fbclid) y fbp en el user_data del payload. Si no los incluye, mostrar qué campo de GHL tiene el fbclid y cómo agregarlo al payload.</span></div>
+              </div>
+            </div>
+            <div style="margin-top:10px;">
+              <a class="open-link secondary" href="https://dash.cloudflare.com" target="_blank">☁️ Cloudflare Dashboard</a>
+            </div>
+            <hr class="divider">
+            <button class="open-link primary" onclick="completar('4-2')">✓ Marcar completado</button>
+          </div>
+        </div>
+
+        <div class="tarea" id="t-4-3">
+          <div class="tarea-head" onclick="toggleTarea('4-3')">
+            <div class="tarea-check" id="check-4-3">○</div>
+            <div class="tarea-title">4.3 — Verificar cobertura de apellido (57% → 80%) — instrucción al bot para pedirlo</div>
+            <span class="tarea-tag ghl">GHL</span>
+          </div>
+          <div class="tarea-detail" id="detail-4-3">
+            <p style="color:var(--text-dim); font-size:13px; margin-bottom:12px;">
+              El apellido tiene 57% de cobertura. Los leads dan solo el nombre de pila. Agregar en el bot la solicitud: <em>"¿Y tu apellido?"</em> o capturar el nombre completo desde el primer mensaje (algunos leads escriben "soy Juan Pérez" y el bot solo toma "Juan").
+            </p>
+            <ol class="steps">
+              <li data-n="1">En el bot SMS GPT: cuando el lead da su nombre, verificar si tiene apellido</li>
+              <li data-n="2">Si el nombre tiene una sola palabra: preguntar "¿Y tu apellido?"</li>
+              <li data-n="3">Guardar en el campo Last Name del contacto GHL</li>
+              <li data-n="4">El worker CAPI ya envía <code>ln</code> si el campo está lleno</li>
+            </ol>
+            <hr class="divider">
+            <button class="open-link primary" onclick="completar('4-3')">✓ Marcar completado</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== BLOQUE 5: AUDIENCIAS ===== -->
+  <div class="bloque" id="b5">
+    <div class="bloque-header" onclick="toggleBloque('b5')">
+      <div class="bloque-icon" style="background:#3a2a1a;">🎯</div>
+      <div class="bloque-meta">
+        <div class="bloque-title">BLOQUE 5 — Audiencias GHL: Activar las 10 que están en Draft</div>
+        <div class="bloque-sub">01-10 audiencias de retargeting — ninguna publicada — ninguna envía señal</div>
+      </div>
+      <div class="bloque-badges">
+        <span class="badge badge-p2">P2</span>
+        <span class="badge badge-time">30 min</span>
+        <span class="bloque-progress" id="prog-b5">0/2</span>
+      </div>
+      <span class="chevron open" id="chev-b5">▶</span>
+    </div>
+    <div class="bloque-body open" id="body-b5">
+
+      <div class="contexto">
+        <h4>📊 Audiencias en Draft (ninguna activa)</h4>
+        <p>GHL tiene 10 workflows de audiencia configurados pero todos en <span class="data">status: draft</span>. Al estar en draft, no se ejecutan y Meta no recibe los segmentos del CRM. Las audiencias de retargeting de Meta están operando con datos stale o vacías.</p>
+      </div>
+
+      <div class="tareas">
+
+        <div class="tarea" id="t-5-1">
+          <div class="tarea-head" onclick="toggleTarea('5-1')">
+            <div class="tarea-check" id="check-5-1">○</div>
+            <div class="tarea-title">5.1 — Revisar y publicar audiencias 01-10 en GHL Bogotá</div>
+            <span class="tarea-tag ghl">GHL</span>
+            <span class="tarea-tag meta">Meta</span>
+          </div>
+          <div class="tarea-detail" id="detail-5-1">
+            <table class="data-table">
+              <thead><tr><th>#</th><th>Nombre</th><th>Estado</th><th>ID</th></tr></thead>
+              <tbody>
+                <tr><td>01</td><td>Audiencia O.Ventas.Frio</td><td><span class="pill red">Draft</span></td><td>fa577231</td></tr>
+                <tr><td>02</td><td>Audiencia O.Ventas. Primer Contacto</td><td><span class="pill red">Draft</span></td><td>5ac89699</td></tr>
+                <tr><td>03</td><td>Audiencia O.ventas. Clientes Tibios</td><td><span class="pill red">Draft</span></td><td>a5387312</td></tr>
+                <tr><td>04</td><td>Audiencia O.ventas. Cte Agenda valoracion</td><td><span class="pill red">Draft</span></td><td>ad4be547</td></tr>
+                <tr><td>05</td><td>Audiencia O.ventas Asistio Val y No pago</td><td><span class="pill red">Draft</span></td><td>b6b19dc4</td></tr>
+                <tr><td>06</td><td>Audiencia O.ventas Audiencia No Asistio</td><td><span class="pill red">Draft</span></td><td>4fa78ec1</td></tr>
+                <tr><td>07</td><td>Audiencia O.ventas Audiencia Ganado</td><td><span class="pill red">Draft</span></td><td>744160c7</td></tr>
+                <tr><td>08</td><td>Audiencia O.ventas Paciente Zona de Recuperacion</td><td><span class="pill red">Draft</span></td><td>54641b21</td></tr>
+                <tr><td>09</td><td>Audiencia O.ventas Compra de Medicamentos</td><td><span class="pill red">Draft</span></td><td>4ef525e2</td></tr>
+                <tr><td>10</td><td>Audiencia Perdido no apto</td><td><span class="pill red">Draft</span></td><td>07710453</td></tr>
+              </tbody>
+            </table>
+            <div class="alerta yellow" style="margin-top:12px;">
+              <strong>⚠️ Antes de publicar:</strong> Verificar que cada workflow tiene las acciones correctas (webhook a Meta o actualización de custom audience). Si solo tienen tags/etiquetas sin enviar a Meta, publicarlos de todas formas pero anotar que necesitan acción adicional para conectar a Meta Custom Audiences.
+            </div>
+            <div class="section-title" style="margin-top:10px;">En Claude Code</div>
+            <div class="terminal">
+              <div class="terminal-head">
+                <div class="terminal-dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+                <div class="terminal-label">Claude Code</div>
+                <button class="terminal-copy" onclick="copyCmd(this, 'cmd-5-1')">Copiar</button>
+              </div>
+              <div class="terminal-body" id="cmd-5-1">
+                <div class="term-line"><span class="term-prompt">></span><span class="term-cmd">Revisar los workflows de audiencia 01-10 en GHL Bogotá (locationId: DgjjDzD9nkCKv8AGF1Qb). Para cada uno: ver su contenido (acciones). Si solo ponen etiquetas/tags sin conectar a Meta, anotarlo. Luego publicar los que estén listos usando publish_workflow. Mostrar resumen de qué hace cada uno antes de publicar.</span></div>
+              </div>
+            </div>
+            <hr class="divider">
+            <button class="open-link primary" onclick="completar('5-1')">✓ Marcar completado</button>
+          </div>
+        </div>
+
+        <div class="tarea" id="t-5-2">
+          <div class="tarea-head" onclick="toggleTarea('5-2')">
+            <div class="tarea-check" id="check-5-2">○</div>
+            <div class="tarea-title">5.2 — Verificar Custom Audiences en Meta correspondientes a las audiencias GHL</div>
+            <span class="tarea-tag meta">Meta</span>
+          </div>
+          <div class="tarea-detail" id="detail-5-2">
+            <p style="color:var(--text-dim); font-size:13px; margin-bottom:12px;">
+              Una vez publicados los workflows, verificar en Meta Ads Manager que las Custom Audiences correspondientes existen y tienen volumen de usuarios. Si no existen: crearlas manualmente en Meta y conectarlas.
+            </p>
+            <ol class="steps">
+              <li data-n="1">Meta Ads Manager → Audiencias (cuenta BGTA principal)</li>
+              <li data-n="2">Verificar que existen audiencias como "Ventas Frio", "Primer Contacto", "Agenda Valoracion", etc.</li>
+              <li data-n="3">Revisar el tamaño de cada audiencia (necesita mínimo 100 personas para usarse en ads)</li>
+              <li data-n="4">Las audiencias más valiosas para RTG: "Asistió Val y No pago" y "Ganado" (operados)</li>
+              <li data-n="5">Si alguna está vacía o muy pequeña: correr workflow retroactivamente con la base existente</li>
+            </ol>
+            <div style="margin-top:10px;">
+              <a class="open-link secondary" href="https://adsmanager.facebook.com/adsmanager/audiences" target="_blank">🎯 Meta — Audiencias</a>
+            </div>
+            <hr class="divider">
+            <button class="open-link primary" onclick="completar('5-2')">✓ Marcar completado</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== BLOQUE 6: REVISIÓN Y DOCS ===== -->
+  <div class="bloque" id="b6">
+    <div class="bloque-header" onclick="toggleBloque('b6')">
+      <div class="bloque-icon" style="background:#1a2a3a;">📋</div>
+      <div class="bloque-meta">
+        <div class="bloque-title">BLOQUE 6 — Cierre: Verificación, resumen y próximos pasos</div>
+        <div class="bloque-sub">Test de todos los cambios · Comunicación al equipo · Guardar en cerebro</div>
+      </div>
+      <div class="bloque-badges">
+        <span class="badge badge-p3">P3</span>
+        <span class="badge badge-time">55 min</span>
+        <span class="bloque-progress" id="prog-b6">0/3</span>
+      </div>
+      <span class="chevron open" id="chev-b6">▶</span>
+    </div>
+    <div class="bloque-body open" id="body-b6">
+      <div class="tareas">
+
+        <div class="tarea" id="t-6-1">
+          <div class="tarea-head" onclick="toggleTarea('6-1')">
+            <div class="tarea-check" id="check-6-1">○</div>
+            <div class="tarea-title">6.1 — Verificar en vivo: Schedule BGTA llegando a Meta</div>
+            <span class="tarea-tag meta">Test</span>
+          </div>
+          <div class="tarea-detail" id="detail-6-1">
+            <ol class="steps">
+              <li data-n="1">Ir a GHL BGTA → Pipeline Ventas → tomar un lead de prueba o lead real</li>
+              <li data-n="2">Moverlo manualmente a "Cte Agenda Valoracion"</li>
+              <li data-n="3">Esperar 30 segundos</li>
+              <li data-n="4">Ir a Meta Event Manager → Dataset 1625645205284016 → Test Events</li>
+              <li data-n="5">Verificar que aparece evento Schedule con los datos del contacto</li>
+              <li data-n="6">Devolver el lead a su etapa original</li>
+            </ol>
+            <hr class="divider">
+            <button class="open-link primary" onclick="completar('6-1')">✓ Marcar completado</button>
+          </div>
+        </div>
+
+        <div class="tarea" id="t-6-2">
+          <div class="tarea-head" onclick="toggleTarea('6-2')">
+            <div class="tarea-check" id="check-6-2">○</div>
+            <div class="tarea-title">6.2 — Enviar resumen de cambios a Esneider y Diego</div>
+            <span class="tarea-tag javier">Javier</span>
+          </div>
+          <div class="tarea-detail" id="detail-6-2">
+            <div class="terminal">
+              <div class="terminal-head">
+                <div class="terminal-dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+                <div class="terminal-label">Mensaje para el equipo de pauta</div>
+                <button class="terminal-copy" onclick="copyCmd(this, 'cmd-6-2')">Copiar</button>
+              </div>
+              <div class="terminal-body" id="cmd-6-2">
+                <div class="term-line"><span class="term-cmd">📊 Actualización sistema de tracking — Innovart Jun 21</span></div>
+                <div class="term-line" style="margin-top:6px;"><span class="term-output">Esta noche hicimos cambios importantes al sistema de señales:</span></div>
+                <div class="term-line"><span class="term-output">✅ Meta ahora recibe evento Schedule cuando alguien agenda en Bogotá</span></div>
+                <div class="term-line"><span class="term-output">✅ El CAPI Lead ahora solo dispara para leads de Meta (no otros canales)</span></div>
+                <div class="term-line"><span class="term-output">✅ Audiencias de retargeting GHL activadas</span></div>
+                <div class="term-line"><span class="term-output">⚠️ Google Ads: necesitamos cambiar la conversión primaria de "Vista de página" a "Form_success"</span></div>
+                <div class="term-line"><span class="term-output">   → Esneider/Diego: esto lo hacen en Google Ads → Herramientas → Conversiones</span></div>
+                <div class="term-line"><span class="term-output">⚠️ Facturación: verificar que las 4 cuentas están activas mañana</span></div>
+                <div class="term-line"><span class="term-output">📱 Nuevo KPI a mirar: Costo por Agendamiento (no solo CPL)</span></div>
+              </div>
+            </div>
+            <hr class="divider">
+            <button class="open-link primary" onclick="completar('6-2')">✓ Marcar completado</button>
+          </div>
+        </div>
+
+        <div class="tarea" id="t-6-3">
+          <div class="tarea-head" onclick="toggleTarea('6-3')">
+            <div class="tarea-check" id="check-6-3">○</div>
+            <div class="tarea-title">6.3 — Guardar progreso en cerebro Innovart y programar verificación en 7 días</div>
+            <span class="tarea-tag meta">Memoria</span>
+          </div>
+          <div class="tarea-detail" id="detail-6-3">
+            <div class="terminal">
+              <div class="terminal-head">
+                <div class="terminal-dots"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div></div>
+                <div class="terminal-label">Claude Code — guardar en cerebro</div>
+                <button class="terminal-copy" onclick="copyCmd(this, 'cmd-6-3')">Copiar</button>
+              </div>
+              <div class="terminal-body" id="cmd-6-3">
+                <div class="term-line"><span class="term-prompt">></span><span class="term-cmd">Actualizar el archivo crio-resumen-2026-06-21.md en /Users/javierforero/Documents/Obsidian-Innovart/90-Memoria-Claude/ con los cambios realizados esta noche: Schedule BGTA creado, CAPI Lead filtrado por fuente Meta, audiencias publicadas, Google Ads conversión cambiada. Incluir: qué queda pendiente para la próxima semana (Enhanced Conversions Google, ValoraciónAsistida, NoShow webhook, email en bot). Agregar el checkpoint: verificar en 7 días si el EMQ Lead subió de 5.0 y si Schedule BGTA empieza a recibir datos.</span></div>
+              </div>
+            </div>
+            <hr class="divider">
+            <button class="open-link primary" onclick="completar('6-3')">✓ Marcar completado</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PENDIENTES SEMANA PRÓXIMA -->
+      <div style="margin: 0 20px 20px;">
+        <div class="section-title">Para la próxima semana (NO hacer hoy)</div>
+        <table class="data-table">
+          <thead><tr><th>Tarea</th><th>Por qué esperar</th><th>Impacto</th></tr></thead>
+          <tbody>
+            <tr><td>Crear evento ValoraciónAsistida</td><td>Necesita campo "Asistió" en GHL primero</td><td><span class="pill yellow">Alto</span></td></tr>
+            <tr><td>Migrar NoShow de custom_code → webhook</td><td>Necesita auditar los triggers primero</td><td><span class="pill yellow">Alto</span></td></tr>
+            <tr><td>Google Ads Enhanced Conversions (server-side)</td><td>Requiere API access adicional</td><td><span class="pill yellow">Alto</span></td></tr>
+            <tr><td>Conectar píxel 1642103999710262 al CAPI worker</td><td>Primero estabilizar el píxel principal</td><td><span class="pill gray">Medio</span></td></tr>
+            <tr><td>Export de operados → Custom Audience Meta</td><td>Necesita lista de CRM limpia primero</td><td><span class="pill yellow">Alto</span></td></tr>
+            <tr><td>LAL 1% de operados (semilla)</td><td>Necesitar mínimo 100 operados matcheados</td><td><span class="pill yellow">Alto</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+</div><!-- /main -->
+
+<div class="footer">
+  <strong>Innovart Medical IPS</strong> · Plan generado por Claude (CRIO) · Jun 21, 2026<br>
+  Meta Pixel 1625645205284016 · GHL Bogotá DgjjDzD9nkCKv8AGF1Qb · Google Ads AW-16490325890
+</div>
+
+<script>
+// ===== TIMER =====
+let startTime = Date.now();
+let targetHours = 4;
+let timerInterval;
+
+function startTimer() {
+  timerInterval = setInterval(() => {
+    let elapsed = Math.floor((Date.now() - startTime) / 1000);
+    let remaining = (targetHours * 3600) - elapsed;
+    if (remaining < 0) remaining = 0;
+    let h = Math.floor(remaining / 3600);
+    let m = Math.floor((remaining % 3600) / 60);
+    let s = remaining % 60;
+    document.getElementById('timer').textContent =
+      h + ':' + String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
+    let pct = Math.min(100, (elapsed / (targetHours * 3600)) * 100);
+    // nothing here for now
+  }, 1000);
+}
+startTimer();
+
+// ===== BLOQUES TOGGLE =====
+function toggleBloque(id) {
+  let body = document.getElementById('body-' + id);
+  let chev = document.getElementById('chev-' + id);
+  if (body.classList.contains('open')) {
+    body.classList.remove('open');
+    chev.classList.remove('open');
+  } else {
+    body.classList.add('open');
+    chev.classList.add('open');
+  }
+}
+
+// ===== TAREAS TOGGLE =====
+function toggleTarea(id) {
+  let t = document.getElementById('t-' + id);
+  if (t.classList.contains('done')) return;
+  t.classList.toggle('expanded');
+}
+
+// ===== COMPLETAR =====
+let completadas = new Set();
+
+function completar(id) {
+  let t = document.getElementById('t-' + id);
+  let check = document.getElementById('check-' + id);
+  if (!completadas.has(id)) {
+    completadas.add(id);
+    t.classList.add('done');
+    t.classList.remove('expanded');
+    check.textContent = '✓';
+  }
+  updateProgress();
+}
+
+function updateProgress() {
+  let all = document.querySelectorAll('.tarea').length;
+  let done = completadas.size;
+  let pct = Math.round((done / all) * 100);
+  document.getElementById('prog-pct').textContent = pct + '%';
+  document.getElementById('prog-bar').style.width = pct + '%';
+  document.getElementById('prog-done').textContent = done + ' completadas';
+  document.getElementById('prog-total').textContent = all + ' tareas';
+  // Update block progress
+  let blocks = ['b1','b2','b3','b4','b5','b6'];
+  let blockTasks = {
+    b1: ['1-1','1-2','1-3','1-4'],
+    b2: ['2-1','2-2'],
+    b3: ['3-1','3-2','3-3','3-4'],
+    b4: ['4-1','4-2','4-3'],
+    b5: ['5-1','5-2'],
+    b6: ['6-1','6-2','6-3']
+  };
+  blocks.forEach(b => {
+    let tasks = blockTasks[b];
+    let doneB = tasks.filter(t => completadas.has(t)).length;
+    let el = document.getElementById('prog-' + b);
+    if (el) el.textContent = doneB + '/' + tasks.length;
+  });
+}
+
+// Initialize progress count
+window.addEventListener('DOMContentLoaded', updateProgress);
+
+// ===== SCROLL TO BLOQUE =====
+function scrollToBloque(id) {
+  let el = document.getElementById(id);
+  if (el) el.scrollIntoView({behavior: 'smooth', block: 'start'});
+  // Make sure it's open
+  let body = document.getElementById('body-' + id);
+  let chev = document.getElementById('chev-' + id);
+  if (body && !body.classList.contains('open')) {
+    body.classList.add('open');
+    if (chev) chev.classList.add('open');
+  }
+}
+
+// ===== COPY COMMAND =====
+function copyCmd(btn, id) {
+  let el = document.getElementById(id);
+  let text = el ? el.innerText : '';
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = '✓ Copiado';
+    setTimeout(() => btn.textContent = 'Copiar', 2000);
+  });
+}
+</script>
+</body>
+</html>

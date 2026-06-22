@@ -12,7 +12,11 @@ metadata:
 Cerebros (notebooks) creados vía CLI `notebooklm` (skill local, cuenta Google de Javier, ya autenticada). CLI v0.4.1 en `/opt/homebrew/bin/notebooklm`. Se manejan 100% desde Claude Code (crear, cargar fuentes, chatear, generar podcast/video/reporte/quiz, descargar).
 
 ## Gemas activas
-- **GEMSEOINNOVART** — ID `0d02f9de-fde1-4934-a809-3102734f485b`. Cerebro **SEO de Innovart**: trucos, tácticas, referencias y material SEO/GEO. Creada 2026-06-20. Fuentes: (1) reel suelto de GoBig Systems (quick-win keywords pág. 2 con GSC + Claude); (2) **biblioteca completa de @gobigsystems** — 98 publicaciones (mayo–jun 2026) raspadas con Apify (`apify/instagram-scraper`) y destiladas a `~/.claude/notebooklm-sources/GEMSEOINNOVART/gobigsystems-instagram-seo-2026-06-20.md`: SEO local/GBP/Maps, GSC, GEO/visibilidad en IA, competidores, contenido por preguntas, on-page. Método reusable: raspar perfil IG con Apify → destilar a .md con fuentes citadas → `source add`.
+- **GEMSEOINNOVART** — ID `0d02f9de-fde1-4934-a809-3102734f485b`. Cerebro **SEO de Innovart**: trucos, tácticas, referencias y material SEO/GEO. Creada 2026-06-20. Fuentes (todas `ready`):
+  1. Reel suelto de GoBig Systems (quick-win keywords pág. 2 con GSC + Claude) — `2026-06-20_reel-gobig-truco-seo-pagina2-gsc-claude.md`
+  2. **Biblioteca 98 captions @gobigsystems** (mayo–jun 2026) raspadas con Apify (`apify/instagram-scraper`) → `gobigsystems-instagram-seo-2026-06-20.md`: SEO local/GBP/Maps, GSC, GEO/IA, on-page.
+  3. ⭐ **30 reels TRANSCRITOS @gobigsystems** — descargados y transcripción de audio con `apify/instagram-reel-scraper` → `gobigsystems-30reels-transcritos-trucos-2026-06-20.md`. Contiene los **trucos reales con nombres de herramientas y rutas exactas**: GMB Spy (robar categorías GBP), alsoask.com / AnswerThePublic / Answer Socrates (contenido), Ubersuggest (backlinks), GSC página 2 + Claude (mejorar rankings), indexación (GSC → Sitemaps → `site:domain`), GEO/AI Mode (15 señales + posts con outcome para Google AI Mode), mapa embebido en Contacto, canibalización.
+  Método reusable: raspar perfil IG con Apify → destilar a .md con fuentes citadas → `source add`.
 - **GEMALANDINGPAGES** — ID `9eb11d98-0196-43ee-8216-a4b882a219d2`. Cerebro de **landing pages de referencia** que le gustan a Javier y quiere tener a mano. Creada 2026-06-20.
 
 ## Flujo permanente: "mete este link en la gema X"

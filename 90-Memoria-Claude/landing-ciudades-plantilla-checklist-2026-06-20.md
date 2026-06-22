@@ -14,6 +14,46 @@ Página piloto: **Implante Capilar en Bogotá** (`/pages/implante-capilar-bogota
 Estrategia: dejar Bogotá PERFECTA → duplicar a las otras 3 sedes cambiando solo los
 "puntos variables". Parte de [[seo-puro-seo-cowork]] (Fase 1).
 
+## ▶️ RETOMA AQUÍ (estado 2026-06-21 — 18:20)
+**Plan vigente:** terminar Bogotá PERFECTA → duplicar a Medellín, Barranquilla, Bucaramanga.
+
+### Hecho en sesión 2026-06-21 mañana
+- Bloque título "Implante Capilar en Bogotá" → imagen de fondo + overlay azul `#0A2A5E`
+- Párrafo descriptivo desktop → texto blanco, centrado, max-width 1150px
+- Bloque sede Chicó Norte → fondo azul oscuro `rgb(13, 31, 92)`, texto blanco. NAP completo en texto visible
+- Accordion FAQ con 5 preguntas/respuestas al final de la página ✅
+- Bloque HTML/Liquid gtag resuelto ✅
+- Página guardada ✅
+
+### Hecho en sesión 2026-06-21 tarde
+- ✅ Accordion FAQ movido a posición correcta en **móvil** (drag & drop completado)
+
+### ⚠️ Hallazgo sesión tarde
+- **Imagen de horarios en móvil** muestra teléfono `+57 318 8528481` → INCORRECTO. Debe ser `312 456 5014`. Reemplazar la imagen manualmente.
+- Los **3 códigos HTML/Liquid** de la página existen pero sus contenidos exactos no están en el contexto actual (se perdieron en resumen de sesión). **Próxima sesión: pegar los 3 códigos aquí** para verificar fbclid y eventos.
+
+### 🔴 PENDIENTES PARA PUBLICAR (en orden)
+1. ✅ ~~Mover accordion FAQ en móvil~~
+2. ✅ ~~Script fbclid~~ — pegado en HTML/Liquid #4
+3. ✅ ~~JSON-LD FAQPage~~ — pegado en HTML/Liquid #5
+4. **Borrar bloque oculto `-9999px`** (HTML/Liquid #3) — con persona de Google mañana
+5. **Reemplazar imagen horarios móvil** — teléfono malo `318 8528481` → correcto `312 456 5014`
+6. **Publicar**
+
+### Página tiene ahora 6 elementos HTML/Liquid:
+- #1: gtag Google Ads `AW-16490325890` ✅
+- #2: Schema GEO (MedicalClinic + MedicalProcedure + BreadcrumbList) ✅
+- #3: ⚠️ BLOQUE OCULTO `-9999px` — BORRAR (tiene "garantía vitalicia" ×2)
+- #4: ✅ Script fbclid (captura fbclid → cookie → qikify Submit URL)
+- #5: ✅ JSON-LD FAQPage (5 preguntas — Rich Results + GEO)
+- #6: ✅ Eventos completo (Meta Pixel ×2 + Google Ads ×3 + 11 eventos) — [[eventos-tracking-bogota-html-liquid-6]]
+
+### ⚡ Al arrancar la próxima sesión
+1. En PageFly, clic en cada uno de los 3 HTML/Liquid → copiar código aquí
+2. Con esos códigos verificamos fbclid + eventos + bloque oculto de una sola vez
+
+**Bogotá tiene 3 elementos HTML/Liquid:** (1) gtag Google Ads `AW-16490325890`, (2) Schema GEO (MedicalClinic+MedicalProcedure+Breadcrumb), (3) ⚠️ **BLOQUE OCULTO a borrar**.
+
 ## ✅ Ya hecho (Bogotá)
 - URL limpia: `/pages/implante-capilar-bogota`
 - Meta title (MCP): `Implante Capilar FUE en Bogotá | Innovart Medical`
@@ -72,14 +112,21 @@ Objetivo: atribuir los leads del form a Meta (CAPI) con el `fbclid`.
 `<style>.bcontact-field-help-text{color:#001a64}.bcontact-content{padding:6px 15px}</style>`
 
 **✅ PLAN B (definitivo, SIN tocar qikify):**
-1. **GTM** — tag Custom HTML (trigger All Pages) que captura `fbclid` → cookie y lo **repone en la URL** vía `history.replaceState`. Así qikify lo guarda solo en el "Submit URL" del correo. (Código en chat 2026-06-20.)
-2. **n8n** — leer el `fbclid` desde el "Submit URL" del correo → mapear a un **custom field `fbclid`** en GHL.
-3. **Worker CAPI** — usar ese `fbclid` (→ `fbc`) al enviar el evento Lead a Meta.
+⚠️ NO hay contenedor GTM (solo etiquetas gtag: GA4 `G-KHYS59RXJ7`, Google Ads `AW-16490325890`). El script va en **PageFly (elemento HTML/Liquid)**, NO en GTM ni en qikify (qikify ROMPE con `<script>` → deja `qcfData` como texto; restaurar = solo el CSS `.bcontact-field-help-text{color:#001a64}.bcontact-content{padding:6px 15px}`).
+1. **PageFly HTML/Liquid** (cada landing, empezando por home en vivo + plantilla Bogotá) — captura `fbclid` → cookie y lo **repone en la URL** vía `history.replaceState`. Así qikify lo guarda en "Submit URL" del correo. CÓDIGO:
+```html
+<script>(function(){try{var url=new URL(location.href);var fb=url.searchParams.get('fbclid');function setC(n,v){if(v)document.cookie=n+'='+encodeURIComponent(v)+';path=/;max-age=7776000';}function getC(n){var m=document.cookie.match('(?:^|; )'+n+'=([^;]+)');return m?decodeURIComponent(m[1]):'';}if(fb)setC('inv_fbclid',fb);if(url.searchParams.get('ctwa_clid'))setC('inv_ctwa',url.searchParams.get('ctwa_clid'));var s=fb||getC('inv_fbclid');if(s&&!fb){url.searchParams.set('fbclid',s);history.replaceState(null,'',url.toString());}}catch(e){}})();</script>
+```
+2. **n8n** — leer el `fbclid` del "Submit URL" del correo → custom field `fbclid` en GHL (lo hace la persona que montó n8n).
+3. **Worker CAPI** — usar ese `fbclid` (→ `fbc`) al enviar Lead a Meta.
 
-- [ ] Montar tag en GTM (¿usuario tiene acceso o la persona de n8n?)
-- [ ] n8n: parsear fbclid del Submit URL → GHL custom field
-- [ ] Crear custom field `fbclid` en GHL (donde caen los leads)
-- [ ] Verificar dedup (event_id) navegador vs servidor
+**FLUJO FORM CONFIRMADO:** qikify (form id 483316) → correo innovartmedicalips@gmail.com (remite no-reply@qikify.com, trae "Submit URL") → n8n IMAP → GHL → CAPI. Leads se reparten por ciudad manual desde el correo.
+
+- [ ] Pegar script fbclid en PageFly Bogotá (plantilla) + home en vivo
+- [ ] n8n: parsear fbclid del Submit URL → GHL custom field (persona n8n)
+- [ ] Crear custom field `fbclid` en GHL
+- [ ] Probar con `?fbclid=PRUEBA_ABC123` → revisar correo
+- **Google Ads:** mismo problema (form no rastrea). Opción ideal = Conversiones Mejoradas para Leads (usa email, no necesita gclid). Pendiente, después de Meta.
 
 **Nota Bogotá (al publicar):** ya tiene HTML/Liquid con dataLayer events (whatsapp_click, cta_click, lead_form_submit), pero el form es el mismo qikify → aplica el mismo Plan B.
 
@@ -103,6 +150,15 @@ Objetivo: atribuir los leads del form a Meta (CAPI) con el `fbclid`.
 6. Arrastra **"Paragraph"** debajo → pega el párrafo de intro.
 7. Arrastra otro **"Paragraph"** (o cerca de sedes) → pega el bloque de dirección.
 8. Guarda.
+
+## 🔍 AUDITORÍA SITIO COMPLETO (2026-06-20) — ⏸️ PENDIENTE post-Bogotá
+Fetch+grep de páginas en vivo (`curl | grep`). Hallazgos sistémicos (mismo patrón que tenía Bogotá):
+- **Texto OCULTO (`position:absolute;left:-9999px`, spam SEO + black-hat)** en 5 PageFly: **HOME**, valoracion, implantedecejas, implantedebarba, valoraciones-panama. *(financiacion=12 y panama=8 ocurrencias `-9999px` → probablemente interno de GemPages, verificar.)*
+- **"garantía vitalicia"** (prohibido) en 6: HOME, barberia, valoracion, cejas, barba, valoraciones-panama. En 5 está DENTRO del bloque oculto → se elimina al borrarlo. **barberia** la tiene VISIBLE (GemPages) → fix aparte.
+- **CERO schema JSON-LD** en TODAS las páginas de conversión (HOME, valoracion, cejas, barba, panama, financiacion, barberia). Solo `sobre-innovart-medical` (2) y el blog tienen. ← gran gap GEO.
+- **H1:** financiacion y barberia = 0 H1. HOME + PageFly = 1 (probablemente el del bloque oculto → al borrarlo quedan SIN H1, poner uno visible como en Bogotá).
+- Teléfono en TEXTO correcto en todas (el 318 malo solo en imágenes, no en texto).
+- **Plan post-Bogotá:** P0 HOME (borrar oculto + schema + H1) → P1 las 4 PageFly → P2 GemPages (barberia/financiacion/panama). Reusar la plantilla Bogotá ya limpia.
 
 **Relacionado:** [[seo-puro-seo-cowork]] · [[geo-visibilidad-ia-diagnostico-2026-06-19]] · [[reporte-alt-text-completado-2026-06-19]] · [[restricciones-lenguaje]]
 
