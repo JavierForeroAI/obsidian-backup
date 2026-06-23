@@ -148,6 +148,11 @@ hr.sep{border:0;height:1px;background:var(--line);margin:46px 0}
 .cta .sedes{margin-top:24px;font-size:13px;color:#9FB9B6;letter-spacing:.02em}
 @media(max-width:620px){.cta .inner{padding:34px 26px}.btn.ghost{margin-left:0;margin-top:10px}}
 
+/* ---- Author signature ---- */
+.author-sig{background:var(--teal-tint);border:1px solid #D5E8E4;border-radius:var(--radius);padding:24px 28px;margin:46px 0 0;border-left:4px solid var(--gold)}
+.author-sig .sig-title{font-family:'Fraunces',serif;font-size:18px;font-weight:600;color:var(--ink);margin:0 0 6px}
+.author-sig .sig-role{font-family:'Inter',sans-serif;font-size:14px;color:var(--muted);margin:0}
+
 /* ---- Footer ---- */
 .foot{background:var(--ink);color:#9FB4B9;margin-top:60px;font-family:'Inter',sans-serif;font-size:13.5px}
 .foot .wrap{max-width:880px;margin:0 auto;padding:46px 24px}
@@ -233,6 +238,40 @@ def table(headers, rows):
 def note(text, label="Importante"):
     return f'<div class="note"><b>{label}:</b> {text}</div>'
 
+def author_signature():
+    return '''<div class="author-sig">
+<div class="sig-title">Dr. Fabián Carreño Jiménez</div>
+<div class="sig-role">Director Médico · Cirujano Plástico y Reconstructivo especializado en Restauración Capilar · Innovart Medical IPS</div>
+</div>'''
+
+def schema_jsonld(*, title, deck, slug, date="2026-06-13"):
+    import json
+    schema = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": title,
+        "description": deck,
+        "image": "https://innovartmedical.com/logo.png",
+        "datePublished": date,
+        "dateModified": date,
+        "author": {
+            "@type": "Person",
+            "name": "Dr. Fabián Carreño Jiménez",
+            "jobTitle": "Director Médico, Cirujano Plástico y Reconstructivo",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Innovart Medical IPS"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Innovart Medical IPS",
+            "url": "https://innovartmedical.com"
+        },
+        "articleBody": title
+    }
+    return f"<script type=\"application/ld+json\">{json.dumps(schema, ensure_ascii=False)}</script>"
+
 def faq(pairs):
     items=""
     for q,a in pairs:
@@ -260,6 +299,9 @@ def build(*, title, deck, category, read_min, body, toc, slug=None,
           meta_desc="", keywords="", date="13 de junio de 2026"):
     slug = slug or slugify(title)
     toc_html = "".join(f'<li><a href="#{slugify(t)}">{t}</a></li>' for t in toc)
+    schema_tag = schema_jsonld(title=title, deck=deck, slug=slug, date=date)
+    author_sig = author_signature()
+
     page = f"""<!doctype html>
 <html lang="es">
 <head>
@@ -276,6 +318,7 @@ def build(*, title, deck, category, read_min, body, toc, slug=None,
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+{schema_tag}
 <style>{CSS}</style>
 </head>
 <body>
@@ -298,6 +341,7 @@ def build(*, title, deck, category, read_min, body, toc, slug=None,
 <main class="article"><div class="container">
 <nav class="toc"><h4>En este artículo</h4><ol>{toc_html}</ol></nav>
 {body}
+{author_sig}
 {cta()}
 </div></main>
 

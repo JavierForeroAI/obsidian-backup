@@ -30,12 +30,61 @@ alertas de las 6 cuentas / 5 sedes. También puede disparar el reporte completo
   `nohup python3.12 bot.py`). Log en `/tmp/meta-ads-bot.log`. Solo una instancia a la vez
   (dos instancias → conflicto de polling de Telegram).
 
+## Capacidades clave
+
+### 1. **Reportes en tiempo real** ✅
+- Gasto por campaña/sede/día
+- Leads y CPL
+- Performance de creativos (CTR, CPC, CPM)
+- Comparativas período vs período
+- Detección automática de anomalías
+
+### 2. **Generador de UTMs Inteligente** ✅ (2026-06-22)
+
+**Tres modos:**
+
+**MODO 1 — Analizar ad publicado → Sugerir UTMs** ⭐
+Esneider envía nombre del ad/campaña:
+```
+"UTMs para el ad 'Testimonio Bogotá Video 01'"
+"Dame parámetros para 'Implante Capilar TOFU'"
+```
+El bot:
+1. Busca el ad en Meta en vivo
+2. Obtiene: objetivo (Leads/Traffic/Conversions), plataforma (IG/FB), ciudad, creativo
+3. Analiza tipo (TOFU/MOFU/BOFU) automáticamente
+4. Devuelve sugerencia:
+```
+Basándome en tu campaña "Implante Capilar TOFU" (objetivo: Leads, Instagram, Bogotá):
+https://implantecapilarencolombia.com/landing?utm_source=instagram&utm_medium=paid_social&utm_campaign=tofu_bogota_leads&utm_content=video_testimonio&utm_term=leads
+```
+
+**MODO 2 — Generar desde descripción**
+```
+"UTMs para TOFU Instagram Bogotá"
+"Parámetros para campaña de ebook"
+```
+El bot pregunta detalles si falta info y devuelve URL lista.
+
+**MODO 3 — Auditar UTMs existentes**
+```
+"Muéstrame los UTMs activos"
+"Qué UTMs tienen mis ads"
+```
+Revisa todos los ads activos y detecta anomalías.
+
+Estructura estándar:
+- `utm_source`: instagram / facebook
+- `utm_medium`: paid_social
+- `utm_campaign`: tipo_ciudad_objetivo (ej: tofu_bogota_leads)
+- `utm_content`: id_creativo (ej: video_testimonio)
+- `utm_term`: objetivo (ej: leads, landing, pdf, schedule)
+
 ## Estado / pendientes
-- ✅ Probado de punta a punta: el bot conecta y responde consultas reales
-  (p.ej. "gasto del día", "mejor creativo de todas las cuentas").
+- ✅ Reportes en vivo (leads, CPL, creativos, UTMs)
+- ✅ Generador automático de UTMs para nuevas campañas (2026-06-22)
+- ✅ Usuario DEXTER1799 (Esneider) autorizado (2026-06-22)
 - ⚠️ **Corre solo mientras la Mac/terminal esté encendida.** Pendiente convertirlo en
   servicio `launchd` para que corra 24/7.
-- ⚠️ **`ALLOWED_USERS` vacío = cualquiera puede usarlo.** Restringir a usernames del equipo
-  (trafficker + Javier) antes de compartirlo ampliamente.
 
 Relacionado: [[meta-mcp-guia]] · [[feedback-cuentas-meta-no-son-sedes]] · [[reporte-diario-meta-automatico]]

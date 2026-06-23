@@ -1,20 +1,38 @@
 ---
 name: feedback-cuentas-meta-no-son-sedes
-description: Los nombres de las cuentas Meta Ads (MEDELLIN, BGTA, QUILLA/Barranquilla, PANAMA...) NO son la sede física — son solo nombres de cuenta y dentro de cada una se corren campañas de varias sedes
+description: REGLA ABSOLUTA — Los nombres de las cuentas Meta (MEDELLIN, BGTA, QUILLA, PANAMA...) son SOLO etiquetas históricas de ad account. NUNCA significan geografía. Dentro de cualquier cuenta corren campañas de cualquier ciudad.
 metadata:
   type: feedback
 ---
 
-# ⚠️ Los nombres de cuenta Meta NO son la sede
+# 🚨 REGLA ABSOLUTA — Nombres de cuenta Meta ≠ Geografía
 
-Cuando Javier (o yo) hablamos de la cuenta **MEDELLIN**, **BGTA**, **QUILLA / Barranquilla**, **PANAMA**, **LANDING DIEGO** o **INTERACCION REDES DIEGO**, NO nos referimos a la sede/clínica física. **Así se llaman las cuentas publicitarias** dentro del Business Manager `Implante Innovart Medical` (940287337027000), nada más.
+**NUNCA confundas el nombre de la ad account con la ciudad/sede que atiende.**
 
-**Dentro de cualquier cuenta se pueden correr campañas de cualquier sede.** Una campaña que vive en la cuenta MEDELLIN puede estar pauteando para Bogotá, Barranquilla, Panamá, etc.
+Las 6 cuentas Meta de Innovart se llaman:
+- `MEDELLIN` (act_1176355103815422)
+- `BGTA` (act_1176351640895422)
+- `PANAMA` (act_1176352666815422)
+- `LANDING DIEGO` (act_1176352666815422)
+- `Artes y Bronces`
+- `QUILLA`
 
-**Why:** El nombre de la cuenta es solo una etiqueta histórica/organizativa; no amarra el tráfico ni el CRM a esa ciudad. Asumir "cuenta = sede" lleva a conclusiones erróneas de atribución y ruteo.
+**Son SOLO nombres. Nada más.** Dentro de cada cuenta corren campañas de **Bogotá, Medellín, Barranquilla, Cartagena, Bucaramanga, Panamá — todas mezcladas.**
 
-**How to apply:**
-- Nunca asumas la sede a partir del nombre de la cuenta. Confirma por el **nombre/segmentación de la campaña**, el **destino** (landing, WhatsApp, form) y a qué **subcuenta GHL** cae el lead.
-- Ejemplo real (no es error de configuración): la campaña **TEST LANDIG HOME4** vive en la cuenta **MEDELLIN** pero su landing `implantecapilarencolombia.com/home4` y su formulario rutean el lead al **CRM de Bogotá**. Es normal. Ver [[landing-home4-routing]].
+## Ejemplo forense (2026-06-22)
+- Campaña **"DM WAP MED RM 11 junio"** vive en la cuenta **BGTA**
+- Nombre campaña dice "MED" (Medellín) pero está en BGTA (Bogotá)
+- Campaña **"DM WAP BRQ"** también está en BGTA pero el nombre dice "BRQ" (Barranquilla)
+- Esto NO es error: es cómo está organizado
 
-Relacionado: [[meta-mcp-guia]] · [[stack-pauta]] · [[reporte-utm-junio-2026]]
+## Regla de oro
+
+Cuando veas un nombre de cuenta, **OLVÍDALO como referencia geográfica.** En su lugar:
+1. Lee el **nombre/descripción de la campaña** (te dice ciudad real)
+2. Confirma el **destino** (landing, WhatsApp, form) — ¿a cuál CRM cae?
+3. Verifica la **subcuenta GHL** donde llegan los leads
+
+## Penalty
+Si vuelvo a confundir nombre de cuenta = sede sin confirmarlo en el nombre de campaña/destino/ruteo CRM, es un error analítico severo. **Nunca asumir. Siempre confirmar.**
+
+Relacionado: [[meta-mcp-guia]] · [[stack-pauta]] · [[reporte-utm-junio-2026]] · [[referencia-ghl-cuentas-innovart]]

@@ -1,0 +1,288 @@
+{
+  "auditoria": "HOME4 vs HOME — Migración INTEGRAL",
+  "fecha": "2026-06-23",
+  "estado_general": "HOME4 LIVE + HOME existente pero descoordinada",
+  
+  "FASE_1_GHL": {
+    "cuenta_activa": "Innovart Medical IPS Bogota (DgjjDzD9nkCKv8AGF1Qb)",
+    "funnel_home4": {
+      "nombre": "Landing 1 Home",
+      "id": "6gDZimr1JRoW9iQZZnRH",
+      "url_viva": "implantecapilarencolombia.com/home4",
+      "page_id": "PaBAMA8f6ISzy4H3HHty",
+      "clarity_id": "x62cig8qug"
+    },
+    "formulariosGHL": {
+      "home4_actual": {
+        "id": "6aGxlY1gdbBx3vQA7XR9",
+        "nombre": "Diagnostico Capilar Bogota",
+        "campos_capturados": ["nombre", "apellido", "email", "teléfono", "fbclid", "fb_click_id", "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_id", "fbp"],
+        "campo_fbclid_ghl": "DnKbVMv2xH3kNEksDV5h",
+        "estado": "ACTIVO - Histórico"
+      },
+      "home5_nuevo": {
+        "id": "RB4a58CCebT51AOpuyPd",
+        "nombre": "Diagnóstico Capilar — Home5 (A/B)",
+        "descripcion": "Clon de home4 con mismo diseño",
+        "estado": "PREPARADO PARA A/B"
+      },
+      "alternativo_en_cuenta": {
+        "id": "huSVZkJqk19eAPi3Xg9E",
+        "nombre": "Formulario Landing page 1",
+        "nota": "Clon secundario - no usar en página"
+      }
+    },
+    "routers_activos": {
+      "home4_router": {
+        "id": "fbd5387a",
+        "nombre": "Home4 - Landing page 1 (router a 4.1)",
+        "triggers": ["form_submission (6aGxlY1g)", "form_submission (huSVZkJqk19eAPi3Xg9E)"],
+        "acciones": [
+          "add_contact_tag: landing_form_home4",
+          "notify_internal: Sofia Forero"
+        ],
+        "estado": "PUBLICADO"
+      },
+      "home5_router": {
+        "id": "ac1b818d",
+        "nombre": "Home5 - Landing page (router a 4.1) [A/B]",
+        "triggers": ["form_submission (RB4a58...)"],
+        "acciones": [
+          "add_contact_tag: lead_home5"
+        ],
+        "estado": "PUBLICADO"
+      }
+    },
+    "workflow_destino": {
+      "id": "d405fcaf",
+      "nombre": "4.1 Recibir lead de Landing_formulario",
+      "triggers": [
+        "tag: landing_formulario (original)",
+        "tag: landing_form_home4 (home4)",
+        "tag: lead_home5 (home5) [pendiente verificar]"
+      ],
+      "acciones": [
+        "Crea oportunidad Ventas/Frio",
+        "Asigna: Sofia Forero (ajPncm2f7Yvjgle1kZwy)",
+        "intentos_llamada=1"
+      ],
+      "estado": "PUBLICADO"
+    },
+    "tags_relacionados": {
+      "landing_form_home4": "JGGnenesICFOCpT0Bc9H",
+      "lead_home5": "[CREAR si no existe]",
+      "landing_formulario": "[ORIGINAL]"
+    }
+  },
+
+  "FASE_2_META": {
+    "pixeles_captura": {
+      "pixel_shopify": "1625645205284016 (termina en 62)",
+      "pixel_ghl_home4": "1642103999710262 o 1625645205284016"
+    },
+    "eventos_disparados_home4": {
+      "PageView": "fbq('track', 'PageView', {fbclid: ...})",
+      "InitiateCheckout": "Disparado en 4 CTAs (Hero, Qualify, Results, Testimonios)",
+      "Lead": "⚠️ INFLADO: se dispara con set-sticky-contacts + cada clic WhatsApp, no con form",
+      "ContactIframe": "Dentro del iframe GHL (invisible a Clarity)"
+    },
+    "emq_actual": 4.9,
+    "emq_target": "≥6",
+    "problema_principal": "fbclid NUNCA llega a los leads (600+/mes perdidos)",
+    "tracking_code_home4": {
+      "head": "Clarity x62cig8qug + fbclid capture básico",
+      "body": "Meta Pixel + eventos custom",
+      "estado": "FUNCIONAL PERO CON GAPS"
+    }
+  },
+
+  "FASE_3_HOME_NUEVA": {
+    "url": "implantecapilarencolombia.com/home",
+    "status_http": 200,
+    "alojamiento": "PageFly (dentro de GHL)",
+    "formulario_incrustado": "¿?",
+    "tracking_code": "⚠️ DESCONOCIDO",
+    "fbclid_capture": "⚠️ NO VERIFICADO",
+    "workflows_conectados": "⚠️ DESCONOCIDO",
+    "campos_custom_mapeados": "⚠️ DESCONOCIDO",
+    "estado": "EXISTE PERO SIN AUDITORIA INTERNA"
+  },
+
+  "COMPARATIVA_CRÍTICA": {
+    "formulario": {
+      "home4": "6aGxlY1g (Diagnostico Capilar Bogota) — ACTIVO",
+      "home": "¿?",
+      "status": "⛔ CRÍTICA — home no tiene formulario confirmado"
+    },
+    "tracking_head": {
+      "home4": "Clarity + fbclid capture básico",
+      "home": "¿?",
+      "status": "⛔ CRÍTICA — home podría no estar rastreando"
+    },
+    "tracking_body": {
+      "home4": "Meta Pixel + eventos custom",
+      "home": "¿?",
+      "status": "⛔ CRÍTICA"
+    },
+    "workflows_disparadores": {
+      "home4": "Router fbd5387a → tag landing_form_home4 → flujo 4.1",
+      "home": "¿?",
+      "status": "⛔ CRÍTICA — home podría estar enviando leads al vacío"
+    },
+    "tags_lead": {
+      "home4": "landing_form_home4",
+      "home": "¿?",
+      "status": "⛔ CRÍTICA"
+    },
+    "email_sms_post": {
+      "home4": "Flujo 4.1: SMS + email + oportunidad + asignación Sofia",
+      "home": "¿?",
+      "status": "⛔ CRÍTICA"
+    }
+  },
+
+  "RIESGOS_DETECTADOS": [
+    {
+      "severidad": "P0_BLOQUEANTE",
+      "problema": "home URL existe pero estructura interna desconocida",
+      "impacto": "Leads podrían caer en el vacío o duplicarse",
+      "causa": "home4 es la ÚNICA landing auditada; home no tiene diagnóstico GHL"
+    },
+    {
+      "severidad": "P0",
+      "problema": "home podría NO tener código fbclid capture",
+      "impacto": "EMQ seguiría siendo 4.9 (600+/mes perdidos)",
+      "causa": "No se verificó headTrackingCode de home"
+    },
+    {
+      "severidad": "P0",
+      "problema": "home podría estar usando form_id distinto",
+      "impacto": "Router home4 NO dispararía → no caería en flujo 4.1",
+      "causa": "ID de formulario en home desconocido"
+    },
+    {
+      "severidad": "P1",
+      "problema": "home4 sigue LIVE mientras home está en construcción",
+      "impacto": "Confusión de tráfico / A/B test no limpio",
+      "causa": "Migración paralela incompleta"
+    },
+    {
+      "severidad": "P1",
+      "problema": "home5 (A/B) tiene router ac1b818d pero flujo 4.1 podría NO tener trigger",
+      "impacto": "leads home5 = tag lead_home5 pero ¿dispatch a 4.1?",
+      "causa": "Actualización de triggers en 4.1 no verificada en vivo"
+    }
+  ],
+
+  "TAREAS_INMEDIATAS": [
+    {
+      "tarea": "T1 — Auditar HOME (página viva)",
+      "pasos": [
+        "1. Entrar a GHL Bogota → funnel 6gDZimr1JRoW9iQZZnRH",
+        "2. Buscar si existe página /home o solo /home4",
+        "3. Si existe /home: leer su formulario ID",
+        "4. Copiar headTrackingCode exacto (verificar Clarity ID)",
+        "5. Copiar bodyTrackingCode (verificar Meta Pixel + eventos)",
+        "6. Verificar nombre page en GHL"
+      ],
+      "owner": "Claude (MCP GHL)",
+      "p": "P0"
+    },
+    {
+      "tarea": "T2 — Crear formulario en /home SI NO EXISTE",
+      "pasos": [
+        "1. Si /home NO tiene form: crear nuevo o clonar 6aGxlY1g",
+        "2. Mapear campos custom a IDs de Bogota",
+        "3. Embeber en página /home (Custom Code o iframe)",
+        "4. Verificar submit envía a GHL"
+      ],
+      "owner": "Esneider (Dev) o Claude (MCP)",
+      "p": "P0"
+    },
+    {
+      "tarea": "T3 — Crear router para /home (si no existe)",
+      "pasos": [
+        "1. Si /home form ≠ 6aGxlY1g: crear router nuevo",
+        "2. Trigger: form_submission (form_id_de_home)",
+        "3. Acciones: add_tag + notify Sofia",
+        "4. Tag: landing_form_home (nuevo) o reutilizar landing_form_home4",
+        "5. Publicar"
+      ],
+      "owner": "Claude (MCP GHL)",
+      "p": "P0"
+    },
+    {
+      "tarea": "T4 — Verificar flujo 4.1 tiene TODOS los triggers",
+      "pasos": [
+        "1. Abrir workflow d405fcaf (4.1)",
+        "2. Verificar 3 triggers: landing_formulario + landing_form_home4 + landing_form_home",
+        "3. Si falta home: agregar",
+        "4. Publicar"
+      ],
+      "owner": "Claude (MCP GHL)",
+      "p": "P0"
+    },
+    {
+      "tarea": "T5 — IGUALAR tracking code home = home4",
+      "pasos": [
+        "1. Extraer headTrackingCode de home4 (page PaBAMA8f6ISzy4H3HHty)",
+        "2. Extraer bodyTrackingCode de home4",
+        "3. Inyectar AMBOS en /home (si distintos)",
+        "4. Validar Clarity ID = x62cig8qug EN AMBAS",
+        "5. Validar Meta Pixel IDs en ambas"
+      ],
+      "owner": "Claude (MCP GHL) + Esneider (si manualmente)",
+      "p": "P0"
+    },
+    {
+      "tarea": "T6 — A/B test home vs home4",
+      "pasos": [
+        "1. Dirigir 50% tráfico a /home, 50% a /home4",
+        "2. Medir por tag (landing_form_home vs landing_form_home4)",
+        "3. Medir EMQ por landing en Meta",
+        "4. KPI: conversion rate, show rate, asistencia"
+      ],
+      "owner": "Esneider (Media Buyer) + Claude (Analytics)",
+      "p": "P1"
+    }
+  ],
+
+  "ENTREGABLES": {
+    "checklist_migracion": {
+      "formulario_identico": "[ ] home4 y home tienen MISMO form_id o clones byte-equivalentes",
+      "tracking_identico": "[ ] headTrackingCode + bodyTrackingCode iguales en ambas",
+      "workflows_conectados": "[ ] Router dispara para home form",
+      "flujo_4_1": "[ ] Flujo 4.1 cubre todos los tags (home4 + home + home5)",
+      "email_sms": "[ ] Templates iguales en ambas",
+      "campos_custom": "[ ] fbclid + utm_* + fbp mapeados en ambas",
+      "pixel_eventos": "[ ] Eventos Meta = home4 en home",
+      "clarity": "[ ] Mismo Clarity ID en ambas"
+    },
+    "json_config": {
+      "home4_page_id": "PaBAMA8f6ISzy4H3HHty",
+      "home4_form_id": "6aGxlY1gdbBx3vQA7XR9",
+      "home4_router_id": "fbd5387a",
+      "home4_tag": "landing_form_home4",
+      "home5_page_id": "F6xTmSqYRLizoZ1SJmDg",
+      "home5_form_id": "RB4a58CCebT51AOpuyPd",
+      "home5_router_id": "ac1b818d",
+      "home5_tag": "lead_home5",
+      "home_page_id": "[PENDING]",
+      "home_form_id": "[PENDING]",
+      "home_router_id": "[PENDING]",
+      "home_tag": "[PENDING]",
+      "funnel_id": "6gDZimr1JRoW9iQZZnRH",
+      "workflow_4_1_id": "d405fcaf",
+      "clarity_id": "x62cig8qug",
+      "pixel_ghl": "1625645205284016"
+    }
+  },
+
+  "plan_ejecucion": {
+    "fase_0_auditoria": "TODAY (2026-06-23) — Leer home página viva",
+    "fase_1_igualar": "Day 1 (mañana) — Copiar formulario/tracking si distinto",
+    "fase_2_routers": "Day 1-2 — Crear routers / triggers en GHL",
+    "fase_3_ab_test": "Week 1 — Enviar 50% tráfico a cada URL, medir",
+    "fase_4_ganador": "Week 2-3 — Remigrar tráfico al ganador, retiro home4"
+  }
+}
