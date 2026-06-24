@@ -8,6 +8,7 @@ article(
  meta=dict(
    title="Minoxidil y finasterida: cómo funcionan de verdad (y sus mitos)",
    slug="minoxidil-finasterida-como-funcionan-mitos",
+   related=[('Alopecia androgénetica', 'alopecia-androgenetica-por-que-se-cae-el-pelo'), ('Shedding: caída al empezar', 'shedding-caida-al-empezar-tratamiento'), ('Estrés y caída del cabello', 'estres-y-caida-del-cabello')],
    category="Tratamientos",
    read_min=10,
    deck="Son los dos fármacos más usados contra la calvicie y los dos más malentendidos. Te explicamos su mecanismo real y separamos la evidencia del miedo de los foros.",
@@ -63,6 +64,7 @@ article(
  meta=dict(
    title="PRP, mesoterapia y exosomas: qué funciona de verdad (y qué es placebo)",
    slug="prp-mesoterapia-exosomas-tratamientos-capilares",
+   related=[('Minoxidil y finasterida', 'minoxidil-finasterida-como-funcionan-mitos'), ('Nutrición y cabello', 'nutricion-y-cabello-vitaminas-que-importan')],
    category="Tratamientos",
    read_min=9,
    deck="Las terapias inyectables están de moda. Algunas tienen evidencia sólida como complemento; otras son, a efectos prácticos, agua cara. Te ayudamos a distinguirlas.",
@@ -120,6 +122,7 @@ article(
  meta=dict(
    title="Shedding: por qué se te cae MÁS pelo al empezar el tratamiento",
    slug="shedding-caida-al-empezar-tratamiento",
+   related=[('¿Cuántos años dura un injerto capilar?', 'cuantos-anos-dura-un-injerto-capilar'), ('Minoxidil y finasterida', 'minoxidil-finasterida-como-funcionan-mitos'), ('PRP y tratamientos capilares', 'prp-mesoterapia-exosomas-tratamientos-capilares')],
    category="Tratamientos",
    read_min=6,
    deck="Empiezas a tratarte… y se te cae más pelo. Antes de entrar en pánico y abandonar, entiende por qué eso suele ser una excelente señal.",
@@ -167,6 +170,7 @@ article(
  meta=dict(
    title="Estrés y caída del cabello: la conexión que no deberías ignorar",
    slug="estres-y-caida-del-cabello",
+   related=[('Alopecia androgénetica', 'alopecia-androgenetica-por-que-se-cae-el-pelo'), ('Nutrición y cabello', 'nutricion-y-cabello-vitaminas-que-importan')],
    category="Salud capilar",
    read_min=8,
    deck="El estrés no “inventa” una calvicie que no tenías, pero sí puede ser la gasolina que la acelera. Te explicamos el mecanismo real, sin dramatismos.",

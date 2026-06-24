@@ -8,6 +8,7 @@ article(
  meta=dict(
    title="¿Cuánto cuesta el implante capilar en Colombia y Panamá 2026?",
    slug="cuanto-cuesta-implante-capilar-colombia-2026",
+   related=[('¿Eres buen candidato?', 'buen-candidato-injerto-capilar-zona-donante'), ('FUE vs DHI', 'fue-vs-dhi-que-tecnica-elegir'), ('¿Cuántos años dura?', 'cuantos-anos-dura-un-injerto-capilar')],
    category="Precios e inversión",
    read_min=8,
    deck="En Innovart Medical, el costo del implante capilar en Colombia va de $8 a $11 millones de pesos; en Panamá, de $3.500 a $4.500 USD. Te explicamos qué incluye realmente ese precio, por qué varía según tu caso y cómo financiarlo sin que sea una carga.",

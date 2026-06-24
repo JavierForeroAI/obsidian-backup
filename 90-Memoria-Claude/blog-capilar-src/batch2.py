@@ -8,6 +8,7 @@ article(
  meta=dict(
    title="¿Cuántos años dura un injerto capilar? La verdad sobre la “permanencia”",
    slug="cuantos-anos-dura-un-injerto-capilar",
+   related=[('¿Eres buen candidato?', 'buen-candidato-injerto-capilar-zona-donante'), ('FUE vs DHI', 'fue-vs-dhi-que-tecnica-elegir'), ('Shedding: caída al empezar tratamiento', 'shedding-caida-al-empezar-tratamiento')],
    category="Cirugía capilar",
    read_min=7,
    deck="Sí, el pelo trasplantado es para toda la vida… con un par de matices que ninguna clínica seria debería ocultarte.",
@@ -55,6 +56,7 @@ article(
  meta=dict(
    title="Cómo prepararte para tu injerto capilar: guía completa (antes y después)",
    slug="como-prepararte-injerto-capilar-guia",
+   related=[('¿Eres buen candidato?', 'buen-candidato-injerto-capilar-zona-donante'), ('FUE vs DHI', 'fue-vs-dhi-que-tecnica-elegir'), ('¿Rapar o no rapar?', 'rapar-o-no-rapar-injerto-capilar')],
    category="Cirugía capilar",
    read_min=10,
    deck="Del tabaco a las costras, del shock loss al mes 12: la guía honesta de qué hacer antes y qué esperar después, mes a mes.",
@@ -115,6 +117,7 @@ article(
  meta=dict(
    title="¿Rapar o no rapar antes del injerto capilar? Lo que dice la medicina",
    slug="rapar-o-no-rapar-injerto-capilar",
+   related=[('Cómo prepararte para tu injerto', 'como-prepararte-injerto-capilar-guia'), ('Shedding y caída al empezar', 'shedding-caida-al-empezar-tratamiento')],
    category="Cirugía capilar",
    read_min=6,
    deck="Es la duda estética que más frena a los pacientes. Te explicamos por qué rapar suele jugar a favor de tu resultado.",
@@ -157,6 +160,7 @@ article(
  meta=dict(
    title="Alopecia femenina: lo que toda mujer debe saber sobre la caída del cabello",
    slug="alopecia-femenina-lo-que-debes-saber",
+   related=[('Alopecia androgénetica', 'alopecia-androgenetica-por-que-se-cae-el-pelo'), ('Minoxidil y finasterida', 'minoxidil-finasterida-como-funcionan-mitos'), ('Nutrición y cabello', 'nutricion-y-cabello-vitaminas-que-importan')],
    category="Salud capilar femenina",
    read_min=9,
    deck="La caída del cabello en la mujer casi nunca tiene una sola causa. Hormonas, hierro, tiroides y estrés se entrelazan: por eso el diagnóstico lo es todo.",

@@ -8,6 +8,7 @@ article(
  meta=dict(
    title="Alopecia androgenética: por qué se cae el pelo (y qué la acelera)",
    slug="alopecia-androgenetica-por-que-se-cae-el-pelo",
+   related=[('5 señales tempranas de que estás perdiendo el pelo', 'senales-tempranas-perdida-de-pelo'), ('Minoxidil y finasterida: cómo funcionan', 'minoxidil-finasterida-como-funcionan-mitos'), ('Estrés y caída del cabello', 'estres-y-caida-del-cabello')],
    category="Ciencia capilar",
    read_min=9,
    deck="No es un exceso de hormonas: es la sensibilidad genética de tu folículo a la DHT. Te explicamos, con criterio médico, el mecanismo real de la calvicie común y por qué actuar a tiempo lo cambia todo.",
@@ -66,6 +67,7 @@ article(
  meta=dict(
    title="5 señales tempranas de que estás perdiendo el pelo (y cuándo actuar)",
    slug="senales-tempranas-perdida-de-pelo",
+   related=[('Alopecia androgénetica: por qué se cae el pelo', 'alopecia-androgenetica-por-que-se-cae-el-pelo'), ('¿Eres buen candidato para un injerto capilar?', 'buen-candidato-injerto-capilar-zona-donante'), ('Minoxidil y finasterida', 'minoxidil-finasterida-como-funcionan-mitos')],
    category="Diagnóstico",
    read_min=8,
    deck="Cuando el espejo te avisa, la miniaturización ya lleva tiempo trabajando. Aprende a leer las señales que aparecen antes de que el cuero cabelludo se note.",
@@ -115,6 +117,7 @@ article(
  meta=dict(
    title="¿Eres buen candidato para un injerto capilar? Tu zona donante decide",
    slug="buen-candidato-injerto-capilar-zona-donante",
+   related=[('FUE vs DHI: qué técnica elegir', 'fue-vs-dhi-que-tecnica-elegir'), ('Cómo prepararte para tu injerto capilar', 'como-prepararte-injerto-capilar-guia'), ('¿Cuánto cuesta el implante capilar?', 'cuanto-cuesta-implante-capilar-colombia-2026')],
    category="Cirugía capilar",
    read_min=9,
    deck="El éxito de un trasplante no se ve en la zona calva, se calcula en la zona donante. Te explicamos qué evalúa de verdad un cirujano antes de operar.",
@@ -165,6 +168,7 @@ article(
  meta=dict(
    title="FUE vs DHI: qué técnica de injerto capilar elegir (sin marketing)",
    slug="fue-vs-dhi-que-tecnica-elegir",
+   related=[('¿Eres buen candidato?', 'buen-candidato-injerto-capilar-zona-donante'), ('Cómo prepararte para tu injerto', 'como-prepararte-injerto-capilar-guia'), ('¿Rapar o no rapar antes del injerto?', 'rapar-o-no-rapar-injerto-capilar')],
    category="Cirugía capilar",
    read_min=8,
    deck="Te han vendido FUE y DHI como si fueran rivales. No lo son: una es cómo se extrae el pelo y la otra cómo se implanta. Te lo explicamos sin humo.",

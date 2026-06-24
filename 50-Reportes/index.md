@@ -14,6 +14,9 @@
 | [[2026/semana-21]] | 11–17 May 2026 | GHL manual |
 | [[2026/semana-22]] | 18–24 May 2026 | GHL manual |
 | [[2026/semana-23]] | 25–29 May 2026 | Meta Ads MCP |
+| [[2026/semana-24]] | 1–7 Jun 2026 | Meta Ads MCP |
+| [[2026/semana-25]] | 8–14 Jun 2026 | Meta Ads MCP |
+| [[2026/semana-26]] | 15–21 Jun 2026 | Meta Ads MCP |
 
 ## Notas
 

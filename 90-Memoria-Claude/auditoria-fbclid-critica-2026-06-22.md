@@ -149,7 +149,7 @@ if (fbclid) {
 3. **Validación inmediata** (5 min): Console logs
 4. **E2E Testing** (30 min): 5 tests (URL, localStorage, form, GHL contact, CAPI)
 
-**Ver:** `[[plan-implementacion-fbclid-fix]]` para detalles paso a paso.
+**Ver:** [[fbclid-home-implementacion-completa-2026-06-22]] para detalles paso a paso.
 
 ---
 
@@ -188,7 +188,7 @@ Show rate:             41-45%? (secundario, pero Meta aprende mejor)
 | Archivo | Propósito | Ubicación |
 |---|---|---|
 | auditoria-fbclid-fase1-hallazgos.md | Findings Fase 1 | `/Users/javierforero/` |
-| plan-implementacion-fbclid-fix.md | Plan Fase 3 (copiar/pegar) | `/Users/javierforero/` |
+| [[fbclid-home-implementacion-completa-2026-06-22]] | Plan Fase 3 (copiar/pegar) + implementación completa | 2026-06-22 |
 | fbclid-capture-solution.js | Código sin minificar (~5 KB) | `/tmp/` |
 | fbclid-capture-minified.js | Código minificado (~1.2 KB) | `/tmp/` |
 | check-ghl-fbclid.sh | Script validación Fase 2 | `/tmp/` |

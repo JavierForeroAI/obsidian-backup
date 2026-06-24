@@ -1,12 +1,16 @@
 # 90 - Memoria Claude
 
-**Propósito:** Memoria persistente del agente IA. Contexto acumulado sobre el cliente, decisiones tomadas, restricciones, preferencias y aprendizajes entre sesiones.
+**Propósito:** Memoria persistente del agente IA. Contexto acumulado sobre Innovart Medical IPS entre sesiones.
 
-## Secciones sugeridas
-- `contexto-cliente.md` — hechos clave sobre Innovart que Claude debe recordar
-- `decisiones.md` — decisiones estratégicas tomadas y su razón
-- `restricciones.md` — cosas que NO hacer (tono, temas, plataformas)
-- `historial-sesiones.md` — log de interacciones importantes
+> **Entrada principal → [[MEMORY]]**
+> El MEMORY.md es el índice maestro. Este archivo es solo un hub de orientación.
 
-## Notas
+## Subcarpetas
+- [[notebooklm/INDEX]] — 7 notebooks extraídos (GEMinnovart, FAQ, estrategia, etc.)
+- [[ebooks-faq/index]] — Estrategia de reimpacto + mensajes GHL para los 8 ebooks
 
+## Ver también
+- [[../00-LEEME]] — Reglas del vault y convenciones
+- [[../Diario/index]] — Notas diarias de pauta
+- [[../50-Reportes/index]] — Reportes semanales
+- [[../20-Pauta/index]] — Monitor de competidores y archivos de pauta

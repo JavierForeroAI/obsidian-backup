@@ -13,6 +13,8 @@ metadata:
 
 > Ejecutado (no es plan) el 2026-06-19 con equipo multiagente (workflow `innovart-ebooks-faq-reimpacto`, 11 agentes). Reactiva leads fríos/tibios de las ~160K+ opps dormidas ([[crm-funnel]]) usando ebooks técnicos como **excusa de valor**, no oferta de venta. Companion de [[plan-ebooks-metaads]] y [[academia-capilar-ecosistema]].
 
+**Carpeta de trabajo:** [[ebooks-faq/index]] — estrategia + mensajes GHL listos.
+
 ## Entregables (todos en la carpeta `ebooks-faq/` + copia en Downloads)
 **8 ebooks HTML** (1.879–2.820 palabras c/u, diseño Innovart, FAQ reales, cumplimiento verificado: 0 términos prohibidos, los 8 con disclaimer):
 - E01 frío — ¿Duele el implante? (dolor/anestesia) · E02 tibio — FUE vs DHI · E03 tibio — ¿Cuántos folículos? (zona donante, "fórmula del pelazo" / Valor de Cobertura) · E04 frío — El día del implante y los 8 días siguientes · E05 tibio — ¿Cuándo veré mi cabello? (shedding 3-18 meses) · E06 frío — ¿Soy candidato? · E07 tibio — ¿Cuánto cuesta y cómo pagarlo? (financiación 90%) · E08 frío — Proteger tu inversión (plan médico)

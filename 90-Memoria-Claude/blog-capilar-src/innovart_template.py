@@ -54,8 +54,8 @@ a{color:var(--teal-deep)}
 .hero .hwrap{position:relative;max-width:880px;margin:0 auto;padding:70px 24px 64px}
 .eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:'Inter',sans-serif;font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:22px}
 .eyebrow::before{content:"";width:30px;height:1px;background:var(--gold)}
-.hero h1{font-size:clamp(33px,5.2vw,54px);line-height:1.08;margin:0 0 20px;max-width:18ch}
-.hero .deck{font-size:clamp(18px,2.4vw,21px);line-height:1.6;color:#D6E5E3;max-width:62ch;margin:0}
+.hero h1{font-size:clamp(33px,5.2vw,54px);line-height:1.18;margin:0 0 28px;max-width:18ch}
+.hero .deck{font-size:clamp(18px,2.4vw,21px);line-height:1.7;color:#D6E5E3;max-width:62ch;margin:0;letter-spacing:.3px}
 .meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:34px;font-family:'Inter',sans-serif;font-size:13.5px;color:#BFD3D1}
 .meta span{display:inline-flex;align-items:center;gap:8px}
 .meta b{color:#fff;font-weight:600}
@@ -140,13 +140,34 @@ hr.sep{border:0;height:1px;background:var(--line);margin:46px 0}
 
 /* ---- CTA ---- */
 .cta{margin:54px 0 10px;border-radius:22px;overflow:hidden;background:linear-gradient(135deg,#0B232E,#0F766E);color:#fff;box-shadow:var(--shadow)}
-.cta .inner{padding:44px 40px}
-.cta h3{color:#fff;font-size:27px;margin:0 0 10px;max-width:22ch}
-.cta p{color:#CFE2E0;font-size:16px;margin:0 0 24px;max-width:54ch}
-.btn{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#23210F;font-family:'Inter',sans-serif;font-weight:700;font-size:15.5px;letter-spacing:.01em;text-decoration:none;padding:15px 26px;border-radius:999px}
-.btn.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.45);margin-left:10px}
-.cta .sedes{margin-top:24px;font-size:13px;color:#9FB9B6;letter-spacing:.02em}
-@media(max-width:620px){.cta .inner{padding:34px 26px}.btn.ghost{margin-left:0;margin-top:10px}}
+.cta .inner{padding:48px 44px;display:flex;flex-direction:column}
+.cta h3{color:#fff;font-size:27px;margin:0 0 14px;max-width:22ch}
+.cta p{color:#CFE2E0;font-size:16px;margin:0 0 28px;max-width:54ch}
+.cta a.btn{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#23210F;font-family:'Inter',sans-serif;font-weight:700;font-size:15.5px;letter-spacing:.01em;text-decoration:none;padding:15px 28px;border-radius:999px;width:fit-content;margin-bottom:12px}
+.cta a.btn.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.45);margin-bottom:16px}
+.cta .sedes{margin-top:28px;font-size:13px;color:#9FB9B6;letter-spacing:.02em}
+@media(max-width:620px){.cta .inner{padding:40px 30px}.cta a.btn.ghost{margin-bottom:16px}}
+
+/* ---- Sedes Grid (GEO) ---- */
+.sedes-section{background:var(--bg);padding:56px 24px;margin:0}
+.sedes-section h3{text-align:center;font-family:'Fraunces',serif;font-size:28px;color:var(--ink);margin:0 0 40px;max-width:60ch;margin-left:auto;margin-right:auto}
+.sedes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;max-width:1000px;margin:0 auto;padding:0 24px}
+.sede-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;text-align:center;transition:all .3s ease;box-shadow:0 2px 8px rgba(14,39,51,.08)}
+.sede-card:hover{border-color:var(--teal);box-shadow:0 8px 24px rgba(15,118,110,.12);transform:translateY(-2px)}
+.sede-card h4{font-family:'Fraunces',serif;font-size:22px;color:var(--teal-deep);margin:0 0 12px;font-weight:600}
+.sede-card .addr{font-size:14px;color:var(--ink-soft);margin:0 0 16px;line-height:1.5;font-weight:500}
+.sede-card .sede-link{display:inline-block;color:var(--teal-deep);text-decoration:none;font-size:13px;font-weight:600;padding:8px 12px;border:1px solid var(--gold-soft);border-radius:8px;margin:0 6px 8px 0;transition:all .2s}
+.sede-card .sede-link:hover{background:var(--gold-soft);color:#23210F}
+@media(max-width:620px){.sedes-grid{grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px}.sede-card{padding:20px 16px}}
+
+/* ---- Related articles ---- */
+.related-articles{background:var(--teal-tint);border:1px solid #D5E8E4;border-radius:var(--radius);padding:32px 28px;margin:54px 0 40px;border-left:4px solid var(--gold)}
+.related-articles h4{margin:0 0 20px;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-deep);font-family:'Inter',sans-serif;font-weight:700;display:flex;align-items:center;gap:8px}
+.related-articles .rel-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.related-articles li{margin:0;padding:0}
+.related-articles a{display:flex;align-items:flex-start;gap:10px;padding:12px;background:var(--surface);border-radius:10px;border:1px solid #D5E8E4;text-decoration:none;color:var(--ink);font-size:14px;font-weight:500;line-height:1.4;transition:all .2s}
+.related-articles a:hover{background:#fff;border-color:var(--teal);color:var(--teal-deep)}
+.related-articles a::before{content:"→";flex:0 0 auto;color:var(--gold);font-weight:700}
 
 /* ---- Author signature ---- */
 .author-sig{background:var(--teal-tint);border:1px solid #D5E8E4;border-radius:var(--radius);padding:24px 28px;margin:46px 0 0;border-left:4px solid var(--gold)}
@@ -279,12 +300,79 @@ def faq(pairs):
     return f'<h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>{items}'
 
 def cta(h="Da el primer paso: agenda tu valoración capilar",
-        p="En Innovart Medical estudiamos tu caso con dermatoscopia y un plan personalizado. La primera valoración es sin costo y sin compromiso, presencial en nuestras sedes o por videollamada."):
+        p="En Innovart Medical estudiamos tu caso con dermatoscopia y un plan personalizado. La primera valoración es sin costo y sin compromiso, presencial en nuestras sedes o por videollamada.",
+        slug=""):
+    wa_link = f"https://wa.me/{PHONE_WA}?text=Hola,%20vengo%20del%20blog%20'{slug}'%20y%20me%20interesa%20saber%20m%C3%A1s"
+    cal_link = f"https://innovartmedical.com?utm_source=blog&utm_content={slug}"
     return f"""<div class="cta"><div class="inner">
 <h3>{h}</h3><p>{p}</p>
-<a class="btn" href="https://wa.me/{PHONE_WA}">📲 Escríbenos al {PHONE_DISPLAY}</a><a class="btn ghost" href="https://innovartmedical.com">Agenda tu valoración gratuita →</a>
-<div class="sedes">Llámanos o escríbenos por WhatsApp al <b style="color:#fff">{PHONE_DISPLAY}</b> &nbsp;·&nbsp; Bogotá · Medellín · Barranquilla · Bucaramanga · Ciudad de Panamá</div>
+<a class="btn" href="{wa_link}">📲 Escríbenos al {PHONE_DISPLAY}</a><a class="btn ghost" href="{cal_link}">Agenda tu valoración gratuita →</a>
 </div></div>"""
+
+def sedes_grid():
+    sedes = [
+        ("Bogotá", "Calle 116 #9-72", "4.7110", "-74.0721", "https://share.google/unA0jM58IDgsldKhl"),
+        ("Medellín", "CC Oviedo, Piso 16", "6.2186", "-75.5754", "https://share.google/rtE6wmM6zx18dG2JA"),
+        ("Barranquilla", "Green Tower, Piso 14", "10.9639", "-74.7964", "https://share.google/NlrnR03cCYoShIKqz"),
+        ("Bucaramanga", "HIC Business Center", "7.1190", "-73.1245", "https://goo.gl/maps/innovart-bucaramanga"),
+        ("Ciudad de Panamá", "Costa del Este", "8.9824", "-79.5199", "https://share.google/GrA5R5tOD5HLKLSpM"),
+    ]
+    cards = ""
+    for city, addr, lat, lon, gmb_link in sedes:
+        cards += f'''<div class="sede-card">
+<h4>{city}</h4>
+<p class="addr">{addr}</p>
+<a href="{gmb_link}" class="sede-link" target="_blank">📍 Ver en Maps</a>
+</div>'''
+    return f'''<section class="sedes-section">
+<h3>Nuestras sedes en Colombia y Panamá</h3>
+<div class="sedes-grid">{cards}</div>
+</section>'''
+
+def related_articles(blog_slug, related_list):
+    """related_list = [("titulo blog", "slug-blog"), ...]"""
+    if not related_list:
+        return ""
+    items = "".join(f'<li><a href="/{r[1]}.html">{r[0]}</a></li>' for r in related_list)
+    return f'''<div class="related-articles">
+<h4>📖 Lee también</h4>
+<ul class="rel-list">{items}</ul>
+</div>'''
+
+def schema_localbusiness():
+    """Genera Schema LocalBusiness para todas las sedes"""
+    sedes = [
+        ("Bogotá", "Calle 116 #9-72", "4.7110", "-74.0721"),
+        ("Medellín", "CC Oviedo, Piso 16", "6.2186", "-75.5754"),
+        ("Barranquilla", "Green Tower, Piso 14", "10.9639", "-74.7964"),
+        ("Bucaramanga", "HIC Business Center", "7.1190", "-73.1245"),
+        ("Ciudad de Panamá", "Costa del Este", "8.9824", "-79.5199"),
+    ]
+    import json
+    schemas = []
+    for city, addr, lat, lon in sedes:
+        schemas.append({
+            "@type": "LocalBusiness",
+            "@context": "https://schema.org",
+            "name": f"Innovart Medical - {city}",
+            "image": "https://innovartmedical.com/logo.png",
+            "description": "Clínica especializada en restauración capilar y tratamientos de alopecia",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": addr,
+                "addressLocality": city,
+                "addressCountry": "CO" if city != "Ciudad de Panamá" else "PA"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": float(lat),
+                "longitude": float(lon)
+            },
+            "telephone": PHONE_TEL,
+            "url": "https://innovartmedical.com",
+            "priceRange": "$$$"
+        })
+    return f"<script type=\"application/ld+json\">{json.dumps(schemas, ensure_ascii=False)}</script>"
 
 DISCLAIMER = ("Este contenido es informativo y educativo; no sustituye una consulta médica. "
     "El diagnóstico de la alopecia y la indicación de cualquier tratamiento o procedimiento "
@@ -296,11 +384,15 @@ DISCLAIMER = ("Este contenido es informativo y educativo; no sustituye una consu
 # PAGE BUILDER
 # ---------------------------------------------------------------------------
 def build(*, title, deck, category, read_min, body, toc, slug=None,
-          meta_desc="", keywords="", date="13 de junio de 2026"):
+          meta_desc="", keywords="", date="13 de junio de 2026", related=[]):
     slug = slug or slugify(title)
     toc_html = "".join(f'<li><a href="#{slugify(t)}">{t}</a></li>' for t in toc)
     schema_tag = schema_jsonld(title=title, deck=deck, slug=slug, date=date)
+    schema_local = schema_localbusiness()
     author_sig = author_signature()
+    sedes = sedes_grid()
+    rel_articles = related_articles(slug, related) if related else ""
+    cta_section = cta(slug=slug)
 
     page = f"""<!doctype html>
 <html lang="es">
@@ -319,12 +411,13 @@ def build(*, title, deck, category, read_min, body, toc, slug=None,
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 {schema_tag}
+{schema_local}
 <style>{CSS}</style>
 </head>
 <body>
 <header class="topbar"><div class="wrap">
   <div class="brandmark"><span class="dot"></span><span>Innovart Medical<small>Microcirugía capilar</small></span></div>
-  <a class="topphone" href="https://wa.me/{PHONE_WA}">📲 {PHONE_DISPLAY}</a>
+  <a class="topphone" href="https://wa.me/{PHONE_WA}?text=Hola,%20vengo%20del%20blog%20'{slug}'%20y%20me%20interesa%20saber%20m%C3%A1s">📲 {PHONE_DISPLAY}</a>
 </div></header>
 
 <section class="hero">{HERO_SVG_FILLED}<div class="hwrap">
@@ -342,8 +435,11 @@ def build(*, title, deck, category, read_min, body, toc, slug=None,
 <nav class="toc"><h4>En este artículo</h4><ol>{toc_html}</ol></nav>
 {body}
 {author_sig}
-{cta()}
+{rel_articles}
+{cta_section}
 </div></main>
+
+{sedes}
 
 <footer class="foot"><div class="wrap">
   <div class="brandmark"><span class="dot" style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--gold);margin-right:8px"></span>Innovart Medical IPS</div>

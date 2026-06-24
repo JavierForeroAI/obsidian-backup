@@ -8,6 +8,7 @@ article(
  meta=dict(
    title="Nutrición y cabello: qué vitaminas importan de verdad (y cuáles no)",
    slug="nutricion-y-cabello-vitaminas-que-importan",
+   related=[('Alopecia femenina', 'alopecia-femenina-lo-que-debes-saber'), ('Estrés y caída del cabello', 'estres-y-caida-del-cabello'), ('Mitos sobre la calvicie', 'mitos-sobre-la-calvicie-desmontados')],
    category="Salud capilar",
    read_min=9,
    deck="El marketing te quiere vender un frasco. La ciencia dice que solo unos pocos nutrientes mueven la aguja, y casi siempre cuando ya hay un déficit. Te lo aclaramos.",
@@ -60,6 +61,7 @@ article(
  meta=dict(
    title="Mitos sobre la calvicie: gorras, lavado, sol y más, desmontados con ciencia",
    slug="mitos-sobre-la-calvicie-desmontados",
+   related=[('Alopecia androgénetica', 'alopecia-androgenetica-por-que-se-cae-el-pelo'), ('5 señales tempranas', 'senales-tempranas-perdida-de-pelo'), ('Nutrición y cabello', 'nutricion-y-cabello-vitaminas-que-importan')],
    category="Mitos y verdades",
    read_min=8,
    deck="¿La gorra te deja calvo? ¿Lavarte a diario es malo? ¿Cortarte el pelo lo fortalece? Repasamos los mitos más repetidos y separamos lo falso de lo que sí tiene base.",
@@ -112,6 +114,7 @@ article(
  meta=dict(
    title="Cuando NO es genética: alopecia areata y alopecias cicatriciales",
    slug="alopecia-areata-y-cicatricial-cuando-no-es-genetica",
+   related=[('Alopecia androgénetica', 'alopecia-androgenetica-por-que-se-cae-el-pelo')],
    category="Diagnóstico",
    read_min=9,
    deck="No toda caída es calvicie común. Algunas alopecias son autoinmunes y otras destruyen el folículo para siempre. Reconocer las señales a tiempo puede salvar tu pelo.",
