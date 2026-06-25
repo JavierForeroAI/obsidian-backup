@@ -219,19 +219,18 @@ Estos se agregan en un **HTML/Liquid #6** después de publicar cada ciudad.
 
 ## 6. ESTADO DE AVANCE POR CIUDAD
 
-| Ciudad | Página creada | Meta SEO | Contenido PageFly | FAQ | fbclid | Schema | Publicada |
-|---|---|---|---|---|---|---|---|
-| **Bogotá** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🔴 2 pendientes** |
-| **Medellín** | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
-| **Barranquilla** | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
-| **Bucaramanga** | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
+| Ciudad | Página creada | Meta SEO | Contenido PageFly | FAQ | fbclid | Schema | AggregateRating | Publicada |
+|---|---|---|---|---|---|---|---|---|
+| **Bogotá** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ 4.3/103 | ✅ |
+| **Medellín** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⬜ pendiente | 🔴 sin publicar |
+| **Barranquilla** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ 4.8/37 | ✅ 2026-06-23 |
+| **Bucaramanga** | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ | ⬜ |
 
 ---
 
 ## 7. PRÓXIMO PASO INMEDIATO
 
-**Bogotá primero → terminar y publicar → luego Medellín.**
+**Medellín → publicar (contenido ya listo en PageFly) + agregar AggregateRating al snippet faq-medellin.liquid.**
+**Bucaramanga → snippet faq-bucaramanga.liquid ya creado en theme, falta crear página Shopify + PageFly.**
 
-Retoma en [[landing-ciudades-plantilla-checklist-2026-06-20]] sección "PENDIENTES PARA PUBLICAR".
-
-*Actualizado 2026-06-21 — Claude Code + Javier Forero*
+*Actualizado 2026-06-24 — Claude Code + Javier Forero*
