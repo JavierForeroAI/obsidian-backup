@@ -1,0 +1,37 @@
+---
+cedula: 1045721198
+nombre: CARLOS PION RADA
+email: albertoc1198@gmail.com
+telefono: 310 3767602
+ciudad: MEDELLIN
+tipo_cliente: MEDICAMENTOS
+procedimiento: SESION 4 PLASMAS
+valor: 0
+fecha_transaccion: 2025-12-11 00:00:00
+metadata:
+  ghl_city_tag: medellin
+  ghl_type_tag: medicamentos
+  ghl_sync_date: null
+  ghl_contact_id: null
+---
+
+# 1045721198 — CARLOS PION RADA
+
+## Info Básica
+- **Ciudad:** MEDELLIN
+- **Tipo:** MEDICAMENTOS
+- **Email:** albertoc1198@gmail.com
+- **Teléfono:** 310 3767602
+
+## Transacción
+- **Procedimiento:** SESION 4 PLASMAS
+- **Valor:** $0
+- **Fecha:** 2025-12-11 00:00:00
+
+## GHL Tags
+#medellin #medicamentos
+
+## Estado Sync
+- Sincronizado GHL: No
+- ID GHL: —
+- Última actualización: 2026-06-26

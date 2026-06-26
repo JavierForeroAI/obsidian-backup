@@ -74,16 +74,17 @@ metadata:
 
 ---
 
-### **FASE 2 — Listicles Competitivos ✅ REDACTADOS — PENDIENTE PUBLICAR EN SHOPIFY**
+### **FASE 2 — Listicles Competitivos ✅ PUBLICADOS EN SHOPIFY (2026-06-24)**
 
-**Archivos en Drive (carpeta Blogs) + `/tmp/listicles-innovart/`:**
-1. ✅ `top-5-clinicas-implante-capilar-bogota-2026.html` (~2,732 palabras)
-2. ✅ `fue-vs-dhi-comparativa-definitiva-colombia-2026.html` (~2,182 palabras)
-3. ✅ `donde-hacerse-implante-capilar-colombia-guia-por-ciudad-2026.html` (~2,846 palabras)
+**Artículos VIVOS:**
+1. ✅ **Top 5 Clínicas Bogotá** — https://www.innovartmedical.com/blogs/articulos-medicos/top-5-clinicas-implante-capilar-bogota-2026 (2,425 palabras | 154 estilos CSS inline)
+2. ✅ **FUE vs DHI Comparativa** — https://www.innovartmedical.com/blogs/articulos-medicos/fue-vs-dhi-comparativa-definitiva-colombia-2026 (2,104 palabras | 132 estilos CSS inline)
+3. ✅ **Guía por Ciudad** — https://www.innovartmedical.com/blogs/articulos-medicos/donde-hacerse-implante-capilar-colombia-guia-por-ciudad-2026 (2,781 palabras | 130 estilos CSS inline)
 
-**Schema inyectado:** Article + ItemList (Top5) / Article + FAQPage (los otros dos)  
-**Compliance:** ✅ Sin prohibidos, Dr. Carreño firmado, CTA box, FAQ incluido  
-**Próximo paso:** Publicar en Shopify blog `/blogs/articulos-medicos/`
+**Diseño:** Navy (#2C3E50) + Dorado (#c9a84c) + Teal (#f0f8f5) | Georgia serif | Ranking cards, tablas, pros/cons  
+**Schema:** Article + ItemList/FAQPage | Dr. Fabián Carreño | Innovart primero en todo  
+**Compliance:** ✅ Sin prohibidos, precios reales, competidores solo nombre, CTA box, FAQ  
+**Impacto esperado:** GEO Score +5–8pts, E-E-A-T +10%, conversiones +10%
 
 ---
 
