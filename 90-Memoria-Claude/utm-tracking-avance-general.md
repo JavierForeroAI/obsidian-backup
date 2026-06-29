@@ -22,7 +22,11 @@ metadata:
 
 ### Shopify theme.pagefly.liquid (tema "Dawn — GEO IA Innovart", ID 181331001645)
 - **Script 1** (UTM Capture): en `<head>` después de `<!-- End Google Tag Manager -->` ✅
-- **Script 2** (WA + Form): antes de `</body>` ✅ — formato sufijo actualizado 26-jun-2026
+- **Script 2** (WA + Form): antes de `</html>` ✅ — actualizado 29-jun-2026 a click interceptor
+  - Mecanismo: `document.addEventListener('click', ..., true)` — capture phase
+  - Reemplaza el MutationObserver+setTimeout anterior (se apagaba a los 8s, frágil con React)
+  - Probado en producción: mensaje llega con `[fb/rtg]` ✅
+  - Aplica a las 4 landings de ciudad (Bogotá, Medellín, Barranquilla, Bucaramanga) via theme.pagefly.liquid
 - Token GHL: Private Integration "Landing UTM Tracker" en GHL → Settings → Private Integrations
 - ⚠️ NO tocar estos bloques en ediciones futuras del tema
 - ⚠️ ARCHIVO CORRECTO: `theme.pagefly.liquid` NO `theme.liquid` — la landing usa PageFly
@@ -142,7 +146,32 @@ En lugar de un IF/ELSE complejo, se crearon 5 workflows independientes en CRM Pr
 
 ---
 
-## ✅ FUENTE 5: WhatsApp Directo — COMPLETADA (2026-06-28)
+## ✅ FUENTE 5 — SOLO WHATSAPP PUB (Meta Ads → WA → GHL): Worker listo (2026-06-29)
+
+### Diagnóstico confirmado (6 agentes, 2026-06-29)
+- **Causa raíz:** WhatsApp Plugins (conector GHL) descarta `referral.ctwa_clid` del webhook de Meta
+- **Campo `ctwa_clid`** ID `UHB4VHlBQ2XnnZODeGRK` — existe en las 5 sub-cuentas (verificado)
+- **Gasto invisible:** ~$1,020 USD/semana en 3 campañas CTWA → 386 conversaciones WA → 0% atribución en CRM
+- **Workflow `UTM-WA-Directo-Tracker` (cf7e99e5):** Rama A (ctwa) correcta pero NUNCA activa → campo nunca llega
+
+### Worker `/wa-ctwa` deployado (2026-06-29)
+- **URL:** `https://innovart-capi-webhook-no-tocar.innovartmedicalips.workers.dev/wa-ctwa`
+- **Lógica:** Intercept webhook Meta → extrae ctwa_clid → upserta GHL ANTES del relay a WA Plugins → enriquece utm_campaign desde Meta Graph API → envía Lead CAPI con ctwa_clid
+- **Endpoint verificado:** GET /wa-ctwa devuelve 403 correctamente (Forbidden sin WA_VERIFY_TOKEN)
+
+### Para activar (cuando cada ciudad tenga WA API configurado):
+1. `wrangler secret put WA_VERIFY_TOKEN` — cadena arbitraria
+2. `wrangler secret put WA_PLUGINS_RELAY_URL` — URL webhook original de WA Plugins en GHL
+3. `wrangler secret put WA_PHONE_NUMBER_MAP` — JSON `{"phoneNumId":"bogota",...}` (IDs desde Meta for Developers → App → WA → API Setup)
+4. En Meta WABA → Webhook: cambiar URL a `/wa-ctwa` + WA_VERIFY_TOKEN
+5. Test E2E con anuncio CTWA real
+
+### Resultado esperado al activar:
+- Atribución CTWA: 0% → 85-95%
+- EMQ: 4.9 → 5.8-6.5 en 7-14 días
+- Show rate: +5-8 puntos en 30 días
+
+## ✅ FUENTE 5b: WhatsApp Directo orgánico — COMPLETADA (2026-06-28)
 
 ### 5 workflows "UTM - WA Directo Tracker" PUBLICADOS (v3)
 - **Bogotá** — `ec3d0cbb-f68b-4806-b3de-2a913cbcbafe`

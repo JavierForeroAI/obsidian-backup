@@ -1,8 +1,10 @@
 ---
 name: plan-formulario-qikify-innovartmedical
-description: Diagnóstico y plan para dejar listo el formulario Qikify en innovartmedical.com — routing por sede, UTMs, fbclid
+description: ✅ COMPLETADO 2026-06-29 — Formulario Qikify conectado al CRM por Javier.
 metadata:
   type: project
+  status: COMPLETADO
+  fecha_completado: 2026-06-29
   fecha: 2026-06-27
 ---
 

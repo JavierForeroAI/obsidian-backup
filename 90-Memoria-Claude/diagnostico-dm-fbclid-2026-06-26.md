@@ -1,8 +1,10 @@
 ---
 name: diagnostico-dm-fbclid-critico-2026-06-26
-description: CRÍTICO — fbclid se pierde cuando leads llegan por DM/IG directo, no por landing. Diferente al problema /home ya resuelto.
+description: ✅ COMPLETADO 2026-06-29 — fbclid en DM/IG directo resuelto por Javier.
 metadata:
   type: project
+  status: COMPLETADO
+  fecha_completado: 2026-06-29
   date: 2026-06-26
   status: solucion-lista-pero-bloqueada
 ---
