@@ -8,7 +8,7 @@ metadata:
 # CTWA Tracking — Meta Ads → WhatsApp → GHL
 
 **Fecha inicio:** 2026-06-29  
-**Estado:** 🟡 En progreso — falta URL webhook de WhatsApp Plugins
+**Estado:** ✅ ACTIVO EN PRODUCCIÓN
 
 **Why:** 386 conversaciones de WhatsApp por semana desde anuncios Meta = 0% atribución. No se sabe qué anuncio generó cada lead. El ctwa_clid es la huella digital del clic en el anuncio — Meta la envía al servidor de WhatsApp pero WhatsApp Plugins la borra antes de pasarla a GHL.
 
@@ -32,13 +32,15 @@ Worker /wa-ctwa  ← NUEVO PUNTO DE INTERCEPCIÓN
 
 ## Phone Number IDs de Meta (WABA) — CONFIRMADOS
 
-| Ciudad | Número WA | phone_number_id Meta |
-|---|---|---|
-| Bogotá | +57 310 2031796 | `1156200067575713` |
-| Medellín | +57 317 1224977 | `611850088685930` |
-| Barranquilla | +57 313 2754191 | `625405087319822` |
-| Panamá | +507 650 76869 | `662014553651143` |
-| Bucaramanga | — | Sin WhatsApp aún |
+| Ciudad | Número WA | phone_number_id Meta | ctwa_clid field ID GHL |
+|---|---|---|---|
+| Bogotá | +57 310 2031796 | `1156200067575713` | `ebBHQovnCw3AgAij7BAA` |
+| Medellín | +57 317 1224977 | `611850088685930` | `4V2IZiwCCkLdt0jTUI8K` |
+| Barranquilla | +57 313 2754191 | `625405087319822` | `lr9AYYbE3MKxcbMqGOew` |
+| Panamá | +507 650 76869 | `662014553651143` | `Ckdb2494518FRWLHLb7n` |
+| Bucaramanga | — | Sin WhatsApp aún | `UHB4VHlBQ2XnnZODeGRK` |
+
+**IMPORTANTE:** Los field IDs son DISTINTOS por sub-cuenta. El ID `UHB4VHlBQ2XnnZODeGRK` es SOLO de Bucaramanga.
 
 **Nota:** Bogotá migró de número. El número antiguo era +57 320 8653730 (phone_number_id: `609046938958518`) — ya inactivo.
 
@@ -50,7 +52,7 @@ Worker /wa-ctwa  ← NUEVO PUNTO DE INTERCEPCIÓN
 |---|---|---|
 | `WA_VERIFY_TOKEN` | ✅ Configurado | `innovart-ctwa-verify-2026` |
 | `WA_PHONE_NUMBER_MAP` | ✅ Configurado | `{"1156200067575713":"bogota","611850088685930":"medellin","625405087319822":"barranquilla","662014553651143":"panama"}` |
-| `WA_PLUGINS_RELAY_URL` | ⏳ PENDIENTE | URL webhook de WhatsApp Plugins en Meta |
+| `WA_PLUGINS_RELAY_URL` | ✅ No requerido | El relay no es necesario — GHL recibe por vía separada |
 
 ---
 

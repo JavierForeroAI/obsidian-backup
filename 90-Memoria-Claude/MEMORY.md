@@ -28,7 +28,7 @@
 - [🔴 PENDIENTE JAVIER: Skill Distribución Multiplataforma](skill-distribucion-multiplataforma.md) — 2026-06-25. Máquina de contenido (blogs, videos, testimonios, creativos) → YouTube, LinkedIn, Reddit, Wikipedia, Blog Shopify + GHL integration. Análisis completo de viabilidad (APIs listas), arquitectura 6 fases, estimación 2-3 semanas part-time. Pull-based: equipo sube a carpetas, sistema automatiza publicación + captura leads en GHL. **Desarrollar en tiempos libres.**
 
 ## WhatsApp Ads Tracking (CTWA)
-- [🟡 CTWA Tracking — Meta Ads → WhatsApp → GHL (en progreso)](ctwa-tracking-whatsapp-ads.md) — 2026-06-29. Phone_number_ids confirmados para 4 ciudades. 2/3 secrets configurados en Cloudflare. Falta: URL webhook WA Plugins en Meta → cambiar webhook en 4 WABAs → activar.
+- [✅ CTWA Tracking — Meta Ads → WhatsApp → GHL (ACTIVO)](ctwa-tracking-whatsapp-ads.md) — 2026-06-29. LIVE. `innovart-wa-redirect-320` recibe webhook Meta → fan-out a `innovart-capi-webhook-no-tocar/wa-ctwa` → guarda ctwa_clid + utm_source + utm_medium en GHL. Phone_number_ids y field IDs por ciudad adentro.
 
 ## Pauta
 - [📊 IG vs WhatsApp — Análisis estratégico junio 2026](analisis-ig-vs-wa-junio2026.md) — IG=79% volumen pero WA 68% llega caliente. No abandonar WA. Ver mezcla recomendada.
