@@ -52,7 +52,7 @@
 ## Tracking y Landing Pages — Estado verificado
 - [✅ WA Buttons + Formularios — Verificación E2E (29 jun 2026)](wa-botones-landings-ciudad-verificado-2026-06-29.md) — 5 páginas (main + 4 ciudades): 9 botones WA/página con `[fb/rtg]` ✅, Qikify routing ✅. Click interceptor reemplaza MutationObserver.
 - [✅ Flujo CRM Qikify → GHL — Verificado E2E (29 jun 2026)](flujo-crm-qikify-verificado-2026-06-29.md) — Tags: `fuente_web_qikify`+`landing_formulariov2`+`oportunidad ventas frio`. UTMs completos. Workflow `4.1 Recibir lead de Landing_formulario` activa pipeline Ventas/Frío.
-- [⚠️ Landing Panamá — GemPages (NO PageFly) + fix formulario → GHL (29 jun 2026)](landing-panama-gempages-setup-2026-06-29.md) — `/pages/panama` en GemPages 7. Form nativo Shopify → pipeline Worker/GHL NO funcionaba antes. Fix: "Código Personalizado" con click interceptor → Worker → GHL Panamá (`45SKYgIDgr4Eh6a6JcFz`). ⏳ Pendiente prueba real de usuario.
+- [✅ Landing Panamá — GemPages + fix formulario → GHL + 7 leads recuperados (29 jun 2026)](landing-panama-gempages-setup-2026-06-29.md) — Fix click interceptor desplegado. 7 leads pre-fix recuperados de Gmail y añadidos a workflow 4.1. ⏳ Pendiente: confirmar con próximo lead real que entra solo a GHL.
 - [✅ Workflow 4.1 — SMS/WA al lead habilitado en 4 sedes (29 jun 2026)](flujo-4-1-sms-lead-habilitado-2026-06-29.md) — Paso al lead estaba DISABLED en Panamá/Bogotá/Medellín/Barranquilla → habilitado. ⚠️ Bucaramanga: paso no existe, pendiente añadir.
 - [⏸️ Bucaramanga — Lista de espera launch](bucaramanga-lista-espera-launch.md) — Sede no abierta aún. Checklist completo: SMS al lead en 4.1, campos UTM, línea WA, E2E test. Ejecutar cuando Javier diga "abre Bucaramanga".
 

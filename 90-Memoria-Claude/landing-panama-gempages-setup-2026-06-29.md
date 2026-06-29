@@ -91,7 +91,24 @@ Clic en "Agendar cita"
 |---|---|
 | Fetch manual desde consola → Worker → GHL | ✅ ok (contactId creado, tags correctos, país PA) |
 | Click sintético desde browser tool | ❌ no dispara (evento no-trusted, GemPages lo bloquea) |
-| Click real de usuario | ⏳ PENDIENTE — Javier debe probar manualmente |
+| Click real de usuario (nuevo lead post-fix) | ⏳ PENDIENTE — aún no ha llegado un lead nuevo desde el fix |
+
+## Leads pre-fix recuperados (29 jun 2026)
+
+Los 6 leads reales que llegaron por email Shopify entre 16–26 jun (antes del fix) fueron creados manualmente en GHL Panama y añadidos al workflow 4.1.
+
+| Nombre | Fecha email | Email | Teléfono | contactId GHL |
+|---|---|---|---|---|
+| Jorge Alberto Navarro | 16 jun | rojorgealberto@gmail.com | +50761803940 | `7OwO9wPreaXDWSfvJRGQ` |
+| Jomar | 17 jun | castanedayomar111@gmail.com | +50769594127 | `22QTMxe0T0E4vqpXKz1g` |
+| Irina | 20 jun | irinasanchez2023@gmail.com | +50760703508 | `RkG2dQp67TFhDv7qIQvN` |
+| Ady | 25 jun | adyrangel05@gmail.com | +525523389834 | `e69W6HOR0Ki55PvAkeP5` |
+| Erika | 26 jun | erikac2782@gmail.com | +50766798962 | `y8u5xKDSLNuimSOJOnVr` |
+| Agustin Zambrano | 26 jun | zambranoagustin28@gmail.com | +50768107824 | `V1jWI7zvcNeh2ALykQJH` |
+| Leidy | 29 jun | martinez240792@gmail.com | 69596499 | `KwELucAHDfGJmR1JcpCj` |
+
+⚠️ **Ady** puso ciudad "CDMX" — posible turismo médico desde México. El asesor debe saberlo.
+⚠️ Pruebas descartadas: "PRUEBA D" (aadf@gmail.com) y "PRUEBA PARA SABER A DONDE LLEGA" (f@gmail.co, x2).
 
 ## Notas técnicas importantes
 
