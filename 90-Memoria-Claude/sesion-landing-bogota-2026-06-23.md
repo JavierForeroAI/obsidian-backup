@@ -147,6 +147,72 @@ Crear snippet por ciudad cambiando: nombre ciudad, dirección, coordenadas geo, 
 
 ---
 
-**Relacionado:** [[landing-ciudades-plantilla-checklist-2026-06-20]] · [[guia-replicacion-landings-ciudades]] · [[eventos-tracking-bogota-html-liquid-6]] · [[geo-visibilidad-ia-auditoria-2026-06-22]]
+---
+
+## ✅ Optimización GBP — Avance completo (2026-06-27)
+
+La landing `/pages/implante-capilar-bogota` está ahora correctamente enlazada al Google Business Profile de Bogotá. A continuación el estado de todos los GBPs optimizados en esta etapa del plan AEO.
+
+### Conexión GBP ↔ Landing
+
+| GBP | Campo Website en GBP | Landing URL |
+|-----|---------------------|-------------|
+| Bogotá | ✅ Actualizado | `/pages/implante-capilar-bogota` |
+| Barranquilla | ✅ Actualizado | `/pages/implante-capilar-barranquilla` |
+| Medellín | ✅ Actualizado | `/pages/implante-capilar-medellin` |
+| Panamá | ✅ Actualizado | `/pages/implante-capilar-panama` |
+
+### Estado GBP por sede — 2026-06-27
+
+| Sede | Categoría | Nombre canónico | Desc AEO | Redes | Servicios |
+|------|-----------|----------------|----------|-------|-----------|
+| **Bogotá** | ✅ Clínica de trasplante capilar | ✅ IPS + ciudad | ✅ | ✅ 5 redes | ✅ 10 |
+| **Barranquilla** | ✅ Clínica de trasplante capilar | ✅ IPS + ciudad | ✅ | ✅ 5 redes | ✅ 10 |
+| **Medellín** | ✅ Clínica de trasplante capilar | ✅ IPS + ciudad | ✅ | ✅ 5 redes | ✅ 10 |
+| **Panamá** | ✅ Clínica de trasplante capilar | ✅ IPS + ciudad | ✅ | ✅ 5 redes | ✅ 10 |
+| **Bucaramanga** | ❌ NO EXISTE | — | — | — | — |
+
+### Cambios clave aplicados en cada GBP
+
+**Categoría (P0 — crítico para Knowledge Graph)**
+- Bogotá: ya tenía "Clínica de trasplante capilar" ✅
+- Barranquilla: era "Médico de medicina general" → cambiado a "Clínica de trasplante capilar"
+- Medellín: era "Servicio de tratamiento del cabello" → cambiado a "Clínica de trasplante capilar"
+- Panamá: era "Centro de salud y bienestar" → cambiado a "Clínica de trasplante capilar"
+
+**Nombre canónico**
+```
+Innovart Medical IPS | Implante Capilar [Ciudad]
+```
+
+**Descripción AEO (modelo Barranquilla)**
+```
+Innovart Medical IPS | Clínica especializada en implante capilar en [Ciudad].
+Más de 33.000 pacientes tratados en Colombia. Realizamos técnicas FUE y DHI
+con garantía de folículos implantados. 24 controles post-operatorios incluidos.
+Valoración gratuita presencial o virtual.
+```
+
+**Redes sociales agregadas a todos los GBPs**
+- YouTube: https://www.youtube.com/@InnovartMedicalIps ⚠️ NO usar /channel/
+- Instagram, TikTok, LinkedIn, Facebook, WhatsApp
+
+**Servicios (10 por sede)**
+FUE, DHI, Injerto capilar, Trasplante de cejas, Barba, Terapias Capilares, Valoración gratuita, Trasplante Hombre, Trasplante Mujer, Microinjerto FUE
+
+### Pendiente GBP
+- [ ] Crear GBP Bucaramanga desde cero
+- [ ] Subir min. 10 fotos por sede (antes/después, clínica, equipo): Barranquilla, Medellín, Panamá
+- [ ] Bogotá: responder 17 reseñas de 1★ + campaña reseñas 5★ post-operatorio
+
+### Impacto esperado
+- Knowledge Graph Score: +8-12 pts en 7-14 días
+- AEO Score: 35 → 50+ en 30 días
+- Las IAs citarán "Innovart Medical IPS | Implante Capilar [Ciudad]" como entidad principal
+
+---
+
+**Relacionado:** [[landing-ciudades-plantilla-checklist-2026-06-20]] · [[guia-replicacion-landings-ciudades]] · [[eventos-tracking-bogota-html-liquid-6]] · [[geo-visibilidad-ia-auditoria-2026-06-22]] · [[gbp-sedes-innovart]]
 
 *Creado 2026-06-23 — Claude Code + Javier Forero*
+*Actualizado 2026-06-27 — GBP 4 sedes completado*

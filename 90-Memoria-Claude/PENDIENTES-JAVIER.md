@@ -40,7 +40,19 @@ metadata:
 
 ## 🟡 PRIORIDAD NORMAL (En curso / próxima semana)
 
-*(Vacío — todo está en baja prioridad por ahora)*
+### #2 — Reacciones a Stories de IG disparan el bot en vano
+**Estado:** Pendiente  
+**Fecha detectado:** 2026-06-27  
+**Descripción:** Los mensajes vacíos (`body: ""`) de Instagram son reacciones/likes a stories de Innovart. GHL los registra como conversaciones TYPE_INSTAGRAM y activan el workflow "3. Recibir msj IG" completo — Sofia responde con el saludo aunque no hay lead real. Es ruido puro que consume mensajes del bot y crea contactos fantasma.
+
+**Ejemplo real:** "el cuco humor" tiene 6 entradas distintas (May-Jun 2026), todas `body: ""`, todas respondidas por Sofia.
+
+**Solución propuesta:**  
+Agregar condición al inicio del workflow "3. Recibir msj IG":
+- `IF message.body == "" → STOP (no procesar)`  
+O crear una rama de salida temprana para `body` vacío antes del saludo.
+
+**Impacto:** Reduce ruido en CRM, ahorra mensajes del bot, evita contactos irrelevantes.
 
 ---
 

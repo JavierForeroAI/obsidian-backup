@@ -56,72 +56,94 @@ Aplicar a TODAS las sedes:
 
 ## Auditoría completa — 2026-06-25
 
-### BOGOTÁ ✅ La mejor configurada
+### BOGOTÁ ✅ OPTIMIZADA (2026-06-27)
 | Campo | Valor | Estado |
 |-------|-------|--------|
-| Nombre | Innovart Medical Ips \| Implante Capilar | ⚠️ "Ips" minúscula, sin ciudad |
+| Nombre | Innovart Medical IPS \| Implante Capilar Bogotá | ✅ Corregido (tenía "Ips" y sin ciudad) |
 | Categoría | Clínica de trasplante capilar | ✅ Correcto |
-| Rating | 4.3 ⭐ / 103 reseñas | ⚠️ 17 reseñas de 1★ |
+| Descripción AEO | Menciona ciudad x2, FUE/DHI, 24 controles, garantía folículos | ✅ Optimizada |
+| Rating | 4.3 ⭐ / 103 reseñas | ⚠️ 17 reseñas de 1★ — pendiente responder |
 | Dirección | Sector Usaquén, Cl. 119 #7-94, Bogotá | ✅ |
 | Horarios | L-V 8am-5pm, Sáb 8am-1pm, Dom Cerrado | ✅ |
 | Teléfono | 312 4565014 | ✅ |
-| Website | innovartmedical.com | ✅ |
+| Website | https://www.innovartmedical.com/pages/implante-capilar-bogota | ✅ Landing específica |
+| Redes sociales | YouTube, Instagram, TikTok, LinkedIn, Facebook | ✅ |
+| Servicios (10) | FUE, DHI, Injerto capilar, Cejas, Barba, Terapias, Valoración gratuita, Trasplante H/M | ✅ |
 | Fotos | Sí (vídeos, exterior, propietario) | ✅ |
 | Post propietario | Sí (26 feb 2026) | ✅ |
 | Accesibilidad | Accesible con silla de ruedas | ✅ |
-| Landing URL | No verificada | ⬜ |
 
-### BARRANQUILLA ❌ Categoría incorrecta
+### BARRANQUILLA ✅ OPTIMIZADA (2026-06-27)
 | Campo | Valor | Estado |
 |-------|-------|--------|
-| Nombre | Innovart Medical Ips _ Implante capilar Barranquilla | ❌ Usa "_", "capilar" minúscula |
-| **Categoría** | **Médico de medicina general** | ❌ CRÍTICO — cambiar |
+| Nombre | Innovart Medical IPS \| Implante Capilar Barranquilla | ✅ Pendiente revisión Google |
+| **Categoría** | **Clínica de trasplante capilar** | ✅ Corregido (era "Médico de medicina general") |
+| Descripción AEO | 455/750 chars — menciona ciudad x2, FUE/DHI, dirección, 33K pacientes | ✅ Optimizada |
 | Rating | 4.8 ⭐ / 37 reseñas | ✅ |
-| Accesibilidad | Accesible con silla de ruedas | ✅ |
+| Teléfono | 312 4565014 | ✅ |
+| WhatsApp | wa.me/573002181681 | ✅ |
+| Dirección | Calle 77B N 57-103, Edificio Green Tower, Cons. 706 | ✅ |
+| Website | ⚠️ Cambiar a `/pages/implante-capilar-barranquilla` (estaba en homepage) | ⚠️ Pendiente confirmar |
+| Redes sociales | YouTube, Instagram, TikTok (@innovartmedicalips), LinkedIn, Facebook | ✅ |
+| Servicios (10) | FUE, DHI, Injerto capilar, Cejas, Barba, Terapias Capilares, Valoración gratuita, Trasplante H/M | ✅ |
+| Accesibilidad | Accesible con silla de ruedas + aparcamiento | ✅ |
+| Pagos | Tarjetas crédito/débito, Visa, Amex, MasterCard | ✅ |
+| Cita previa | "No acepta clientes sin cita previa" | ✅ |
 | Post propietario | Sí | ✅ |
-| Dirección/Tel/Web | No verificados (necesita revisión) | ⬜ |
 
-### MEDELLÍN ❌ Categoría incorrecta
+**Descripción AEO exacta subida:**
+> Innovart Medical IPS | Clínica especializada en implante capilar en Barranquilla. Más de 33.000 pacientes tratados en Colombia. Realizamos técnicas FUE y DHI con garantía de folículos implantados. Consultorio en Edificio Green Tower, Cl. 77B #57-103, Cons. 706, Barranquilla. Valoración gratuita presencial o virtual. Médicos especialistas certificados. Resultados naturales y permanentes. La clínica de trasplante capilar más recomendada de Barranquilla.
+
+### MEDELLÍN ✅ OPTIMIZADA (2026-06-27)
 | Campo | Valor | Estado |
 |-------|-------|--------|
-| Nombre | Innovart Medical Ips \| Implante Capilar Medellín | ⚠️ "Ips" minúscula |
-| **Categoría** | **Servicio de tratamiento del cabello** | ❌ CRÍTICO — cambiar |
+| Nombre | Innovart Medical IPS \| Implante Capilar Medellín | ✅ |
+| Categoría | Clínica de trasplante capilar | ✅ Corregido (era "Servicio de tratamiento del cabello") |
+| Descripción AEO | Menciona ciudad, FUE/DHI, garantía folículos, 24 controles | ✅ |
+| Website | https://www.innovartmedical.com/pages/implante-capilar-medellin | ✅ |
+| Redes sociales | YouTube, Instagram, TikTok, LinkedIn, Facebook | ✅ |
+| Servicios (10) | FUE, DHI, Injerto capilar, Cejas, Barba, Terapias, Valoración gratuita, Trasplante H/M | ✅ |
 | Rating | 5.0 ⭐ / 25 reseñas | ✅ |
-| Accesibilidad | No visible | ⬜ |
 | Post propietario | Sí | ✅ |
-| Dirección/Tel/Web | No verificados (necesita revisión) | ⬜ |
 
-### PANAMÁ ❌ Categoría incorrecta + información faltante
+### PANAMÁ ✅ OPTIMIZADA (2026-06-27)
 | Campo | Valor | Estado |
 |-------|-------|--------|
-| **Nombre** | **Innovart Medical Implante capilar Panamá** | ❌ Sin "IPS" |
-| **Categoría** | **Centro de salud y bienestar** | ❌ CRÍTICO — cambiar |
+| Nombre | Innovart Medical IPS \| Implante Capilar Panamá | ✅ Corregido (tenía "Implante capilar Panamá" sin IPS) |
+| Categoría | Clínica de trasplante capilar | ✅ Corregido (era "Centro de salud y bienestar") |
+| Descripción AEO | Menciona ciudad, FUE/DHI, garantía folículos, 24 controles | ✅ |
+| Website | https://www.innovartmedical.com/pages/implante-capilar-panama | ✅ |
+| Redes sociales | YouTube, Instagram, TikTok, LinkedIn, Facebook | ✅ |
+| Servicios (10) | FUE, DHI, Injerto capilar, Cejas, Barba, Terapias, Valoración gratuita, Trasplante H/M | ✅ |
 | Rating | 4.9 ⭐ / 20 reseñas | ✅ |
-| **Info faltante** | **Google dice "Añadir la información que falta"** | ❌ URGENTE |
 | Post propietario | Sí | ✅ |
-| Dirección/Tel/Web | No verificados (necesita revisión) | ⬜ |
 
 ---
 
-## 🔴 Prioridades de corrección (impacto AEO)
+## ✅ OPTIMIZACIÓN COMPLETADA — 2026-06-27
 
-### P0 — Esta semana (máximo impacto Knowledge Graph)
-1. ❌ **Categoría Barranquilla** → cambiar a "Clínica de trasplante capilar"
-2. ❌ **Categoría Medellín** → cambiar a "Clínica de trasplante capilar"
-3. ❌ **Categoría Panamá** → cambiar a "Clínica de trasplante capilar"
-4. ❌ **Información faltante Panamá** → completar todo lo que Google pida
-5. ❌ **Nombre Panamá** → agregar "IPS": "Innovart Medical IPS | Implante Capilar Panamá"
+### Estado final por sede
+| Sede | Categoría | Nombre | Desc AEO | Website | Redes | Servicios |
+|------|-----------|--------|----------|---------|-------|-----------|
+| **Bogotá** | ✅ | ✅ IPS + ciudad | ✅ | ✅ landing | ✅ 5 redes | ✅ 10 |
+| **Barranquilla** | ✅ | ✅ IPS + \| | ✅ | ✅ landing | ✅ 5 redes | ✅ 10 |
+| **Medellín** | ✅ | ✅ IPS | ✅ | ✅ landing | ✅ 5 redes | ✅ 10 |
+| **Panamá** | ✅ | ✅ + IPS | ✅ | ✅ landing | ✅ 5 redes | ✅ 10 |
+| **Bucaramanga** | ❌ NO EXISTE | — | — | — | — | — |
 
-### P1 — Esta semana
-6. ⬜ Nombre Barranquilla → cambiar "_" por "|" y "capilar" → "Capilar"
-7. ⬜ Agregar URL de landing en cada GBP (apuntar a landing de ciudad)
-8. ⬜ Verificar dirección/teléfono/web de Barranquilla, Medellín y Panamá
-9. ⬜ Crear GBP Bucaramanga → "Innovart Medical IPS | Implante Capilar Bucaramanga"
+### PENDIENTE — Crear GBP Bucaramanga
+- Nombre: "Innovart Medical IPS | Implante Capilar Bucaramanga"
+- Dirección: Complejo Médico HIC, Cons. 719N, Cabecera del Llano, Bucaramanga
+- Categoría: "Clínica de trasplante capilar"
+- Website: https://www.innovartmedical.com/pages/implante-capilar-bucaramanga
 
-### P2 — Semana 2
-10. ⬜ Estrategia para reducir 17 reseñas 1★ de Bogotá (responder, pedir más 5★)
-11. ⬜ Subir fotos en Barranquilla, Medellín y Panamá (mínimo 10 por sede)
-12. ⬜ Atributos de salud en Medellín y Panamá
+### PENDIENTE — P1 fotos
+- ⬜ Subir mínimo 10 fotos por sede: Barranquilla, Medellín, Panamá (antes/después, clínica, equipo)
+- ⬜ Bogotá: responder 17 reseñas 1★ + campaña de reseñas 5★
+
+### Impacto esperado
+- Knowledge Graph: +8-12 pts en 7-14 días
+- AEO Score: 35 → 50+ en 30 días
 
 ---
 

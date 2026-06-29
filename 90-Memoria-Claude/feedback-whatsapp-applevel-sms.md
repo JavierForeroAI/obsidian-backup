@@ -1,15 +1,26 @@
 ---
 name: feedback-whatsapp-applevel-sms
-description: REGLA CRÍTICA — el WhatsApp de Innovart se maneja por applevel y entra a GHL como SMS (type 20 / TYPE_CUSTOM_SMS), no como WhatsApp
+description: REGLA CRÍTICA — Innovart tiene DOS líneas de WhatsApp. La de Applevel entra como SMS (type 2/type 20). La de API (Meta Business) es WhatsApp nativo. Ambas reciben pauta.
 metadata:
   type: feedback
 ---
 
-# ⚠️ REGLA PERMANENTE: WhatsApp de Innovart entra a GHL como SMS (applevel)
+# ⚠️ REGLA PERMANENTE: Dos líneas de WhatsApp — comportamiento diferente en GHL
 
-El WhatsApp de Innovart se gestiona con un proveedor **applevel** (marketplace **"WhatsApp Plugins"**, `conversationProviderId: 628f88b07cf43a7641c58089`) que **convierte los mensajes ENTRANTES en SMS dentro de GHL**. Los inbound llegan como **`type: 20` / `messageType: "TYPE_CUSTOM_SMS"`**, NO como WhatsApp.
+## Las dos líneas (confirmado 2026-06-28)
 
-**Why:** un trigger que filtre por canal WhatsApp NUNCA se dispara, porque GHL ve los mensajes como SMS. Esto rompió silenciosamente el primer build del flujo de financiación (trigger con Reply channel = WhatsApp / `message.type == 19` → no enrolaba). Aplica a **TODOS los desarrollos, pasados y futuros**.
+| Nombre interno | Conexión | Mensaje en GHL | Trigger filter correcto |
+|---|---|---|---|
+| **WhatsApp de API** | Meta Business API oficial | WhatsApp nativo (type 19 en trigger) | `Reply channel = WhatsApp` |
+| **WhatsApp Business de Applevel** | Applevel ("WhatsApp Plugins") | **SMS** (type 20 / TYPE_CUSTOM_SMS en API; type 2 en trigger) | `Reply channel = SMS` |
+
+**Ambas líneas reciben tráfico de pauta.** Para capturar leads de AMBAS, se necesitan triggers o filtros para los DOS tipos.
+
+## Detalle Applevel
+
+El WhatsApp de Applevel usa proveedor `conversationProviderId: 628f88b07cf43a7641c58089`. Los inbound llegan como **`type: 20` / `messageType: "TYPE_CUSTOM_SMS"`** en la API, pero el trigger filter usa **`message.type == 2` (SMS)**.
+
+**Why:** un trigger que filtre solo por canal WhatsApp (type 19) NUNCA captura los mensajes Applevel. Esto rompió silenciosamente el primer build del flujo de financiación. Aplica a **TODOS los desarrollos, pasados y futuros**.
 
 **How to apply (en cualquier trigger `customer_reply` / "Customer Replied"):**
 - **Reply channel = SMS** → en el JSON del trigger: `{"operator":"==","field":"message.type","value":2,"title":"Reply channel","type":"select"}`. (WhatsApp = 19 ❌; **SMS = 2 ✅**.)
