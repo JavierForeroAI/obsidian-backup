@@ -12,6 +12,7 @@
 
 ## Reglas de trabajo
 - [🔒 PROTOCOLO — Versionado de código crítico](protocolo-versionado-codigo-critico.md) — 2026-06-29. **REGLA PERMANENTE:** Cada cambio en theme.liquid, theme.pagefly.liquid, Workers, tracking scripts → guardar v1/v2/v3 en Obsidian con changelog + rollback. 15 min doc → 0 min indagación después.
+- [📋 VERSIONADO — theme.pagefly.liquid](versionado-theme-pagefly-liquid.md) — 2026-06-30. **V3:** Agregado script de carga de Qikify (`https://www.qikify.com/app/qikify.min.js`). Razón: Sin esto, window.BContact no existía y formularios no disparaban POST al Worker. Leads se perdían. Verificado con `typeof window.BContact` = "object".
 - [🚨 Editor de landings = PageFly (NO GemPages)](feedback-editor-landings-es-pagefly.md) — Las landings de ciudad se editan SIEMPRE en PageFly. GemPages también está en el menú pero NO es el editor correcto.
 - [🚨 Shopify live — dar pasos manuales, NO ofrecer MCP](feedback-shopify-paginas-en-vivo.md) — Nunca ofrecer aplicar cambios vía MCP en código/páginas en producción. Solo pasos manuales.
 - [🚨 Shopify en español — pasos SIEMPRE en español](feedback-shopify-instrucciones-en-espanol.md) — El Shopify y todas las apps (GemPages, PageFly) están en español. Dar pasos con nombres de menú en español exacto, nunca en inglés.
@@ -53,6 +54,7 @@
 - [Políticas de Publicidad de Google Ads](google-politicas-publicitarias.md) — Referencia obligatoria: prohibiciones, categorías restringidas (salud, estética), requisitos editoriales y aplicación para Innovart
 
 ## Tracking y Landing Pages — Estado verificado
+- [🔴 P0 — PASO-A-PASO: Arreglo Formularios 5 Sedes (30 jun 2026)](paso-a-paso-arreglo-formularios-2026-06-30.md) — **CRÍTICO.** Worker backend ✅ (curl test OK), GHL integration ✅ (contactos llegan perfectos), **Frontend forms ❌ (POST al Worker NO se dispara).** Scripts `Innovart Qikify → GHL` falta instalación en theme.pagefly.liquid (4 ciudades) y theme.gempages.blank.liquid (Panamá). Guía exacta copy-paste para cada ciudad. Test E2E incluido.
 - [✅ WA Buttons + Formularios — Verificación E2E (29 jun 2026)](wa-botones-landings-ciudad-verificado-2026-06-29.md) — 5 páginas (main + 4 ciudades): 9 botones WA/página con `[fb/rtg]` ✅, Qikify routing ✅. Click interceptor reemplaza MutationObserver.
 - [✅ Flujo CRM Qikify → GHL — Verificado E2E (29 jun 2026)](flujo-crm-qikify-verificado-2026-06-29.md) — Tags: `fuente_web_qikify`+`landing_formulariov2`+`oportunidad ventas frio`. UTMs completos. Workflow `4.1 Recibir lead de Landing_formulario` activa pipeline Ventas/Frío.
 - [✅ Landing Panamá — GemPages + fix formulario → GHL + 7 leads recuperados (29 jun 2026)](landing-panama-gempages-setup-2026-06-29.md) — Fix click interceptor desplegado. 7 leads pre-fix recuperados de Gmail y añadidos a workflow 4.1. ⏳ Pendiente: confirmar con próximo lead real que entra solo a GHL.
