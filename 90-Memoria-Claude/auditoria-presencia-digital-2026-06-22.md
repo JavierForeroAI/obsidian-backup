@@ -59,13 +59,26 @@ Para CADA SEDE (Bogotá, Medellín, Barranquilla, Bucaramanga, Panamá):
 - **SkillGEO** para visibilidad IA
 - **Web searches** para listicles
 
+## Estado de directorios — actualizado 2026-06-29
+
+| Directorio | Estado | Notas |
+|-----------|--------|-------|
+| Google Business Profile (4 sedes) | ✅ Optimizado (2026-06-27) | Bogotá, Medellín, Barranquilla, Panamá |
+| GBP Bucaramanga | ❌ Pendiente crear | Datos listos en [[gbp-sedes-innovart]] |
+| WhatClinic | ✅ Creado | Verificar NAP coincide con GBP |
+| Doctoralia | ✅ Creado (básico) | **Pendiente optimizar** — sin foto Dr., sin especialidad, sin precio |
+| RealSelf | ❌ No existe | Prioridad turismo médico intl |
+| Bing Maps | ❌ No existe | Copilot lo usa como fuente |
+| RAIS (Min. Salud) | ❌ No confirmado | |
+
 ## Próximos pasos
 
-1. **Completar auditoría** por sede (usar Apify si es necesario)
-2. **Crear perfil en Doctoralia** → llenar 100%, fotos médico + casos
-3. **Google My Business + Maps** → verificar, completar, + 5-10 reseñas iniciales
-4. **Registrar en RAIS** (Ministerio Salud)
-5. **Plan de reseñas automático** (post-operatorio SMS/email → link Google/Doctoralia)
+1. **Optimizar Doctoralia** → foto Dr. Carreño, especialidad "implante capilar / tricología", precio rango, fotos clínica, descripción AEO
+2. **Crear GBP Bucaramanga** (Javier — datos en [[gbp-sedes-innovart]])
+3. **Confirmar URL Barranquilla en GBP** (debe ser `/pages/implante-capilar-barranquilla`)
+4. **Responder 17 reseñas 1★ Bogotá** (Claude puede redactar)
+5. **Crear RealSelf** → turismo médico
+6. **Registrar en RAIS** (Ministerio Salud)
 
 ## Impacto estimado
 

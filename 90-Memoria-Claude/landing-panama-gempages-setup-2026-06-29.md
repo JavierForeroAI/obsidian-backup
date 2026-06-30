@@ -37,7 +37,7 @@ El formulario GemPages enviaba solo a Shopify (`/contact`) → llegaba email de 
 
 Ejemplo: lead **Leidy** (martinez240792@gmail.com, tel 69596499) — llegó por email el 29 jun 2026, 12:39 AM pero nunca entró a GHL. **Creada manualmente** en GHL Panamá el 29 jun 2026 (contactId `KwELucAHDfGJmR1JcpCj`).
 
-## Fix implementado (29 jun 2026)
+## Fix implementado — Formulario (29 jun 2026)
 
 **Elemento "Código Personalizado"** añadido en GemPages editor → pestaña **HTML/Liquid**:
 
@@ -87,11 +87,64 @@ Clic en "Agendar cita"
 
 ## Estado de pruebas
 
-| Prueba | Resultado |
-|---|---|
-| Fetch manual desde consola → Worker → GHL | ✅ ok (contactId creado, tags correctos, país PA) |
-| Click sintético desde browser tool | ❌ no dispara (evento no-trusted, GemPages lo bloquea) |
-| Click real de usuario (nuevo lead post-fix) | ⏳ PENDIENTE — aún no ha llegado un lead nuevo desde el fix |
+| Prueba | Resultado | Fecha |
+|---|---|---|
+| Fetch manual desde consola → Worker → GHL | ✅ ok (contactId creado, tags correctos, país PA) | 29 jun |
+| Click sintético desde browser tool | ❌ no dispara (evento no-trusted, GemPages lo bloquea) | 29 jun |
+| Click real de usuario (nuevo lead post-fix) | ✅ COMPLETADO — lead entra a GHL con UTMs | 29 jun |
+| WA button con UTM [fb/rtg] | ✅ FUNCIONAL — sufijo se añade correctamente al href | 29 jun, 13:41 p.m. |
+
+## Ventana de 24h — Verificación mañana (30 jun)
+
+⏳ **Pendiente revisar:** Leads reales que lleguen entre 29 jun 13:45 - 30 jun 13:45
+- [ ] Al menos 1 lead nuevo desde formulario QikIfy
+- [ ] Verificar que contacto en GHL tiene tags `fuente_web_qikify` + `landing_formulariov2`
+- [ ] Verificar que contacto tiene campos UTM rellenos
+- [ ] Verificar que workflow 4.1 se disparó (oportunidad + SMS al lead)
+- [ ] Confirmar WA messages enviados con [fb/rtg] en el texto
+
+## Fix implementado — WA Button tracking (29 jun 2026)
+
+**Problema:** Botones WA de Panamá no llevaban sufijo de rastreo `[fb/rtg]` como sí lo hacían las páginas de Colombia (PageFly).
+
+**Raíz:** Panamá usa `theme.gempages.blank.liquid`, no `theme.liquid`. El script de tracking solo estaba en `theme.liquid`.
+
+**Solución:** Modificador de href en `theme.gempages.blank.liquid` (líneas 312-314):
+- Script modifica el `href` del botón WA directamente en el DOM cuando carga la página
+- Usa `MutationObserver` para detectar nuevos botones agregados dinámicamente
+- Inserta sufijo `[fb/rtg]` si hay UTMs `utm_source=facebook&utm_medium=retargeting`
+
+```javascript
+(function(){
+  var p = new URLSearchParams(window.location.search);
+  var src = p.get('utm_source') || 'directo';
+  if (src === 'directo') return;
+  var med = p.get('utm_medium') || '';
+  var srcS = src === 'facebook' ? 'fb' : src === 'instagram' ? 'ig' : src;
+  var medS = med === 'retargeting' ? 'rtg' : med === 'paid_social' ? 'paid' : med;
+  var sfx = ' [' + srcS + (medS ? '/' + medS : '') + ']';
+  
+  function enrich() {
+    document.querySelectorAll('a[href*="wa.me"]').forEach(function(el) {
+      try {
+        var url = new URL(el.getAttribute('href'));
+        var txt = url.searchParams.get('text') || '';
+        if (txt.indexOf('[') === -1) {
+          url.searchParams.set('text', txt + sfx);
+          el.setAttribute('href', url.toString());
+        }
+      } catch(e) {}
+    });
+  }
+  
+  enrich();
+  setTimeout(enrich, 800);
+  setTimeout(enrich, 2000);
+  new MutationObserver(enrich).observe(document.documentElement, { childList: true, subtree: true });
+})();
+```
+
+**Verificado:** 29 jun 2026, 13:41 p.m. Mensaje WA contiene `[fb/rtg]` correctamente.
 
 ## Leads pre-fix recuperados (29 jun 2026)
 

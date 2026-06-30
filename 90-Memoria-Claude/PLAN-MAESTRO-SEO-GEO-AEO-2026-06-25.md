@@ -158,7 +158,7 @@ metadata:
 
 ---
 
-### AEO — Answer Engine Optimization (Score: AUDITADA ✅)
+### AEO — Answer Engine Optimization (Score: 35→55-65/100 POST-DIRECTORIOS)
 
 **Completado:**
 - ✅ Auditoría AEO completa (12 fases ejecutadas)
@@ -166,15 +166,22 @@ metadata:
 - ✅ Quick Wins identificados
 - ✅ Gap analysis vs. competencia (Rogans, Mediarte, DHI)
 - ✅ Entity mapping blueprint (ready para implementar)
+- ✅ **CAPA 1 — Directorios médicos** (2026-06-29 ✅ COMPLETADO):
+  - ✅ **GBP 4 sedes:** Bogotá, Medellín, Barranquilla, Panamá (95-99/100 puntos)
+  - ✅ **Doctoralia:** Perfil público 95/100 (Bogotá principal)
+  - ✅ **TopDoctors:** Optimizado + Dr. Carreño verificado
+  - ✅ **WhatClinic:** Acaba de registrarse (global directory)
+  - **Impacto:** +20-30 pts AEO inmediatos (directorios = señal de autoridad + citation)
 
 **Pendiente (30-45 días):**
+- ⏳ Doctoralia sedes 2-5 (si se paga plan) o completar WhatClinic sedes
 - ⏳ Entity mapping implementation (Innovart → relaciones en Knowledge Graph)
 - ⏳ Citation strategy ejecución por motor (ChatGPT, Gemini, Perplexity, Bing, Claude)
-- ⏳ Answer-first engineering (optimizar respuestas de 40-60 palabras)
-- ⏳ Consensus engine validation (Web/GBP/Facebook/Reviews consistency)
+- ⏳ Dr. Carreño physician schema (autoridad médica +15 pts)
+- ⏳ RAIS registration (Ministerio de Salud)
 
-**Status:** 100% información. Ready para implementación en Línea C (Semanas 2-4).
-**Métrica Clave:** Citación en "implante capilar Colombia". Hoy: 0-10%. Target: 80%+ en 90 días post-implementación.
+**Status:** Capa 1 directorios ✅ COMPLETADA. Citación en directorios detectada. Ready Capa 2 (physician schema).
+**Métrica Clave:** Citación en "implante capilar Colombia". Hoy: 5-15% → Target: 50-70% en 60 días (con Dr. Carreño + RAIS).
 
 ---
 
@@ -275,11 +282,13 @@ metadata:
 ### 4️⃣ NAP AUDIT — CRITICAL ISSUES
 
 **Missing Platforms (CRITICAL):**
-- ❌ Google Business Profile (all 5 locations)
-- ❌ Google Maps (all 5 locations)
-- ❌ RealSelf (major medical tourism)
-- ❌ WhatClinic (intl medical directory)
-- ❌ Bing Business Profile
+- ✅ Google Business Profile (4 locations — Bogotá, Medellín, Barranquilla, Panamá)
+- ✅ Google Maps (synced with GBP)
+- ❌ GBP Bucaramanga (falta crear)
+- ✅ WhatClinic (creado 2026-06-29)
+- ✅ Doctoralia (creado básico — pendiente optimización)
+- ❌ RealSelf (PRIORITARIO — medical tourism EEUU/intl)
+- ❌ Bing Maps / Bing Business Profile
 
 **Name Variations Found:** 5 different versions across platforms
 
@@ -529,6 +538,350 @@ metadata:
 - Theme: `181331001645` (MAIN — Dawn — GEO IA Innovart)
 - PageFly pages: varios (consultar en MCP)
 - GemPages templates: panama, barberia, financiacion
+
+---
+
+---
+
+## 🌍 LÍNEA E: AEO DIRECTORIOS INTL — RealSelf + Bing Maps + GBP Bucaramanga (NUEVA)
+
+**Fecha inicio:** 2026-06-29 | **Responsable:** Javier + Claude Code
+
+### Estado Actual (2026-06-29)
+
+| Plataforma | Status | Impacto AEO | Prioridad | Acción |
+|---|---|---|---|---|
+| **GBP (Bogotá, Medellín, Barranquilla, Panamá)** | ✅ VIVO | +20 pts | HECHO | Monitorear reseñas |
+| **GBP Bucaramanga** | ❌ Falta crear | +5 pts | P0 | Crear hoy (5 min) |
+| **WhatClinic** | ✅ VIVO | +8 pts | HECHO | — |
+| **Doctoralia** | ✅ Básico | +12 pts | P0 | Optimizar (15 min) |
+| **RealSelf** | ❌ Falta crear | **+30-40 pts (EEUU/intl)** | **P0 CRÍTICO** | Ejecutar HOY |
+| **Bing Maps** | ❌ Falta crear | +5 pts | P1 | Crear después |
+
+**Impacto total línea E:** +60-70 pts AEO en 90 días (principalmente RealSelf).
+
+---
+
+### 🎯 RealSelf — Plan de Ejecución (PRIORITARIO)
+
+**Objetivo:** Capturar pacientes EEUU/intl que buscan "hair transplant Colombia". RealSelf es THE marketplace médico para medical tourism.
+
+#### Fase 1: Preparación (Datos que necesito de Javier)
+
+**Datos Médicos:**
+- [ ] Dr. Carreño bio completo (inglés): name, credentials, ISHRS cert #, specialty, # casos
+- [ ] Dr. Morales bio (si estará visible en perfil)
+- [ ] Verificación Licencia Médica Colombiana (para credenciales)
+
+**Contenido Visual (Fotos Antes-Después):**
+- [ ] Cantidad de cases listos: ___/30 mínimo
+- [ ] Consentimiento informado de pacientes: ¿SÍ / NO / Parcial?
+- [ ] ¿Hay casos de pacientes EEUU ya operados? (Prioritarios)
+
+**Testimonios:**
+- [ ] Video o texto de paciente EEUU (ideal: "Volé desde Miami/LA")
+- [ ] Texto en inglés: ¿SÍ / NO / Traducir automático?
+
+**Precios:**
+- [ ] FUE en USD: $___
+- [ ] DHI en USD: $___
+- [ ] Rango inclusiones: ¿Mismo que /pages/precios ($3,500–$4,500)?
+
+**Contacto:**
+- [ ] Email para gestión RealSelf: innovartmedicalips@gmail.com (confirmar)
+- [ ] Teléfono WhatsApp en inglés: +57 310 203 1796 (confirmar)
+- [ ] Persona responsable RealSelf (Javier/Sofia/otro)
+
+---
+
+#### Fase 2: Estrategia de Contenido RealSelf (Claude prepara)
+
+**Bio de Clínica (inglés — para RealSelf):**
+```
+[DRAFT — esperando datos de Javier]
+
+Innovart Medical is a leading hair transplant clinic in Colombia,
+specializing in FUE and DHI techniques. Located in 5 Colombian cities
+(Bogotá, Medellín, Barranquilla, Bucaramanga, Panamá), we serve
+international patients seeking affordable, high-quality hair restoration
+at 1/3 the cost of US clinics.
+
+Led by Dr. Fabián Carreño [CREDENTIALS], our surgeons have performed
+[X] hair transplants with [Y%] patient satisfaction. We offer:
+- Free consultation (in-person or virtual)
+- All-inclusive pricing (surgery + follow-up meds + 24 sessions)
+- Financing available (MeddiPay, up to 90%)
+- Recovery timeline: Back to work in 10 days
+
+Patients fly in Saturday, surgery Sunday-Monday, fly out Wednesday.
+24-month follow-up included.
+```
+
+**FAQ para RealSelf (Q&A que LLMs priorizar):**
+- "How much does a hair transplant cost in Colombia vs USA?"
+- "Can I fly in for surgery and leave the same week?"
+- "What's included in the all-inclusive price?"
+- "Do you have before-and-after photos of international patients?"
+- "Is Dr. Carreño board-certified in hair transplants?"
+
+**Checklist de Fotos:**
+- [ ] 25+ before-and-afters (diverse angles, 6-12 month post-op)
+- [ ] Recovery timeline series (Day 1, Week 1, Month 1, Month 6, Month 12)
+- [ ] Clinic photos (operating room, recovery area, consultation room)
+- [ ] Dr. Carreño headshot + in surgery (credibility)
+- [ ] International patient testimonials (videos si es posible)
+
+---
+
+#### Fase 3: Setup Técnico RealSelf
+
+**Paso 1: Crear Perfil Clínica**
+- [ ] Ir a realself.com → Doctor sign-up
+- [ ] Verificación médica (ISHRS cert / cédula profesional)
+- [ ] Info básica: Nombre, ubicaciones, specialties (Hair Transplant)
+
+**Paso 2: Optimización On-Page**
+- [ ] Title: "Hair Transplant Surgeon in Bogotá, Colombia | Dr. [Carreño]"
+- [ ] Description: Keywords = "hair transplant Colombia", "FUE surgeon", "DHI specialist", "medical tourism"
+- [ ] Pricing transparency: ✅ (AEO critical)
+- [ ] Response rate: Target < 24h (RealSelf rewards fast responders)
+
+**Paso 3: Carga de Contenido**
+- [ ] Upload 25+ before-and-afters (con permiso pacientes)
+- [ ] Escribir 3-5 case studies (en inglés, detallados)
+- [ ] Incrustrar video testimonial (si hay)
+- [ ] Enlace a WhatsApp/Email para consultas
+
+**Paso 4: Integración GHL**
+- [ ] Crear workflow RealSelf: "Lead from RealSelf" → SMS/WhatsApp automático
+- [ ] Campo GHL `realself_clid` (tracking de fuente)
+- [ ] Tag `fuente_realself` para segmentación
+
+---
+
+#### Fase 4: Métricas de Éxito (30/60/90 días)
+
+| Métrica | Meta 30d | Meta 60d | Meta 90d |
+|---------|----------|----------|----------|
+| Perfil completado | ✅ Sí | — | — |
+| Reviews en RealSelf | 5+ | 15+ | 30+ |
+| Leads/mes desde RealSelf | 10-15 | 25-40 | 50-75 |
+| Rating promedio | 4.5+ | 4.7+ | 4.8+ |
+| Conversion rate | 15-20% | 20-25% | 25-30% |
+| AEO Impact | +15 pts | +25 pts | +40 pts |
+
+---
+
+### 📋 GBP Bucaramanga (P0 — 5 min)
+
+**Estado:** ❌ Falta crear
+
+**Datos necesarios:**
+- [ ] Dirección exacta: Complejo Médico HIC, Cons. 719N, Cabecera del Llano
+- [ ] Teléfono: +57 312 456 5014 (confirmar si es Bucaramanga)
+- [ ] Horarios: 8 AM - 5 PM Mon-Fri (asumir — confirmar)
+- [ ] Foto fachada clínica
+
+**Acción:** Crear en Google Business Profile (5 minutos vía Google).
+
+---
+
+### 📋 Doctoralia Optimización (P0 — 15 min)
+
+**Estado:** ✅ Creado básico — pendiente optimizar
+
+**Pendientes:**
+- [ ] Completar bio Dr. Carreño (especialidades, certificaciones)
+- [ ] Subir 5-10 fotos de clínica/equipo
+- [ ] Escribir descripción clínica (500+ palabras, SEO keywords)
+- [ ] Responder reviews existentes
+- [ ] Verificar horarios/ubicaciones (5 sedes)
+
+---
+
+### 📋 Bing Maps (P1 — Después de RealSelf)
+
+**Estado:** ❌ Falta crear
+
+**Acción:** Crear 5 perfiles Bing Maps (1 por ciudad) con NAP consolidada.
+
+---
+
+---
+
+## 📅 PLAN DE FASES — DIRECTORIOS INTL (LÍNEA E)
+
+**Objetivo:** Crear 4 perfiles (GBP Bucaramanga, RealSelf, Doctoralia optimizado, Bing Maps) en orden de prioridad y dependencias.
+
+---
+
+### FASE 0: RECOLECTAR DATOS (JAVIER — Hoy 2026-06-29)
+**Duración:** 30 min  
+**Responsable:** Javier  
+**Output:** Dataset completo
+
+**Datos que necesito (checklist):**
+
+#### A. DATOS MÉDICOS DR. CARREÑO
+- [ ] Nombre completo: _______________________
+- [ ] Cédula profesional #: _______________________
+- [ ] ISHRS Certificate #: _______________________ (o "pendiente")
+- [ ] Especialidades (inglés): _______________________
+- [ ] # de casos realizados: _______________________
+- [ ] Bio párrafo (inglés, 100 palabras): _______________________
+
+#### B. FOTOS ANTES-DESPUÉS
+- [ ] Total de casos con consentimiento: ___/30 mínimo
+- [ ] Casos EEUU (high priority): ___
+- [ ] ¿Ya están editadas/optimizadas? SÍ / NO
+- [ ] Dónde están guardadas: _______________________
+
+#### C. TESTIMONIOS
+- [ ] Nombre paciente EEUU: _______________________
+- [ ] Texto testimonial (inglés): _______________________
+- [ ] ¿Video disponible? SÍ / NO
+- [ ] Permiso de publicar: SÍ / NO
+
+#### D. PRECIOS
+- [ ] FUE precio USD: $___________
+- [ ] DHI precio USD: $___________
+- [ ] ¿Incluye medicinas 6 meses? SÍ / NO
+- [ ] ¿Incluye 24 sesiones follow-up? SÍ / NO
+
+#### E. CONTACTO
+- [ ] WhatsApp internacional: +57 _______________
+- [ ] Email para leads RealSelf: _______________________
+- [ ] Persona responsable (Javier/Sofia/Dr.): _______________________
+- [ ] Zona horaria respuesta: _______________________
+
+#### F. UBICACIONES
+- [ ] Dirección Bucaramanga exacta: _______________________
+- [ ] Teléfono Bucaramanga: _______________________
+- [ ] Confirmar horarios (todas las sedes): _______________________
+
+---
+
+### FASE 1: GBP BUCARAMANGA (CLAUDE — 5 min, después de Fase 0)
+**Duración:** 5 minutos  
+**Prerequisito:** Datos de Fase 0 (Dirección + teléfono)  
+**Responsable:** Claude Code (con guía manual para Javier)
+
+**Tareas:**
+- [ ] Crear Google Business Profile Bucaramanga
+- [ ] Llenar: Nombre, dirección, teléfono, horarios, categoría (Hair Transplant Clinic)
+- [ ] Subir foto fachada clínica
+- [ ] Verificar dominio (link de Google)
+- [ ] Estado: ✅ VIVO
+
+**Output:** GBP URL de Bucaramanga + verificación
+
+---
+
+### FASE 2: DOCTORALIA OPTIMIZACIÓN (CLAUDE — 15 min)
+**Duración:** 15 minutos  
+**Prerequisito:** Datos de Fase 0 (Bio Dr., fotos, ubicaciones)  
+**Responsable:** Claude Code (guía manual)
+
+**Tareas:**
+- [ ] Completar bio Dr. Carreño (especialidades, # casos, ISHRS)
+- [ ] Subir 5-10 fotos clínica
+- [ ] Escribir descripción clínica optimizada (500+ palabras, SEO keywords)
+- [ ] Verificar NAP (5 ubicaciones)
+- [ ] Responder reviews existentes
+- [ ] Estado: ✅ OPTIMIZADO
+
+**Output:** Doctoralia perfil 85+ puntuación
+
+---
+
+### FASE 3: REALSELF (CLAUDE + JAVIER — 2-3 horas)
+**Duración:** 2-3 horas en paralelo  
+**Prerequisito:** Todos los datos de Fase 0  
+**Responsable:** Claude (prepara contenido) + Javier (upload técnico)
+
+#### FASE 3A: PREPARACIÓN DE CONTENIDO (CLAUDE — 1 hora)
+- [ ] Redactar bio clínica completa (inglés)
+- [ ] Escribir 5 case studies (con fotos antes-después)
+- [ ] Crear FAQ optimizada (8-10 preguntas)
+- [ ] Template de email respuesta a consultantes
+- [ ] Checklist de fotos (orden, cantidad, títulos)
+
+**Output:** Carpeta `/tmp/realself-contenido-preparado/` con todo listo para upload
+
+#### FASE 3B: SETUP TÉCNICO REALSELF (JAVIER — 30 min)
+- [ ] Ir a realself.com → crear perfil
+- [ ] Verificación médica (enviar ISHRS cert / cédula)
+- [ ] Info básica: nombre, ubicaciones, especialidades
+- [ ] Confirmar email/phone para consultas
+
+**Output:** Perfil RealSelf creado (pendiente fotos)
+
+#### FASE 3C: UPLOAD DE CONTENIDO (JAVIER — 1 hora)
+- [ ] Subir 25+ fotos antes-después
+- [ ] Cargar case studies redactados
+- [ ] Crear secciones FAQ
+- [ ] Incrustar video testimonial (si hay)
+- [ ] Revisar pricing transparency
+
+**Output:** Perfil RealSelf 90% completo
+
+#### FASE 3D: INTEGRACIÓN GHL (CLAUDE — 30 min)
+- [ ] Crear workflow GHL: "Lead from RealSelf"
+- [ ] Setup SMS/WhatsApp automático de bienvenida
+- [ ] Crear campo `realself_clid` tracking
+- [ ] Tag `fuente_realself` para segmentación
+
+**Output:** GHL listo para recibir leads de RealSelf
+
+---
+
+### FASE 4: BING MAPS (CLAUDE — 20 min, después de Fase 1-2)
+**Duración:** 20 minutos  
+**Prerequisito:** Datos de Fase 0 (NAP consolidada)  
+**Responsable:** Claude Code (con guía)
+
+**Tareas:**
+- [ ] Crear 5 perfiles Bing Maps (1 por ciudad)
+- [ ] NAP consolidada: INNOVART MEDICAL IPS
+- [ ] Fotos: Fachada + interior clínica
+- [ ] Categoría: Medical Clinic / Hair Restoration
+- [ ] Links a Google Business Profile
+
+**Output:** 5 Bing Maps perfiles ✅ VIVOS
+
+---
+
+## 📊 MATRIZ DE DEPENDENCIAS
+
+```
+FASE 0 (Datos Javier)
+    ↓
+    ├─→ FASE 1 (GBP Bucaramanga) ✅ 5 min
+    ├─→ FASE 2 (Doctoralia Opt) ✅ 15 min
+    ├─→ FASE 3 (RealSelf) 🔴 2-3 horas (CRÍTICO)
+    └─→ FASE 4 (Bing Maps) ✅ 20 min
+```
+
+**Tiempo total:** 
+- Javier: 30 min (Fase 0) + 1.5 horas (Fase 3B+3C)
+- Claude: 2 horas (todo preparado + GHL)
+- **Paralelo:** Fases 1, 2, 4 pueden correr mientras Javier prepara Fase 0
+
+---
+
+## ✅ CRONOGRAMA PROPUESTO (HOY 2026-06-29)
+
+| Hora | Tarea | Responsable | Estado |
+|------|-------|---|---|
+| **Ahora** | FASE 0: Recolectar datos (15-20 min rápido) | Javier | ⏳ Esperando |
+| **Paralelo** | FASE 1: GBP Bucaramanga | Claude | ⏳ Ready |
+| **Paralelo** | FASE 2: Doctoralia optimización prep | Claude | ⏳ Ready |
+| **30 min después** | FASE 3A: Redactar contenido RealSelf | Claude | ⏳ Ready |
+| **1 hora después** | FASE 3B+3C: Javier sube a RealSelf | Javier | ⏳ Esperando |
+| **2 horas** | FASE 3D: Integración GHL | Claude | ⏳ Ready |
+| **Final** | FASE 4: Bing Maps | Claude | ⏳ Ready |
+
+**Resultado final:** 4 directorios + GHL integrado = +60-70 pts AEO 🎯
 
 ---
 

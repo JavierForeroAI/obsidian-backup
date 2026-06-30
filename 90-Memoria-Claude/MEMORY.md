@@ -11,6 +11,7 @@
 - [🏆 PLANTILLA PERFECTA — Blog Innovart (HTML listo ES + EN)](plantilla-blog-innovart-modelo-perfecto.md) — HTML completo copiar/pegar: byline, At a Glance, WhatsApp x2, artículos relacionados, sedes, firma Dr., disclaimer. Colores exactos. Handles actuales del blog.
 
 ## Reglas de trabajo
+- [🔒 PROTOCOLO — Versionado de código crítico](protocolo-versionado-codigo-critico.md) — 2026-06-29. **REGLA PERMANENTE:** Cada cambio en theme.liquid, theme.pagefly.liquid, Workers, tracking scripts → guardar v1/v2/v3 en Obsidian con changelog + rollback. 15 min doc → 0 min indagación después.
 - [🚨 Editor de landings = PageFly (NO GemPages)](feedback-editor-landings-es-pagefly.md) — Las landings de ciudad se editan SIEMPRE en PageFly. GemPages también está en el menú pero NO es el editor correcto.
 - [🚨 Shopify live — dar pasos manuales, NO ofrecer MCP](feedback-shopify-paginas-en-vivo.md) — Nunca ofrecer aplicar cambios vía MCP en código/páginas en producción. Solo pasos manuales.
 - [🚨 Shopify en español — pasos SIEMPRE en español](feedback-shopify-instrucciones-en-espanol.md) — El Shopify y todas las apps (GemPages, PageFly) están en español. Dar pasos con nombres de menú en español exacto, nunca en inglés.
@@ -28,6 +29,8 @@
 - [🔴 PENDIENTE JAVIER: Skill Distribución Multiplataforma](skill-distribucion-multiplataforma.md) — 2026-06-25. Máquina de contenido (blogs, videos, testimonios, creativos) → YouTube, LinkedIn, Reddit, Wikipedia, Blog Shopify + GHL integration. Análisis completo de viabilidad (APIs listas), arquitectura 6 fases, estimación 2-3 semanas part-time. Pull-based: equipo sube a carpetas, sistema automatiza publicación + captura leads en GHL. **Desarrollar en tiempos libres.**
 
 ## WhatsApp Ads Tracking (CTWA)
+- [✅✅✅ CTWA Sistema 100% Operacional (2026-06-29)](ctwa-sistema-100-operacional-2026-06-29.md) — **CONFIRMACIÓN FINAL.** 6 secrets cargados en Cloudflare. Flujo automático: Meta ads → webhook → Worker → GHL. Listo para test E2E.
+- [⭐ MAESTRO — Líneas SMS vs WhatsApp API — 2 líneas independientes/sede](lineas-innovart-sms-whatsapp-api-estructura.md) — 2026-06-29. **REFERENCIA ÚNICA.** SMS (LeadConnector, 573171224974/Medellín hasta 312/Principal) + WhatsApp API (Meta CTWA, +57 310/317/313, 507 650). Números, GHL locations, field IDs ctwa_clid, flujos, webhook global. Leer ANTES de preguntar qué línea usar.
 - [✅ CTWA Tracking — Meta Ads → WhatsApp → GHL (ACTIVO)](ctwa-tracking-whatsapp-ads.md) — 2026-06-29. LIVE. `innovart-wa-redirect-320` recibe webhook Meta → fan-out a `innovart-capi-webhook-no-tocar/wa-ctwa` → guarda ctwa_clid + utm_source + utm_medium en GHL. Phone_number_ids y field IDs por ciudad adentro.
 
 ## Pauta
@@ -55,12 +58,15 @@
 - [✅ Landing Panamá — GemPages + fix formulario → GHL + 7 leads recuperados (29 jun 2026)](landing-panama-gempages-setup-2026-06-29.md) — Fix click interceptor desplegado. 7 leads pre-fix recuperados de Gmail y añadidos a workflow 4.1. ⏳ Pendiente: confirmar con próximo lead real que entra solo a GHL.
 - [✅ Workflow 4.1 — SMS/WA al lead habilitado en 4 sedes (29 jun 2026)](flujo-4-1-sms-lead-habilitado-2026-06-29.md) — Paso al lead estaba DISABLED en Panamá/Bogotá/Medellín/Barranquilla → habilitado. ⚠️ Bucaramanga: paso no existe, pendiente añadir.
 - [⏸️ Bucaramanga — Lista de espera launch](bucaramanga-lista-espera-launch.md) — Sede no abierta aún. Checklist completo: SMS al lead en 4.1, campos UTM, línea WA, E2E test. Ejecutar cuando Javier diga "abre Bucaramanga".
+- [⚠️ CRÍTICO: Qikify Formulario — Estructura HTML `</body>` (2026-06-29)](qikify-formulario-estructura-html-2026-06-29.md) — Formulario desaparece si theme.pagefly.liquid falta `</body>`. Solución: `<div contactform-embed="483316"></div>` + `</body>` antes de `</html>`. Checklist futuro + cause raíz PageFly.
 
 ## Referencias Técnicas
 - [⭐ Shopify + PageFly + WhatsApp — Guía técnica definitiva](referencia-tecnica-shopify-pagefly-whatsapp-tracking.md) — 2026-06-26. Por qué falla el tracking en iOS, cómo leer UTMs con URLSearchParams, comportamiento de target="_blank", MutationObserver vs click interceptor, FBIAB. Leer ANTES de tocar scripts de WA o theme.liquid.
 
 ## Tracking y Atribución
 - [⭐ UTM Tracking — Estado General por Fuente (act. 2026-06-27)](utm-tracking-avance-general.md) — Landing ✅ completa. DM IG ✅ básico (`397ac2f1`, NO `a05e11f3` — ese ID era INCORRECTO). DM FB ✅ básico (`90630621`). 🔑 NUEVO: ciudad en DM IG detectable por `message.body` ("valoración gratuita en [Ciudad]") sin N8N. Pendientes: WA Directo/Typeform/Lead Forms.
+- [⚠️ Hallazgo: IG DM — Workflows de ciudad NO disparan (2026-06-29)](hallazgo-ig-dm-workflows-ciudad-sin-disparar-2026-06-29.md) — 60 conversaciones IG en últimas 18h. Workflows de detección (`f3c21f45` Bogotá, etc.) NO dispararon. Causa: 80% de leads escriben texto libre en DM, no el mensaje preconfigurado. Pendiente: E2E test con anuncio click-to-DM.
+- [🚨 Análisis: Pixel 1 Shopify — Sin permisos CAPI (2026-06-29)](analisis-pixel-1-sin-permisos-capi-2026-06-29.md) — Pixel `1642103999710262` recibe 27K PageView pero CERO conversiones. CAPI worker intenta escribir pero sin permisos. Opción 1: agregar permisos a token. Opción 2: single-pixel GHL. Pendiente: verificar permisos Meta.
 - [⚠️ UTM Landing Shopify — Scripts instalados + NO TOCAR (2026-06-26)](utm-tracking-landing-shopify.md) — 2 scripts en theme.liquid "Dawn — GEO IA Innovart". Script 1 (head): captura UTMs. Script 2 (body): enriquece WA + envía form→GHL. Token: "Landing UTM Tracker" en GHL Private Integrations. Custom field IDs + Workflow ID incluidos.
 - [📌 Tag /home landing: landing_form_home (NO landing_formulario_web)](tag-landing-home.md) — 2026-06-23. Tag asignado a contactos desde form en /home. Confirmado: test@innovart.com capturado ayer. SIEMPRE usar este nombre para búsquedas en GHL MCP. Testing: crear contacto `test[fecha]@innovart.com`, buscar por email, confirmar tag + oportunidad creada.
 - [⚠️ Hallazgo: Leads sin Email = Cuello de Botella EMQ (2026-06-23)](hallazgo-leads-sin-email-bgta-2026-06-23.md) — Leads reales en BGTA: 0% email, 100% teléfono (entran por WhatsApp directo). Causa: no hay solicitud de email en WhatsApp. Impacto: EMQ 4.9 sigue bajo (email 0 → Meta no matchea). fbclid funciona OK. Estrategia de captura de email pendiente.
@@ -164,7 +170,7 @@
 - [⚠️ Formulario de contacto web NO llega al CRM](shopify-formulario-contacto-crm.md) — 2026-06-19. `/pages/contact` usa el formulario **NATIVO de Shopify** (`contact-form` en `page.contact.json`): solo manda email a innovartmedicalips@gmail.com, **sin conexión a GHL**. Nunca estuvo cableado. Fix: reemplazar por form GHL (embed) o webhook → GHL, capturando fbclid/ctwa_clid.
 
 ## GBP — Google Business Profile
-- [📍 GBP 4 Sedes — ✅ COMPLETADO (2026-06-27)](gbp-sedes-innovart.md) — Bogotá/Barranquilla/Medellín/Panamá: categoría ✅ "Clínica de trasplante capilar", nombre ✅ IPS+ciudad, desc AEO ✅, landing ✅, redes ✅, 10 servicios ✅. Bucaramanga: pendiente crear. Pendiente: fotos + reseñas Bogotá.
+- [📍 AEO Directorios — ✅ COMPLETADO (2026-06-29)](aeo-directorios-4-plataformas.md) — GBP 4 sedes ✅ | Doctoralia (Bogotá) ✅ | TopDoctors ✅ | WhatClinic ✅. Impacto: Innovart visible en 10+ ciudades + directorios que citan IAs. Próximo: Dr. Carreño bio + RAIS.
 - [🔴 Directorios Médicos — Doctoralia ❌ ausente / TopDoctors ✅ existe](presencia-directorios-medicos-2026-06-27.md) — 2026-06-27. Innovart NO está en Doctoralia (Rogans sí, 42 reseñas 5★). Innovart SÍ está en TopDoctors. Datos listos para crear perfil Doctoralia. Las IAs citan Doctoralia para "implante capilar" → prioridad AEO.
 - [📱 Redes Sociales Oficiales — URLs canónicas](redes-sociales-innovart.md) — YouTube: @InnovartMedicalIps (NO usar /channel/). Instagram, TikTok, LinkedIn, Facebook, WhatsApp. SIEMPRE usar estas URLs en GBP/schemas/landings.
 
