@@ -253,3 +253,9 @@ metadata:
 **Autor:** Claude Code (investigación global) + Diego (expertise local)  
 **Validación pendiente:** Diego review  
 **Status:** Ready para Reporte V2
+
+---
+
+## 🔁 Reaplicado — 2026-06-30 (Estrategia de pauta julio 2026)
+
+Al armar la estrategia multiagente de Google Ads para julio (ver [[kardex-auditorias-google-ads]]), el primer borrador cayó en el mismo error que este criterio ya corrigió: proponer una lista larga de negativas genéricas (incluir "medical care" como negativa amplia, listas de 60+ términos). Se corrigió antes de entregarle a Javier, aplicando este criterio: **targeting específico 80% / negativas defensivas selectivas 20%**, solo 4 categorías (cosméticos no-quirúrgicos, DIY, procedimientos distintos, B2B), todas en exact match. Confirma que este documento sigue vigente y debe consultarse SIEMPRE antes de proponer negativas o targeting para Innovart Google Ads — no solo en auditorías, también en estrategias/roadmaps nuevos.
