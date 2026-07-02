@@ -53,5 +53,28 @@ Reglas que el sistema debe respetar (pendiente de implementar en el Worker, sesi
    - Siga aplicando `ciudad_sin_detectar` a leads nuevos y viejos sin ciudad, sin que eso dispare reactivación de IA.
 2. Publicar como versión 8 del workflow (o cambio en el Worker, según dónde viva la lógica) y validar E2E con un lead de prueba.
 
+## Actualización 2026-07-01 — Hallazgo crítico nuevo: payload del webhook va vacío
+
+Workflow avanzó a **v9** (dataVersion 7, actualizado 2026-06-30 13:13:12 UTC, por otra sesión/usuario). Al auditar de nuevo el detalle completo vía MCP GHL se encontró un problema distinto y más grave que el filtro `ai_parar`:
+
+El Step 1 del workflow (`custom_webhook` → `POST /ghl-inbound-msg` del Worker `innovart-capi-webhook-no-tocar`) envía este payload:
+
+```json
+{
+  "contactId": "{{contact.id}}",
+  "messageType": "TYPE_INSTAGRAM",
+  "direction": "inbound",
+  "body": ""
+}
+```
+
+**El campo `body` va SIEMPRE vacío** (string literal, no un merge tag). Sin el contenido del mensaje, el Worker no puede detectar ciudad por texto ni asignar tags — este es probablemente el motivo real detrás de [[hallazgo-ig-dm-workflows-ciudad-sin-disparar-2026-06-29]].
+
+**Fix propuesto (NO ejecutado):** cambiar `"body": ""` por `"body": "{{contact.inbound_message.body}}"` para que sí capture el texto del DM.
+
+**Bloqueante técnico:** el MCP de `ghl` disponible en esta sesión **solo tiene funciones de lectura** de workflows (`get_workflows`, listar) — no expone `update_workflow_actions` ni `publish_workflow` reales para este caso, así que el cambio no se pudo aplicar por API. **Queda pendiente hacerlo manualmente en la UI de GHL** (Workflows → "IG DM - Ciudad Automatica" → Step 1 → editar el campo `body` del webhook).
+
+**Protecciones reconfirmadas en esta sesión** (sin cambios): nunca tocar `ai_parar`, nunca cambiar `assignedTo` — el Worker ya las respeta según el código citado (líneas ~97 y ~124).
+
 ---
 Referencias: [[hallazgo-ig-dm-workflows-ciudad-sin-disparar-2026-06-29]], [[referencia-ghl-workflows-mcp]]

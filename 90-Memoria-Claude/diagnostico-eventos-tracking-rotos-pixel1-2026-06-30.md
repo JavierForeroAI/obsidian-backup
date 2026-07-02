@@ -28,6 +28,13 @@ metadata:
 2. Lead: cambiar el string de match de `'Agendar Cita'` a `'¿Quiero contactarme con un asesor?'` (o un substring estable de ese texto).
 3. ViewContent: cambiar el match a case-insensitive (`.toLowerCase()` antes de comparar) o usar el texto exacto `'Implante capilar'`.
 
+## Actualización 2026-06-30 noche (sesión posterior) — parcialmente ejecutado, con nuevo hallazgo
+
+- **Contact (WhatsApp):** ✅ Ejecutado. Selector expandido en línea 390 para incluir `a[href*="api.whatsapp.com"]`, `[class*="whatsapp"]`, `[id*="chat-bubble"]`, `[id*="whatsapp"]` (antes solo cazaba `a[href*="wa.me"]`).
+- **Aclaración de negocio:** el botón real que dice **"Agendar Cita"** SÍ existe y es el que abre el formulario (no se va a borrar) — la confusión inicial de la sesión anterior (que decía que ese botón no existía) era incorrecta. El botón "Implante Capilar" (ViewContent) sí se decidió **eliminar** en vez de arreglar el case-sensitivity, porque era redundante.
+- **Lead (Agendar Cita → abre formulario):** se cambió el evento de `InitiateCheckout` a `Lead` (correcto). **Nuevo hallazgo bloqueante:** Meta Pixel Helper mostró en vivo el mensaje *"You are attempting to send a restricted event. The event was suppressed"* — Meta bloquea el evento `Lead` porque falta `fbclid` y/o PII (email/phone) en el payload del evento. Pendiente: incluir `fbclid` capturado y el email/phone del formulario en los parámetros del evento `Lead` para que Meta deje de suprimirlo.
+- **Scroll Depth:** confirmado en vivo que 50% y 75% disparan (ViewContent2 / InitiateCheckout), pero **25% no disparó** en la prueba — pendiente de diagnosticar por qué el primer umbral no se alcanza.
+
 Ver también kardex de código crítico: [[kardex-theme-pagefly-liquid]] — cualquier fix a estos matches debe registrarse ahí antes de tocar el archivo (protocolo en [[protocolo-modificaciones-criticas]]).
 
 ## Decisión: nomenclatura de eventos custom vs eventos estándar Meta

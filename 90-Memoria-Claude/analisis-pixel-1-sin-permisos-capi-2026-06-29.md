@@ -87,4 +87,10 @@ const DEFAULT_PIXELS = ['1625645205284016'];  // Solo GHL
 
 ---
 
+## Actualización 2026-07-01 — Confirmado en vivo: el Pixel base SÍ carga
+
+Verificación en vivo en `innovartmedical.com` (no vía GTM, como se sospechaba antes): el Pixel `1642103999710262` carga por el **canal nativo "Shopify Web Pixel"** (integración oficial de Shopify, no un tag de GTM) y dispara `PageView` correctamente. `fbq` existe y está cargado.
+
+**Implicación:** los eventos custom (`Contact`, `Lead`, `ViewContent`) en `theme.pagefly.liquid` están envueltos en `if(typeof fbq !== 'undefined')` — como el Pixel base sí carga, ese guard no es la causa de que fallen; el problema de fondo sigue siendo el de este documento (permisos CAPI) + los bugs de selección/nomenclatura de eventos ya documentados en [[diagnostico-eventos-tracking-rotos-pixel1-2026-06-30]].
+
 **Referencia:** [[tracking-pixels-config]], [[flujo-crm-qikify-verificado-2026-06-29]]
